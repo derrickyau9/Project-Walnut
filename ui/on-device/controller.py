@@ -1058,18 +1058,28 @@ class CameraController(QObject):
             self._last_state = time.monotonic()
             self._submit('state', self._read_state)
 
+    def _workflow_admission(self, reconcile_request_id=None):
+        reconcile = (isinstance(reconcile_request_id, str)
+                     and self._canonical_request_id(reconcile_request_id)
+                     and reconcile_request_id == self._request and self._capture == 'unknown'
+                     and not self._closed and not self._state_fault and not self._workflow_active
+                     and self._connection == 'ready' and not self._settings_active and not self._settings_queue)
+        admitted = not (self._maintenance_token or self._temporary or self._temporary_recovery
+                        or (not self.canCapture and not reconcile) or self._pending)
+        return admitted, reconcile
+
+    def canRunExclusiveWorkflow(self, reconcile_request_id=None):
+        """Query the workflow handoff gate without RPCs or changing any state."""
+        return self._workflow_admission(reconcile_request_id)[0]
+
     def runExclusiveWorkflow(self, function, *, reconcile_request_id=None):
         """Hand the same authority to one workflow, then reacquire UI control.
 
         The callable must wait for its runner to stop and release its lease.
         No camera RPC from the UI poll/configure/shutter path can interleave.
         """
-        reconcile = (isinstance(reconcile_request_id, str)
-                     and self._canonical_request_id(reconcile_request_id)
-                     and reconcile_request_id == self._request and self._capture == 'unknown'
-                     and not self._closed and not self._state_fault and not self._workflow_active
-                     and self._connection == 'ready' and not self._settings_active and not self._settings_queue)
-        if self._maintenance_token or self._temporary or self._temporary_recovery or (not self.canCapture and not reconcile) or self._pending or not callable(function):
+        admitted, reconcile = self._workflow_admission(reconcile_request_id)
+        if not admitted or not callable(function):
             return False
         self._workflow_active = True
         self._invalidate_preview()

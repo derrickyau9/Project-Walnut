@@ -63,15 +63,21 @@ class WorkflowMediaTests(unittest.TestCase):
             QTest.qWait(10)
         self.fail('timed out: ' + self.camera.statusText + '; ' + self.apps.workflow.errorText)
 
+    def run_recipe_when_ready(self):
+        self.wait(lambda: self.apps.workflow.canStart)
+        self.assertTrue(self.apps.workflow.canStart)
+        self.apps.runSelectedRecipe()
+
     def test_pause_resume_keeps_committed_ids_and_restores_ui_control(self):
         self.apps.saveCaptureRecipe('Interval', 'interval', 3, 500)
-        self.apps.runSelectedRecipe()
+        self.run_recipe_when_ready()
         self.wait(lambda: self.apps.workflow.completed >= 1 and self.camera.workflowActive)
         self.apps.workflow.pause()
-        self.wait(lambda: not self.camera.workflowActive and self.apps.workflow.status == 'paused')
+        self.wait(lambda: not self.camera.workflowActive and self.apps.workflow.status == 'paused' and self.apps.workflow.canResume)
         before = [row['requestId'] for row in self.apps.workflow.steps]
         self.assertTrue(before)
-        self.apps.workflow.resume()
+        self.assertTrue(self.apps.workflow.canResume)
+        self.assertTrue(self.apps.workflow.resume())
         self.wait(lambda: not self.camera.workflowActive and self.apps.workflow.status == 'completed')
         after = [row['requestId'] for row in self.apps.workflow.steps]
         self.assertEqual(before, after[:len(before)])
@@ -80,9 +86,77 @@ class WorkflowMediaTests(unittest.TestCase):
         self.assertTrue(all(Path(row['filePath']).is_file() for row in self.apps.workflow.steps))
         self.assertTrue(self.camera.canCapture)
 
+    def test_pending_state_rpc_refuses_workflow_actions_without_changing_paused_ids(self):
+        entered, release = threading.Event(), threading.Event()
+        injected = False
+        def after_paused(result, error):
+            nonlocal injected
+            if injected or not isinstance(result, dict) or result.get('status') != 'paused':
+                return
+            injected = True
+            def pending_state():
+                entered.set()
+                if not release.wait(5):
+                    raise AssertionError('private state-RPC fixture gate was not released')
+                time.sleep(.15)
+                return self.camera._read_state()
+            # An actual controller RPC remains in flight at the handoff boundary.
+            self.camera._submit('state', pending_state)
+        self.camera.workflowFinished.connect(after_paused)
+        self.apps.saveCaptureRecipe('Pending state interval', 'interval', 3, 500)
+        self.run_recipe_when_ready()
+        self.wait(lambda: self.apps.workflow.completed >= 1 and self.camera.workflowActive)
+        self.apps.workflow.pause()
+        try:
+            self.wait(lambda: entered.is_set() and not self.camera.workflowActive and self.apps.workflow.status == 'paused')
+            workflow = self.apps.workflow
+            before = [row['requestId'] for row in workflow.steps]
+            identity, desired, cancel_event = workflow.jobId, workflow.desired, workflow._cancel
+            self.assertTrue(before)
+            self.assertTrue(self.camera.canCapture)
+            self.assertFalse(self.camera.canRunExclusiveWorkflow())
+            self.assertFalse(workflow.canStart)
+            self.assertFalse(workflow.canResume)
+            self.assertFalse(workflow.canCancel)
+            from daos.capability_runtime.bracket import BracketRunner
+            journal = BracketRunner(None, self.root/'state/apps/workflows.sqlite3')
+            checkpoint = journal.inspect(identity)
+            with patch.object(self.camera._client, 'capture', wraps=self.camera._client.capture) as submissions:
+                self.assertFalse(workflow.start(checkpoint['plan']))
+                self.assertFalse(workflow.resume())
+                self.assertFalse(workflow.cancel())
+                self.assertEqual('paused', workflow.status)
+                self.assertEqual(identity, workflow.jobId)
+                self.assertEqual(desired, workflow.desired)
+                self.assertIs(cancel_event, workflow._cancel)
+                self.assertFalse(cancel_event.is_set())
+                self.assertEqual(before, [row['requestId'] for row in workflow.steps])
+                persisted = journal.inspect(identity)
+                self.assertEqual('paused', persisted['status'])
+                self.assertEqual([row['request_id'] for row in checkpoint['steps']], [row['request_id'] for row in persisted['steps']])
+                submissions.assert_not_called()
+                release.set()
+                self.wait(lambda: workflow.canResume)
+                QTest.qWait(450)  # Include the workflow's periodic refresh; no automatic retry.
+                self.assertFalse(self.camera.workflowActive)
+                self.assertEqual('paused', workflow.status)
+                self.assertEqual(before, [row['requestId'] for row in workflow.steps])
+                submissions.assert_not_called()
+                self.wait(lambda: workflow.canResume)
+                self.assertTrue(workflow.resume())
+                self.wait(lambda: not self.camera.workflowActive and workflow.status == 'completed')
+                after = [row['requestId'] for row in workflow.steps]
+                self.assertEqual(before, after[:len(before)])
+                self.assertEqual(3, len(after))
+                self.assertEqual(3, len(set(after)))
+                self.assertEqual(3-len(before), submissions.call_count)
+                self.assertTrue(all(Path(row['filePath']).is_file() for row in workflow.steps))
+        finally:
+            release.set()
+
     def test_cancel_stops_unsubmitted_shots_and_journal_reopens(self):
         self.apps.saveCaptureRecipe('Cancel interval', 'interval', 5, 1000)
-        self.apps.runSelectedRecipe()
+        self.run_recipe_when_ready()
         self.wait(lambda: self.apps.workflow.completed >= 1 and self.camera.workflowActive)
         identity = self.apps.workflow.jobId
         self.apps.workflow.cancel()
@@ -117,7 +191,7 @@ class WorkflowMediaTests(unittest.TestCase):
         self.apps = CameraAppsController(self.camera, self.root/'uncertain-state')
         self.wait(lambda: self.camera.connectionState == 'ready' and self.apps.workflow.available)
         self.apps.saveCaptureRecipe('Lost reply', 'interval', 1, 0)
-        self.apps.runSelectedRecipe()
+        self.run_recipe_when_ready()
         self.wait(lambda: not self.camera.workflowActive and self.apps.workflow.status == 'unknown')
         identity = self.apps.workflow.steps[0]['requestId']
         self.assertEqual('unknown', self.camera.captureState)
@@ -125,7 +199,8 @@ class WorkflowMediaTests(unittest.TestCase):
         self.assertFalse(self.camera.canCapture)
         self.assertEqual([identity], service.submissions)
         service.hide_query = False
-        self.apps.workflow.resume()
+        self.wait(lambda: self.apps.workflow.canResume)
+        self.assertTrue(self.apps.workflow.resume())
         self.wait(lambda: not self.camera.workflowActive and self.apps.workflow.status == 'completed')
         self.assertEqual([identity], service.submissions)
         self.assertEqual(identity, self.apps.workflow.steps[0]['requestId'])
@@ -133,7 +208,7 @@ class WorkflowMediaTests(unittest.TestCase):
 
     def test_shutdown_cancels_active_long_interval_without_more_exposures(self):
         self.apps.saveCaptureRecipe('Long interval', 'interval', 100, 60000)
-        self.apps.runSelectedRecipe()
+        self.run_recipe_when_ready()
         self.wait(lambda: self.apps.workflow.completed == 1 and self.camera.workflowActive)
         identity = self.apps.workflow.jobId
         start = time.monotonic()
@@ -305,7 +380,7 @@ ApplicationWindow { width: 800; height: 480; visible: true
         binary=ROOT/'build/DaOS_Camera_004/processing/worker-build/Release/hf-imager.exe'
         if not binary.exists():self.skipTest('native image worker not built')
         self.apps.saveCaptureRecipe('图库编辑', 'interval', 2, 100)
-        self.apps.runSelectedRecipe();self.wait(lambda:not self.camera.workflowActive and self.apps.workflow.status=='completed')
+        self.run_recipe_when_ready();self.wait(lambda:not self.camera.workflowActive and self.apps.workflow.status=='completed')
         gallery=self.apps.media.gallery;gallery.refresh();self.wait(lambda:gallery.totalCount==2 and len(gallery.items)==2)
         engine=QQmlApplicationEngine();engine.rootContext().setContextProperty('cameraApps',self.apps)
         from soft_keyboard import SoftKeyboardController

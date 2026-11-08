@@ -30,6 +30,8 @@ class CameraWorkflow(QObject):
         self._snapshotReady.connect(self._on_snapshot)
         finished = getattr(camera, 'workflowFinished', None)
         if finished is not None: finished.connect(self._finished)
+        camera_changed = getattr(camera, 'changed', None)
+        if camera_changed is not None: camera_changed.connect(self.changed.emit)
         self._timer = QTimer(self); self._timer.setInterval(400); self._timer.timeout.connect(self.refresh)
         if self._supports: self._timer.start(); self.refresh()
 
@@ -37,6 +39,16 @@ class CameraWorkflow(QObject):
     def available(self): return self._manager is not None and callable(getattr(self._camera, 'runExclusiveWorkflow', None))
     @pyqtProperty(bool, notify=changed)
     def active(self): return bool(getattr(self._camera, 'workflowActive', False))
+    def _camera_ready(self, reconcile=False):
+        query=getattr(self._camera,'canRunExclusiveWorkflow',None)
+        return (not self._closed and self.available and not self.active and callable(query)
+                and bool(query(self._original_request_id() if reconcile else None)))
+    @pyqtProperty(bool, notify=changed)
+    def canStart(self): return self._camera_ready()
+    @pyqtProperty(bool, notify=changed)
+    def canResume(self): return self.status in {'paused','unknown'} and self._camera_ready(reconcile=True)
+    @pyqtProperty(bool, notify=changed)
+    def canCancel(self): return not self._closed and self.available and (self.active or self.canResume)
     @pyqtProperty(str, notify=changed)
     def jobId(self): return self._job
     @pyqtProperty(str, notify=changed)
@@ -123,14 +135,26 @@ class CameraWorkflow(QObject):
             self._job = identity; self._record = {}; self._error = ''; self.refresh(); self.changed.emit()
 
     def start(self, plan):
-        if not self.available or self.active:
+        if not self.canStart:
             self._error = 'Camera is unavailable or already running a workflow'; self.changed.emit(); return False
+        previous = self._job, self._record
         self._job = 'camera-' + uuid.uuid4().hex
         self._record = {'job_id': self._job, 'plan': plan, 'status': 'pending', 'steps': []}
-        return self._launch(plan, 'run')
+        accepted=self._launch(plan, 'run')
+        if not accepted:
+            self._job,self._record=previous;self.changed.emit()
+        return accepted
+
+    def _original_request_id(self):
+        unresolved = [row for row in self._record.get('steps', []) if row['status'] not in {'completed','failed','cancelled'}]
+        return self._record.get('unknown_request_id') or (unresolved[-1]['request_id'] if unresolved else '')
 
     def _launch(self, plan, desired, *, reconcile=False):
+        if not self._camera_ready(reconcile=reconcile):
+            self._error = 'Finish the current camera operation before starting a workflow'
+            self.changed.emit();return False
         identity = self._job
+        previous_desired,previous_cancel=self._desired,self._cancel
         self._desired = desired; self._error = ''; self._cancel = threading.Event()
         if desired == 'cancel': self._cancel.set()
         cancel = self._cancel
@@ -150,30 +174,32 @@ class CameraWorkflow(QObject):
                     return result
                 finally:
                     with self._lock: self._runner = None
-        unresolved = [row for row in self._record.get('steps', []) if row['status'] not in {'completed','failed','cancelled'}]
-        original_id = self._record.get('unknown_request_id') or (unresolved[-1]['request_id'] if unresolved else '')
+        original_id = self._original_request_id()
         if reconcile and original_id:
             accepted = self._camera.runExclusiveWorkflow(execute, reconcile_request_id=original_id)
         else:
             accepted = self._camera.runExclusiveWorkflow(execute)
         if not accepted:
             self._error = 'Finish the current camera operation before starting a workflow'
-            self._record['status'] = 'not_started'
+            self._desired,self._cancel=previous_desired,previous_cancel
         self.changed.emit()
         return bool(accepted)
 
     @pyqtSlot()
     def pause(self): self._control('pause')
-    @pyqtSlot()
+    @pyqtSlot(result=bool)
     def cancel(self):
+        if self._closed:return False
         if self.active:
-            self._cancel.set(); self._control('cancel')
+            self._cancel.set(); self._control('cancel');return True
         elif self.status in {'paused', 'unknown'}:
-            self._launch(self._record['plan'], 'cancel', reconcile=True)
-    @pyqtSlot()
+            return self._launch(self._record['plan'], 'cancel', reconcile=True)
+        return False
+    @pyqtSlot(result=bool)
     def resume(self):
         if not self.active and self.status in {'paused', 'unknown'}:
-            self._launch(self._record['plan'], 'run', reconcile=True)
+            return self._launch(self._record['plan'], 'run', reconcile=True)
+        return False
 
     def _control(self, desired):
         if not self.active: return

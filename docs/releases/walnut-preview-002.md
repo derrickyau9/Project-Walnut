@@ -33,6 +33,16 @@ calibration in this preview. See [the provider contract](../../ui/on-device/LEVE
 底层 RAW 拍摄仍为 HF-Sim。水平仪支持双轴显示、开关和有新鲜度校验的外部姿态
 输入，示例角度标记 DEMO；当前没有经过实机验证的 IMU 接入或校准。
 
+## Workflow handoff
+
+Run, Resume and Cancel use the controller's actual handoff readiness. A pending
+state request keeps the affected buttons unavailable. A refused handoff retains
+the paused job and its original request IDs; it never queues a later exposure.
+Unknown capture results are reconciled only with the original request ID.
+
+工作流按钮等待控制权真正就绪；忙状态拒绝不会丢失暂停记录，也不会自动重试
+拍摄。结果不明的请求继续使用原请求编号核实，避免重复曝光。
+
 ## Bound derivation inputs
 
 The base is downloadable from the

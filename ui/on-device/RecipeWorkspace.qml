@@ -69,10 +69,10 @@ Item {
                 Text { text: recipes.workflow && recipes.workflow.active ? (recipes.workflow.desired === "pause" ? qsTr("已请求暂停 · 等待当前拍摄完成") : recipes.workflow.desired === "cancel" ? qsTr("已请求取消 · 正在核实原始请求") : qsTr("相机已由此计划独占")) : qsTr("HF-Sim · 合成拍摄源"); color: "#aaaaaa"; font.pixelSize: 13; wrapMode: Text.WordWrap; Layout.fillWidth: true }
                 RowLayout {
                     Layout.fillWidth: true; spacing: 4
-                    MediaButton { objectName: "workflowRunButton"; Layout.fillWidth: true; implicitWidth: 64; text: qsTr("执行"); emphasized: true; enabled: recipes.workflow && recipes.workflow.available && !recipes.running && recipes.apps.selectedRecipeId.length > 0; onClicked: recipes.apps.runSelectedRecipe() }
+                    MediaButton { objectName: "workflowRunButton"; Layout.fillWidth: true; implicitWidth: 64; text: qsTr("执行"); emphasized: true; enabled: recipes.workflow && recipes.workflow.canStart && recipes.apps.selectedRecipeId.length > 0; onClicked: recipes.apps.runSelectedRecipe() }
                     MediaButton { objectName: "workflowPauseButton"; Layout.fillWidth: true; implicitWidth: 64; text: qsTr("暂停"); enabled: recipes.running; onClicked: recipes.workflow.pause() }
-                    MediaButton { objectName: "workflowResumeButton"; Layout.fillWidth: true; implicitWidth: 70; text: qsTr("继续"); enabled: recipes.workflow && !recipes.running && (recipes.workflow.status === "paused" || recipes.workflow.status === "unknown"); onClicked: recipes.workflow.resume() }
-                    MediaButton { objectName: "workflowCancelButton"; Layout.fillWidth: true; implicitWidth: 68; text: qsTr("取消"); enabled: recipes.workflow && (recipes.running || recipes.workflow.status === "paused" || recipes.workflow.status === "unknown"); onClicked: recipes.workflow.cancel() }
+                    MediaButton { objectName: "workflowResumeButton"; Layout.fillWidth: true; implicitWidth: 70; text: qsTr("继续"); enabled: recipes.workflow && recipes.workflow.canResume; onClicked: recipes.workflow.resume() }
+                    MediaButton { objectName: "workflowCancelButton"; Layout.fillWidth: true; implicitWidth: 68; text: qsTr("取消"); enabled: recipes.workflow && recipes.workflow.canCancel; onClicked: recipes.workflow.cancel() }
                 }
                 ScrollView {
                     Layout.fillWidth: true; Layout.fillHeight: true; Layout.minimumHeight: 0; Layout.preferredHeight: 100; clip: true
