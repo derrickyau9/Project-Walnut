@@ -1,0 +1,13 @@
+{
+  "ELF_count": 995,
+  "duplicate_payload_paths": [],
+  "errors": [],
+  "file_count": 36244,
+  "format": "DaOS-NetBSD-ui-archive-audit-v1",
+  "link_count": 940,
+  "package_count": 101,
+  "packages_with_install_scripts": 29,
+  "runtime_lock_sha256": "bfc5452c747ac773ad08247c4b506ea7bab3078ad8176990c5a1157c3f6c2245",
+  "target_boot_verified": false,
+  "target_executables_run": false
+}

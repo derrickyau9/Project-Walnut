@@ -1,0 +1,5 @@
+# Private Pi/VT splash profile; original DaOS and source stay untouched.
+include GENERIC
+ident DaOS
+makeoptions DEBUG=""
+device splash

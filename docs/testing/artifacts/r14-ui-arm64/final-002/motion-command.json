@@ -1,0 +1,5 @@
+{
+  "command": "env QT_QPA_PLATFORM=offscreen QT_QUICK_BACKEND=software QSG_RENDER_LOOP=basic QML_DISABLE_DISK_CACHE=1 PYTHONDONTWRITEBYTECODE=1 XDG_RUNTIME_DIR=/home/camera/DaOS-UI-R14-project-002/runtime /usr/local/bin/python3.12 -B /home/camera/DaOS-UI-R14-project-002/tools/review_taskbar_motion.py --output /home/camera/DaOS-UI-R14-motion-proof-002 --timeout-seconds 90",
+  "outer_timeout_seconds": 120,
+  "planned_photos": 0
+}

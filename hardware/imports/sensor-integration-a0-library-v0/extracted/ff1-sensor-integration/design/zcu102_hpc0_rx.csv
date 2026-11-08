@@ -1,0 +1,9 @@
+channel,connector,p_pin,n_pin,fpga_p_pin,fpga_n_pin,signal_direction,status
+0,J5,C6,C7,H2,H1,mezzanine_to_carrier,host_pinout_verified_sensor_mapping_unassigned
+1,J5,A2,A3,J4,J3,mezzanine_to_carrier,host_pinout_verified_sensor_mapping_unassigned
+2,J5,A6,A7,F2,F1,mezzanine_to_carrier,host_pinout_verified_sensor_mapping_unassigned
+3,J5,A10,A11,K2,K1,mezzanine_to_carrier,host_pinout_verified_sensor_mapping_unassigned
+4,J5,A14,A15,L4,L3,mezzanine_to_carrier,host_pinout_verified_sensor_mapping_unassigned
+5,J5,A18,A19,P2,P1,mezzanine_to_carrier,host_pinout_verified_sensor_mapping_unassigned
+6,J5,B16,B17,T2,T1,mezzanine_to_carrier,host_pinout_verified_sensor_mapping_unassigned
+7,J5,B12,B13,M2,M1,mezzanine_to_carrier,host_pinout_verified_sensor_mapping_unassigned

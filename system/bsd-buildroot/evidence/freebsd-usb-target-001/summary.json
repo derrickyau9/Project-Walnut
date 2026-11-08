@@ -1,0 +1,39 @@
+{
+  "format": "DaOS-FreeBSD-USB-buildroot-host-validation-v1",
+  "status": "success",
+  "input_hash": "cf7c6866b3b589d4803a3335816a569a6e8a3ef6fae2aa5aa330249413611541",
+  "workspace": "/home/dy09/daos-bsd-buildroot-usb",
+  "stages_actually_verified": [
+    "configure",
+    "base-reuse"
+  ],
+  "source_compilation_executed": false,
+  "USB_build_executed_via_new_backend": false,
+  "package_or_image_build_executed_via_new_backend": false,
+  "VM_started": false,
+  "physical_usb_validated": false,
+  "base_reused": true,
+  "world_recompiled": false,
+  "kernel_recompiled": false,
+  "tests": {
+    "command": "python3 -B -m unittest backends.test_freebsd_usb test_cli backends.test_netbsd test_vm -q",
+    "working_directory": "system/bsd-buildroot",
+    "passed": 56,
+    "exit_status": 0,
+    "duration_seconds": 5.72
+  },
+  "evidence_sha256": {
+    "configure.json": "5773d4545a4852639073deaec630c4f61bd42628943056094bcb86dcca4a1d7f",
+    "base-reuse.json": "a1399eb6cce24fac0cfdfeb875867569472a60c4d6ca7e8d8690313fd5fecd3c",
+    "workspace.json": "e42a0040e72b2fca02d552b03e93f7a77b5dd954f008f064c28a87f88177f13b",
+    "configure-verification.log": "a214460cad01728c1604fca99e7693b9e6202335c39825ce2a8da46f6551bb49",
+    "base-reuse-verification.log": "783547eb2a17f46e9398c4d553d41425880e49ede9ec167c4cd3525a508fcff3",
+    "windows-cli-plan.json": "b21cd57abbe9c30afd9e431067c3e5c7c57e62ef057c373a658984fc66618947"
+  },
+  "source_sha256": {
+    "system/bsd-buildroot/daos.py": "6db22d6efec70ec8f898f8c47ef23a3e681d2536ae140702b7acf56ce94fe193",
+    "system/bsd-buildroot/backends/freebsd_usb.py": "298e5652f74c69f7b5b5084078128cc1b9b45ecdc1bfe5faa11226c8a5aaff20",
+    "system/bsd-buildroot/backends/freebsd_usb_guest.py": "913268122b58bfa24b88cd842b2f09471d95d8330ff5a5b4ffaf03d77c87ddbc",
+    "system/bsd-buildroot/targets/rpi4-aarch64-usb/profile.json": "46121a11d62c85dca09a8b4006d3417487aad3a1a441cd80afdab58a76f049e9"
+  }
+}

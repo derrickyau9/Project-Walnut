@@ -1,0 +1,72 @@
+{
+  "format": "DaOS-bsd-source-lock-v1",
+  "upstream": {
+    "name": "NetBSD",
+    "release": "11.1",
+    "release_date": "2026-11-02",
+    "release_url": "https://www.netbsd.org/releases/formal-11/NetBSD-11.1.html"
+  },
+  "archives": [
+    {
+      "name": "src.tgz",
+      "url": "https://cdn.netbsd.org/pub/NetBSD/NetBSD-11.1/source/sets/src.tgz",
+      "sha512": "229d7e090d02c23793d3936fdeb825f5f7b955c13e0de7dd3f7b3394801ea70cce06dc8d8c6400a5a93e18d066fa10e18b3d77703e2d37dc0a4737ac61b45d47",
+      "role": "userland",
+      "extract_prefix": "usr/src",
+      "optional": false,
+      "size": 321222697
+    },
+    {
+      "name": "syssrc.tgz",
+      "url": "https://cdn.netbsd.org/pub/NetBSD/NetBSD-11.1/source/sets/syssrc.tgz",
+      "sha512": "11ae0c68cd662659d10abd6dd110cbc77bdc073ab03d878e931b3b7fe85ad0882bd51ec677fc0410a386cd14e45997e94b029e0ec2429d539d4707e6de332454",
+      "role": "kernel",
+      "extract_prefix": "usr/src",
+      "optional": false,
+      "size": 80616584
+    },
+    {
+      "name": "gnusrc.tgz",
+      "url": "https://cdn.netbsd.org/pub/NetBSD/NetBSD-11.1/source/sets/gnusrc.tgz",
+      "sha512": "f8849fb38c0f5612b67824717d24caf17efdea4d398dea662ff9f3384037c48381d701ce9e6dd97404e068601047028f345735a91efd7d27b5edf4d2c0c9721a",
+      "role": "toolchain",
+      "extract_prefix": "usr/src",
+      "optional": false,
+      "size": 271561604
+    },
+    {
+      "name": "sharesrc.tgz",
+      "url": "https://cdn.netbsd.org/pub/NetBSD/NetBSD-11.1/source/sets/sharesrc.tgz",
+      "sha512": "fecd63f9d2368aea6e73eef083eb51608b0392221f731e00c99b01c365320b981ec33a7a6ef3d52c8c0641d0c28d29eb58a1890ce679e360711ae19f272aac64",
+      "role": "shared-data",
+      "extract_prefix": "usr/src",
+      "optional": false,
+      "size": 7776162
+    },
+    {
+      "name": "xsrc.tgz",
+      "url": "https://cdn.netbsd.org/pub/NetBSD/NetBSD-11.1/source/sets/xsrc.tgz",
+      "sha512": "ab859e7cb7197e759f75c4df4a0eb6d78f99673d46b0614eb187d0902c337556094ce012b97065f1422a8c8354365671ab13581a65522d7431e1acdf252b7f2b",
+      "role": "x11",
+      "extract_prefix": "usr/xsrc",
+      "optional": true,
+      "size": 184886529
+    }
+  ],
+  "verification": {
+    "checksum_url": "https://cdn.netbsd.org/pub/NetBSD/NetBSD-11.1/source/sets/SHA512",
+    "signed_manifest_url": "https://cdn.netbsd.org/pub/NetBSD/security/hashes/NetBSD-11.1_hashes.asc",
+    "signing_key_url": "https://cdn.netbsd.org/pub/NetBSD/security/PGP/security-officer@netbsd.org.asc",
+    "signing_fingerprint": "271133262BF35CB50D4F504689261E17F5EF49FF",
+    "signature_verified": true,
+    "source_hashes_match_signed_manifest": true,
+    "source_archive_bytes_verified": false,
+    "receipt": "references/NetBSD-11.1-metadata-verification.json",
+    "metadata_sha512": {
+      "NetBSD-11.1_hashes.asc": "8f1657f7ef302ab37148f474fe5c671f3180789dd65bdb815b3770f6c2043d68c6144da4e66abed263a5e1a909e0e1cd9e1e313169b74b5cbf3b39c92a611040",
+      "security-officer@netbsd.org.asc": "683c13c137ab36b9ac3a2d820849e5e1a87c12be65418a462d73aa3ff1700556c80e7e860d27f022254046e91446d33c292a200ba0271502929860271d96104d",
+      "NetBSD-11.1-source-sets-SHA512": "9b47b3af6990dba6cb1770a6d8c286d039f357a64fe20caa01b631fdf5f890d292f0f621df8969af26ee4de7690a9c850ed495cf92b30bb8392c7d3578476c42"
+    },
+    "key_trust_basis": "Official HTTPS release announcement links; fingerprint not independently attested."
+  }
+}

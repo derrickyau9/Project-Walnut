@@ -1,0 +1,6 @@
+{
+  "returncode": 0,
+  "stdout": "{\"status\": \"success\", \"identity\": {\"system\": \"FreeBSD\", \"machine\": \"arm64\", \"architecture\": \"aarch64\", \"release\": \"15.1-RELEASE-p6\", \"python\": \"3.12.15 (main, Oct 29 2026, 02:27:54) [Clang 19.1.7 (https://github.com/llvm/llvm-project.git llvmorg-19.1.7-0-gcd7080\", \"uid\": 0, \"uname\": \"FreeBSD daos-arm64-dev 15.1-RELEASE-p6 FreeBSD 15.1-RELEASE-p6 releng/15.1-n283643-95719d8a895b GENERIC arm64\", \"bin_sh\": {\"machine\": 183, \"type\": 3, \"OSABI\": 9, \"sha256\": \"a926cb397e68f278891af35853fa46b2e85854a0a6e7f7538b2f2c446ba032e8\", \"bytes\": 167384}}, \"daemon_ready\": {\"transport\": \"loopback-tcp-test\", \"host\": \"127.0.0.1\", \"port\": 54406, \"pid\": 2657, \"usb_hardware_validated\": false, \"authorized_key_fingerprints\": [\"8c01edc4c8ef74efa01bd49592df237bb78348f4bc68234ce2918d3698dbb9fd\", \"77692ef6437a69c159767aea568f8cf2004ad982b9913a80c2ee031e15445dc5\"]}, \"module_loaded\": true, \"selected_template\": 55813, \"usb_hardware_validated\": false}\n",
+  "stderr": "",
+  "seconds": 4.2461644080012775
+}

@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "C:\Users\derri\Documents\Codex\2026-11-05\task\tools\source_bundle.py", line 397, in <module>
+    main()
+  File "C:\Users\derri\Documents\Codex\2026-11-05\task\tools\source_bundle.py", line 393, in main
+    print(json.dumps(create(args.output) if args.output else verify(args.verify), indent=2))
+                     ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\derri\Documents\Codex\2026-11-05\task\tools\source_bundle.py", line 304, in create
+    raise ValueError('personal workspace prefix remains in ' + name)
+ValueError: personal workspace prefix remains in docs/testing/artifacts/r12-ui-arm64/fifo-reproduction/probe.log

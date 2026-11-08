@@ -1,0 +1,20 @@
+{
+  "diagnostic": "001",
+  "files": {
+    "source.py": {
+      "bytes": 8676,
+      "sha256": "14e99053d540621b1f35b203423607feea263c2e45effeb7ac1c5d068c643f85"
+    },
+    "trace.json": {
+      "bytes": 1691,
+      "sha256": "9c3787254a77954ed89593f6b6d825bd99f13328b8beaaf2ed0ec3448f43e2cf"
+    },
+    "transport.json": {
+      "bytes": 267,
+      "sha256": "59638178b4a96693297924fd481b90100407e4ac482cdc8d8051c1d35849ee93"
+    }
+  },
+  "final_product_proof": false,
+  "format": "DaOS-r14-animation-diagnostic-archive-v1",
+  "notes": "001 failed before animation because QQmlComponent was not ready."
+}

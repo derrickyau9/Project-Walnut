@@ -1,0 +1,188 @@
+[
+  {
+    "net": "HALF_RAW",
+    "from": "R1.2",
+    "to": "R3.1",
+    "grid_cost": 32.2842712
+  },
+  {
+    "net": "HALF_RAW",
+    "from": "R1.2",
+    "to": "SW1.1",
+    "grid_cost": 106.6274169599999
+  },
+  {
+    "net": "HALF_RAW",
+    "from": "SW1.1",
+    "to": "SW1.1",
+    "grid_cost": 65
+  },
+  {
+    "net": "FULL_RAW",
+    "from": "R2.2",
+    "to": "R4.1",
+    "grid_cost": 32.2842712
+  },
+  {
+    "net": "FULL_RAW",
+    "from": "R2.2",
+    "to": "SW2.1",
+    "grid_cost": 106.6274169599999
+  },
+  {
+    "net": "FULL_RAW",
+    "from": "SW2.1",
+    "to": "SW2.1",
+    "grid_cost": 65
+  },
+  {
+    "net": "HALF_N",
+    "from": "C2.1",
+    "to": "R3.2",
+    "grid_cost": 32.2842712
+  },
+  {
+    "net": "HALF_N",
+    "from": "R3.2",
+    "to": "J1.3",
+    "grid_cost": 206.58073563999986
+  },
+  {
+    "net": "FULL_N",
+    "from": "C3.1",
+    "to": "R4.2",
+    "grid_cost": 32.2842712
+  },
+  {
+    "net": "FULL_N",
+    "from": "R4.2",
+    "to": "J1.4",
+    "grid_cost": 425.94112543999995
+  },
+  {
+    "net": "RESET_N",
+    "from": "J1.5",
+    "to": "R5.2",
+    "grid_cost": 184.45079327999997
+  },
+  {
+    "net": "RESET_N",
+    "from": "R5.2",
+    "to": "U1.2",
+    "grid_cost": 49.52691188
+  },
+  {
+    "net": "LED_A",
+    "from": "D1.2",
+    "to": "R6.2",
+    "grid_cost": 23
+  },
+  {
+    "net": "V3V3",
+    "from": "C1.1",
+    "to": "U1.3",
+    "grid_cost": 31.82842712
+  },
+  {
+    "net": "V3V3",
+    "from": "U1.3",
+    "to": "R5.1",
+    "grid_cost": 100.74011527999988
+  },
+  {
+    "net": "V3V3",
+    "from": "R5.1",
+    "to": "R1.1",
+    "grid_cost": 150.14213559999996
+  },
+  {
+    "net": "V3V3",
+    "from": "C1.1",
+    "to": "R6.1",
+    "grid_cost": 142.82842712
+  },
+  {
+    "net": "V3V3",
+    "from": "R6.1",
+    "to": "R2.1",
+    "grid_cost": 148.28427119999998
+  },
+  {
+    "net": "V3V3",
+    "from": "R1.1",
+    "to": "C4.1",
+    "grid_cost": 153.1370847999998
+  },
+  {
+    "net": "V3V3",
+    "from": "C4.1",
+    "to": "J1.1",
+    "grid_cost": 58.568542400000005
+  },
+  {
+    "net": "GND",
+    "from": "C1.2",
+    "to": "U1.1",
+    "grid_cost": 52.313708479999995
+  },
+  {
+    "net": "GND",
+    "from": "C1.2",
+    "to": "C2.2",
+    "grid_cost": 82.82842711999999
+  },
+  {
+    "net": "GND",
+    "from": "C2.2",
+    "to": "SW1.2",
+    "grid_cost": 96.24264067999998
+  },
+  {
+    "net": "GND",
+    "from": "SW1.2",
+    "to": "SW1.2",
+    "grid_cost": 65
+  },
+  {
+    "net": "GND",
+    "from": "SW1.2",
+    "to": "C4.2",
+    "grid_cost": 136.92388139999977
+  },
+  {
+    "net": "GND",
+    "from": "C4.2",
+    "to": "J1.2",
+    "grid_cost": 116.43860003999978
+  },
+  {
+    "net": "GND",
+    "from": "J1.2",
+    "to": "J1.6",
+    "grid_cost": 113.59797967999991
+  },
+  {
+    "net": "GND",
+    "from": "SW1.2",
+    "to": "SW2.2",
+    "grid_cost": 155
+  },
+  {
+    "net": "GND",
+    "from": "SW2.2",
+    "to": "SW2.2",
+    "grid_cost": 65
+  },
+  {
+    "net": "GND",
+    "from": "SW2.2",
+    "to": "C3.2",
+    "grid_cost": 96.24264067999998
+  },
+  {
+    "net": "GND",
+    "from": "C3.2",
+    "to": "D1.1",
+    "grid_cost": 107.87005763999991
+  }
+]

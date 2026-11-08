@@ -1,0 +1,37 @@
+{"event": "listening", "transport": "loopback-tcp-test", "host": "127.0.0.1", "port": 54406, "pid": 2657, "usb_hardware_validated": false, "authorized_key_fingerprints": ["8c01edc4c8ef74efa01bd49592df237bb78348f4bc68234ce2918d3698dbb9fd", "77692ef6437a69c159767aea568f8cf2004ad982b9913a80c2ee031e15445dc5"]}
+{"authentication_required": true, "event": "transport_opened", "time": 1793945798.4730282}
+{"event": "transport_closed", "reason": "transport EOF", "time": 1793945798.4762866}
+{"authentication_required": true, "event": "transport_opened", "time": 1793945798.671985}
+{"event": "authenticated", "serial": "DAOS-BSD-DEV", "time": 1793945798.7201917}
+{"event": "shell_started", "pid": 2673, "pty": false, "stream": 1, "time": 1793945798.991188, "v2": true}
+{"event": "shell_reaped", "pid": 2673, "returncode": 7, "stream": 1, "time": 1793945799.1222165}
+{"event": "shell_started", "pid": 2674, "pty": true, "stream": 2, "time": 1793945799.276814, "v2": false}
+{"event": "shell_reaped", "pid": 2674, "returncode": 0, "stream": 2, "time": 1793945799.5477724}
+{"event": "shell_started", "pid": 2675, "pty": false, "stream": 3, "time": 1793945799.7044325, "v2": true}
+{"event": "shell_reaped", "pid": 2675, "returncode": 0, "stream": 3, "time": 1793945799.9135008}
+{"event": "shell_started", "pid": 2676, "pty": false, "stream": 4, "time": 1793945800.0915632, "v2": true}
+{"event": "shell_reaped", "pid": 2676, "returncode": 0, "stream": 4, "time": 1793945800.2711258}
+{"event": "shell_started", "pid": 2677, "pty": true, "stream": 5, "time": 1793945800.402673, "v2": true}
+{"event": "shell_reaped", "pid": 2677, "returncode": 0, "stream": 5, "time": 1793945800.7613494}
+{"event": "shell_started", "pid": 2678, "pty": true, "stream": 6, "time": 1793945800.8906143, "v2": true}
+{"event": "shell_reaped", "pid": 2678, "returncode": 9, "stream": 6, "time": 1793945801.4132912}
+{"event": "shell_started", "pid": 2681, "pty": false, "stream": 8, "time": 1793945801.7671168, "v2": true}
+{"event": "shell_started", "pid": 2679, "pty": false, "stream": 7, "time": 1793945801.7483175, "v2": true}
+{"event": "shell_started", "pid": 2682, "pty": false, "stream": 9, "time": 1793945801.77964, "v2": true}
+{"event": "shell_started", "pid": 2685, "pty": false, "stream": 10, "time": 1793945801.9457645, "v2": true}
+{"event": "shell_reaped", "pid": 2679, "returncode": 0, "stream": 7, "time": 1793945801.977261}
+{"event": "shell_reaped", "pid": 2681, "returncode": 0, "stream": 8, "time": 1793945802.024599}
+{"event": "shell_reaped", "pid": 2682, "returncode": 0, "stream": 9, "time": 1793945802.0259936}
+{"event": "shell_reaped", "pid": 2685, "returncode": 0, "stream": 10, "time": 1793945802.150754}
+{"event": "shell_started", "pid": 2687, "pty": false, "stream": 12, "time": 1793945802.4506888, "v2": true}
+{"event": "shell_reaped", "pid": 2687, "returncode": 0, "stream": 12, "time": 1793945802.5922472}
+{"event": "service_rejected", "remote_id": 50, "time": 1793945802.9612594}
+{"event": "shell_started", "pid": 2688, "pty": false, "stream": 14, "time": 1793945803.0759108, "v2": true}
+{"event": "shell_started", "pid": 2689, "pty": false, "stream": 15, "time": 1793945803.2498803, "v2": true}
+{"event": "shell_reaped", "pid": 2688, "returncode": -1, "stream": 14, "time": 1793945803.2373464}
+{"event": "shell_reaped", "pid": 2689, "returncode": 1, "stream": 15, "time": 1793945803.3023}
+{"event": "transport_closed", "reason": "transport EOF", "time": 1793945803.30581}
+{"authentication_required": true, "event": "transport_opened", "time": 1793945803.4289927}
+{"event": "authorization_denied", "received_public_key": false, "time": 1793945803.471258}
+{"event": "authorization_denied", "received_public_key": true, "time": 1793945803.508174}
+{"event": "transport_closed", "reason": "transport EOF", "time": 1793945803.5111582}

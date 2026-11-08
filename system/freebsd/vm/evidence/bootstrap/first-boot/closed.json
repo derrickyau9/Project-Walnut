@@ -1,0 +1,9 @@
+{
+  "base_unchanged": true,
+  "format": "hf-freebsd-vm-closed-v1",
+  "ready": false,
+  "reason": "RuntimeError: FreeBSD VM exited without a clean ready lifecycle; inspect serial.log",
+  "returncode": 0,
+  "seconds": 72.03888237900014,
+  "serial_sha256": "f11e337b1c9ceb9cd68933f29ca02273714c7233a655d310e147964e48bba6f6"
+}

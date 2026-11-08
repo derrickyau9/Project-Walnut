@@ -1,0 +1,396 @@
+test_dynamic_interpreter_or_needed_library_is_not_claimed_static (test_arm64_elf.Arm64ElfTests.test_dynamic_interpreter_or_needed_library_is_not_claimed_static) ... ok
+test_genuine_machine_fields_required_not_a_reported_architecture_string (test_arm64_elf.Arm64ElfTests.test_genuine_machine_fields_required_not_a_reported_architecture_string) ... ok
+test_truncated_or_wrong_class_headers_are_rejected (test_arm64_elf.Arm64ElfTests.test_truncated_or_wrong_class_headers_are_rejected) ... ok
+test_clangxx_invocation_name_is_preserved (test_arm64_tools.Arm64ToolSelectionTests.test_clangxx_invocation_name_is_preserved) ... skipped 'POSIX executable symlink semantics'
+test_existing_matching_single_config_needs_no_reconfiguration (test_build_native.NativeBuildConfigurationTests.test_existing_matching_single_config_needs_no_reconfiguration) ... ok
+test_multi_config_keeps_configuration_selection_on_build_command (test_build_native.NativeBuildConfigurationTests.test_multi_config_keeps_configuration_selection_on_build_command) ... ok
+test_windows_ninja_style_single_config_sets_requested_build_type (test_build_native.NativeBuildConfigurationTests.test_windows_ninja_style_single_config_sets_requested_build_type) ... ok
+test_atomic_export_failure_preserves_existing_file_and_cleans_staging_file (test_calibration.CalibrationTests.test_atomic_export_failure_preserves_existing_file_and_cleans_staging_file) ... ok
+test_atomic_import_failure_leaves_no_partial_visible_package (test_calibration.CalibrationTests.test_atomic_import_failure_leaves_no_partial_visible_package) ... ok
+test_checksum_canonical_order_whitespace_and_copy_isolation (test_calibration.CalibrationTests.test_checksum_canonical_order_whitespace_and_copy_isolation) ... ok
+test_concurrent_import_cannot_overwrite_committed_identity (test_calibration.CalibrationTests.test_concurrent_import_cannot_overwrite_committed_identity) ... ok
+test_corrupt_package_is_not_loaded_or_overwritten (test_calibration.CalibrationTests.test_corrupt_package_is_not_loaded_or_overwritten) ... ok
+test_export_cannot_overwrite_store_identity (test_calibration.CalibrationTests.test_export_cannot_overwrite_store_identity) ... ok
+test_failed_synchronization_does_not_commit (test_calibration.CalibrationTests.test_failed_synchronization_does_not_commit) ... ok
+test_identifiers_reject_traversal_absolute_paths_and_windows_devices (test_calibration.CalibrationTests.test_identifiers_reject_traversal_absolute_paths_and_windows_devices) ... ok
+test_identity_is_immutable_and_idempotent (test_calibration.CalibrationTests.test_identity_is_immutable_and_idempotent) ... ok
+test_import_export_round_trip_and_restart_use_persistent_data (test_calibration.CalibrationTests.test_import_export_round_trip_and_restart_use_persistent_data) ... ok
+test_invalid_import_never_replaces_existing_valid_package (test_calibration.CalibrationTests.test_invalid_import_never_replaces_existing_valid_package) ... ok
+test_malformed_duplicate_nonfinite_oversized_and_nonobject_json (test_calibration.CalibrationTests.test_malformed_duplicate_nonfinite_oversized_and_nonobject_json) ... ok
+test_mismatched_sensor_is_diagnosed_before_creating_package_paths (test_calibration.CalibrationTests.test_mismatched_sensor_is_diagnosed_before_creating_package_paths) ... ok
+test_missing_and_unexpected_entries_have_explicit_diagnostics (test_calibration.CalibrationTests.test_missing_and_unexpected_entries_have_explicit_diagnostics) ... ok
+test_stored_sensor_and_package_path_identity_are_rechecked (test_calibration.CalibrationTests.test_stored_sensor_and_package_path_identity_are_rechecked) ... ok
+test_strict_schema_provenance_and_numeric_validation (test_calibration.CalibrationTests.test_strict_schema_provenance_and_numeric_validation) ... ok
+test_symlink_escape_is_rejected_when_platform_allows_symlinks (test_calibration.CalibrationTests.test_symlink_escape_is_rejected_when_platform_allows_symlinks) ... ok
+test_synthetic_statistics_are_deterministic_and_not_hardware_calibration (test_calibration.CalibrationTests.test_synthetic_statistics_are_deterministic_and_not_hardware_calibration) ... ok
+test_system_image_and_calibration_roots_must_be_disjoint (test_calibration.CalibrationTests.test_system_image_and_calibration_roots_must_be_disjoint) ... ok
+test_uncalibrated_marker_contains_no_inferred_values (test_calibration.CalibrationTests.test_uncalibrated_marker_contains_no_inferred_values) ... ok
+test_fault_and_invalid_input (test_camera_cli.BasicCaptureCliTests.test_fault_and_invalid_input) ... ok
+test_independent_capture_query_and_same_id_does_not_retake (test_camera_cli.BasicCaptureCliTests.test_independent_capture_query_and_same_id_does_not_retake) ... ok
+test_control_capture_and_query (test_camera_http.HttpTests.test_control_capture_and_query) ... 127.0.0.1 - - [05/Nov/2026 05:07:53] "GET /api/v1/capabilities HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 05:07:53] "POST /api/v1/control/acquire HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 05:07:53] "POST /api/v1/control/heartbeat HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 05:07:53] "POST /api/v1/captures HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 05:07:53] "GET /api/v1/captures/ceb92a53-43f6-4631-9994-1ca2bbc4be92 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 05:07:53] "GET /api/v1/captures/ceb92a53-43f6-4631-9994-1ca2bbc4be92 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 05:07:53] "POST /api/v1/control/release HTTP/1.1" 200 -
+ok
+test_disconnect_and_explicit_reconnect_via_http (test_camera_http.HttpTests.test_disconnect_and_explicit_reconnect_via_http) ... 127.0.0.1 - - [05/Nov/2026 05:07:54] "POST /api/v1/control/acquire HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 05:07:54] "POST /api/v1/preview/start HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 05:07:54] "POST /api/v1/captures HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 05:07:54] "GET /api/v1/captures/3ec8fc79-e077-4df7-8fab-128e60b4be37 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 05:07:54] "GET /api/v1/captures/3ec8fc79-e077-4df7-8fab-128e60b4be37 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 05:07:54] "GET /api/v1/state HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 05:07:54] "GET /api/v1/preview.png HTTP/1.1" 503 -
+127.0.0.1 - - [05/Nov/2026 05:07:54] "POST /api/v1/device/reconnect HTTP/1.1" 403 -
+127.0.0.1 - - [05/Nov/2026 05:07:54] "POST /api/v1/device/reconnect HTTP/1.1" 200 -
+ok
+test_preview_requires_control_to_start_and_serves_png (test_camera_http.HttpTests.test_preview_requires_control_to_start_and_serves_png) ... 127.0.0.1 - - [05/Nov/2026 05:07:55] "GET /api/v1/preview.png HTTP/1.1" 503 -
+127.0.0.1 - - [05/Nov/2026 05:07:55] "POST /api/v1/preview/start HTTP/1.1" 403 -
+127.0.0.1 - - [05/Nov/2026 05:07:55] "POST /api/v1/control/acquire HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 05:07:55] "POST /api/v1/preview/start HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 05:07:55] "GET /api/v1/preview.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 05:07:55] "POST /api/v1/preview/stop HTTP/1.1" 200 -
+ok
+test_rejects_foreign_origin_host_and_non_json (test_camera_http.HttpTests.test_rejects_foreign_origin_host_and_non_json) ... 127.0.0.1 - - [05/Nov/2026 05:07:55] "POST /api/v1/control/acquire HTTP/1.1" 403 -
+127.0.0.1 - - [05/Nov/2026 05:07:55] "POST /api/v1/control/acquire HTTP/1.1" 400 -
+127.0.0.1 - - [05/Nov/2026 05:07:55] "GET /api/v1/state HTTP/1.1" 403 -
+127.0.0.1 - - [05/Nov/2026 05:07:55] "GET /../journal.sqlite3 HTTP/1.1" 404 -
+ok
+test_request_workers_are_bounded (test_camera_http.HttpTests.test_request_workers_are_bounded) ... 127.0.0.1 - - [05/Nov/2026 05:07:56] "POST /api/v1/control/acquire HTTP/1.1" 400 -
+ok
+test_workflow_execution_via_http (test_camera_http.HttpTests.test_workflow_execution_via_http) ... 127.0.0.1 - - [05/Nov/2026 05:07:57] "POST /api/v1/workflows HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 05:07:57] "GET /api/v1/workflows/http-sequence HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 05:07:57] "GET /api/v1/workflows/http-sequence HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 05:07:57] "GET /api/v1/workflows/http-sequence HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 05:07:57] "GET /api/v1/workflows/http-sequence HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 05:07:57] "GET /api/v1/workflows/http-sequence HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 05:07:57] "GET /api/v1/workflows/http-sequence HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 05:07:57] "GET /api/v1/workflows/http-sequence HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 05:07:57] "GET /api/v1/workflows/http-sequence HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 05:07:57] "GET /api/v1/workflows/http-sequence HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 05:07:57] "GET /api/v1/workflows/http-sequence HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 05:07:57] "GET /api/v1/workflows/http-sequence HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 05:07:57] "GET /api/v1/workflows HTTP/1.1" 200 -
+ok
+test_actual_process_lock_and_abrupt_exit_recovery (test_camera_service.CameraServiceTests.test_actual_process_lock_and_abrupt_exit_recovery) ... ok
+test_capture_identity_and_payload_conflict (test_camera_service.CameraServiceTests.test_capture_identity_and_payload_conflict) ... ok
+test_disconnect_persists_until_authorized_reconnect (test_camera_service.CameraServiceTests.test_disconnect_persists_until_authorized_reconnect) ... ok
+test_expiration_does_not_interrupt_capture_or_allow_overlap (test_camera_service.CameraServiceTests.test_expiration_does_not_interrupt_capture_or_allow_overlap) ... ok
+test_failed_admission_commit_rolls_back_and_stops_service (test_camera_service.CameraServiceTests.test_failed_admission_commit_rolls_back_and_stops_service) ... ok
+test_fault_and_cancellation (test_camera_service.CameraServiceTests.test_fault_and_cancellation) ... ok
+test_files_created_after_admission_are_never_overwritten_or_deleted (test_camera_service.CameraServiceTests.test_files_created_after_admission_are_never_overwritten_or_deleted) ... ok
+test_interrupted_record_becomes_unknown_without_reexecution (test_camera_service.CameraServiceTests.test_interrupted_record_becomes_unknown_without_reexecution) ... ok
+test_lease_heartbeat_and_expiry_fence (test_camera_service.CameraServiceTests.test_lease_heartbeat_and_expiry_fence) ... ok
+test_no_completion_before_file_commit (test_camera_service.CameraServiceTests.test_no_completion_before_file_commit) ... ok
+test_one_instance_per_data_dir (test_camera_service.CameraServiceTests.test_one_instance_per_data_dir) ... ok
+test_process_crash_after_rename_is_unknown_and_not_reexecuted (test_camera_service.CameraServiceTests.test_process_crash_after_rename_is_unknown_and_not_reexecuted) ... ok
+test_stale_epoch_and_restart (test_camera_service.CameraServiceTests.test_stale_epoch_and_restart) ... ok
+test_thread_start_failure_releases_slot_and_journals_failure (test_camera_service.CameraServiceTests.test_thread_start_failure_releases_slot_and_journals_failure) ... ok
+test_recipe_normalization_matches_offline_cli_contract (test_console_contracts.ConsoleContractTests.test_recipe_normalization_matches_offline_cli_contract) ... ok
+test_recipe_rejects_duplicate_secret_complex_and_oversized_fields (test_console_contracts.ConsoleContractTests.test_recipe_rejects_duplicate_secret_complex_and_oversized_fields) ... ok
+test_retained_page_is_bounded_allowlisted_and_truthful (test_console_contracts.ConsoleContractTests.test_retained_page_is_bounded_allowlisted_and_truthful) ... ok
+test_recent_jobs_are_bounded_without_deleting_older_history (test_console_contracts.WorkflowListContractTests.test_recent_jobs_are_bounded_without_deleting_older_history) ... ok
+test_retained_page_and_asset_metadata_contracts (test_contracts.ContractTests.test_retained_page_and_asset_metadata_contracts) ... ok
+test_versioned_request_and_live_service_records (test_contracts.ContractTests.test_versioned_request_and_live_service_records) ... ok
+test_atomic_state_replace_failure_retains_previous_uuid_and_file (test_device_ui.QtDeviceTests.test_atomic_state_replace_failure_retains_previous_uuid_and_file) ... ok
+test_browsing_does_not_resolve_an_unconfirmed_current_request (test_device_ui.QtDeviceTests.test_browsing_does_not_resolve_an_unconfirmed_current_request) ... ok
+test_busy_reference_shutdown_closes_authority_after_capture_finishes (test_device_ui.QtDeviceTests.test_busy_reference_shutdown_closes_authority_after_capture_finishes) ... ok
+test_camera_action_queue_stays_bounded_under_repeated_clicks (test_device_ui.QtDeviceTests.test_camera_action_queue_stays_bounded_under_repeated_clicks) ... ok
+test_corrupt_state_backup_failure_or_oversize_keeps_capture_held (test_device_ui.QtDeviceTests.test_corrupt_state_backup_failure_or_oversize_keeps_capture_held) ... ok
+test_http_attach_native_capture_releases_lease_and_keeps_server_alive (test_device_ui.QtDeviceTests.test_http_attach_native_capture_releases_lease_and_keeps_server_alive) ... ok
+test_invalid_lease_metadata_cannot_reach_qt_timer (test_device_ui.QtDeviceTests.test_invalid_lease_metadata_cannot_reach_qt_timer) ... ok
+test_late_preview_cannot_return_after_disconnect (test_device_ui.QtDeviceTests.test_late_preview_cannot_return_after_disconnect) ... ok
+test_malformed_authority_state_cannot_overflow_qt_properties (test_device_ui.QtDeviceTests.test_malformed_authority_state_cannot_overflow_qt_properties) ... ok
+test_malformed_completion_fields_are_held_without_opening_metadata_paths (test_device_ui.QtDeviceTests.test_malformed_completion_fields_are_held_without_opening_metadata_paths) ... ok
+test_native_authority_actual_capture_and_dng (test_device_ui.QtDeviceTests.test_native_authority_actual_capture_and_dng) ... ok
+test_native_cancel_is_confirmed_by_original_request (test_device_ui.QtDeviceTests.test_native_cancel_is_confirmed_by_original_request) ... ok
+test_native_corrupt_state_ack_preserves_backup_and_original_record (test_device_ui.QtDeviceTests.test_native_corrupt_state_ack_preserves_backup_and_original_record) ... ok
+test_native_disconnect_unknown_reconnect_does_not_resubmit (test_device_ui.QtDeviceTests.test_native_disconnect_unknown_reconnect_does_not_resubmit) ... ok
+test_native_http_retained_qml_export_uses_client_destination (test_device_ui.QtDeviceTests.test_native_http_retained_qml_export_uses_client_destination) ... ok
+test_native_http_short_lease_and_stale_client_shutdown_handoff (test_device_ui.QtDeviceTests.test_native_http_short_lease_and_stale_client_shutdown_handoff) ... ok
+test_native_unknown_acknowledgment_allows_new_uuid_and_preserves_old_record (test_device_ui.QtDeviceTests.test_native_unknown_acknowledgment_allows_new_uuid_and_preserves_old_record) ... ok
+test_pending_saved_uuid_without_journal_record_is_not_replayed (test_device_ui.QtDeviceTests.test_pending_saved_uuid_without_journal_record_is_not_replayed) ... ok
+test_reference_controls_preview_capture_query_and_retained_id (test_device_ui.QtDeviceTests.test_reference_controls_preview_capture_query_and_retained_id) ... ok
+test_request_id_storage_failure_prevents_submission (test_device_ui.QtDeviceTests.test_request_id_storage_failure_prevents_submission) ... ok
+test_retained_page_replaces_model_and_slow_export_does_not_starve_lease (test_device_ui.QtDeviceTests.test_retained_page_replaces_model_and_slow_export_does_not_starve_lease) ... ok
+test_retained_reference_review_and_export_preserve_current_capture (test_device_ui.QtDeviceTests.test_retained_reference_review_and_export_preserve_current_capture) ... ok
+test_unknown_submission_disables_shutter_and_queries_original_without_retry (test_device_ui.QtDeviceTests.test_unknown_submission_disables_shutter_and_queries_original_without_retry) ... ok
+test_calibration_reuses_checksum_schema_and_identity_validation (test_diagnostics.DiagnosticsTests.test_calibration_reuses_checksum_schema_and_identity_validation) ... ok
+test_changed_database_copy_is_inconclusive (test_diagnostics.DiagnosticsTests.test_changed_database_copy_is_inconclusive) ... ok
+test_cli_emits_json_and_warning_error_exit_codes (test_diagnostics.DiagnosticsTests.test_cli_emits_json_and_warning_error_exit_codes) ... ok
+test_corrupt_journal_is_reported_without_repair_or_false_orphans (test_diagnostics.DiagnosticsTests.test_corrupt_journal_is_reported_without_repair_or_false_orphans) ... ok
+test_dng_request_identity_mismatch_is_reported (test_diagnostics.DiagnosticsTests.test_dng_request_identity_mismatch_is_reported) ... ok
+test_empty_native_lock_is_read_only_and_exclusive (test_diagnostics.DiagnosticsTests.test_empty_native_lock_is_read_only_and_exclusive) ... ok
+test_hot_rollback_journal_is_identified_without_recovery (test_diagnostics.DiagnosticsTests.test_hot_rollback_journal_is_identified_without_recovery) ... ok
+test_live_service_lock_and_wal_are_observed_without_source_writes (test_diagnostics.DiagnosticsTests.test_live_service_lock_and_wal_are_observed_without_source_writes) ... ok
+test_malformed_record_is_diagnosed_and_raw_content_never_echoed (test_diagnostics.DiagnosticsTests.test_malformed_record_is_diagnosed_and_raw_content_never_echoed) ... ok
+test_missing_complete_and_corrupt_dng_are_errors (test_diagnostics.DiagnosticsTests.test_missing_complete_and_corrupt_dng_are_errors) ... ok
+test_missing_root_and_lock_never_created (test_diagnostics.DiagnosticsTests.test_missing_root_and_lock_never_created) ... ok
+test_recorded_path_must_stay_in_photos_and_match_request (test_diagnostics.DiagnosticsTests.test_recorded_path_must_stay_in_photos_and_match_request) ... ok
+test_unknown_accepted_orphan_and_partial_keep_request_relations (test_diagnostics.DiagnosticsTests.test_unknown_accepted_orphan_and_partial_keep_request_relations) ... ok
+test_unreadable_calibration_subdirectory_is_not_silently_skipped (test_diagnostics.DiagnosticsTests.test_unreadable_calibration_subdirectory_is_not_silently_skipped) ... ok
+test_unrecognized_output_names_are_not_copied_into_report (test_diagnostics.DiagnosticsTests.test_unrecognized_output_names_are_not_copied_into_report) ... ok
+test_valid_complete_is_read_only_and_deterministic (test_diagnostics.DiagnosticsTests.test_valid_complete_is_read_only_and_deterministic) ... ok
+test_workflow_cli_parent_root_is_detected (test_diagnostics.DiagnosticsTests.test_workflow_cli_parent_root_is_detected) ... ok
+test_workflow_unresolved_ids_and_camera_mismatch (test_diagnostics.DiagnosticsTests.test_workflow_unresolved_ids_and_camera_mismatch) ... ok
+test_caller_owned_binary_stream_is_not_closed (test_dng.DngTests.test_caller_owned_binary_stream_is_not_closed) ... ok
+test_deterministic_exposure_and_clipping (test_dng.DngTests.test_deterministic_exposure_and_clipping) ... ok
+test_exif_actual_exposure_and_namespaced_capture_metadata (test_dng.DngTests.test_exif_actual_exposure_and_namespaced_capture_metadata) ... ok
+test_full_frame_dimensions_and_sample_edges (test_dng.DngTests.test_full_frame_dimensions_and_sample_edges) ... ok
+test_invalid_input (test_dng.DngTests.test_invalid_input) ... ok
+test_libtiff_round_trip (test_dng.DngTests.test_libtiff_round_trip) ... ok
+test_stdlib_ifd_and_pixels (test_dng.DngTests.test_stdlib_ifd_and_pixels) ... ok
+test_synthetic_dark_and_flat (test_dng.DngTests.test_synthetic_dark_and_flat) ... ok
+test_tifffile_round_trip (test_dng.DngTests.test_tifffile_round_trip) ... ok
+test_big_endian_minimal_fixture_and_default_levels (test_dng_inspect.DngInspectTests.test_big_endian_minimal_fixture_and_default_levels) ... ok
+test_caller_owned_pinned_stream_stays_open_on_success_and_failure (test_dng_inspect.DngInspectTests.test_caller_owned_pinned_stream_stays_open_on_success_and_failure) ... ok
+test_cyclic_exif_pointer_and_duplicate_tags_are_rejected (test_dng_inspect.DngInspectTests.test_cyclic_exif_pointer_and_duplicate_tags_are_rejected) ... ok
+test_invalid_or_missing_metadata_never_returns_raw_description (test_dng_inspect.DngInspectTests.test_invalid_or_missing_metadata_never_returns_raw_description) ... ok
+test_multiple_strips_must_match_rows_and_not_overlap (test_dng_inspect.DngInspectTests.test_multiple_strips_must_match_rows_and_not_overlap) ... ok
+test_no_pixel_reads (test_dng_inspect.DngInspectTests.test_no_pixel_reads) ... ok
+test_nonexistent_file_raises_oserror (test_dng_inspect.DngInspectTests.test_nonexistent_file_raises_oserror) ... ok
+test_strip_overlapping_ifd_metadata_or_beyond_file_is_rejected (test_dng_inspect.DngInspectTests.test_strip_overlapping_ifd_metadata_or_beyond_file_is_rejected) ... ok
+test_truncated_tables_values_pixels_and_invalid_ifd_are_rejected (test_dng_inspect.DngInspectTests.test_truncated_tables_values_pixels_and_invalid_ifd_are_rejected) ... ok
+test_unsupported_compression_cfa_and_oversized_metadata_are_rejected (test_dng_inspect.DngInspectTests.test_unsupported_compression_cfa_and_oversized_metadata_are_rejected) ... ok
+test_writer_round_trip_allowlisted_and_does_not_change_file (test_dng_inspect.DngInspectTests.test_writer_round_trip_allowlisted_and_does_not_change_file) ... ok
+test_raw_pixels_and_rendered_rgb (test_dng_libraw.LibRawTests.test_raw_pixels_and_rendered_rgb) ... ok
+test_bayer_through_rtl_then_dng_matches_independent_decoder (test_fpga_dng.FpgaDngTests.test_bayer_through_rtl_then_dng_matches_independent_decoder) ... ok
+test_corrupt_frame_completion_is_rejected_before_dng (test_fpga_dng.FpgaDngTests.test_corrupt_frame_completion_is_rejected_before_dng) ... ok
+test_actual_rtl_scoreboard_and_error_matrix (test_fpga_rtl.CaptureRtlTests.test_actual_rtl_scoreboard_and_error_matrix) ... ok
+test_invalid_parameters_fail_the_actual_simulator (test_fpga_rtl.CaptureRtlTests.test_invalid_parameters_fail_the_actual_simulator) ... ok
+test_malformed_and_missing_manifests_leave_observed_hashes (test_fpga_rtl.ToolchainProvenanceTests.test_malformed_and_missing_manifests_leave_observed_hashes) ... ok
+test_mixed_runtime_locations_do_not_share_one_manifest (test_fpga_rtl.ToolchainProvenanceTests.test_mixed_runtime_locations_do_not_share_one_manifest) ... ok
+test_only_declared_locations_with_matching_hashes_attach_manifest (test_fpga_rtl.ToolchainProvenanceTests.test_only_declared_locations_with_matching_hashes_attach_manifest) ... ok
+test_path_discovery_is_also_bound_to_its_selected_files (test_fpga_rtl.ToolchainProvenanceTests.test_path_discovery_is_also_bound_to_its_selected_files) ... ok
+test_run_uses_selected_provenance_instead_of_an_unrelated_temp_cache (test_fpga_rtl.ToolchainProvenanceTests.test_run_uses_selected_provenance_instead_of_an_unrelated_temp_cache) ... ok
+test_tampered_selected_executable_cannot_inherit_manifest (test_fpga_rtl.ToolchainProvenanceTests.test_tampered_selected_executable_cannot_inherit_manifest) ... ok
+test_undeclared_traversal_path_is_not_a_valid_location (test_fpga_rtl.ToolchainProvenanceTests.test_undeclared_traversal_path_is_not_a_valid_location) ... ok
+test_unrelated_global_temp_manifest_never_attributes_override_tools (test_fpga_rtl.ToolchainProvenanceTests.test_unrelated_global_temp_manifest_never_attributes_override_tools) ... ok
+test_bounded_eof_and_chunked_json_framing (test_http_client.HttpClientFaultTests.test_bounded_eof_and_chunked_json_framing) ... ok
+test_calls_serialized_and_close_is_local_only (test_http_client.HttpClientFaultTests.test_calls_serialized_and_close_is_local_only) ... ok
+test_capture_and_query_reject_wrong_identity_or_status (test_http_client.HttpClientFaultTests.test_capture_and_query_reject_wrong_identity_or_status) ... ok
+test_capture_server_errors_preserve_codes_and_mark_uncertain_admission (test_http_client.HttpClientFaultTests.test_capture_server_errors_preserve_codes_and_mark_uncertain_admission) ... ok
+test_capture_timeout_has_finite_budget_and_no_retry (test_http_client.HttpClientFaultTests.test_capture_timeout_has_finite_budget_and_no_retry) ... ok
+test_close_interrupts_attachment_without_cancelling_server_capture (test_http_client.HttpClientFaultTests.test_close_interrupts_attachment_without_cancelling_server_capture) ... ok
+test_completed_capture_actuals_stay_within_advertised_ranges (test_http_client.HttpClientFaultTests.test_completed_capture_actuals_stay_within_advertised_ranges) ... ok
+test_known_connect_failure_does_not_claim_capture_uncertainty (test_http_client.HttpClientFaultTests.test_known_connect_failure_does_not_claim_capture_uncertainty) ... ok
+test_lone_surrogate_identifier_is_rejected_before_sending (test_http_client.HttpClientFaultTests.test_lone_surrogate_identifier_is_rejected_before_sending) ... ok
+test_loopback_origin_validation_and_proxy_ignored (test_http_client.HttpClientFaultTests.test_loopback_origin_validation_and_proxy_ignored) ... ok
+test_lost_capture_response_retains_id_and_is_never_retried (test_http_client.HttpClientFaultTests.test_lost_capture_response_retains_id_and_is_never_retried) ... ok
+test_malformed_capture_response_is_uncertain_but_known_error_is_preserved (test_http_client.HttpClientFaultTests.test_malformed_capture_response_is_uncertain_but_known_error_is_preserved) ... ok
+test_non_capture_timeout_and_bad_protocol (test_http_client.HttpClientFaultTests.test_non_capture_timeout_and_bad_protocol) ... ok
+test_query_not_found_and_local_request_bound (test_http_client.HttpClientFaultTests.test_query_not_found_and_local_request_bound) ... ok
+test_request_thread_start_failure_is_known_not_sent (test_http_client.HttpClientFaultTests.test_request_thread_start_failure_is_known_not_sent) ... ok
+test_timeout_constructor_rejects_nonfinite_or_platform_overflow (test_http_client.HttpClientFaultTests.test_timeout_constructor_rejects_nonfinite_or_platform_overflow) ... ok
+test_native_http_clients_and_workflow_share_one_authority (test_http_client.HttpClientNativeTests.test_native_http_clients_and_workflow_share_one_authority) ... ok
+test_preview_cancel_disconnect_and_reconnect (test_http_client.HttpClientReferenceTests.test_preview_cancel_disconnect_and_reconnect) ... ok
+test_two_clients_share_lease_and_one_capture_commit (test_http_client.HttpClientReferenceTests.test_two_clients_share_lease_and_one_capture_commit) ... ok
+test_capture_routes_require_exact_segments_before_cancellation (test_http_security.HttpAdmissionTests.test_capture_routes_require_exact_segments_before_cancellation) ... ok
+test_get_errors_are_structured_and_do_not_stop_server (test_http_security.HttpAdmissionTests.test_get_errors_are_structured_and_do_not_stop_server) ... ok
+test_host_origin_and_request_target_are_unambiguous (test_http_security.HttpAdmissionTests.test_host_origin_and_request_target_are_unambiguous) ... ok
+test_json_is_utf8_unique_finite_and_depth_bounded (test_http_security.HttpAdmissionTests.test_json_is_utf8_unique_finite_and_depth_bounded) ... ok
+test_rejects_short_ambiguous_or_unsupported_framing_before_control (test_http_security.HttpAdmissionTests.test_rejects_short_ambiguous_or_unsupported_framing_before_control) ... ok
+test_workflow_query_route_and_static_console_remain_exact (test_http_security.HttpAdmissionTests.test_workflow_query_route_and_static_console_remain_exact) ... ok
+test_header_and_body_dribbles_obey_total_deadline_and_release_slot (test_http_security.HttpServerBudgetTests.test_header_and_body_dribbles_obey_total_deadline_and_release_slot) ... ERROR
+test_timeout_configuration_rejects_invalid_or_overflowing_values (test_http_security.HttpServerBudgetTests.test_timeout_configuration_rejects_invalid_or_overflowing_values) ... ok
+test_invalid_unicode_cannot_kill_authority_and_dead_authority_returns_json (test_http_security.NativeHttpErrorTests.test_invalid_unicode_cannot_kill_authority_and_dead_authority_returns_json) ... ok
+test_actual_native_capture_and_restart_health (test_linux_health.HealthTests.test_actual_native_capture_and_restart_health) ... ok
+test_existing_directory_is_never_opened (test_linux_health.HealthTests.test_existing_directory_is_never_opened) ... ok
+test_runtime_cannot_contain_persistent_data (test_linux_health.HealthTests.test_runtime_cannot_contain_persistent_data) ... ok
+test_user_service_has_explicit_native_storage_and_bounded_restart (test_linux_health.HealthTests.test_user_service_has_explicit_native_storage_and_bounded_restart) ... ok
+test_executable_changed_during_copy_never_becomes_verified_bundle (test_linux_package.PackageTests.test_executable_changed_during_copy_never_becomes_verified_bundle) ... ok
+test_invalid_package_identity_does_not_create_partial_output (test_linux_package.PackageTests.test_invalid_package_identity_does_not_create_partial_output) ... ok
+test_reject_stale_native_source_or_missing_source_evidence_before_writing (test_linux_package.PackageTests.test_reject_stale_native_source_or_missing_source_evidence_before_writing) ... ok
+test_reject_untested_or_changed_build_and_windows_binary (test_linux_package.PackageTests.test_reject_untested_or_changed_build_and_windows_binary) ... ok
+test_stage_bundle_checksums_runtime_and_preserved_notices (test_linux_package.PackageTests.test_stage_bundle_checksums_runtime_and_preserved_notices) ... ok
+test_checksum_architecture_and_exact_inventory (test_linux_recovery.BundleTests.test_checksum_architecture_and_exact_inventory) ... ok
+test_symlink_is_rejected (test_linux_recovery.BundleTests.test_symlink_is_rejected) ... skipped 'POSIX symlink validation'
+test_traversal_duplicate_permissions_and_manifest_keys (test_linux_recovery.BundleTests.test_traversal_duplicate_permissions_and_manifest_keys) ... ok
+test_abrupt_process_exit_consumes_attempt_before_return (test_linux_recovery.RecoveryTests.test_abrupt_process_exit_consumes_attempt_before_return) ... ok
+test_bundle_ancestry_refused_before_directory_or_database_creation (test_linux_recovery.RecoveryTests.test_bundle_ancestry_refused_before_directory_or_database_creation) ... ok
+test_camera_ancestry_refused_without_changing_journal_or_photo_tree (test_linux_recovery.RecoveryTests.test_camera_ancestry_refused_without_changing_journal_or_photo_tree) ... ok
+test_changed_bundle_falls_back_without_touching_data (test_linux_recovery.RecoveryTests.test_changed_bundle_falls_back_without_touching_data) ... ok
+test_empty_state_recovery_and_invalid_attempt_budget (test_linux_recovery.RecoveryTests.test_empty_state_recovery_and_invalid_attempt_budget) ... ok
+test_missing_persisted_state_is_not_reset (test_linux_recovery.RecoveryTests.test_missing_persisted_state_is_not_reset) ... ok
+test_symlinked_recovery_database_is_refused_without_touching_target (test_linux_recovery.RecoveryTests.test_symlinked_recovery_database_is_refused_without_touching_target) ... skipped 'POSIX symlink validation'
+test_trial_confirmation_and_stale_health (test_linux_recovery.RecoveryTests.test_trial_confirmation_and_stale_health) ... ok
+test_authorities_fence_each_other_and_reject_foreign_journal (test_native_authority_http.NativeAuthorityHttpTests.test_authorities_fence_each_other_and_reject_foreign_journal) ... ok
+test_independent_native_cli_workflow_and_offline_diagnostics (test_native_authority_http.NativeAuthorityHttpTests.test_independent_native_cli_workflow_and_offline_diagnostics) ... ok
+test_native_authority_full_frame_matches_python_bayer (test_native_authority_http.NativeAuthorityHttpTests.test_native_authority_full_frame_matches_python_bayer) ... ok
+test_native_authority_preview_capture_and_workflow_through_http (test_native_authority_http.NativeAuthorityHttpTests.test_native_authority_preview_capture_and_workflow_through_http) ... 127.0.0.1 - - [05/Nov/2026 05:08:45] "GET /api/v1/state HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 05:08:45] "POST /api/v1/control/acquire HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 05:08:45] "POST /api/v1/preview/start HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 05:08:45] "GET /api/v1/preview.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 05:08:45] "POST /api/v1/captures HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 05:08:45] "GET /api/v1/captures/6a337d32-5282-453d-a62f-0b9e18dc6177 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 05:08:45] "GET /api/v1/captures/6a337d32-5282-453d-a62f-0b9e18dc6177 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 05:08:45] "POST /api/v1/control/release HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 05:08:45] "POST /api/v1/workflows HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 05:08:45] "GET /api/v1/workflows/native-http-sequence HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 05:08:46] "GET /api/v1/workflows/native-http-sequence HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 05:08:46] "GET /api/v1/workflows/native-http-sequence HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 05:08:46] "GET /api/v1/workflows/native-http-sequence HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 05:08:46] "GET /api/v1/workflows/native-http-sequence HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 05:08:46] "GET /api/v1/workflows/native-http-sequence HTTP/1.1" 200 -
+ok
+test_service_commits_only_valid_worker_and_reconciles_same_id (test_native_backend.NativeAdapterTests.test_service_commits_only_valid_worker_and_reconciles_same_id) ... ok
+test_success_and_failure_protocol_boundaries (test_native_backend.NativeAdapterTests.test_success_and_failure_protocol_boundaries) ... ok
+test_timeout_cancel_and_expired_deadline_are_bounded (test_native_backend.NativeAdapterTests.test_timeout_cancel_and_expired_deadline_are_bounded) ... ok
+test_capture_and_query_validate_record_identity_status_and_actuals (test_native_client.NativeClientTests.test_capture_and_query_validate_record_identity_status_and_actuals) ... ok
+test_capture_eof_is_unknown_with_request_identity (test_native_client.NativeClientTests.test_capture_eof_is_unknown_with_request_identity) ... ok
+test_capture_server_errors_keep_codes_and_mark_uncertainty (test_native_client.NativeClientTests.test_capture_server_errors_keep_codes_and_mark_uncertainty) ... ok
+test_capture_timeout_is_unknown_and_never_retried (test_native_client.NativeClientTests.test_capture_timeout_is_unknown_and_never_retried) ... ok
+test_close_busy_preserves_process_until_explicit_abort (test_native_client.NativeClientTests.test_close_busy_preserves_process_until_explicit_abort) ... ok
+test_concurrent_calls_are_serialized (test_native_client.NativeClientTests.test_concurrent_calls_are_serialized) ... ok
+test_context_exit_aborts_when_graceful_close_is_busy (test_native_client.NativeClientTests.test_context_exit_aborts_when_graceful_close_is_busy) ... ok
+test_context_manager_closes_or_aborts_owned_process (test_native_client.NativeClientTests.test_context_manager_closes_or_aborts_owned_process) ... ok
+test_invalid_local_payload_does_not_send_or_close (test_native_client.NativeClientTests.test_invalid_local_payload_does_not_send_or_close) ... ok
+test_invalid_unicode_payload_is_known_not_sent_and_keeps_authority_alive (test_native_client.NativeClientTests.test_invalid_unicode_payload_is_known_not_sent_and_keeps_authority_alive) ... ok
+test_malformed_envelopes_close_process (test_native_client.NativeClientTests.test_malformed_envelopes_close_process) ... ok
+test_methods_keep_service_parameter_names (test_native_client.NativeClientTests.test_methods_keep_service_parameter_names) ... ok
+test_startup_error_preserves_authority_error_code (test_native_client.NativeClientTests.test_startup_error_preserves_authority_error_code) ... ok
+test_stderr_is_drained_and_memory_bounded (test_native_client.NativeClientTests.test_stderr_is_drained_and_memory_bounded) ... ok
+test_unsupported_timeout_is_rejected_before_process_launch (test_native_client.NativeClientTests.test_unsupported_timeout_is_rejected_before_process_launch) ... ok
+test_writer_start_failure_is_known_not_sent (test_native_client.NativeClientTests.test_writer_start_failure_is_known_not_sent) ... ok
+test_accepted_request_survives_process_kill_as_unknown (test_native_daemon.NativeDaemonTests.test_accepted_request_survives_process_kill_as_unknown) ... ok
+test_capture_identity_metadata_and_no_duplicate_execution (test_native_daemon.NativeDaemonTests.test_capture_identity_metadata_and_no_duplicate_execution) ... ok
+test_capture_slot_cancel_deadline_and_close_busy (test_native_daemon.NativeDaemonTests.test_capture_slot_cancel_deadline_and_close_busy) ... ok
+test_context_exit_does_not_leave_native_process_or_directory_lock (test_native_daemon.NativeDaemonTests.test_context_exit_does_not_leave_native_process_or_directory_lock) ... ok
+test_corrupt_persisted_rows_fence_queries_and_admission_without_rewriting (test_native_daemon.NativeDaemonTests.test_corrupt_persisted_rows_fence_queries_and_admission_without_rewriting) ... ok
+test_crash_after_admission_is_unknown_and_never_reexecuted (test_native_daemon.NativeDaemonTests.test_crash_after_admission_is_unknown_and_never_reexecuted) ... ok
+test_crash_after_rename_is_unknown_with_exactly_one_existing_dng (test_native_daemon.NativeDaemonTests.test_crash_after_rename_is_unknown_with_exactly_one_existing_dng) ... ok
+test_dangerous_faults_require_explicit_cli_flag (test_native_daemon.NativeDaemonTests.test_dangerous_faults_require_explicit_cli_flag) ... ok
+test_disconnect_and_authorized_reconnect (test_native_daemon.NativeDaemonTests.test_disconnect_and_authorized_reconnect) ... ok
+test_failed_admission_commit_fences_authority_without_execution (test_native_daemon.NativeDaemonTests.test_failed_admission_commit_fences_authority_without_execution) ... ok
+test_failed_completion_commit_is_unknown_after_rename (test_native_daemon.NativeDaemonTests.test_failed_completion_commit_is_unknown_after_rename) ... ok
+test_invalid_native_metadata_does_not_truncate_or_wrap (test_native_daemon.NativeDaemonTests.test_invalid_native_metadata_does_not_truncate_or_wrap) ... ok
+test_late_output_conflicts_are_never_overwritten_or_removed (test_native_daemon.NativeDaemonTests.test_late_output_conflicts_are_never_overwritten_or_removed) ... ok
+test_real_lease_renewal_expiry_and_new_owner (test_native_daemon.NativeDaemonTests.test_real_lease_renewal_expiry_and_new_owner) ... ok
+test_real_process_exclusivity_and_epoch_fencing (test_native_daemon.NativeDaemonTests.test_real_process_exclusivity_and_epoch_fencing) ... ok
+test_retained_asset_descriptors_require_committed_regular_expected_files (test_native_daemon.NativeDaemonTests.test_retained_asset_descriptors_require_committed_regular_expected_files) ... ok
+test_retained_pages_are_durable_bounded_complete_only_and_do_not_replay (test_native_daemon.NativeDaemonTests.test_retained_pages_are_durable_bounded_complete_only_and_do_not_replay) ... ok
+test_rpc_input_limit_is_bounded_and_closes_process (test_native_daemon.NativeDaemonTests.test_rpc_input_limit_is_bounded_and_closes_process) ... ok
+test_rpc_malformed_duplicate_depth_types_and_recovery (test_native_daemon.NativeDaemonTests.test_rpc_malformed_duplicate_depth_types_and_recovery) ... ok
+test_worker_start_failure_is_journaled_and_releases_slot (test_native_daemon.NativeDaemonTests.test_worker_start_failure_is_journaled_and_releases_slot) ... ok
+test_compiled_worker_commit_roundtrip_and_duplicate_fencing (test_native_service.NativeServiceTests.test_compiled_worker_commit_roundtrip_and_duplicate_fencing) ... ok
+test_native_offline_interval_cli (test_native_service.NativeServiceTests.test_native_offline_interval_cli) ... ok
+test_native_worker_service_preserves_late_output_conflicts (test_native_service.NativeServiceTests.test_native_worker_service_preserves_late_output_conflicts) ... ok
+test_deterministic_scenes_gain_and_clipping (test_native_worker.NativeWorkerTests.test_deterministic_scenes_gain_and_clipping) ... ok
+test_full_frame_native_output (test_native_worker.NativeWorkerTests.test_full_frame_native_output) ... ok
+test_invalid_cli_produces_no_success_or_output (test_native_worker.NativeWorkerTests.test_invalid_cli_produces_no_success_or_output) ... ok
+test_libraw_raw_pixels_and_rendered_rgb (test_native_worker.NativeWorkerTests.test_libraw_raw_pixels_and_rendered_rgb) ... ok
+test_metadata_traceability_and_exact_reference_pixels (test_native_worker.NativeWorkerTests.test_metadata_traceability_and_exact_reference_pixels) ... ok
+test_output_errors_do_not_report_success_or_overwrite (test_native_worker.NativeWorkerTests.test_output_errors_do_not_report_success_or_overwrite) ... ok
+test_success_line_observes_complete_file_before_process_exit (test_native_worker.NativeWorkerTests.test_success_line_observes_complete_file_before_process_exit) ... ok
+test_tifffile_cfa_crop_color_and_exif (test_native_worker.NativeWorkerTests.test_tifffile_cfa_crop_color_and_exif) ... ok
+test_unicode_path_and_json_identifier_round_trip (test_native_worker.NativeWorkerTests.test_unicode_path_and_json_identifier_round_trip) ... ok
+test_png_crc_dimensions_and_pixel_payload (test_preview.PreviewTests.test_png_crc_dimensions_and_pixel_payload) ... ok
+test_rate_limit_settings_and_mode_transition (test_preview.PreviewTests.test_rate_limit_settings_and_mode_transition) ... ok
+test_validation_and_deterministic_scene (test_preview.PreviewTests.test_validation_and_deterministic_scene) ... ok
+test_guest_boot_refuses_changed_archive_before_starting_process (test_qemu_target.QemuTargetTests.test_guest_boot_refuses_changed_archive_before_starting_process) ... ok
+test_guest_boot_refuses_kernel_evidence_mismatch_before_start (test_qemu_target.QemuTargetTests.test_guest_boot_refuses_kernel_evidence_mismatch_before_start) ... ok
+test_guest_serial_requires_complete_unique_success_and_exact_transfer (test_qemu_target.QemuTargetTests.test_guest_serial_requires_complete_unique_success_and_exact_transfer) ... ok
+test_newc_archive_is_deterministic_and_rejects_aliases (test_qemu_target.QemuTargetTests.test_newc_archive_is_deterministic_and_rejects_aliases) ... ok
+test_repeated_guest_run_preserves_existing_artifact_without_boot (test_qemu_target.QemuTargetTests.test_repeated_guest_run_preserves_existing_artifact_without_boot) ... ok
+test_timeout_stops_owned_real_child_and_closes_serial_pipe (test_qemu_target.QemuTargetTests.test_timeout_stops_owned_real_child_and_closes_serial_pipe) ... ok
+test_wrong_arch_dynamic_and_truncated_elf_rejected_before_build (test_qemu_target.QemuTargetTests.test_wrong_arch_dynamic_and_truncated_elf_rejected_before_build) ... ok
+test_http_export_rejects_wrong_or_truncated_dng_despite_valid_identity_headers (test_retained_captures.HttpRetainedTests.test_http_export_rejects_wrong_or_truncated_dng_despite_valid_identity_headers) ... ok
+test_native_bridge_uses_same_retained_assets_and_no_second_capture (test_retained_captures.HttpRetainedTests.test_native_bridge_uses_same_retained_assets_and_no_second_capture) ... ok
+test_reference_http_list_asset_thumbnail_and_byte_identical_export_without_lease (test_retained_captures.HttpRetainedTests.test_reference_http_list_asset_thumbnail_and_byte_identical_export_without_lease) ... ok
+test_caller_owned_inspector_stream_and_pinned_file_survive_path_changes (test_retained_captures.ReferenceRetainedTests.test_caller_owned_inspector_stream_and_pinned_file_survive_path_changes) ... ok
+test_corrupt_journal_row_cannot_redirect_a_requested_capture_to_another (test_retained_captures.ReferenceRetainedTests.test_corrupt_journal_row_cannot_redirect_a_requested_capture_to_another) ... ok
+test_failed_active_unknown_missing_and_corrupt_sources_are_not_replayed (test_retained_captures.ReferenceRetainedTests.test_failed_active_unknown_missing_and_corrupt_sources_are_not_replayed) ... ok
+test_keyset_pages_are_allowlisted_stable_and_survive_restart (test_retained_captures.ReferenceRetainedTests.test_keyset_pages_are_allowlisted_stable_and_survive_restart) ... ok
+test_limits_and_cursor_require_completed_canonical_identity (test_retained_captures.ReferenceRetainedTests.test_limits_and_cursor_require_completed_canonical_identity) ... ok
+test_open_descriptor_and_export_ignore_recorded_arbitrary_path (test_retained_captures.ReferenceRetainedTests.test_open_descriptor_and_export_ignore_recorded_arbitrary_path) ... ok
+test_thumbnail_changes_when_actual_retained_samples_change (test_retained_captures.ReferenceRetainedTests.test_thumbnail_changes_when_actual_retained_samples_change) ... ok
+test_wrong_dng_identity_and_publish_race_do_not_export (test_retained_captures.ReferenceRetainedTests.test_wrong_dng_identity_and_publish_race_do_not_export) ... ok
+test_bind_failure_closes_owned_authority (test_server_lifecycle.ServerLifecycleTests.test_bind_failure_closes_owned_authority) ... ok
+test_invalid_port_rejected_before_starting_authority (test_server_lifecycle.ServerLifecycleTests.test_invalid_port_rejected_before_starting_authority) ... ok
+test_arm64_and_guest_evidence_copies_redact_paths_without_changing_sources (test_source_bundle.SourceBundleTests.test_arm64_and_guest_evidence_copies_redact_paths_without_changing_sources) ... ok
+test_boundary_exclusions_redaction_and_unchanged_hardware (test_source_bundle.SourceBundleTests.test_boundary_exclusions_redaction_and_unchanged_hardware) ... ok
+test_deterministic_and_exclusive_publication (test_source_bundle.SourceBundleTests.test_deterministic_and_exclusive_publication) ... ok
+test_evidence_private_keys_redacted_and_collisions_refused (test_source_bundle.SourceBundleTests.test_evidence_private_keys_redacted_and_collisions_refused) ... ok
+test_secret_and_included_destination_fail_closed (test_source_bundle.SourceBundleTests.test_secret_and_included_destination_fail_closed) ... ok
+test_source_links_refused (test_source_bundle.SourceBundleTests.test_source_links_refused) ... ok
+test_verifier_rejects_hashed_private_paths_and_missing_rights (test_source_bundle.SourceBundleTests.test_verifier_rejects_hashed_private_paths_and_missing_rights) ... ok
+test_verifier_rejects_unlisted_tampering_and_traversal (test_source_bundle.SourceBundleTests.test_verifier_rejects_unlisted_tampering_and_traversal) ... ok
+test_contract_uses_verified_J1_nets_and_leaves_hardware_unassigned (test_supervisor.SupervisorTests.test_contract_uses_verified_J1_nets_and_leaves_hardware_unassigned) ... ok
+test_custom_interval_and_arbitrarily_large_monotonic_epoch (test_supervisor.SupervisorTests.test_custom_interval_and_arbitrarily_large_monotonic_epoch) ... ok
+test_equal_timestamps_do_not_add_debounce_time (test_supervisor.SupervisorTests.test_equal_timestamps_do_not_add_debounce_time) ... ok
+test_event_time_is_confirmation_not_interpolated_deadline (test_supervisor.SupervisorTests.test_event_time_is_confirmation_not_interpolated_deadline) ... ok
+test_full_press_is_independent_of_half (test_supervisor.SupervisorTests.test_full_press_is_independent_of_half) ... ok
+test_initial_held_button_does_not_fabricate_press (test_supervisor.SupervisorTests.test_initial_held_button_does_not_fabricate_press) ... ok
+test_instances_and_replays_are_independent_and_deterministic (test_supervisor.SupervisorTests.test_instances_and_replays_are_independent_and_deterministic) ... ok
+test_invalid_configuration_and_sample_type (test_supervisor.SupervisorTests.test_invalid_configuration_and_sample_type) ... ok
+test_invalid_samples_are_transactional_including_candidate_history (test_supervisor.SupervisorTests.test_invalid_samples_are_transactional_including_candidate_history) ... ok
+test_one_bouncing_channel_does_not_delay_other_channel (test_supervisor.SupervisorTests.test_one_bouncing_channel_does_not_delay_other_channel) ... ok
+test_press_bounce_restarts_interval_and_hold_does_not_repeat (test_supervisor.SupervisorTests.test_press_bounce_restarts_interval_and_hold_does_not_repeat) ... ok
+test_release_bounce_is_debounced_symmetrically (test_supervisor.SupervisorTests.test_release_bounce_is_debounced_symmetrically) ... ok
+test_reset_observation_is_immediate_and_does_not_gate_buttons (test_supervisor.SupervisorTests.test_reset_observation_is_immediate_and_does_not_gate_buttons) ... ok
+test_short_press_does_not_emit_transition (test_supervisor.SupervisorTests.test_short_press_does_not_emit_transition) ... ok
+test_simultaneous_events_have_fixed_order_and_consecutive_sequences (test_supervisor.SupervisorTests.test_simultaneous_events_have_fixed_order_and_consecutive_sequences) ... ok
+test_startup_unknown_then_initialized_is_not_an_edge (test_supervisor.SupervisorTests.test_startup_unknown_then_initialized_is_not_an_edge) ... ok
+test_unknown_button_invalidates_state_without_fabricating_release (test_supervisor.SupervisorTests.test_unknown_button_invalidates_state_without_fabricating_release) ... ok
+test_unknown_during_candidate_discards_elapsed_time (test_supervisor.SupervisorTests.test_unknown_during_candidate_discards_elapsed_time) ... ok
+test_unknown_reset_is_not_deassertion_or_a_power_good_claim (test_supervisor.SupervisorTests.test_unknown_reset_is_not_deassertion_or_a_power_good_claim) ... ok
+test_changed_native_source_or_artifact_refused_before_writing (test_target_package.TargetPackageTests.test_changed_native_source_or_artifact_refused_before_writing) ... ok
+test_distinct_manifest_and_runtime_notices_without_emulator_payload (test_target_package.TargetPackageTests.test_distinct_manifest_and_runtime_notices_without_emulator_payload) ... ok
+test_existing_release_and_invalid_id_never_overwrite (test_target_package.TargetPackageTests.test_existing_release_and_invalid_id_never_overwrite) ... ok
+test_persistent_storage_cannot_overlap_release_or_camera_tree (test_target_package.TargetPackageTests.test_persistent_storage_cannot_overlap_release_or_camera_tree) ... ok
+test_runtime_refuses_actual_wrong_host_before_creating_data (test_target_package.TargetPackageTests.test_runtime_refuses_actual_wrong_host_before_creating_data) ... ok
+test_staging_inside_original_source_is_refused_without_creating_files (test_target_package.TargetPackageTests.test_staging_inside_original_source_is_refused_without_creating_files) ... ok
+test_tampered_files_and_host_format_are_not_valid_arm_release (test_target_package.TargetPackageTests.test_tampered_files_and_host_format_are_not_valid_arm_release) ... ok
+test_unit_launch_plan_uses_only_packaged_native_binary (test_target_package.TargetPackageTests.test_unit_launch_plan_uses_only_packaged_native_binary) ... ok
+test_verified_regular_packages_win_over_external_pythonpath_packages (test_target_package.TargetPackageTests.test_verified_regular_packages_win_over_external_pythonpath_packages) ... ok
+test_ambiguous_submission_is_never_retried (test_workflow.WorkflowTests.test_ambiguous_submission_is_never_retried) ... ok
+test_cancellation_inflight_requests_cancel_and_restores (test_workflow.WorkflowTests.test_cancellation_inflight_requests_cancel_and_restores) ... ok
+test_cli_run_and_inspect (test_workflow.WorkflowTests.test_cli_run_and_inspect) ... ok
+test_dark_and_flat_sequences_label_synthetic_scene (test_workflow.WorkflowTests.test_dark_and_flat_sequences_label_synthetic_scene) ... ok
+test_failed_worker_start_is_journaled (test_workflow.WorkflowTests.test_failed_worker_start_is_journaled) ... ok
+test_interval_renews_short_lease (test_workflow.WorkflowTests.test_interval_renews_short_lease) ... ok
+test_invalid_plan_has_no_camera_effect (test_workflow.WorkflowTests.test_invalid_plan_has_no_camera_effect) ... ok
+test_late_completion_is_reconciled_using_original_request (test_workflow.WorkflowTests.test_late_completion_is_reconciled_using_original_request) ... ok
+test_manager_cancel_during_interval (test_workflow.WorkflowTests.test_manager_cancel_during_interval) ... ok
+test_manager_pause_resume_interval_and_restart_recovery (test_workflow.WorkflowTests.test_manager_pause_resume_interval_and_restart_recovery) ... ok
+test_manager_rejects_unaddressable_job_id (test_workflow.WorkflowTests.test_manager_rejects_unaddressable_job_id) ... ok
+test_manager_restart_reconciles_unconfirmed_submission_without_recapture (test_workflow.WorkflowTests.test_manager_restart_reconciles_unconfirmed_submission_without_recapture) ... ok
+test_query_failure_after_submission_is_unknown (test_workflow.WorkflowTests.test_query_failure_after_submission_is_unknown) ... ok
+test_simulator_full_workflow_and_idempotent_reopen (test_workflow.WorkflowTests.test_simulator_full_workflow_and_idempotent_reopen) ... ok
+test_all_kinds_round_trip_defaults_and_independent_copies (test_workflow_recipes.RecipeTests.test_all_kinds_round_trip_defaults_and_independent_copies) ... ok
+test_cli_dark_flat_and_interval_recipes_execute_the_saved_plan (test_workflow_recipes.RecipeTests.test_cli_dark_flat_and_interval_recipes_execute_the_saved_plan) ... ok
+test_cli_export_is_camera_free_and_recipe_run_reconciles_same_job (test_workflow_recipes.RecipeTests.test_cli_export_is_camera_free_and_recipe_run_reconciles_same_job) ... ok
+test_cli_recipe_overrides_malformed_input_and_overwrite_are_refused_before_camera (test_workflow_recipes.RecipeTests.test_cli_recipe_overrides_malformed_input_and_overwrite_are_refused_before_camera) ... ok
+test_file_round_trip_create_only_concurrent_publication (test_workflow_recipes.RecipeTests.test_file_round_trip_create_only_concurrent_publication) ... ok
+test_integral_json_numbers_normalize_consistently_with_browser (test_workflow_recipes.RecipeTests.test_integral_json_numbers_normalize_consistently_with_browser) ... ok
+test_invalid_export_or_publication_failure_has_no_partial_output (test_workflow_recipes.RecipeTests.test_invalid_export_or_publication_failure_has_no_partial_output) ... ok
+test_json_is_bounded_duplicate_free_and_finite (test_workflow_recipes.RecipeTests.test_json_is_bounded_duplicate_free_and_finite) ... ok
+test_name_and_numeric_plan_validation (test_workflow_recipes.RecipeTests.test_name_and_numeric_plan_validation) ... ok
+test_native_recipe_run_uses_copied_authority_when_available (test_workflow_recipes.RecipeTests.test_native_recipe_run_uses_copied_authority_when_available) ... ok
+test_pure_plan_normalizer_preserves_legacy_shape_and_strict_boundary (test_workflow_recipes.RecipeTests.test_pure_plan_normalizer_preserves_legacy_shape_and_strict_boundary) ... ok
+test_rejects_credentials_jobs_paths_results_and_unknown_fields (test_workflow_recipes.RecipeTests.test_rejects_credentials_jobs_paths_results_and_unknown_fields) ... ok
+
+======================================================================
+ERROR: test_header_and_body_dribbles_obey_total_deadline_and_release_slot (test_http_security.HttpServerBudgetTests.test_header_and_body_dribbles_obey_total_deadline_and_release_slot)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\derri\AppData\Local\Temp\hf-clean-r6-z0e20qig\HassleFree-FF1\tests\test_http_security.py", line 265, in test_header_and_body_dribbles_obey_total_deadline_and_release_slot
+    status, lease = _request(server, 'POST', '/api/v1/control/acquire', {'owner': 'after-dribbles'})
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\derri\AppData\Local\Temp\hf-clean-r6-z0e20qig\HassleFree-FF1\tests\test_http_security.py", line 45, in _request
+    response = connection.getresponse()
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+  File "C:\ProgramData\anaconda3\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\http\client.py", line 300, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+----------------------------------------------------------------------
+Ran 317 tests in 83.107s
+
+FAILED (errors=1, skipped=3)

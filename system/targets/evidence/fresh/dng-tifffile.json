@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "scope": "actual fresh full-system ARM synthetic capture",
+  "source": "build/target-9b121caa4b1b6cd06ba50f7a/boots/first/guest/first-source.dng",
+  "samples": 12288,
+  "shape": [
+    96,
+    128
+  ],
+  "actual_exposure_us": 10100,
+  "python_oracle_equal": true,
+  "tifffile_version": "2023.4.12"
+}

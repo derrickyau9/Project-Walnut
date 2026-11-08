@@ -1,0 +1,16 @@
+{
+  "format": "DaOS-BSD-package-recipe-v1",
+  "name": "daos-ui",
+  "version": "R14-netbsd-runtime-1",
+  "kind": "netbsd-binary-runtime-closure",
+  "target": {"system": "NetBSD", "architecture": "aarch64", "release": "11.1"},
+  "repository": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/",
+  "package_build_abi": {"OPSYS": "NetBSD", "MACHINE_ARCH": "aarch64", "OS_VERSION": "11.0"},
+  "roots": ["python312", "py312-qt5", "qt5-qtquickcontrols2", "qt5-qtgraphicaleffects", "dejavu-ttf"],
+  "lock": "runtime.lock.json",
+  "installer": "install.py",
+  "requires_source_world_features": ["MKX11=yes", "MKKERBEROS=yes", "MKCXX=yes", "MKLIBSTDCXX=yes"],
+  "display": {"server": "/usr/X11R7/bin/Xorg", "driver": "wsfb", "device": "/dev/ttyE0", "input": "wscons keyboard and mouse", "Qt_QPA": "xcb", "Qt_Quick_backend": "software"},
+  "scope": "Qt/PyQt and their complete pkgsrc package dependency closure are upstream binary packages. NetBSD base/X11 and the DaOS native camera are source-built separately. This is not an all-source Qt build, and ABI metadata checks do not establish target execution.",
+  "postinstall": "Host staging executes no target package scripts. The supplied offline native pkg_add finalizer completes package registration and install scripts on NetBSD before release acceptance."
+}

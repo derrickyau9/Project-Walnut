@@ -1,0 +1,4974 @@
+{
+  "authentication": "Official HTTPS repository checksum metadata; no independent package signature claim.",
+  "download_bytes": 573138805,
+  "format": "DaOS-NetBSD-binary-runtime-lock-v1",
+  "installed_bytes": 2077245371,
+  "metadata": {
+    "SHA512.bz2": {
+      "sha512": "c0cdf061c49117d669cc44cf1cbb9ef1a96edd0e15502501c31d5a23abb8eb522df30315498f28a0540734954081f1d779e665a9e2870cfbfac16a07ce7cb87e",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/SHA512.bz2"
+    },
+    "pkg_summary.bz2": {
+      "sha512": "c74e811c04b8fb44b37e08aef428b7879a85f5b0b075df200b36c6efb3c4e7d1f50e470927ffb2a27e821aa9d74624ee2aae951bc47d846fcbbc280203c6234c",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/pkg_summary.bz2"
+    }
+  },
+  "name": "daos-ui",
+  "packages": [
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 273112,
+      "dependency_constraints": [],
+      "depends": [],
+      "file": "expat-2.9.0.tgz",
+      "installed_bytes": 904907,
+      "license": "mit",
+      "name": "expat-2.9.0",
+      "provides": [
+        "/usr/pkg/lib/libexpat.so",
+        "/usr/pkg/lib/libexpat.so.1",
+        "/usr/pkg/lib/libexpat.so.1.13.0"
+      ],
+      "requires": [
+        "/lib/libgcc_s.so.1",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libm.so.0"
+      ],
+      "sha512": "25a2a0b17c88530f55f831abcf8844c4a5727017ac484058bdc8b57c9dd9de0156ab8453f598e9d08c07cd163ede52dcaa7c66a197c6a8e7dd97835b42841f62",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/expat-2.9.0.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 46387,
+      "dependency_constraints": [],
+      "depends": [],
+      "file": "libffi-3.8.0.tgz",
+      "installed_bytes": 184052,
+      "license": "mit",
+      "name": "libffi-3.8.0",
+      "provides": [
+        "/usr/pkg/lib/libffi.so",
+        "/usr/pkg/lib/libffi.so.8",
+        "/usr/pkg/lib/libffi.so.8.5.0"
+      ],
+      "requires": [
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libgcc_s.so.1"
+      ],
+      "sha512": "c8eaf8f50709b8d816389549fa6622953a44715bf0ad7518b401885ef79fc1b5842b93558137a2248cd30f2aa5125a9d4b3e88876df107a3eea5b6c000cefce4",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/libffi-3.8.0.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 57067,
+      "dependency_constraints": [],
+      "depends": [],
+      "file": "libuuid-2.42.3.tgz",
+      "installed_bytes": 227857,
+      "license": "modified-bsd",
+      "name": "libuuid-2.42.3",
+      "provides": [
+        "/usr/pkg/lib/libuuid.so",
+        "/usr/pkg/lib/libuuid.so.1",
+        "/usr/pkg/lib/libuuid.so.1.3.0"
+      ],
+      "requires": [
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libgcc_s.so.1",
+        "/usr/lib/libpthread.so.1"
+      ],
+      "sha512": "8b55ef16723c3d62164c70754b58273ffbe34acd0755029cbbaabc37bac6c718cd441381128112c70e9c315b7241ee955fadca8b96ec5da742ce9d35976229f5",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/libuuid-2.42.3.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 771466,
+      "dependency_constraints": [],
+      "depends": [],
+      "file": "readline-8.3nb1.tgz",
+      "installed_bytes": 2793501,
+      "license": "gnu-gpl-v3",
+      "name": "readline-8.3nb1",
+      "provides": [
+        "/usr/pkg/lib/libhistory.so",
+        "/usr/pkg/lib/libhistory.so.8",
+        "/usr/pkg/lib/libhistory.so.8.0.3",
+        "/usr/pkg/lib/libreadline.so",
+        "/usr/pkg/lib/libreadline.so.8",
+        "/usr/pkg/lib/libreadline.so.8.0.3"
+      ],
+      "requires": [
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libterminfo.so.2"
+      ],
+      "sha512": "ba5e7beca5a58d3f5755754d10d6c33a7a287c5ddacdfcd6ad66be997ea59215143304beff6b19b70bc6431409702de80e8e38a10716614f407332a26736c18f",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/readline-8.3nb1.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 2990497,
+      "dependency_constraints": [],
+      "depends": [],
+      "file": "sqlite3-3.53.4.tgz",
+      "installed_bytes": 6615527,
+      "license": "public-domain",
+      "name": "sqlite3-3.53.4",
+      "provides": [
+        "/usr/pkg/lib/libsqlite3.so",
+        "/usr/pkg/lib/libsqlite3.so.0",
+        "/usr/pkg/lib/libsqlite3.so.3.53.4"
+      ],
+      "requires": [
+        "/lib/libgcc_s.so.1",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libedit.so.3",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libpthread.so.1",
+        "/usr/lib/libterminfo.so.2"
+      ],
+      "sha512": "8b961824dbbdbb280eba4ea6d834dad6728a7008160f3e8c004341001ad74857d571d2270eca3775ec0aaadc475023683e36c35fe3de5cee2500bff67bab015a",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/sqlite3-3.53.4.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 44661831,
+      "dependency_constraints": [
+        "expat>=2.0.0nb1",
+        "libffi>=3.4.2nb3",
+        "libuuid>=2.18",
+        "readline>=6.0",
+        "sqlite3>=3.51.1nb1"
+      ],
+      "depends": [
+        "expat-2.9.0",
+        "libffi-3.8.0",
+        "libuuid-2.42.3",
+        "readline-8.3nb1",
+        "sqlite3-3.53.4"
+      ],
+      "file": "python312-3.12.14.tgz",
+      "installed_bytes": 163501975,
+      "license": "python-software-foundation",
+      "name": "python312-3.12.14",
+      "provides": [
+        "/usr/pkg/lib/libpython3.12.so",
+        "/usr/pkg/lib/libpython3.12.so.1.0",
+        "/usr/pkg/lib/python3.12/lib-dynload/_asyncio.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_bisect.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_blake2.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_bz2.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_codecs_cn.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_codecs_hk.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_codecs_iso2022.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_codecs_jp.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_codecs_kr.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_codecs_tw.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_contextvars.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_crypt.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_csv.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_ctypes.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_ctypes_test.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_curses.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_curses_panel.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_datetime.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_dbm.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_decimal.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_elementtree.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_hashlib.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_heapq.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_json.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_lsprof.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_lzma.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_md5.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_multibytecodec.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_multiprocessing.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_opcode.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_pickle.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_posixshmem.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_posixsubprocess.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_queue.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_random.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_sha1.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_sha2.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_sha3.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_socket.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_sqlite3.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_ssl.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_statistics.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_struct.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_testbuffer.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_testcapi.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_testclinic.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_testimportmultiple.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_testinternalcapi.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_testmultiphase.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_testsinglephase.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_uuid.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_xxinterpchannels.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_xxsubinterpreters.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_xxtestfuzz.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/_zoneinfo.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/array.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/audioop.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/binascii.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/cmath.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/fcntl.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/grp.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/math.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/mmap.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/nis.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/ossaudiodev.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/pyexpat.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/readline.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/resource.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/select.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/syslog.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/termios.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/unicodedata.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/xxlimited_35.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/xxsubtype.so",
+        "/usr/pkg/lib/python3.12/lib-dynload/zlib.so"
+      ],
+      "requires": [
+        "/lib/libcrypt.so.1",
+        "/lib/libgcc_s.so.1",
+        "/usr/lib/libbz2.so.1",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libcrypt.so.1",
+        "/usr/lib/libcrypto.so.16",
+        "/usr/lib/libcurses.so.9",
+        "/usr/lib/libgcc_s.so.1",
+        "/usr/lib/libintl.so.1",
+        "/usr/lib/liblzma.so.2",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libossaudio.so.1",
+        "/usr/lib/libpanel.so.3",
+        "/usr/lib/libpthread.so.1",
+        "/usr/lib/librt.so.1",
+        "/usr/lib/libssl.so.16",
+        "/usr/lib/libterminfo.so.2",
+        "/usr/lib/libutil.so.7",
+        "/usr/lib/libz.so.1",
+        "/usr/pkg/lib/libexpat.so.1",
+        "/usr/pkg/lib/libffi.so.8",
+        "/usr/pkg/lib/libreadline.so.8",
+        "/usr/pkg/lib/libsqlite3.so"
+      ],
+      "sha512": "815df5bca21e36e8a5255d85f1c658fa6cb3b6ce41425431541a45e1a0750c7ba86ff506fdf034f185017bf1676b3b1df2cf1ca0bb2d9aa9e588a949f71a72a1",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/python312-3.12.14.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 83738,
+      "dependency_constraints": [
+        "python312>=3.12.0"
+      ],
+      "depends": [
+        "python312-3.12.14"
+      ],
+      "file": "py312-sip-qt5-12.18.0.tgz",
+      "installed_bytes": 241176,
+      "license": "sip-license OR gnu-gpl-v2 OR gnu-gpl-v3",
+      "name": "py312-sip-qt5-12.18.0",
+      "provides": [],
+      "requires": [],
+      "sha512": "b3743b96424086fe661a1fa727e2f1e69b1493e85d85d41e192383dda1e8ae51ae98b3bdd92e91159d9c129cd182f555be38d13a938f21bac2bfa9ac2fe9c602",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/py312-sip-qt5-12.18.0.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 2005804,
+      "dependency_constraints": [],
+      "depends": [],
+      "file": "pcre2-10.49.tgz",
+      "installed_bytes": 6210431,
+      "license": "modified-bsd",
+      "name": "pcre2-10.49",
+      "provides": [
+        "/usr/pkg/lib/libpcre2-16.so",
+        "/usr/pkg/lib/libpcre2-16.so.0",
+        "/usr/pkg/lib/libpcre2-16.so.0.16.1",
+        "/usr/pkg/lib/libpcre2-32.so",
+        "/usr/pkg/lib/libpcre2-32.so.0",
+        "/usr/pkg/lib/libpcre2-32.so.0.16.1",
+        "/usr/pkg/lib/libpcre2-8.so",
+        "/usr/pkg/lib/libpcre2-8.so.0",
+        "/usr/pkg/lib/libpcre2-8.so.0.16.1",
+        "/usr/pkg/lib/libpcre2-posix.so",
+        "/usr/pkg/lib/libpcre2-posix.so.3",
+        "/usr/pkg/lib/libpcre2-posix.so.3.0.9"
+      ],
+      "requires": [
+        "/usr/lib/libbz2.so.1",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libz.so.1"
+      ],
+      "sha512": "56cac897c30b442e4f4c5b6bb0d79cb828a2917128a16395f365c8d3cc6d13ca335b89108ef20ff477a4415ef687a3966aeb69ce246eb5d41ee03dd19abdaefd",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/pcre2-10.49.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 5647707,
+      "dependency_constraints": [
+        "libffi>=3.4.2nb3",
+        "pcre2>=10.48nb1"
+      ],
+      "depends": [
+        "libffi-3.8.0",
+        "pcre2-10.49"
+      ],
+      "file": "glib2-2.88.3nb1.tgz",
+      "installed_bytes": 19638295,
+      "license": "gnu-lgpl-v2.1",
+      "name": "glib2-2.88.3nb1",
+      "provides": [
+        "/usr/pkg/lib/libgio-2.0.so",
+        "/usr/pkg/lib/libgio-2.0.so.0",
+        "/usr/pkg/lib/libgio-2.0.so.0.8800.3",
+        "/usr/pkg/lib/libgirepository-2.0.so",
+        "/usr/pkg/lib/libgirepository-2.0.so.0",
+        "/usr/pkg/lib/libgirepository-2.0.so.0.8800.3",
+        "/usr/pkg/lib/libglib-2.0.so",
+        "/usr/pkg/lib/libglib-2.0.so.0",
+        "/usr/pkg/lib/libglib-2.0.so.0.8800.3",
+        "/usr/pkg/lib/libgmodule-2.0.so",
+        "/usr/pkg/lib/libgmodule-2.0.so.0",
+        "/usr/pkg/lib/libgmodule-2.0.so.0.8800.3",
+        "/usr/pkg/lib/libgobject-2.0.so",
+        "/usr/pkg/lib/libgobject-2.0.so.0",
+        "/usr/pkg/lib/libgobject-2.0.so.0.8800.3",
+        "/usr/pkg/lib/libgthread-2.0.so",
+        "/usr/pkg/lib/libgthread-2.0.so.0",
+        "/usr/pkg/lib/libgthread-2.0.so.0.8800.3"
+      ],
+      "requires": [
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libelf.so.2",
+        "/usr/lib/libgcc_s.so.1",
+        "/usr/lib/libintl.so.1",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libpthread.so.1",
+        "/usr/lib/libz.so.1",
+        "/usr/pkg/lib/libffi.so.8",
+        "/usr/pkg/lib/libpcre2-8.so.0"
+      ],
+      "sha512": "a4cdff7704eb99901568d8eaec3b1b17d2483b3b91a599b8bd98748092fbd6f3f85fc62192bbf0577f0494c080f8cdbe48735784d73dbd72db6131e7d8582d0e",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/glib2-2.88.3nb1.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 687716,
+      "dependency_constraints": [
+        "glib2>=2.88.3nb1"
+      ],
+      "depends": [
+        "glib2-2.88.3nb1"
+      ],
+      "file": "dbus-1.16.2nb3.tgz",
+      "installed_bytes": 2465212,
+      "license": "gnu-gpl-v2",
+      "name": "dbus-1.16.2nb3",
+      "provides": [
+        "/usr/pkg/lib/libdbus-1.so",
+        "/usr/pkg/lib/libdbus-1.so.3",
+        "/usr/pkg/lib/libdbus-1.so.3.38.3"
+      ],
+      "requires": [
+        "/usr/X11R7/lib/libX11.so.7",
+        "/usr/X11R7/lib/libXau.so.7",
+        "/usr/X11R7/lib/libXdmcp.so.7",
+        "/usr/X11R7/lib/libxcb.so.2",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libexpat.so.2",
+        "/usr/lib/libpthread.so.1"
+      ],
+      "sha512": "ab8e0df8afc7b14d30c30f3cebb586d401e22c0beabcc50d27e64d5ef6fbce783dd12f9db3e1ab4b041b6c358acef57731f86c2488a3c3c8e4e5d80dcc289cf8",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/dbus-1.16.2nb3.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 171101,
+      "dependency_constraints": [
+        "dbus>=1.6",
+        "glib2>=2.88.3nb1",
+        "python312>=3.12.0nb1"
+      ],
+      "depends": [
+        "dbus-1.16.2nb3",
+        "glib2-2.88.3nb1",
+        "python312-3.12.14"
+      ],
+      "file": "py312-dbus-1.3.2nb3.tgz",
+      "installed_bytes": 744085,
+      "license": "mit",
+      "name": "py312-dbus-1.3.2nb3",
+      "provides": [],
+      "requires": [],
+      "sha512": "8e9ea1e56f156bf834aa833a5ebdd1babfe0aa9764853b18d23fac61a5245f36b014d6f0fc9eed7d7251993d386283ae3d5db6058d6cd07c969bcf73da59d06b",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/py312-dbus-1.3.2nb3.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 61443,
+      "dependency_constraints": [],
+      "depends": [],
+      "file": "double-conversion-3.4.0.tgz",
+      "installed_bytes": 239792,
+      "license": "modified-bsd",
+      "name": "double-conversion-3.4.0",
+      "provides": [
+        "/usr/pkg/lib/libdouble-conversion.so",
+        "/usr/pkg/lib/libdouble-conversion.so.3",
+        "/usr/pkg/lib/libdouble-conversion.so.3.4.0"
+      ],
+      "requires": [
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libgcc_s.so.1",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libstdc++.so.9"
+      ],
+      "sha512": "11f6b37ea6bd877594b9e6c5a6687d2624c5ae72133782cc3cd48c5a5abaa1a59ef6b6578b15d94185a45578b34925271c756552b6bec53475acdbb7dfaa5d98",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/double-conversion-3.4.0.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 432421,
+      "dependency_constraints": [],
+      "depends": [],
+      "file": "brotli-1.2.1.tgz",
+      "installed_bytes": 1102221,
+      "license": "mit",
+      "name": "brotli-1.2.1",
+      "provides": [
+        "/usr/pkg/lib/libbrotlicommon.so",
+        "/usr/pkg/lib/libbrotlicommon.so.1",
+        "/usr/pkg/lib/libbrotlicommon.so.1.2.1",
+        "/usr/pkg/lib/libbrotlidec.so",
+        "/usr/pkg/lib/libbrotlidec.so.1",
+        "/usr/pkg/lib/libbrotlidec.so.1.2.1",
+        "/usr/pkg/lib/libbrotlienc.so",
+        "/usr/pkg/lib/libbrotlienc.so.1",
+        "/usr/pkg/lib/libbrotlienc.so.1.2.1"
+      ],
+      "requires": [
+        "/lib/libgcc_s.so.1",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libm.so.0"
+      ],
+      "sha512": "84c6e182d2ff6d4e5488a3be27551b70fd94291ca57e385f5ab69ee76faa09c286de15a836b09bea4c0ad64e83f9cc85e61e65b7e06ebed795dc69a66ca5b525",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/brotli-1.2.1.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 409339,
+      "dependency_constraints": [],
+      "depends": [],
+      "file": "png-1.6.59.tgz",
+      "installed_bytes": 1235781,
+      "license": "zlib",
+      "name": "png-1.6.59",
+      "provides": [
+        "/usr/pkg/lib/libpng16.so",
+        "/usr/pkg/lib/libpng16.so.16",
+        "/usr/pkg/lib/libpng16.so.16.59.0"
+      ],
+      "requires": [
+        "/lib/libgcc_s.so.1",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libz.so.1"
+      ],
+      "sha512": "4def6b54ea08e3de3463b079aad55b3b13e11ee7f7a100babd8a32093b06fd2d979c75f951bfc746f44a23407d5f800f8941da56a825ee73a9ab65e5d1e9a392",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/png-1.6.59.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 1060710,
+      "dependency_constraints": [
+        "brotli>=1.0.1",
+        "png>=1.6.0nb1"
+      ],
+      "depends": [
+        "brotli-1.2.1",
+        "png-1.6.59"
+      ],
+      "file": "freetype2-2.14.3.tgz",
+      "installed_bytes": 2758108,
+      "license": "gnu-gpl-v2",
+      "name": "freetype2-2.14.3",
+      "provides": [
+        "/usr/pkg/lib/libfreetype.so",
+        "/usr/pkg/lib/libfreetype.so.6",
+        "/usr/pkg/lib/libfreetype.so.6.20.6"
+      ],
+      "requires": [
+        "/lib/libgcc_s.so.1",
+        "/usr/lib/libbz2.so.1",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libpthread.so.1",
+        "/usr/lib/libz.so.1",
+        "/usr/pkg/lib/libbrotlicommon.so.1",
+        "/usr/pkg/lib/libbrotlidec.so.1",
+        "/usr/pkg/lib/libpng16.so.16"
+      ],
+      "sha512": "32601dcb0fa1cc0094335064ded67a05f11cb5a867128a4ef9cdcafca452064308c27b7f5567cb6f873fd1f978521a81fe86523682486c3df11e475c5dc01864",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/freetype2-2.14.3.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 322919,
+      "dependency_constraints": [
+        "freetype2>=2.13.2nb1"
+      ],
+      "depends": [
+        "freetype2-2.14.3"
+      ],
+      "file": "fontconfig-2.18.3.tgz",
+      "installed_bytes": 1628256,
+      "license": "",
+      "name": "fontconfig-2.18.3",
+      "provides": [
+        "/usr/pkg/lib/libfontconfig.so",
+        "/usr/pkg/lib/libfontconfig.so.1",
+        "/usr/pkg/lib/libfontconfig.so.1.17.0"
+      ],
+      "requires": [
+        "/lib/libgcc_s.so.1",
+        "/usr/lib/libbz2.so.1",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libexpat.so.2",
+        "/usr/lib/libgcc_s.so.1",
+        "/usr/lib/libintl.so.1",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libpthread.so.1",
+        "/usr/lib/libz.so.1",
+        "/usr/pkg/lib/libbrotlicommon.so.1",
+        "/usr/pkg/lib/libbrotlidec.so.1",
+        "/usr/pkg/lib/libfreetype.so.6",
+        "/usr/pkg/lib/libpng16.so.16"
+      ],
+      "sha512": "8604c055527d41e2dc1b9bbdff1afc73eb9894eaee063e9a7755b2ac807ea6f9987feda88f91508248b603e9f21fc86b2dd949995b6ff8b387b350f16bdbadfd",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/fontconfig-2.18.3.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 101391,
+      "dependency_constraints": [],
+      "depends": [],
+      "file": "graphite2-1.3.15.tgz",
+      "installed_bytes": 317093,
+      "license": "gnu-lgpl-v2",
+      "name": "graphite2-1.3.15",
+      "provides": [
+        "/usr/pkg/lib/libgraphite2.so",
+        "/usr/pkg/lib/libgraphite2.so.3",
+        "/usr/pkg/lib/libgraphite2.so.3.3.1"
+      ],
+      "requires": [
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libgcc_s.so.1",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libstdc++.so.9"
+      ],
+      "sha512": "b96be393363cf67377fee02155942c572db702014a2323263e909bb6b8298617992578eda60d08500d91621f72a55ebc65ad39cf3d5037271e7389e4131f6bd9",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/graphite2-1.3.15.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 2154446,
+      "dependency_constraints": [
+        "freetype2>=2.13.2nb1",
+        "glib2>=2.88.3nb1",
+        "graphite2>=1.3.14nb2"
+      ],
+      "depends": [
+        "freetype2-2.14.3",
+        "glib2-2.88.3nb1",
+        "graphite2-1.3.15"
+      ],
+      "file": "harfbuzz-14.4.0nb1.tgz",
+      "installed_bytes": 6817391,
+      "license": "mit",
+      "name": "harfbuzz-14.4.0nb1",
+      "provides": [
+        "/usr/pkg/lib/libharfbuzz-gobject.so",
+        "/usr/pkg/lib/libharfbuzz-gobject.so.0",
+        "/usr/pkg/lib/libharfbuzz-gobject.so.0.61440.0",
+        "/usr/pkg/lib/libharfbuzz-gpu.so",
+        "/usr/pkg/lib/libharfbuzz-gpu.so.0",
+        "/usr/pkg/lib/libharfbuzz-gpu.so.0.61440.0",
+        "/usr/pkg/lib/libharfbuzz-raster.so",
+        "/usr/pkg/lib/libharfbuzz-raster.so.0",
+        "/usr/pkg/lib/libharfbuzz-raster.so.0.61440.0",
+        "/usr/pkg/lib/libharfbuzz-subset.so",
+        "/usr/pkg/lib/libharfbuzz-subset.so.0",
+        "/usr/pkg/lib/libharfbuzz-subset.so.0.61440.0",
+        "/usr/pkg/lib/libharfbuzz-vector.so",
+        "/usr/pkg/lib/libharfbuzz-vector.so.0",
+        "/usr/pkg/lib/libharfbuzz-vector.so.0.61440.0",
+        "/usr/pkg/lib/libharfbuzz.so",
+        "/usr/pkg/lib/libharfbuzz.so.0",
+        "/usr/pkg/lib/libharfbuzz.so.0.61440.0"
+      ],
+      "requires": [
+        "/lib/libgcc_s.so.1",
+        "/usr/lib/libbz2.so.1",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libgcc_s.so.1",
+        "/usr/lib/libintl.so.1",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libpthread.so.1",
+        "/usr/lib/libstdc++.so.9",
+        "/usr/lib/libz.so.1",
+        "/usr/pkg/lib/libbrotlicommon.so.1",
+        "/usr/pkg/lib/libbrotlidec.so.1",
+        "/usr/pkg/lib/libffi.so.8",
+        "/usr/pkg/lib/libfreetype.so.6",
+        "/usr/pkg/lib/libglib-2.0.so.0",
+        "/usr/pkg/lib/libgobject-2.0.so.0",
+        "/usr/pkg/lib/libgraphite2.so.3",
+        "/usr/pkg/lib/libpcre2-8.so.0",
+        "/usr/pkg/lib/libpng16.so.16"
+      ],
+      "sha512": "8041f43c0313d16d1ca0b90616be4e2b51ed3b4bf2b2fcd9c2bb15322a908314d71f34199f8c5477b90611c70eb5efe5cd5632a8e3f8c26dd2b9ed231f58e4d3",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/harfbuzz-14.4.0nb1.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 33915277,
+      "dependency_constraints": [],
+      "depends": [],
+      "file": "icu-78.3.tgz",
+      "installed_bytes": 99752299,
+      "license": "unicode-v3 AND modified-bsd AND mit",
+      "name": "icu-78.3",
+      "provides": [
+        "/usr/pkg/lib/libicudata.so",
+        "/usr/pkg/lib/libicudata.so.78",
+        "/usr/pkg/lib/libicudata.so.78.3",
+        "/usr/pkg/lib/libicui18n.so",
+        "/usr/pkg/lib/libicui18n.so.78",
+        "/usr/pkg/lib/libicui18n.so.78.3",
+        "/usr/pkg/lib/libicuio.so",
+        "/usr/pkg/lib/libicuio.so.78",
+        "/usr/pkg/lib/libicuio.so.78.3",
+        "/usr/pkg/lib/libicutest.so",
+        "/usr/pkg/lib/libicutest.so.78",
+        "/usr/pkg/lib/libicutest.so.78.3",
+        "/usr/pkg/lib/libicutu.so",
+        "/usr/pkg/lib/libicutu.so.78",
+        "/usr/pkg/lib/libicutu.so.78.3",
+        "/usr/pkg/lib/libicuuc.so",
+        "/usr/pkg/lib/libicuuc.so.78",
+        "/usr/pkg/lib/libicuuc.so.78.3"
+      ],
+      "requires": [
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libgcc_s.so.1",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libpthread.so.1",
+        "/usr/lib/libstdc++.so.9"
+      ],
+      "sha512": "9d8de3a066c9b4e1f30c5c65b685d6a1b3e61f27cfc2e51c2879240e0fd6227cf68e2e1908886deb88695f44ae2a53cb9c91edb85dc7159b2bc8a9f184b8e05c",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/icu-78.3.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 129755,
+      "dependency_constraints": [
+        "fontconfig>=2.14.2nb3",
+        "freetype2>=2.13.2nb1"
+      ],
+      "depends": [
+        "fontconfig-2.18.3",
+        "freetype2-2.14.3"
+      ],
+      "file": "libXft-2.3.9.tgz",
+      "installed_bytes": 365884,
+      "license": "",
+      "name": "libXft-2.3.9",
+      "provides": [
+        "/usr/pkg/lib/libXft.so",
+        "/usr/pkg/lib/libXft.so.2",
+        "/usr/pkg/lib/libXft.so.2.3.9"
+      ],
+      "requires": [
+        "/usr/X11R7/lib/libX11.so.7",
+        "/usr/X11R7/lib/libXau.so.7",
+        "/usr/X11R7/lib/libXdmcp.so.7",
+        "/usr/X11R7/lib/libXext.so.7",
+        "/usr/X11R7/lib/libXrender.so.2",
+        "/usr/X11R7/lib/libfontconfig.so.2",
+        "/usr/X11R7/lib/libfreetype.so.19",
+        "/usr/X11R7/lib/libxcb.so.2",
+        "/usr/lib/libbz2.so.1",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libexpat.so.2",
+        "/usr/lib/libgcc_s.so.1",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libpthread.so.1",
+        "/usr/lib/libz.so.1",
+        "/usr/pkg/lib/libbrotlicommon.so.1",
+        "/usr/pkg/lib/libbrotlidec.so.1",
+        "/usr/pkg/lib/libfreetype.so.6",
+        "/usr/pkg/lib/libpng16.so.16"
+      ],
+      "sha512": "279f4d1ef1e5572b532631474394b707065f1c3cfa09dbea802da16cd665e724a4142f79a09116b72e4db9ef5815339a5607519ddcbf0f039d6af69e451927bd",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/libXft-2.3.9.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 555523,
+      "dependency_constraints": [],
+      "depends": [],
+      "file": "mozilla-rootcerts-1.1.20260908nb2.tgz",
+      "installed_bytes": 1981669,
+      "license": "mpl-2.0",
+      "name": "mozilla-rootcerts-1.1.20260908nb2",
+      "provides": [],
+      "requires": [],
+      "sha512": "cd73d3ba1aca0e5e5c07df0c7c825c39658af6674543c2449a7a06ff85f90f8a0fc5105e6f57ee3fb1787fd2bb04e7ae1972fa596582fc946470cc02aac9f1f9",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/mozilla-rootcerts-1.1.20260908nb2.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 802777,
+      "dependency_constraints": [],
+      "depends": [],
+      "file": "gmp-6.3.0.tgz",
+      "installed_bytes": 2732839,
+      "license": "gnu-lgpl-v3 OR gnu-gpl-v2",
+      "name": "gmp-6.3.0",
+      "provides": [
+        "/usr/pkg/lib/libgmp.so",
+        "/usr/pkg/lib/libgmp.so.10",
+        "/usr/pkg/lib/libgmp.so.10.5.0",
+        "/usr/pkg/lib/libgmpxx.so",
+        "/usr/pkg/lib/libgmpxx.so.4",
+        "/usr/pkg/lib/libgmpxx.so.4.7.0"
+      ],
+      "requires": [
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libgcc_s.so.1",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libstdc++.so.9"
+      ],
+      "sha512": "2db224211d07b77cc1f7165d7961d82035bed41e45f2452a898936ea63149fcb60063cb144c2fbfac48cbfe3db47384bed8553c09eaad35308bc8cd49d64b19d",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/gmp-6.3.0.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 168115,
+      "dependency_constraints": [],
+      "depends": [],
+      "file": "libtasn1-4.21.0.tgz",
+      "installed_bytes": 671899,
+      "license": "gnu-fdl-v1.3 AND gnu-lgpl-v2.1 AND gnu-gpl-v3",
+      "name": "libtasn1-4.21.0",
+      "provides": [
+        "/usr/pkg/lib/libtasn1.so",
+        "/usr/pkg/lib/libtasn1.so.6",
+        "/usr/pkg/lib/libtasn1.so.6.6.5"
+      ],
+      "requires": [
+        "/usr/lib/libc.so.12"
+      ],
+      "sha512": "9146a7efa3014a1a246b7e962c0a9640b207083a6dc526b95d34b785e12859f51aaefb6bb52d2aaf003b85956b67c13f48527747de2e12fac38d03003a89b74f",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/libtasn1-4.21.0.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 1948685,
+      "dependency_constraints": [],
+      "depends": [],
+      "file": "libunistring-1.4.2.tgz",
+      "installed_bytes": 6414851,
+      "license": "gnu-lgpl-v3 OR gnu-gpl-v2",
+      "name": "libunistring-1.4.2",
+      "provides": [
+        "/usr/pkg/lib/libunistring.so",
+        "/usr/pkg/lib/libunistring.so.5",
+        "/usr/pkg/lib/libunistring.so.5.2.1"
+      ],
+      "requires": [
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libgcc_s.so.1"
+      ],
+      "sha512": "ecf888de6b37f7a55b0fe066c99c465699474cc609a81b6b6b92fd1c6c14c8c8b9d215fa46a5fc057c6cdcd5efc8d37503ae195bbeca9a5f7463b44ea18a7bb2",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/libunistring-1.4.2.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 12589983,
+      "dependency_constraints": [
+        "gmp>=6.0"
+      ],
+      "depends": [
+        "gmp-6.3.0"
+      ],
+      "file": "nettle-4.0.tgz",
+      "installed_bytes": 44385456,
+      "license": "gnu-lgpl-v2.1",
+      "name": "nettle-4.0",
+      "provides": [
+        "/usr/pkg/lib/libhogweed.so",
+        "/usr/pkg/lib/libhogweed.so.7",
+        "/usr/pkg/lib/libhogweed.so.7.0.0",
+        "/usr/pkg/lib/libnettle.so",
+        "/usr/pkg/lib/libnettle.so.9",
+        "/usr/pkg/lib/libnettle.so.9.0.0"
+      ],
+      "requires": [
+        "/usr/lib/libc.so.12",
+        "/usr/pkg/lib/libgmp.so.10"
+      ],
+      "sha512": "4443914c18d3895fc4ef38899369d77f38b47a746f0d11b52179e95f10c9066d887a1d2915ebf2db806c90fa1fafd99f7e00b8e3522395f67478d4654e564332",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/nettle-4.0.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 1491573,
+      "dependency_constraints": [
+        "mozilla-rootcerts>=1.0.20150804nb1",
+        "libffi>=3.4.2nb3",
+        "libtasn1>=0.3.0"
+      ],
+      "depends": [
+        "mozilla-rootcerts-1.1.20260908nb2",
+        "libffi-3.8.0",
+        "libtasn1-4.21.0"
+      ],
+      "file": "p11-kit-0.26.5.tgz",
+      "installed_bytes": 6950493,
+      "license": "modified-bsd",
+      "name": "p11-kit-0.26.5",
+      "provides": [
+        "/usr/pkg/lib/libp11-kit.so",
+        "/usr/pkg/lib/libp11-kit.so.0",
+        "/usr/pkg/lib/libp11-kit.so.0.4.11"
+      ],
+      "requires": [
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libgcc_s.so.1",
+        "/usr/lib/libintl.so.1",
+        "/usr/lib/libpthread.so.1",
+        "/usr/pkg/lib/libffi.so.8",
+        "/usr/pkg/lib/libtasn1.so.6"
+      ],
+      "sha512": "e8929c92c94df27df2cf120a386cdd5f72b93d1773c4f67fca8cd32a422fa39d49a99c7da2c1439dcbdc3b99ee8169afce1d9bcce67a78ce8fc01b61d43029ec",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/p11-kit-0.26.5.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 4488626,
+      "dependency_constraints": [
+        "mozilla-rootcerts-[0-9]*",
+        "gmp>=6.0",
+        "libtasn1>=4.9",
+        "libunistring>=1.1",
+        "nettle>=4.0",
+        "p11-kit>=0.24.0nb3"
+      ],
+      "depends": [
+        "mozilla-rootcerts-1.1.20260908nb2",
+        "gmp-6.3.0",
+        "libtasn1-4.21.0",
+        "libunistring-1.4.2",
+        "nettle-4.0",
+        "p11-kit-0.26.5"
+      ],
+      "file": "gnutls-3.8.13nb1.tgz",
+      "installed_bytes": 15370655,
+      "license": "gnu-gpl-v3 AND gnu-lgpl-v2.1",
+      "name": "gnutls-3.8.13nb1",
+      "provides": [
+        "/usr/pkg/lib/libgnutls.so",
+        "/usr/pkg/lib/libgnutls.so.30",
+        "/usr/pkg/lib/libgnutls.so.30.42.0",
+        "/usr/pkg/lib/libgnutlsxx.so",
+        "/usr/pkg/lib/libgnutlsxx.so.30",
+        "/usr/pkg/lib/libgnutlsxx.so.30.0.0"
+      ],
+      "requires": [
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libgcc_s.so.1",
+        "/usr/lib/libintl.so.1",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libpthread.so.1",
+        "/usr/lib/libstdc++.so.9",
+        "/usr/pkg/lib/libffi.so.8",
+        "/usr/pkg/lib/libgmp.so.10",
+        "/usr/pkg/lib/libhogweed.so.7",
+        "/usr/pkg/lib/libnettle.so.9",
+        "/usr/pkg/lib/libp11-kit.so.0",
+        "/usr/pkg/lib/libtasn1.so.6",
+        "/usr/pkg/lib/libunistring.so.5"
+      ],
+      "sha512": "6e231179bcfa718d12ef05a59240284ae178ac1aa6ac45ec8604b380ca5bd81bbf2ec58811689bb25c6b09c09d4342ed83714bcec4b8be1daa856bd891870f31",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/gnutls-3.8.13nb1.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 1522208,
+      "dependency_constraints": [],
+      "depends": [],
+      "file": "libjpeg-turbo-3.2.0nb2.tgz",
+      "installed_bytes": 4606130,
+      "license": "gnu-lgpl-v2 AND ijg",
+      "name": "libjpeg-turbo-3.2.0nb2",
+      "provides": [
+        "/usr/pkg/lib/libjpeg.so",
+        "/usr/pkg/lib/libjpeg.so.8",
+        "/usr/pkg/lib/libjpeg.so.8.3.2",
+        "/usr/pkg/lib/libturbojpeg.so",
+        "/usr/pkg/lib/libturbojpeg.so.0",
+        "/usr/pkg/lib/libturbojpeg.so.0.5.0"
+      ],
+      "requires": [
+        "/lib/libgcc_s.so.1",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libz.so.1"
+      ],
+      "sha512": "8d3fad4b48cf42dd3cb14303face2db99ae1505da3df9a5583fd67fe04f72dc46eae607f4bb35988797de157ec57a5cfc85eb367436b0924532bde0923d13b9d",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/libjpeg-turbo-3.2.0nb2.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 58701,
+      "dependency_constraints": [],
+      "depends": [],
+      "file": "libpaper-2.2.8.tgz",
+      "installed_bytes": 237332,
+      "license": "gnu-gpl-v3 AND gnu-lgpl-v2.1",
+      "name": "libpaper-2.2.8",
+      "provides": [
+        "/usr/pkg/lib/libpaper.so",
+        "/usr/pkg/lib/libpaper.so.2",
+        "/usr/pkg/lib/libpaper.so.2.2.8"
+      ],
+      "requires": [
+        "/usr/lib/libc.so.12"
+      ],
+      "sha512": "0d389876e103c13607836220d5e58febe5cbdf9fbfcfa63f21492ce8a335882cfa360b3af86d35f3f1f434d720ed47ad57e32e5f25238b8934f58749453cc25d",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/libpaper-2.2.8.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 121108,
+      "dependency_constraints": [],
+      "depends": [],
+      "file": "jbigkit-2.1nb1.tgz",
+      "installed_bytes": 605027,
+      "license": "gnu-gpl-v2",
+      "name": "jbigkit-2.1nb1",
+      "provides": [
+        "/usr/pkg/lib/libjbig.so",
+        "/usr/pkg/lib/libjbig.so.2",
+        "/usr/pkg/lib/libjbig.so.2.0.1",
+        "/usr/pkg/lib/libjbig85.so",
+        "/usr/pkg/lib/libjbig85.so.2",
+        "/usr/pkg/lib/libjbig85.so.2.0.1"
+      ],
+      "requires": [
+        "/usr/lib/libc.so.12"
+      ],
+      "sha512": "6a154545f7ca0f457505d77d8448552c33823c3d250614b2bbc35653bef282d6f89b31ea628bf43c0af23ae63da4dba779341555e06e30dc590e49525743d5e0",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/jbigkit-2.1nb1.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 187642,
+      "dependency_constraints": [],
+      "depends": [],
+      "file": "lerc-4.2.0.tgz",
+      "installed_bytes": 620827,
+      "license": "apache-2.0",
+      "name": "lerc-4.2.0",
+      "provides": [
+        "/usr/pkg/lib/libLerc.so",
+        "/usr/pkg/lib/libLerc.so.4"
+      ],
+      "requires": [
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libgcc_s.so.1",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libstdc++.so.9"
+      ],
+      "sha512": "bc9800f159e050df030e5b90b6918974e0f0c452619851e250f1f039073298758311ee7ddcf5b0c4eb71d68372ebd0edb01cf0a87078b3f19717042894574e47",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/lerc-4.2.0.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 1968568,
+      "dependency_constraints": [
+        "jbigkit>=2.0",
+        "lerc>=4.0.0",
+        "libjpeg-turbo>=1.1.0"
+      ],
+      "depends": [
+        "jbigkit-2.1nb1",
+        "lerc-4.2.0",
+        "libjpeg-turbo-3.2.0nb2"
+      ],
+      "file": "tiff-4.7.2.tgz",
+      "installed_bytes": 8711330,
+      "license": "mit",
+      "name": "tiff-4.7.2",
+      "provides": [
+        "/usr/pkg/lib/libtiff.so",
+        "/usr/pkg/lib/libtiff.so.6",
+        "/usr/pkg/lib/libtiff.so.6.3.0",
+        "/usr/pkg/lib/libtiffxx.so",
+        "/usr/pkg/lib/libtiffxx.so.6",
+        "/usr/pkg/lib/libtiffxx.so.6.3.0"
+      ],
+      "requires": [
+        "/lib/libpthread.so.1",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libgcc_s.so.1",
+        "/usr/lib/liblzma.so.2",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libstdc++.so.9",
+        "/usr/lib/libz.so.1",
+        "/usr/pkg/lib/libLerc.so.4",
+        "/usr/pkg/lib/libjbig.so.2",
+        "/usr/pkg/lib/libjpeg.so.8"
+      ],
+      "sha512": "d751adce54f6b24dc114e3001fa78e72402a388f262c9d928c495abae5429bf31b117ec44b6fef76460bec85069cd9681d3b6b4e35102d933dee7d5f191558c5",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/tiff-4.7.2.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 1031488,
+      "dependency_constraints": [
+        "dbus>=0.91",
+        "gnutls>=3.8.13nb1",
+        "libjpeg-turbo>=1.1.0",
+        "libpaper>=2.1.0",
+        "libunistring>=1.1",
+        "png>=1.6.0nb1",
+        "tiff>=4.7.0nb3"
+      ],
+      "depends": [
+        "dbus-1.16.2nb3",
+        "gnutls-3.8.13nb1",
+        "libjpeg-turbo-3.2.0nb2",
+        "libpaper-2.2.8",
+        "libunistring-1.4.2",
+        "png-1.6.59",
+        "tiff-4.7.2"
+      ],
+      "file": "libcups-2.4.19nb2.tgz",
+      "installed_bytes": 5193283,
+      "license": "gnu-gpl-v2 AND gnu-lgpl-v2",
+      "name": "libcups-2.4.19nb2",
+      "provides": [
+        "/usr/pkg/lib/libcups.so",
+        "/usr/pkg/lib/libcups.so.2",
+        "/usr/pkg/lib/libcupsimage.so",
+        "/usr/pkg/lib/libcupsimage.so.2"
+      ],
+      "requires": [
+        "/lib/libgcc_s.so.1",
+        "/usr/lib/libasn1.so.10",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libcom_err.so.8",
+        "/usr/lib/libcrypt.so.1",
+        "/usr/lib/libcrypto.so.16",
+        "/usr/lib/libdns_sd.so.0",
+        "/usr/lib/libgssapi.so.12",
+        "/usr/lib/libheimbase.so.2",
+        "/usr/lib/libheimntlm.so.6",
+        "/usr/lib/libhx509.so.7",
+        "/usr/lib/libintl.so.1",
+        "/usr/lib/libkrb5.so.28",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libpthread.so.1",
+        "/usr/lib/libroken.so.20",
+        "/usr/lib/libutil.so.7",
+        "/usr/lib/libwind.so.1",
+        "/usr/lib/libz.so.1",
+        "/usr/pkg/lib/libffi.so.8",
+        "/usr/pkg/lib/libgmp.so.10",
+        "/usr/pkg/lib/libgnutls.so.30",
+        "/usr/pkg/lib/libhogweed.so.7",
+        "/usr/pkg/lib/libnettle.so.9",
+        "/usr/pkg/lib/libp11-kit.so.0",
+        "/usr/pkg/lib/libtasn1.so.6",
+        "/usr/pkg/lib/libunistring.so.5"
+      ],
+      "sha512": "fd40f7bb3e5c616a3211aebe4e63475397fb47fc1073f187cdd5bd52ded4c453360006edfe9fd40ed20a1b7306119ea6f9104a26eb44df7062857c99ecb5bb45",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/libcups-2.4.19nb2.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 325353,
+      "dependency_constraints": [
+        "libunistring>=1.1"
+      ],
+      "depends": [
+        "libunistring-1.4.2"
+      ],
+      "file": "libidn2-2.3.7.tgz",
+      "installed_bytes": 1004260,
+      "license": "gnu-gpl-v2",
+      "name": "libidn2-2.3.7",
+      "provides": [
+        "/usr/pkg/lib/libidn2.so",
+        "/usr/pkg/lib/libidn2.so.0",
+        "/usr/pkg/lib/libidn2.so.0.4.0"
+      ],
+      "requires": [
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libgcc_s.so.1",
+        "/usr/lib/libintl.so.1",
+        "/usr/pkg/lib/libunistring.so.5"
+      ],
+      "sha512": "5ecd5d3694501ea19b0aca500f7a5c251b8e7bf9a0b793c8f5976bd5b1d35afc1339fc2e0d97ab167593a3552c534436d027bbc95861f4ec55cd57ed99fe209e",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/libidn2-2.3.7.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 31783,
+      "dependency_constraints": [],
+      "depends": [],
+      "file": "xmlcatmgr-2.2nb1.tgz",
+      "installed_bytes": 90487,
+      "license": "modified-bsd",
+      "name": "xmlcatmgr-2.2nb1",
+      "provides": [],
+      "requires": [
+        "/usr/lib/libc.so.12"
+      ],
+      "sha512": "45b8d4b1127e00940735c2f24b7e0f31c40cc7d44471100cbaf6551b12639dbb4bf4d5f03893f65029e2edd68735e5f61c95b5766f149f8398e22dbde8e36c57",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/xmlcatmgr-2.2nb1.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 1438001,
+      "dependency_constraints": [
+        "xmlcatmgr>=2.0beta1"
+      ],
+      "depends": [
+        "xmlcatmgr-2.2nb1"
+      ],
+      "file": "libxml2-2.15.4.tgz",
+      "installed_bytes": 4120298,
+      "license": "modified-bsd",
+      "name": "libxml2-2.15.4",
+      "provides": [
+        "/usr/pkg/lib/libxml2.so",
+        "/usr/pkg/lib/libxml2.so.16",
+        "/usr/pkg/lib/libxml2.so.16.1.4"
+      ],
+      "requires": [
+        "/lib/libgcc_s.so.1",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libpthread.so.1",
+        "/usr/lib/libz.so.1"
+      ],
+      "sha512": "31fbaddee5b6352ce863ac8eaeae67acc7baf946755213312611589f7daeb7b267edb68a1c6f9477687c778715b567d9a1e058ecd8fb04e2098f314fc1d1ce6a",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/libxml2-2.15.4.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 283237,
+      "dependency_constraints": [
+        "libxml2>=2.14.6nb2"
+      ],
+      "depends": [
+        "libxml2-2.15.4"
+      ],
+      "file": "nghttp2-1.70.0.tgz",
+      "installed_bytes": 973589,
+      "license": "mit",
+      "name": "nghttp2-1.70.0",
+      "provides": [
+        "/usr/pkg/lib/libnghttp2.so",
+        "/usr/pkg/lib/libnghttp2.so.14",
+        "/usr/pkg/lib/libnghttp2.so.14.29.5"
+      ],
+      "requires": [
+        "/usr/lib/libc.so.12"
+      ],
+      "sha512": "d3a6d695d4fe1b4d2bc63c13d1f4fa5a347d334aad93b73acbebbc12e00d52b256dc29bea0f8c0457d4897c837135804afc13f16e0b06ecdfc43a1eaca31c01f",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/nghttp2-1.70.0.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 1780721,
+      "dependency_constraints": [
+        "libidn2>=2.3.3nb1",
+        "nghttp2>=1.68.0nb1"
+      ],
+      "depends": [
+        "libidn2-2.3.7",
+        "nghttp2-1.70.0"
+      ],
+      "file": "curl-8.23.0.tgz",
+      "installed_bytes": 5341824,
+      "license": "mit",
+      "name": "curl-8.23.0",
+      "provides": [
+        "/usr/pkg/lib/libcurl.so",
+        "/usr/pkg/lib/libcurl.so.4",
+        "/usr/pkg/lib/libcurl.so.4.8.0"
+      ],
+      "requires": [
+        "/lib/libcrypt.so.1",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libcrypto.so.16",
+        "/usr/lib/libgcc_s.so.1",
+        "/usr/lib/libintl.so.1",
+        "/usr/lib/libpthread.so.1",
+        "/usr/lib/libssl.so.16",
+        "/usr/lib/libz.so.1",
+        "/usr/pkg/lib/libidn2.so.0",
+        "/usr/pkg/lib/libnghttp2.so.14",
+        "/usr/pkg/lib/libunistring.so.5"
+      ],
+      "sha512": "12bad7a80a7a84b8ec29665288d7a43dec9b4c83c7a0b43d861d4d9d2d5ba6060ab99e368e42341ae3c45ba942df0295f6e64f2001ddf2ed90391932a1b5f0a7",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/curl-8.23.0.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 241256,
+      "dependency_constraints": [],
+      "depends": [],
+      "file": "mpdecimal-4.0.1.tgz",
+      "installed_bytes": 797368,
+      "license": "2-clause-bsd",
+      "name": "mpdecimal-4.0.1",
+      "provides": [
+        "/usr/pkg/lib/libmpdec++.so",
+        "/usr/pkg/lib/libmpdec++.so.4",
+        "/usr/pkg/lib/libmpdec++.so.4.0.1",
+        "/usr/pkg/lib/libmpdec.so",
+        "/usr/pkg/lib/libmpdec.so.4",
+        "/usr/pkg/lib/libmpdec.so.4.0.1"
+      ],
+      "requires": [
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libgcc_s.so.1",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libpthread.so.1",
+        "/usr/lib/libstdc++.so.9"
+      ],
+      "sha512": "a33a397103695b55f4800678535187f5fc243f71c08aa0b8594939fc9a401ab7cf7a11a4517bb008843dbb34e5d16515ae3daabba87acf2ad50003d7927078e0",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/mpdecimal-4.0.1.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 46845121,
+      "dependency_constraints": [
+        "expat>=2.0.0nb1",
+        "libffi>=3.4.2nb3",
+        "libuuid>=2.18",
+        "mpdecimal>=4.0.0",
+        "readline>=6.0",
+        "sqlite3>=3.51.1nb1"
+      ],
+      "depends": [
+        "expat-2.9.0",
+        "libffi-3.8.0",
+        "libuuid-2.42.3",
+        "mpdecimal-4.0.1",
+        "readline-8.3nb1",
+        "sqlite3-3.53.4"
+      ],
+      "file": "python313-3.13.15.tgz",
+      "installed_bytes": 171295679,
+      "license": "python-software-foundation",
+      "name": "python313-3.13.15",
+      "provides": [
+        "/usr/pkg/lib/libpython3.13.so",
+        "/usr/pkg/lib/libpython3.13.so.1.0",
+        "/usr/pkg/lib/python3.13/lib-dynload/_asyncio.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_bisect.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_blake2.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_bz2.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_codecs_cn.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_codecs_hk.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_codecs_iso2022.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_codecs_jp.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_codecs_kr.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_codecs_tw.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_contextvars.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_csv.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_ctypes.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_ctypes_test.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_curses.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_curses_panel.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_datetime.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_dbm.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_decimal.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_elementtree.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_hashlib.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_heapq.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_interpchannels.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_interpqueues.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_interpreters.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_json.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_lsprof.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_lzma.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_md5.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_multibytecodec.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_multiprocessing.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_opcode.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_pickle.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_posixshmem.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_posixsubprocess.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_queue.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_random.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_sha1.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_sha2.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_sha3.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_socket.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_sqlite3.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_ssl.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_statistics.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_struct.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_testbuffer.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_testcapi.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_testclinic.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_testclinic_limited.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_testexternalinspection.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_testimportmultiple.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_testinternalcapi.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_testlimitedcapi.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_testmultiphase.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_testsinglephase.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_uuid.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_xxtestfuzz.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/_zoneinfo.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/array.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/binascii.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/cmath.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/fcntl.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/grp.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/math.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/mmap.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/pyexpat.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/readline.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/resource.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/select.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/syslog.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/termios.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/unicodedata.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/xxlimited_35.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/xxsubtype.so",
+        "/usr/pkg/lib/python3.13/lib-dynload/zlib.so"
+      ],
+      "requires": [
+        "/lib/libcrypt.so.1",
+        "/lib/libgcc_s.so.1",
+        "/usr/lib/libbz2.so.1",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libcrypt.so.1",
+        "/usr/lib/libcrypto.so.16",
+        "/usr/lib/libcurses.so.9",
+        "/usr/lib/libgcc_s.so.1",
+        "/usr/lib/libintl.so.1",
+        "/usr/lib/liblzma.so.2",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libpanel.so.3",
+        "/usr/lib/libpthread.so.1",
+        "/usr/lib/librt.so.1",
+        "/usr/lib/libssl.so.16",
+        "/usr/lib/libterminfo.so.2",
+        "/usr/lib/libutil.so.7",
+        "/usr/lib/libz.so.1",
+        "/usr/pkg/lib/libexpat.so.1",
+        "/usr/pkg/lib/libffi.so.8",
+        "/usr/pkg/lib/libmpdec.so.4",
+        "/usr/pkg/lib/libreadline.so.8",
+        "/usr/pkg/lib/libsqlite3.so",
+        "/usr/pkg/lib/libuuid.so.1"
+      ],
+      "sha512": "eb61db2acb92c82dd7559d740a5f0130be54955f279caae27025fc86ebf4400b101c681521f0329e8e51ea0ac92ae159c6295d446cf79ef2364c96ba26080cac",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/python313-3.13.15.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 2303962,
+      "dependency_constraints": [
+        "python313>=3.13"
+      ],
+      "depends": [
+        "python313-3.13.15"
+      ],
+      "file": "py313-setuptools-84.0.0.tgz",
+      "installed_bytes": 8102112,
+      "license": "python-software-foundation OR zpl-2.0",
+      "name": "py313-setuptools-84.0.0",
+      "provides": [],
+      "requires": [],
+      "sha512": "009652eebe2526078d53542e9d8b6c973ea372e9085c094551267b1c38b5d14cbf0344813c17f6e45753e6980a8d58b3edf06acbacd9d07959af21efafc6639d",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/py313-setuptools-84.0.0.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 636120,
+      "dependency_constraints": [
+        "py313-setuptools>=78",
+        "glib2>=2.88.3nb1",
+        "libffi>=3.4.2nb3",
+        "python313>=3.13"
+      ],
+      "depends": [
+        "py313-setuptools-84.0.0",
+        "glib2-2.88.3nb1",
+        "libffi-3.8.0",
+        "python313-3.13.15"
+      ],
+      "file": "gobject-introspection-1.86.0nb4.tgz",
+      "installed_bytes": 3003838,
+      "license": "gnu-gpl-v2 AND gnu-lgpl-v2",
+      "name": "gobject-introspection-1.86.0nb4",
+      "provides": [
+        "/usr/pkg/lib/libgirepository-1.0.so",
+        "/usr/pkg/lib/libgirepository-1.0.so.1",
+        "/usr/pkg/lib/libgirepository-1.0.so.1.0.0"
+      ],
+      "requires": [
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libgcc_s.so.1",
+        "/usr/lib/libintl.so.1",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libpthread.so.1",
+        "/usr/lib/libz.so.1",
+        "/usr/pkg/lib/libffi.so.8",
+        "/usr/pkg/lib/libgio-2.0.so.0",
+        "/usr/pkg/lib/libglib-2.0.so.0",
+        "/usr/pkg/lib/libgmodule-2.0.so.0",
+        "/usr/pkg/lib/libgobject-2.0.so.0",
+        "/usr/pkg/lib/libpcre2-8.so.0"
+      ],
+      "sha512": "e779ea65447d3c1ccea9448375367ec270a930371d4d6ccd1b03ba3647c8de144a611b9f01055b2eef182d8b462bbcf6c513a12514c9cb6a0cd7c894bae1db3e",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/gobject-introspection-1.86.0nb4.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 1903492,
+      "dependency_constraints": [
+        "glib2>=2.88.3nb1"
+      ],
+      "depends": [
+        "glib2-2.88.3nb1"
+      ],
+      "file": "gsettings-desktop-schemas-50.1nb1.tgz",
+      "installed_bytes": 6397771,
+      "license": "gnu-lgpl-v2.1",
+      "name": "gsettings-desktop-schemas-50.1nb1",
+      "provides": [],
+      "requires": [],
+      "sha512": "7cf6c4afbbd42cd8172007304a8e125e8c33370731aaf56087ae2da7331e2ba764c94331611f80ec5cf4365da0afdde06c6c9124cb700d0407c2530692f8cd8b",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/gsettings-desktop-schemas-50.1nb1.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 474567,
+      "dependency_constraints": [],
+      "depends": [],
+      "file": "libduktape-2.7.0.tgz",
+      "installed_bytes": 1608845,
+      "license": "mit",
+      "name": "libduktape-2.7.0",
+      "provides": [
+        "/usr/pkg/lib/libduktape.so",
+        "/usr/pkg/lib/libduktape.so.0",
+        "/usr/pkg/lib/libduktape.so.0.0.0"
+      ],
+      "requires": [
+        "/usr/lib/libc.so.12"
+      ],
+      "sha512": "e71984bcb61846d3aeb00fea91cff711ae47d6b136b20f03f805b7471636e1f25176d265f0b8698d494466da966e6a115fa8f3abe59a34470eb21ab3a1c4bbb8",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/libduktape-2.7.0.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 1201359,
+      "dependency_constraints": [
+        "curl>=8.20.0nb1",
+        "glib2>=2.88.3nb1",
+        "gobject-introspection>=1.86.0nb4",
+        "gsettings-desktop-schemas>=40.0nb2",
+        "libduktape>=1.5.0"
+      ],
+      "depends": [
+        "curl-8.23.0",
+        "glib2-2.88.3nb1",
+        "gobject-introspection-1.86.0nb4",
+        "gsettings-desktop-schemas-50.1nb1",
+        "libduktape-2.7.0"
+      ],
+      "file": "libproxy-0.5.12nb4.tgz",
+      "installed_bytes": 1522908,
+      "license": "gnu-lgpl-v2.1",
+      "name": "libproxy-0.5.12nb4",
+      "provides": [
+        "/usr/pkg/lib/libproxy.so",
+        "/usr/pkg/lib/libproxy.so.0.5.12",
+        "/usr/pkg/lib/libproxy.so.1",
+        "/usr/pkg/lib/libproxy/libpxbackend-1.0.so"
+      ],
+      "requires": [
+        "/lib/libcrypt.so.1",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libcrypto.so.16",
+        "/usr/lib/libgcc_s.so.1",
+        "/usr/lib/libintl.so.1",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libpthread.so.1",
+        "/usr/lib/libssl.so.16",
+        "/usr/lib/libz.so.1",
+        "/usr/pkg/lib/libcurl.so.4",
+        "/usr/pkg/lib/libduktape.so.0",
+        "/usr/pkg/lib/libffi.so.8",
+        "/usr/pkg/lib/libgio-2.0.so.0",
+        "/usr/pkg/lib/libglib-2.0.so.0",
+        "/usr/pkg/lib/libgmodule-2.0.so.0",
+        "/usr/pkg/lib/libgobject-2.0.so.0",
+        "/usr/pkg/lib/libidn2.so.0",
+        "/usr/pkg/lib/libnghttp2.so.14",
+        "/usr/pkg/lib/libpcre2-8.so.0",
+        "/usr/pkg/lib/libunistring.so.5"
+      ],
+      "sha512": "c13699207ae60f5a9fb11fcdf74cfc185a8ad0bffd90f009a67f7ff45cac297d7069316bce0c31ddcacc4d1f4987dd21c48e80255a2d57bbe74fbe239858b40f",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/libproxy-0.5.12nb4.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 476495,
+      "dependency_constraints": [
+        "libxml2>=2.14.6nb2"
+      ],
+      "depends": [
+        "libxml2-2.15.4"
+      ],
+      "file": "libxkbcommon-1.13.2.tgz",
+      "installed_bytes": 1859431,
+      "license": "mit",
+      "name": "libxkbcommon-1.13.2",
+      "provides": [
+        "/usr/pkg/lib/libxkbcommon-x11.so",
+        "/usr/pkg/lib/libxkbcommon-x11.so.0",
+        "/usr/pkg/lib/libxkbcommon-x11.so.0.13.2",
+        "/usr/pkg/lib/libxkbcommon.so",
+        "/usr/pkg/lib/libxkbcommon.so.0",
+        "/usr/pkg/lib/libxkbcommon.so.0.13.2",
+        "/usr/pkg/lib/libxkbregistry.so",
+        "/usr/pkg/lib/libxkbregistry.so.0",
+        "/usr/pkg/lib/libxkbregistry.so.0.13.2"
+      ],
+      "requires": [
+        "/lib/libgcc_s.so.1",
+        "/usr/X11R7/lib/libXau.so.7",
+        "/usr/X11R7/lib/libXdmcp.so.7",
+        "/usr/X11R7/lib/libxcb-xkb.so.1",
+        "/usr/X11R7/lib/libxcb.so.2",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libpthread.so.1",
+        "/usr/lib/libz.so.1",
+        "/usr/pkg/lib/libxml2.so.16"
+      ],
+      "sha512": "bc13825aadd06dc18a69afd41ca7b38e941ad5392dbd8228f33695d5b516725d612882a2fe35159e440e61fa369474d0cf26ee9d50a7798a3e6506fccbb3f92a",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/libxkbcommon-1.13.2.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 89200,
+      "dependency_constraints": [],
+      "depends": [],
+      "file": "md4c-0.5.3.tgz",
+      "installed_bytes": 296851,
+      "license": "mit",
+      "name": "md4c-0.5.3",
+      "provides": [
+        "/usr/pkg/lib/libmd4c-html.so",
+        "/usr/pkg/lib/libmd4c-html.so.0",
+        "/usr/pkg/lib/libmd4c-html.so.0.5.3",
+        "/usr/pkg/lib/libmd4c.so",
+        "/usr/pkg/lib/libmd4c.so.0",
+        "/usr/pkg/lib/libmd4c.so.0.5.3"
+      ],
+      "requires": [
+        "/usr/lib/libc.so.12"
+      ],
+      "sha512": "8de9208407175452a5f031f6f6f3d97d5ecece29dbe608f9305d503519e8c6b2410067403ec2dd65089fdd8e971d6282b40d45a5bce19d7e13741198f25c86e3",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/md4c-0.5.3.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 22525,
+      "dependency_constraints": [],
+      "depends": [],
+      "file": "xcb-util-0.4.1.tgz",
+      "installed_bytes": 112879,
+      "license": "",
+      "name": "xcb-util-0.4.1",
+      "provides": [
+        "/usr/pkg/lib/libxcb-util.so",
+        "/usr/pkg/lib/libxcb-util.so.1",
+        "/usr/pkg/lib/libxcb-util.so.1.0.0"
+      ],
+      "requires": [
+        "/usr/X11R7/lib/libXau.so.7",
+        "/usr/X11R7/lib/libXdmcp.so.7",
+        "/usr/X11R7/lib/libxcb.so.2",
+        "/usr/lib/libc.so.12"
+      ],
+      "sha512": "79928f58916c7edbd88ee54c3701c8383a11ee330d32c7e61561b7f53b57ae0d09f7b113a1195181f475d552c12e7398cbdd52cc08ab129cad3312481c4043e2",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/xcb-util-0.4.1.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 24471,
+      "dependency_constraints": [
+        "xcb-util>=0.3.9"
+      ],
+      "depends": [
+        "xcb-util-0.4.1"
+      ],
+      "file": "xcb-util-image-0.4.1.tgz",
+      "installed_bytes": 124481,
+      "license": "mit",
+      "name": "xcb-util-image-0.4.1",
+      "provides": [
+        "/usr/pkg/lib/libxcb-image.so",
+        "/usr/pkg/lib/libxcb-image.so.0",
+        "/usr/pkg/lib/libxcb-image.so.0.0.0"
+      ],
+      "requires": [
+        "/usr/X11R7/lib/libXau.so.7",
+        "/usr/X11R7/lib/libXdmcp.so.7",
+        "/usr/X11R7/lib/libxcb-shm.so.0",
+        "/usr/X11R7/lib/libxcb.so.2",
+        "/usr/lib/libc.so.12",
+        "/usr/pkg/lib/libxcb-util.so.1"
+      ],
+      "sha512": "a511eb71a825e75dabe3f90a1b1d29cb0572d4dabe86bc3e6c81b80889caeb45af2165a50ced5fb2a22626f8e688d04e86ff6c44d1216d50f7d3bb229d335682",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/xcb-util-image-0.4.1.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 11262,
+      "dependency_constraints": [],
+      "depends": [],
+      "file": "xcb-util-keysyms-0.4.1.tgz",
+      "installed_bytes": 83108,
+      "license": "mit",
+      "name": "xcb-util-keysyms-0.4.1",
+      "provides": [
+        "/usr/pkg/lib/libxcb-keysyms.so",
+        "/usr/pkg/lib/libxcb-keysyms.so.1",
+        "/usr/pkg/lib/libxcb-keysyms.so.1.0.0"
+      ],
+      "requires": [
+        "/usr/X11R7/lib/libXau.so.7",
+        "/usr/X11R7/lib/libXdmcp.so.7",
+        "/usr/X11R7/lib/libxcb.so.2",
+        "/usr/lib/libc.so.12"
+      ],
+      "sha512": "b6c1fe0f39714370f308036bcacecf188de2b575efd80186dcab0b34d83567656fe4ab9ced9141ecc829c01fcca4d81e80e5dedb58a4e148bcc930b9c45fa2a2",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/xcb-util-keysyms-0.4.1.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 16026,
+      "dependency_constraints": [],
+      "depends": [],
+      "file": "xcb-util-renderutil-0.3.10.tgz",
+      "installed_bytes": 97480,
+      "license": "mit",
+      "name": "xcb-util-renderutil-0.3.10",
+      "provides": [
+        "/usr/pkg/lib/libxcb-render-util.so",
+        "/usr/pkg/lib/libxcb-render-util.so.0",
+        "/usr/pkg/lib/libxcb-render-util.so.0.0.0"
+      ],
+      "requires": [
+        "/usr/X11R7/lib/libXau.so.7",
+        "/usr/X11R7/lib/libXdmcp.so.7",
+        "/usr/X11R7/lib/libxcb-render.so.0",
+        "/usr/X11R7/lib/libxcb.so.2",
+        "/usr/lib/libc.so.12"
+      ],
+      "sha512": "6ad9842b8cec1a66b8ebb236a8b8e4a6927407ec2747a88822a5e6b7d2c6f45970cb851c26245b56da8fbbfd0e69ad8ea44fd139b53fbd1d41d2945801889832",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/xcb-util-renderutil-0.3.10.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 65067,
+      "dependency_constraints": [],
+      "depends": [],
+      "file": "xcb-util-wm-0.4.2nb1.tgz",
+      "installed_bytes": 392016,
+      "license": "mit",
+      "name": "xcb-util-wm-0.4.2nb1",
+      "provides": [
+        "/usr/pkg/lib/libxcb-ewmh.so",
+        "/usr/pkg/lib/libxcb-ewmh.so.2",
+        "/usr/pkg/lib/libxcb-ewmh.so.2.0.0",
+        "/usr/pkg/lib/libxcb-icccm.so",
+        "/usr/pkg/lib/libxcb-icccm.so.4",
+        "/usr/pkg/lib/libxcb-icccm.so.4.0.0"
+      ],
+      "requires": [
+        "/usr/X11R7/lib/libXau.so.7",
+        "/usr/X11R7/lib/libXdmcp.so.7",
+        "/usr/X11R7/lib/libxcb.so.2",
+        "/usr/lib/libc.so.12"
+      ],
+      "sha512": "60a6ba0d12f1cd50d250ab45779f40e916d5b5376e97c93452f6e18fb4916f5addbc5c1349f2cca6c5e9181845c80631a066a10dcc0f3f304daeb0f2f38c056e",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/xcb-util-wm-0.4.2nb1.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 315192,
+      "dependency_constraints": [],
+      "depends": [],
+      "file": "lz4-1.10.0.tgz",
+      "installed_bytes": 769944,
+      "license": "2-clause-bsd",
+      "name": "lz4-1.10.0",
+      "provides": [
+        "/usr/pkg/lib/liblz4.so",
+        "/usr/pkg/lib/liblz4.so.1",
+        "/usr/pkg/lib/liblz4.so.1.0.0"
+      ],
+      "requires": [
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libgcc_s.so.1",
+        "/usr/lib/libpthread.so.1"
+      ],
+      "sha512": "b93f91fb7fabb793607fc965a5bd2a0823e6b426a6232b10df2ae922dfd93793065410d738808b104dc84ef9b13f17c875a6c7d2b853159de5baa93f4abacf7e",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/lz4-1.10.0.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 1175164,
+      "dependency_constraints": [
+        "lz4>=1.7.3<100"
+      ],
+      "depends": [
+        "lz4-1.10.0"
+      ],
+      "file": "zstd-1.5.7.tgz",
+      "installed_bytes": 2852395,
+      "license": "modified-bsd OR gnu-gpl-v2",
+      "name": "zstd-1.5.7",
+      "provides": [
+        "/usr/pkg/lib/libzstd.so",
+        "/usr/pkg/lib/libzstd.so.1",
+        "/usr/pkg/lib/libzstd.so.1.5.7"
+      ],
+      "requires": [
+        "/usr/lib/libc.so.12",
+        "/usr/lib/liblzma.so.2",
+        "/usr/lib/libpthread.so.1",
+        "/usr/lib/libz.so.1",
+        "/usr/pkg/lib/liblz4.so.1"
+      ],
+      "sha512": "309ceb5e8eb8ef1d92d9a2eb8c4f123a3ccc634274b5250018e4cfdfceb4c006a525c243aa44ddbc59ee28de94cdd1ffc0b1a3243e475aaf4ca81a62aeaf8dce",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/zstd-1.5.7.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 35529278,
+      "dependency_constraints": [
+        "dbus>=0.91",
+        "double-conversion>=3.0.0",
+        "fontconfig>=2.14.2nb3",
+        "freetype2>=2.13.2nb1",
+        "glib2>=2.88.3nb1",
+        "harfbuzz>=14.4.0nb1",
+        "icu>=78.1",
+        "libXft>=2.3.8nb1",
+        "libcups>=2.4.19nb2",
+        "libjpeg-turbo>=1.1.0",
+        "libproxy>=0.5.12nb4",
+        "libxkbcommon>=1.7.0",
+        "md4c>=0.4.8",
+        "pcre2>=10.48nb1",
+        "png>=1.6.0nb1",
+        "sqlite3>=3.51.1nb1",
+        "xcb-util>=0.3.9",
+        "xcb-util-image>=0.3.9",
+        "xcb-util-keysyms>=0.3.9",
+        "xcb-util-renderutil>=0.3.8nb1",
+        "xcb-util-wm>=0.3.9",
+        "zstd>=1.3.6"
+      ],
+      "depends": [
+        "dbus-1.16.2nb3",
+        "double-conversion-3.4.0",
+        "fontconfig-2.18.3",
+        "freetype2-2.14.3",
+        "glib2-2.88.3nb1",
+        "harfbuzz-14.4.0nb1",
+        "icu-78.3",
+        "libXft-2.3.9",
+        "libcups-2.4.19nb2",
+        "libjpeg-turbo-3.2.0nb2",
+        "libproxy-0.5.12nb4",
+        "libxkbcommon-1.13.2",
+        "md4c-0.5.3",
+        "pcre2-10.49",
+        "png-1.6.59",
+        "sqlite3-3.53.4",
+        "xcb-util-0.4.1",
+        "xcb-util-image-0.4.1",
+        "xcb-util-keysyms-0.4.1",
+        "xcb-util-renderutil-0.3.10",
+        "xcb-util-wm-0.4.2nb1",
+        "zstd-1.5.7"
+      ],
+      "file": "qt5-qtbase-5.15.19nb2.tgz",
+      "installed_bytes": 119367140,
+      "license": "gnu-lgpl-v2.1 AND gnu-lgpl-v3 AND gnu-gpl-v2 AND gnu-gpl-v3",
+      "name": "qt5-qtbase-5.15.19nb2",
+      "provides": [
+        "/usr/pkg/qt5/lib/libQt5Concurrent.so",
+        "/usr/pkg/qt5/lib/libQt5Concurrent.so.5",
+        "/usr/pkg/qt5/lib/libQt5Concurrent.so.5.15",
+        "/usr/pkg/qt5/lib/libQt5Concurrent.so.5.15.19",
+        "/usr/pkg/qt5/lib/libQt5Core.so",
+        "/usr/pkg/qt5/lib/libQt5Core.so.5",
+        "/usr/pkg/qt5/lib/libQt5Core.so.5.15",
+        "/usr/pkg/qt5/lib/libQt5Core.so.5.15.19",
+        "/usr/pkg/qt5/lib/libQt5DBus.so",
+        "/usr/pkg/qt5/lib/libQt5DBus.so.5",
+        "/usr/pkg/qt5/lib/libQt5DBus.so.5.15",
+        "/usr/pkg/qt5/lib/libQt5DBus.so.5.15.19",
+        "/usr/pkg/qt5/lib/libQt5EglFSDeviceIntegration.so",
+        "/usr/pkg/qt5/lib/libQt5EglFSDeviceIntegration.so.5",
+        "/usr/pkg/qt5/lib/libQt5EglFSDeviceIntegration.so.5.15",
+        "/usr/pkg/qt5/lib/libQt5EglFSDeviceIntegration.so.5.15.19",
+        "/usr/pkg/qt5/lib/libQt5EglFsKmsSupport.so",
+        "/usr/pkg/qt5/lib/libQt5EglFsKmsSupport.so.5",
+        "/usr/pkg/qt5/lib/libQt5EglFsKmsSupport.so.5.15",
+        "/usr/pkg/qt5/lib/libQt5EglFsKmsSupport.so.5.15.19",
+        "/usr/pkg/qt5/lib/libQt5Gui.so",
+        "/usr/pkg/qt5/lib/libQt5Gui.so.5",
+        "/usr/pkg/qt5/lib/libQt5Gui.so.5.15",
+        "/usr/pkg/qt5/lib/libQt5Gui.so.5.15.19",
+        "/usr/pkg/qt5/lib/libQt5Network.so",
+        "/usr/pkg/qt5/lib/libQt5Network.so.5",
+        "/usr/pkg/qt5/lib/libQt5Network.so.5.15",
+        "/usr/pkg/qt5/lib/libQt5Network.so.5.15.19",
+        "/usr/pkg/qt5/lib/libQt5OpenGL.so",
+        "/usr/pkg/qt5/lib/libQt5OpenGL.so.5",
+        "/usr/pkg/qt5/lib/libQt5OpenGL.so.5.15",
+        "/usr/pkg/qt5/lib/libQt5OpenGL.so.5.15.19",
+        "/usr/pkg/qt5/lib/libQt5OpenGLExtensions.so",
+        "/usr/pkg/qt5/lib/libQt5OpenGLExtensions.so.5",
+        "/usr/pkg/qt5/lib/libQt5OpenGLExtensions.so.5.15",
+        "/usr/pkg/qt5/lib/libQt5OpenGLExtensions.so.5.15.19",
+        "/usr/pkg/qt5/lib/libQt5PrintSupport.so",
+        "/usr/pkg/qt5/lib/libQt5PrintSupport.so.5",
+        "/usr/pkg/qt5/lib/libQt5PrintSupport.so.5.15",
+        "/usr/pkg/qt5/lib/libQt5PrintSupport.so.5.15.19",
+        "/usr/pkg/qt5/lib/libQt5Sql.so",
+        "/usr/pkg/qt5/lib/libQt5Sql.so.5",
+        "/usr/pkg/qt5/lib/libQt5Sql.so.5.15",
+        "/usr/pkg/qt5/lib/libQt5Sql.so.5.15.19",
+        "/usr/pkg/qt5/lib/libQt5Test.so",
+        "/usr/pkg/qt5/lib/libQt5Test.so.5",
+        "/usr/pkg/qt5/lib/libQt5Test.so.5.15",
+        "/usr/pkg/qt5/lib/libQt5Test.so.5.15.19",
+        "/usr/pkg/qt5/lib/libQt5Widgets.so",
+        "/usr/pkg/qt5/lib/libQt5Widgets.so.5",
+        "/usr/pkg/qt5/lib/libQt5Widgets.so.5.15",
+        "/usr/pkg/qt5/lib/libQt5Widgets.so.5.15.19",
+        "/usr/pkg/qt5/lib/libQt5XcbQpa.so",
+        "/usr/pkg/qt5/lib/libQt5XcbQpa.so.5",
+        "/usr/pkg/qt5/lib/libQt5XcbQpa.so.5.15",
+        "/usr/pkg/qt5/lib/libQt5XcbQpa.so.5.15.19",
+        "/usr/pkg/qt5/lib/libQt5Xml.so",
+        "/usr/pkg/qt5/lib/libQt5Xml.so.5",
+        "/usr/pkg/qt5/lib/libQt5Xml.so.5.15",
+        "/usr/pkg/qt5/lib/libQt5Xml.so.5.15.19",
+        "/usr/pkg/qt5/plugins/bearer/libqgenericbearer.so",
+        "/usr/pkg/qt5/plugins/egldeviceintegrations/libqeglfs-emu-integration.so",
+        "/usr/pkg/qt5/plugins/egldeviceintegrations/libqeglfs-kms-egldevice-integration.so",
+        "/usr/pkg/qt5/plugins/egldeviceintegrations/libqeglfs-kms-integration.so",
+        "/usr/pkg/qt5/plugins/egldeviceintegrations/libqeglfs-x11-integration.so",
+        "/usr/pkg/qt5/plugins/generic/libqtuiotouchplugin.so",
+        "/usr/pkg/qt5/plugins/imageformats/libqgif.so",
+        "/usr/pkg/qt5/plugins/imageformats/libqico.so",
+        "/usr/pkg/qt5/plugins/imageformats/libqjpeg.so",
+        "/usr/pkg/qt5/plugins/platforminputcontexts/libcomposeplatforminputcontextplugin.so",
+        "/usr/pkg/qt5/plugins/platforminputcontexts/libibusplatforminputcontextplugin.so",
+        "/usr/pkg/qt5/plugins/platforms/libqeglfs.so",
+        "/usr/pkg/qt5/plugins/platforms/libqminimal.so",
+        "/usr/pkg/qt5/plugins/platforms/libqminimalegl.so",
+        "/usr/pkg/qt5/plugins/platforms/libqoffscreen.so",
+        "/usr/pkg/qt5/plugins/platforms/libqvnc.so",
+        "/usr/pkg/qt5/plugins/platforms/libqxcb.so",
+        "/usr/pkg/qt5/plugins/platformthemes/libqxdgdesktopportal.so",
+        "/usr/pkg/qt5/plugins/printsupport/libcupsprintersupport.so",
+        "/usr/pkg/qt5/plugins/sqldrivers/libqsqlite.so",
+        "/usr/pkg/qt5/plugins/xcbglintegrations/libqxcb-egl-integration.so",
+        "/usr/pkg/qt5/plugins/xcbglintegrations/libqxcb-glx-integration.so"
+      ],
+      "requires": [
+        "/lib/libcrypt.so.1",
+        "/usr/X11R7/lib/libEGL.so.0",
+        "/usr/X11R7/lib/libGL.so.3",
+        "/usr/X11R7/lib/libICE.so.7",
+        "/usr/X11R7/lib/libSM.so.7",
+        "/usr/X11R7/lib/libX11-xcb.so.1",
+        "/usr/X11R7/lib/libX11.so.7",
+        "/usr/X11R7/lib/libXau.so.7",
+        "/usr/X11R7/lib/libXdamage.so.2",
+        "/usr/X11R7/lib/libXdmcp.so.7",
+        "/usr/X11R7/lib/libXext.so.7",
+        "/usr/X11R7/lib/libXfixes.so.4",
+        "/usr/X11R7/lib/libXxf86vm.so.2",
+        "/usr/X11R7/lib/libdrm.so.3",
+        "/usr/X11R7/lib/libfontconfig.so.2",
+        "/usr/X11R7/lib/libfreetype.so.19",
+        "/usr/X11R7/lib/libgbm.so.1",
+        "/usr/X11R7/lib/libglapi.so.1",
+        "/usr/X11R7/lib/libxcb-dri2.so.0",
+        "/usr/X11R7/lib/libxcb-glx.so.0",
+        "/usr/X11R7/lib/libxcb-randr.so.1",
+        "/usr/X11R7/lib/libxcb-render.so.0",
+        "/usr/X11R7/lib/libxcb-shape.so.0",
+        "/usr/X11R7/lib/libxcb-shm.so.0",
+        "/usr/X11R7/lib/libxcb-sync.so.1",
+        "/usr/X11R7/lib/libxcb-xfixes.so.0",
+        "/usr/X11R7/lib/libxcb-xinerama.so.0",
+        "/usr/X11R7/lib/libxcb-xinput.so.0",
+        "/usr/X11R7/lib/libxcb-xkb.so.1",
+        "/usr/X11R7/lib/libxcb.so.2",
+        "/usr/X11R7/lib/libxshmfence.so.1",
+        "/usr/lib/libasn1.so.10",
+        "/usr/lib/libbz2.so.1",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libcom_err.so.8",
+        "/usr/lib/libcrypt.so.1",
+        "/usr/lib/libcrypto.so.16",
+        "/usr/lib/libdns_sd.so.0",
+        "/usr/lib/libelf.so.2",
+        "/usr/lib/libexecinfo.so.0",
+        "/usr/lib/libexpat.so.2",
+        "/usr/lib/libgcc_s.so.1",
+        "/usr/lib/libgssapi.so.12",
+        "/usr/lib/libheimbase.so.2",
+        "/usr/lib/libheimntlm.so.6",
+        "/usr/lib/libhx509.so.7",
+        "/usr/lib/libintl.so.1",
+        "/usr/lib/libkrb5.so.28",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libpci.so.2",
+        "/usr/lib/libpthread.so.1",
+        "/usr/lib/libroken.so.20",
+        "/usr/lib/librt.so.1",
+        "/usr/lib/libssl.so.16",
+        "/usr/lib/libstdc++.so.9",
+        "/usr/lib/libutil.so.7",
+        "/usr/lib/libwind.so.1",
+        "/usr/lib/libz.so.1",
+        "/usr/pkg/lib/libbrotlicommon.so.1",
+        "/usr/pkg/lib/libbrotlidec.so.1",
+        "/usr/pkg/lib/libcups.so.2",
+        "/usr/pkg/lib/libcurl.so.4",
+        "/usr/pkg/lib/libdbus-1.so.3",
+        "/usr/pkg/lib/libdouble-conversion.so.3",
+        "/usr/pkg/lib/libduktape.so.0",
+        "/usr/pkg/lib/libffi.so.8",
+        "/usr/pkg/lib/libfreetype.so.6",
+        "/usr/pkg/lib/libgio-2.0.so.0",
+        "/usr/pkg/lib/libglib-2.0.so.0",
+        "/usr/pkg/lib/libgmodule-2.0.so.0",
+        "/usr/pkg/lib/libgmp.so.10",
+        "/usr/pkg/lib/libgnutls.so.30",
+        "/usr/pkg/lib/libgobject-2.0.so.0",
+        "/usr/pkg/lib/libgraphite2.so.3",
+        "/usr/pkg/lib/libgthread-2.0.so.0",
+        "/usr/pkg/lib/libharfbuzz.so.0",
+        "/usr/pkg/lib/libhogweed.so.7",
+        "/usr/pkg/lib/libicudata.so.78",
+        "/usr/pkg/lib/libicui18n.so.78",
+        "/usr/pkg/lib/libicuuc.so.78",
+        "/usr/pkg/lib/libidn2.so.0",
+        "/usr/pkg/lib/libjpeg.so.8",
+        "/usr/pkg/lib/libmd4c.so.0",
+        "/usr/pkg/lib/libnettle.so.9",
+        "/usr/pkg/lib/libnghttp2.so.14",
+        "/usr/pkg/lib/libp11-kit.so.0",
+        "/usr/pkg/lib/libpcre2-16.so.0",
+        "/usr/pkg/lib/libpcre2-8.so.0",
+        "/usr/pkg/lib/libpng16.so.16",
+        "/usr/pkg/lib/libproxy.so.1",
+        "/usr/pkg/lib/libproxy/libpxbackend-1.0.so",
+        "/usr/pkg/lib/libsqlite3.so",
+        "/usr/pkg/lib/libtasn1.so.6",
+        "/usr/pkg/lib/libunistring.so.5",
+        "/usr/pkg/lib/libxcb-icccm.so.4",
+        "/usr/pkg/lib/libxcb-image.so.0",
+        "/usr/pkg/lib/libxcb-keysyms.so.1",
+        "/usr/pkg/lib/libxcb-render-util.so.0",
+        "/usr/pkg/lib/libxcb-util.so.1",
+        "/usr/pkg/lib/libxkbcommon-x11.so.0",
+        "/usr/pkg/lib/libxkbcommon.so.0",
+        "/usr/pkg/lib/libzstd.so.1"
+      ],
+      "sha512": "2ceb64432611c574ddcd0cda856775704afab5b8faf7c8a20a1b7ff9749eb4087d3bceb72d00c16e8404e41fc419f9f32bc1b882d679c8a3582c497a63f16b83",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/qt5-qtbase-5.15.19nb2.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 1937899,
+      "dependency_constraints": [
+        "qt5-qtbase>=5.15.19nb2"
+      ],
+      "depends": [
+        "qt5-qtbase-5.15.19nb2"
+      ],
+      "file": "qt5-qtxmlpatterns-5.15.19nb1.tgz",
+      "installed_bytes": 8139448,
+      "license": "gnu-lgpl-v2.1 AND gnu-lgpl-v3 AND gnu-gpl-v2 AND gnu-gpl-v3",
+      "name": "qt5-qtxmlpatterns-5.15.19nb1",
+      "provides": [
+        "/usr/pkg/qt5/lib/libQt5XmlPatterns.so",
+        "/usr/pkg/qt5/lib/libQt5XmlPatterns.so.5",
+        "/usr/pkg/qt5/lib/libQt5XmlPatterns.so.5.15",
+        "/usr/pkg/qt5/lib/libQt5XmlPatterns.so.5.15.19"
+      ],
+      "requires": [
+        "/lib/libcrypt.so.1",
+        "/usr/lib/libasn1.so.10",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libcom_err.so.8",
+        "/usr/lib/libcrypto.so.16",
+        "/usr/lib/libelf.so.2",
+        "/usr/lib/libexecinfo.so.0",
+        "/usr/lib/libgcc_s.so.1",
+        "/usr/lib/libgssapi.so.12",
+        "/usr/lib/libheimbase.so.2",
+        "/usr/lib/libheimntlm.so.6",
+        "/usr/lib/libhx509.so.7",
+        "/usr/lib/libintl.so.1",
+        "/usr/lib/libkrb5.so.28",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libpthread.so.1",
+        "/usr/lib/libroken.so.20",
+        "/usr/lib/libssl.so.16",
+        "/usr/lib/libstdc++.so.9",
+        "/usr/lib/libutil.so.7",
+        "/usr/lib/libwind.so.1",
+        "/usr/lib/libz.so.1",
+        "/usr/pkg/lib/libcurl.so.4",
+        "/usr/pkg/lib/libdouble-conversion.so.3",
+        "/usr/pkg/lib/libduktape.so.0",
+        "/usr/pkg/lib/libffi.so.8",
+        "/usr/pkg/lib/libgio-2.0.so.0",
+        "/usr/pkg/lib/libglib-2.0.so.0",
+        "/usr/pkg/lib/libgmodule-2.0.so.0",
+        "/usr/pkg/lib/libgobject-2.0.so.0",
+        "/usr/pkg/lib/libgthread-2.0.so.0",
+        "/usr/pkg/lib/libicudata.so.78",
+        "/usr/pkg/lib/libicui18n.so.78",
+        "/usr/pkg/lib/libicuuc.so.78",
+        "/usr/pkg/lib/libidn2.so.0",
+        "/usr/pkg/lib/libnghttp2.so.14",
+        "/usr/pkg/lib/libpcre2-16.so.0",
+        "/usr/pkg/lib/libpcre2-8.so.0",
+        "/usr/pkg/lib/libproxy.so.1",
+        "/usr/pkg/lib/libproxy/libpxbackend-1.0.so",
+        "/usr/pkg/lib/libunistring.so.5",
+        "/usr/pkg/lib/libzstd.so.1",
+        "/usr/pkg/qt5/lib/libQt5Core.so.5",
+        "/usr/pkg/qt5/lib/libQt5Network.so.5"
+      ],
+      "sha512": "bd468a97ddf8927cfaad63ec360b21320d50f244194da417c1355ddc6a58498d06c6200087c816386458d76b23f408955ea651a5238827b3767ee7c7924d51e9",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/qt5-qtxmlpatterns-5.15.19nb1.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 8830379,
+      "dependency_constraints": [
+        "qt5-qtxmlpatterns>=5.15.19nb1"
+      ],
+      "depends": [
+        "qt5-qtxmlpatterns-5.15.19nb1"
+      ],
+      "file": "qt5-qtdeclarative-5.15.19nb1.tgz",
+      "installed_bytes": 34445786,
+      "license": "gnu-lgpl-v2.1 AND gnu-lgpl-v3 AND gnu-gpl-v2 AND gnu-gpl-v3",
+      "name": "qt5-qtdeclarative-5.15.19nb1",
+      "provides": [
+        "/usr/pkg/qt5/lib/libQt5Qml.so",
+        "/usr/pkg/qt5/lib/libQt5Qml.so.5",
+        "/usr/pkg/qt5/lib/libQt5Qml.so.5.15",
+        "/usr/pkg/qt5/lib/libQt5Qml.so.5.15.19",
+        "/usr/pkg/qt5/lib/libQt5QmlModels.so",
+        "/usr/pkg/qt5/lib/libQt5QmlModels.so.5",
+        "/usr/pkg/qt5/lib/libQt5QmlModels.so.5.15",
+        "/usr/pkg/qt5/lib/libQt5QmlModels.so.5.15.19",
+        "/usr/pkg/qt5/lib/libQt5QmlWorkerScript.so",
+        "/usr/pkg/qt5/lib/libQt5QmlWorkerScript.so.5",
+        "/usr/pkg/qt5/lib/libQt5QmlWorkerScript.so.5.15",
+        "/usr/pkg/qt5/lib/libQt5QmlWorkerScript.so.5.15.19",
+        "/usr/pkg/qt5/lib/libQt5Quick.so",
+        "/usr/pkg/qt5/lib/libQt5Quick.so.5",
+        "/usr/pkg/qt5/lib/libQt5Quick.so.5.15",
+        "/usr/pkg/qt5/lib/libQt5Quick.so.5.15.19",
+        "/usr/pkg/qt5/lib/libQt5QuickParticles.so",
+        "/usr/pkg/qt5/lib/libQt5QuickParticles.so.5",
+        "/usr/pkg/qt5/lib/libQt5QuickParticles.so.5.15",
+        "/usr/pkg/qt5/lib/libQt5QuickParticles.so.5.15.19",
+        "/usr/pkg/qt5/lib/libQt5QuickShapes.so",
+        "/usr/pkg/qt5/lib/libQt5QuickShapes.so.5",
+        "/usr/pkg/qt5/lib/libQt5QuickShapes.so.5.15",
+        "/usr/pkg/qt5/lib/libQt5QuickShapes.so.5.15.19",
+        "/usr/pkg/qt5/lib/libQt5QuickTest.so",
+        "/usr/pkg/qt5/lib/libQt5QuickTest.so.5",
+        "/usr/pkg/qt5/lib/libQt5QuickTest.so.5.15",
+        "/usr/pkg/qt5/lib/libQt5QuickTest.so.5.15.19",
+        "/usr/pkg/qt5/lib/libQt5QuickWidgets.so",
+        "/usr/pkg/qt5/lib/libQt5QuickWidgets.so.5",
+        "/usr/pkg/qt5/lib/libQt5QuickWidgets.so.5.15",
+        "/usr/pkg/qt5/lib/libQt5QuickWidgets.so.5.15.19",
+        "/usr/pkg/qt5/plugins/qmltooling/libqmldbg_debugger.so",
+        "/usr/pkg/qt5/plugins/qmltooling/libqmldbg_inspector.so",
+        "/usr/pkg/qt5/plugins/qmltooling/libqmldbg_local.so",
+        "/usr/pkg/qt5/plugins/qmltooling/libqmldbg_messages.so",
+        "/usr/pkg/qt5/plugins/qmltooling/libqmldbg_native.so",
+        "/usr/pkg/qt5/plugins/qmltooling/libqmldbg_nativedebugger.so",
+        "/usr/pkg/qt5/plugins/qmltooling/libqmldbg_preview.so",
+        "/usr/pkg/qt5/plugins/qmltooling/libqmldbg_profiler.so",
+        "/usr/pkg/qt5/plugins/qmltooling/libqmldbg_quickprofiler.so",
+        "/usr/pkg/qt5/plugins/qmltooling/libqmldbg_server.so",
+        "/usr/pkg/qt5/plugins/qmltooling/libqmldbg_tcp.so",
+        "/usr/pkg/qt5/qml/Qt/labs/animation/liblabsanimationplugin.so",
+        "/usr/pkg/qt5/qml/Qt/labs/folderlistmodel/libqmlfolderlistmodelplugin.so",
+        "/usr/pkg/qt5/qml/Qt/labs/qmlmodels/liblabsmodelsplugin.so",
+        "/usr/pkg/qt5/qml/Qt/labs/settings/libqmlsettingsplugin.so",
+        "/usr/pkg/qt5/qml/Qt/labs/sharedimage/libsharedimageplugin.so",
+        "/usr/pkg/qt5/qml/Qt/labs/wavefrontmesh/libqmlwavefrontmeshplugin.so",
+        "/usr/pkg/qt5/qml/QtQml/Models.2/libmodelsplugin.so",
+        "/usr/pkg/qt5/qml/QtQml/StateMachine/libqtqmlstatemachine.so",
+        "/usr/pkg/qt5/qml/QtQml/WorkerScript.2/libworkerscriptplugin.so",
+        "/usr/pkg/qt5/qml/QtQml/libqmlplugin.so",
+        "/usr/pkg/qt5/qml/QtQuick.2/libqtquick2plugin.so",
+        "/usr/pkg/qt5/qml/QtQuick/Layouts/libqquicklayoutsplugin.so",
+        "/usr/pkg/qt5/qml/QtQuick/LocalStorage/libqmllocalstorageplugin.so",
+        "/usr/pkg/qt5/qml/QtQuick/Particles.2/libparticlesplugin.so",
+        "/usr/pkg/qt5/qml/QtQuick/Shapes/libqmlshapesplugin.so",
+        "/usr/pkg/qt5/qml/QtQuick/Window.2/libwindowplugin.so",
+        "/usr/pkg/qt5/qml/QtTest/libqmltestplugin.so"
+      ],
+      "requires": [
+        "/lib/libcrypt.so.1",
+        "/usr/X11R7/lib/libGL.so.3",
+        "/usr/X11R7/lib/libX11-xcb.so.1",
+        "/usr/X11R7/lib/libX11.so.7",
+        "/usr/X11R7/lib/libXau.so.7",
+        "/usr/X11R7/lib/libXdamage.so.2",
+        "/usr/X11R7/lib/libXdmcp.so.7",
+        "/usr/X11R7/lib/libXext.so.7",
+        "/usr/X11R7/lib/libXfixes.so.4",
+        "/usr/X11R7/lib/libXxf86vm.so.2",
+        "/usr/X11R7/lib/libdrm.so.3",
+        "/usr/X11R7/lib/libglapi.so.1",
+        "/usr/X11R7/lib/libxcb-dri2.so.0",
+        "/usr/X11R7/lib/libxcb-glx.so.0",
+        "/usr/X11R7/lib/libxcb-shm.so.0",
+        "/usr/X11R7/lib/libxcb-sync.so.1",
+        "/usr/X11R7/lib/libxcb.so.2",
+        "/usr/lib/libasn1.so.10",
+        "/usr/lib/libbz2.so.1",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libcom_err.so.8",
+        "/usr/lib/libcrypto.so.16",
+        "/usr/lib/libelf.so.2",
+        "/usr/lib/libexecinfo.so.0",
+        "/usr/lib/libexpat.so.2",
+        "/usr/lib/libgcc_s.so.1",
+        "/usr/lib/libgssapi.so.12",
+        "/usr/lib/libheimbase.so.2",
+        "/usr/lib/libheimntlm.so.6",
+        "/usr/lib/libhx509.so.7",
+        "/usr/lib/libintl.so.1",
+        "/usr/lib/libkrb5.so.28",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libpci.so.2",
+        "/usr/lib/libpthread.so.1",
+        "/usr/lib/libroken.so.20",
+        "/usr/lib/libssl.so.16",
+        "/usr/lib/libstdc++.so.9",
+        "/usr/lib/libutil.so.7",
+        "/usr/lib/libwind.so.1",
+        "/usr/lib/libz.so.1",
+        "/usr/pkg/lib/libbrotlicommon.so.1",
+        "/usr/pkg/lib/libbrotlidec.so.1",
+        "/usr/pkg/lib/libcurl.so.4",
+        "/usr/pkg/lib/libdouble-conversion.so.3",
+        "/usr/pkg/lib/libduktape.so.0",
+        "/usr/pkg/lib/libffi.so.8",
+        "/usr/pkg/lib/libfreetype.so.6",
+        "/usr/pkg/lib/libgio-2.0.so.0",
+        "/usr/pkg/lib/libglib-2.0.so.0",
+        "/usr/pkg/lib/libgmodule-2.0.so.0",
+        "/usr/pkg/lib/libgobject-2.0.so.0",
+        "/usr/pkg/lib/libgraphite2.so.3",
+        "/usr/pkg/lib/libgthread-2.0.so.0",
+        "/usr/pkg/lib/libharfbuzz.so.0",
+        "/usr/pkg/lib/libicudata.so.78",
+        "/usr/pkg/lib/libicui18n.so.78",
+        "/usr/pkg/lib/libicuuc.so.78",
+        "/usr/pkg/lib/libidn2.so.0",
+        "/usr/pkg/lib/libmd4c.so.0",
+        "/usr/pkg/lib/libnghttp2.so.14",
+        "/usr/pkg/lib/libpcre2-16.so.0",
+        "/usr/pkg/lib/libpcre2-8.so.0",
+        "/usr/pkg/lib/libpng16.so.16",
+        "/usr/pkg/lib/libproxy.so.1",
+        "/usr/pkg/lib/libproxy/libpxbackend-1.0.so",
+        "/usr/pkg/lib/libunistring.so.5",
+        "/usr/pkg/lib/libzstd.so.1",
+        "/usr/pkg/qt5/lib/libQt5Core.so.5",
+        "/usr/pkg/qt5/lib/libQt5Gui.so.5",
+        "/usr/pkg/qt5/lib/libQt5Network.so.5",
+        "/usr/pkg/qt5/lib/libQt5Sql.so.5",
+        "/usr/pkg/qt5/lib/libQt5Test.so.5",
+        "/usr/pkg/qt5/lib/libQt5Widgets.so.5"
+      ],
+      "sha512": "6ed8423a0c943df602db0cae2a769c94e42f6c6dff1f5cde8e1ead1599228a1f384d300cf61f8f50b1a9e404313efcef83bb19f4cbd0589b49caaf41f1defe23",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/qt5-qtdeclarative-5.15.19nb1.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 993605,
+      "dependency_constraints": [
+        "qt5-qtdeclarative>=5.15.19nb1"
+      ],
+      "depends": [
+        "qt5-qtdeclarative-5.15.19nb1"
+      ],
+      "file": "qt5-qtcharts-5.15.19nb1.tgz",
+      "installed_bytes": 4387743,
+      "license": "gnu-lgpl-v2.1 AND gnu-lgpl-v3 AND gnu-gpl-v2 AND gnu-gpl-v3",
+      "name": "qt5-qtcharts-5.15.19nb1",
+      "provides": [
+        "/usr/pkg/qt5/lib/libQt5Charts.so",
+        "/usr/pkg/qt5/lib/libQt5Charts.so.5",
+        "/usr/pkg/qt5/lib/libQt5Charts.so.5.15",
+        "/usr/pkg/qt5/lib/libQt5Charts.so.5.15.19",
+        "/usr/pkg/qt5/qml/QtCharts/libqtchartsqml2.so"
+      ],
+      "requires": [
+        "/lib/libcrypt.so.1",
+        "/usr/X11R7/lib/libGL.so.3",
+        "/usr/X11R7/lib/libX11-xcb.so.1",
+        "/usr/X11R7/lib/libX11.so.7",
+        "/usr/X11R7/lib/libXau.so.7",
+        "/usr/X11R7/lib/libXdamage.so.2",
+        "/usr/X11R7/lib/libXdmcp.so.7",
+        "/usr/X11R7/lib/libXext.so.7",
+        "/usr/X11R7/lib/libXfixes.so.4",
+        "/usr/X11R7/lib/libXxf86vm.so.2",
+        "/usr/X11R7/lib/libdrm.so.3",
+        "/usr/X11R7/lib/libglapi.so.1",
+        "/usr/X11R7/lib/libxcb-dri2.so.0",
+        "/usr/X11R7/lib/libxcb-glx.so.0",
+        "/usr/X11R7/lib/libxcb-shm.so.0",
+        "/usr/X11R7/lib/libxcb-sync.so.1",
+        "/usr/X11R7/lib/libxcb.so.2",
+        "/usr/lib/libasn1.so.10",
+        "/usr/lib/libbz2.so.1",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libcom_err.so.8",
+        "/usr/lib/libcrypto.so.16",
+        "/usr/lib/libelf.so.2",
+        "/usr/lib/libexecinfo.so.0",
+        "/usr/lib/libexpat.so.2",
+        "/usr/lib/libgcc_s.so.1",
+        "/usr/lib/libgssapi.so.12",
+        "/usr/lib/libheimbase.so.2",
+        "/usr/lib/libheimntlm.so.6",
+        "/usr/lib/libhx509.so.7",
+        "/usr/lib/libintl.so.1",
+        "/usr/lib/libkrb5.so.28",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libpci.so.2",
+        "/usr/lib/libpthread.so.1",
+        "/usr/lib/libroken.so.20",
+        "/usr/lib/libssl.so.16",
+        "/usr/lib/libstdc++.so.9",
+        "/usr/lib/libutil.so.7",
+        "/usr/lib/libwind.so.1",
+        "/usr/lib/libz.so.1",
+        "/usr/pkg/lib/libbrotlicommon.so.1",
+        "/usr/pkg/lib/libbrotlidec.so.1",
+        "/usr/pkg/lib/libcurl.so.4",
+        "/usr/pkg/lib/libdouble-conversion.so.3",
+        "/usr/pkg/lib/libduktape.so.0",
+        "/usr/pkg/lib/libffi.so.8",
+        "/usr/pkg/lib/libfreetype.so.6",
+        "/usr/pkg/lib/libgio-2.0.so.0",
+        "/usr/pkg/lib/libglib-2.0.so.0",
+        "/usr/pkg/lib/libgmodule-2.0.so.0",
+        "/usr/pkg/lib/libgobject-2.0.so.0",
+        "/usr/pkg/lib/libgraphite2.so.3",
+        "/usr/pkg/lib/libgthread-2.0.so.0",
+        "/usr/pkg/lib/libharfbuzz.so.0",
+        "/usr/pkg/lib/libicudata.so.78",
+        "/usr/pkg/lib/libicui18n.so.78",
+        "/usr/pkg/lib/libicuuc.so.78",
+        "/usr/pkg/lib/libidn2.so.0",
+        "/usr/pkg/lib/libmd4c.so.0",
+        "/usr/pkg/lib/libnghttp2.so.14",
+        "/usr/pkg/lib/libpcre2-16.so.0",
+        "/usr/pkg/lib/libpcre2-8.so.0",
+        "/usr/pkg/lib/libpng16.so.16",
+        "/usr/pkg/lib/libproxy.so.1",
+        "/usr/pkg/lib/libproxy/libpxbackend-1.0.so",
+        "/usr/pkg/lib/libunistring.so.5",
+        "/usr/pkg/lib/libzstd.so.1",
+        "/usr/pkg/qt5/lib/libQt5Core.so.5",
+        "/usr/pkg/qt5/lib/libQt5Gui.so.5",
+        "/usr/pkg/qt5/lib/libQt5Network.so.5",
+        "/usr/pkg/qt5/lib/libQt5Qml.so.5",
+        "/usr/pkg/qt5/lib/libQt5QmlModels.so.5",
+        "/usr/pkg/qt5/lib/libQt5Quick.so.5",
+        "/usr/pkg/qt5/lib/libQt5Widgets.so.5"
+      ],
+      "sha512": "faa07430a9817256a5f3c9ba25ffc61a3882ff9af378765c7df667ada82b7430c665f30b2384b57e04ed1a0142d5494fa039b4463568f3aaf4fa9c7df95f653e",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/qt5-qtcharts-5.15.19nb1.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 57807,
+      "dependency_constraints": [
+        "qt5-qtbase>=5.15.19nb2"
+      ],
+      "depends": [
+        "qt5-qtbase-5.15.19nb2"
+      ],
+      "file": "qt5-qtserialport-5.15.19nb1.tgz",
+      "installed_bytes": 218319,
+      "license": "gnu-lgpl-v2.1 AND gnu-lgpl-v3 AND gnu-gpl-v2 AND gnu-gpl-v3",
+      "name": "qt5-qtserialport-5.15.19nb1",
+      "provides": [
+        "/usr/pkg/qt5/lib/libQt5SerialPort.so",
+        "/usr/pkg/qt5/lib/libQt5SerialPort.so.5",
+        "/usr/pkg/qt5/lib/libQt5SerialPort.so.5.15",
+        "/usr/pkg/qt5/lib/libQt5SerialPort.so.5.15.19"
+      ],
+      "requires": [
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libelf.so.2",
+        "/usr/lib/libexecinfo.so.0",
+        "/usr/lib/libgcc_s.so.1",
+        "/usr/lib/libintl.so.1",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libpthread.so.1",
+        "/usr/lib/libstdc++.so.9",
+        "/usr/lib/libz.so.1",
+        "/usr/pkg/lib/libdouble-conversion.so.3",
+        "/usr/pkg/lib/libglib-2.0.so.0",
+        "/usr/pkg/lib/libgthread-2.0.so.0",
+        "/usr/pkg/lib/libicudata.so.78",
+        "/usr/pkg/lib/libicui18n.so.78",
+        "/usr/pkg/lib/libicuuc.so.78",
+        "/usr/pkg/lib/libpcre2-16.so.0",
+        "/usr/pkg/lib/libpcre2-8.so.0",
+        "/usr/pkg/lib/libzstd.so.1",
+        "/usr/pkg/qt5/lib/libQt5Core.so.5"
+      ],
+      "sha512": "68050993e78b1bfb650d14bd663e24ff98b73485de47821aeda7ef69a1bc17cc9c94b1356ed59047a7e609edb36d908d02d8f7cd1435d415ad302b587fc46ecd",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/qt5-qtserialport-5.15.19nb1.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 2053033,
+      "dependency_constraints": [
+        "qt5-qtbase>=5.15.19nb2",
+        "qt5-qtdeclarative>=5.15.19nb1",
+        "qt5-qtserialport>=5.15.19nb1"
+      ],
+      "depends": [
+        "qt5-qtbase-5.15.19nb2",
+        "qt5-qtdeclarative-5.15.19nb1",
+        "qt5-qtserialport-5.15.19nb1"
+      ],
+      "file": "qt5-qtlocation-5.15.19nb1.tgz",
+      "installed_bytes": 8033423,
+      "license": "gnu-lgpl-v2.1 AND gnu-lgpl-v3 AND gnu-gpl-v2 AND gnu-gpl-v3",
+      "name": "qt5-qtlocation-5.15.19nb1",
+      "provides": [
+        "/usr/pkg/qt5/lib/libQt5Location.so",
+        "/usr/pkg/qt5/lib/libQt5Location.so.5",
+        "/usr/pkg/qt5/lib/libQt5Location.so.5.15",
+        "/usr/pkg/qt5/lib/libQt5Location.so.5.15.19",
+        "/usr/pkg/qt5/lib/libQt5Positioning.so",
+        "/usr/pkg/qt5/lib/libQt5Positioning.so.5",
+        "/usr/pkg/qt5/lib/libQt5Positioning.so.5.15",
+        "/usr/pkg/qt5/lib/libQt5Positioning.so.5.15.19",
+        "/usr/pkg/qt5/lib/libQt5PositioningQuick.so",
+        "/usr/pkg/qt5/lib/libQt5PositioningQuick.so.5",
+        "/usr/pkg/qt5/lib/libQt5PositioningQuick.so.5.15",
+        "/usr/pkg/qt5/lib/libQt5PositioningQuick.so.5.15.19",
+        "/usr/pkg/qt5/plugins/geoservices/libqtgeoservices_esri.so",
+        "/usr/pkg/qt5/plugins/geoservices/libqtgeoservices_itemsoverlay.so",
+        "/usr/pkg/qt5/plugins/geoservices/libqtgeoservices_mapbox.so",
+        "/usr/pkg/qt5/plugins/geoservices/libqtgeoservices_nokia.so",
+        "/usr/pkg/qt5/plugins/geoservices/libqtgeoservices_osm.so",
+        "/usr/pkg/qt5/plugins/position/libqtposition_geoclue.so",
+        "/usr/pkg/qt5/plugins/position/libqtposition_geoclue2.so",
+        "/usr/pkg/qt5/plugins/position/libqtposition_positionpoll.so",
+        "/usr/pkg/qt5/plugins/position/libqtposition_serialnmea.so",
+        "/usr/pkg/qt5/qml/QtLocation/libdeclarative_location.so",
+        "/usr/pkg/qt5/qml/QtPositioning/libdeclarative_positioning.so"
+      ],
+      "requires": [
+        "/lib/libcrypt.so.1",
+        "/usr/X11R7/lib/libGL.so.3",
+        "/usr/X11R7/lib/libX11-xcb.so.1",
+        "/usr/X11R7/lib/libX11.so.7",
+        "/usr/X11R7/lib/libXau.so.7",
+        "/usr/X11R7/lib/libXdamage.so.2",
+        "/usr/X11R7/lib/libXdmcp.so.7",
+        "/usr/X11R7/lib/libXext.so.7",
+        "/usr/X11R7/lib/libXfixes.so.4",
+        "/usr/X11R7/lib/libXxf86vm.so.2",
+        "/usr/X11R7/lib/libdrm.so.3",
+        "/usr/X11R7/lib/libglapi.so.1",
+        "/usr/X11R7/lib/libxcb-dri2.so.0",
+        "/usr/X11R7/lib/libxcb-glx.so.0",
+        "/usr/X11R7/lib/libxcb-shm.so.0",
+        "/usr/X11R7/lib/libxcb-sync.so.1",
+        "/usr/X11R7/lib/libxcb.so.2",
+        "/usr/lib/libasn1.so.10",
+        "/usr/lib/libbz2.so.1",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libcom_err.so.8",
+        "/usr/lib/libcrypto.so.16",
+        "/usr/lib/libelf.so.2",
+        "/usr/lib/libexecinfo.so.0",
+        "/usr/lib/libexpat.so.2",
+        "/usr/lib/libgcc_s.so.1",
+        "/usr/lib/libgssapi.so.12",
+        "/usr/lib/libheimbase.so.2",
+        "/usr/lib/libheimntlm.so.6",
+        "/usr/lib/libhx509.so.7",
+        "/usr/lib/libintl.so.1",
+        "/usr/lib/libkrb5.so.28",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libpci.so.2",
+        "/usr/lib/libpthread.so.1",
+        "/usr/lib/libroken.so.20",
+        "/usr/lib/libssl.so.16",
+        "/usr/lib/libstdc++.so.9",
+        "/usr/lib/libutil.so.7",
+        "/usr/lib/libwind.so.1",
+        "/usr/lib/libz.so.1",
+        "/usr/pkg/lib/libbrotlicommon.so.1",
+        "/usr/pkg/lib/libbrotlidec.so.1",
+        "/usr/pkg/lib/libcurl.so.4",
+        "/usr/pkg/lib/libdbus-1.so.3",
+        "/usr/pkg/lib/libdouble-conversion.so.3",
+        "/usr/pkg/lib/libduktape.so.0",
+        "/usr/pkg/lib/libffi.so.8",
+        "/usr/pkg/lib/libfreetype.so.6",
+        "/usr/pkg/lib/libgio-2.0.so.0",
+        "/usr/pkg/lib/libglib-2.0.so.0",
+        "/usr/pkg/lib/libgmodule-2.0.so.0",
+        "/usr/pkg/lib/libgobject-2.0.so.0",
+        "/usr/pkg/lib/libgraphite2.so.3",
+        "/usr/pkg/lib/libgthread-2.0.so.0",
+        "/usr/pkg/lib/libharfbuzz.so.0",
+        "/usr/pkg/lib/libicudata.so.78",
+        "/usr/pkg/lib/libicui18n.so.78",
+        "/usr/pkg/lib/libicuuc.so.78",
+        "/usr/pkg/lib/libidn2.so.0",
+        "/usr/pkg/lib/libmd4c.so.0",
+        "/usr/pkg/lib/libnghttp2.so.14",
+        "/usr/pkg/lib/libpcre2-16.so.0",
+        "/usr/pkg/lib/libpcre2-8.so.0",
+        "/usr/pkg/lib/libpng16.so.16",
+        "/usr/pkg/lib/libproxy.so.1",
+        "/usr/pkg/lib/libproxy/libpxbackend-1.0.so",
+        "/usr/pkg/lib/libunistring.so.5",
+        "/usr/pkg/lib/libzstd.so.1",
+        "/usr/pkg/qt5/lib/libQt5Concurrent.so.5",
+        "/usr/pkg/qt5/lib/libQt5Core.so.5",
+        "/usr/pkg/qt5/lib/libQt5DBus.so.5",
+        "/usr/pkg/qt5/lib/libQt5Gui.so.5",
+        "/usr/pkg/qt5/lib/libQt5Network.so.5",
+        "/usr/pkg/qt5/lib/libQt5Qml.so.5",
+        "/usr/pkg/qt5/lib/libQt5QmlModels.so.5",
+        "/usr/pkg/qt5/lib/libQt5Quick.so.5",
+        "/usr/pkg/qt5/lib/libQt5SerialPort.so.5"
+      ],
+      "sha512": "60bd58797e5cf48cbc5168b5a0ef285845d8a711c92b205617a330ba6a7d1c232b5430a0b68589ade758afd937de6bee907574e5b5ab8c032dd578d092ecb3f0",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/qt5-qtlocation-5.15.19nb1.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 3512711,
+      "dependency_constraints": [],
+      "depends": [],
+      "file": "gsl-2.8.tgz",
+      "installed_bytes": 13796362,
+      "license": "gnu-gpl-v3",
+      "name": "gsl-2.8",
+      "provides": [
+        "/usr/pkg/lib/libgsl.so",
+        "/usr/pkg/lib/libgsl.so.28",
+        "/usr/pkg/lib/libgsl.so.28.0.0",
+        "/usr/pkg/lib/libgslcblas.so",
+        "/usr/pkg/lib/libgslcblas.so.0",
+        "/usr/pkg/lib/libgslcblas.so.0.0.0"
+      ],
+      "requires": [
+        "/lib/libgcc_s.so.1",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libgcc_s.so.1",
+        "/usr/lib/libm.so.0"
+      ],
+      "sha512": "3cec8e4aa252724e0b199b6c17c617bd74167764ff3a5f57634463e409c3107cf079e8034bb6c4c05672a88fb47af4627af49e13dd7e0ee2845b20f4d5c42007",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/gsl-2.8.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 2934423,
+      "dependency_constraints": [
+        "glib2>=2.88.3nb1",
+        "gmp>=5.0.1",
+        "gsl>=2.6",
+        "python313>=3.13"
+      ],
+      "depends": [
+        "glib2-2.88.3nb1",
+        "gmp-6.3.0",
+        "gsl-2.8",
+        "python313-3.13.15"
+      ],
+      "file": "gstreamer1-1.28.6nb1.tgz",
+      "installed_bytes": 13193620,
+      "license": "gnu-gpl-v2",
+      "name": "gstreamer1-1.28.6nb1",
+      "provides": [
+        "/usr/pkg/lib/gstreamer-1.0/libgstcoreelements.so",
+        "/usr/pkg/lib/gstreamer-1.0/libgstcoretracers.so",
+        "/usr/pkg/lib/libgstbase-1.0.so",
+        "/usr/pkg/lib/libgstbase-1.0.so.0",
+        "/usr/pkg/lib/libgstbase-1.0.so.0.2806.0",
+        "/usr/pkg/lib/libgstcheck-1.0.so",
+        "/usr/pkg/lib/libgstcheck-1.0.so.0",
+        "/usr/pkg/lib/libgstcheck-1.0.so.0.2806.0",
+        "/usr/pkg/lib/libgstcontroller-1.0.so",
+        "/usr/pkg/lib/libgstcontroller-1.0.so.0",
+        "/usr/pkg/lib/libgstcontroller-1.0.so.0.2806.0",
+        "/usr/pkg/lib/libgstnet-1.0.so",
+        "/usr/pkg/lib/libgstnet-1.0.so.0",
+        "/usr/pkg/lib/libgstnet-1.0.so.0.2806.0",
+        "/usr/pkg/lib/libgstreamer-1.0.so",
+        "/usr/pkg/lib/libgstreamer-1.0.so.0",
+        "/usr/pkg/lib/libgstreamer-1.0.so.0.2806.0"
+      ],
+      "requires": [
+        "/lib/libgcc_s.so.1",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libelf.so.2",
+        "/usr/lib/libexecinfo.so.0",
+        "/usr/lib/libgcc_s.so.1",
+        "/usr/lib/libintl.so.1",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libpthread.so.1",
+        "/usr/lib/libz.so.1",
+        "/usr/pkg/lib/libffi.so.8",
+        "/usr/pkg/lib/libgio-2.0.so.0",
+        "/usr/pkg/lib/libglib-2.0.so.0",
+        "/usr/pkg/lib/libgmodule-2.0.so.0",
+        "/usr/pkg/lib/libgobject-2.0.so.0",
+        "/usr/pkg/lib/libpcre2-8.so.0"
+      ],
+      "sha512": "8708afd2c2c6505a3520bf24b8abcc5a31700f95edc366835d10ee0b1157ccd28bae85899480c5a970ec0068ae3e50cec6ee105d2360bd0c650c9ca828b4b327",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/gstreamer1-1.28.6nb1.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 6946940,
+      "dependency_constraints": [],
+      "depends": [],
+      "file": "iso-codes-4.16.0.tgz",
+      "installed_bytes": 19741966,
+      "license": "gnu-lgpl-v2.1",
+      "name": "iso-codes-4.16.0",
+      "provides": [],
+      "requires": [],
+      "sha512": "24e6110e1d71ceb90a2c5d68613ebd0158f1fb360dfdc4ce07ec7e7593943776f170ba005a33979986a310a27dd07f91c6783b43b7a1dcbdf7c5451123a4839c",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/iso-codes-4.16.0.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 2779768,
+      "dependency_constraints": [
+        "gstreamer1>=1.28.6nb1",
+        "iso-codes>=4.11.0nb1"
+      ],
+      "depends": [
+        "gstreamer1-1.28.6nb1",
+        "iso-codes-4.16.0"
+      ],
+      "file": "gst-plugins1-base-1.28.6nb1.tgz",
+      "installed_bytes": 12655841,
+      "license": "gnu-gpl-v2",
+      "name": "gst-plugins1-base-1.28.6nb1",
+      "provides": [
+        "/usr/pkg/lib/gstreamer-1.0/libgstadder.so",
+        "/usr/pkg/lib/gstreamer-1.0/libgstapp.so",
+        "/usr/pkg/lib/gstreamer-1.0/libgstaudioconvert.so",
+        "/usr/pkg/lib/gstreamer-1.0/libgstaudiomixer.so",
+        "/usr/pkg/lib/gstreamer-1.0/libgstaudiorate.so",
+        "/usr/pkg/lib/gstreamer-1.0/libgstaudioresample.so",
+        "/usr/pkg/lib/gstreamer-1.0/libgstaudiotestsrc.so",
+        "/usr/pkg/lib/gstreamer-1.0/libgstbasedebug.so",
+        "/usr/pkg/lib/gstreamer-1.0/libgstcompositor.so",
+        "/usr/pkg/lib/gstreamer-1.0/libgstdsd.so",
+        "/usr/pkg/lib/gstreamer-1.0/libgstencoding.so",
+        "/usr/pkg/lib/gstreamer-1.0/libgstgio.so",
+        "/usr/pkg/lib/gstreamer-1.0/libgstoverlaycomposition.so",
+        "/usr/pkg/lib/gstreamer-1.0/libgstpbtypes.so",
+        "/usr/pkg/lib/gstreamer-1.0/libgstplayback.so",
+        "/usr/pkg/lib/gstreamer-1.0/libgstrawparse.so",
+        "/usr/pkg/lib/gstreamer-1.0/libgstsubparse.so",
+        "/usr/pkg/lib/gstreamer-1.0/libgsttcp.so",
+        "/usr/pkg/lib/gstreamer-1.0/libgsttypefindfunctions.so",
+        "/usr/pkg/lib/gstreamer-1.0/libgstvideoconvertscale.so",
+        "/usr/pkg/lib/gstreamer-1.0/libgstvideorate.so",
+        "/usr/pkg/lib/gstreamer-1.0/libgstvideotestsrc.so",
+        "/usr/pkg/lib/gstreamer-1.0/libgstvolume.so",
+        "/usr/pkg/lib/libgstallocators-1.0.so",
+        "/usr/pkg/lib/libgstallocators-1.0.so.0",
+        "/usr/pkg/lib/libgstallocators-1.0.so.0.2806.0",
+        "/usr/pkg/lib/libgstapp-1.0.so",
+        "/usr/pkg/lib/libgstapp-1.0.so.0",
+        "/usr/pkg/lib/libgstapp-1.0.so.0.2806.0",
+        "/usr/pkg/lib/libgstaudio-1.0.so",
+        "/usr/pkg/lib/libgstaudio-1.0.so.0",
+        "/usr/pkg/lib/libgstaudio-1.0.so.0.2806.0",
+        "/usr/pkg/lib/libgstfft-1.0.so",
+        "/usr/pkg/lib/libgstfft-1.0.so.0",
+        "/usr/pkg/lib/libgstfft-1.0.so.0.2806.0",
+        "/usr/pkg/lib/libgstpbutils-1.0.so",
+        "/usr/pkg/lib/libgstpbutils-1.0.so.0",
+        "/usr/pkg/lib/libgstpbutils-1.0.so.0.2806.0",
+        "/usr/pkg/lib/libgstriff-1.0.so",
+        "/usr/pkg/lib/libgstriff-1.0.so.0",
+        "/usr/pkg/lib/libgstriff-1.0.so.0.2806.0",
+        "/usr/pkg/lib/libgstrtp-1.0.so",
+        "/usr/pkg/lib/libgstrtp-1.0.so.0",
+        "/usr/pkg/lib/libgstrtp-1.0.so.0.2806.0",
+        "/usr/pkg/lib/libgstrtsp-1.0.so",
+        "/usr/pkg/lib/libgstrtsp-1.0.so.0",
+        "/usr/pkg/lib/libgstrtsp-1.0.so.0.2806.0",
+        "/usr/pkg/lib/libgstsdp-1.0.so",
+        "/usr/pkg/lib/libgstsdp-1.0.so.0",
+        "/usr/pkg/lib/libgstsdp-1.0.so.0.2806.0",
+        "/usr/pkg/lib/libgsttag-1.0.so",
+        "/usr/pkg/lib/libgsttag-1.0.so.0",
+        "/usr/pkg/lib/libgsttag-1.0.so.0.2806.0",
+        "/usr/pkg/lib/libgstvideo-1.0.so",
+        "/usr/pkg/lib/libgstvideo-1.0.so.0",
+        "/usr/pkg/lib/libgstvideo-1.0.so.0.2806.0"
+      ],
+      "requires": [
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libelf.so.2",
+        "/usr/lib/libexecinfo.so.0",
+        "/usr/lib/libgcc_s.so.1",
+        "/usr/lib/libintl.so.1",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libpthread.so.1",
+        "/usr/lib/libz.so.1",
+        "/usr/pkg/lib/libffi.so.8",
+        "/usr/pkg/lib/libgio-2.0.so.0",
+        "/usr/pkg/lib/libglib-2.0.so.0",
+        "/usr/pkg/lib/libgmodule-2.0.so.0",
+        "/usr/pkg/lib/libgobject-2.0.so.0",
+        "/usr/pkg/lib/libgstbase-1.0.so.0",
+        "/usr/pkg/lib/libgstnet-1.0.so.0",
+        "/usr/pkg/lib/libgstreamer-1.0.so.0",
+        "/usr/pkg/lib/libpcre2-8.so.0"
+      ],
+      "sha512": "51c11ad4cad1f95a5539b7da8cd8c2d2b21d77f75e01315c1628b1d3e3fb260a620ebfbb70ac9ea0c61ca7b4bb50ebb5bba33b5320e51f554d543ffc1e743d79",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/gst-plugins1-base-1.28.6nb1.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 145814,
+      "dependency_constraints": [],
+      "depends": [],
+      "file": "CUnit-2.1.3nb1.tgz",
+      "installed_bytes": 589854,
+      "license": "gnu-gpl-v2",
+      "name": "CUnit-2.1.3nb1",
+      "provides": [
+        "/usr/pkg/lib/libcunit.so",
+        "/usr/pkg/lib/libcunit.so.1",
+        "/usr/pkg/lib/libcunit.so.1.0.1"
+      ],
+      "requires": [
+        "/usr/lib/libc.so.12"
+      ],
+      "sha512": "f3f023aadc916fea13adfe53771bbc151bc4bc5d5c83d8c266108ecdd637c683b95fdd27cf550617fff0e63c2e2d678d119763e0cf0f6463c375f7981c50575a",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/CUnit-2.1.3nb1.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 1219151,
+      "dependency_constraints": [
+        "CUnit>=2.1"
+      ],
+      "depends": [
+        "CUnit-2.1.3nb1"
+      ],
+      "file": "libmysofa-1.3.5.tgz",
+      "installed_bytes": 1442973,
+      "license": "modified-bsd",
+      "name": "libmysofa-1.3.5",
+      "provides": [
+        "/usr/pkg/lib/libmysofa.so",
+        "/usr/pkg/lib/libmysofa.so.1",
+        "/usr/pkg/lib/libmysofa.so.1.3.3"
+      ],
+      "requires": [
+        "/lib/libgcc_s.so.1",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libz.so.1"
+      ],
+      "sha512": "ec0198359511c33538f6f857c8f8b73a23c96274b05b1f7d51e66e722232b3f093f04d9a0e3a145d6ea1e2edbd9add700a772ce6e0bb73f156dab87efcf2cb18",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/libmysofa-1.3.5.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 1032722,
+      "dependency_constraints": [
+        "libmysofa>=1.0"
+      ],
+      "depends": [
+        "libmysofa-1.3.5"
+      ],
+      "file": "openal-soft-1.25.2nb2.tgz",
+      "installed_bytes": 2215604,
+      "license": "gnu-lgpl-v2",
+      "name": "openal-soft-1.25.2nb2",
+      "provides": [
+        "/usr/pkg/lib/libopenal.so",
+        "/usr/pkg/lib/libopenal.so.1",
+        "/usr/pkg/lib/libopenal.so.1.25.2"
+      ],
+      "requires": [
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libgcc_s.so.1",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libossaudio.so.1",
+        "/usr/lib/libpthread.so.1",
+        "/usr/lib/libstdc++.so.9",
+        "/usr/lib/libz.so.1",
+        "/usr/pkg/lib/libmysofa.so.1"
+      ],
+      "sha512": "0af782d76b9e3fea1f2320a1cc3f0478c2dc4f6bd307d8376e784076bee6b658aa8cf36b0b2ff8f160950bbe81ef35e65fd596701de72731de12f83da85e7347",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/openal-soft-1.25.2nb2.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 3464847,
+      "dependency_constraints": [],
+      "depends": [],
+      "file": "bash-5.3.20.tgz",
+      "installed_bytes": 13439735,
+      "license": "gnu-gpl-v3",
+      "name": "bash-5.3.20",
+      "provides": [],
+      "requires": [
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libgcc_s.so.1",
+        "/usr/lib/libintl.so.1",
+        "/usr/lib/libterminfo.so.2"
+      ],
+      "sha512": "9d2f20e0b7cb33852afd4fe01300060add75f08fce9474d744118cd717dd0e1e7ceb90869034f9b7f1d515c2a7e41097de3d809588ca909ad22204b674031472",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/bash-5.3.20.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 356536,
+      "dependency_constraints": [
+        "readline>=6.0"
+      ],
+      "depends": [
+        "readline-8.3nb1"
+      ],
+      "file": "gdbm-1.26.tgz",
+      "installed_bytes": 1206087,
+      "license": "gnu-gpl-v3",
+      "name": "gdbm-1.26",
+      "provides": [
+        "/usr/pkg/lib/libgdbm.so",
+        "/usr/pkg/lib/libgdbm.so.6",
+        "/usr/pkg/lib/libgdbm.so.6.0.0"
+      ],
+      "requires": [
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libcurses.so.9",
+        "/usr/lib/libintl.so.1",
+        "/usr/lib/libterminfo.so.2",
+        "/usr/pkg/lib/libreadline.so.8"
+      ],
+      "sha512": "0187000ca0ff1a424f80e832c7ea41a8e9e8f2905d6e8476d8c1bd4f15f5dbf99ea826fa3d45a2c06de831a5e0d127a87dd0b7717473afe0d48c3ec23167d946",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/gdbm-1.26.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 38723,
+      "dependency_constraints": [],
+      "depends": [],
+      "file": "libdaemon-0.14nb2.tgz",
+      "installed_bytes": 158957,
+      "license": "gnu-lgpl-v2.1",
+      "name": "libdaemon-0.14nb2",
+      "provides": [
+        "/usr/pkg/lib/libdaemon.so",
+        "/usr/pkg/lib/libdaemon.so.0",
+        "/usr/pkg/lib/libdaemon.so.0.5.0"
+      ],
+      "requires": [
+        "/usr/lib/libc.so.12"
+      ],
+      "sha512": "37ec54deba5942e44eddbab5deee0045e1dce86eb29dc3d7968cfde35f1fd385104b6044610cd59aee25da1d04e3d96554c405e94067814c1a6c038fde4fbdea",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/libdaemon-0.14nb2.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 714562,
+      "dependency_constraints": [
+        "dbus>=0.91",
+        "gdbm>=1.18.1",
+        "glib2>=2.88.3nb1",
+        "libdaemon>=0.14"
+      ],
+      "depends": [
+        "dbus-1.16.2nb3",
+        "gdbm-1.26",
+        "glib2-2.88.3nb1",
+        "libdaemon-0.14nb2"
+      ],
+      "file": "avahi-0.8nb9.tgz",
+      "installed_bytes": 2966656,
+      "license": "gnu-lgpl-v2.1",
+      "name": "avahi-0.8nb9",
+      "provides": [
+        "/usr/pkg/lib/libavahi-client.so",
+        "/usr/pkg/lib/libavahi-client.so.3",
+        "/usr/pkg/lib/libavahi-client.so.3.2.9",
+        "/usr/pkg/lib/libavahi-common.so",
+        "/usr/pkg/lib/libavahi-common.so.3",
+        "/usr/pkg/lib/libavahi-common.so.3.5.4",
+        "/usr/pkg/lib/libavahi-core.so",
+        "/usr/pkg/lib/libavahi-core.so.7",
+        "/usr/pkg/lib/libavahi-core.so.7.1.0",
+        "/usr/pkg/lib/libavahi-glib.so",
+        "/usr/pkg/lib/libavahi-glib.so.1",
+        "/usr/pkg/lib/libavahi-glib.so.1.0.2",
+        "/usr/pkg/lib/libavahi-gobject.so",
+        "/usr/pkg/lib/libavahi-gobject.so.0",
+        "/usr/pkg/lib/libavahi-gobject.so.0.0.5"
+      ],
+      "requires": [
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libexpat.so.2",
+        "/usr/lib/libgcc_s.so.1",
+        "/usr/lib/libintl.so.1",
+        "/usr/lib/libpthread.so.1",
+        "/usr/pkg/lib/libdaemon.so.0",
+        "/usr/pkg/lib/libdbus-1.so.3",
+        "/usr/pkg/lib/libffi.so.8",
+        "/usr/pkg/lib/libgdbm.so.6",
+        "/usr/pkg/lib/libglib-2.0.so.0",
+        "/usr/pkg/lib/libgobject-2.0.so.0",
+        "/usr/pkg/lib/libpcre2-8.so.0"
+      ],
+      "sha512": "59459e1fe9c8ed5c23b481c1153767c7af29dbda877299d2ea493405718dfcc537bf0ad2e0dad862baf2a40c2a7f1b235f9ba6ed09e23f3831888f5ab1785579",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/avahi-0.8nb9.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 101486,
+      "dependency_constraints": [],
+      "depends": [],
+      "file": "check-0.15.2.tgz",
+      "installed_bytes": 344777,
+      "license": "gnu-lgpl-v2.1",
+      "name": "check-0.15.2",
+      "provides": [
+        "/usr/pkg/lib/libcheck.so",
+        "/usr/pkg/lib/libcheck.so.0",
+        "/usr/pkg/lib/libcheck.so.0.0.0"
+      ],
+      "requires": [
+        "/lib/libgcc_s.so.1",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libpthread.so.1",
+        "/usr/lib/librt.so.1"
+      ],
+      "sha512": "ae6dd0a1c0bbeff6c5b9c6a4bf1b84831056bfe5f0371ec253a55374d1d71c1cd3f6f354ca4b8d7b7e49acc453e5839609f342c9c67151d4349e4e87e7cab1da",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/check-0.15.2.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 52557,
+      "dependency_constraints": [],
+      "depends": [],
+      "file": "libltdl-2.4.7.tgz",
+      "installed_bytes": 173844,
+      "license": "gnu-gpl-v2",
+      "name": "libltdl-2.4.7",
+      "provides": [
+        "/usr/pkg/lib/libltdl.so",
+        "/usr/pkg/lib/libltdl.so.7",
+        "/usr/pkg/lib/libltdl.so.7.3.2"
+      ],
+      "requires": [
+        "/usr/lib/libc.so.12"
+      ],
+      "sha512": "f66388861cbb9da85d95343025d9367d43c6468a7b524b80cfe14f95acb44b6fb236fd9be2819c29821c08255c051844b9558db8954be8e37731133a052ff7ab",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/libltdl-2.4.7.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 236458,
+      "dependency_constraints": [],
+      "depends": [],
+      "file": "libogg-1.3.6.tgz",
+      "installed_bytes": 520322,
+      "license": "modified-bsd",
+      "name": "libogg-1.3.6",
+      "provides": [
+        "/usr/pkg/lib/libogg.so",
+        "/usr/pkg/lib/libogg.so.0",
+        "/usr/pkg/lib/libogg.so.0.8.6"
+      ],
+      "requires": [
+        "/usr/lib/libc.so.12"
+      ],
+      "sha512": "c6b0af54b52030b01eef5ce075d6b05412ba023ddc51b4ae8b4a62990c9998bf6b27f1092759e817b301dd149fe01be72ae1bbb7c509a0d176cd166042eae557",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/libogg-1.3.6.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 774100,
+      "dependency_constraints": [
+        "libogg>=1.1.2nb1"
+      ],
+      "depends": [
+        "libogg-1.3.6"
+      ],
+      "file": "flac-1.5.0nb1.tgz",
+      "installed_bytes": 2232179,
+      "license": "modified-bsd AND gnu-gpl-v2 AND gnu-lgpl-v2.1",
+      "name": "flac-1.5.0nb1",
+      "provides": [
+        "/usr/pkg/lib/libFLAC++.so",
+        "/usr/pkg/lib/libFLAC++.so.11",
+        "/usr/pkg/lib/libFLAC++.so.11.0.0",
+        "/usr/pkg/lib/libFLAC.so",
+        "/usr/pkg/lib/libFLAC.so.14",
+        "/usr/pkg/lib/libFLAC.so.14.0.0"
+      ],
+      "requires": [
+        "/lib/libgcc_s.so.1",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libgcc_s.so.1",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libpthread.so.1",
+        "/usr/lib/libstdc++.so.9",
+        "/usr/pkg/lib/libogg.so.0"
+      ],
+      "sha512": "ab4d801e3101dd1d3376ad57e7f1a16c55adc002a718af61b5f8bcf3639ffc0ad8f982f5753c2e029b3d9704874de99a7809cbc1da2f4df740f5c70a8e25e7a2",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/flac-1.5.0nb1.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 544489,
+      "dependency_constraints": [],
+      "depends": [],
+      "file": "mpg123-1.33.7.tgz",
+      "installed_bytes": 1558000,
+      "license": "gnu-lgpl-v2.1",
+      "name": "mpg123-1.33.7",
+      "provides": [
+        "/usr/pkg/lib/libmpg123.so",
+        "/usr/pkg/lib/libmpg123.so.0",
+        "/usr/pkg/lib/libmpg123.so.0.49.4",
+        "/usr/pkg/lib/libout123.so",
+        "/usr/pkg/lib/libout123.so.0",
+        "/usr/pkg/lib/libout123.so.0.5.2",
+        "/usr/pkg/lib/libsyn123.so",
+        "/usr/pkg/lib/libsyn123.so.0",
+        "/usr/pkg/lib/libsyn123.so.0.2.3"
+      ],
+      "requires": [
+        "/lib/libgcc_s.so.1",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libm.so.0"
+      ],
+      "sha512": "07f371eb45891fbc9e47446e8289534749248867af4c267f8d5d86b0a8a116afa08194cdad5ddaf4779159759ac20b77d742d6d4af4b24cf316b5689da109744",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/mpg123-1.33.7.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 525776,
+      "dependency_constraints": [
+        "mpg123>=1.0.0"
+      ],
+      "depends": [
+        "mpg123-1.33.7"
+      ],
+      "file": "lame-4.0nb1.tgz",
+      "installed_bytes": 1360926,
+      "license": "gnu-lgpl-v2",
+      "name": "lame-4.0nb1",
+      "provides": [
+        "/usr/pkg/lib/libmp3lame.so",
+        "/usr/pkg/lib/libmp3lame.so.0",
+        "/usr/pkg/lib/libmp3lame.so.0.0.0"
+      ],
+      "requires": [
+        "/lib/libgcc_s.so.1",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libcurses.so.9",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libterminfo.so.2",
+        "/usr/pkg/lib/libmpg123.so.0"
+      ],
+      "sha512": "b17d9a6b7400caf07ff5bcdb67aaac71a5c98f88683df9f32b412a343180ec86384fb4ed27dca1d5a900f765a34f6c2bbc65ef5b687aba917915729a68eeed76",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/lame-4.0nb1.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 567774,
+      "dependency_constraints": [],
+      "depends": [],
+      "file": "libopus-1.6.1nb1.tgz",
+      "installed_bytes": 1336092,
+      "license": "modified-bsd",
+      "name": "libopus-1.6.1nb1",
+      "provides": [
+        "/usr/pkg/lib/libopus.so",
+        "/usr/pkg/lib/libopus.so.0",
+        "/usr/pkg/lib/libopus.so.0.11.1"
+      ],
+      "requires": [
+        "/lib/libgcc_s.so.1",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libm.so.0"
+      ],
+      "sha512": "c8588d5233b97b1c396930e326825f27f6ddd8f4634c67b0499e997318f0cc1ed823439fb7dc54354518f53b523c7d180744a1844e51e1dcfbf1df0fa091a7d9",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/libopus-1.6.1nb1.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 647922,
+      "dependency_constraints": [
+        "libogg>=1.1.2nb1"
+      ],
+      "depends": [
+        "libogg-1.3.6"
+      ],
+      "file": "libvorbis-1.3.7.tgz",
+      "installed_bytes": 2740966,
+      "license": "modified-bsd",
+      "name": "libvorbis-1.3.7",
+      "provides": [
+        "/usr/pkg/lib/libvorbis.so",
+        "/usr/pkg/lib/libvorbis.so.0",
+        "/usr/pkg/lib/libvorbis.so.0.4.9",
+        "/usr/pkg/lib/libvorbisenc.so",
+        "/usr/pkg/lib/libvorbisenc.so.2",
+        "/usr/pkg/lib/libvorbisenc.so.2.0.12",
+        "/usr/pkg/lib/libvorbisfile.so",
+        "/usr/pkg/lib/libvorbisfile.so.3",
+        "/usr/pkg/lib/libvorbisfile.so.3.3.8"
+      ],
+      "requires": [
+        "/lib/libgcc_s.so.1",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libm.so.0",
+        "/usr/pkg/lib/libogg.so.0"
+      ],
+      "sha512": "44d3d7e3ba567bf697c8c06ab830fdeebee66bf67a17a4287731c73aecfea08c1feeb97e05159223dbdd959ec14e4d140c0c1a62edc8d3e3cb42fb6b144a484b",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/libvorbis-1.3.7.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 757936,
+      "dependency_constraints": [
+        "flac>=1.5.0",
+        "lame>=4.0",
+        "libogg>=1.1.3",
+        "libopus>=1.4",
+        "libvorbis>=1.1.0nb1",
+        "mpg123>=1.0.0"
+      ],
+      "depends": [
+        "flac-1.5.0nb1",
+        "lame-4.0nb1",
+        "libogg-1.3.6",
+        "libopus-1.6.1nb1",
+        "libvorbis-1.3.7",
+        "mpg123-1.33.7"
+      ],
+      "file": "libsndfile-1.2.2nb3.tgz",
+      "installed_bytes": 2590319,
+      "license": "gnu-lgpl-v2.1",
+      "name": "libsndfile-1.2.2nb3",
+      "provides": [
+        "/usr/pkg/lib/libsndfile.so",
+        "/usr/pkg/lib/libsndfile.so.1",
+        "/usr/pkg/lib/libsndfile.so.1.0.37"
+      ],
+      "requires": [
+        "/lib/libgcc_s.so.1",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libpthread.so.1",
+        "/usr/lib/libterminfo.so.2",
+        "/usr/pkg/lib/libFLAC.so.14",
+        "/usr/pkg/lib/libmp3lame.so.0",
+        "/usr/pkg/lib/libmpg123.so.0",
+        "/usr/pkg/lib/libogg.so.0",
+        "/usr/pkg/lib/libopus.so.0",
+        "/usr/pkg/lib/libvorbis.so.0",
+        "/usr/pkg/lib/libvorbisenc.so.2"
+      ],
+      "sha512": "c3552d4648572d2eadda55a91a1b42c89b0fb633c44ce8da5498d99af2af88ab7cc36f26518702a1c52d591bd384ce3ff53ab36ee16913ca8ba4c0d2aa498e32",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/libsndfile-1.2.2nb3.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 572004,
+      "dependency_constraints": [
+        "libogg>=1.1.2nb1"
+      ],
+      "depends": [
+        "libogg-1.3.6"
+      ],
+      "file": "speex-1.2.1.tgz",
+      "installed_bytes": 939819,
+      "license": "modified-bsd",
+      "name": "speex-1.2.1",
+      "provides": [
+        "/usr/pkg/lib/libspeex.so",
+        "/usr/pkg/lib/libspeex.so.1",
+        "/usr/pkg/lib/libspeex.so.1.5.2"
+      ],
+      "requires": [
+        "/lib/libgcc_s.so.1",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libossaudio.so.1",
+        "/usr/pkg/lib/libogg.so.0"
+      ],
+      "sha512": "c2021f97645bd2c646791db1c30044233ba89b46f1f2382f213e5a342b6ca4478f9e7e9af715d7ee705ae454818d1f7ec9ad07a5431e04d5cda62c51721227d3",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/speex-1.2.1.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 509969,
+      "dependency_constraints": [
+        "speex>=1.2rc2"
+      ],
+      "depends": [
+        "speex-1.2.1"
+      ],
+      "file": "speexdsp-1.2.1.tgz",
+      "installed_bytes": 655708,
+      "license": "modified-bsd",
+      "name": "speexdsp-1.2.1",
+      "provides": [
+        "/usr/pkg/lib/libspeexdsp.so",
+        "/usr/pkg/lib/libspeexdsp.so.1",
+        "/usr/pkg/lib/libspeexdsp.so.1.5.2"
+      ],
+      "requires": [
+        "/lib/libgcc_s.so.1",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libm.so.0"
+      ],
+      "sha512": "d4d0d9c6ab94c012c92753174c1642941351ed63b751f456399e5167bb7c3d2a3274c83da95503f403ceb0fde23208194d5255ae78f37ce2dcdc12135abf1749",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/speexdsp-1.2.1.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 112699,
+      "dependency_constraints": [
+        "python313>=3.13"
+      ],
+      "depends": [
+        "python313-3.13.15"
+      ],
+      "file": "tdb-1.4.15.tgz",
+      "installed_bytes": 601657,
+      "license": "gnu-gpl-v3",
+      "name": "tdb-1.4.15",
+      "provides": [
+        "/usr/pkg/lib/libtdb.so",
+        "/usr/pkg/lib/libtdb.so.1",
+        "/usr/pkg/lib/libtdb.so.1.4.15"
+      ],
+      "requires": [
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libpthread.so.1"
+      ],
+      "sha512": "2e696cfdbdbb5846b4167aed8935fc20176912ef19c1ac4f3e852e160421c61cd43ab42f4e885255d6b5e804cae25557eb1f7df9c51d01fc729a603087b4c0d4",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/tdb-1.4.15.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 2600932,
+      "dependency_constraints": [
+        "bash-[0-9]*",
+        "avahi>=0.8nb9",
+        "check>=0.9.5",
+        "dbus>=0.91",
+        "glib2>=2.88.3nb1",
+        "libltdl>=2.4.2",
+        "libsndfile>=1.2.2nb3",
+        "speexdsp>=1.2rc3",
+        "tdb>=1.4.12nb1"
+      ],
+      "depends": [
+        "bash-5.3.20",
+        "avahi-0.8nb9",
+        "check-0.15.2",
+        "dbus-1.16.2nb3",
+        "glib2-2.88.3nb1",
+        "libltdl-2.4.7",
+        "libsndfile-1.2.2nb3",
+        "speexdsp-1.2.1",
+        "tdb-1.4.15"
+      ],
+      "file": "pulseaudio-17.0nb7.tgz",
+      "installed_bytes": 12034261,
+      "license": "gnu-lgpl-v2.1 AND gnu-gpl-v2",
+      "name": "pulseaudio-17.0nb7",
+      "provides": [
+        "/usr/pkg/lib/libpulse-mainloop-glib.so",
+        "/usr/pkg/lib/libpulse-mainloop-glib.so.0",
+        "/usr/pkg/lib/libpulse-mainloop-glib.so.0.0.6",
+        "/usr/pkg/lib/libpulse-simple.so",
+        "/usr/pkg/lib/libpulse-simple.so.0",
+        "/usr/pkg/lib/libpulse-simple.so.0.1.1",
+        "/usr/pkg/lib/libpulse.so",
+        "/usr/pkg/lib/libpulse.so.0",
+        "/usr/pkg/lib/libpulse.so.0.24.3",
+        "/usr/pkg/lib/pulseaudio/libpulsecommon-17.0.so",
+        "/usr/pkg/lib/pulseaudio/libpulsecore-17.0.so",
+        "/usr/pkg/lib/pulseaudio/libpulsedsp.so",
+        "/usr/pkg/lib/pulseaudio/modules/libavahi-wrap.so",
+        "/usr/pkg/lib/pulseaudio/modules/libcli.so",
+        "/usr/pkg/lib/pulseaudio/modules/liboss-util.so",
+        "/usr/pkg/lib/pulseaudio/modules/libprotocol-cli.so",
+        "/usr/pkg/lib/pulseaudio/modules/libprotocol-http.so",
+        "/usr/pkg/lib/pulseaudio/modules/libprotocol-native.so",
+        "/usr/pkg/lib/pulseaudio/modules/libprotocol-simple.so",
+        "/usr/pkg/lib/pulseaudio/modules/libraop.so",
+        "/usr/pkg/lib/pulseaudio/modules/librtp.so"
+      ],
+      "requires": [
+        "/lib/libcrypt.so.1",
+        "/lib/libgcc_s.so.1",
+        "/usr/X11R7/lib/libX11-xcb.so.1",
+        "/usr/X11R7/lib/libX11.so.7",
+        "/usr/X11R7/lib/libXau.so.7",
+        "/usr/X11R7/lib/libXdmcp.so.7",
+        "/usr/X11R7/lib/libxcb.so.2",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libcrypto.so.16",
+        "/usr/lib/libelf.so.2",
+        "/usr/lib/libexecinfo.so.0",
+        "/usr/lib/libgcc_s.so.1",
+        "/usr/lib/libintl.so.1",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libossaudio.so.1",
+        "/usr/lib/libpthread.so.1",
+        "/usr/lib/librt.so.1",
+        "/usr/lib/libterminfo.so.2",
+        "/usr/pkg/lib/libFLAC.so.14",
+        "/usr/pkg/lib/libdbus-1.so.3",
+        "/usr/pkg/lib/libglib-2.0.so.0",
+        "/usr/pkg/lib/libltdl.so.7",
+        "/usr/pkg/lib/libmp3lame.so.0",
+        "/usr/pkg/lib/libmpg123.so.0",
+        "/usr/pkg/lib/libogg.so.0",
+        "/usr/pkg/lib/libopus.so.0",
+        "/usr/pkg/lib/libpcre2-8.so.0",
+        "/usr/pkg/lib/libsndfile.so.1",
+        "/usr/pkg/lib/libspeexdsp.so.1",
+        "/usr/pkg/lib/libtdb.so.1",
+        "/usr/pkg/lib/libvorbis.so.0",
+        "/usr/pkg/lib/libvorbisenc.so.2"
+      ],
+      "sha512": "80a65a1e9dd9e8f651453e348612e678a8583e790aa4b894fef7ed00cf27f82a73ccbd32f5175573953053880533d1167202b315145960bd7bcf262aec7f548f",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/pulseaudio-17.0nb7.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 1245799,
+      "dependency_constraints": [
+        "gst-plugins1-base>=1.28.6nb1",
+        "openal-soft>=1.5.304",
+        "pulseaudio>=17.0nb6",
+        "qt5-qtdeclarative>=5.15.19nb1"
+      ],
+      "depends": [
+        "gst-plugins1-base-1.28.6nb1",
+        "openal-soft-1.25.2nb2",
+        "pulseaudio-17.0nb7",
+        "qt5-qtdeclarative-5.15.19nb1"
+      ],
+      "file": "qt5-qtmultimedia-5.15.19nb2.tgz",
+      "installed_bytes": 5154208,
+      "license": "gnu-lgpl-v2.1 AND gnu-lgpl-v3 AND gnu-gpl-v2 AND gnu-gpl-v3",
+      "name": "qt5-qtmultimedia-5.15.19nb2",
+      "provides": [
+        "/usr/pkg/qt5/lib/libQt5Multimedia.so",
+        "/usr/pkg/qt5/lib/libQt5Multimedia.so.5",
+        "/usr/pkg/qt5/lib/libQt5Multimedia.so.5.15",
+        "/usr/pkg/qt5/lib/libQt5Multimedia.so.5.15.19",
+        "/usr/pkg/qt5/lib/libQt5MultimediaGstTools.so",
+        "/usr/pkg/qt5/lib/libQt5MultimediaGstTools.so.5",
+        "/usr/pkg/qt5/lib/libQt5MultimediaGstTools.so.5.15",
+        "/usr/pkg/qt5/lib/libQt5MultimediaGstTools.so.5.15.19",
+        "/usr/pkg/qt5/lib/libQt5MultimediaQuick.so",
+        "/usr/pkg/qt5/lib/libQt5MultimediaQuick.so.5",
+        "/usr/pkg/qt5/lib/libQt5MultimediaQuick.so.5.15",
+        "/usr/pkg/qt5/lib/libQt5MultimediaQuick.so.5.15.19",
+        "/usr/pkg/qt5/lib/libQt5MultimediaWidgets.so",
+        "/usr/pkg/qt5/lib/libQt5MultimediaWidgets.so.5",
+        "/usr/pkg/qt5/lib/libQt5MultimediaWidgets.so.5.15",
+        "/usr/pkg/qt5/lib/libQt5MultimediaWidgets.so.5.15.19",
+        "/usr/pkg/qt5/plugins/audio/libqtmedia_pulse.so",
+        "/usr/pkg/qt5/plugins/mediaservice/libgstaudiodecoder.so",
+        "/usr/pkg/qt5/plugins/mediaservice/libgstcamerabin.so",
+        "/usr/pkg/qt5/plugins/mediaservice/libgstmediacapture.so",
+        "/usr/pkg/qt5/plugins/mediaservice/libgstmediaplayer.so",
+        "/usr/pkg/qt5/plugins/playlistformats/libqtmultimedia_m3u.so",
+        "/usr/pkg/qt5/qml/QtAudioEngine/libdeclarative_audioengine.so",
+        "/usr/pkg/qt5/qml/QtMultimedia/libdeclarative_multimedia.so"
+      ],
+      "requires": [
+        "/lib/libcrypt.so.1",
+        "/usr/X11R7/lib/libGL.so.3",
+        "/usr/X11R7/lib/libX11-xcb.so.1",
+        "/usr/X11R7/lib/libX11.so.7",
+        "/usr/X11R7/lib/libXau.so.7",
+        "/usr/X11R7/lib/libXdamage.so.2",
+        "/usr/X11R7/lib/libXdmcp.so.7",
+        "/usr/X11R7/lib/libXext.so.7",
+        "/usr/X11R7/lib/libXfixes.so.4",
+        "/usr/X11R7/lib/libXxf86vm.so.2",
+        "/usr/X11R7/lib/libdrm.so.3",
+        "/usr/X11R7/lib/libglapi.so.1",
+        "/usr/X11R7/lib/libxcb-dri2.so.0",
+        "/usr/X11R7/lib/libxcb-glx.so.0",
+        "/usr/X11R7/lib/libxcb-shm.so.0",
+        "/usr/X11R7/lib/libxcb-sync.so.1",
+        "/usr/X11R7/lib/libxcb.so.2",
+        "/usr/lib/libasn1.so.10",
+        "/usr/lib/libbz2.so.1",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libcom_err.so.8",
+        "/usr/lib/libcrypto.so.16",
+        "/usr/lib/libelf.so.2",
+        "/usr/lib/libexecinfo.so.0",
+        "/usr/lib/libexpat.so.2",
+        "/usr/lib/libgcc_s.so.1",
+        "/usr/lib/libgssapi.so.12",
+        "/usr/lib/libheimbase.so.2",
+        "/usr/lib/libheimntlm.so.6",
+        "/usr/lib/libhx509.so.7",
+        "/usr/lib/libintl.so.1",
+        "/usr/lib/libkrb5.so.28",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libossaudio.so.1",
+        "/usr/lib/libpci.so.2",
+        "/usr/lib/libpthread.so.1",
+        "/usr/lib/libroken.so.20",
+        "/usr/lib/librt.so.1",
+        "/usr/lib/libssl.so.16",
+        "/usr/lib/libstdc++.so.9",
+        "/usr/lib/libterminfo.so.2",
+        "/usr/lib/libutil.so.7",
+        "/usr/lib/libwind.so.1",
+        "/usr/lib/libz.so.1",
+        "/usr/pkg/lib/libFLAC.so.14",
+        "/usr/pkg/lib/libbrotlicommon.so.1",
+        "/usr/pkg/lib/libbrotlidec.so.1",
+        "/usr/pkg/lib/libcurl.so.4",
+        "/usr/pkg/lib/libdbus-1.so.3",
+        "/usr/pkg/lib/libdouble-conversion.so.3",
+        "/usr/pkg/lib/libduktape.so.0",
+        "/usr/pkg/lib/libffi.so.8",
+        "/usr/pkg/lib/libfreetype.so.6",
+        "/usr/pkg/lib/libgio-2.0.so.0",
+        "/usr/pkg/lib/libglib-2.0.so.0",
+        "/usr/pkg/lib/libgmodule-2.0.so.0",
+        "/usr/pkg/lib/libgobject-2.0.so.0",
+        "/usr/pkg/lib/libgraphite2.so.3",
+        "/usr/pkg/lib/libgstallocators-1.0.so.0",
+        "/usr/pkg/lib/libgstapp-1.0.so.0",
+        "/usr/pkg/lib/libgstaudio-1.0.so.0",
+        "/usr/pkg/lib/libgstbase-1.0.so.0",
+        "/usr/pkg/lib/libgstpbutils-1.0.so.0",
+        "/usr/pkg/lib/libgstreamer-1.0.so.0",
+        "/usr/pkg/lib/libgsttag-1.0.so.0",
+        "/usr/pkg/lib/libgstvideo-1.0.so.0",
+        "/usr/pkg/lib/libgthread-2.0.so.0",
+        "/usr/pkg/lib/libharfbuzz.so.0",
+        "/usr/pkg/lib/libicudata.so.78",
+        "/usr/pkg/lib/libicui18n.so.78",
+        "/usr/pkg/lib/libicuuc.so.78",
+        "/usr/pkg/lib/libidn2.so.0",
+        "/usr/pkg/lib/libmd4c.so.0",
+        "/usr/pkg/lib/libmp3lame.so.0",
+        "/usr/pkg/lib/libmpg123.so.0",
+        "/usr/pkg/lib/libnghttp2.so.14",
+        "/usr/pkg/lib/libogg.so.0",
+        "/usr/pkg/lib/libopenal.so.1",
+        "/usr/pkg/lib/libopus.so.0",
+        "/usr/pkg/lib/libpcre2-16.so.0",
+        "/usr/pkg/lib/libpcre2-8.so.0",
+        "/usr/pkg/lib/libpng16.so.16",
+        "/usr/pkg/lib/libproxy.so.1",
+        "/usr/pkg/lib/libproxy/libpxbackend-1.0.so",
+        "/usr/pkg/lib/libpulse-mainloop-glib.so.0",
+        "/usr/pkg/lib/libpulse.so.0",
+        "/usr/pkg/lib/libsndfile.so.1",
+        "/usr/pkg/lib/libunistring.so.5",
+        "/usr/pkg/lib/libvorbis.so.0",
+        "/usr/pkg/lib/libvorbisenc.so.2",
+        "/usr/pkg/lib/libzstd.so.1",
+        "/usr/pkg/lib/pulseaudio/libpulsecommon-17.0.so",
+        "/usr/pkg/qt5/lib/libQt5Core.so.5",
+        "/usr/pkg/qt5/lib/libQt5Gui.so.5",
+        "/usr/pkg/qt5/lib/libQt5Network.so.5",
+        "/usr/pkg/qt5/lib/libQt5OpenGL.so.5",
+        "/usr/pkg/qt5/lib/libQt5Qml.so.5",
+        "/usr/pkg/qt5/lib/libQt5QmlModels.so.5",
+        "/usr/pkg/qt5/lib/libQt5Quick.so.5",
+        "/usr/pkg/qt5/lib/libQt5Widgets.so.5"
+      ],
+      "sha512": "17c64d4ce622b9397a302a99df4f2328cb9ed9b870ce9d561ad5f43a9752bbddcd925b95a93cc558ca406e16c7bc63375cfa3221459fdb4dd3822e59424bbc7a",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/qt5-qtmultimedia-5.15.19nb2.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 220129,
+      "dependency_constraints": [
+        "qt5-qtbase>=5.15.19nb2"
+      ],
+      "depends": [
+        "qt5-qtbase-5.15.19nb2"
+      ],
+      "file": "qt5-qtsvg-5.15.19nb1.tgz",
+      "installed_bytes": 768638,
+      "license": "gnu-lgpl-v2.1 AND gnu-lgpl-v3 AND gnu-gpl-v2 AND gnu-gpl-v3",
+      "name": "qt5-qtsvg-5.15.19nb1",
+      "provides": [
+        "/usr/pkg/qt5/lib/libQt5Svg.so",
+        "/usr/pkg/qt5/lib/libQt5Svg.so.5",
+        "/usr/pkg/qt5/lib/libQt5Svg.so.5.15",
+        "/usr/pkg/qt5/lib/libQt5Svg.so.5.15.19",
+        "/usr/pkg/qt5/plugins/iconengines/libqsvgicon.so",
+        "/usr/pkg/qt5/plugins/imageformats/libqsvg.so"
+      ],
+      "requires": [
+        "/usr/X11R7/lib/libGL.so.3",
+        "/usr/X11R7/lib/libX11-xcb.so.1",
+        "/usr/X11R7/lib/libX11.so.7",
+        "/usr/X11R7/lib/libXau.so.7",
+        "/usr/X11R7/lib/libXdamage.so.2",
+        "/usr/X11R7/lib/libXdmcp.so.7",
+        "/usr/X11R7/lib/libXext.so.7",
+        "/usr/X11R7/lib/libXfixes.so.4",
+        "/usr/X11R7/lib/libXxf86vm.so.2",
+        "/usr/X11R7/lib/libdrm.so.3",
+        "/usr/X11R7/lib/libglapi.so.1",
+        "/usr/X11R7/lib/libxcb-dri2.so.0",
+        "/usr/X11R7/lib/libxcb-glx.so.0",
+        "/usr/X11R7/lib/libxcb-shm.so.0",
+        "/usr/X11R7/lib/libxcb-sync.so.1",
+        "/usr/X11R7/lib/libxcb.so.2",
+        "/usr/lib/libbz2.so.1",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libelf.so.2",
+        "/usr/lib/libexecinfo.so.0",
+        "/usr/lib/libexpat.so.2",
+        "/usr/lib/libgcc_s.so.1",
+        "/usr/lib/libintl.so.1",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libpci.so.2",
+        "/usr/lib/libpthread.so.1",
+        "/usr/lib/libstdc++.so.9",
+        "/usr/lib/libz.so.1",
+        "/usr/pkg/lib/libbrotlicommon.so.1",
+        "/usr/pkg/lib/libbrotlidec.so.1",
+        "/usr/pkg/lib/libdouble-conversion.so.3",
+        "/usr/pkg/lib/libfreetype.so.6",
+        "/usr/pkg/lib/libglib-2.0.so.0",
+        "/usr/pkg/lib/libgraphite2.so.3",
+        "/usr/pkg/lib/libgthread-2.0.so.0",
+        "/usr/pkg/lib/libharfbuzz.so.0",
+        "/usr/pkg/lib/libicudata.so.78",
+        "/usr/pkg/lib/libicui18n.so.78",
+        "/usr/pkg/lib/libicuuc.so.78",
+        "/usr/pkg/lib/libmd4c.so.0",
+        "/usr/pkg/lib/libpcre2-16.so.0",
+        "/usr/pkg/lib/libpcre2-8.so.0",
+        "/usr/pkg/lib/libpng16.so.16",
+        "/usr/pkg/lib/libzstd.so.1",
+        "/usr/pkg/qt5/lib/libQt5Core.so.5",
+        "/usr/pkg/qt5/lib/libQt5Gui.so.5",
+        "/usr/pkg/qt5/lib/libQt5Widgets.so.5"
+      ],
+      "sha512": "69d2c7a2546845cb10a281335c18fc603ea01f68deca6214b155fbb389fe6b97bc7d4a257b7704e27c811453433ba2fe82d3bb917e5cafe7736e54aae2c1bf73",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/qt5-qtsvg-5.15.19nb1.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 287329,
+      "dependency_constraints": [
+        "qt5-qtbase>=5.15.19nb2",
+        "qt5-qtdeclarative>=5.15.19nb1",
+        "qt5-qtsvg>=5.15.19nb1"
+      ],
+      "depends": [
+        "qt5-qtbase-5.15.19nb2",
+        "qt5-qtdeclarative-5.15.19nb1",
+        "qt5-qtsvg-5.15.19nb1"
+      ],
+      "file": "qt5-qtsensors-5.15.19nb1.tgz",
+      "installed_bytes": 1398376,
+      "license": "gnu-lgpl-v2.1 AND gnu-lgpl-v3 AND gnu-gpl-v2 AND gnu-gpl-v3",
+      "name": "qt5-qtsensors-5.15.19nb1",
+      "provides": [
+        "/usr/pkg/qt5/lib/libQt5Sensors.so",
+        "/usr/pkg/qt5/lib/libQt5Sensors.so.5",
+        "/usr/pkg/qt5/lib/libQt5Sensors.so.5.15",
+        "/usr/pkg/qt5/lib/libQt5Sensors.so.5.15.19",
+        "/usr/pkg/qt5/plugins/sensorgestures/libqtsensorgestures_plugin.so",
+        "/usr/pkg/qt5/plugins/sensorgestures/libqtsensorgestures_shakeplugin.so",
+        "/usr/pkg/qt5/plugins/sensors/libqtsensors_generic.so",
+        "/usr/pkg/qt5/qml/QtSensors/libdeclarative_sensors.so"
+      ],
+      "requires": [
+        "/lib/libcrypt.so.1",
+        "/usr/X11R7/lib/libGL.so.3",
+        "/usr/X11R7/lib/libX11-xcb.so.1",
+        "/usr/X11R7/lib/libX11.so.7",
+        "/usr/X11R7/lib/libXau.so.7",
+        "/usr/X11R7/lib/libXdamage.so.2",
+        "/usr/X11R7/lib/libXdmcp.so.7",
+        "/usr/X11R7/lib/libXext.so.7",
+        "/usr/X11R7/lib/libXfixes.so.4",
+        "/usr/X11R7/lib/libXxf86vm.so.2",
+        "/usr/X11R7/lib/libdrm.so.3",
+        "/usr/X11R7/lib/libglapi.so.1",
+        "/usr/X11R7/lib/libxcb-dri2.so.0",
+        "/usr/X11R7/lib/libxcb-glx.so.0",
+        "/usr/X11R7/lib/libxcb-shm.so.0",
+        "/usr/X11R7/lib/libxcb-sync.so.1",
+        "/usr/X11R7/lib/libxcb.so.2",
+        "/usr/lib/libasn1.so.10",
+        "/usr/lib/libbz2.so.1",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libcom_err.so.8",
+        "/usr/lib/libcrypto.so.16",
+        "/usr/lib/libelf.so.2",
+        "/usr/lib/libexecinfo.so.0",
+        "/usr/lib/libexpat.so.2",
+        "/usr/lib/libgcc_s.so.1",
+        "/usr/lib/libgssapi.so.12",
+        "/usr/lib/libheimbase.so.2",
+        "/usr/lib/libheimntlm.so.6",
+        "/usr/lib/libhx509.so.7",
+        "/usr/lib/libintl.so.1",
+        "/usr/lib/libkrb5.so.28",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libpci.so.2",
+        "/usr/lib/libpthread.so.1",
+        "/usr/lib/libroken.so.20",
+        "/usr/lib/libssl.so.16",
+        "/usr/lib/libstdc++.so.9",
+        "/usr/lib/libutil.so.7",
+        "/usr/lib/libwind.so.1",
+        "/usr/lib/libz.so.1",
+        "/usr/pkg/lib/libbrotlicommon.so.1",
+        "/usr/pkg/lib/libbrotlidec.so.1",
+        "/usr/pkg/lib/libcurl.so.4",
+        "/usr/pkg/lib/libdouble-conversion.so.3",
+        "/usr/pkg/lib/libduktape.so.0",
+        "/usr/pkg/lib/libffi.so.8",
+        "/usr/pkg/lib/libfreetype.so.6",
+        "/usr/pkg/lib/libgio-2.0.so.0",
+        "/usr/pkg/lib/libglib-2.0.so.0",
+        "/usr/pkg/lib/libgmodule-2.0.so.0",
+        "/usr/pkg/lib/libgobject-2.0.so.0",
+        "/usr/pkg/lib/libgraphite2.so.3",
+        "/usr/pkg/lib/libgthread-2.0.so.0",
+        "/usr/pkg/lib/libharfbuzz.so.0",
+        "/usr/pkg/lib/libicudata.so.78",
+        "/usr/pkg/lib/libicui18n.so.78",
+        "/usr/pkg/lib/libicuuc.so.78",
+        "/usr/pkg/lib/libidn2.so.0",
+        "/usr/pkg/lib/libmd4c.so.0",
+        "/usr/pkg/lib/libnghttp2.so.14",
+        "/usr/pkg/lib/libpcre2-16.so.0",
+        "/usr/pkg/lib/libpcre2-8.so.0",
+        "/usr/pkg/lib/libpng16.so.16",
+        "/usr/pkg/lib/libproxy.so.1",
+        "/usr/pkg/lib/libproxy/libpxbackend-1.0.so",
+        "/usr/pkg/lib/libunistring.so.5",
+        "/usr/pkg/lib/libzstd.so.1",
+        "/usr/pkg/qt5/lib/libQt5Core.so.5",
+        "/usr/pkg/qt5/lib/libQt5Gui.so.5",
+        "/usr/pkg/qt5/lib/libQt5Network.so.5",
+        "/usr/pkg/qt5/lib/libQt5Qml.so.5"
+      ],
+      "sha512": "52b59eba6cbcad82b271d56f7158469556cc8304f0ca61043a2d40e6aa6985e9f9f34846702b1d2ecc1166cfa444145f225213583a1fcd52dadc931dcae4ee98",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/qt5-qtsensors-5.15.19nb1.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 310061,
+      "dependency_constraints": [],
+      "depends": [],
+      "file": "gsed-4.10.tgz",
+      "installed_bytes": 1058450,
+      "license": "gnu-gpl-v3 AND gnu-fdl-v1.3",
+      "name": "gsed-4.10",
+      "provides": [],
+      "requires": [
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libintl.so.1"
+      ],
+      "sha512": "2d57b2a77b44a8a5d556270182d604a3ab42898d5f82f7461c1b725790a4f0b53fe31879d0816c2a619c240a0e253a1b6c8a1a94664290e8adfa283c1321f20e",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/gsed-4.10.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 82041,
+      "dependency_constraints": [
+        "bash-[0-9]*",
+        "gsed>=3.0.2"
+      ],
+      "depends": [
+        "bash-5.3.20",
+        "gsed-4.10"
+      ],
+      "file": "xdg-utils-1.2.1.tgz",
+      "installed_bytes": 354107,
+      "license": "mit",
+      "name": "xdg-utils-1.2.1",
+      "provides": [],
+      "requires": [],
+      "sha512": "787a33461ea01486aa98dbf8ebcd4dc5090bed21b2f615e4ed41476f7ce1a22bbc1810d60e4ef71ac92877b718b3060402871b8c7074204d787d3f74beb0c3f4",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/xdg-utils-1.2.1.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 167486747,
+      "dependency_constraints": [
+        "libxml2>=2.14.6nb2",
+        "python313>=3.13",
+        "zstd>=1.3.6"
+      ],
+      "depends": [
+        "libxml2-2.15.4",
+        "python313-3.13.15",
+        "zstd-1.5.7"
+      ],
+      "file": "llvm-21.1.8nb1.tgz",
+      "installed_bytes": 609383730,
+      "license": "apache-2.0",
+      "name": "llvm-21.1.8nb1",
+      "provides": [
+        "/usr/pkg/lib/libLLVM-21.so",
+        "/usr/pkg/lib/libLLVM.so",
+        "/usr/pkg/lib/libLLVM.so.21.1",
+        "/usr/pkg/lib/libLTO.so",
+        "/usr/pkg/lib/libLTO.so.21.1",
+        "/usr/pkg/lib/libRemarks.so",
+        "/usr/pkg/lib/libRemarks.so.21.1"
+      ],
+      "requires": [
+        "/lib/libterminfo.so.2",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libedit.so.3",
+        "/usr/lib/libelf.so.2",
+        "/usr/lib/libexecinfo.so.0",
+        "/usr/lib/libgcc_s.so.1",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libpthread.so.1",
+        "/usr/lib/librt.so.1",
+        "/usr/lib/libstdc++.so.9",
+        "/usr/lib/libz.so.1",
+        "/usr/pkg/lib/libxml2.so.16",
+        "/usr/pkg/lib/libzstd.so.1"
+      ],
+      "sha512": "05417231809c913566dfc4a256a84d6f83998e17f995fac5d7634ae053af919c2cebd70c50733a95075fd24565d5cd74dbd74ede723868bafa6aef9b85019fb9",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/llvm-21.1.8nb1.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 20749432,
+      "dependency_constraints": [],
+      "depends": [],
+      "file": "perl-5.44.0nb2.tgz",
+      "installed_bytes": 81259254,
+      "license": "gnu-gpl-v2 OR artistic",
+      "name": "perl-5.44.0nb2",
+      "provides": [
+        "/usr/pkg/lib/perl5/5.44.0/aarch64-netbsd-thread-multi/CORE/libperl.so"
+      ],
+      "requires": [
+        "/lib/libgcc_s.so.1",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libcrypt.so.1",
+        "/usr/lib/libgcc_s.so.1",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libpthread.so.1"
+      ],
+      "sha512": "7d81f4116ea8ce707424453c88432ef20a31b3ff04b0885c9cd091a72973a377b2df84f078dfe85f53461e124aff4d0b2544d3467197e29476ce7fdccf579721",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/perl-5.44.0nb2.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 95027827,
+      "dependency_constraints": [
+        "llvm-21.1.8{,nb*}",
+        "llvm>=21.1.0",
+        "perl>=5.0",
+        "libxml2>=2.14.6nb2",
+        "python313>=3.13"
+      ],
+      "depends": [
+        "llvm-21.1.8nb1",
+        "llvm-21.1.8nb1",
+        "perl-5.44.0nb2",
+        "libxml2-2.15.4",
+        "python313-3.13.15"
+      ],
+      "file": "clang-21.1.8nb1.tgz",
+      "installed_bytes": 383172473,
+      "license": "apache-2.0",
+      "name": "clang-21.1.8nb1",
+      "provides": [
+        "/usr/pkg/lib/libclang-cpp.so",
+        "/usr/pkg/lib/libclang-cpp.so.21.1",
+        "/usr/pkg/lib/libclang.so",
+        "/usr/pkg/lib/libclang.so.21.1",
+        "/usr/pkg/lib/libclang.so.21.1.8"
+      ],
+      "requires": [
+        "/lib/libterminfo.so.2",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libedit.so.3",
+        "/usr/lib/libelf.so.2",
+        "/usr/lib/libexecinfo.so.0",
+        "/usr/lib/libgcc_s.so.1",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libpthread.so.1",
+        "/usr/lib/librt.so.1",
+        "/usr/lib/libstdc++.so.9",
+        "/usr/lib/libz.so.1",
+        "/usr/pkg/lib/libLLVM.so.21.1",
+        "/usr/pkg/lib/libxml2.so.16",
+        "/usr/pkg/lib/libzstd.so.1"
+      ],
+      "sha512": "59af77a11ef0cc4976ff2b7a43d081e28af2f664c9f72c8207784c2ab1921b566f244e9c8772c1e4c8b3ea895a9947c6c77564f0fde989f8551c129d0aeac5a7",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/clang-21.1.8nb1.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 130722,
+      "dependency_constraints": [
+        "qt5-qtdeclarative>=5.15.19nb1"
+      ],
+      "depends": [
+        "qt5-qtdeclarative-5.15.19nb1"
+      ],
+      "file": "qt5-qtwebsockets-5.15.19nb1.tgz",
+      "installed_bytes": 467023,
+      "license": "gnu-lgpl-v2.1 AND gnu-lgpl-v3 AND gnu-gpl-v2 AND gnu-gpl-v3",
+      "name": "qt5-qtwebsockets-5.15.19nb1",
+      "provides": [
+        "/usr/pkg/qt5/lib/libQt5WebSockets.so",
+        "/usr/pkg/qt5/lib/libQt5WebSockets.so.5",
+        "/usr/pkg/qt5/lib/libQt5WebSockets.so.5.15",
+        "/usr/pkg/qt5/lib/libQt5WebSockets.so.5.15.19",
+        "/usr/pkg/qt5/qml/QtWebSockets/libdeclarative_qmlwebsockets.so"
+      ],
+      "requires": [
+        "/lib/libcrypt.so.1",
+        "/usr/lib/libasn1.so.10",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libcom_err.so.8",
+        "/usr/lib/libcrypto.so.16",
+        "/usr/lib/libelf.so.2",
+        "/usr/lib/libexecinfo.so.0",
+        "/usr/lib/libgcc_s.so.1",
+        "/usr/lib/libgssapi.so.12",
+        "/usr/lib/libheimbase.so.2",
+        "/usr/lib/libheimntlm.so.6",
+        "/usr/lib/libhx509.so.7",
+        "/usr/lib/libintl.so.1",
+        "/usr/lib/libkrb5.so.28",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libpthread.so.1",
+        "/usr/lib/libroken.so.20",
+        "/usr/lib/libssl.so.16",
+        "/usr/lib/libstdc++.so.9",
+        "/usr/lib/libutil.so.7",
+        "/usr/lib/libwind.so.1",
+        "/usr/lib/libz.so.1",
+        "/usr/pkg/lib/libcurl.so.4",
+        "/usr/pkg/lib/libdouble-conversion.so.3",
+        "/usr/pkg/lib/libduktape.so.0",
+        "/usr/pkg/lib/libffi.so.8",
+        "/usr/pkg/lib/libgio-2.0.so.0",
+        "/usr/pkg/lib/libglib-2.0.so.0",
+        "/usr/pkg/lib/libgmodule-2.0.so.0",
+        "/usr/pkg/lib/libgobject-2.0.so.0",
+        "/usr/pkg/lib/libgthread-2.0.so.0",
+        "/usr/pkg/lib/libicudata.so.78",
+        "/usr/pkg/lib/libicui18n.so.78",
+        "/usr/pkg/lib/libicuuc.so.78",
+        "/usr/pkg/lib/libidn2.so.0",
+        "/usr/pkg/lib/libnghttp2.so.14",
+        "/usr/pkg/lib/libpcre2-16.so.0",
+        "/usr/pkg/lib/libpcre2-8.so.0",
+        "/usr/pkg/lib/libproxy.so.1",
+        "/usr/pkg/lib/libproxy/libpxbackend-1.0.so",
+        "/usr/pkg/lib/libunistring.so.5",
+        "/usr/pkg/lib/libzstd.so.1",
+        "/usr/pkg/qt5/lib/libQt5Core.so.5",
+        "/usr/pkg/qt5/lib/libQt5Network.so.5",
+        "/usr/pkg/qt5/lib/libQt5Qml.so.5"
+      ],
+      "sha512": "ef28e5f59308d119491f4b1d347f040152f73c8fa72a543e3d6fd1ef6ed77519919851dd986c226ace9448a13e3924595b9bc7b7d016aeb66d36cd8b0e786231",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/qt5-qtwebsockets-5.15.19nb1.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 104625,
+      "dependency_constraints": [
+        "qt5-qtdeclarative>=5.15.19nb1",
+        "qt5-qtwebsockets>=5.15.19nb1"
+      ],
+      "depends": [
+        "qt5-qtdeclarative-5.15.19nb1",
+        "qt5-qtwebsockets-5.15.19nb1"
+      ],
+      "file": "qt5-qtwebchannel-5.15.19nb1.tgz",
+      "installed_bytes": 401713,
+      "license": "gnu-lgpl-v2.1 AND gnu-lgpl-v3 AND gnu-gpl-v2 AND gnu-gpl-v3",
+      "name": "qt5-qtwebchannel-5.15.19nb1",
+      "provides": [
+        "/usr/pkg/qt5/lib/libQt5WebChannel.so",
+        "/usr/pkg/qt5/lib/libQt5WebChannel.so.5",
+        "/usr/pkg/qt5/lib/libQt5WebChannel.so.5.15",
+        "/usr/pkg/qt5/lib/libQt5WebChannel.so.5.15.19",
+        "/usr/pkg/qt5/qml/QtWebChannel/libdeclarative_webchannel.so"
+      ],
+      "requires": [
+        "/lib/libcrypt.so.1",
+        "/usr/X11R7/lib/libGL.so.3",
+        "/usr/X11R7/lib/libX11-xcb.so.1",
+        "/usr/X11R7/lib/libX11.so.7",
+        "/usr/X11R7/lib/libXau.so.7",
+        "/usr/X11R7/lib/libXdamage.so.2",
+        "/usr/X11R7/lib/libXdmcp.so.7",
+        "/usr/X11R7/lib/libXext.so.7",
+        "/usr/X11R7/lib/libXfixes.so.4",
+        "/usr/X11R7/lib/libXxf86vm.so.2",
+        "/usr/X11R7/lib/libdrm.so.3",
+        "/usr/X11R7/lib/libglapi.so.1",
+        "/usr/X11R7/lib/libxcb-dri2.so.0",
+        "/usr/X11R7/lib/libxcb-glx.so.0",
+        "/usr/X11R7/lib/libxcb-shm.so.0",
+        "/usr/X11R7/lib/libxcb-sync.so.1",
+        "/usr/X11R7/lib/libxcb.so.2",
+        "/usr/lib/libasn1.so.10",
+        "/usr/lib/libbz2.so.1",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libcom_err.so.8",
+        "/usr/lib/libcrypto.so.16",
+        "/usr/lib/libelf.so.2",
+        "/usr/lib/libexecinfo.so.0",
+        "/usr/lib/libexpat.so.2",
+        "/usr/lib/libgcc_s.so.1",
+        "/usr/lib/libgssapi.so.12",
+        "/usr/lib/libheimbase.so.2",
+        "/usr/lib/libheimntlm.so.6",
+        "/usr/lib/libhx509.so.7",
+        "/usr/lib/libintl.so.1",
+        "/usr/lib/libkrb5.so.28",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libpci.so.2",
+        "/usr/lib/libpthread.so.1",
+        "/usr/lib/libroken.so.20",
+        "/usr/lib/libssl.so.16",
+        "/usr/lib/libstdc++.so.9",
+        "/usr/lib/libutil.so.7",
+        "/usr/lib/libwind.so.1",
+        "/usr/lib/libz.so.1",
+        "/usr/pkg/lib/libbrotlicommon.so.1",
+        "/usr/pkg/lib/libbrotlidec.so.1",
+        "/usr/pkg/lib/libcurl.so.4",
+        "/usr/pkg/lib/libdouble-conversion.so.3",
+        "/usr/pkg/lib/libduktape.so.0",
+        "/usr/pkg/lib/libffi.so.8",
+        "/usr/pkg/lib/libfreetype.so.6",
+        "/usr/pkg/lib/libgio-2.0.so.0",
+        "/usr/pkg/lib/libglib-2.0.so.0",
+        "/usr/pkg/lib/libgmodule-2.0.so.0",
+        "/usr/pkg/lib/libgobject-2.0.so.0",
+        "/usr/pkg/lib/libgraphite2.so.3",
+        "/usr/pkg/lib/libgthread-2.0.so.0",
+        "/usr/pkg/lib/libharfbuzz.so.0",
+        "/usr/pkg/lib/libicudata.so.78",
+        "/usr/pkg/lib/libicui18n.so.78",
+        "/usr/pkg/lib/libicuuc.so.78",
+        "/usr/pkg/lib/libidn2.so.0",
+        "/usr/pkg/lib/libmd4c.so.0",
+        "/usr/pkg/lib/libnghttp2.so.14",
+        "/usr/pkg/lib/libpcre2-16.so.0",
+        "/usr/pkg/lib/libpcre2-8.so.0",
+        "/usr/pkg/lib/libpng16.so.16",
+        "/usr/pkg/lib/libproxy.so.1",
+        "/usr/pkg/lib/libproxy/libpxbackend-1.0.so",
+        "/usr/pkg/lib/libunistring.so.5",
+        "/usr/pkg/lib/libzstd.so.1",
+        "/usr/pkg/qt5/lib/libQt5Core.so.5",
+        "/usr/pkg/qt5/lib/libQt5Gui.so.5",
+        "/usr/pkg/qt5/lib/libQt5Network.so.5",
+        "/usr/pkg/qt5/lib/libQt5Qml.so.5",
+        "/usr/pkg/qt5/lib/libQt5QmlModels.so.5",
+        "/usr/pkg/qt5/lib/libQt5Quick.so.5"
+      ],
+      "sha512": "841e05f21a62975cc16c7990e22c58b285de53e5bc01bfae3a4ac946bfeec2aa721cbb06f40c1ecfefdf3311dd581a85e92e6e44b7ce2464f50116ed2b83d7f4",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/qt5-qtwebchannel-5.15.19nb1.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 8481898,
+      "dependency_constraints": [
+        "xdg-utils-[0-9]*",
+        "clang>=21.1.0",
+        "qt5-qtbase>=5.15.19nb2",
+        "qt5-qtdeclarative>=5.15.19nb1",
+        "qt5-qtlocation>=5.15.19nb1",
+        "qt5-qtmultimedia>=5.15.19nb2",
+        "qt5-qtsensors>=5.15.19nb1",
+        "qt5-qtwebchannel>=5.15.19nb1",
+        "qt5-qtxmlpatterns>=5.15.19nb1"
+      ],
+      "depends": [
+        "xdg-utils-1.2.1",
+        "clang-21.1.8nb1",
+        "qt5-qtbase-5.15.19nb2",
+        "qt5-qtdeclarative-5.15.19nb1",
+        "qt5-qtlocation-5.15.19nb1",
+        "qt5-qtmultimedia-5.15.19nb2",
+        "qt5-qtsensors-5.15.19nb1",
+        "qt5-qtwebchannel-5.15.19nb1",
+        "qt5-qtxmlpatterns-5.15.19nb1"
+      ],
+      "file": "qt5-qttools-5.15.19nb2.tgz",
+      "installed_bytes": 23574945,
+      "license": "gnu-lgpl-v2.1 AND gnu-lgpl-v3 AND gnu-gpl-v2 AND gnu-gpl-v3",
+      "name": "qt5-qttools-5.15.19nb2",
+      "provides": [
+        "/usr/pkg/qt5/lib/libQt5Designer.so",
+        "/usr/pkg/qt5/lib/libQt5Designer.so.5",
+        "/usr/pkg/qt5/lib/libQt5Designer.so.5.15",
+        "/usr/pkg/qt5/lib/libQt5Designer.so.5.15.19",
+        "/usr/pkg/qt5/lib/libQt5DesignerComponents.so",
+        "/usr/pkg/qt5/lib/libQt5DesignerComponents.so.5",
+        "/usr/pkg/qt5/lib/libQt5DesignerComponents.so.5.15",
+        "/usr/pkg/qt5/lib/libQt5DesignerComponents.so.5.15.19",
+        "/usr/pkg/qt5/lib/libQt5Help.so",
+        "/usr/pkg/qt5/lib/libQt5Help.so.5",
+        "/usr/pkg/qt5/lib/libQt5Help.so.5.15",
+        "/usr/pkg/qt5/lib/libQt5Help.so.5.15.19",
+        "/usr/pkg/qt5/plugins/designer/libqquickwidget.so"
+      ],
+      "requires": [
+        "/lib/libcrypt.so.1",
+        "/lib/libterminfo.so.2",
+        "/usr/X11R7/lib/libGL.so.3",
+        "/usr/X11R7/lib/libX11-xcb.so.1",
+        "/usr/X11R7/lib/libX11.so.7",
+        "/usr/X11R7/lib/libXau.so.7",
+        "/usr/X11R7/lib/libXdamage.so.2",
+        "/usr/X11R7/lib/libXdmcp.so.7",
+        "/usr/X11R7/lib/libXext.so.7",
+        "/usr/X11R7/lib/libXfixes.so.4",
+        "/usr/X11R7/lib/libXxf86vm.so.2",
+        "/usr/X11R7/lib/libdrm.so.3",
+        "/usr/X11R7/lib/libglapi.so.1",
+        "/usr/X11R7/lib/libxcb-dri2.so.0",
+        "/usr/X11R7/lib/libxcb-glx.so.0",
+        "/usr/X11R7/lib/libxcb-shm.so.0",
+        "/usr/X11R7/lib/libxcb-sync.so.1",
+        "/usr/X11R7/lib/libxcb.so.2",
+        "/usr/lib/libasn1.so.10",
+        "/usr/lib/libbz2.so.1",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libcom_err.so.8",
+        "/usr/lib/libcrypto.so.16",
+        "/usr/lib/libedit.so.3",
+        "/usr/lib/libelf.so.2",
+        "/usr/lib/libexecinfo.so.0",
+        "/usr/lib/libexpat.so.2",
+        "/usr/lib/libgcc_s.so.1",
+        "/usr/lib/libgssapi.so.12",
+        "/usr/lib/libheimbase.so.2",
+        "/usr/lib/libheimntlm.so.6",
+        "/usr/lib/libhx509.so.7",
+        "/usr/lib/libintl.so.1",
+        "/usr/lib/libkrb5.so.28",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libpci.so.2",
+        "/usr/lib/libpthread.so.1",
+        "/usr/lib/libroken.so.20",
+        "/usr/lib/librt.so.1",
+        "/usr/lib/libssl.so.16",
+        "/usr/lib/libstdc++.so.9",
+        "/usr/lib/libutil.so.7",
+        "/usr/lib/libwind.so.1",
+        "/usr/lib/libz.so.1",
+        "/usr/pkg/lib/libLLVM.so.21.1",
+        "/usr/pkg/lib/libbrotlicommon.so.1",
+        "/usr/pkg/lib/libbrotlidec.so.1",
+        "/usr/pkg/lib/libclang.so.21.1",
+        "/usr/pkg/lib/libcurl.so.4",
+        "/usr/pkg/lib/libdbus-1.so.3",
+        "/usr/pkg/lib/libdouble-conversion.so.3",
+        "/usr/pkg/lib/libduktape.so.0",
+        "/usr/pkg/lib/libffi.so.8",
+        "/usr/pkg/lib/libfreetype.so.6",
+        "/usr/pkg/lib/libgio-2.0.so.0",
+        "/usr/pkg/lib/libglib-2.0.so.0",
+        "/usr/pkg/lib/libgmodule-2.0.so.0",
+        "/usr/pkg/lib/libgobject-2.0.so.0",
+        "/usr/pkg/lib/libgraphite2.so.3",
+        "/usr/pkg/lib/libgthread-2.0.so.0",
+        "/usr/pkg/lib/libharfbuzz.so.0",
+        "/usr/pkg/lib/libicudata.so.78",
+        "/usr/pkg/lib/libicui18n.so.78",
+        "/usr/pkg/lib/libicuuc.so.78",
+        "/usr/pkg/lib/libidn2.so.0",
+        "/usr/pkg/lib/libmd4c.so.0",
+        "/usr/pkg/lib/libnghttp2.so.14",
+        "/usr/pkg/lib/libpcre2-16.so.0",
+        "/usr/pkg/lib/libpcre2-8.so.0",
+        "/usr/pkg/lib/libpng16.so.16",
+        "/usr/pkg/lib/libproxy.so.1",
+        "/usr/pkg/lib/libproxy/libpxbackend-1.0.so",
+        "/usr/pkg/lib/libunistring.so.5",
+        "/usr/pkg/lib/libxml2.so.16",
+        "/usr/pkg/lib/libzstd.so.1",
+        "/usr/pkg/qt5/lib/libQt5Core.so.5",
+        "/usr/pkg/qt5/lib/libQt5DBus.so.5",
+        "/usr/pkg/qt5/lib/libQt5Gui.so.5",
+        "/usr/pkg/qt5/lib/libQt5Network.so.5",
+        "/usr/pkg/qt5/lib/libQt5PrintSupport.so.5",
+        "/usr/pkg/qt5/lib/libQt5Qml.so.5",
+        "/usr/pkg/qt5/lib/libQt5QmlModels.so.5",
+        "/usr/pkg/qt5/lib/libQt5Quick.so.5",
+        "/usr/pkg/qt5/lib/libQt5QuickWidgets.so.5",
+        "/usr/pkg/qt5/lib/libQt5Sql.so.5",
+        "/usr/pkg/qt5/lib/libQt5Widgets.so.5",
+        "/usr/pkg/qt5/lib/libQt5Xml.so.5"
+      ],
+      "sha512": "9c179251b9bfbf3d1eec635d06b4c440ef33970215dd32e656ad2242658b2221863b3c0401f54c059f7bc9120188f35bb722c8c455471a880fab0e102a5d2295",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/qt5-qttools-5.15.19nb2.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 18917,
+      "dependency_constraints": [
+        "qt5-qtxmlpatterns>=5.15.19nb1"
+      ],
+      "depends": [
+        "qt5-qtxmlpatterns-5.15.19nb1"
+      ],
+      "file": "qt5-qtx11extras-5.15.19nb1.tgz",
+      "installed_bytes": 95690,
+      "license": "gnu-lgpl-v2.1 AND gnu-lgpl-v3 AND gnu-gpl-v2 AND gnu-gpl-v3",
+      "name": "qt5-qtx11extras-5.15.19nb1",
+      "provides": [
+        "/usr/pkg/qt5/lib/libQt5X11Extras.so",
+        "/usr/pkg/qt5/lib/libQt5X11Extras.so.5",
+        "/usr/pkg/qt5/lib/libQt5X11Extras.so.5.15",
+        "/usr/pkg/qt5/lib/libQt5X11Extras.so.5.15.19"
+      ],
+      "requires": [
+        "/usr/X11R7/lib/libGL.so.3",
+        "/usr/X11R7/lib/libX11-xcb.so.1",
+        "/usr/X11R7/lib/libX11.so.7",
+        "/usr/X11R7/lib/libXau.so.7",
+        "/usr/X11R7/lib/libXdamage.so.2",
+        "/usr/X11R7/lib/libXdmcp.so.7",
+        "/usr/X11R7/lib/libXext.so.7",
+        "/usr/X11R7/lib/libXfixes.so.4",
+        "/usr/X11R7/lib/libXxf86vm.so.2",
+        "/usr/X11R7/lib/libdrm.so.3",
+        "/usr/X11R7/lib/libglapi.so.1",
+        "/usr/X11R7/lib/libxcb-dri2.so.0",
+        "/usr/X11R7/lib/libxcb-glx.so.0",
+        "/usr/X11R7/lib/libxcb-shm.so.0",
+        "/usr/X11R7/lib/libxcb-sync.so.1",
+        "/usr/X11R7/lib/libxcb.so.2",
+        "/usr/lib/libbz2.so.1",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libelf.so.2",
+        "/usr/lib/libexecinfo.so.0",
+        "/usr/lib/libexpat.so.2",
+        "/usr/lib/libgcc_s.so.1",
+        "/usr/lib/libintl.so.1",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libpci.so.2",
+        "/usr/lib/libpthread.so.1",
+        "/usr/lib/libstdc++.so.9",
+        "/usr/lib/libz.so.1",
+        "/usr/pkg/lib/libbrotlicommon.so.1",
+        "/usr/pkg/lib/libbrotlidec.so.1",
+        "/usr/pkg/lib/libdouble-conversion.so.3",
+        "/usr/pkg/lib/libfreetype.so.6",
+        "/usr/pkg/lib/libglib-2.0.so.0",
+        "/usr/pkg/lib/libgraphite2.so.3",
+        "/usr/pkg/lib/libgthread-2.0.so.0",
+        "/usr/pkg/lib/libharfbuzz.so.0",
+        "/usr/pkg/lib/libicudata.so.78",
+        "/usr/pkg/lib/libicui18n.so.78",
+        "/usr/pkg/lib/libicuuc.so.78",
+        "/usr/pkg/lib/libmd4c.so.0",
+        "/usr/pkg/lib/libpcre2-16.so.0",
+        "/usr/pkg/lib/libpcre2-8.so.0",
+        "/usr/pkg/lib/libpng16.so.16",
+        "/usr/pkg/lib/libzstd.so.1",
+        "/usr/pkg/qt5/lib/libQt5Core.so.5",
+        "/usr/pkg/qt5/lib/libQt5Gui.so.5"
+      ],
+      "sha512": "3f813940f58c4f1c4c5f59ddc961ee100dd3ff9cfcbe9548438fdebda5e523f0744231e328baf4f2fac0085a8bbdba7ccdd5c5e574c59a79ccb88f6898fe5f27",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/qt5-qtx11extras-5.15.19nb1.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 7664744,
+      "dependency_constraints": [
+        "py312-sip-qt5>=12",
+        "py312-dbus>=1.3.2nb3",
+        "qt5-qtbase>=5.15.19nb2",
+        "qt5-qtcharts>=5.15.19nb1",
+        "qt5-qtdeclarative>=5.15.19nb1",
+        "qt5-qtlocation>=5.15.19nb1",
+        "qt5-qtmultimedia>=5.15.19nb2",
+        "qt5-qtsensors>=5.15.19nb1",
+        "qt5-qtserialport>=5.15.19nb1",
+        "qt5-qtsvg>=5.15.19nb1",
+        "qt5-qttools>=5.15.19nb2",
+        "qt5-qtwebchannel>=5.15.19nb1",
+        "qt5-qtwebsockets>=5.15.19nb1",
+        "qt5-qtx11extras>=5.15.19nb1",
+        "qt5-qtxmlpatterns>=5.15.19nb1"
+      ],
+      "depends": [
+        "py312-sip-qt5-12.18.0",
+        "py312-dbus-1.3.2nb3",
+        "qt5-qtbase-5.15.19nb2",
+        "qt5-qtcharts-5.15.19nb1",
+        "qt5-qtdeclarative-5.15.19nb1",
+        "qt5-qtlocation-5.15.19nb1",
+        "qt5-qtmultimedia-5.15.19nb2",
+        "qt5-qtsensors-5.15.19nb1",
+        "qt5-qtserialport-5.15.19nb1",
+        "qt5-qtsvg-5.15.19nb1",
+        "qt5-qttools-5.15.19nb2",
+        "qt5-qtwebchannel-5.15.19nb1",
+        "qt5-qtwebsockets-5.15.19nb1",
+        "qt5-qtx11extras-5.15.19nb1",
+        "qt5-qtxmlpatterns-5.15.19nb1"
+      ],
+      "file": "py312-qt5-5.15.11nb12.tgz",
+      "installed_bytes": 37643336,
+      "license": "gnu-gpl-v3",
+      "name": "py312-qt5-5.15.11nb12",
+      "provides": [],
+      "requires": [],
+      "sha512": "abf5721366ea68c80cb607824fea2ed7936cead2b33f5e3202369a9bface017ffa5e0b8d847dac4227f80f8c601a424e7e10a872fca5979562333f0e577e37a7",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/py312-qt5-5.15.11nb12.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 2599029,
+      "dependency_constraints": [
+        "qt5-qtdeclarative>=5.15.19nb1"
+      ],
+      "depends": [
+        "qt5-qtdeclarative-5.15.19nb1"
+      ],
+      "file": "qt5-qtquickcontrols2-5.15.19nb1.tgz",
+      "installed_bytes": 11285184,
+      "license": "gnu-lgpl-v2.1 AND gnu-lgpl-v3 AND gnu-gpl-v2 AND gnu-gpl-v3",
+      "name": "qt5-qtquickcontrols2-5.15.19nb1",
+      "provides": [
+        "/usr/pkg/qt5/lib/libQt5QuickControls2.so",
+        "/usr/pkg/qt5/lib/libQt5QuickControls2.so.5",
+        "/usr/pkg/qt5/lib/libQt5QuickControls2.so.5.15",
+        "/usr/pkg/qt5/lib/libQt5QuickControls2.so.5.15.19",
+        "/usr/pkg/qt5/lib/libQt5QuickTemplates2.so",
+        "/usr/pkg/qt5/lib/libQt5QuickTemplates2.so.5",
+        "/usr/pkg/qt5/lib/libQt5QuickTemplates2.so.5.15",
+        "/usr/pkg/qt5/lib/libQt5QuickTemplates2.so.5.15.19",
+        "/usr/pkg/qt5/qml/Qt/labs/calendar/libqtlabscalendarplugin.so",
+        "/usr/pkg/qt5/qml/Qt/labs/platform/libqtlabsplatformplugin.so",
+        "/usr/pkg/qt5/qml/QtQuick/Controls.2/Fusion/libqtquickcontrols2fusionstyleplugin.so",
+        "/usr/pkg/qt5/qml/QtQuick/Controls.2/Imagine/libqtquickcontrols2imaginestyleplugin.so",
+        "/usr/pkg/qt5/qml/QtQuick/Controls.2/Material/libqqc2materialstyleplugin.so",
+        "/usr/pkg/qt5/qml/QtQuick/Controls.2/Universal/libqtquickcontrols2universalstyleplugin.so",
+        "/usr/pkg/qt5/qml/QtQuick/Controls.2/libqtquickcontrols2plugin.so",
+        "/usr/pkg/qt5/qml/QtQuick/Templates.2/libqtquicktemplates2plugin.so"
+      ],
+      "requires": [
+        "/lib/libcrypt.so.1",
+        "/usr/X11R7/lib/libGL.so.3",
+        "/usr/X11R7/lib/libX11-xcb.so.1",
+        "/usr/X11R7/lib/libX11.so.7",
+        "/usr/X11R7/lib/libXau.so.7",
+        "/usr/X11R7/lib/libXdamage.so.2",
+        "/usr/X11R7/lib/libXdmcp.so.7",
+        "/usr/X11R7/lib/libXext.so.7",
+        "/usr/X11R7/lib/libXfixes.so.4",
+        "/usr/X11R7/lib/libXxf86vm.so.2",
+        "/usr/X11R7/lib/libdrm.so.3",
+        "/usr/X11R7/lib/libglapi.so.1",
+        "/usr/X11R7/lib/libxcb-dri2.so.0",
+        "/usr/X11R7/lib/libxcb-glx.so.0",
+        "/usr/X11R7/lib/libxcb-shm.so.0",
+        "/usr/X11R7/lib/libxcb-sync.so.1",
+        "/usr/X11R7/lib/libxcb.so.2",
+        "/usr/lib/libasn1.so.10",
+        "/usr/lib/libbz2.so.1",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libcom_err.so.8",
+        "/usr/lib/libcrypto.so.16",
+        "/usr/lib/libelf.so.2",
+        "/usr/lib/libexecinfo.so.0",
+        "/usr/lib/libexpat.so.2",
+        "/usr/lib/libgcc_s.so.1",
+        "/usr/lib/libgssapi.so.12",
+        "/usr/lib/libheimbase.so.2",
+        "/usr/lib/libheimntlm.so.6",
+        "/usr/lib/libhx509.so.7",
+        "/usr/lib/libintl.so.1",
+        "/usr/lib/libkrb5.so.28",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libpci.so.2",
+        "/usr/lib/libpthread.so.1",
+        "/usr/lib/libroken.so.20",
+        "/usr/lib/libssl.so.16",
+        "/usr/lib/libstdc++.so.9",
+        "/usr/lib/libutil.so.7",
+        "/usr/lib/libwind.so.1",
+        "/usr/lib/libz.so.1",
+        "/usr/pkg/lib/libbrotlicommon.so.1",
+        "/usr/pkg/lib/libbrotlidec.so.1",
+        "/usr/pkg/lib/libcurl.so.4",
+        "/usr/pkg/lib/libdouble-conversion.so.3",
+        "/usr/pkg/lib/libduktape.so.0",
+        "/usr/pkg/lib/libffi.so.8",
+        "/usr/pkg/lib/libfreetype.so.6",
+        "/usr/pkg/lib/libgio-2.0.so.0",
+        "/usr/pkg/lib/libglib-2.0.so.0",
+        "/usr/pkg/lib/libgmodule-2.0.so.0",
+        "/usr/pkg/lib/libgobject-2.0.so.0",
+        "/usr/pkg/lib/libgraphite2.so.3",
+        "/usr/pkg/lib/libgthread-2.0.so.0",
+        "/usr/pkg/lib/libharfbuzz.so.0",
+        "/usr/pkg/lib/libicudata.so.78",
+        "/usr/pkg/lib/libicui18n.so.78",
+        "/usr/pkg/lib/libicuuc.so.78",
+        "/usr/pkg/lib/libidn2.so.0",
+        "/usr/pkg/lib/libmd4c.so.0",
+        "/usr/pkg/lib/libnghttp2.so.14",
+        "/usr/pkg/lib/libpcre2-16.so.0",
+        "/usr/pkg/lib/libpcre2-8.so.0",
+        "/usr/pkg/lib/libpng16.so.16",
+        "/usr/pkg/lib/libproxy.so.1",
+        "/usr/pkg/lib/libproxy/libpxbackend-1.0.so",
+        "/usr/pkg/lib/libunistring.so.5",
+        "/usr/pkg/lib/libzstd.so.1",
+        "/usr/pkg/qt5/lib/libQt5Core.so.5",
+        "/usr/pkg/qt5/lib/libQt5Gui.so.5",
+        "/usr/pkg/qt5/lib/libQt5Network.so.5",
+        "/usr/pkg/qt5/lib/libQt5Qml.so.5",
+        "/usr/pkg/qt5/lib/libQt5QmlModels.so.5",
+        "/usr/pkg/qt5/lib/libQt5Quick.so.5",
+        "/usr/pkg/qt5/lib/libQt5Widgets.so.5"
+      ],
+      "sha512": "a4775b87c5c10fa5eec0949b134f6f6b252e8a71b91c64c561600300c888eae6918a3528d2c4fdd49ef8ca1d2bc7f88dae1ed289c217c4701cc8bb8c78266d6a",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/qt5-qtquickcontrols2-5.15.19nb1.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 119978,
+      "dependency_constraints": [
+        "qt5-qtdeclarative>=5.15.19nb1"
+      ],
+      "depends": [
+        "qt5-qtdeclarative-5.15.19nb1"
+      ],
+      "file": "qt5-qtgraphicaleffects-5.15.19nb1.tgz",
+      "installed_bytes": 605230,
+      "license": "gnu-lgpl-v2.1 AND gnu-lgpl-v3 AND gnu-gpl-v2 AND gnu-gpl-v3",
+      "name": "qt5-qtgraphicaleffects-5.15.19nb1",
+      "provides": [
+        "/usr/pkg/qt5/qml/QtGraphicalEffects/libqtgraphicaleffectsplugin.so",
+        "/usr/pkg/qt5/qml/QtGraphicalEffects/private/libqtgraphicaleffectsprivate.so"
+      ],
+      "requires": [
+        "/lib/libcrypt.so.1",
+        "/usr/X11R7/lib/libGL.so.3",
+        "/usr/X11R7/lib/libX11-xcb.so.1",
+        "/usr/X11R7/lib/libX11.so.7",
+        "/usr/X11R7/lib/libXau.so.7",
+        "/usr/X11R7/lib/libXdamage.so.2",
+        "/usr/X11R7/lib/libXdmcp.so.7",
+        "/usr/X11R7/lib/libXext.so.7",
+        "/usr/X11R7/lib/libXfixes.so.4",
+        "/usr/X11R7/lib/libXxf86vm.so.2",
+        "/usr/X11R7/lib/libdrm.so.3",
+        "/usr/X11R7/lib/libglapi.so.1",
+        "/usr/X11R7/lib/libxcb-dri2.so.0",
+        "/usr/X11R7/lib/libxcb-glx.so.0",
+        "/usr/X11R7/lib/libxcb-shm.so.0",
+        "/usr/X11R7/lib/libxcb-sync.so.1",
+        "/usr/X11R7/lib/libxcb.so.2",
+        "/usr/lib/libasn1.so.10",
+        "/usr/lib/libbz2.so.1",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libcom_err.so.8",
+        "/usr/lib/libcrypto.so.16",
+        "/usr/lib/libelf.so.2",
+        "/usr/lib/libexecinfo.so.0",
+        "/usr/lib/libexpat.so.2",
+        "/usr/lib/libgcc_s.so.1",
+        "/usr/lib/libgssapi.so.12",
+        "/usr/lib/libheimbase.so.2",
+        "/usr/lib/libheimntlm.so.6",
+        "/usr/lib/libhx509.so.7",
+        "/usr/lib/libintl.so.1",
+        "/usr/lib/libkrb5.so.28",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libpci.so.2",
+        "/usr/lib/libpthread.so.1",
+        "/usr/lib/libroken.so.20",
+        "/usr/lib/libssl.so.16",
+        "/usr/lib/libstdc++.so.9",
+        "/usr/lib/libutil.so.7",
+        "/usr/lib/libwind.so.1",
+        "/usr/lib/libz.so.1",
+        "/usr/pkg/lib/libbrotlicommon.so.1",
+        "/usr/pkg/lib/libbrotlidec.so.1",
+        "/usr/pkg/lib/libcurl.so.4",
+        "/usr/pkg/lib/libdouble-conversion.so.3",
+        "/usr/pkg/lib/libduktape.so.0",
+        "/usr/pkg/lib/libffi.so.8",
+        "/usr/pkg/lib/libfreetype.so.6",
+        "/usr/pkg/lib/libgio-2.0.so.0",
+        "/usr/pkg/lib/libglib-2.0.so.0",
+        "/usr/pkg/lib/libgmodule-2.0.so.0",
+        "/usr/pkg/lib/libgobject-2.0.so.0",
+        "/usr/pkg/lib/libgraphite2.so.3",
+        "/usr/pkg/lib/libgthread-2.0.so.0",
+        "/usr/pkg/lib/libharfbuzz.so.0",
+        "/usr/pkg/lib/libicudata.so.78",
+        "/usr/pkg/lib/libicui18n.so.78",
+        "/usr/pkg/lib/libicuuc.so.78",
+        "/usr/pkg/lib/libidn2.so.0",
+        "/usr/pkg/lib/libmd4c.so.0",
+        "/usr/pkg/lib/libnghttp2.so.14",
+        "/usr/pkg/lib/libpcre2-16.so.0",
+        "/usr/pkg/lib/libpcre2-8.so.0",
+        "/usr/pkg/lib/libpng16.so.16",
+        "/usr/pkg/lib/libproxy.so.1",
+        "/usr/pkg/lib/libproxy/libpxbackend-1.0.so",
+        "/usr/pkg/lib/libunistring.so.5",
+        "/usr/pkg/lib/libzstd.so.1",
+        "/usr/pkg/qt5/lib/libQt5Core.so.5",
+        "/usr/pkg/qt5/lib/libQt5Gui.so.5",
+        "/usr/pkg/qt5/lib/libQt5Network.so.5",
+        "/usr/pkg/qt5/lib/libQt5Qml.so.5",
+        "/usr/pkg/qt5/lib/libQt5QmlModels.so.5",
+        "/usr/pkg/qt5/lib/libQt5Quick.so.5"
+      ],
+      "sha512": "235ea926015176be0913fbed0375c20f4c176091e0916bcbc91f988f86a1430cf70fcb5640d99fdcbedfa27d966d851cf896973d092fbc8b9ef4f57463f314ac",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/qt5-qtgraphicaleffects-5.15.19nb1.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 44561,
+      "dependency_constraints": [
+        "freetype2>=2.13.2nb1"
+      ],
+      "depends": [
+        "freetype2-2.14.3"
+      ],
+      "file": "ttmkfdir2-20021109nb9.tgz",
+      "installed_bytes": 155792,
+      "license": "",
+      "name": "ttmkfdir2-20021109nb9",
+      "provides": [],
+      "requires": [
+        "/usr/lib/libbz2.so.1",
+        "/usr/lib/libc.so.12",
+        "/usr/lib/libgcc_s.so.1",
+        "/usr/lib/libm.so.0",
+        "/usr/lib/libpthread.so.1",
+        "/usr/lib/libstdc++.so.9",
+        "/usr/lib/libz.so.1",
+        "/usr/pkg/lib/libbrotlicommon.so.1",
+        "/usr/pkg/lib/libbrotlidec.so.1",
+        "/usr/pkg/lib/libfreetype.so.6",
+        "/usr/pkg/lib/libpng16.so.16"
+      ],
+      "sha512": "64503b38f80c6961b9a49d2c25a6531540a682dcd9777ea412303778a872476a1b55d3f88fcc84adec98656e1b07a53c01202ccb61dc6380d0a3d175eb6baecb",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/ttmkfdir2-20021109nb9.tgz"
+    },
+    {
+      "abi": {
+        "MACHINE_ARCH": "aarch64",
+        "OPSYS": "NetBSD",
+        "OS_VERSION": "11.0"
+      },
+      "bytes": 5433168,
+      "dependency_constraints": [
+        "ttmkfdir2>=20021109"
+      ],
+      "depends": [
+        "ttmkfdir2-20021109nb9"
+      ],
+      "file": "dejavu-ttf-2.37.tgz",
+      "installed_bytes": 10305640,
+      "license": "",
+      "name": "dejavu-ttf-2.37",
+      "provides": [],
+      "requires": [],
+      "sha512": "e11673063709c0632b044d8a3a9cfe403fcc2b33ff3877cd91e3c22f901ab30c41f88716f950b73e6de844f7972a121fec6dac53c1ec10c6e604bfc7652ff732",
+      "url": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/All/dejavu-ttf-2.37.tgz"
+    }
+  ],
+  "repository": "https://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/aarch64/11.0_2026Q3/",
+  "roots": [
+    "python312-3.12.14",
+    "py312-qt5-5.15.11nb12",
+    "qt5-qtquickcontrols2-5.15.19nb1",
+    "qt5-qtgraphicaleffects-5.15.19nb1",
+    "dejavu-ttf-2.37"
+  ],
+  "source_world_requires": [
+    "/lib/libcrypt.so.1",
+    "/lib/libgcc_s.so.1",
+    "/lib/libpthread.so.1",
+    "/lib/libterminfo.so.2",
+    "/usr/X11R7/lib/libEGL.so.0",
+    "/usr/X11R7/lib/libGL.so.3",
+    "/usr/X11R7/lib/libICE.so.7",
+    "/usr/X11R7/lib/libSM.so.7",
+    "/usr/X11R7/lib/libX11-xcb.so.1",
+    "/usr/X11R7/lib/libX11.so.7",
+    "/usr/X11R7/lib/libXau.so.7",
+    "/usr/X11R7/lib/libXdamage.so.2",
+    "/usr/X11R7/lib/libXdmcp.so.7",
+    "/usr/X11R7/lib/libXext.so.7",
+    "/usr/X11R7/lib/libXfixes.so.4",
+    "/usr/X11R7/lib/libXrender.so.2",
+    "/usr/X11R7/lib/libXxf86vm.so.2",
+    "/usr/X11R7/lib/libdrm.so.3",
+    "/usr/X11R7/lib/libfontconfig.so.2",
+    "/usr/X11R7/lib/libfreetype.so.19",
+    "/usr/X11R7/lib/libgbm.so.1",
+    "/usr/X11R7/lib/libglapi.so.1",
+    "/usr/X11R7/lib/libxcb-dri2.so.0",
+    "/usr/X11R7/lib/libxcb-glx.so.0",
+    "/usr/X11R7/lib/libxcb-randr.so.1",
+    "/usr/X11R7/lib/libxcb-render.so.0",
+    "/usr/X11R7/lib/libxcb-shape.so.0",
+    "/usr/X11R7/lib/libxcb-shm.so.0",
+    "/usr/X11R7/lib/libxcb-sync.so.1",
+    "/usr/X11R7/lib/libxcb-xfixes.so.0",
+    "/usr/X11R7/lib/libxcb-xinerama.so.0",
+    "/usr/X11R7/lib/libxcb-xinput.so.0",
+    "/usr/X11R7/lib/libxcb-xkb.so.1",
+    "/usr/X11R7/lib/libxcb.so.2",
+    "/usr/X11R7/lib/libxshmfence.so.1",
+    "/usr/lib/libasn1.so.10",
+    "/usr/lib/libbz2.so.1",
+    "/usr/lib/libc.so.12",
+    "/usr/lib/libcom_err.so.8",
+    "/usr/lib/libcrypt.so.1",
+    "/usr/lib/libcrypto.so.16",
+    "/usr/lib/libcurses.so.9",
+    "/usr/lib/libdns_sd.so.0",
+    "/usr/lib/libedit.so.3",
+    "/usr/lib/libelf.so.2",
+    "/usr/lib/libexecinfo.so.0",
+    "/usr/lib/libexpat.so.2",
+    "/usr/lib/libgcc_s.so.1",
+    "/usr/lib/libgssapi.so.12",
+    "/usr/lib/libheimbase.so.2",
+    "/usr/lib/libheimntlm.so.6",
+    "/usr/lib/libhx509.so.7",
+    "/usr/lib/libintl.so.1",
+    "/usr/lib/libkrb5.so.28",
+    "/usr/lib/liblzma.so.2",
+    "/usr/lib/libm.so.0",
+    "/usr/lib/libossaudio.so.1",
+    "/usr/lib/libpanel.so.3",
+    "/usr/lib/libpci.so.2",
+    "/usr/lib/libpthread.so.1",
+    "/usr/lib/libroken.so.20",
+    "/usr/lib/librt.so.1",
+    "/usr/lib/libssl.so.16",
+    "/usr/lib/libstdc++.so.9",
+    "/usr/lib/libterminfo.so.2",
+    "/usr/lib/libutil.so.7",
+    "/usr/lib/libwind.so.1",
+    "/usr/lib/libz.so.1"
+  ],
+  "target": {
+    "architecture": "aarch64",
+    "release": "11.1",
+    "system": "NetBSD"
+  },
+  "target_execution_verified": false
+}

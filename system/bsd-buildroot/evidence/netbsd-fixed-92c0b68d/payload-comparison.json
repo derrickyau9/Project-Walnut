@@ -1,0 +1,18 @@
+{
+  "format": "DaOS-NetBSD-image-payload-comparison-v1",
+  "previous_raw_sha256": "01f86dfbb57cb15cc87c9ded17ad5380e250643d693f0cca4d7585e9ea8e2d35",
+  "corrected_raw_sha256": "d5a857db096555f2523b801e54a723ff3278610aaf0ed64897b12f8885ad709b",
+  "same_kernel": true,
+  "same_component_manifests": true,
+  "changed_payload_files": [
+    "etc/rc.d/daos_image_check"
+  ],
+  "new_generated_payload_files": [
+    "etc/rc.d/amd",
+    "etc/rc.d/mountall"
+  ],
+  "removed_payload_files": [],
+  "same_camera_native_tests": true,
+  "previous_native_acceptance": "/home/dy09/daos-netbsd-vm/validation/native-attempt-0008/acceptance.json",
+  "previous_GUI_acceptance": "/home/dy09/daos-netbsd-vm/validation/gui-acceptance.json"
+}

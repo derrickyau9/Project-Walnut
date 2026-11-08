@@ -1,0 +1,17 @@
+{
+  "scope": "Unmodified supplied copyright notices from installed official Debian cross-runtime packages; no project-license grant or distribution-clearance claim.",
+  "files": {
+    "gcc-cross-copyright.txt": {
+      "source": "/usr/share/doc/gcc-14-cross-base/copyright",
+      "resolved_source": "/usr/share/doc/gcc-14-cross-base/copyright",
+      "sha256": "20390f8a6f3b1e4d7cb45dd8652dabb259bbef688cbad839bcdb0b9ba7252f79",
+      "bytes": 69004
+    },
+    "glibc-cross-copyright.txt": {
+      "source": "/usr/share/doc/libc6-arm64-cross/copyright",
+      "resolved_source": "/usr/share/doc/libc6-arm64-cross/copyright",
+      "sha256": "f5788886720a2605a946e81d571e6c8162b09f58d2e2ceb8d36e5768fccd850d",
+      "bytes": 51200
+    }
+  }
+}

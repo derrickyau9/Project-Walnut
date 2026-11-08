@@ -1,0 +1,20 @@
+test_big_endian_minimal_fixture_and_default_levels (tests.test_dng_inspect.DngInspectTests.test_big_endian_minimal_fixture_and_default_levels) ... ok
+test_caller_owned_pinned_stream_stays_open_on_success_and_failure (tests.test_dng_inspect.DngInspectTests.test_caller_owned_pinned_stream_stays_open_on_success_and_failure) ... ok
+test_cfa_plane_mapping_and_layout_must_describe_rectangular_rggb (tests.test_dng_inspect.DngInspectTests.test_cfa_plane_mapping_and_layout_must_describe_rectangular_rggb) ... ok
+test_cyclic_exif_pointer_and_duplicate_tags_are_rejected (tests.test_dng_inspect.DngInspectTests.test_cyclic_exif_pointer_and_duplicate_tags_are_rejected) ... ok
+test_invalid_or_missing_metadata_never_returns_raw_description (tests.test_dng_inspect.DngInspectTests.test_invalid_or_missing_metadata_never_returns_raw_description) ... ok
+test_linearization_table_is_not_mistaken_for_linear_bayer_samples (tests.test_dng_inspect.DngInspectTests.test_linearization_table_is_not_mistaken_for_linear_bayer_samples) ... ok
+test_multiple_strips_must_match_rows_and_not_overlap (tests.test_dng_inspect.DngInspectTests.test_multiple_strips_must_match_rows_and_not_overlap) ... ok
+test_no_pixel_reads (tests.test_dng_inspect.DngInspectTests.test_no_pixel_reads) ... ok
+test_nonexistent_file_raises_oserror (tests.test_dng_inspect.DngInspectTests.test_nonexistent_file_raises_oserror) ... ok
+test_overflowing_json_float_invalidates_capture_identity (tests.test_dng_inspect.DngInspectTests.test_overflowing_json_float_invalidates_capture_identity) ... ok
+test_strip_overlapping_ifd_metadata_or_beyond_file_is_rejected (tests.test_dng_inspect.DngInspectTests.test_strip_overlapping_ifd_metadata_or_beyond_file_is_rejected) ... ok
+test_truncated_tables_values_pixels_and_invalid_ifd_are_rejected (tests.test_dng_inspect.DngInspectTests.test_truncated_tables_values_pixels_and_invalid_ifd_are_rejected) ... ok
+test_unsupported_compression_cfa_and_oversized_metadata_are_rejected (tests.test_dng_inspect.DngInspectTests.test_unsupported_compression_cfa_and_oversized_metadata_are_rejected) ... ok
+test_writer_round_trip_allowlisted_and_does_not_change_file (tests.test_dng_inspect.DngInspectTests.test_writer_round_trip_allowlisted_and_does_not_change_file) ... ok
+test_changed_cfa_color_mapping_or_layout_cannot_be_displayed_or_exported (tests.test_retained_captures.ReferenceRetainedTests.test_changed_cfa_color_mapping_or_layout_cannot_be_displayed_or_exported) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.267s
+
+OK

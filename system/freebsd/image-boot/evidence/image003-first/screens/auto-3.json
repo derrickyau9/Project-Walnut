@@ -1,0 +1,14 @@
+{
+  "UI_readiness_claimed": false,
+  "conversion": "RGB pixels unchanged; P6 to PNG format only",
+  "format": "DaOS-virtual-framebuffer-v1",
+  "height": 600,
+  "name": "auto-3",
+  "nonblack_pixels": 479946,
+  "png": "/home/dy09/hf-task-freebsd-r10/image-boot-003/screens/auto-3.png",
+  "png_sha256": "cf352bcbfc5ef1c828e5f1a26f99bc487975971695bf58e69ee9e97fac30dc9c",
+  "ppm": "/home/dy09/hf-task-freebsd-r10/image-boot-003/screens/auto-3.ppm",
+  "ppm_sha256": "de6ab255b7a2e00d1fb40c35a8405c476726dd394528958f218ba09646e54bfd",
+  "rgb_sha256": "91f4bf20436f8ad68e3dc8e3a63428a3ed3adf997d35f8a385d3c4f29f701cda",
+  "width": 800
+}

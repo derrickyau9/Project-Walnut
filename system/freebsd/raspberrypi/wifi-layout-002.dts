@@ -1,0 +1,31 @@
+/dts-v1/;
+/plugin/;
+/ {
+    compatible = "brcm,bcm2711";
+    fragment@0 {
+        target-path = "/";
+        __overlay__ {
+            daos_wifi_pwrseq: daos-wifi-pwrseq {
+                compatible = "mmc-pwrseq-simple";
+                reset-gpios = <&expgpio 1 1>;
+                post-power-on-delay-ms = <200>;
+                power-off-delay-us = <1000>;
+            };
+        };
+    };
+    fragment@1 {
+        target-path = "/soc/mmc@7e300000";
+        __overlay__ { status = "disabled"; };
+    };
+    fragment@2 {
+        target-path = "/soc/mmcnr@7e300000";
+        __overlay__ {
+            status = "okay";
+            mmc-pwrseq = <&daos_wifi_pwrseq>;
+        };
+    };
+    fragment@3 {
+        target-path = "/emmc2bus/mmc@7e340000";
+        __overlay__ { status = "okay"; };
+    };
+};

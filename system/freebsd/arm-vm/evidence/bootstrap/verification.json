@@ -1,0 +1,138 @@
+{
+  "Qt_camera_runtime_validated_in_this_report": false,
+  "acceleration": "TCG",
+  "actual_C_free_bytes_at_verification": 7532118016,
+  "base_unchanged": true,
+  "baseline_only": true,
+  "binary_transfer": {
+    "application_uid": 1000,
+    "download": {
+      "destination": "/home/dy09/hf-task-freebsd-r10/arm-vm-001/arm-returned-e0e56296-d05a-43aa-b89b-61069a11d159.bin",
+      "direction": "from-guest",
+      "format": "hf-freebsd-vm-copy-v1",
+      "sha256": "f98f36ebe19e82493856d76d75afa8675ff7a8bd5a49232bca5211a0a4a46ad4",
+      "size_bytes": 475,
+      "source": "/tmp/hf-arm-transfer-e0e56296-d05a-43aa-b89b-61069a11d159.bin"
+    },
+    "upload": {
+      "destination": "/tmp/hf-arm-transfer-e0e56296-d05a-43aa-b89b-61069a11d159.bin",
+      "direction": "to-guest",
+      "format": "hf-freebsd-vm-copy-v1",
+      "sha256": "f98f36ebe19e82493856d76d75afa8675ff7a8bd5a49232bca5211a0a4a46ad4",
+      "size_bytes": 475,
+      "source": "/home/dy09/hf-task-freebsd-r10/arm-vm-001/arm-transport-e0e56296-d05a-43aa-b89b-61069a11d159.bin"
+    }
+  },
+  "brand": "DaOS",
+  "cpus": 4,
+  "current_source_sha256": {
+    "system/freebsd/arm-vm/README.md": "cd05d90d54355e4a93ea78a9a8b6c0ddcdeea50ad63e52d44ff51487de462264",
+    "system/freebsd/arm-vm/profile.json": "cb3db18b2dee8b6e2406b828c369913960a1e170ea905fb720f71ea88388fff9",
+    "tests/test_freebsd_arm_vm.py": "d0f20fe00941e785de76a11d6e8bd9debb937220220b9192ad3617908597b7a4",
+    "tools/freebsd_arm_vm.py": "f4a78bed48ed3d1fd4089c1adc657d1ac28f0aea39891aed32fd22b88101cff0",
+    "tools/freebsd_seed.py": "161f63e443be97331e6394ebe99a188dd956538ebc31d735fdf9408ebd36018b",
+    "tools/freebsd_vm.py": "33602ca78c5e5a3f1248c0cc2f4ed1e374157b07ab59ff6672c9ae4f60f27753"
+  },
+  "custom_DaOS_kernel_world_validated_in_this_report": false,
+  "effective_version": "15.1-RELEASE-p6",
+  "first_boot": "official image rc firstboot_pkg_upgrade, independent of cloud-config false flags, upgraded base and requested reboot; first readiness was transient before clean reboot",
+  "format": "hf-freebsd-arm-bootstrap-verification-v1",
+  "future_seed_change": "early rc.conf.local override now disables independent firstboot updater; guarded by source/ordering tests, not validated by an additional pristine image boot",
+  "guest_identity": {
+    "returncode": 0,
+    "seconds": 0.8131167989999994,
+    "stderr": "",
+    "stdout": "FreeBSD daos-arm64-dev 15.1-RELEASE-p6 FreeBSD 15.1-RELEASE-p6 releng/15.1-n283643-95719d8a895b GENERIC arm64\n15.1-RELEASE-p6\n15.1-RELEASE-p6\n15.1-RELEASE-p6\nuid=1000(camera) gid=1000(camera) groups=1000(camera)\nFilesystem         Size    Used   Avail Capacity  Mounted on\n/dev/gpt/rootfs     30G    2.7G     25G    10%    /\npermitrootlogin without-password\npasswordauthentication no\nkbdinteractiveauthentication no\nallowusers root\nallowusers camera\nauthenticationmethods publickey\n4\n4265037824\n           7f  45  4c  46  02  01  01  09  00  00  00  00  00  00  00  00\n           03  00  b7  00                                                \n"
+  },
+  "guest_package_egress_enabled": true,
+  "host_mounts": false,
+  "host_shares": false,
+  "immutable_base_sha256": "ae13edc018ad2d862020de3fdccc24581fae12b3323bfd800db73cb2b7fce23c",
+  "memory_mib": 4096,
+  "official_archive_sha256": "9722aea499610802de9a14bb645707fc4f6df49ff765cd9ce372b783c4693963",
+  "passed": true,
+  "physical_camera_validated": false,
+  "physical_display_validated": false,
+  "private_key_copied": false,
+  "qmp_status": {
+    "running": true,
+    "status": "running"
+  },
+  "readiness": {
+    "application_uid": 1000,
+    "bootstrap_uid": 0,
+    "guest_machine": "arm64",
+    "guest_processor": "aarch64",
+    "guest_system": "FreeBSD",
+    "system_executable": {
+      "elf_machine": 183,
+      "elf_osabi": 9,
+      "format": "ELF64",
+      "path": "/bin/sh"
+    }
+  },
+  "source_snapshots": {
+    "first-updated-boot/closed.json": {
+      "bytes": 557,
+      "sha256": "2839e3125f79f75dbffa7bd18020693322de24e640ea2208bb61d6d015f87feb",
+      "source": "/home/dy09/hf-task-freebsd-r10/arm-vm-001/arm-boot-16d0ba2b-6475-4816-830f-de156cb128ce/closed.json"
+    },
+    "first-updated-boot/launch.json": {
+      "bytes": 2146,
+      "sha256": "eeb5ffd195a0f80db2994b163864400e4c1d6d3f5a4c31c5f1cc6e8114ec14e3",
+      "source": "/home/dy09/hf-task-freebsd-r10/arm-vm-001/arm-boot-16d0ba2b-6475-4816-830f-de156cb128ce/launch.json"
+    },
+    "first-updated-boot/ready.json": {
+      "bytes": 794,
+      "sha256": "e7ff01e906a53cfcc358695e966fc7a257f85c7d1b2801ce43bd6f55cb024904",
+      "source": "/home/dy09/hf-task-freebsd-r10/arm-vm-001/arm-boot-16d0ba2b-6475-4816-830f-de156cb128ce/ready.json"
+    },
+    "first-updated-boot/serial.log": {
+      "bytes": 44078,
+      "sha256": "73e540c91ef05ddf239f71fc4e64e6adebee492762d728a8671124a17a802bfa",
+      "source": "/home/dy09/hf-task-freebsd-r10/arm-vm-001/arm-boot-16d0ba2b-6475-4816-830f-de156cb128ce/serial.log"
+    },
+    "first-updated-boot/source/freebsd_arm_vm.py": {
+      "bytes": 16403,
+      "sha256": "f5fbe2e081ed05db91d71cf886d92b22a03c03a6c809e5fc8f6b5d59f418de1a",
+      "source": "/home/dy09/hf-task-freebsd-r10/arm-vm-001/arm-boot-16d0ba2b-6475-4816-830f-de156cb128ce/source/freebsd_arm_vm.py"
+    },
+    "first-updated-boot/source/freebsd_seed.py": {
+      "bytes": 8823,
+      "sha256": "161f63e443be97331e6394ebe99a188dd956538ebc31d735fdf9408ebd36018b",
+      "source": "/home/dy09/hf-task-freebsd-r10/arm-vm-001/arm-boot-16d0ba2b-6475-4816-830f-de156cb128ce/source/freebsd_seed.py"
+    },
+    "first-updated-boot/source/freebsd_vm.py": {
+      "bytes": 31005,
+      "sha256": "33602ca78c5e5a3f1248c0cc2f4ed1e374157b07ab59ff6672c9ae4f60f27753",
+      "source": "/home/dy09/hf-task-freebsd-r10/arm-vm-001/arm-boot-16d0ba2b-6475-4816-830f-de156cb128ce/source/freebsd_vm.py"
+    },
+    "stable-boot/launch.json": {
+      "bytes": 2146,
+      "sha256": "7c7d8faf199beb3242bc577c5297f1777c49e43b79645c12aa97e1630525a9d3",
+      "source": "/home/dy09/hf-task-freebsd-r10/arm-vm-001/arm-boot-bd899741-0e41-40f5-ba5f-f7a72d74770e/launch.json"
+    },
+    "stable-boot/ready.json": {
+      "bytes": 793,
+      "sha256": "8d76ad294e2a7144a2f05ece8dab3a2e2ef52dcecb8fd867c488012839869af5",
+      "source": "/home/dy09/hf-task-freebsd-r10/arm-vm-001/arm-boot-bd899741-0e41-40f5-ba5f-f7a72d74770e/ready.json"
+    },
+    "stable-boot/source/freebsd_arm_vm.py": {
+      "bytes": 16936,
+      "sha256": "d906f81d345786fc7cf8b6e1943d9f2e49db45de7d070becffaf79856a0d2292",
+      "source": "/home/dy09/hf-task-freebsd-r10/arm-vm-001/arm-boot-bd899741-0e41-40f5-ba5f-f7a72d74770e/source/freebsd_arm_vm.py"
+    },
+    "stable-boot/source/freebsd_seed.py": {
+      "bytes": 8823,
+      "sha256": "161f63e443be97331e6394ebe99a188dd956538ebc31d735fdf9408ebd36018b",
+      "source": "/home/dy09/hf-task-freebsd-r10/arm-vm-001/arm-boot-bd899741-0e41-40f5-ba5f-f7a72d74770e/source/freebsd_seed.py"
+    },
+    "stable-boot/source/freebsd_vm.py": {
+      "bytes": 31005,
+      "sha256": "33602ca78c5e5a3f1248c0cc2f4ed1e374157b07ab59ff6672c9ae4f60f27753",
+      "source": "/home/dy09/hf-task-freebsd-r10/arm-vm-001/arm-boot-bd899741-0e41-40f5-ba5f-f7a72d74770e/source/freebsd_vm.py"
+    }
+  },
+  "ssh_host_bind": "127.0.0.1:22242",
+  "stable_ready_seconds": 58.25437550300012
+}

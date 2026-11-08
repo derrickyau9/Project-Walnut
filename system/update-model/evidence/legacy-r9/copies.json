@@ -1,0 +1,198 @@
+{
+  "format": "hf-update-model-evidence-copy-v1",
+  "files": [
+    {
+      "source": "build/update-model-r9-002/demo-evidence.json",
+      "copy": "demo-evidence.json",
+      "bytes": 3486,
+      "sha256": "6511745d06eb0bd0266e3066a7f0dd37c8b68cf2907e4e5ee2123f335c7e78cd"
+    },
+    {
+      "source": "build/update-model-r9-002/final-verification.json",
+      "copy": "final-verification.json",
+      "bytes": 3454,
+      "sha256": "0fc07bc6e2ae4c2947d57e5774312e81327b6896d8cecc92175185e77b3bc6a0"
+    },
+    {
+      "source": "build/update-model-r9-002/policy.json",
+      "copy": "policy.json",
+      "bytes": 1097,
+      "sha256": "8f52dc0ee6193f8921c2764352908804867fe82d5a14cdec464627cc92832a24"
+    },
+    {
+      "source": "build/update-model-r9-002/runtime/runtime-evidence.json",
+      "copy": "runtime/runtime-evidence.json",
+      "bytes": 2177,
+      "sha256": "a197b29e415eb7009580d09fad0ae02837db9ebae049db2bdd1b858bb5404924"
+    },
+    {
+      "source": "build/update-model-r9-tests-final.txt",
+      "copy": "tests/update-model-r9-tests-final.txt",
+      "bytes": 3464,
+      "sha256": "61286631c1f4150317fe39622c3a9c2ac605e8e0c78d1ece1913c4de43863425"
+    },
+    {
+      "source": "build/update-model-r9-002/attempts/2ec47223-6424-4fa7-803c-f85c274bd2aa/2ec47223-6424-4fa7-803c-f85c274bd2aa.json",
+      "copy": "attempts/2ec47223-6424-4fa7-803c-f85c274bd2aa/2ec47223-6424-4fa7-803c-f85c274bd2aa.json",
+      "bytes": 1570,
+      "sha256": "1d985263e159aa39d6df4693fe28acaf80d38ea15877f4f2ce59b10539f05227"
+    },
+    {
+      "source": "build/update-model-r9-002/attempts/2ec47223-6424-4fa7-803c-f85c274bd2aa/boot-evidence.json",
+      "copy": "attempts/2ec47223-6424-4fa7-803c-f85c274bd2aa/boot-evidence.json",
+      "bytes": 5138,
+      "sha256": "c5818b514c7fe214ca689a8233554ee5f9ae90e12d1b0ef8a8d5258abf970ca6"
+    },
+    {
+      "source": "build/update-model-r9-002/attempts/2ec47223-6424-4fa7-803c-f85c274bd2aa/serial.log",
+      "copy": "attempts/2ec47223-6424-4fa7-803c-f85c274bd2aa/serial.log",
+      "bytes": 19303,
+      "sha256": "ce10552ff0f6fb93c40fe91ae1de5a4a04dee20b7addf0c93c0e89a2046fce0f"
+    },
+    {
+      "source": "build/update-model-r9-002/attempts/57acae39-9b63-4f12-b395-51db9afb91fd/57acae39-9b63-4f12-b395-51db9afb91fd.json",
+      "copy": "attempts/57acae39-9b63-4f12-b395-51db9afb91fd/57acae39-9b63-4f12-b395-51db9afb91fd.json",
+      "bytes": 1572,
+      "sha256": "cf082a2c05d9bf014d6f67bd380c8ee0dcfbcd7f48922f5554fa747353cf3342"
+    },
+    {
+      "source": "build/update-model-r9-002/attempts/57acae39-9b63-4f12-b395-51db9afb91fd/boot-evidence.json",
+      "copy": "attempts/57acae39-9b63-4f12-b395-51db9afb91fd/boot-evidence.json",
+      "bytes": 5144,
+      "sha256": "908d75bd05bd353c2ee6e0ea71f0eaa7f4ac2d24a852af4cea67c1667a88ff7b"
+    },
+    {
+      "source": "build/update-model-r9-002/attempts/57acae39-9b63-4f12-b395-51db9afb91fd/serial.log",
+      "copy": "attempts/57acae39-9b63-4f12-b395-51db9afb91fd/serial.log",
+      "bytes": 19311,
+      "sha256": "05920da15d0cc1fe3af294d169e566eec299367dc9cf585775a371fc11ad39f3"
+    },
+    {
+      "source": "build/update-model-r9-002/attempts/770a4e94-276c-44c3-ad70-fb94e6721e77/770a4e94-276c-44c3-ad70-fb94e6721e77.json",
+      "copy": "attempts/770a4e94-276c-44c3-ad70-fb94e6721e77/770a4e94-276c-44c3-ad70-fb94e6721e77.json",
+      "bytes": 1573,
+      "sha256": "28fcec637665c19ed27b5e83fddbfc3c92459e053502e3a1b19e5248156dfffd"
+    },
+    {
+      "source": "build/update-model-r9-002/attempts/770a4e94-276c-44c3-ad70-fb94e6721e77/boot-evidence.json",
+      "copy": "attempts/770a4e94-276c-44c3-ad70-fb94e6721e77/boot-evidence.json",
+      "bytes": 5147,
+      "sha256": "7bbe603e1fd245b66e6fdd138a037878c67c081eeadb850ca9a14c4e7edd5f29"
+    },
+    {
+      "source": "build/update-model-r9-002/attempts/770a4e94-276c-44c3-ad70-fb94e6721e77/serial.log",
+      "copy": "attempts/770a4e94-276c-44c3-ad70-fb94e6721e77/serial.log",
+      "bytes": 19312,
+      "sha256": "54898738ec002e0c0d1b720401874f861c1d64cafdd23c7bb38307c82b752541"
+    },
+    {
+      "source": "build/update-model-r9-002/attempts/86fb635f-9a98-476e-90e8-5bc461eb337b/86fb635f-9a98-476e-90e8-5bc461eb337b.json",
+      "copy": "attempts/86fb635f-9a98-476e-90e8-5bc461eb337b/86fb635f-9a98-476e-90e8-5bc461eb337b.json",
+      "bytes": 1570,
+      "sha256": "f489f007ffbb6288c8506cd75cd73a8c5d8ee87b250cbd39dbf949775f6f2b54"
+    },
+    {
+      "source": "build/update-model-r9-002/attempts/86fb635f-9a98-476e-90e8-5bc461eb337b/boot-evidence.json",
+      "copy": "attempts/86fb635f-9a98-476e-90e8-5bc461eb337b/boot-evidence.json",
+      "bytes": 5138,
+      "sha256": "fa88e9c086b0e75a0c1577a4bb452db5a88d164ffd626db19fbff35b51ad5f59"
+    },
+    {
+      "source": "build/update-model-r9-002/attempts/86fb635f-9a98-476e-90e8-5bc461eb337b/serial.log",
+      "copy": "attempts/86fb635f-9a98-476e-90e8-5bc461eb337b/serial.log",
+      "bytes": 19304,
+      "sha256": "cc7a6496d84d54ab4718684829abc269c83defbab920c1de9a9ef32382846a77"
+    },
+    {
+      "source": "build/update-model-r9-002/attempts/bdcb1bb0-803b-412b-bad5-b5c280121ed5/bdcb1bb0-803b-412b-bad5-b5c280121ed5.json",
+      "copy": "attempts/bdcb1bb0-803b-412b-bad5-b5c280121ed5/bdcb1bb0-803b-412b-bad5-b5c280121ed5.json",
+      "bytes": 1573,
+      "sha256": "afab90a29f6ac2a5ec9b1aae19c3222b13f6daab7bf198c41bbff952a678bdb7"
+    },
+    {
+      "source": "build/update-model-r9-002/attempts/bdcb1bb0-803b-412b-bad5-b5c280121ed5/boot-evidence.json",
+      "copy": "attempts/bdcb1bb0-803b-412b-bad5-b5c280121ed5/boot-evidence.json",
+      "bytes": 5146,
+      "sha256": "2cf23d4c93c0236ede246e981c25e79f45ac3fef60df5f8ba58e985546680236"
+    },
+    {
+      "source": "build/update-model-r9-002/attempts/bdcb1bb0-803b-412b-bad5-b5c280121ed5/serial.log",
+      "copy": "attempts/bdcb1bb0-803b-412b-bad5-b5c280121ed5/serial.log",
+      "bytes": 19312,
+      "sha256": "bd11aad6987a4bfca39f10109e85a84c05fe993a8f76c53f728afa4b160def1b"
+    },
+    {
+      "source": "build/update-model-r9-002/attempts/c3fc9370-9fdd-469d-adcd-c9aeff755f08/boot-evidence.json",
+      "copy": "attempts/c3fc9370-9fdd-469d-adcd-c9aeff755f08/boot-evidence.json",
+      "bytes": 5146,
+      "sha256": "bd13ed55cc6148bbf4ab2d981f38718fa8ff7c4ff390fff879104b7a849df786"
+    },
+    {
+      "source": "build/update-model-r9-002/attempts/c3fc9370-9fdd-469d-adcd-c9aeff755f08/c3fc9370-9fdd-469d-adcd-c9aeff755f08.json",
+      "copy": "attempts/c3fc9370-9fdd-469d-adcd-c9aeff755f08/c3fc9370-9fdd-469d-adcd-c9aeff755f08.json",
+      "bytes": 1573,
+      "sha256": "9d684c146cf9c1f1b036f37cbddc77384f547d5c3f12534c82f8afe859a8c242"
+    },
+    {
+      "source": "build/update-model-r9-002/attempts/c3fc9370-9fdd-469d-adcd-c9aeff755f08/serial.log",
+      "copy": "attempts/c3fc9370-9fdd-469d-adcd-c9aeff755f08/serial.log",
+      "bytes": 19312,
+      "sha256": "ff8ffd8a6cdda49d9f3c821f3eaeb1ed85c45e7b1dc4abb68c4468fa5e8498f5"
+    },
+    {
+      "source": "build/update-model-r9-002/bundles/a1197700-e160-4d3f-9b4f-84dfb70b82e2/manifest.json",
+      "copy": "bundles/a1197700-e160-4d3f-9b4f-84dfb70b82e2/manifest.json",
+      "bytes": 663,
+      "sha256": "21bf71dd32a2eeb8edd1637a086d9df4e3a83a60b725b7d96115b1327cfb1548"
+    },
+    {
+      "source": "build/update-model-r9-002/bundles/c06a9a37-44c4-4645-9238-276b520d192f/manifest.json",
+      "copy": "bundles/c06a9a37-44c4-4645-9238-276b520d192f/manifest.json",
+      "bytes": 666,
+      "sha256": "e0bd04ea186146985c7fb582c1ef88aa05b4c84efd815dca2068c52755c7ef1c"
+    },
+    {
+      "source": "build/update-model-r9-002/bundles/cfbd2f00-24ce-4c14-8947-cb019c4db13e/manifest.json",
+      "copy": "bundles/cfbd2f00-24ce-4c14-8947-cb019c4db13e/manifest.json",
+      "bytes": 666,
+      "sha256": "859f032b8027210aa1ee0cf63f926669e62b97ef776818ba4f3d10708e45a89f"
+    },
+    {
+      "source": "tools/update_model.py",
+      "copy": "source/tools/update_model.py",
+      "bytes": 33951,
+      "sha256": "3c4a8218b3f4137abda49a93a6f82549545ddc689539cccef6c83642d7a952ee"
+    },
+    {
+      "source": "tools/update_guest_boot.py",
+      "copy": "source/tools/update_guest_boot.py",
+      "bytes": 21269,
+      "sha256": "7e47e5c0fc4c173c2aac797938197b6c2fc4690e62ea59b58e786e61bc78a307"
+    },
+    {
+      "source": "system/update-model/init.c",
+      "copy": "source/system/update-model/init.c",
+      "bytes": 8265,
+      "sha256": "90a2f2fc92d40e6607426db9dbdf5788c8dad28ca5d3535aff9ebc8f2d6a6a42"
+    },
+    {
+      "source": "system/update-model/health.py",
+      "copy": "source/system/update-model/health.py",
+      "bytes": 14765,
+      "sha256": "069336f0c64dbf3b4b6747a2c9e5c8769fbe1f6e1a575c460eb968c3c09e45b7"
+    },
+    {
+      "source": "tests/test_update_model.py",
+      "copy": "source/tests/test_update_model.py",
+      "bytes": 14199,
+      "sha256": "9bdf73469ec9bdb36465ff8e526e9ac540569f52c6aee1aa6417336be098c115"
+    },
+    {
+      "source": "tests/test_update_guest.py",
+      "copy": "source/tests/test_update_guest.py",
+      "bytes": 6790,
+      "sha256": "75de8bbe0b8c3e6d837f1e6c363975df300b91853f915e338773e1bea52e82ee"
+    }
+  ],
+  "scope": "immutable legacy-v1 R8-data model actual5bootsequence plus finalconfirmedBboot; not R9 bound-data proof"
+}

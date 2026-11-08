@@ -1,0 +1,62 @@
+{
+  "bytes": 3254820864,
+  "sector_size": 512,
+  "both_gpt_crcs_valid": true,
+  "partitions": [
+    {
+      "index": 1,
+      "label": "DaOS-efi",
+      "type": "c12a7328-f81f-11d2-ba4b-00a0c93ec93b",
+      "guid": "d0a0e3aa-d9ab-11f1-067b-ff9d86f8dced",
+      "start_sector": 40,
+      "sectors": 262144,
+      "offset": 20480,
+      "bytes": 134217728,
+      "attributes": 0
+    },
+    {
+      "index": 2,
+      "label": "DaOS-root",
+      "type": "516e7cb6-6ecf-11d6-8ff8-00022d09712b",
+      "guid": "d0a0e3be-d9ab-11f1-1d08-61407e6af4da",
+      "start_sector": 262184,
+      "sectors": 5242880,
+      "offset": 134238208,
+      "bytes": 2684354560,
+      "attributes": 0
+    },
+    {
+      "index": 3,
+      "label": "DaOS-state",
+      "type": "516e7cb6-6ecf-11d6-8ff8-00022d09712b",
+      "guid": "d0a0e3be-d9ab-11f1-17a5-d14fff7c5968",
+      "start_sector": 5505064,
+      "sectors": 262144,
+      "offset": 2818592768,
+      "bytes": 134217728,
+      "attributes": 0
+    },
+    {
+      "index": 4,
+      "label": "DaOS-calibration",
+      "type": "516e7cb6-6ecf-11d6-8ff8-00022d09712b",
+      "guid": "d0a0e3be-d9ab-11f1-0432-f1d3b03b0818",
+      "start_sector": 5767208,
+      "sectors": 65536,
+      "offset": 2952810496,
+      "bytes": 33554432,
+      "attributes": 0
+    },
+    {
+      "index": 5,
+      "label": "DaOS-photos",
+      "type": "516e7cb6-6ecf-11d6-8ff8-00022d09712b",
+      "guid": "d0a0e3be-d9ab-11f1-3fe7-9181628e1ee9",
+      "start_sector": 5832744,
+      "sectors": 524288,
+      "offset": 2986364928,
+      "bytes": 268435456,
+      "attributes": 0
+    }
+  ]
+}

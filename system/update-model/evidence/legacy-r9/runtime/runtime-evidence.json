@@ -1,0 +1,42 @@
+{
+  "base_bootstrap_sha256": "0914cdc88fb4c149ea27183797ccb9b7436689663ef7bc1c959c32c62a5db921",
+  "base_root_sha256": "675c2212ef7a893ef7525c3137848c752bf23837ccabe5e1823b438159ab5882",
+  "bootstrap": "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/update-model-r9-002/runtime/bootstrap.cpio.gz",
+  "bootstrap_sha256": "e5d1122ee404fad6b9eb0512dbabc498296accbba509f30a5ff40ae5aff03f59",
+  "compile": {
+    "command": [
+      "/usr/bin/aarch64-linux-gnu-gcc",
+      "-std=c11",
+      "-O2",
+      "-static",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/system/update-model/init.c",
+      "-o",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/update-model-r9-002/runtime/init"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": ""
+  },
+  "format": "hf-arm64-update-runtime-v1",
+  "health_sha256": "069336f0c64dbf3b4b6747a2c9e5c8769fbe1f6e1a575c460eb968c3c09e45b7",
+  "init_sha256": "c5785d18ada181520277770aeadbabfd7c3536a018fdac770c6d9be55a3be61e",
+  "kernel": "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/update-model-r9-002/runtime/kernel.img",
+  "kernel_sha256": "9c37ace54ef7e1919411fd912e9f34d6982ddd7f4c8ef3c8aee56f4c4d70db67",
+  "modules_sha256": {
+    "crc16": "845f60b94052cbfa534c92e23944741d7bd8e78c66f346fded17aa583122d86e",
+    "crc32c_generic": "413e44e7566d5d49bddde454f31fd5f9b17ba4602482a8a5f3ca4eef78689e73",
+    "ext4": "bbc5a04c06a86ce8a1a13305a52b34e329d1fc0af5af66317fd3ba1eedda1b9d",
+    "jbd2": "9fc7f1be231a7655788949079e4b3f4d82c7fd43083d20545651dfb671b2729c",
+    "mbcache": "e5eadc3e426f64fdc742dc51330875268c531cc8f0a539bb1dd573aca23a4e08",
+    "virtio_blk": "e20a5d9facf58c81ad3d45fd89e3248b9a5083c26a20ddaddd88d443066012bb"
+  },
+  "scope": "generic virtual ARM64 update model; synthetic camera only",
+  "source_sha256": {
+    "system/update-model/health.py": "069336f0c64dbf3b4b6747a2c9e5c8769fbe1f6e1a575c460eb968c3c09e45b7",
+    "system/update-model/init.c": "90a2f2fc92d40e6607426db9dbdf5788c8dad28ca5d3535aff9ebc8f2d6a6a42",
+    "tools/update_guest_boot.py": "7e47e5c0fc4c173c2aac797938197b6c2fc4690e62ea59b58e786e61bc78a307"
+  }
+}

@@ -1,0 +1,28 @@
+--- a/sbin/init/init.c
++++ b/sbin/init/init.c
+@@ -874,6 +874,25 @@
+ 		}
+ 		warning("reboot(%#x) returned", howto);
+ 		_exit(0); /* panic as well */
++	}
++
++	/* DaOS: death_single terminates all background processes. Restart the
++	 * configured pre-rc USB recovery hook before the console shell prompt.
++	 * A failed recovery hook must never prevent the local single-user shell.
++	 */
++	{
++		char recovery_script[PATH_MAX];
++		state_func_t next_transition;
++
++		if (kenv(KENV_GET, "init_script", recovery_script,
++		    sizeof(recovery_script)) > 0 &&
++		    strcmp(recovery_script,
++		    "/usr/local/libexec/DaOS-recovery/early-init.sh") == 0) {
++			next_transition = run_script(recovery_script);
++			if (next_transition != NULL &&
++			    next_transition != (state_func_t) single_user)
++				return (next_transition);
++		}
+ 	}
+ 
+ 	BOOTTRACE("going to single user mode");

@@ -1,0 +1,831 @@
+{
+  "status": "PASS actual Icarus RTL simulation",
+  "verified_at_utc": "2026-11-05T11:42:08.670852+00:00",
+  "source_sha256": {
+    "fpga\\rtl\\hf_capture_stream.sv": "b20830f29f7fe8b4aff04ffc2826d9aefb8bb46396b2de613a299b5fbc46cfb1",
+    "fpga\\testbench\\tb_capture_stream.sv": "56222660ef8167d50ff4b809a8debe5c6a358097afb367ad6058f87d318366e2",
+    "fpga\\testbench\\rtl_sim.py": "326a2b7dee3123274285b469f538fa3d3cdba61522e4e17dcad75fccdb6a9a7d"
+  },
+  "toolchain_manifest": {
+    "source": "MSYS2 official package distribution",
+    "packages": [
+      {
+        "name": "mingw-w64-ucrt-x86_64-iverilog",
+        "metadata_source": "https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-iverilog",
+        "archive_source": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-iverilog-1~13.0-2-any.pkg.tar.zst",
+        "sha256": "fd4d7d7cb60cda1eb437f5476673503d92964cf47ce6c11b460eb3bd05c43582",
+        "bytes": 1988347,
+        "files": [
+          {
+            "path": "ucrt64/bin/iverilog-vpi.exe",
+            "sha256": "497e9f9e183526908a765be973ed1cf6b00b1704abd1e6302e043136b579b1b1"
+          },
+          {
+            "path": "ucrt64/bin/iverilog.exe",
+            "sha256": "25e1ba02e72f58d9d484bc5457d69a6b179d22d86bdf5ba5d6f9f0d4fe620bbf"
+          },
+          {
+            "path": "ucrt64/bin/vvp.exe",
+            "sha256": "f0775603e1f1bcf1b2dea16dff963a4b7d71b7b33d5bbe23d2b01ff5b2304e09"
+          },
+          {
+            "path": "ucrt64/lib/ivl/blif-s.conf",
+            "sha256": "3ce285013d51a0f632be229a513c17d4f8a314319c0e7d7fbbe53a2339580e1c"
+          },
+          {
+            "path": "ucrt64/lib/ivl/blif.conf",
+            "sha256": "3ce285013d51a0f632be229a513c17d4f8a314319c0e7d7fbbe53a2339580e1c"
+          },
+          {
+            "path": "ucrt64/lib/ivl/blif.tgt",
+            "sha256": "ee01e2aa00418e366d73856469f6ad892af6e43f5ea2f07f0036c4088392f53c"
+          },
+          {
+            "path": "ucrt64/lib/ivl/include/constants.vams",
+            "sha256": "48cb40767dd73f50a3288c0b8b5fc779a6462b4e27f565dd9aae31a53f4a6f09"
+          },
+          {
+            "path": "ucrt64/lib/ivl/include/disciplines.vams",
+            "sha256": "6540e1f3f01b64eee3a26239c1bab6fe80db5b1fca30e336fe40189b52add231"
+          },
+          {
+            "path": "ucrt64/lib/ivl/ivl.exe",
+            "sha256": "75b5b4569796b4cd85c74e9b4836699a70159279c3bae20268a8578558686643"
+          },
+          {
+            "path": "ucrt64/lib/ivl/ivlpp.exe",
+            "sha256": "d41181df44c4c6a6ad07e5f91a34f7624ec081150c5b08e007133afdb7fad3c8"
+          },
+          {
+            "path": "ucrt64/lib/ivl/null-s.conf",
+            "sha256": "8a4b79342b5d58fcd576238e928403c986bf623e5e9c63fc7e199f5c5bf57fae"
+          },
+          {
+            "path": "ucrt64/lib/ivl/null.conf",
+            "sha256": "313ef43d707cf69cabac9b02c1cee5223b7179007aa627c0963a567691751cd0"
+          },
+          {
+            "path": "ucrt64/lib/ivl/null.tgt",
+            "sha256": "788af29ace6fe5a450f7e48142a72673172103c593824be29d326b5e285f4ad7"
+          },
+          {
+            "path": "ucrt64/lib/ivl/pcb-s.conf",
+            "sha256": "2f184346cab431bfa26ef1bf0a906a8d78469aae495f93974896ec952dee3657"
+          },
+          {
+            "path": "ucrt64/lib/ivl/pcb.conf",
+            "sha256": "5a84492e9e830658590cc28d5c39d8b137124ac2f6e5c111a838d91b99aa3cb9"
+          },
+          {
+            "path": "ucrt64/lib/ivl/pcb.tgt",
+            "sha256": "577c6b5801c9b47d23297e71a26030ee01d09385c1cbe62188b1f7fbac145844"
+          },
+          {
+            "path": "ucrt64/lib/ivl/sizer-s.conf",
+            "sha256": "03a8f24468995e87b23840915b613abd339843a6ec6d0931b57ea56720ff415d"
+          },
+          {
+            "path": "ucrt64/lib/ivl/sizer.conf",
+            "sha256": "03a8f24468995e87b23840915b613abd339843a6ec6d0931b57ea56720ff415d"
+          },
+          {
+            "path": "ucrt64/lib/ivl/sizer.tgt",
+            "sha256": "b7bf4cd2822b02673106b626bd03882651dc6430b12f9678ecbab991ab68f8ec"
+          },
+          {
+            "path": "ucrt64/lib/ivl/stub-s.conf",
+            "sha256": "ca77cff51d74ad77e33efd589c82fb410823ad88a5933a5e4aca86251250b302"
+          },
+          {
+            "path": "ucrt64/lib/ivl/stub.conf",
+            "sha256": "03c9241decbe4502f087790fe7eaf6568fb7992788fbf56be0f69737a98c67fb"
+          },
+          {
+            "path": "ucrt64/lib/ivl/stub.tgt",
+            "sha256": "46a0d8e61b89b23d806c7d7d49bd6cc18f58fda15558fbbf84e503b5b19c16bd"
+          },
+          {
+            "path": "ucrt64/lib/ivl/system.vpi",
+            "sha256": "f99e9fa230a37f6bdc2f3725b4c0e65fd1289f6a798171c6b7cb72ad13df8489"
+          },
+          {
+            "path": "ucrt64/lib/ivl/v2005_math.vpi",
+            "sha256": "e0836212fed6a43d778be7a7686b4f25973149c2ba3a7352361d101bb04f5e56"
+          },
+          {
+            "path": "ucrt64/lib/ivl/v2009.vpi",
+            "sha256": "2543c32dd3b8139cd46beb99262e898e0054217930aa252e6f627b63b6943ff9"
+          },
+          {
+            "path": "ucrt64/lib/ivl/va_math.vpi",
+            "sha256": "909dcc86aede4f34e929e5b6ace3738c299ad6ac05373f639a2a7b13221b28d5"
+          },
+          {
+            "path": "ucrt64/lib/ivl/vhdl-s.conf",
+            "sha256": "d9b3d7de12e25e14c86738110f4e2baf3711f60a161e34ad329104f13ccabc5d"
+          },
+          {
+            "path": "ucrt64/lib/ivl/vhdl.conf",
+            "sha256": "7f8563bd0a386bedf111f5f23ce827b8efd6749cb3b104cf236358324ccd840a"
+          },
+          {
+            "path": "ucrt64/lib/ivl/vhdl.tgt",
+            "sha256": "0f367e4fa55bd755d81c0431721e9a36f8f95b648a37f764fed4cf154c37ef62"
+          },
+          {
+            "path": "ucrt64/lib/ivl/vhdl_sys.vpi",
+            "sha256": "c013f635c248a0ae904da6eb53055abdc5d0134a6c06695ce2567fa3ea4041c7"
+          },
+          {
+            "path": "ucrt64/lib/ivl/vhdl_textio.vpi",
+            "sha256": "3c3830378caf45185f62931c36455e2bf44b3e0110b87b6c8e345afa8fbdd358"
+          },
+          {
+            "path": "ucrt64/lib/ivl/vhdlpp.exe",
+            "sha256": "83974fee3745a754110abc5ef51468fa7a90f2afec36d5288e4c02e5ed6ca9bf"
+          },
+          {
+            "path": "ucrt64/lib/ivl/vlog95-s.conf",
+            "sha256": "f4f09237dc90f1e4e58658b2bb14bb446e93619c911b8ead10cc0240f64cad51"
+          },
+          {
+            "path": "ucrt64/lib/ivl/vlog95.conf",
+            "sha256": "47d4a923819bdf601c5fa62065b6787f81d2ea64cb0e6b33c33c4e9001d356c0"
+          },
+          {
+            "path": "ucrt64/lib/ivl/vlog95.tgt",
+            "sha256": "80b2960d12c082abe499c476a201a2940d0024eb23cafb5cda221ec0d311a78e"
+          },
+          {
+            "path": "ucrt64/lib/ivl/vpi_debug.vpi",
+            "sha256": "ce92b27412a7aa69e55820d5042cab371abaf10785650067f6606a2964a25f9e"
+          },
+          {
+            "path": "ucrt64/lib/ivl/vvp-s.conf",
+            "sha256": "21314599e0ffe0b6f2397936291d3773babd5345a4e38e1c9df40b0eb1b5fdc2"
+          },
+          {
+            "path": "ucrt64/lib/ivl/vvp.conf",
+            "sha256": "b093049ec0233b41b75d0f768c630f1d2f5470e66447c061b5cb6345d717156b"
+          },
+          {
+            "path": "ucrt64/lib/ivl/vvp.tgt",
+            "sha256": "6fa5346b819e63faf79e918f2c3b90fdae9a6c0836bc24ecdb8171c896c3874c"
+          },
+          {
+            "path": "ucrt64/share/licenses/iverilog/COPYING",
+            "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+          }
+        ]
+      },
+      {
+        "name": "mingw-w64-ucrt-x86_64-gcc-libs",
+        "metadata_source": "https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-gcc-libs",
+        "archive_source": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-gcc-libs-16.2.0-6-any.pkg.tar.zst",
+        "sha256": "20b4df1cc16e5c5d38d6510b4fb586a96922b7817d455c0d30c3c1257a88cc9c",
+        "bytes": 2363,
+        "files": []
+      },
+      {
+        "name": "mingw-w64-ucrt-x86_64-libwinpthread",
+        "metadata_source": "https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-libwinpthread",
+        "archive_source": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-libwinpthread-14.0.0.r598.ge3d18511f-1-any.pkg.tar.zst",
+        "sha256": "c35d6be83d141c8cfbb61f1637dd4b53aac8f5562d766aa26d0741c40bad4e4d",
+        "bytes": 34470,
+        "files": [
+          {
+            "path": "ucrt64/bin/libwinpthread-1.dll",
+            "sha256": "94a9a4e2fe27b4bc827a4b209e9deb4cc3dc34bc025df06b849144f9d4c588f8"
+          },
+          {
+            "path": "ucrt64/share/licenses/libwinpthread/COPYING",
+            "sha256": "63263614cdd29f2f93cba85e992f041b31f9fc7b4033692f31269489a8a1b177"
+          }
+        ]
+      },
+      {
+        "name": "mingw-w64-ucrt-x86_64-bzip2",
+        "metadata_source": "https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-bzip2",
+        "archive_source": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-bzip2-1.0.8-4-any.pkg.tar.zst",
+        "sha256": "f03a2174034ddd2d96cecd34f617c5f8e2ef86c812b8d2bb3b8875257f2c8bfa",
+        "bytes": 94396,
+        "files": [
+          {
+            "path": "ucrt64/bin/bunzip2.exe",
+            "sha256": "b18bb89e8f5462fcd6abeb8c04e74fe42226b1650745cab0c4b728cc95ce4192"
+          },
+          {
+            "path": "ucrt64/bin/bzcat.exe",
+            "sha256": "b18bb89e8f5462fcd6abeb8c04e74fe42226b1650745cab0c4b728cc95ce4192"
+          },
+          {
+            "path": "ucrt64/bin/bzcmp",
+            "sha256": "1c1f96193cdf14b85ea65f140a7557a07ece8783a53ec5ba6b5c30644a9d3012"
+          },
+          {
+            "path": "ucrt64/bin/bzdiff",
+            "sha256": "1c1f96193cdf14b85ea65f140a7557a07ece8783a53ec5ba6b5c30644a9d3012"
+          },
+          {
+            "path": "ucrt64/bin/bzegrep",
+            "sha256": "a8e368a31766c7862b8d0feeffe274c3bb43b969e3ccb4f9e77d13bfa447a5c9"
+          },
+          {
+            "path": "ucrt64/bin/bzfgrep",
+            "sha256": "a8e368a31766c7862b8d0feeffe274c3bb43b969e3ccb4f9e77d13bfa447a5c9"
+          },
+          {
+            "path": "ucrt64/bin/bzgrep",
+            "sha256": "a8e368a31766c7862b8d0feeffe274c3bb43b969e3ccb4f9e77d13bfa447a5c9"
+          },
+          {
+            "path": "ucrt64/bin/bzip2.exe",
+            "sha256": "b18bb89e8f5462fcd6abeb8c04e74fe42226b1650745cab0c4b728cc95ce4192"
+          },
+          {
+            "path": "ucrt64/bin/bzip2recover.exe",
+            "sha256": "829089e0ad04978730c6a5f3a3f9c0a466f4b22737b95d46c4e95b94423fb654"
+          },
+          {
+            "path": "ucrt64/bin/bzless",
+            "sha256": "0e7ca63849eebc9ea476ea1fefab05e60b0ac8066f73c7d58e8ff607c941f212"
+          },
+          {
+            "path": "ucrt64/bin/bzmore",
+            "sha256": "0e7ca63849eebc9ea476ea1fefab05e60b0ac8066f73c7d58e8ff607c941f212"
+          },
+          {
+            "path": "ucrt64/bin/libbz2-1.dll",
+            "sha256": "1790bf6473c9d48db14c1f0ee8124142327556d281299ea2a72ee361118ee01a"
+          },
+          {
+            "path": "ucrt64/share/licenses/bzip2/LICENSE",
+            "sha256": "c6dbbf828498be844a89eaa3b84adbab3199e342eb5cb2ed2f0d4ba7ec0f38a3"
+          }
+        ]
+      },
+      {
+        "name": "mingw-w64-ucrt-x86_64-readline",
+        "metadata_source": "https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-readline",
+        "archive_source": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-readline-8.3.003-1-any.pkg.tar.zst",
+        "sha256": "de2423c2e10fcd88272a0ab2f833f6a082cfe613d4c17c2f548cc50a5d2190c4",
+        "bytes": 513820,
+        "files": [
+          {
+            "path": "ucrt64/bin/libhistory8.dll",
+            "sha256": "1b463a9ac38404686d69d4021af90c68e2bdb9b3ee3a561467a7ecff80bb1699"
+          },
+          {
+            "path": "ucrt64/bin/libreadline8.dll",
+            "sha256": "5279a6c2053327fa48b2f77cd14e79ae31547482964b9e5c1f44e1e0fbf1afe8"
+          },
+          {
+            "path": "ucrt64/share/licenses/readline/COPYING",
+            "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+          }
+        ]
+      },
+      {
+        "name": "mingw-w64-ucrt-x86_64-zlib",
+        "metadata_source": "https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-zlib",
+        "archive_source": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-zlib-1.3.2-3-any.pkg.tar.zst",
+        "sha256": "130e6ef04c654fc2150a177600aa5ed0035087665a893479d2c85ba7485d5704",
+        "bytes": 108848,
+        "files": [
+          {
+            "path": "ucrt64/bin/zlib1.dll",
+            "sha256": "8ae7aeb0467763a1e271cd831ca8e2f7fd101602adb9923100ea26c6be2a559b"
+          },
+          {
+            "path": "ucrt64/share/licenses/zlib/LICENSE",
+            "sha256": "e32ff4e00d9d94930537635291da39e7e612703334bf6fde8c7f1686fe8a45a2"
+          }
+        ]
+      },
+      {
+        "name": "mingw-w64-ucrt-x86_64-cc-libs",
+        "metadata_source": "https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-cc-libs",
+        "archive_source": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-cc-libs-16.2.0-6-any.pkg.tar.zst",
+        "sha256": "d8fff9e62443168bcda8ce746697243519c4f090ea607357ce94feac0bd10a50",
+        "bytes": 2343,
+        "files": []
+      },
+      {
+        "name": "mingw-w64-ucrt-x86_64-libatomic",
+        "metadata_source": "https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-libatomic",
+        "archive_source": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-libatomic-16.2.0-6-any.pkg.tar.zst",
+        "sha256": "792f6e8b08a83b17be44c9b881a753f1bb0ecd82480f16bbd49ec4786a659cf9",
+        "bytes": 25423,
+        "files": [
+          {
+            "path": "ucrt64/bin/libatomic-1.dll",
+            "sha256": "68916fbd610f315f45092dcadb082e24d38336a1dfb8da6bf1269f759acaba29"
+          },
+          {
+            "path": "ucrt64/share/licenses/libatomic/COPYING.RUNTIME",
+            "sha256": "9d6b43ce4d8de0c878bf16b54d8e7a10d9bd42b75178153e3af6a815bdc90f74"
+          },
+          {
+            "path": "ucrt64/share/licenses/libatomic/COPYING3",
+            "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+          }
+        ]
+      },
+      {
+        "name": "mingw-w64-ucrt-x86_64-libgomp",
+        "metadata_source": "https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-libgomp",
+        "archive_source": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-libgomp-16.2.0-6-any.pkg.tar.zst",
+        "sha256": "809b95086d8d3ba145e041bb36d5756b4407d1d97c0524ef731d3b94548faa69",
+        "bytes": 311245,
+        "files": [
+          {
+            "path": "ucrt64/bin/libgomp-1.dll",
+            "sha256": "ccaf59dc8cff15ace88ab47acd68a5b014167cad8f960e7683466a4c821e41c4"
+          },
+          {
+            "path": "ucrt64/share/licenses/libgomp/COPYING.RUNTIME",
+            "sha256": "9d6b43ce4d8de0c878bf16b54d8e7a10d9bd42b75178153e3af6a815bdc90f74"
+          },
+          {
+            "path": "ucrt64/share/licenses/libgomp/COPYING3",
+            "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+          }
+        ]
+      },
+      {
+        "name": "mingw-w64-ucrt-x86_64-libquadmath",
+        "metadata_source": "https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-libquadmath",
+        "archive_source": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-libquadmath-16.2.0-6-any.pkg.tar.zst",
+        "sha256": "7b553c0b6dd9cf2f676c0c6812aa359495940dbdd7347f47be1dbd75d29cd611",
+        "bytes": 179374,
+        "files": [
+          {
+            "path": "ucrt64/bin/libquadmath-0.dll",
+            "sha256": "802010365378b7421a7c3d61dabf2a46d8a3c8b71950ddeb4b5fefb32f117f4c"
+          },
+          {
+            "path": "ucrt64/share/licenses/libquadmath/COPYING.LIB",
+            "sha256": "32434afcc8666ba060e111d715bfdb6c2d5dd8a35fa4d3ab8ad67d8f850d2f2b"
+          }
+        ]
+      },
+      {
+        "name": "mingw-w64-ucrt-x86_64-termcap",
+        "metadata_source": "https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-termcap",
+        "archive_source": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-termcap-1.3.1-8-any.pkg.tar.zst",
+        "sha256": "c7891143e252568d8d46df72b3aefea932f4166771e17f22317218d7dd2af23c",
+        "bytes": 19274,
+        "files": [
+          {
+            "path": "ucrt64/bin/libtermcap-0.dll",
+            "sha256": "333dc8b2bbe1ebe06192b2b326a1d9e7cb9370cfd0f37c6b1b76d52839ec62b3"
+          },
+          {
+            "path": "ucrt64/share/licenses/termcap/LICENSE",
+            "sha256": "32b1062f7da84967e7019d01ab805935caa7ab7321a7ced0e30ebe75e5df1670"
+          }
+        ]
+      },
+      {
+        "name": "mingw-w64-ucrt-x86_64-libgcc",
+        "metadata_source": "https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-libgcc",
+        "archive_source": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-libgcc-16.2.0-6-any.pkg.tar.zst",
+        "sha256": "80b2497f019977dd9528b1abc8621b1328a0115ab1f724047ccbb56bf323f11d",
+        "bytes": 77191,
+        "files": [
+          {
+            "path": "ucrt64/bin/libgcc_s_seh-1.dll",
+            "sha256": "791ebf66e99c7c1b4ed3666468cec45a0172b4c8942ac6c84c3e9cab3e1b5270"
+          },
+          {
+            "path": "ucrt64/share/licenses/libgcc/COPYING.RUNTIME",
+            "sha256": "9d6b43ce4d8de0c878bf16b54d8e7a10d9bd42b75178153e3af6a815bdc90f74"
+          },
+          {
+            "path": "ucrt64/share/licenses/libgcc/COPYING3",
+            "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+          }
+        ]
+      },
+      {
+        "name": "mingw-w64-ucrt-x86_64-libstdc++",
+        "metadata_source": "https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-libstdc++",
+        "archive_source": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-libstdc%2B%2B-16.2.0-6-any.pkg.tar.zst",
+        "sha256": "33c5e58a85a538cf843a8672991cce591f0231d66da3b66a57629712d64be17f",
+        "bytes": 795910,
+        "files": [
+          {
+            "path": "ucrt64/bin/libstdc++-6.dll",
+            "sha256": "4e4822dc4aaa99383f581dae7ab9464ae89346c5ca742f7efbcdebe20b0fe7b5"
+          },
+          {
+            "path": "ucrt64/share/licenses/libstdc++/COPYING.RUNTIME",
+            "sha256": "9d6b43ce4d8de0c878bf16b54d8e7a10d9bd42b75178153e3af6a815bdc90f74"
+          },
+          {
+            "path": "ucrt64/share/licenses/libstdc++/COPYING3",
+            "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+          }
+        ]
+      },
+      {
+        "name": "mingw-w64-ucrt-x86_64-tzdata",
+        "metadata_source": "https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-tzdata",
+        "archive_source": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-tzdata-2026f-1-any.pkg.tar.zst",
+        "sha256": "dd8af2f770b3241d8c299343c12cd4d7e3b94c47195608158d28788a01575323",
+        "bytes": 225917,
+        "files": [
+          {
+            "path": "ucrt64/share/licenses/tzdata/LICENSE",
+            "sha256": "0613408568889f5739e5ae252b722a2659c02002839ad970a63dc5e9174b27cf"
+          }
+        ]
+      }
+    ],
+    "notes": "Runtime-only isolated extraction; no package scripts or global configuration changes."
+  },
+  "results": [
+    {
+      "tool_paths": {
+        "iverilog": "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-iverilog-runtime\\ucrt64\\bin\\iverilog.exe",
+        "vvp": "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-iverilog-runtime\\ucrt64\\bin\\vvp.exe"
+      },
+      "parameters": {
+        "FRAME_WIDTH": 4,
+        "FRAME_HEIGHT": 3,
+        "FIFO_DEPTH": 1
+      },
+      "compile_command": [
+        "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-iverilog-runtime\\ucrt64\\bin\\iverilog.exe",
+        "-g2012",
+        "-Wall",
+        "-s",
+        "tb_capture_stream",
+        "-o",
+        "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-rtl-urbgmasj\\tb_capture_stream.vvp",
+        "-Ptb_capture_stream.FRAME_WIDTH=4",
+        "-Ptb_capture_stream.FRAME_HEIGHT=3",
+        "-Ptb_capture_stream.FIFO_DEPTH=1",
+        "C:\\Users\\derri\\Documents\\Codex\\2026-11-05\\task\\fpga\\rtl\\hf_capture_stream.sv",
+        "C:\\Users\\derri\\Documents\\Codex\\2026-11-05\\task\\fpga\\testbench\\tb_capture_stream.sv"
+      ],
+      "compile_returncode": 0,
+      "compile_stdout": "",
+      "compile_stderr": "",
+      "stdout": "HF_RTL_PASS width=4 height=3 depth=1 completions=33 accepted=376 emitted=375 full_exchanges=28\nC:\\Users\\derri\\Documents\\Codex\\2026-11-05\\task\\fpga\\testbench\\tb_capture_stream.sv:230: $finish called at 8740000 (1ps)\n",
+      "stderr": "",
+      "run_command": [
+        "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-iverilog-runtime\\ucrt64\\bin\\vvp.exe",
+        "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-rtl-urbgmasj\\tb_capture_stream.vvp"
+      ],
+      "run_returncode": 0,
+      "tool_versions": {
+        "iverilog": "Icarus Verilog version 13.0 (stable) (v13_0)",
+        "vvp": "Icarus Verilog runtime version 13.0 (stable) (v13_0)"
+      },
+      "tool_executable_sha256": {
+        "iverilog": "25e1ba02e72f58d9d484bc5457d69a6b179d22d86bdf5ba5d6f9f0d4fe620bbf",
+        "vvp": "f0775603e1f1bcf1b2dea16dff963a4b7d71b7b33d5bbe23d2b01ff5b2304e09"
+      },
+      "toolchain_manifest_status": "selected_executables_verified",
+      "toolchain_manifest_verification": {
+        "manifest_path": "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-iverilog-runtime\\toolchain-manifest.json",
+        "manifest_sha256": "208012c8238b99e8d477e46126111ebc4d2ae7c9803b14655b434df084645281",
+        "scope": "selected compiler/runtime executable files only",
+        "executables": {
+          "iverilog": {
+            "path": "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-iverilog-runtime\\ucrt64\\bin\\iverilog.exe",
+            "sha256": "25e1ba02e72f58d9d484bc5457d69a6b179d22d86bdf5ba5d6f9f0d4fe620bbf",
+            "manifest_relative_path": "ucrt64/bin/iverilog.exe",
+            "package": "mingw-w64-ucrt-x86_64-iverilog"
+          },
+          "vvp": {
+            "path": "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-iverilog-runtime\\ucrt64\\bin\\vvp.exe",
+            "sha256": "f0775603e1f1bcf1b2dea16dff963a4b7d71b7b33d5bbe23d2b01ff5b2304e09",
+            "manifest_relative_path": "ucrt64/bin/vvp.exe",
+            "package": "mingw-w64-ucrt-x86_64-iverilog"
+          }
+        }
+      }
+    },
+    {
+      "tool_paths": {
+        "iverilog": "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-iverilog-runtime\\ucrt64\\bin\\iverilog.exe",
+        "vvp": "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-iverilog-runtime\\ucrt64\\bin\\vvp.exe"
+      },
+      "parameters": {
+        "FRAME_WIDTH": 4,
+        "FRAME_HEIGHT": 3,
+        "FIFO_DEPTH": 3
+      },
+      "compile_command": [
+        "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-iverilog-runtime\\ucrt64\\bin\\iverilog.exe",
+        "-g2012",
+        "-Wall",
+        "-s",
+        "tb_capture_stream",
+        "-o",
+        "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-rtl-mltryvfh\\tb_capture_stream.vvp",
+        "-Ptb_capture_stream.FRAME_WIDTH=4",
+        "-Ptb_capture_stream.FRAME_HEIGHT=3",
+        "-Ptb_capture_stream.FIFO_DEPTH=3",
+        "C:\\Users\\derri\\Documents\\Codex\\2026-11-05\\task\\fpga\\rtl\\hf_capture_stream.sv",
+        "C:\\Users\\derri\\Documents\\Codex\\2026-11-05\\task\\fpga\\testbench\\tb_capture_stream.sv"
+      ],
+      "compile_returncode": 0,
+      "compile_stdout": "",
+      "compile_stderr": "",
+      "stdout": "HF_RTL_PASS width=4 height=3 depth=3 completions=33 accepted=378 emitted=377 full_exchanges=2\nC:\\Users\\derri\\Documents\\Codex\\2026-11-05\\task\\fpga\\testbench\\tb_capture_stream.sv:230: $finish called at 8780000 (1ps)\n",
+      "stderr": "",
+      "run_command": [
+        "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-iverilog-runtime\\ucrt64\\bin\\vvp.exe",
+        "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-rtl-mltryvfh\\tb_capture_stream.vvp"
+      ],
+      "run_returncode": 0,
+      "tool_versions": {
+        "iverilog": "Icarus Verilog version 13.0 (stable) (v13_0)",
+        "vvp": "Icarus Verilog runtime version 13.0 (stable) (v13_0)"
+      },
+      "tool_executable_sha256": {
+        "iverilog": "25e1ba02e72f58d9d484bc5457d69a6b179d22d86bdf5ba5d6f9f0d4fe620bbf",
+        "vvp": "f0775603e1f1bcf1b2dea16dff963a4b7d71b7b33d5bbe23d2b01ff5b2304e09"
+      },
+      "toolchain_manifest_status": "selected_executables_verified",
+      "toolchain_manifest_verification": {
+        "manifest_path": "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-iverilog-runtime\\toolchain-manifest.json",
+        "manifest_sha256": "208012c8238b99e8d477e46126111ebc4d2ae7c9803b14655b434df084645281",
+        "scope": "selected compiler/runtime executable files only",
+        "executables": {
+          "iverilog": {
+            "path": "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-iverilog-runtime\\ucrt64\\bin\\iverilog.exe",
+            "sha256": "25e1ba02e72f58d9d484bc5457d69a6b179d22d86bdf5ba5d6f9f0d4fe620bbf",
+            "manifest_relative_path": "ucrt64/bin/iverilog.exe",
+            "package": "mingw-w64-ucrt-x86_64-iverilog"
+          },
+          "vvp": {
+            "path": "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-iverilog-runtime\\ucrt64\\bin\\vvp.exe",
+            "sha256": "f0775603e1f1bcf1b2dea16dff963a4b7d71b7b33d5bbe23d2b01ff5b2304e09",
+            "manifest_relative_path": "ucrt64/bin/vvp.exe",
+            "package": "mingw-w64-ucrt-x86_64-iverilog"
+          }
+        }
+      }
+    },
+    {
+      "tool_paths": {
+        "iverilog": "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-iverilog-runtime\\ucrt64\\bin\\iverilog.exe",
+        "vvp": "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-iverilog-runtime\\ucrt64\\bin\\vvp.exe"
+      },
+      "parameters": {
+        "FRAME_WIDTH": 4,
+        "FRAME_HEIGHT": 3,
+        "FIFO_DEPTH": 4
+      },
+      "compile_command": [
+        "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-iverilog-runtime\\ucrt64\\bin\\iverilog.exe",
+        "-g2012",
+        "-Wall",
+        "-s",
+        "tb_capture_stream",
+        "-o",
+        "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-rtl-441n48na\\tb_capture_stream.vvp",
+        "-Ptb_capture_stream.FRAME_WIDTH=4",
+        "-Ptb_capture_stream.FRAME_HEIGHT=3",
+        "-Ptb_capture_stream.FIFO_DEPTH=4",
+        "C:\\Users\\derri\\Documents\\Codex\\2026-11-05\\task\\fpga\\rtl\\hf_capture_stream.sv",
+        "C:\\Users\\derri\\Documents\\Codex\\2026-11-05\\task\\fpga\\testbench\\tb_capture_stream.sv"
+      ],
+      "compile_returncode": 0,
+      "compile_stdout": "",
+      "compile_stderr": "",
+      "stdout": "HF_RTL_PASS width=4 height=3 depth=4 completions=33 accepted=379 emitted=378 full_exchanges=2\nC:\\Users\\derri\\Documents\\Codex\\2026-11-05\\task\\fpga\\testbench\\tb_capture_stream.sv:230: $finish called at 8820000 (1ps)\n",
+      "stderr": "",
+      "run_command": [
+        "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-iverilog-runtime\\ucrt64\\bin\\vvp.exe",
+        "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-rtl-441n48na\\tb_capture_stream.vvp"
+      ],
+      "run_returncode": 0,
+      "tool_versions": {
+        "iverilog": "Icarus Verilog version 13.0 (stable) (v13_0)",
+        "vvp": "Icarus Verilog runtime version 13.0 (stable) (v13_0)"
+      },
+      "tool_executable_sha256": {
+        "iverilog": "25e1ba02e72f58d9d484bc5457d69a6b179d22d86bdf5ba5d6f9f0d4fe620bbf",
+        "vvp": "f0775603e1f1bcf1b2dea16dff963a4b7d71b7b33d5bbe23d2b01ff5b2304e09"
+      },
+      "toolchain_manifest_status": "selected_executables_verified",
+      "toolchain_manifest_verification": {
+        "manifest_path": "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-iverilog-runtime\\toolchain-manifest.json",
+        "manifest_sha256": "208012c8238b99e8d477e46126111ebc4d2ae7c9803b14655b434df084645281",
+        "scope": "selected compiler/runtime executable files only",
+        "executables": {
+          "iverilog": {
+            "path": "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-iverilog-runtime\\ucrt64\\bin\\iverilog.exe",
+            "sha256": "25e1ba02e72f58d9d484bc5457d69a6b179d22d86bdf5ba5d6f9f0d4fe620bbf",
+            "manifest_relative_path": "ucrt64/bin/iverilog.exe",
+            "package": "mingw-w64-ucrt-x86_64-iverilog"
+          },
+          "vvp": {
+            "path": "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-iverilog-runtime\\ucrt64\\bin\\vvp.exe",
+            "sha256": "f0775603e1f1bcf1b2dea16dff963a4b7d71b7b33d5bbe23d2b01ff5b2304e09",
+            "manifest_relative_path": "ucrt64/bin/vvp.exe",
+            "package": "mingw-w64-ucrt-x86_64-iverilog"
+          }
+        }
+      }
+    },
+    {
+      "tool_paths": {
+        "iverilog": "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-iverilog-runtime\\ucrt64\\bin\\iverilog.exe",
+        "vvp": "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-iverilog-runtime\\ucrt64\\bin\\vvp.exe"
+      },
+      "parameters": {
+        "FRAME_WIDTH": 1,
+        "FRAME_HEIGHT": 1,
+        "FIFO_DEPTH": 1
+      },
+      "compile_command": [
+        "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-iverilog-runtime\\ucrt64\\bin\\iverilog.exe",
+        "-g2012",
+        "-Wall",
+        "-s",
+        "tb_capture_stream",
+        "-o",
+        "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-rtl-4dmwi90w\\tb_capture_stream.vvp",
+        "-Ptb_capture_stream.FRAME_WIDTH=1",
+        "-Ptb_capture_stream.FRAME_HEIGHT=1",
+        "-Ptb_capture_stream.FIFO_DEPTH=1",
+        "C:\\Users\\derri\\Documents\\Codex\\2026-11-05\\task\\fpga\\rtl\\hf_capture_stream.sv",
+        "C:\\Users\\derri\\Documents\\Codex\\2026-11-05\\task\\fpga\\testbench\\tb_capture_stream.sv"
+      ],
+      "compile_returncode": 0,
+      "compile_stdout": "",
+      "compile_stderr": "",
+      "stdout": "HF_RTL_PASS width=1 height=1 depth=1 completions=18 accepted=20 emitted=19 full_exchanges=0\nC:\\Users\\derri\\Documents\\Codex\\2026-11-05\\task\\fpga\\testbench\\tb_capture_stream.sv:230: $finish called at 1170000 (1ps)\n",
+      "stderr": "",
+      "run_command": [
+        "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-iverilog-runtime\\ucrt64\\bin\\vvp.exe",
+        "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-rtl-4dmwi90w\\tb_capture_stream.vvp"
+      ],
+      "run_returncode": 0,
+      "tool_versions": {
+        "iverilog": "Icarus Verilog version 13.0 (stable) (v13_0)",
+        "vvp": "Icarus Verilog runtime version 13.0 (stable) (v13_0)"
+      },
+      "tool_executable_sha256": {
+        "iverilog": "25e1ba02e72f58d9d484bc5457d69a6b179d22d86bdf5ba5d6f9f0d4fe620bbf",
+        "vvp": "f0775603e1f1bcf1b2dea16dff963a4b7d71b7b33d5bbe23d2b01ff5b2304e09"
+      },
+      "toolchain_manifest_status": "selected_executables_verified",
+      "toolchain_manifest_verification": {
+        "manifest_path": "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-iverilog-runtime\\toolchain-manifest.json",
+        "manifest_sha256": "208012c8238b99e8d477e46126111ebc4d2ae7c9803b14655b434df084645281",
+        "scope": "selected compiler/runtime executable files only",
+        "executables": {
+          "iverilog": {
+            "path": "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-iverilog-runtime\\ucrt64\\bin\\iverilog.exe",
+            "sha256": "25e1ba02e72f58d9d484bc5457d69a6b179d22d86bdf5ba5d6f9f0d4fe620bbf",
+            "manifest_relative_path": "ucrt64/bin/iverilog.exe",
+            "package": "mingw-w64-ucrt-x86_64-iverilog"
+          },
+          "vvp": {
+            "path": "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-iverilog-runtime\\ucrt64\\bin\\vvp.exe",
+            "sha256": "f0775603e1f1bcf1b2dea16dff963a4b7d71b7b33d5bbe23d2b01ff5b2304e09",
+            "manifest_relative_path": "ucrt64/bin/vvp.exe",
+            "package": "mingw-w64-ucrt-x86_64-iverilog"
+          }
+        }
+      }
+    },
+    {
+      "tool_paths": {
+        "iverilog": "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-iverilog-runtime\\ucrt64\\bin\\iverilog.exe",
+        "vvp": "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-iverilog-runtime\\ucrt64\\bin\\vvp.exe"
+      },
+      "parameters": {
+        "FRAME_WIDTH": 1,
+        "FRAME_HEIGHT": 4,
+        "FIFO_DEPTH": 3
+      },
+      "compile_command": [
+        "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-iverilog-runtime\\ucrt64\\bin\\iverilog.exe",
+        "-g2012",
+        "-Wall",
+        "-s",
+        "tb_capture_stream",
+        "-o",
+        "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-rtl-85qz3e4g\\tb_capture_stream.vvp",
+        "-Ptb_capture_stream.FRAME_WIDTH=1",
+        "-Ptb_capture_stream.FRAME_HEIGHT=4",
+        "-Ptb_capture_stream.FIFO_DEPTH=3",
+        "C:\\Users\\derri\\Documents\\Codex\\2026-11-05\\task\\fpga\\rtl\\hf_capture_stream.sv",
+        "C:\\Users\\derri\\Documents\\Codex\\2026-11-05\\task\\fpga\\testbench\\tb_capture_stream.sv"
+      ],
+      "compile_returncode": 0,
+      "compile_stdout": "",
+      "compile_stderr": "",
+      "stdout": "HF_RTL_PASS width=1 height=4 depth=3 completions=18 accepted=77 emitted=76 full_exchanges=1\nC:\\Users\\derri\\Documents\\Codex\\2026-11-05\\task\\fpga\\testbench\\tb_capture_stream.sv:230: $finish called at 2360000 (1ps)\n",
+      "stderr": "",
+      "run_command": [
+        "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-iverilog-runtime\\ucrt64\\bin\\vvp.exe",
+        "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-rtl-85qz3e4g\\tb_capture_stream.vvp"
+      ],
+      "run_returncode": 0,
+      "tool_versions": {
+        "iverilog": "Icarus Verilog version 13.0 (stable) (v13_0)",
+        "vvp": "Icarus Verilog runtime version 13.0 (stable) (v13_0)"
+      },
+      "tool_executable_sha256": {
+        "iverilog": "25e1ba02e72f58d9d484bc5457d69a6b179d22d86bdf5ba5d6f9f0d4fe620bbf",
+        "vvp": "f0775603e1f1bcf1b2dea16dff963a4b7d71b7b33d5bbe23d2b01ff5b2304e09"
+      },
+      "toolchain_manifest_status": "selected_executables_verified",
+      "toolchain_manifest_verification": {
+        "manifest_path": "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-iverilog-runtime\\toolchain-manifest.json",
+        "manifest_sha256": "208012c8238b99e8d477e46126111ebc4d2ae7c9803b14655b434df084645281",
+        "scope": "selected compiler/runtime executable files only",
+        "executables": {
+          "iverilog": {
+            "path": "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-iverilog-runtime\\ucrt64\\bin\\iverilog.exe",
+            "sha256": "25e1ba02e72f58d9d484bc5457d69a6b179d22d86bdf5ba5d6f9f0d4fe620bbf",
+            "manifest_relative_path": "ucrt64/bin/iverilog.exe",
+            "package": "mingw-w64-ucrt-x86_64-iverilog"
+          },
+          "vvp": {
+            "path": "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-iverilog-runtime\\ucrt64\\bin\\vvp.exe",
+            "sha256": "f0775603e1f1bcf1b2dea16dff963a4b7d71b7b33d5bbe23d2b01ff5b2304e09",
+            "manifest_relative_path": "ucrt64/bin/vvp.exe",
+            "package": "mingw-w64-ucrt-x86_64-iverilog"
+          }
+        }
+      }
+    },
+    {
+      "tool_paths": {
+        "iverilog": "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-iverilog-runtime\\ucrt64\\bin\\iverilog.exe",
+        "vvp": "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-iverilog-runtime\\ucrt64\\bin\\vvp.exe"
+      },
+      "parameters": {
+        "FRAME_WIDTH": 4,
+        "FRAME_HEIGHT": 1,
+        "FIFO_DEPTH": 3
+      },
+      "compile_command": [
+        "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-iverilog-runtime\\ucrt64\\bin\\iverilog.exe",
+        "-g2012",
+        "-Wall",
+        "-s",
+        "tb_capture_stream",
+        "-o",
+        "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-rtl-cu_ulloo\\tb_capture_stream.vvp",
+        "-Ptb_capture_stream.FRAME_WIDTH=4",
+        "-Ptb_capture_stream.FRAME_HEIGHT=1",
+        "-Ptb_capture_stream.FIFO_DEPTH=3",
+        "C:\\Users\\derri\\Documents\\Codex\\2026-11-05\\task\\fpga\\rtl\\hf_capture_stream.sv",
+        "C:\\Users\\derri\\Documents\\Codex\\2026-11-05\\task\\fpga\\testbench\\tb_capture_stream.sv"
+      ],
+      "compile_returncode": 0,
+      "compile_stdout": "",
+      "compile_stderr": "",
+      "stdout": "HF_RTL_PASS width=4 height=1 depth=3 completions=33 accepted=130 emitted=129 full_exchanges=2\nC:\\Users\\derri\\Documents\\Codex\\2026-11-05\\task\\fpga\\testbench\\tb_capture_stream.sv:230: $finish called at 3850000 (1ps)\n",
+      "stderr": "",
+      "run_command": [
+        "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-iverilog-runtime\\ucrt64\\bin\\vvp.exe",
+        "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-rtl-cu_ulloo\\tb_capture_stream.vvp"
+      ],
+      "run_returncode": 0,
+      "tool_versions": {
+        "iverilog": "Icarus Verilog version 13.0 (stable) (v13_0)",
+        "vvp": "Icarus Verilog runtime version 13.0 (stable) (v13_0)"
+      },
+      "tool_executable_sha256": {
+        "iverilog": "25e1ba02e72f58d9d484bc5457d69a6b179d22d86bdf5ba5d6f9f0d4fe620bbf",
+        "vvp": "f0775603e1f1bcf1b2dea16dff963a4b7d71b7b33d5bbe23d2b01ff5b2304e09"
+      },
+      "toolchain_manifest_status": "selected_executables_verified",
+      "toolchain_manifest_verification": {
+        "manifest_path": "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-iverilog-runtime\\toolchain-manifest.json",
+        "manifest_sha256": "208012c8238b99e8d477e46126111ebc4d2ae7c9803b14655b434df084645281",
+        "scope": "selected compiler/runtime executable files only",
+        "executables": {
+          "iverilog": {
+            "path": "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-iverilog-runtime\\ucrt64\\bin\\iverilog.exe",
+            "sha256": "25e1ba02e72f58d9d484bc5457d69a6b179d22d86bdf5ba5d6f9f0d4fe620bbf",
+            "manifest_relative_path": "ucrt64/bin/iverilog.exe",
+            "package": "mingw-w64-ucrt-x86_64-iverilog"
+          },
+          "vvp": {
+            "path": "C:\\Users\\derri\\AppData\\Local\\Temp\\hf-iverilog-runtime\\ucrt64\\bin\\vvp.exe",
+            "sha256": "f0775603e1f1bcf1b2dea16dff963a4b7d71b7b33d5bbe23d2b01ff5b2304e09",
+            "manifest_relative_path": "ucrt64/bin/vvp.exe",
+            "package": "mingw-w64-ucrt-x86_64-iverilog"
+          }
+        }
+      }
+    }
+  ],
+  "limits": [
+    "Logical decoded-pixel stream only",
+    "No sensor PHY, RAW packing, CRC decoding, DMA, CDC, board timing or bitstream validation"
+  ]
+}

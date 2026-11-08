@@ -1,0 +1,54 @@
+{
+  "format": "hf-sim-linux-deployment-evidence-v1",
+  "passed": true,
+  "simulated": true,
+  "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.41",
+  "uid": 1000,
+  "first_bundle": {
+    "path": "/tmp/hf-sim-linux-deployment-ux03cg7p/release-a",
+    "package_id": "linux-smoke-a",
+    "architecture": "x86_64",
+    "manifest_sha256": "e4d81690b8313a4e418424eee038a9e9286d4e1ce016f03dcf34fa21089f4e8d",
+    "files": 40,
+    "bytes": 2021290
+  },
+  "second_bundle": {
+    "path": "/tmp/hf-sim-linux-deployment-ux03cg7p/release-b",
+    "package_id": "linux-smoke-b",
+    "architecture": "x86_64",
+    "manifest_sha256": "d0969bedc022ede16f01042c8738cfca264e9d99f8e389f1cd9486b92e52a95f",
+    "files": 40,
+    "bytes": 2021290
+  },
+  "foreground_http_capture": "complete",
+  "capture_id": "e83de0ee-d978-4b5a-8eea-695edeb41630",
+  "service_shutdown_restart": "persisted complete",
+  "packaged_offline_diagnostics": {
+    "ok": true,
+    "camera_bytes_unchanged": true
+  },
+  "trial_health": {
+    "format": "hf-sim-health-v1",
+    "passed": true,
+    "simulated": true,
+    "authority": "native",
+    "journal_healthy": true,
+    "capture_status": "complete",
+    "request_id": "5f91c8d9-2cd9-45b1-b973-d44a90bcd0c5",
+    "artifact_sha256": "04d42677916efea1d76a5b12ccd1b61895ade460efd9e7bdf69a482b1130e5f6",
+    "manifest_sha256": "d0969bedc022ede16f01042c8738cfca264e9d99f8e389f1cd9486b92e52a95f",
+    "native_binary_sha256": "67fd5d69c965b247ea0b3e5c47ce9b0aa9355591f3a5649b4dc36ce889d371d6",
+    "attempt_id": "2b443e13-d597-42cd-97fe-a302874860a5",
+    "scope": "host synthetic capture and restart persistence"
+  },
+  "offline_trial_confirmed": true,
+  "offline_budget_fallback": true,
+  "systemd_unit_verify": {
+    "available": true,
+    "executed": true,
+    "returncode": 0,
+    "stderr": ""
+  },
+  "systemd_service_enabled": false,
+  "scope": "temporary nonroot host simulator, no board boot/update"
+}

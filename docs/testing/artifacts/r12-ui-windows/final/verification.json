@@ -1,0 +1,81 @@
+{
+  "format": "DaOS-r12-windows-final-verification-v1",
+  "passed": true,
+  "tests": {
+    "run": 73,
+    "passed": 72,
+    "skipped": 1,
+    "failures": 0,
+    "errors": 0,
+    "seconds": 30.918,
+    "skip_reason": "Real FIFO regression requires POSIX os.mkfifo; Windows does not provide it."
+  },
+  "runtime": {
+    "machine": "AMD64",
+    "pyqt": "5.15.10",
+    "python": "3.12.7",
+    "qpa": "offscreen",
+    "qt": "5.15.2",
+    "release": "11",
+    "system": "Windows",
+    "ui_label": "Windows UI preview / AMD64"
+  },
+  "review_request_id": "c7e65142-3a00-4557-8952-8bff1be0c0b8",
+  "review_sha256": "f6fae50360f9df899983fa65f105bb555fe4e7b6c8d49c09bdfe83d5be51513d",
+  "gallery": {
+    "path": "build/DaOS_Camera_UI_R12_verified/UI-review.html",
+    "sha256": "987b9497fd854b74c0deaa6392c99fd4b224c068eea99bdd5a7db30020e63607",
+    "bytes": 310962
+  },
+  "source_sha256": {
+    "camera/camerad/calibration_context.py": "255b523780b84a6e6372966626931d67075ccf79c068f64bcb3ac9ff537cfe45",
+    "camera/camerad/native_client.py": "5dc77424d9aa71400c0cf0d476d9d8d3759d56570c4f8de742067bc6bf5fdbca",
+    "camera/pipeline/preview.py": "2f6df30c727173450473386698166ce9dcc0d7cd856499068f9a6fe24e2afbc7",
+    "simulation/bayer.py": "a1a02e82a13d07962fc05f168d2b89e5fb581981097a5611687a4760e101a810",
+    "ui/on-device/AppsWorkspace.qml": "c9f24557e0763201e13f7e3ab71de8b0fee3b5bce9779d954fd4df821ce723b9",
+    "ui/on-device/CameraMenu.qml": "4159f800f3adaed380575882dcfe0535193252ac16efdf11a248befac895dc5a",
+    "ui/on-device/CameraPlayback.qml": "719c854718667b38dccd772c07ed261b9937a39a5e289ffd391ca2244f47b1c7",
+    "ui/on-device/Console.qml": "8749bcc4aecb2688ece43998a6bc560268116f2fd76168b4baa7c39c7b0c15c9",
+    "ui/on-device/DaOSDock.qml": "996328e02cd43850ac7f22ffefbf85302cf2385f04332079f3508ef3994403a4",
+    "ui/on-device/DaOSIcon.qml": "2f7ef1d1c0e01ed7a40adbee747cf599a98bb29740c6d953d74bec9874275be8",
+    "ui/on-device/Main.qml": "b66b2f8bc828604c705ed63c79c13412bd15b2e5eac323e67982a1d9ca298dd9",
+    "ui/on-device/apps_controller.py": "49705efbcbc4de271d985fccac2ef897b668a9eb1b9015837f35e14a247cbd50",
+    "ui/on-device/controller.py": "e9121da43b61148e9263867bdf8fc1c896af2c91e93dd230830e0cec46231dab",
+    "ui/on-device/main.py": "6e36f57cd94bbe6a14850ba8a201d4a983c5b8913b41d9026bf25b99655b6f94",
+    "ui/on-device/retail-theme.json": "b3bb1de337f3a9059dcbde813ac12eadc72c6bb66c19d9e99bdf2b75fa2d45a4",
+    "ui/on-device/review_camera_first.py": "94f44a0ba32cb9f3389ca1fa9d7c2a4e14272459f56bb402dc3d1c310b392e8d",
+    "ui/on-device/review_capture.py": "29870c1842b55ae9400677a4f710cc345d9eca9a95de6df93e87004ab4d61e8c",
+    "ui/on-device/review_shell.py": "e714cddc68303be3a00b83cfc389fcc90f7802b4a95459805e68512af52100c0",
+    "ui/on-device/shell_model.py": "ce4e64d107c9833cc12cd395945c8c9d6dbeae6142535821eb09af6581948178"
+  },
+  "test_source_sha256": {
+    "tests/test_device_shell_model.py": "2625b1355cad603dc043911091600491b4f090ba03382c0c8ba6c3263167b8e3",
+    "tests/test_device_apps.py": "fe73c63622b14eca97e0582e9532d62338b0423049fa0d4cc977eeb7dbda73cb",
+    "tests/test_camera_first_ui.py": "7ca15add396ca0840d3affd00e2170116bce6a9c8b18fdd3e6f9ea167129a6b6",
+    "tests/test_device_ui.py": "6cd98a84868b680953538c1cd987e5cd91fd6dbbc4569f9b46ee6662cc2ed5dc"
+  },
+  "physical_camera_validated": false,
+  "bsd_image_updated": false,
+  "files": [
+    {
+      "file": "tests.txt",
+      "sha256": "99a8c602e90b4d46c9ca58e52db5f13e9102c967f587c263a92b919cf13852c3",
+      "bytes": 13254
+    },
+    {
+      "file": "review.txt",
+      "sha256": "38fa14e2567942c49e1861f240dade1a428fee4d9ab6e7f5474cfd4caa700470",
+      "bytes": 2169
+    },
+    {
+      "file": "short-lease-fixture.txt",
+      "sha256": "220704480e4d45bbe01f0a0489173ad88e3cf6c864f3bdb4981ca92efde39442",
+      "bytes": 432
+    },
+    {
+      "file": "review.json",
+      "sha256": "f6fae50360f9df899983fa65f105bb555fe4e7b6c8d49c09bdfe83d5be51513d",
+      "bytes": 6564
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "adb_sha256": "b4a6b455702684652cccf7b46258b29e653538904359a58fd4931cf3ef286b3f",
+  "cases": [
+    {
+      "args": [
+        "connect",
+        "127.0.0.1:57531"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "connected to 127.0.0.1:57531\n"
+    },
+    {
+      "args": [
+        "-s",
+        "127.0.0.1:57531",
+        "get-state"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "device\n"
+    },
+    {
+      "args": [
+        "-s",
+        "127.0.0.1:57531",
+        "shell",
+        "-T",
+        "printf DAOS_WINDOWS_ADB_OK; printf DAOS_STDERR_OK >&2; exit 7"
+      ],
+      "returncode": 7,
+      "stderr": "DAOS_STDERR_OK",
+      "stdout": "DAOS_WINDOWS_ADB_OK"
+    },
+    {
+      "args": [
+        "disconnect",
+        "127.0.0.1:57531"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "disconnected 127.0.0.1:57531\n"
+    }
+  ],
+  "format": "DaOS-Windows-ADB-stdio-integration-v1",
+  "key_fingerprint": "8c01edc4c8ef74efa01bd49592df237bb78348f4bc68234ce2918d3698dbb9fd",
+  "status": "success",
+  "transport": "Windows adb TCP to WSL loopback stdio adapter",
+  "usb_hardware_validated": false
+}

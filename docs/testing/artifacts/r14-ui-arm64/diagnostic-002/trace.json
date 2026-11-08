@@ -1,0 +1,734 @@
+{
+  "format": "DaOS-taskbar-animation-observation-v1",
+  "camera_shutter_actions": 0,
+  "source_before": {
+    "ui/on-device/Main.qml": "87ca675e806153c4f28f09275b2972e97a1e784507fd08b8efe6d9cf581bfeb4",
+    "ui/on-device/CameraTaskbar.qml": "3cf6838463f947b576e0dd6f58c975c8ab6a7fd6496aebdfa64594d2e2028efe",
+    "tests/test_camera_taskbar_ui.py": "7d7d7fcc725024925278eaa192f10ed44a6d7092976841ce9fe3efa144c516ca",
+    "ui/on-device/controller.py": "e9121da43b61148e9263867bdf8fc1c896af2c91e93dd230830e0cec46231dab",
+    "camera/pipeline/preview.py": "2f6df30c727173450473386698166ce9dcc0d7cd856499068f9a6fe24e2afbc7"
+  },
+  "phases": [
+    {
+      "name": "original_lookup_sampler",
+      "action_start": 1291.74522765,
+      "action_wall_ms": 1793929444024.77,
+      "end": 1295.398264034,
+      "samples": [
+        {
+          "entered": 1291.810135394,
+          "finished": 1293.624224434,
+          "progress": 1.0,
+          "width": 728.0,
+          "height": 485.94,
+          "animating": true,
+          "shutter_enabled": false
+        },
+        {
+          "entered": 1293.639284562,
+          "finished": 1293.66642173,
+          "progress": 1.0,
+          "width": 728.0,
+          "height": 485.94,
+          "animating": true,
+          "shutter_enabled": false
+        },
+        {
+          "entered": 1293.89838581,
+          "finished": 1295.375539506,
+          "progress": 0.0,
+          "width": 800.0,
+          "height": 534.0,
+          "animating": false,
+          "shutter_enabled": true
+        }
+      ],
+      "errors": [],
+      "image_intervals": [
+        {
+          "monotonic": 1291.810135394,
+          "url_changed": true
+        },
+        {
+          "monotonic": 1293.639284562,
+          "url_changed": true
+        }
+      ],
+      "python_middle_samples": 0
+    },
+    {
+      "name": "cached_item_sampler",
+      "action_start": 1297.099095906,
+      "action_wall_ms": 1793929449378.6396,
+      "end": 1297.641795922,
+      "samples": [
+        {
+          "entered": 1297.17155373,
+          "finished": 1297.171796226,
+          "progress": 1.0,
+          "width": 728.0,
+          "height": 485.94,
+          "animating": true,
+          "shutter_enabled": false
+        },
+        {
+          "entered": 1297.20961437,
+          "finished": 1297.20979805,
+          "progress": 1.0,
+          "width": 728.0,
+          "height": 485.94,
+          "animating": true,
+          "shutter_enabled": false
+        },
+        {
+          "entered": 1297.226746962,
+          "finished": 1297.226890466,
+          "progress": 0.9340285499624343,
+          "width": 732.7499444027047,
+          "height": 489.1105878888054,
+          "animating": true,
+          "shutter_enabled": false
+        },
+        {
+          "entered": 1297.57356421,
+          "finished": 1297.573783362,
+          "progress": 0.8765931630353118,
+          "width": 736.8852922614576,
+          "height": 491.87093258452296,
+          "animating": true,
+          "shutter_enabled": false
+        },
+        {
+          "entered": 1297.617030578,
+          "finished": 1297.617188066,
+          "progress": 0.0,
+          "width": 800.0,
+          "height": 534.0,
+          "animating": false,
+          "shutter_enabled": true
+        },
+        {
+          "entered": 1297.633557602,
+          "finished": 1297.63372237,
+          "progress": 0.0,
+          "width": 800.0,
+          "height": 534.0,
+          "animating": false,
+          "shutter_enabled": true
+        }
+      ],
+      "errors": [],
+      "image_intervals": [
+        {
+          "monotonic": 1297.17155373,
+          "url_changed": true
+        }
+      ],
+      "python_middle_samples": 2
+    }
+  ],
+  "diagnostic_not_acceptance": true,
+  "qml_clock": "Date.now wall milliseconds; compare relative intervals only",
+  "python_clock": "time.monotonic seconds",
+  "runtime": {
+    "system": "FreeBSD",
+    "machine": "arm64",
+    "qt": "5.15.19",
+    "pyqt": "5.15.11",
+    "python": "3.12.15"
+  },
+  "initial_painted_size": [
+    647.9200000000001,
+    485.94
+  ],
+  "window": {
+    "visible": true,
+    "exposed": true,
+    "active": true,
+    "qpa": "offscreen"
+  },
+  "probe_component": {
+    "status": 1,
+    "errors": []
+  },
+  "qml_events": [
+    {
+      "animating": false,
+      "imageStatus": 1,
+      "inset": 72.0,
+      "kind": "phaseStart",
+      "paintedHeight": 485.94,
+      "paintedWidth": 647.9200000000001,
+      "phase": "original_lookup_sampler",
+      "progress": 1.0,
+      "swappedFrames": 0,
+      "wallMs": 1793929444024.0
+    },
+    {
+      "animating": true,
+      "imageStatus": 1,
+      "inset": 72.0,
+      "kind": "frameSwapped",
+      "paintedHeight": 485.94,
+      "paintedWidth": 647.9200000000001,
+      "phase": "original_lookup_sampler",
+      "progress": 1.0,
+      "swappedFrames": 1,
+      "wallMs": 1793929444089.0
+    },
+    {
+      "animating": true,
+      "imageStatus": 2,
+      "inset": 72.0,
+      "kind": "frameSwapped",
+      "paintedHeight": 485.94,
+      "paintedWidth": 647.9200000000001,
+      "phase": "original_lookup_sampler",
+      "progress": 1.0,
+      "swappedFrames": 2,
+      "wallMs": 1793929445918.0
+    },
+    {
+      "animating": true,
+      "imageStatus": 2,
+      "inset": 0.0,
+      "kind": "progress",
+      "paintedHeight": 485.94,
+      "paintedWidth": 647.9200000000001,
+      "phase": "original_lookup_sampler",
+      "progress": 0.0,
+      "swappedFrames": 2,
+      "wallMs": 1793929445946.0
+    },
+    {
+      "animating": false,
+      "imageStatus": 1,
+      "inset": 0.0,
+      "kind": "frameSwapped",
+      "paintedHeight": 534.0,
+      "paintedWidth": 712.0,
+      "phase": "original_lookup_sampler",
+      "progress": 0.0,
+      "swappedFrames": 3,
+      "wallMs": 1793929447662.0
+    },
+    {
+      "animating": false,
+      "imageStatus": 1,
+      "inset": 0.0,
+      "kind": "phaseStart",
+      "paintedHeight": 534.0,
+      "paintedWidth": 712.0,
+      "phase": "setup_reveal",
+      "progress": 0.0,
+      "swappedFrames": 3,
+      "wallMs": 1793929447678.0
+    },
+    {
+      "animating": true,
+      "imageStatus": 2,
+      "inset": 0.0,
+      "kind": "frameSwapped",
+      "paintedHeight": 534.0,
+      "paintedWidth": 712.0,
+      "phase": "setup_reveal",
+      "progress": 0.0,
+      "swappedFrames": 4,
+      "wallMs": 1793929447705.0
+    },
+    {
+      "animating": true,
+      "imageStatus": 1,
+      "inset": 0.0,
+      "kind": "frameSwapped",
+      "paintedHeight": 534.0,
+      "paintedWidth": 712.0,
+      "phase": "setup_reveal",
+      "progress": 0.0,
+      "swappedFrames": 5,
+      "wallMs": 1793929447724.0
+    },
+    {
+      "animating": true,
+      "imageStatus": 1,
+      "inset": 2.0038827948910596,
+      "kind": "progress",
+      "paintedHeight": 532.6624082344102,
+      "paintedWidth": 710.2165443125471,
+      "phase": "setup_reveal",
+      "progress": 0.027831705484598047,
+      "swappedFrames": 5,
+      "wallMs": 1793929447726.0
+    },
+    {
+      "animating": true,
+      "imageStatus": 1,
+      "inset": 2.0038827948910596,
+      "kind": "frameSwapped",
+      "paintedHeight": 532.6624082344102,
+      "paintedWidth": 710.2165443125471,
+      "phase": "setup_reveal",
+      "progress": 0.027831705484598047,
+      "swappedFrames": 6,
+      "wallMs": 1793929447743.0
+    },
+    {
+      "animating": true,
+      "imageStatus": 1,
+      "inset": 6.139230653643877,
+      "kind": "progress",
+      "paintedHeight": 529.9020635386927,
+      "paintedWidth": 706.5360847182569,
+      "phase": "setup_reveal",
+      "progress": 0.08526709241172052,
+      "swappedFrames": 6,
+      "wallMs": 1793929447744.0
+    },
+    {
+      "animating": true,
+      "imageStatus": 1,
+      "inset": 6.139230653643877,
+      "kind": "frameSwapped",
+      "paintedHeight": 529.9020635386927,
+      "paintedWidth": 706.5360847182569,
+      "phase": "setup_reveal",
+      "progress": 0.08526709241172052,
+      "swappedFrames": 7,
+      "wallMs": 1793929447750.0
+    },
+    {
+      "animating": true,
+      "imageStatus": 1,
+      "inset": 8.504546957175055,
+      "kind": "progress",
+      "paintedHeight": 528.3232149060857,
+      "paintedWidth": 704.4309532081143,
+      "phase": "setup_reveal",
+      "progress": 0.11811870773854244,
+      "swappedFrames": 7,
+      "wallMs": 1793929447751.0
+    },
+    {
+      "animating": true,
+      "imageStatus": 1,
+      "inset": 8.504546957175055,
+      "kind": "frameSwapped",
+      "paintedHeight": 528.3232149060857,
+      "paintedWidth": 704.4309532081143,
+      "phase": "setup_reveal",
+      "progress": 0.11811870773854244,
+      "swappedFrames": 8,
+      "wallMs": 1793929447757.0
+    },
+    {
+      "animating": true,
+      "imageStatus": 1,
+      "inset": 8.504546957175055,
+      "kind": "frameSwapped",
+      "paintedHeight": 528.3232149060857,
+      "paintedWidth": 704.4309532081143,
+      "phase": "setup_reveal",
+      "progress": 0.11811870773854244,
+      "swappedFrames": 9,
+      "wallMs": 1793929447763.0
+    },
+    {
+      "animating": true,
+      "imageStatus": 1,
+      "inset": 17.20361833208114,
+      "kind": "progress",
+      "paintedHeight": 522.5165847633358,
+      "paintedWidth": 696.6887796844478,
+      "phase": "setup_reveal",
+      "progress": 0.238939143501127,
+      "swappedFrames": 9,
+      "wallMs": 1793929447770.0
+    },
+    {
+      "animating": true,
+      "imageStatus": 1,
+      "inset": 17.20361833208114,
+      "kind": "frameSwapped",
+      "paintedHeight": 522.5165847633358,
+      "paintedWidth": 696.6887796844478,
+      "phase": "setup_reveal",
+      "progress": 0.238939143501127,
+      "swappedFrames": 10,
+      "wallMs": 1793929447790.0
+    },
+    {
+      "animating": true,
+      "imageStatus": 1,
+      "inset": 33.13414575507138,
+      "kind": "progress",
+      "paintedHeight": 511.88295770848987,
+      "paintedWidth": 682.5106102779865,
+      "phase": "setup_reveal",
+      "progress": 0.46019646882043586,
+      "swappedFrames": 10,
+      "wallMs": 1793929447791.0
+    },
+    {
+      "animating": true,
+      "imageStatus": 1,
+      "inset": 33.13414575507138,
+      "kind": "frameSwapped",
+      "paintedHeight": 511.88295770848987,
+      "paintedWidth": 682.5106102779865,
+      "phase": "setup_reveal",
+      "progress": 0.46019646882043586,
+      "swappedFrames": 11,
+      "wallMs": 1793929447803.0
+    },
+    {
+      "animating": true,
+      "imageStatus": 1,
+      "inset": 45.75600000000001,
+      "kind": "progress",
+      "paintedHeight": 503.45787,
+      "paintedWidth": 671.2771600000001,
+      "phase": "setup_reveal",
+      "progress": 0.6355000000000001,
+      "swappedFrames": 11,
+      "wallMs": 1793929447804.0
+    },
+    {
+      "animating": true,
+      "imageStatus": 1,
+      "inset": 45.75600000000001,
+      "kind": "frameSwapped",
+      "paintedHeight": 503.45787,
+      "paintedWidth": 671.2771600000001,
+      "phase": "setup_reveal",
+      "progress": 0.6355000000000001,
+      "swappedFrames": 12,
+      "wallMs": 1793929447817.0
+    },
+    {
+      "animating": true,
+      "imageStatus": 1,
+      "inset": 55.38955672426747,
+      "kind": "progress",
+      "paintedHeight": 497.0274708865515,
+      "paintedWidth": 662.703294515402,
+      "phase": "setup_reveal",
+      "progress": 0.7692993989481594,
+      "swappedFrames": 12,
+      "wallMs": 1793929447818.0
+    },
+    {
+      "animating": true,
+      "imageStatus": 1,
+      "inset": 55.38955672426747,
+      "kind": "frameSwapped",
+      "paintedHeight": 497.0274708865515,
+      "paintedWidth": 662.703294515402,
+      "phase": "setup_reveal",
+      "progress": 0.7692993989481594,
+      "swappedFrames": 13,
+      "wallMs": 1793929447835.0
+    },
+    {
+      "animating": true,
+      "imageStatus": 1,
+      "inset": 63.865163035311795,
+      "kind": "progress",
+      "paintedHeight": 491.3700036739294,
+      "paintedWidth": 655.1600048985724,
+      "phase": "setup_reveal",
+      "progress": 0.8870161532682194,
+      "swappedFrames": 13,
+      "wallMs": 1793929447836.0
+    },
+    {
+      "animating": true,
+      "imageStatus": 1,
+      "inset": 63.865163035311795,
+      "kind": "frameSwapped",
+      "paintedHeight": 491.3700036739294,
+      "paintedWidth": 655.1600048985724,
+      "phase": "setup_reveal",
+      "progress": 0.8870161532682194,
+      "swappedFrames": 14,
+      "wallMs": 1793929447841.0
+    },
+    {
+      "animating": true,
+      "imageStatus": 1,
+      "inset": 63.865163035311795,
+      "kind": "frameSwapped",
+      "paintedHeight": 491.3700036739294,
+      "paintedWidth": 655.1600048985724,
+      "phase": "setup_reveal",
+      "progress": 0.8870161532682194,
+      "swappedFrames": 15,
+      "wallMs": 1793929447851.0
+    },
+    {
+      "animating": true,
+      "imageStatus": 1,
+      "inset": 68.41214425244178,
+      "kind": "progress",
+      "paintedHeight": 488.33489371149517,
+      "paintedWidth": 651.113191615327,
+      "phase": "setup_reveal",
+      "progress": 0.9501686701728024,
+      "swappedFrames": 15,
+      "wallMs": 1793929447852.0
+    },
+    {
+      "animating": true,
+      "imageStatus": 1,
+      "inset": 68.41214425244178,
+      "kind": "frameSwapped",
+      "paintedHeight": 488.33489371149517,
+      "paintedWidth": 651.113191615327,
+      "phase": "setup_reveal",
+      "progress": 0.9501686701728024,
+      "swappedFrames": 16,
+      "wallMs": 1793929447868.0
+    },
+    {
+      "animating": true,
+      "imageStatus": 1,
+      "inset": 70.93693163035311,
+      "kind": "progress",
+      "paintedHeight": 486.64959813673926,
+      "paintedWidth": 648.8661308489857,
+      "phase": "setup_reveal",
+      "progress": 0.9852351615326822,
+      "swappedFrames": 16,
+      "wallMs": 1793929447869.0
+    },
+    {
+      "animating": true,
+      "imageStatus": 1,
+      "inset": 70.93693163035311,
+      "kind": "frameSwapped",
+      "paintedHeight": 486.64959813673926,
+      "paintedWidth": 648.8661308489857,
+      "phase": "setup_reveal",
+      "progress": 0.9852351615326822,
+      "swappedFrames": 17,
+      "wallMs": 1793929447874.0
+    },
+    {
+      "animating": true,
+      "imageStatus": 1,
+      "inset": 71.74951465063862,
+      "kind": "progress",
+      "paintedHeight": 486.10719897069873,
+      "paintedWidth": 648.1429319609316,
+      "phase": "setup_reveal",
+      "progress": 0.9965210368144253,
+      "swappedFrames": 17,
+      "wallMs": 1793929447882.0
+    },
+    {
+      "animating": true,
+      "imageStatus": 1,
+      "inset": 71.74951465063862,
+      "kind": "frameSwapped",
+      "paintedHeight": 486.10719897069873,
+      "paintedWidth": 648.1429319609316,
+      "phase": "setup_reveal",
+      "progress": 0.9965210368144253,
+      "swappedFrames": 18,
+      "wallMs": 1793929447887.0
+    },
+    {
+      "animating": true,
+      "imageStatus": 1,
+      "inset": 71.74951465063862,
+      "kind": "frameSwapped",
+      "paintedHeight": 486.10719897069873,
+      "paintedWidth": 648.1429319609316,
+      "phase": "setup_reveal",
+      "progress": 0.9965210368144253,
+      "swappedFrames": 19,
+      "wallMs": 1793929447893.0
+    },
+    {
+      "animating": true,
+      "imageStatus": 1,
+      "inset": 71.98028249436514,
+      "kind": "progress",
+      "paintedHeight": 485.9531614350112,
+      "paintedWidth": 647.9375485800149,
+      "phase": "setup_reveal",
+      "progress": 0.9997261457550713,
+      "swappedFrames": 19,
+      "wallMs": 1793929447894.0
+    },
+    {
+      "animating": true,
+      "imageStatus": 1,
+      "inset": 71.98028249436514,
+      "kind": "frameSwapped",
+      "paintedHeight": 485.9531614350112,
+      "paintedWidth": 647.9375485800149,
+      "phase": "setup_reveal",
+      "progress": 0.9997261457550713,
+      "swappedFrames": 20,
+      "wallMs": 1793929447912.0
+    },
+    {
+      "animating": true,
+      "imageStatus": 1,
+      "inset": 72.0,
+      "kind": "progress",
+      "paintedHeight": 485.94,
+      "paintedWidth": 647.9200000000001,
+      "phase": "setup_reveal",
+      "progress": 1.0,
+      "swappedFrames": 20,
+      "wallMs": 1793929447912.0
+    },
+    {
+      "animating": false,
+      "imageStatus": 1,
+      "inset": 72.0,
+      "kind": "frameSwapped",
+      "paintedHeight": 485.94,
+      "paintedWidth": 647.9200000000001,
+      "phase": "setup_reveal",
+      "progress": 1.0,
+      "swappedFrames": 21,
+      "wallMs": 1793929447930.0
+    },
+    {
+      "animating": false,
+      "imageStatus": 1,
+      "inset": 72.0,
+      "kind": "phaseStart",
+      "paintedHeight": 485.94,
+      "paintedWidth": 647.9200000000001,
+      "phase": "cached_item_sampler",
+      "progress": 1.0,
+      "swappedFrames": 21,
+      "wallMs": 1793929449377.0
+    },
+    {
+      "animating": true,
+      "imageStatus": 2,
+      "inset": 72.0,
+      "kind": "frameSwapped",
+      "paintedHeight": 485.94,
+      "paintedWidth": 647.9200000000001,
+      "phase": "cached_item_sampler",
+      "progress": 1.0,
+      "swappedFrames": 22,
+      "wallMs": 1793929449459.0
+    },
+    {
+      "animating": true,
+      "imageStatus": 1,
+      "inset": 72.0,
+      "kind": "frameSwapped",
+      "paintedHeight": 485.94,
+      "paintedWidth": 647.9200000000001,
+      "phase": "cached_item_sampler",
+      "progress": 1.0,
+      "swappedFrames": 23,
+      "wallMs": 1793929449493.0
+    },
+    {
+      "animating": true,
+      "imageStatus": 1,
+      "inset": 67.25005559729527,
+      "kind": "progress",
+      "paintedHeight": 489.1105878888054,
+      "paintedWidth": 652.1474505184073,
+      "phase": "cached_item_sampler",
+      "progress": 0.9340285499624343,
+      "swappedFrames": 23,
+      "wallMs": 1793929449494.0
+    },
+    {
+      "animating": true,
+      "imageStatus": 1,
+      "inset": 63.11470773854245,
+      "kind": "progress",
+      "paintedHeight": 491.87093258452296,
+      "paintedWidth": 655.8279101126973,
+      "phase": "cached_item_sampler",
+      "progress": 0.8765931630353118,
+      "swappedFrames": 23,
+      "wallMs": 1793929449507.0
+    },
+    {
+      "animating": true,
+      "imageStatus": 1,
+      "inset": 63.11470773854245,
+      "kind": "frameSwapped",
+      "paintedHeight": 491.87093258452296,
+      "paintedWidth": 655.8279101126973,
+      "phase": "cached_item_sampler",
+      "progress": 0.8765931630353118,
+      "swappedFrames": 24,
+      "wallMs": 1793929449544.0
+    },
+    {
+      "animating": true,
+      "imageStatus": 1,
+      "inset": 0.0,
+      "kind": "progress",
+      "paintedHeight": 534.0,
+      "paintedWidth": 712.0,
+      "phase": "cached_item_sampler",
+      "progress": 0.0,
+      "swappedFrames": 24,
+      "wallMs": 1793929449854.0
+    },
+    {
+      "animating": false,
+      "imageStatus": 1,
+      "inset": 0.0,
+      "kind": "frameSwapped",
+      "paintedHeight": 534.0,
+      "paintedWidth": 712.0,
+      "phase": "cached_item_sampler",
+      "progress": 0.0,
+      "swappedFrames": 25,
+      "wallMs": 1793929449873.0
+    },
+    {
+      "animating": false,
+      "imageStatus": 1,
+      "inset": 0.0,
+      "kind": "frameSwapped",
+      "paintedHeight": 534.0,
+      "paintedWidth": 712.0,
+      "phase": "cached_item_sampler",
+      "progress": 0.0,
+      "swappedFrames": 26,
+      "wallMs": 1793929449897.0
+    }
+  ],
+  "qml_screenshots": [
+    {
+      "callbackProgress": 0.8765931630353118,
+      "file": "qml-cached-middle.png",
+      "requestProgress": 0.8765931630353118,
+      "saved": true,
+      "wallMs": 1793929449846.0
+    }
+  ],
+  "capture_rows": [],
+  "request_id": "",
+  "settings_unchanged": true,
+  "qml_warnings": [],
+  "complete": true,
+  "source_after": {
+    "ui/on-device/Main.qml": "87ca675e806153c4f28f09275b2972e97a1e784507fd08b8efe6d9cf581bfeb4",
+    "ui/on-device/CameraTaskbar.qml": "3cf6838463f947b576e0dd6f58c975c8ab6a7fd6496aebdfa64594d2e2028efe",
+    "tests/test_camera_taskbar_ui.py": "7d7d7fcc725024925278eaa192f10ed44a6d7092976841ce9fe3efa144c516ca",
+    "ui/on-device/controller.py": "e9121da43b61148e9263867bdf8fc1c896af2c91e93dd230830e0cec46231dab",
+    "camera/pipeline/preview.py": "2f6df30c727173450473386698166ce9dcc0d7cd856499068f9a6fe24e2afbc7"
+  },
+  "source_unchanged": true,
+  "seconds": 11.133244479999803,
+  "screenshot_sha256": {
+    "qml-cached-middle.png": "be206b02639974a4538846c611b100250ec550d0f115eac6cef8cf1ca3f88e90"
+  }
+}

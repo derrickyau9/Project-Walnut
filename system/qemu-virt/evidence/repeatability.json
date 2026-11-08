@@ -1,0 +1,17 @@
+{
+  "format": "hf-qemu-virt-repeatability-v1",
+  "passed": true,
+  "scope": "two fresh builds with identical source/native inputs and installed toolchain",
+  "artifacts": {
+    "init": {
+      "bytes": 783904,
+      "sha256": "451154dad2e6e285a650242a2b967dd1603d7ea6982104f3327235c132830966",
+      "equal": true
+    },
+    "initramfs.cpio.gz": {
+      "bytes": 5427666,
+      "sha256": "cd4e805f34aa5342abe808e50702243f9620a97ac66003f35d60e22af127b3a8",
+      "equal": true
+    }
+  }
+}

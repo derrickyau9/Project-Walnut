@@ -1,0 +1,90 @@
+{
+  "format": "hf-static-arm64-package-evidence-v1",
+  "simulated": true,
+  "package": {
+    "format": "hf-static-arm64-sim-package-v1",
+    "package_id": "arm64-static-r6",
+    "architecture": "aarch64",
+    "simulated": true,
+    "project_rights": "pending",
+    "files": 50,
+    "bytes": 8053137,
+    "manifest_sha256": "0e7689c08c273763e7485045d57bfd6b08147c2db0bbe34370f67937ea0c8dcb",
+    "native_evidence_sha256": "d7949cd9dcaab52f054895b9b54755dec0d754d8eddf37e7248e411c5a2324ff"
+  },
+  "windows_target_package_tests": {
+    "run": 9,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "linux_target_package_tests": {
+    "run": 9,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "actual_stage_validation_passed": true,
+  "import_probe": {
+    "before_regular_markers": {
+      "camera": true,
+      "daos": false,
+      "simulation": false,
+      "system": false,
+      "tools": true
+    },
+    "final_release": {
+      "camera": true,
+      "daos": true,
+      "simulation": true,
+      "system": true,
+      "tools": true
+    }
+  },
+  "emulation_smoke": {
+    "format": "hf-static-arm64-package-emulation-v1",
+    "passed": true,
+    "simulated": true,
+    "mode": "host Python with explicit external QEMU user launcher",
+    "host_python_machine": "x86_64",
+    "native_arm_host_runtime_executed": false,
+    "physical_board_tested": false,
+    "package": {
+      "format": "hf-static-arm64-sim-package-v1",
+      "package_id": "arm64-static-r6",
+      "architecture": "aarch64",
+      "simulated": true,
+      "project_rights": "pending",
+      "files": 50,
+      "bytes": 8053137,
+      "manifest_sha256": "0e7689c08c273763e7485045d57bfd6b08147c2db0bbe34370f67937ea0c8dcb",
+      "native_evidence_sha256": "d7949cd9dcaab52f054895b9b54755dec0d754d8eddf37e7248e411c5a2324ff"
+    },
+    "wrong_host_refused_without_data_creation": true,
+    "packaged_imports_verified": true,
+    "pythonpath_removed_and_site_disabled": true,
+    "capture_status": "complete",
+    "request_id": "788ff521-4ca8-49b0-9e55-6e688761aa8a",
+    "retained_listing": true,
+    "thumbnail_sha256": "f057a27143d993c3ffce2366d9fa49634d60a412033afc5774b55d2c1d1f3e5a",
+    "export_sha256": "fe9e6ac7e667f3d4bddc020fc1e3f785d8a50c759e52efa72041f90b2d866fa4",
+    "export_bytes": 25662,
+    "restart_query_same_record": true,
+    "release_bytes_unchanged": true,
+    "emulator": "/usr/bin/qemu-aarch64",
+    "emulator_version": "qemu-aarch64 version 10.0.13 (Debian 1:10.0.13+ds-0+deb13u1)"
+  },
+  "native_source_inputs_unchanged": true,
+  "physical_board_tested": false,
+  "source_sha256": {
+    "tools/target_package.py": "b98c0ece1503a86da3d178df07ea957ea72d12ace488047997fbc2803b1b0452",
+    "system/arm64/runtime.py": "ecdd8b003a72e683420395fee8f6469512b06950fb30c18887bdd454129ba775",
+    "tests/test_target_package.py": "db65123a4b43ac13ff794e6f5984265dad1f0c54fed709e05a5293b478e1ec2f"
+  },
+  "limits": [
+    "Stage/validation and actual x86 host refusal tested.",
+    "Packaged server integration uses host Python and an external explicit QEMU user launcher.",
+    "The native ARM-host Python entry point was not executed on a physical board.",
+    "No emulator binaries/launchers are included in the release; project rights remain pending."
+  ]
+}

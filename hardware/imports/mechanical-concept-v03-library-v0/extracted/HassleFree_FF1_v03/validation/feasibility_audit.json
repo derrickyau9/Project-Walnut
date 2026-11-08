@@ -1,0 +1,205 @@
+{
+  "revision": "0.3",
+  "all_pairs": {
+    "E": {
+      "pair_count": 435,
+      "interferences": [],
+      "pass": true
+    },
+    "EF": {
+      "pair_count": 435,
+      "interferences": [],
+      "pass": true
+    }
+  },
+  "service_paths": [
+    {
+      "check": "Battery downward service",
+      "moving": [
+        "17_replaceable_battery_envelope"
+      ],
+      "delta_mm": [
+        0,
+        -110,
+        0
+      ],
+      "removed_first": [
+        "18_battery_service_door"
+      ],
+      "method": "Continuous union of swept per-solid AABBs; conservative sufficient test",
+      "interferences": [],
+      "pass": true
+    },
+    {
+      "check": "Storage outward service",
+      "moving": [
+        "19_removable_storage_envelope"
+      ],
+      "delta_mm": [
+        80,
+        0,
+        0
+      ],
+      "removed_first": [
+        "20_storage_service_door"
+      ],
+      "method": "Continuous union of swept per-solid AABBs; conservative sufficient test",
+      "interferences": [],
+      "pass": true
+    },
+    {
+      "check": "Sensor bridge rear service",
+      "moving": [
+        "27_removable_sensor_bridge",
+        "10_independent_sensor_carrier",
+        "11_sensor_package_placeholder",
+        "12_sensor_active_36x24",
+        "13_three_point_sensor_spacers"
+      ],
+      "delta_mm": [
+        0,
+        0,
+        -110
+      ],
+      "removed_first": [
+        "Rear cover/display/control caps",
+        "Control PCB, component envelopes, rails and spacers",
+        "Main processor-board envelope",
+        "Whole thermal module, including adjustable landing and clamp envelopes",
+        "All relevant wires and retaining hardware, currently unmodeled"
+      ],
+      "method": "Continuous exact Z sweep of reconstructed constant-section solids; reconstruction symmetric difference checked",
+      "reconstruction_checks": [
+        {
+          "part": "27_removable_sensor_bridge",
+          "symmetric_difference_mm3": 0
+        },
+        {
+          "part": "10_independent_sensor_carrier",
+          "symmetric_difference_mm3": 0
+        },
+        {
+          "part": "11_sensor_package_placeholder",
+          "symmetric_difference_mm3": 0
+        },
+        {
+          "part": "12_sensor_active_36x24",
+          "symmetric_difference_mm3": 0
+        },
+        {
+          "part": "13_three_point_sensor_spacers",
+          "symmetric_difference_mm3": 0
+        },
+        {
+          "part": "13_three_point_sensor_spacers",
+          "symmetric_difference_mm3": 0
+        },
+        {
+          "part": "13_three_point_sensor_spacers",
+          "symmetric_difference_mm3": 0
+        }
+      ],
+      "interferences": [],
+      "pass": true
+    },
+    {
+      "check": "Control PCB and rails rear service",
+      "moving": [
+        "16_control_board_provisional_envelope",
+        "26_control_board_component_envelopes",
+        "28_removable_control_mount_rails",
+        "29_control_board_mount_spacers"
+      ],
+      "delta_mm": [
+        0,
+        0,
+        -110
+      ],
+      "removed_first": [
+        "Rear cover/display/control caps",
+        "Unplug wires and release retaining hardware, currently unmodeled"
+      ],
+      "method": "Continuous exact Z sweep of verified constant-section modeled solids",
+      "reconstruction_checks": [
+        {
+          "part": "16_control_board_provisional_envelope",
+          "symmetric_difference_mm3": 0
+        },
+        {
+          "part": "26_control_board_component_envelopes",
+          "symmetric_difference_mm3": 0
+        },
+        {
+          "part": "26_control_board_component_envelopes",
+          "symmetric_difference_mm3": 0
+        },
+        {
+          "part": "26_control_board_component_envelopes",
+          "symmetric_difference_mm3": 0
+        },
+        {
+          "part": "28_removable_control_mount_rails",
+          "symmetric_difference_mm3": 0
+        },
+        {
+          "part": "28_removable_control_mount_rails",
+          "symmetric_difference_mm3": 0
+        },
+        {
+          "part": "29_control_board_mount_spacers",
+          "symmetric_difference_mm3": 0
+        },
+        {
+          "part": "29_control_board_mount_spacers",
+          "symmetric_difference_mm3": 0
+        },
+        {
+          "part": "29_control_board_mount_spacers",
+          "symmetric_difference_mm3": 0
+        },
+        {
+          "part": "29_control_board_mount_spacers",
+          "symmetric_difference_mm3": 0
+        }
+      ],
+      "interferences": [],
+      "pass": true
+    },
+    {
+      "check": "Whole thermal module rear service",
+      "moving": [
+        "14_heat_spreader_placeholder",
+        "32_thermal_adjustable_landing",
+        "33_thermal_clamp_screw_reservation",
+        "34_thermal_clamp_nut_reservation"
+      ],
+      "delta_mm": [
+        0,
+        0,
+        -110
+      ],
+      "removed_first": [
+        "Rear cover/display/control caps",
+        "Control electronics, rails and main-board envelope",
+        "Thermal mount retaining hardware and cables, currently unmodeled"
+      ],
+      "method": "Continuous conservative AABB sweeps of construction subparts; integral-bus reconstruction verified.",
+      "interferences": [],
+      "pass": true,
+      "bus_reconstruction_symmetric_difference_mm3": 0
+    }
+  ],
+  "sensor_placeholder_seat_area_mm2": 132.85840734639373,
+  "sensor_placeholder_to_thermal_module_min_clearance_mm": 16.819334112859526,
+  "original_axial_reference_gap_mm": 19,
+  "mount_radial_outer_ligament_mm": 2.4,
+  "geometric_checks_passed": true,
+  "engineering_release_ready": false,
+  "limits": [
+    "Model intersections are not tolerance-stack proof.",
+    "Real populated PCB, mating connectors, wires and selected sensor package are not provided.",
+    "Service checks omit all unmodeled retaining hardware and cables.",
+    "Thermal route ends at an isolated side landing; actual sensor heat interface is unresolved.",
+    "HUMI rings are axial datum references, not functional E/EF interfaces."
+  ]
+}

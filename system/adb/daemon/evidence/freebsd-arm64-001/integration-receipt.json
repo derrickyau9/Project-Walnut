@@ -1,0 +1,421 @@
+{
+  "adb": {
+    "path": "/home/dy09/daos-adb-development/tools/platform-tools/adb",
+    "sha256": "a902be8f45c6c62e76c9efaf6947a0fa747c9cabd89a2ac8e0d16ecb30b3ed01",
+    "version": "Android Debug Bridge version 1.0.41\nVersion 37.0.1-15733141\nInstalled as /home/dy09/daos-adb-development/tools/platform-tools/adb\nRunning on Linux 6.18.54.1-microsoft-standard-WSL2 (x86_64)\n"
+  },
+  "authenticated": true,
+  "binary_stdin": true,
+  "cases": [
+    {
+      "argv": [
+        "/home/dy09/daos-adb-development/tools/platform-tools/adb",
+        "-P",
+        "46337",
+        "connect",
+        "127.0.0.1:35995"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "connected to 127.0.0.1:35995\n",
+      "stdout_bytes": 29,
+      "stdout_sha256": "3f39930319b364a258773565109d135d7fe51cff2b10df711c321defdec07d99"
+    },
+    {
+      "argv": [
+        "/home/dy09/daos-adb-development/tools/platform-tools/adb",
+        "-P",
+        "46337",
+        "-s",
+        "127.0.0.1:35995",
+        "get-state"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "device\n",
+      "stdout_bytes": 7,
+      "stdout_sha256": "c98373c1abef78070f6beef6b4ae4fbf3de348dac280195c7f93441920584af9"
+    },
+    {
+      "argv": [
+        "/home/dy09/daos-adb-development/tools/platform-tools/adb",
+        "-P",
+        "46337",
+        "-s",
+        "127.0.0.1:35995",
+        "features"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "shell_v2\n",
+      "stdout_bytes": 9,
+      "stdout_sha256": "283c11adb8faf644a69add50195f81d4bbd1c5eb1163610c2b2eb36b9a270a22"
+    },
+    {
+      "argv": [
+        "/home/dy09/daos-adb-development/tools/platform-tools/adb",
+        "-P",
+        "46337",
+        "-s",
+        "127.0.0.1:35995",
+        "shell",
+        "-T",
+        "printf DAOS_STDOUT; printf DAOS_STDERR >&2; exit 7"
+      ],
+      "returncode": 7,
+      "stderr": "DAOS_STDERR",
+      "stderr_bytes": 11,
+      "stderr_sha256": "d05870e800eb5ab7b3adf442b24cb6559246f3afbf11bdc8b9863d0d00b05a2e",
+      "stdout": "DAOS_STDOUT",
+      "stdout_bytes": 11,
+      "stdout_sha256": "68fe4d2b19b5db8dfb28d71cb727cce064559122bf59df0005c62c07b92ae665"
+    },
+    {
+      "argv": [
+        "/home/dy09/daos-adb-development/tools/platform-tools/adb",
+        "-P",
+        "46337",
+        "-s",
+        "127.0.0.1:35995",
+        "shell",
+        "-x",
+        "printf DAOS_LEGACY"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "DAOS_LEGACY",
+      "stdout_bytes": 11,
+      "stdout_sha256": "369afb7afea783eacbabee2d8089dc1dc98e0b7786a35aa3c6140d74bdf50bd8"
+    },
+    {
+      "argv": [
+        "/home/dy09/daos-adb-development/tools/platform-tools/adb",
+        "-P",
+        "46337",
+        "-s",
+        "127.0.0.1:35995",
+        "shell",
+        "-T",
+        "cat"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 262144,
+      "stdout_sha256": "2312394bd99545d9de131c24efb781e765ac1aec243f2ed9347597a793a415e9"
+    },
+    {
+      "argv": [
+        "/home/dy09/daos-adb-development/tools/platform-tools/adb",
+        "-P",
+        "46337",
+        "-s",
+        "127.0.0.1:35995",
+        "shell",
+        "-T",
+        "dd if=/dev/zero bs=65536 count=8 2>/dev/null"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 524288,
+      "stdout_sha256": "07854d2fef297a06ba81685e660c332de36d5d18d546927d30daad6d7fda1541"
+    },
+    {
+      "argv": [
+        "/home/dy09/daos-adb-development/tools/platform-tools/adb",
+        "-P",
+        "46337",
+        "-s",
+        "127.0.0.1:35995",
+        "shell",
+        "-tt",
+        "test -t 0 && test -t 1 && printf DAOS_PTY_OK; stty size"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "DAOS_PTY_OK24 80\r\n",
+      "stdout_bytes": 18,
+      "stdout_sha256": "a7926696e4595ecb80345966af22c1f49b67d48c8da8a12bbafba6a4df805a0a"
+    },
+    {
+      "argv": [
+        "/home/dy09/daos-adb-development/tools/platform-tools/adb",
+        "-P",
+        "46337",
+        "-s",
+        "127.0.0.1:35995",
+        "shell",
+        "-tt"
+      ],
+      "returncode": 9,
+      "stderr": "",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "printf DAOS_INTERACTIVE_OK\\n\r\nexit 9\r\n# printf DAOS_INTERACTIVE_OK\\n\r\nDAOS_INTERACTIVE_OKn# exit 9\r\n",
+      "stdout_bytes": 100,
+      "stdout_sha256": "b66bc857e3045cba8e603ca88be6284903bc4844cce5cc231ebe2177800accfe"
+    },
+    {
+      "argv": [
+        "/home/dy09/daos-adb-development/tools/platform-tools/adb",
+        "-P",
+        "46337",
+        "-s",
+        "127.0.0.1:35995",
+        "shell",
+        "-T",
+        "sleep 0.1; printf MULTIPLEX_0"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "MULTIPLEX_0",
+      "stdout_bytes": 11,
+      "stdout_sha256": "f628ac357888cb553bd64a900a1db33973472232ae46c02eaa667faaf532c01e"
+    },
+    {
+      "argv": [
+        "/home/dy09/daos-adb-development/tools/platform-tools/adb",
+        "-P",
+        "46337",
+        "-s",
+        "127.0.0.1:35995",
+        "shell",
+        "-T",
+        "sleep 0.1; printf MULTIPLEX_2"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "MULTIPLEX_2",
+      "stdout_bytes": 11,
+      "stdout_sha256": "e7413a0c6242cc80ea79a6d6c1c131aa7aa371022409349e5c6329f8aee4dd09"
+    },
+    {
+      "argv": [
+        "/home/dy09/daos-adb-development/tools/platform-tools/adb",
+        "-P",
+        "46337",
+        "-s",
+        "127.0.0.1:35995",
+        "shell",
+        "-T",
+        "sleep 0.1; printf MULTIPLEX_3"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "MULTIPLEX_3",
+      "stdout_bytes": 11,
+      "stdout_sha256": "5dc6b15dc5edccc176178368d7e3424e9208a59caa0a7e20905b79f6b799d620"
+    },
+    {
+      "argv": [
+        "/home/dy09/daos-adb-development/tools/platform-tools/adb",
+        "-P",
+        "46337",
+        "-s",
+        "127.0.0.1:35995",
+        "shell",
+        "-T",
+        "sleep 0.1; printf MULTIPLEX_1"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "MULTIPLEX_1",
+      "stdout_bytes": 11,
+      "stdout_sha256": "22425c04028dfb979001d7e90e81f6aea16168beb85e59f65f5f66e440f82ef1"
+    },
+    {
+      "argv": [
+        "/home/dy09/daos-adb-development/tools/platform-tools/adb",
+        "-P",
+        "46337",
+        "-s",
+        "127.0.0.1:35995",
+        "push",
+        "-Z",
+        "/home/dy09/daos-adb-development/target-freebsd-arm64-001/official-adb/push-source.bin",
+        "/transfer.bin"
+      ],
+      "returncode": 0,
+      "stderr": "/home/dy09/daos-adb-development/target-freebsd-arm64-001/official-adb/push-source.bin: 1 file pushed, 0 skipped. 960.7 MB/s (262144 bytes in 0.000s)\n",
+      "stderr_bytes": 149,
+      "stderr_sha256": "7cecc3dda4988b2f27b619e7374acdf26fbef3e3542e2006825bacc540439de1",
+      "stdout": "",
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "/home/dy09/daos-adb-development/tools/platform-tools/adb",
+        "-P",
+        "46337",
+        "-s",
+        "127.0.0.1:35995",
+        "shell",
+        "-T",
+        "cat /var/daos-adb-validation-001/sync/transfer.bin"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 262144,
+      "stdout_sha256": "2312394bd99545d9de131c24efb781e765ac1aec243f2ed9347597a793a415e9"
+    },
+    {
+      "argv": [
+        "/home/dy09/daos-adb-development/tools/platform-tools/adb",
+        "-P",
+        "46337",
+        "-s",
+        "127.0.0.1:35995",
+        "pull",
+        "-Z",
+        "/transfer.bin",
+        "/home/dy09/daos-adb-development/target-freebsd-arm64-001/official-adb/pulled.bin"
+      ],
+      "returncode": 0,
+      "stderr": "/transfer.bin: 1 file pulled, 0 skipped. 1.0 MB/s (262144 bytes in 0.250s)\n",
+      "stderr_bytes": 75,
+      "stderr_sha256": "bf1c47bf41bf7af203f04a0486545f30be55e2565de54cd894c76e4254a280ce",
+      "stdout": "",
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "/home/dy09/daos-adb-development/tools/platform-tools/adb",
+        "-P",
+        "46337",
+        "-s",
+        "127.0.0.1:35995",
+        "root"
+      ],
+      "returncode": 1,
+      "stderr": "adb: unable to connect for root: closed\n",
+      "stderr_bytes": 40,
+      "stderr_sha256": "27d7fcb5dcf4cfd58790db993a5bde3e7d228ad4c2c5b86a594b887b2aa34956",
+      "stdout": "",
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "/home/dy09/daos-adb-development/tools/platform-tools/adb",
+        "-P",
+        "46337",
+        "-s",
+        "127.0.0.1:35995",
+        "shell",
+        "-T",
+        "kill -0 2688 2>/dev/null"
+      ],
+      "returncode": 1,
+      "stderr": "",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "",
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "/home/dy09/daos-adb-development/tools/platform-tools/adb",
+        "-P",
+        "46337",
+        "disconnect",
+        "127.0.0.1:35995"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "disconnected 127.0.0.1:35995\n",
+      "stdout_bytes": 29,
+      "stdout_sha256": "0c958944f49ee488c75caa03b073cc173293b4198531fa480c896b1f307b7ee2"
+    }
+  ],
+  "completed_at_unix": 1793945803.1900864,
+  "device": {
+    "endpoint": "127.0.0.1:35995",
+    "remote_private_sync_root": "/var/daos-adb-validation-001/sync",
+    "transport": "SSH-forwarded remote loopback TCP",
+    "usb_hardware_validated": false
+  },
+  "disconnect_cleanup": {
+    "child_pid": 2688,
+    "reaped": true
+  },
+  "format": "DaOS-ADB-official-host-integration-v1",
+  "freebsd_target_execution_validated": true,
+  "interactive_pty": true,
+  "legacy_shell": true,
+  "multiplex": true,
+  "private_key_material_recorded": false,
+  "pty": true,
+  "shell_v2": true,
+  "source_sha256": {
+    "__init__.py": "bb451f3fb0c5fa4bd7bc4bbb9d657782195bfeeb9d147fe62f9b6c48e9aabd0f",
+    "auth.py": "74f02ff881ba001db865141729e09f608c318b5da2d626e100ab5f174573556a",
+    "daos_adbd.py": "4c88c8b190a20002db3e8a8b4cf7a1af911d261a391eb2171529be927cad86cd",
+    "guest_validate.py": "eea94de905134a4bce51c18ccc0d5e9467d0c1916157cb27cae1f649edbd5b2c",
+    "integration_adb.py": "3a69999c0a08cefe3b3d4b85c79651b23a0de79558641f2d16b14d39c5cd8c0f",
+    "protocol.py": "c81e8de010065c0914c05bdc5fd29d7748628141fcac95b02177515ef3afde5d",
+    "pty_child.py": "5316ccc13bbbb7247b5132c566c9fd71c22397ac832d79b1ee64ed9db4499c82",
+    "server.py": "9347db4e1f4b20841533f31c5f7e2e0ae7ecba9e2159bba71f85672e45e5d12e",
+    "shell_service.py": "771dfd17c2ffa3bd6081309b8c56e406ae6d9f7079d9552f5dfd8f4ce07e1489",
+    "stdio_bridge.py": "9a564de75379215c06f6109d45cef14f5506ca902f2cc23ec57db51204444101",
+    "sync_service.py": "3885d34b65bce179c824d2cb817494a99a2c5fe62ec3a4cdd152004854553b5b",
+    "test_daemon.py": "f7443a6ba310abfe521bebb941e542ae2f813c6dedf33a1f2e665b163199db4d"
+  },
+  "started_at_unix": 1793945798.2692797,
+  "status": "success",
+  "sync_push_pull": true,
+  "target_identity": {
+    "architecture": "aarch64",
+    "bin_sh": {
+      "OSABI": 9,
+      "bytes": 167384,
+      "machine": 183,
+      "sha256": "a926cb397e68f278891af35853fa46b2e85854a0a6e7f7538b2f2c446ba032e8",
+      "type": 3
+    },
+    "machine": "arm64",
+    "python": "3.12.15 (main, Oct 29 2026, 02:27:54) [Clang 19.1.7 (https://github.com/llvm/llvm-project.git llvmorg-19.1.7-0-gcd7080",
+    "release": "15.1-RELEASE-p6",
+    "system": "FreeBSD",
+    "uid": 0,
+    "uname": "FreeBSD daos-arm64-dev 15.1-RELEASE-p6 FreeBSD 15.1-RELEASE-p6 releng/15.1-n283643-95719d8a895b GENERIC arm64"
+  },
+  "transport": "ssh-forwarded-loopback",
+  "unauthorized_host": {
+    "connect_returncode": 0,
+    "connect_stdout": "failed to authenticate to 127.0.0.1:35995\n",
+    "public_key_was_not_auto_enrolled": true,
+    "shell_rejected": true,
+    "shell_returncode": 1,
+    "shell_stderr": "adb: device unauthorized.\nThis adb server's $ADB_VENDOR_KEYS is /home/dy09/daos-adb-development/target-freebsd-arm64-001/official-adb/unauthorized-home/.android/adbkey\nTry 'adb kill-server' if that seems wrong.\nOtherwise check for a confirmation dialog on your device.\n"
+  },
+  "usb_hardware_validated": false,
+  "work": "/home/dy09/daos-adb-development/target-freebsd-arm64-001/official-adb"
+}

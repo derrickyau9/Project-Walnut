@@ -1,0 +1,121 @@
+{
+  "format": "hf-round9-verification-v1",
+  "scope": "software camera only; no physical hardware validation",
+  "windows_full_suite": {
+    "ran": 527,
+    "passed": 490,
+    "skipped": 37,
+    "seconds": 120.588
+  },
+  "linux_full_suite": {
+    "ran": 500,
+    "passed": 477,
+    "skipped": 23,
+    "seconds": 71.998
+  },
+  "arm64_target": {
+    "passed": true,
+    "root_image_sha256": "3358206b5f5ed7eaeaccc16ee7fa97a2bb607ee036e8b91e3983ed2b001f282a",
+    "root_unchanged": true,
+    "image_directory": "build/target-e6ac70179d285645aab4226b",
+    "source_inputs": 97,
+    "qt_request_id": "455e026c-b0cf-4b39-989f-ef0b38c3d94c",
+    "basic_request_id": "374ff3b0-e4ed-47bf-92b3-a81c90f5c344",
+    "basic_binding_id": "cb1-a4d0d90ce30689a7202a88b28945bb6bca37fba91745b99323687213d2d5be17",
+    "workflow_job_id": "offline-3f4e1e3a474146fb9d96a363d48a611a",
+    "same_ids_settings_bindings_and_dngs_after_reboot": true,
+    "basic_automation_import_blocked": true
+  },
+  "bound_update_model": {
+    "passed": true,
+    "boots": 3,
+    "same_final_image_revision": true,
+    "same_application_artificial_versions": true,
+    "actual_settings_and_binding_preserved": true,
+    "evidence": "system/update-model/evidence/bound-r9-final/bound-demo-evidence.json"
+  },
+  "daos_framework_source_imported": false,
+  "preserved_snapshots": {
+    "HassleFree_FF1_R8_Source_Engineering_Handoff_2026-11-05.zip": "4548edddf391055fa34b0c8574b779a6db928a7fbd1f26adc223051cc90a0cbd",
+    "HassleFree_FF1_R7_Source_Engineering_Handoff_2026-11-05.zip": "826e7d432d145b6858a87c74ebb64122b83409cff9f9a99b901c77d46b4bd250",
+    "HassleFree_FF1_R6_Source_Engineering_Handoff_2026-11-05.zip": "49ae3ed5eb6426505f0ef978522dee8f3615b2eab7458b0a95c84e353a76c010"
+  },
+  "evidence_copies": [
+    {
+      "path": "docs/testing/artifacts/round9/arm64/run-state.json",
+      "bytes": 14166,
+      "source_sha256": "c923ef42b9331e27b20109c3a433c1f8e14e3720bfcb81fd9118513fe0f866fb"
+    },
+    {
+      "path": "docs/testing/artifacts/round9/arm64/native-build.json",
+      "bytes": 42987,
+      "source_sha256": "b5b88591001feca600fc08b734bcf6c8a514df3e1349693ba9d04dae1a9dfe94"
+    },
+    {
+      "path": "docs/testing/artifacts/round9/arm64/image-build.json",
+      "bytes": 16328,
+      "source_sha256": "9d22ef6c01e798213df96dce9ac3c932cb1ccf9e9bc5d7689538fc02b1d86c90"
+    },
+    {
+      "path": "docs/testing/artifacts/round9/arm64/first-boot.json",
+      "bytes": 12431,
+      "source_sha256": "3cca3c08a10ff06d7ebbc37c1b0ec3ecaef6e18fce1109e2042cc49e7844dbd8"
+    },
+    {
+      "path": "docs/testing/artifacts/round9/arm64/resume-boot.json",
+      "bytes": 12468,
+      "source_sha256": "eaa6a2f3783aeb54fa59c80590ecdb500a6bd71dc85e6d4c3b34b5c759209c46"
+    },
+    {
+      "path": "docs/testing/artifacts/round9/windows-suite.txt",
+      "bytes": 97758,
+      "source_sha256": "e6307aa548dccac51dca5acf721063700e7d47c4d1c3b874312a7d2fd600876c"
+    },
+    {
+      "path": "docs/testing/artifacts/round9/linux-suite.txt",
+      "bytes": 90773,
+      "source_sha256": "974cf46c40598cb685c9c46478aec52676c7a6908d92ae0bf8979bdb4452a237"
+    },
+    {
+      "path": "docs/testing/artifacts/round9/linux-critical-before-optional-evidence-fix.txt",
+      "bytes": 43106,
+      "source_sha256": "7d98d6be85c625529feb3741cd262f08097c42340a8d28e314d7fdfd8c8c10c2"
+    },
+    {
+      "path": "docs/testing/artifacts/round9/arm64/independent-dng.json",
+      "bytes": 904,
+      "source_sha256": "fb29d781d94ccc3083e25ae885fd82c02b2653a9ea3d4f133e207e85e97d567e"
+    },
+    {
+      "path": "docs/testing/artifacts/round9/historical/windows-context-errors.txt",
+      "bytes": 103408,
+      "source_sha256": "6113e98c19df17ed40b13a451866538795c0deb34e749af1646692cedeba8275"
+    },
+    {
+      "path": "docs/testing/artifacts/round9/historical/linux-context-errors.txt",
+      "bytes": 97651,
+      "source_sha256": "d1b24e47ea84befa801a53ddee9f13d14d7f2882c56363305eea65335e783628"
+    },
+    {
+      "path": "docs/testing/artifacts/round9/historical/windows-fixture-busy.txt",
+      "bytes": 96115,
+      "source_sha256": "508651063333ecdc367fc2ef688e8a4033e51c1cd8438c62a436c011d1de658b"
+    },
+    {
+      "path": "docs/testing/artifacts/round9/historical/reference-fixture-handles.txt",
+      "bytes": 57841,
+      "source_sha256": "fc76571b0526ddade3b2d4f2c7b8e014b7ad5eeb29d42b9a99c0d6a2f2296de9"
+    },
+    {
+      "path": "docs/testing/artifacts/round9/historical/http-fixture-import.txt",
+      "bytes": 8303,
+      "source_sha256": "9971f53121b0b313c2078b7733a962c2ed585a35d041d2b5caa1685b4b1e8f07"
+    },
+    {
+      "path": "docs/testing/artifacts/round9/historical/context-policy-assertion.txt",
+      "bytes": 10422,
+      "source_sha256": "f52441d22c1e197dae8f4e59d66d4b6bd0a361f3972ec00d3c225efb090b5ff6"
+    }
+  ],
+  "privacy_note": "Original local bytes preserved. Source ZIP evidence copies redact private task paths and retain original source hashes in the bundle manifest."
+}

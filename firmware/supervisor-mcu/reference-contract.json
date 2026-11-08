@@ -1,0 +1,57 @@
+{
+  "contract_version": 1,
+  "status": "host_tested_digital_input_reference_only",
+  "board": "FF1_Control_A0",
+  "source_project": "../../hardware/imports/control-board-a0-library-v0/extracted/hasslefree-ff1-pcb/hardware/FF1_Control_A0.kicad_pro",
+  "mcu_present_on_imported_board": false,
+  "selected_mcu_part": null,
+  "selected_host_adapter_revision": null,
+  "target_firmware_release": false,
+  "electrical": {
+    "accessory_supply_net": "V3V3",
+    "accessory_supply_J1_pin": 1,
+    "external_regulated_nominal_supply_V": 3.3,
+    "ground_J1_pins": [2, 6],
+    "host_bank_voltage_V": null,
+    "schmitt_conditioner": null,
+    "voltage_translation": null,
+    "host_connector_and_GPIO_mapping": null,
+    "direct_connection_approved": false
+  },
+  "signals": [
+    {"net":"HALF_N","J1_pin":3,"active_low":true,"role":"independent_button","mcu_GPIO":null,"target_peripheral":null,"conditioning":"symmetric_observed_stability"},
+    {"net":"FULL_N","J1_pin":4,"active_low":true,"role":"independent_button","mcu_GPIO":null,"target_peripheral":null,"conditioning":"symmetric_observed_stability","requires_half_pressed":false},
+    {"net":"RESET_N","J1_pin":5,"active_low":true,"role":"local_supply_supervisor_observation","mcu_GPIO":null,"target_peripheral":null,"conditioning":"immediate_observation","drives_system_reset":false,"controls_power_sequence":false}
+  ],
+  "digital_adapter_boundary": {
+    "known_level_type":"strict_bool",
+    "True_means":"electrical_high",
+    "False_means":"electrical_low",
+    "unknown_value":null,
+    "clock":"caller_supplied_nonnegative_monotonic_integer_nanoseconds",
+    "equal_timestamps_allowed":true,
+    "regression_allowed":false,
+    "target_clock_source":null,
+    "target_sampling_cadence_ns":null,
+    "maximum_observation_gap_ns":null,
+    "reference_button_debounce_ns":20000000,
+    "debounce_value_bench_validated":false,
+    "unknown_behavior":"invalidate_only_that_channel_and_reinitialize_after_valid_qualification"
+  },
+  "events": {
+    "simultaneous_order":["RESET_N","HALF_N","FULL_N"],
+    "fields":["sequence","signal","transition","observed_at_ns","observed_since_ns","level"],
+    "transitions":["initialized","pressed","released","asserted","deasserted","unavailable"],
+    "timestamp_meaning":"sample_at_which_the_transition_is_confirmed",
+    "startup_behavior":"initialization_not_a_fabricated_edge",
+    "capture_side_effects":false,
+    "power_or_reset_output_side_effects":false
+  },
+  "blocking_choices":[
+    "actual_MCU_and_host_adapter_hardware",
+    "IO_bank_limits_Schmitt_thresholds_translation_and_pin_mapping",
+    "startup_down_back_power_and_signal_validity",
+    "timer_resolution_wrap_and_concurrency",
+    "sampling_cadence_observation_gaps_and_measured_button_waveforms"
+  ]
+}

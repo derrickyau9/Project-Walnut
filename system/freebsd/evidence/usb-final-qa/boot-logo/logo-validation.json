@@ -1,0 +1,141 @@
+{
+  "format": "DaOS-FreeBSD-framebuffer-logo-v1",
+  "vm_name": "DaOS-BSD-R14",
+  "vm_uuid": "8b2c1d0a15e04e75890e74155855a14f",
+  "raw_image_sha256": "ed84cce5eb14da514732f88909d0baee8f22266a3f837569185b30f855e1394e",
+  "asset_sha256": "cd0f2623465ea660e225ab390dfbfcc42746ad6fe0809f10611a45352c248d7a",
+  "asset_rgb_sha256": "1dc432c4076ca4abe4f84a52b8b792540602e1c81fa61f16a1ee9d8f7615e575",
+  "asset_size": [
+    743,
+    554
+  ],
+  "physical_Pi4_validation": false,
+  "logo_observed": true,
+  "frames": [
+    {
+      "file": "frame-0000.png",
+      "seconds_after_observation_start": 0.006,
+      "rgb_sha256": "9d0add7c361db07d4dcf86bbcb557bbe5856337d2997a7c6a166df6a0c7b07a7",
+      "png_sha256": "39684f2364d14965a755c9b1034ae6aa1386d96a5f09625a3eed232881df1fba",
+      "size": [
+        640,
+        480
+      ],
+      "logo_match": null
+    },
+    {
+      "file": "frame-0001.png",
+      "seconds_after_observation_start": 0.516,
+      "rgb_sha256": "eda525bab6d74d439bd683b578242e87fd3146fc4d631b7c81d9f76dd4d47a2d",
+      "png_sha256": "0e78e1e00e1b64efefcadff280b26c47573f6b85aa1a36b6d7773abfbc2088f9",
+      "size": [
+        800,
+        600
+      ],
+      "logo_match": null
+    },
+    {
+      "file": "frame-0002.png",
+      "seconds_after_observation_start": 1.026,
+      "rgb_sha256": "12df1151288ef3c14cfe608fd4c369c1a67bc4f6404220b9ab6d7c757a7dc537",
+      "png_sha256": "7a155a6314990a88b293f8dd72855e0dd5dd9feafadb522dffe50a99fc8016a1",
+      "size": [
+        800,
+        600
+      ],
+      "logo_match": null
+    },
+    {
+      "file": "frame-0003.png",
+      "seconds_after_observation_start": 2.041,
+      "rgb_sha256": "b525e46e6e6bb396b38a782b7c6da1725b9712db5ddb9eef4bd3f945a16d12bf",
+      "png_sha256": "d7e9de530ec7d19bf1cc6d5869c434f4fdfe8d813d034d19512272b9ba52b530",
+      "size": [
+        800,
+        600
+      ],
+      "logo_match": null
+    },
+    {
+      "file": "frame-0004.png",
+      "seconds_after_observation_start": 3.056,
+      "rgb_sha256": "aaee1ee903a299bed7a4683004d2e9532788a1c713f2d08a0d7647fc21bf37ab",
+      "png_sha256": "1487170c65ae12909f4a3ccf6949efaa16d593b491b6ce2b5ca60ee3e68bee82",
+      "size": [
+        800,
+        600
+      ],
+      "logo_match": null
+    },
+    {
+      "file": "frame-0005.png",
+      "seconds_after_observation_start": 4.071,
+      "rgb_sha256": "2548bbaf5e55442fdb91b36b7f2325c19e01792b44394025ffb3585b352d9218",
+      "png_sha256": "f35ad14e48f44fa079827c32267df6ae1bd7782675b750695588d9dd13edf074",
+      "size": [
+        800,
+        600
+      ],
+      "logo_match": null
+    },
+    {
+      "file": "frame-0006.png",
+      "seconds_after_observation_start": 5.086,
+      "rgb_sha256": "ef146801aa911de585d25b4eae72c3117238e425ba98f482146528a6b4d7ef84",
+      "png_sha256": "1f8d8cffa20cd82ca03db2544622264c42fc088da2aab8789bc74a9c908adda3",
+      "size": [
+        800,
+        600
+      ],
+      "logo_match": null
+    },
+    {
+      "file": "frame-0007.png",
+      "seconds_after_observation_start": 6.102,
+      "rgb_sha256": "f123a1286e77094e50c9e8543c1c53a9d0291f7a8448fc5d764eb0541390d386",
+      "png_sha256": "5f6b1b279f54cdb6fdf80e4cc39b84dba80bb56195991457a7a4f9a839c63582",
+      "size": [
+        800,
+        600
+      ],
+      "logo_match": null
+    },
+    {
+      "file": "frame-0008.png",
+      "seconds_after_observation_start": 7.119,
+      "rgb_sha256": "1683a7f3b795ce4eb6fca651b49a6427b17fb9dad1a16f0c9b0c0ece8bc81437",
+      "png_sha256": "23cebf04ccc3897faf30d757549c3059957ddbe0049b290e038f1d341dbb2e9c",
+      "size": [
+        800,
+        600
+      ],
+      "logo_match": null
+    },
+    {
+      "file": "frame-0009.png",
+      "seconds_after_observation_start": 7.668,
+      "rgb_sha256": "1b739b7e9697b8e57c6ef4137e554cb6b674a57ac38b28461904c5686124d9bc",
+      "png_sha256": "b9a145c9a8e15169a177bc488504f13bf0f835c8648b2f1ff37e756e9ef0ac41",
+      "size": [
+        800,
+        600
+      ],
+      "logo_match": {
+        "x": 28,
+        "y": 23,
+        "width": 743,
+        "height": 554,
+        "exact_rgb_pixel_match": true
+      }
+    }
+  ],
+  "matched_frame": "frame-0009.png",
+  "match": {
+    "x": 28,
+    "y": 23,
+    "width": 743,
+    "height": 554,
+    "exact_rgb_pixel_match": true
+  },
+  "observation_seconds": 7.669
+}

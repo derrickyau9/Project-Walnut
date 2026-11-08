@@ -1,0 +1,31 @@
+--- a/sys/dev/sdio/sdiob.c
++++ b/sys/dev/sdio/sdiob.c
+@@ -168,7 +168,8 @@
+ 		/*mmc_arg*/ arg,
+ 		/*mmc_flags*/ flags,
+ 		/*mmc_data*/ 0,
+-		/*timeout*/ sc->cardinfo.f[fn].timeout);
++		/*timeout*/ sc->cardinfo.f[fn].timeout != 0 ?
++		    sc->cardinfo.f[fn].timeout : 5000);
+ 	error = cam_periph_runccb(sc->ccb, sdioerror, CAM_FLAG_NONE, 0, NULL);
+ 	if (error != 0) {
+ 		if (sc->dev != NULL)
+@@ -320,7 +321,8 @@
+ 		/*mmc_arg*/ arg,
+ 		/*mmc_flags*/ flags,
+ 		/*mmc_data*/ &mmcd,
+-		/*timeout*/ sc->cardinfo.f[fn].timeout);
++		/*timeout*/ sc->cardinfo.f[fn].timeout != 0 ?
++		    sc->cardinfo.f[fn].timeout : 5000);
+ 	if (arg & SD_IOE_RW_BLK) {
+ 		mmcd.flags |= MMC_DATA_BLOCK_SIZE;
+ 		if (b_count != 1)
+@@ -826,6 +828,8 @@
+ 
+ 	memset(&sc->cardinfo, 0, sizeof(sc->cardinfo));
+ 
++	/* F0 common-register access needs a bounded timeout, including CIS. */
++	sc->cardinfo.f[0].timeout = 5000;
+ 	/* F0 must always be present. */
+ 	fn = 0;
+ 	error = sdio_func_read_cis(sc, fn, cis_addr);

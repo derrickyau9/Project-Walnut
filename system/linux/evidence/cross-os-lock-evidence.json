@@ -1,0 +1,54 @@
+{
+  "format": "hf-sim-cross-os-lock-probe-v1",
+  "simulated": true,
+  "distribution": "Debian",
+  "fresh_disposable_storage_only": true,
+  "outcomes": {
+    "windows_owner_linux_contender": {
+      "returncode": 2,
+      "responses": [
+        {
+          "error": {
+            "code": "storage_error",
+            "message": "cannot open data directory lock"
+          },
+          "id": null
+        }
+      ],
+      "stderr": ""
+    },
+    "linux_owner_windows_contender": {
+      "linux_startup": {
+        "id": 1,
+        "result": {
+          "authority": "native",
+          "backend": "native",
+          "camera_state": "idle",
+          "connected": true,
+          "control": null,
+          "journal_healthy": true,
+          "last_capture": null,
+          "pipeline_generation": 0,
+          "preview": {
+            "running": false,
+            "source": "native",
+            "supported": false
+          },
+          "settings": {
+            "output_format": "dng",
+            "requested_analogue_gain": 1.0,
+            "requested_exposure_us": 10000,
+            "sensor_mode": "sim-small",
+            "simulation_scene": "scene"
+          },
+          "simulated": true
+        }
+      },
+      "tested": true,
+      "simultaneous_ownership": false,
+      "error": "already_running",
+      "message": "cannot exclusively lock data directory"
+    }
+  },
+  "deployment_policy": "Use a Linux-native filesystem and dedicated nonshared Linux data; never mix OS authorities on DrvFS."
+}

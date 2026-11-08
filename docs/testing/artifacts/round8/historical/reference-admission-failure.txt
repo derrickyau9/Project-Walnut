@@ -1,0 +1,37 @@
+test_post_publication_replacement_stays_unknown_and_preserves_both_directories (tests.test_reference_capture_paths.ReferenceCapturePathTests.test_post_publication_replacement_stays_unknown_and_preserves_both_directories) ... ok
+test_redirect_after_admission_never_creates_an_outside_photo_or_cleans_foreign_files (tests.test_reference_capture_paths.ReferenceCapturePathTests.test_redirect_after_admission_never_creates_an_outside_photo_or_cleans_foreign_files) ... FAIL
+test_startup_rejects_linked_photo_directory_before_journal_creation (tests.test_reference_capture_paths.ReferenceCapturePathTests.test_startup_rejects_linked_photo_directory_before_journal_creation) ... ok
+test_actual_process_lock_and_abrupt_exit_recovery (tests.test_camera_service.CameraServiceTests.test_actual_process_lock_and_abrupt_exit_recovery) ... ok
+test_capture_identity_and_payload_conflict (tests.test_camera_service.CameraServiceTests.test_capture_identity_and_payload_conflict) ... ok
+test_disconnect_persists_until_authorized_reconnect (tests.test_camera_service.CameraServiceTests.test_disconnect_persists_until_authorized_reconnect) ... ok
+test_expiration_does_not_interrupt_capture_or_allow_overlap (tests.test_camera_service.CameraServiceTests.test_expiration_does_not_interrupt_capture_or_allow_overlap) ... ok
+test_failed_admission_commit_rolls_back_and_stops_service (tests.test_camera_service.CameraServiceTests.test_failed_admission_commit_rolls_back_and_stops_service) ... ok
+test_fault_and_cancellation (tests.test_camera_service.CameraServiceTests.test_fault_and_cancellation) ... ok
+test_files_created_after_admission_are_never_overwritten_or_deleted (tests.test_camera_service.CameraServiceTests.test_files_created_after_admission_are_never_overwritten_or_deleted) ... ok
+test_interrupted_record_becomes_unknown_without_reexecution (tests.test_camera_service.CameraServiceTests.test_interrupted_record_becomes_unknown_without_reexecution) ... ok
+test_lease_heartbeat_and_expiry_fence (tests.test_camera_service.CameraServiceTests.test_lease_heartbeat_and_expiry_fence) ... ok
+test_no_completion_before_file_commit (tests.test_camera_service.CameraServiceTests.test_no_completion_before_file_commit) ... ok
+test_one_instance_per_data_dir (tests.test_camera_service.CameraServiceTests.test_one_instance_per_data_dir) ... ok
+test_process_crash_after_rename_is_unknown_and_not_reexecuted (tests.test_camera_service.CameraServiceTests.test_process_crash_after_rename_is_unknown_and_not_reexecuted) ... ok
+test_stale_epoch_and_restart (tests.test_camera_service.CameraServiceTests.test_stale_epoch_and_restart) ... ok
+test_thread_start_failure_releases_slot_and_journals_failure (tests.test_camera_service.CameraServiceTests.test_thread_start_failure_releases_slot_and_journals_failure) ... ok
+test_fault_and_invalid_input (tests.test_camera_cli.BasicCaptureCliTests.test_fault_and_invalid_input) ... ok
+test_independent_capture_query_and_same_id_does_not_retake (tests.test_camera_cli.BasicCaptureCliTests.test_independent_capture_query_and_same_id_does_not_retake) ... ok
+test_invalid_backend_selection_cannot_silently_fall_back_or_create_data (tests.test_camera_offline.BasicCameraBackendSelectionTests.test_invalid_backend_selection_cannot_silently_fall_back_or_create_data) ... ok
+setUpClass (tests.test_camera_offline.NativeOfflineCameraCliTests) ... skipped 'build the native authority or set HF_NATIVE_DAEMON'
+test_capture_review_and_export_survive_cli_restarts_without_workflows_or_replay (tests.test_camera_offline.OfflineCameraCliTests.test_capture_review_and_export_survive_cli_restarts_without_workflows_or_replay) ... ok
+test_existing_export_and_missing_or_corrupt_source_are_never_replaced (tests.test_camera_offline.OfflineCameraCliTests.test_existing_export_and_missing_or_corrupt_source_are_never_replaced) ... ok
+
+======================================================================
+FAIL: test_redirect_after_admission_never_creates_an_outside_photo_or_cleans_foreign_files (tests.test_reference_capture_paths.ReferenceCapturePathTests.test_redirect_after_admission_never_creates_an_outside_photo_or_cleans_foreign_files)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/tests/test_reference_capture_paths.py", line 50, in test_redirect_after_admission_never_creates_an_outside_photo_or_cleans_foreign_files
+    with self.assertRaises(CameraError) as denied:
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+AssertionError: CameraError not raised
+
+----------------------------------------------------------------------
+Ran 22 tests in 8.118s
+
+FAILED (failures=1, skipped=1)

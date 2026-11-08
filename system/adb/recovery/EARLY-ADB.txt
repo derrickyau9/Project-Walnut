@@ -1,0 +1,77 @@
+DaOS early authenticated USB ADB
+
+Installation contract
+- early-init.sh -> /usr/local/libexec/DaOS-recovery/early-init.sh (0755)
+- early_adb.py and early_daemon.py -> that same directory (0644)
+- early-adb.json -> /etc/daos/recovery-adb.json (0644)
+- /DaOS-recovery-ram exists as a root-owned directory (0755) in the immutable root.
+- Existing provisioned /etc/daos/adb_keys, daos-adb Python runtime, Python3.12,
+  daos-usb-adb helper and kernel-matched USB template module must be present.
+- Loader init_script="/usr/local/libexec/DaOS-recovery/early-init.sh".
+- Apply init-early-usb.patch to pinned sbin/init/init.c and install the rebuilt
+  init. Merely setting init_script does not restart USB after death_single.
+- Normal DaOS-usb-adb rc script and session supervisor must use the included
+  early-owner deferral guards to prevent two helpers claiming one peripheral.
+
+Startup behavior
+The hook explicitly mounts devfs when absent because the normal init_script
+executes before init's own devfs mount. Its sole writable filesystem is the
+dedicated tmpfs /DaOS-recovery-ram. A missing host cable does not delay /etc/rc.
+Logs rotate in that RAM filesystem; the normal /var mount can fail completely.
+The fixed trusted LD_LIBRARY_PATH removes dependency on ldconfig's /var/run
+runtime hints before the regular filesystem/ldconfig startup stage.
+flock owns the helper; a reused/stale PID never causes another process to be
+killed. init's single_user transition reruns the idempotent hook after the
+global process termination performed by death_single.
+
+Authentication and policy
+The endpoint always uses the already provisioned RSA AUTH public keys, stdio
+native USB, /rescue/sh, and explicit sync-root /. There is no TCP listener,
+new-key enrollment or unauthenticated USB mode. The ordinary developer-mode
+marker on /var is intentionally not a recovery prerequisite: authorized keys
+retain the recovery root shell when that state filesystem is unavailable.
+
+Limits
+In ordinary early-root mode, Python, shared libraries and helpers still live on
+the root filesystem. This covers failure to mount /var and normal-service/UI
+failure while the root and USB kernel remain functional. The independent RAM
+recovery root must package those dependencies for root-media repair. A stopped
+kernel/USB controller cannot execute ADB; hardware reset/watchdog must first
+boot the independent recovery environment. These files alone do not provide
+physical Pi4 USB boot or prove real USB enumeration in single-user mode.
+
+QA entry
+python3 -B -m unittest discover -s system/adb/recovery -p test_early_adb.py -v
+The tests simulate missing devfs, writable private RAM, idempotent startup,
+stale/killed owners, wrong filesystem refusal, module selection order, normal
+service handover, and fixed authentication/transport policy. They do not touch
+USB hardware. Native init compilation and a QEMU transition test are separate.
+
+File installer
+install.py plan/apply --root PRIVATE_ROOT --bundle BUNDLE_DIRECTORY --sha256 MANIFEST_SHA256
+install.py rollback --root PRIVATE_ROOT --work SAVED_WORK_DIRECTORY
+The default work directory is ROOT/var/DaOS/updates/usb-recovery-001.
+Actual / additionally requires --live, native FreeBSD and uid0. No raw disk is
+opened. Bundle format DaOS-usb-recovery-bundle-v1 carries version, original
+base_init_sha256 and files[{source,path,bytes,sha256,mode}]. All inputs and
+original init are checked before file writes. Init is installed before hooks,
+and loader.conf.local init_script is published last. Original bytes/modes are
+backed up; rollback refuses changed backups or independently edited targets.
+The installer does not publish a default rescue kernel or GPIO/FAT selector.
+
+Optional hardware watchdog (disabled by default)
+kernel_watchdog.c builds into /usr/local/libexec/DaOS-recovery/kernel-watchdog.
+The early hook can launch it only when root-owned, non-writable policy file
+/etc/daos/recovery-watchdog.enabled contains exactly:
+DaOS-recovery-watchdog-v1
+Create that policy only after the armed FAT failover selector and its clean
+shutdown hook have been installed/verified. The default installer does not
+install this enable marker. Rescue boots (daos_recovery=YES) always refuse it.
+The pinned BCM2711 watchdog backend rejects hardware timeouts above15seconds.
+This program therefore uses8seconds with1second feeds; it cannot provide a
+true32second hardware timeout on that backend. Existing armed watchdogs are
+refused. ARMED is emitted only after successful hardware ioctls. Clean TERM/INT
+disables; SIGKILL or a failed feed leaves hardware armed for reset. Physical
+watchdog/reset/failover operation must still be validated on the actual Pi.
+test_kernel_watchdog.py compiles the real C control flow with mocked syscalls;
+it does not open /dev/fido or arm hardware.

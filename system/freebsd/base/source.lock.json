@@ -1,0 +1,19 @@
+{
+  "format": "daos-freebsd-base-source-v1",
+  "release": "15.1-RELEASE",
+  "architecture": "amd64",
+  "git_url": "https://git.FreeBSD.org/src.git",
+  "release_tag": "release/15.1.0",
+  "tag_object": "017261f1aac302491c7789bbd19c95e222d7faee",
+  "commit": "96841ea08dcfa84b954a32dc5ae1a26c28966cf4",
+  "tree": "f0ef863a504fffb53d04a38db43cb2a461856712",
+  "archive_url": "https://download.freebsd.org/releases/amd64/15.1-RELEASE/src.txz",
+  "archive_bytes": 253039000,
+  "archive_sha256": "cf5762da53fd52e1eaf0f9ceee9bf58cbe314c821031d0d9ffa76823185a89e1",
+  "manifest_url": "https://download.freebsd.org/releases/amd64/15.1-RELEASE/MANIFEST",
+  "release_revision": "96841ea08dcf",
+  "release_gitbranch": "releng/15.1",
+  "verified_at": "2026-11-05",
+  "verification": "Official HTTPS MANIFEST, REVISION and GITBRANCH; official git ls-remote tag peeling and cgit commit/tree. No independent PGP verification of this source manifest is claimed.",
+  "security_scope": "Original release source, not the later patched releng/15.1 HEAD and not a production security-current claim."
+}

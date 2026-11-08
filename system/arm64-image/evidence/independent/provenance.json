@@ -1,0 +1,44 @@
+{
+  "format": "hf-image-independent-evidence-copy-v1",
+  "copies": [
+    {
+      "source": "build/image-tool-probe-r7/probe-evidence.json",
+      "copy": "filesystem-probe.json",
+      "sha256": "d8341f4aa891dc9a5b92acaecccc41be2ac5ddfc1755025546b83494e4f96080",
+      "bytes": 4842
+    },
+    {
+      "source": "build/arm64-image-r7-b/build-evidence.json",
+      "copy": "build-evidence.json",
+      "sha256": "1b96bea576a63acfe4cb531c4445c7be656e6caa5e381f3ad2da711a307fcdc2",
+      "bytes": 15565
+    },
+    {
+      "source": "build/arm64-image-r7-b/boots/first/boot-evidence.json",
+      "copy": "first-boot-evidence.json",
+      "sha256": "6f08e0d1aef131547089fd27eb1a2c8204e7ebbaeec0c24431a9363014e0895b",
+      "bytes": 10802
+    },
+    {
+      "source": "build/arm64-image-r7-b/boots/first/serial.log",
+      "copy": "first-serial.log",
+      "sha256": "ccc543627b4ddad6d3c29a89d9b1ed0dd7a67ed03a79a90e124a92eb3ab8cb0b",
+      "bytes": 21825
+    },
+    {
+      "source": "build/arm64-image-r7-b/boots/resume/boot-evidence.json",
+      "copy": "resume-boot-evidence.json",
+      "sha256": "a18321523956ce93b0ece24955ff188994d40098903e552d0faf576bc4cd2e70",
+      "bytes": 10833
+    },
+    {
+      "source": "build/arm64-image-r7-b/boots/resume/serial.log",
+      "copy": "resume-serial.log",
+      "sha256": "489ad151b77ac9fc4714e8c8af1b25986a154b62d77f9d9ee6c3f47876a6818e",
+      "bytes": 21836
+    }
+  ],
+  "test_log_provenance": "The final Linux image helper test run passed 25/25 (zero skips) in 3.564s. It was observed directly in tool stdout, not saved as an original filesystem log. The standalone 9/9 filesystem helper run likewise has no located original log. Do not describe a synthesized transcript as an original test log.",
+  "command": "wsl.exe -d Debian --exec python3 -m unittest discover -s tests -p test_image*.py -v",
+  "scope": "Software integration in generic QEMU ARM64; physical camera/display/board unvalidated."
+}

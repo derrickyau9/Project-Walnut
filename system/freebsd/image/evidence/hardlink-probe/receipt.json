@@ -1,0 +1,51 @@
+{
+  "format": "DaOS-native-makefs-hardlink-probe-v1",
+  "workspace": "/var/DaOS-image-memory-r10/DaOS-hardlink-probe-001",
+  "host": [
+    "FreeBSD",
+    "daos-freebsd-dev",
+    "15.1-RELEASE-p6",
+    "FreeBSD 15.1-RELEASE-p6 releng/15.1-n283643-95719d8a895b GENERIC",
+    "amd64"
+  ],
+  "command": [
+    "/usr/sbin/makefs",
+    "-t",
+    "ffs",
+    "-B",
+    "little",
+    "-Z",
+    "-T",
+    "1735689600",
+    "-s",
+    "8m",
+    "-o",
+    "version=2,label=DaOS-probe,softupdates=1",
+    "/var/DaOS-image-memory-r10/DaOS-hardlink-probe-001/hardlinks-8m.ufs",
+    "/var/DaOS-image-memory-r10/DaOS-hardlink-probe-001/root.mtree"
+  ],
+  "cwd": "/var/DaOS-image-memory-r10/DaOS-hardlink-probe-001/tree",
+  "elapsed_seconds": 0.085,
+  "returncode": 0,
+  "file_bytes": 1048576,
+  "file_aliases": 65,
+  "same_inode": true,
+  "source_nlink": 65,
+  "logical_payload_bytes": 68157440,
+  "unique_payload_bytes": 1048576,
+  "image_bytes": 8388608,
+  "image_sha256": "d3a0c8d2cd58efcf1e03db84069e851c6874a8de41b65e3743cdd729f096c033",
+  "manifest_sha256": "ee2108298b6c160b3b9b274d5e53afe4c0014dd4fefff1c1fbb0a467ff002105",
+  "fsck_readonly": {
+    "argv": [
+      "/sbin/fsck_ffs",
+      "-n",
+      "/var/DaOS-image-memory-r10/DaOS-hardlink-probe-001/hardlinks-8m.ufs"
+    ],
+    "returncode": 0,
+    "stdout": "/var/DaOS-image-memory-r10/DaOS-hardlink-probe-001/hardlinks-8m.ufs IS NOT A DISK DEVICE\n\nCONTINUE? yes\n\n** /var/DaOS-image-memory-r10/DaOS-hardlink-probe-001/hardlinks-8m.ufs (NO WRITE)\n** Last Mounted on \n** Phase 1 - Check Blocks and Sizes\n** Phase 2 - Check Pathnames\n** Phase 3 - Check Connectivity\n** Phase 4 - Check Reference Counts\n** Phase 5 - Check Cyl groups\n2 files, 265 used, 1678 free (6 frags, 209 blocks, 0.3% fragmentation)\n",
+    "stderr": ""
+  },
+  "mounted": false,
+  "disk_attached": false
+}

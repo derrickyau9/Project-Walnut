@@ -1,0 +1,17 @@
+{
+  "format": "hf-round6-linux-extra-results-v1",
+  "passed": true,
+  "native_helper_groups": [
+    20,
+    16,
+    19,
+    20,
+    3
+  ],
+  "native_helper_total": 78,
+  "extra_tests": 48,
+  "extra_skipped": 0,
+  "total": 126,
+  "native_assertions": 171,
+  "scope": "actual Debian x86_64; extra retained/security/recipes/qemu/source-bundle and accepted-capture deadline tests; no board"
+}

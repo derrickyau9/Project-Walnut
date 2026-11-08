@@ -1,0 +1,39 @@
+DaOS_TASKBAR_MOTION_STAGE fixture condition
+DaOS_TASKBAR_MOTION_STAGE Taskbar settled True
+DaOS_TASKBAR_MOTION_STAGE actual synthetic image ready
+DaOS_TASKBAR_MOTION_STAGE fixture condition
+DaOS_TASKBAR_MOTION_STAGE fixture condition
+DaOS_TASKBAR_MOTION_STAGE fixture condition
+DaOS_TASKBAR_MOTION_STAGE fixture condition
+DaOS_TASKBAR_MOTION_STAGE fixture condition
+DaOS_TASKBAR_MOTION_STAGE fixture condition
+DaOS_TASKBAR_MOTION_STAGE fixture condition
+DaOS_TASKBAR_MOTION_STAGE fixture condition
+DaOS_TASKBAR_MOTION_STAGE fixture condition
+DaOS_TASKBAR_MOTION_STAGE fixture condition
+DaOS_TASKBAR_MOTION_STAGE fixture condition
+DaOS_TASKBAR_MOTION_STAGE fixture condition
+DaOS_TASKBAR_MOTION_STAGE fixture condition
+DaOS_TASKBAR_MOTION_STAGE fixture condition
+DaOS_TASKBAR_MOTION_STAGE fixture condition
+DaOS_TASKBAR_MOTION_STAGE fixture condition
+DaOS_TASKBAR_MOTION_STAGE fixture condition
+DaOS_TASKBAR_MOTION_STAGE fixture condition
+DaOS_TASKBAR_MOTION_STAGE fixture condition
+DaOS_TASKBAR_MOTION_STAGE actual Qt grab 01-expanded.png
+DaOS_TASKBAR_MOTION_STAGE fixture condition
+DaOS_TASKBAR_MOTION_STAGE fixture condition
+DaOS_TASKBAR_MOTION_STAGE actual collapse animation collection
+DaOS_TASKBAR_MOTION_STAGE Taskbar settled False
+DaOS_TASKBAR_MOTION_STAGE actual Qt grab 02-collapsed.png
+DaOS_TASKBAR_MOTION_STAGE fixture condition
+DaOS_TASKBAR_MOTION_STAGE actual expand animation collection
+DaOS_TASKBAR_MOTION_STAGE Taskbar settled True
+DaOS_TASKBAR_MOTION_STAGE actual Qt grab 03-reopened.png
+DaOS_TASKBAR_MOTION_STAGE fixture condition
+DaOS_TASKBAR_MOTION_STAGE icon opens MENU
+DaOS_TASKBAR_MOTION_STAGE actual Qt grab 04-menu.png
+DaOS_TASKBAR_MOTION_STAGE fixture condition
+DaOS_TASKBAR_MOTION_STAGE icon opens diagnostics tool
+DaOS_TASKBAR_MOTION_STAGE actual Qt grab 05-tools.png
+DaOS_TASKBAR_MOTION_SUCCESS {"screenshots": 5, "animation_frames": 14, "intermediate_intervals": {"collapse": 4, "expand": 3}, "report_sha256": "d94989f1cad922fc89eb9d5707f71f93ac2da5d90fc5da8bbb9a3690f77a5197"}

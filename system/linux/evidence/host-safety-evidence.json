@@ -1,0 +1,49 @@
+{
+  "format": "hf-sim-linux-host-safety-evidence-v1",
+  "simulated": true,
+  "native_binaries_unchanged": true,
+  "native_artifact_sha256": {
+    "hf-core-tests": "978dd166f73250f9793f6c4bab7c5b9ebf2b9738907c4308018c305e7b117135",
+    "hf-daemon-tests": "a7277b5b151c3b4de10b749a956675d99796b436f28a9e1bd0f40a80e0d4f13f",
+    "hf-native-worker": "625dc8c96a2a10e536c5427e93837ef53c4b70b3cd1f3e241541791aa31b70ea",
+    "hf-camerad": "67fd5d69c965b247ea0b3e5c47ce9b0aa9355591f3a5649b4dc36ce889d371d6"
+  },
+  "observation": "Final separate Python-only regression invocations and packaged smoke; no native rebuild.",
+  "linux_host_tests": {
+    "pattern": "test_linux_*.py",
+    "run": 17,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "linux_http_client_tests": {
+    "pattern": "test_http_client.py",
+    "run": 19,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "windows_host_tests": {
+    "pattern": "test_linux_*.py",
+    "run": 17,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 2
+  },
+  "refusal_checks": [
+    "recognized host bundle root",
+    "nested bundle directory",
+    "camera journal root",
+    "photos directory",
+    "nested photos directory",
+    "nested camera directory"
+  ],
+  "refusal_preserves_tree_hashes_and_inventory": true,
+  "packaged_deployment_smoke_passed": true,
+  "systemd_unit_verify_returncode": 0,
+  "source_sha256": {
+    "system/linux/recovery.py": "d8889573651ff3c827f5a2e0d25f53def1f3f917fa83646609666dfc5b6d5402",
+    "tests/test_linux_recovery.py": "31d60e18f7c0bab7a53428df74483e8a245166cc4bc1788f46ccaccd29fa6e3d",
+    "system/linux/README.md": "4c5a7225a73614cb87d968164d38cbd4e257926e3cc762156b021f0bc6578dc8"
+  }
+}

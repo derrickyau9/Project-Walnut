@@ -1,0 +1,6 @@
+{
+  "returncode": 0,
+  "seconds": 100.01271706800003,
+  "stderr": "",
+  "stdout": "{\"format\": \"DaOS-r12-arm64-ui-test-v1\", \"passed\": true, \"machine\": \"arm64\", \"uid\": 1000, \"returncode\": 0, \"seconds\": 98.37809635200006, \"source_unchanged\": true}\n"
+}

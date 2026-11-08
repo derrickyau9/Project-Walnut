@@ -1,0 +1,43 @@
+{
+  "format": "DaOS-native-Qt-display-catalogs-v1",
+  "contexts": [
+    "",
+    "AnimatedPageLoader",
+    "AppsWorkspace",
+    "BootSplash",
+    "CameraMenu",
+    "CameraPlayback",
+    "CameraTaskbar",
+    "CapabilityPage",
+    "Console",
+    "DaOSDock",
+    "DaOSIcon",
+    "ImageTools",
+    "LocalizedComboBox",
+    "Main",
+    "MediaButton",
+    "MediaGallery",
+    "MonochromeWindow",
+    "NumericReadout",
+    "RecipeWorkspace",
+    "ShootingWorkspacePanel",
+    "SoftKeyboard",
+    "SystemPage",
+    "TasksPage",
+    "TerminalPage",
+    "Typography",
+    "WifiPage"
+  ],
+  "files": {
+    "en_US": {
+      "source_sha256": "a42a5e3e83575b3de81a16cc5630a833c9aff368f18a741fcce190ddb65961c9",
+      "qm_sha256": "1b82c5473abd7048d3b111977863c29521f3ecac1b6e5dd8d29306c04030e829",
+      "entries": 818
+    },
+    "zh_CN": {
+      "source_sha256": "f05f90c7f9f5663a3d0cdb515569af96545cdfd6183e7ec03725ea1b2d636934",
+      "qm_sha256": "72ad7aefe720e3a34c60ec38fc855321df408f72c1d6e76f90f58f0afaabaa02",
+      "entries": 818
+    }
+  }
+}

@@ -1,0 +1,10 @@
+test_bounds_runtime_and_forged_or_nonfinite_timing_are_rejected (tests.test_taskbar_review_gallery.TaskbarReviewGalleryTests.test_bounds_runtime_and_forged_or_nonfinite_timing_are_rejected) ... ok
+test_corrupt_hash_crc_dimensions_and_traversal_are_rejected (tests.test_taskbar_review_gallery.TaskbarReviewGalleryTests.test_corrupt_hash_crc_dimensions_and_traversal_are_rejected) ... ok
+test_failed_unclosed_changed_or_no_intermediate_reports_are_refused (tests.test_taskbar_review_gallery.TaskbarReviewGalleryTests.test_failed_unclosed_changed_or_no_intermediate_reports_are_refused) ... ok
+test_hardlinked_inputs_and_existing_output_are_preserved_and_refused (tests.test_taskbar_review_gallery.TaskbarReviewGalleryTests.test_hardlinked_inputs_and_existing_output_are_preserved_and_refused) ... ok
+test_raw_pngs_runtime_and_recorded_ready_clock_are_preserved_without_private_report (tests.test_taskbar_review_gallery.TaskbarReviewGalleryTests.test_raw_pngs_runtime_and_recorded_ready_clock_are_preserved_without_private_report) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.369s
+
+OK

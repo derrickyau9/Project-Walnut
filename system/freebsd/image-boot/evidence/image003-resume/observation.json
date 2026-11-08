@@ -1,0 +1,206 @@
+{
+  "NoCloud": false,
+  "SSH": false,
+  "UEFI_code_unchanged": true,
+  "UI_readiness_claimed": false,
+  "all_buffers_synced_marker_seen": true,
+  "backing_inputs_unchanged": true,
+  "completed": true,
+  "format": "DaOS-freebsd-image-boot-observation-v1",
+  "framebuffer_observations": [
+    {
+      "UI_readiness_claimed": false,
+      "conversion": "RGB pixels unchanged; P6 to PNG format only",
+      "format": "DaOS-virtual-framebuffer-v1",
+      "height": 600,
+      "name": "auto-1",
+      "nonblack_pixels": 480000,
+      "png": "/home/dy09/hf-task-freebsd-r10/image-boot-004/screens/auto-1.png",
+      "png_sha256": "d58522840afcee74f74c51191b948a2450a5dee8c761d6f39069a1b05939e9c3",
+      "ppm": "/home/dy09/hf-task-freebsd-r10/image-boot-004/screens/auto-1.ppm",
+      "ppm_sha256": "3be4428e7c63aa9526caf3286913d555d6a7db8e4d5e8ac556a580a0cb35bf98",
+      "rgb_sha256": "d123e6dd2e0929d8ead51b7f88db87b4c3c43a8147333c97919f5e7c16bb554e",
+      "width": 800
+    },
+    {
+      "UI_readiness_claimed": false,
+      "conversion": "RGB pixels unchanged; P6 to PNG format only",
+      "format": "DaOS-virtual-framebuffer-v1",
+      "height": 600,
+      "name": "auto-2",
+      "nonblack_pixels": 479946,
+      "png": "/home/dy09/hf-task-freebsd-r10/image-boot-004/screens/auto-2.png",
+      "png_sha256": "088f4c193c5a5ce1716eaca2ae805c5e0ff4c1ef6ce1c8dcacf555f49aa2f51a",
+      "ppm": "/home/dy09/hf-task-freebsd-r10/image-boot-004/screens/auto-2.ppm",
+      "ppm_sha256": "73bc39559556317dfc89b6dd565c1f66c36bedf7bc9d31b3b03b287d6d400a90",
+      "rgb_sha256": "3b02a794d66aad857dea1850f7c8cab92a3a00f0aca45e39c91262b59ff9f345",
+      "width": 800
+    },
+    {
+      "UI_readiness_claimed": false,
+      "conversion": "RGB pixels unchanged; P6 to PNG format only",
+      "format": "DaOS-virtual-framebuffer-v1",
+      "height": 600,
+      "name": "auto-3",
+      "nonblack_pixels": 479946,
+      "png": "/home/dy09/hf-task-freebsd-r10/image-boot-004/screens/auto-3.png",
+      "png_sha256": "b9b7747616ebf6b2b178ba94c20317ff54d1bd61290484cd4528a4478b0bc9b5",
+      "ppm": "/home/dy09/hf-task-freebsd-r10/image-boot-004/screens/auto-3.ppm",
+      "ppm_sha256": "8a48aa38016d6a49639a2814fc71c67be089c27be24fbfaffe8b70f9ba24f1d0",
+      "rgb_sha256": "95a2682ed78531516289a5a28f3523de7da78df2ae5eb78e33d6778fc86b2f92",
+      "width": 800
+    }
+  ],
+  "host_mounts": false,
+  "host_shares": false,
+  "image_sha256": "69c824a3aa1f992fcb38e285145e4549c76107cab95a2a26e2e391e401b4942a",
+  "input_metadata_sha256": "31026fe4aee191bb52f09b4bd41e97f4676dc6fcac409a37e74f7820f9b0ec7f",
+  "network": false,
+  "private_state": {
+    "overlay": {
+      "identity": [
+        2096,
+        3574041,
+        1703936,
+        1793917077075099086,
+        1793917077075099086
+      ],
+      "path": "/home/dy09/hf-task-freebsd-r10/image-boot-004/guest.qcow2",
+      "sha256": "f3e085f7cf1b68926b1a3e63018554d7ac69a23d56bb9483112ac3ec9d539a3e"
+    },
+    "uefi_variables": {
+      "identity": [
+        2096,
+        3574043,
+        67108864,
+        1793916842563100853,
+        1793916842563100853
+      ],
+      "path": "/home/dy09/hf-task-freebsd-r10/image-boot-004/uefi-vars.fd",
+      "sha256": "e31cb33c8ad068b7d8538513ba4a76822abd3a85e52683208c0b8ebc15c3cbbe"
+    }
+  },
+  "private_state_error": null,
+  "process_returncode": 0,
+  "provenance_sha256": "28d117a3d73ff30cf71143a84284106387fe385ef24ca2346931e3ddde4281a2",
+  "reason": "guest exited",
+  "requires_human_framebuffer_review": true,
+  "resume_parent": {
+    "directory": "/home/dy09/hf-task-freebsd-r10/image-boot-003",
+    "guarded_inputs": {
+      "image.json": {
+        "identity": [
+          2096,
+          3573999,
+          3155,
+          1793915949286804748,
+          1793915949286804748
+        ],
+        "path": "/home/dy09/hf-task-freebsd-r10/image-boot-003/image.json",
+        "sha256": "e97d2235ff27b6e6dcf9e4962762739238d2cf61509f2bac59e394d6d5bb43c0"
+      },
+      "launch.json": {
+        "identity": [
+          2096,
+          3574002,
+          1885,
+          1793915952190907375,
+          1793915952190907375
+        ],
+        "path": "/home/dy09/hf-task-freebsd-r10/image-boot-003/launch.json",
+        "sha256": "caabebc2a9854ed0dd9017931c5c2d65da4dd64e19046c272e593ed0170acff8"
+      },
+      "observation.json": {
+        "identity": [
+          2096,
+          3574003,
+          3986,
+          1793916746558246013,
+          1793916746558246013
+        ],
+        "path": "/home/dy09/hf-task-freebsd-r10/image-boot-003/observation.json",
+        "sha256": "98394c69c3c977257c334a160d0d9a6f03fbc22135ecdf81b2f30d849a5e8621"
+      },
+      "provenance.json": {
+        "identity": [
+          2096,
+          3573998,
+          219897,
+          1793915947808179656,
+          1793915947808179656
+        ],
+        "path": "/home/dy09/hf-task-freebsd-r10/image-boot-003/provenance.json",
+        "sha256": "28d117a3d73ff30cf71143a84284106387fe385ef24ca2346931e3ddde4281a2"
+      },
+      "source/freebsd_image_boot.py": {
+        "identity": [
+          2096,
+          3573996,
+          46948,
+          1793915947785246533,
+          1793915947785246533
+        ],
+        "path": "/home/dy09/hf-task-freebsd-r10/image-boot-003/source/freebsd_image_boot.py",
+        "sha256": "c6949270902c7e8640905b37971abdd191704dafed0d842d31a15a65a5c41279"
+      },
+      "source/freebsd_vm.py": {
+        "identity": [
+          2096,
+          3573997,
+          31802,
+          1793915947796717426,
+          1793915947796717426
+        ],
+        "path": "/home/dy09/hf-task-freebsd-r10/image-boot-003/source/freebsd_vm.py",
+        "sha256": "ee8a5e5216f0ad515ef5ee07b9e2dbca4470801099748f0cf63638775a4875f1"
+      },
+      "uefi-code.fd": {
+        "identity": [
+          2096,
+          3573991,
+          67108864,
+          1793915947583111506,
+          1793915947591111505
+        ],
+        "path": "/home/dy09/hf-task-freebsd-r10/image-boot-003/uefi-code.fd",
+        "sha256": "5d3147294c56ce8cb636c57c181776a89bc7ba254274c35698dc5795758052d3"
+      }
+    },
+    "input_metadata_sha256": "e97d2235ff27b6e6dcf9e4962762739238d2cf61509f2bac59e394d6d5bb43c0",
+    "observation_sha256": "98394c69c3c977257c334a160d0d9a6f03fbc22135ecdf81b2f30d849a5e8621",
+    "private_state": {
+      "overlay": {
+        "identity": [
+          2096,
+          3573993,
+          1769472,
+          1793916742087101220,
+          1793916742087101220
+        ],
+        "path": "/home/dy09/hf-task-freebsd-r10/image-boot-003/guest.qcow2",
+        "sha256": "2c5e7b84e538fac8bacb11dc25d60885a5e333e718cf84ef6227d8d0198b3d0a"
+      },
+      "uefi_variables": {
+        "identity": [
+          2096,
+          3573992,
+          67108864,
+          1793915958167111415,
+          1793915958167111415
+        ],
+        "path": "/home/dy09/hf-task-freebsd-r10/image-boot-003/uefi-vars.fd",
+        "sha256": "b14e6b99194d5e242bc254b12bedbc5753b823dfbe585867f03d554df5f23c3e"
+      }
+    }
+  },
+  "seconds": 242.35427017999973,
+  "serial_bytes": 8561,
+  "serial_prefix_sha256": null,
+  "serial_read_capped": false,
+  "serial_sha256": "82417d0e56ba0d411b9c07bc56c2bac901c8217a1d19e0b8406ea446dd7ae891",
+  "source_image_unchanged": true,
+  "source_sha256": {
+    "tools/freebsd_image_boot.py": "c6949270902c7e8640905b37971abdd191704dafed0d842d31a15a65a5c41279",
+    "tools/freebsd_vm.py": "ee8a5e5216f0ad515ef5ee07b9e2dbca4470801099748f0cf63638775a4875f1"
+  }
+}

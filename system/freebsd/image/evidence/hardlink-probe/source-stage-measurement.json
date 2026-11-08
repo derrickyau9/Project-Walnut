@@ -1,0 +1,5900 @@
+{
+  "format": "DaOS-source-stage-hardlinks-v1",
+  "stage": "/var/daos-builds/daos-base-arm64-p6-001/stage",
+  "metalog_sha256": "4ed64dff1037ead9cbbc6c56bde05573cc257c255fbebef9ab25201c864e4d91",
+  "regular_entries": 9329,
+  "logical_file_bytes": 2940643393,
+  "unique_file_bytes": 414105101,
+  "unique_allocated_bytes": 441364480,
+  "unique_files": 8915,
+  "hardlink_groups": 97,
+  "metadata_conflicts": [],
+  "groups": [
+    {
+      "bytes": 17349208,
+      "allocated_bytes": 17399808,
+      "paths": [
+        "rescue/rescue",
+        "rescue/cat",
+        "rescue/chflags",
+        "rescue/chio",
+        "rescue/chmod",
+        "rescue/cp",
+        "rescue/date",
+        "rescue/dd",
+        "rescue/df",
+        "rescue/echo",
+        "rescue/ed",
+        "rescue/red",
+        "rescue/expr",
+        "rescue/getfacl",
+        "rescue/hostname",
+        "rescue/kenv",
+        "rescue/kill",
+        "rescue/ln",
+        "rescue/link",
+        "rescue/ls",
+        "rescue/mkdir",
+        "rescue/mv",
+        "rescue/pkill",
+        "rescue/pgrep",
+        "rescue/ps",
+        "rescue/pwd",
+        "rescue/realpath",
+        "rescue/rm",
+        "rescue/unlink",
+        "rescue/rmdir",
+        "rescue/setfacl",
+        "rescue/sh",
+        "rescue/sleep",
+        "rescue/stty",
+        "rescue/sync",
+        "rescue/test",
+        "rescue/[",
+        "rescue/csh",
+        "rescue/tcsh",
+        "rescue/camcontrol",
+        "rescue/clri",
+        "rescue/devfs",
+        "rescue/dmesg",
+        "rescue/dump",
+        "rescue/rdump",
+        "rescue/dumpfs",
+        "rescue/dumpon",
+        "rescue/fsck",
+        "rescue/fsck_ffs",
+        "rescue/fsck_4.2bsd",
+        "rescue/fsck_ufs",
+        "rescue/fsck_msdosfs",
+        "rescue/fsdb",
+        "rescue/fsirand",
+        "rescue/geom",
+        "rescue/glabel",
+        "rescue/gpart",
+        "rescue/ifconfig",
+        "rescue/init",
+        "rescue/kldconfig",
+        "rescue/kldload",
+        "rescue/kldstat",
+        "rescue/kldunload",
+        "rescue/ldconfig",
+        "rescue/md5",
+        "rescue/mdconfig",
+        "rescue/mdmfs",
+        "rescue/mknod",
+        "rescue/mount",
+        "rescue/mount_cd9660",
+        "rescue/mount_msdosfs",
+        "rescue/mount_nfs",
+        "rescue/mount_nullfs",
+        "rescue/mount_udf",
+        "rescue/mount_unionfs",
+        "rescue/newfs",
+        "rescue/newfs_msdos",
+        "rescue/nos-tun",
+        "rescue/reboot",
+        "rescue/fastboot",
+        "rescue/halt",
+        "rescue/fasthalt",
+        "rescue/nextboot",
+        "rescue/restore",
+        "rescue/rrestore",
+        "rescue/rcorder",
+        "rescue/route",
+        "rescue/savecore",
+        "rescue/shutdown",
+        "rescue/poweroff",
+        "rescue/swapon",
+        "rescue/sysctl",
+        "rescue/tunefs",
+        "rescue/umount",
+        "rescue/ccdconfig",
+        "rescue/ping",
+        "rescue/ping6",
+        "rescue/rtsol",
+        "rescue/ipf",
+        "rescue/ipfw",
+        "rescue/pfctl",
+        "rescue/routed",
+        "rescue/rtquery",
+        "rescue/bectl",
+        "rescue/zfs",
+        "rescue/zfsbootcfg",
+        "rescue/zpool",
+        "rescue/dhclient",
+        "rescue/head",
+        "rescue/mt",
+        "rescue/sed",
+        "rescue/tail",
+        "rescue/tee",
+        "rescue/gzip",
+        "rescue/gunzip",
+        "rescue/gzcat",
+        "rescue/zcat",
+        "rescue/bzip2",
+        "rescue/bunzip2",
+        "rescue/bzcat",
+        "rescue/less",
+        "rescue/more",
+        "rescue/xz",
+        "rescue/unxz",
+        "rescue/lzma",
+        "rescue/unlzma",
+        "rescue/xzcat",
+        "rescue/lzcat",
+        "rescue/zstd",
+        "rescue/unzstd",
+        "rescue/zstdcat",
+        "rescue/zstdmt",
+        "rescue/fetch",
+        "rescue/tar",
+        "rescue/nc",
+        "rescue/vi",
+        "rescue/ex",
+        "rescue/id",
+        "rescue/groups",
+        "rescue/whoami",
+        "rescue/iscsictl",
+        "rescue/zdb",
+        "rescue/chroot",
+        "rescue/chown",
+        "rescue/chgrp",
+        "rescue/iscsid"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 426344,
+      "allocated_bytes": 491520,
+      "paths": [
+        "usr/bin/nvi",
+        "usr/bin/nex",
+        "usr/bin/nview",
+        "usr/bin/vi",
+        "usr/bin/ex",
+        "usr/bin/view"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 38064,
+      "allocated_bytes": 40960,
+      "paths": [
+        "sbin/md5",
+        "sbin/md5sum",
+        "sbin/rmd160",
+        "sbin/rmd160sum",
+        "sbin/sha1",
+        "sbin/sha1sum",
+        "sbin/sha224",
+        "sbin/sha224sum",
+        "sbin/sha256",
+        "sbin/sha256sum",
+        "sbin/sha384",
+        "sbin/sha384sum",
+        "sbin/sha512",
+        "sbin/sha512sum",
+        "sbin/sha512t224",
+        "sbin/sha512t224sum",
+        "sbin/sha512t256",
+        "sbin/sha512t256sum",
+        "sbin/skein256",
+        "sbin/skein256sum",
+        "sbin/skein512",
+        "sbin/skein512sum",
+        "sbin/skein1024",
+        "sbin/skein1024sum"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 858876,
+      "allocated_bytes": 917504,
+      "paths": [
+        "boot/loader_lua.efi",
+        "boot/loader.efi"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 35368,
+      "allocated_bytes": 36864,
+      "paths": [
+        "sbin/geom",
+        "sbin/gcache",
+        "sbin/gconcat",
+        "sbin/geli",
+        "sbin/gjournal",
+        "sbin/glabel",
+        "sbin/gmirror",
+        "sbin/gmountver",
+        "sbin/gmultipath",
+        "sbin/gnop",
+        "sbin/gpart",
+        "sbin/graid",
+        "sbin/graid3",
+        "sbin/gshsec",
+        "sbin/gstripe",
+        "sbin/gunion",
+        "sbin/gvirstor"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 168080,
+      "allocated_bytes": 172032,
+      "paths": [
+        "usr/bin/zstd",
+        "usr/bin/unzstd",
+        "usr/bin/zstdcat",
+        "usr/bin/zstdmt"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 90416,
+      "allocated_bytes": 94208,
+      "paths": [
+        "usr/bin/xz",
+        "usr/bin/unxz",
+        "usr/bin/lzma",
+        "usr/bin/unlzma",
+        "usr/bin/xzcat",
+        "usr/bin/lzcat"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 447648,
+      "allocated_bytes": 491520,
+      "paths": [
+        "bin/csh",
+        "bin/tcsh"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 159608,
+      "allocated_bytes": 159744,
+      "paths": [
+        "usr/bin/ftp",
+        "usr/bin/pftp",
+        "usr/bin/gate-ftp"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 274816,
+      "allocated_bytes": 278528,
+      "paths": [
+        "usr/bin/ssh",
+        "usr/bin/slogin"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 133472,
+      "allocated_bytes": 135168,
+      "paths": [
+        "sbin/fsck_ffs",
+        "sbin/fsck_ufs",
+        "sbin/fsck_4.2bsd"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 265888,
+      "allocated_bytes": 266240,
+      "paths": [
+        "usr/bin/less",
+        "usr/bin/more"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 225456,
+      "allocated_bytes": 229376,
+      "paths": [
+        "usr/bin/awk",
+        "usr/bin/nawk"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 218696,
+      "allocated_bytes": 221184,
+      "paths": [
+        "usr/bin/make",
+        "usr/bin/bmake"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 207056,
+      "allocated_bytes": 208896,
+      "paths": [
+        "usr/bin/bc",
+        "usr/bin/dc"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 102976,
+      "allocated_bytes": 106496,
+      "paths": [
+        "usr/bin/mail",
+        "usr/bin/Mail",
+        "usr/bin/mailx"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 188120,
+      "allocated_bytes": 188416,
+      "paths": [
+        "sbin/ipfw",
+        "sbin/dnctl"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 93648,
+      "allocated_bytes": 94208,
+      "paths": [
+        "usr/bin/ee",
+        "usr/bin/ree",
+        "usr/bin/edit"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 60552,
+      "allocated_bytes": 61440,
+      "paths": [
+        "usr/bin/procstat",
+        "usr/bin/pargs",
+        "usr/bin/penv",
+        "usr/bin/pwdx"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 84080,
+      "allocated_bytes": 86016,
+      "paths": [
+        "usr/bin/tic",
+        "usr/bin/captoinfo",
+        "usr/bin/infotocap"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 55512,
+      "allocated_bytes": 57344,
+      "paths": [
+        "usr/bin/gzip",
+        "usr/bin/gunzip",
+        "usr/bin/gzcat",
+        "usr/bin/zcat"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 79800,
+      "allocated_bytes": 81920,
+      "paths": [
+        "usr/bin/bsnmpget",
+        "usr/bin/bsnmpwalk",
+        "usr/bin/bsnmpset"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 21280,
+      "allocated_bytes": 24576,
+      "paths": [
+        "usr/bin/bintrans",
+        "usr/bin/uuencode",
+        "usr/bin/b64encode",
+        "usr/bin/uudecode",
+        "usr/bin/b64decode",
+        "usr/bin/base64"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 105360,
+      "allocated_bytes": 106496,
+      "paths": [
+        "usr/sbin/authpf",
+        "usr/sbin/authpf-noip"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "authpf",
+          "uid": null,
+          "gid": null,
+          "mode": "06555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "authpf",
+          "uid": null,
+          "gid": null,
+          "mode": "06555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 49344,
+      "allocated_bytes": 53248,
+      "paths": [
+        "usr/sbin/automountd",
+        "usr/sbin/automount",
+        "usr/sbin/autounmountd"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 31040,
+      "allocated_bytes": 32768,
+      "paths": [
+        "usr/bin/grep",
+        "usr/bin/egrep",
+        "usr/bin/fgrep",
+        "usr/bin/rgrep"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 44848,
+      "allocated_bytes": 45056,
+      "paths": [
+        "usr/libexec/bsdinstall/partedit",
+        "usr/libexec/bsdinstall/autopart",
+        "usr/libexec/bsdinstall/scriptedpart"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 28664,
+      "allocated_bytes": 28672,
+      "paths": [
+        "usr/bin/at",
+        "usr/bin/atq",
+        "usr/bin/atrm",
+        "usr/bin/batch"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "04555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "04555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "04555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "04555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 83984,
+      "allocated_bytes": 86016,
+      "paths": [
+        "sbin/restore",
+        "sbin/rrestore"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 5482,
+      "allocated_bytes": 8192,
+      "paths": [
+        "usr/libexec/dwatch/tcp",
+        "usr/libexec/dwatch/tcp-accept",
+        "usr/libexec/dwatch/tcp-accept-established",
+        "usr/libexec/dwatch/tcp-accept-refused",
+        "usr/libexec/dwatch/tcp-connect",
+        "usr/libexec/dwatch/tcp-connect-established",
+        "usr/libexec/dwatch/tcp-connect-refused",
+        "usr/libexec/dwatch/tcp-connect-request",
+        "usr/libexec/dwatch/tcp-established",
+        "usr/libexec/dwatch/tcp-init",
+        "usr/libexec/dwatch/tcp-io",
+        "usr/libexec/dwatch/tcp-receive",
+        "usr/libexec/dwatch/tcp-refused",
+        "usr/libexec/dwatch/tcp-send",
+        "usr/libexec/dwatch/tcp-state-change",
+        "usr/libexec/dwatch/tcp-status"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 81408,
+      "allocated_bytes": 81920,
+      "paths": [
+        "usr/sbin/mfiutil",
+        "usr/sbin/mrsasutil"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 75600,
+      "allocated_bytes": 77824,
+      "paths": [
+        "usr/bin/tip",
+        "usr/bin/cu"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 4955,
+      "allocated_bytes": 8192,
+      "paths": [
+        "usr/bin/zgrep",
+        "usr/bin/zfgrep",
+        "usr/bin/zegrep",
+        "usr/bin/bzgrep",
+        "usr/bin/bzegrep",
+        "usr/bin/bzfgrep",
+        "usr/bin/lzgrep",
+        "usr/bin/lzegrep",
+        "usr/bin/lzfgrep",
+        "usr/bin/xzgrep",
+        "usr/bin/xzegrep",
+        "usr/bin/xzfgrep",
+        "usr/bin/zstdgrep",
+        "usr/bin/zstdegrep",
+        "usr/bin/zstdfgrep"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 63832,
+      "allocated_bytes": 65536,
+      "paths": [
+        "usr/sbin/mtree",
+        "usr/sbin/nmtree"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 31272,
+      "allocated_bytes": 32768,
+      "paths": [
+        "usr/bin/bzip2",
+        "usr/bin/bunzip2",
+        "usr/bin/bzcat"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 60864,
+      "allocated_bytes": 61440,
+      "paths": [
+        "sbin/ping",
+        "sbin/ping6"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "04555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "04555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 14904,
+      "allocated_bytes": 16384,
+      "paths": [
+        "sbin/reboot",
+        "sbin/halt",
+        "sbin/fastboot",
+        "sbin/fasthalt",
+        "sbin/nextboot"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 58272,
+      "allocated_bytes": 61440,
+      "paths": [
+        "sbin/dump",
+        "sbin/rdump"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 27400,
+      "allocated_bytes": 28672,
+      "paths": [
+        "usr/bin/hexdump",
+        "usr/bin/od",
+        "usr/bin/hd"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 52080,
+      "allocated_bytes": 53248,
+      "paths": [
+        "bin/ed",
+        "bin/red"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 2956,
+      "allocated_bytes": 4096,
+      "paths": [
+        "usr/libexec/dwatch/sched",
+        "usr/libexec/dwatch/sched-change-pri",
+        "usr/libexec/dwatch/sched-cpu",
+        "usr/libexec/dwatch/sched-dequeue",
+        "usr/libexec/dwatch/sched-enqueue",
+        "usr/libexec/dwatch/sched-exec",
+        "usr/libexec/dwatch/sched-lend-pri",
+        "usr/libexec/dwatch/sched-load-change",
+        "usr/libexec/dwatch/sched-off-cpu",
+        "usr/libexec/dwatch/sched-on-cpu",
+        "usr/libexec/dwatch/sched-preempt",
+        "usr/libexec/dwatch/sched-pri",
+        "usr/libexec/dwatch/sched-queue",
+        "usr/libexec/dwatch/sched-remain-cpu",
+        "usr/libexec/dwatch/sched-sleep",
+        "usr/libexec/dwatch/sched-surrender",
+        "usr/libexec/dwatch/sched-tick",
+        "usr/libexec/dwatch/sched-wakeup"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 41592,
+      "allocated_bytes": 45056,
+      "paths": [
+        "usr/sbin/mpsutil",
+        "usr/sbin/mprutil"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 3959,
+      "allocated_bytes": 4096,
+      "paths": [
+        "usr/libexec/dwatch/proc",
+        "usr/libexec/dwatch/proc-create",
+        "usr/libexec/dwatch/proc-exec",
+        "usr/libexec/dwatch/proc-exec-failure",
+        "usr/libexec/dwatch/proc-exec-success",
+        "usr/libexec/dwatch/proc-exit",
+        "usr/libexec/dwatch/proc-signal",
+        "usr/libexec/dwatch/proc-signal-clear",
+        "usr/libexec/dwatch/proc-signal-discard",
+        "usr/libexec/dwatch/proc-signal-send",
+        "usr/libexec/dwatch/proc-status"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 6458,
+      "allocated_bytes": 8192,
+      "paths": [
+        "usr/libexec/dwatch/sendrecv",
+        "usr/libexec/dwatch/recv",
+        "usr/libexec/dwatch/recvfrom",
+        "usr/libexec/dwatch/recvmsg",
+        "usr/libexec/dwatch/send",
+        "usr/libexec/dwatch/sendmsg",
+        "usr/libexec/dwatch/sendto"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 18496,
+      "allocated_bytes": 20480,
+      "paths": [
+        "sbin/swapon",
+        "sbin/swapoff",
+        "sbin/swapctl"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 10504,
+      "allocated_bytes": 12288,
+      "paths": [
+        "usr/sbin/rmextattr",
+        "usr/sbin/getextattr",
+        "usr/sbin/setextattr",
+        "usr/sbin/lsextattr"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 5067,
+      "allocated_bytes": 8192,
+      "paths": [
+        "usr/libexec/dwatch/vop_create",
+        "usr/libexec/dwatch/vop_lookup",
+        "usr/libexec/dwatch/vop_mkdir",
+        "usr/libexec/dwatch/vop_mknod",
+        "usr/libexec/dwatch/vop_remove",
+        "usr/libexec/dwatch/vop_rmdir"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 12528,
+      "allocated_bytes": 16384,
+      "paths": [
+        "usr/bin/id",
+        "usr/bin/groups",
+        "usr/bin/whoami"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 24832,
+      "allocated_bytes": 28672,
+      "paths": [
+        "usr/bin/ncal",
+        "usr/bin/cal"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 20840,
+      "allocated_bytes": 24576,
+      "paths": [
+        "usr/bin/tset",
+        "usr/bin/reset"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 19376,
+      "allocated_bytes": 20480,
+      "paths": [
+        "usr/bin/w",
+        "usr/bin/uptime"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 17992,
+      "allocated_bytes": 20480,
+      "paths": [
+        "bin/pkill",
+        "bin/pgrep"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 16824,
+      "allocated_bytes": 20480,
+      "paths": [
+        "usr/bin/fstat",
+        "usr/bin/fuser"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 16032,
+      "allocated_bytes": 16384,
+      "paths": [
+        "usr/bin/compress",
+        "usr/bin/uncompress"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 15920,
+      "allocated_bytes": 16384,
+      "paths": [
+        "sbin/mdmfs",
+        "sbin/mount_mfs"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 15912,
+      "allocated_bytes": 16384,
+      "paths": [
+        "usr/bin/stat",
+        "usr/bin/readlink"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 15600,
+      "allocated_bytes": 16384,
+      "paths": [
+        "sbin/shutdown",
+        "sbin/poweroff"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "operator",
+          "uid": null,
+          "gid": null,
+          "mode": "04554",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "operator",
+          "uid": null,
+          "gid": null,
+          "mode": "04554",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 15408,
+      "allocated_bytes": 16384,
+      "paths": [
+        "usr/sbin/kbdmap",
+        "usr/sbin/vidfont"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 14936,
+      "allocated_bytes": 16384,
+      "paths": [
+        "usr/sbin/watchdogd",
+        "usr/sbin/watchdog"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 13584,
+      "allocated_bytes": 16384,
+      "paths": [
+        "usr/sbin/setfmac",
+        "usr/sbin/setfsmac"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 13512,
+      "allocated_bytes": 16384,
+      "paths": [
+        "usr/sbin/pstat",
+        "usr/sbin/swapinfo"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 13032,
+      "allocated_bytes": 16384,
+      "paths": [
+        "usr/bin/xzdec",
+        "usr/bin/lzdec"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 12816,
+      "allocated_bytes": 16384,
+      "paths": [
+        "bin/rm",
+        "bin/unlink"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 11072,
+      "allocated_bytes": 12288,
+      "paths": [
+        "usr/bin/cksum",
+        "usr/bin/sum"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 11056,
+      "allocated_bytes": 12288,
+      "paths": [
+        "bin/test",
+        "bin/["
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 10200,
+      "allocated_bytes": 12288,
+      "paths": [
+        "bin/ln",
+        "bin/link"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 9592,
+      "allocated_bytes": 12288,
+      "paths": [
+        "usr/sbin/chown",
+        "usr/bin/chgrp"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 8064,
+      "allocated_bytes": 8192,
+      "paths": [
+        "usr/bin/enigma",
+        "usr/bin/crypt"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 7768,
+      "allocated_bytes": 8192,
+      "paths": [
+        "usr/sbin/quotaon",
+        "usr/sbin/quotaoff"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 7008,
+      "allocated_bytes": 8192,
+      "paths": [
+        "usr/sbin/rtprio",
+        "usr/sbin/idprio"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 3200,
+      "allocated_bytes": 4096,
+      "paths": [
+        "usr/bin/zdiff",
+        "usr/bin/xzdiff",
+        "usr/bin/zcmp"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 3152,
+      "allocated_bytes": 4096,
+      "paths": [
+        "usr/libexec/dwatch/io",
+        "usr/libexec/dwatch/io-done",
+        "usr/libexec/dwatch/io-start"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 2393,
+      "allocated_bytes": 4096,
+      "paths": [
+        "usr/libexec/dwatch/udplite",
+        "usr/libexec/dwatch/udplite-receive",
+        "usr/libexec/dwatch/udplite-send"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 2331,
+      "allocated_bytes": 4096,
+      "paths": [
+        "usr/libexec/dwatch/udp",
+        "usr/libexec/dwatch/udp-receive",
+        "usr/libexec/dwatch/udp-send"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 1836,
+      "allocated_bytes": 4096,
+      "paths": [
+        "usr/libexec/dwatch/rw",
+        "usr/libexec/dwatch/read",
+        "usr/libexec/dwatch/write"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 1787,
+      "allocated_bytes": 4096,
+      "paths": [
+        "usr/libexec/dwatch/ip",
+        "usr/libexec/dwatch/ip-receive",
+        "usr/libexec/dwatch/ip-send"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 1676,
+      "allocated_bytes": 4096,
+      "paths": [
+        "usr/libexec/dwatch/chmod",
+        "usr/libexec/dwatch/fchmodat",
+        "usr/libexec/dwatch/lchmod"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 287,
+      "allocated_bytes": 4096,
+      "paths": [
+        "usr/share/zfs/compatibility.d/freebsd-11.3",
+        "usr/share/zfs/compatibility.d/freebsd-11.4",
+        "usr/share/zfs/compatibility.d/freebsd-12.0",
+        "usr/share/zfs/compatibility.d/freebsd-12.1",
+        "usr/share/zfs/compatibility.d/freebsd-12.2",
+        "usr/share/zfs/compatibility.d/freebsd-12.3",
+        "usr/share/zfs/compatibility.d/freebsd-12.4",
+        "usr/share/zfs/compatibility.d/freenas-11.3"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 511,
+      "allocated_bytes": 4096,
+      "paths": [
+        "usr/share/zfs/compatibility.d/openzfs-2.1-freebsd",
+        "usr/share/zfs/compatibility.d/freebsd-13.0",
+        "usr/share/zfs/compatibility.d/freebsd-13.1",
+        "usr/share/zfs/compatibility.d/freebsd-13.2"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 1506,
+      "allocated_bytes": 4096,
+      "paths": [
+        "usr/libexec/dwatch/open",
+        "usr/libexec/dwatch/openat"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 714,
+      "allocated_bytes": 4096,
+      "paths": [
+        "usr/share/zfs/compatibility.d/openzfs-2.4",
+        "usr/share/zfs/compatibility.d/openzfs-2.4-linux",
+        "usr/share/zfs/compatibility.d/openzfs-2.4-freebsd"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 656,
+      "allocated_bytes": 4096,
+      "paths": [
+        "usr/share/zfs/compatibility.d/openzfs-2.3",
+        "usr/share/zfs/compatibility.d/openzfs-2.3-linux",
+        "usr/share/zfs/compatibility.d/openzfs-2.3-freebsd"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 584,
+      "allocated_bytes": 4096,
+      "paths": [
+        "usr/share/zfs/compatibility.d/openzfs-2.2",
+        "usr/share/zfs/compatibility.d/openzfs-2.2-linux",
+        "usr/share/zfs/compatibility.d/openzfs-2.2-freebsd"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 74,
+      "allocated_bytes": 4096,
+      "paths": [
+        "usr/bin/alias",
+        "usr/bin/bg",
+        "usr/bin/cd",
+        "usr/bin/command",
+        "usr/bin/fc",
+        "usr/bin/fg",
+        "usr/bin/getopts",
+        "usr/bin/hash",
+        "usr/bin/jobs",
+        "usr/bin/read",
+        "usr/bin/type",
+        "usr/bin/ulimit",
+        "usr/bin/umask",
+        "usr/bin/unalias",
+        "usr/bin/wait"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 227,
+      "allocated_bytes": 4096,
+      "paths": [
+        "usr/share/zfs/compatibility.d/freebsd-11.0",
+        "usr/share/zfs/compatibility.d/freebsd-11.1",
+        "usr/share/zfs/compatibility.d/freenas-11.0",
+        "usr/share/zfs/compatibility.d/freenas-11.1"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 515,
+      "allocated_bytes": 4096,
+      "paths": [
+        "usr/share/zfs/compatibility.d/openzfs-2.1-linux",
+        "usr/share/zfs/compatibility.d/ubuntu-22.04"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 505,
+      "allocated_bytes": 4096,
+      "paths": [
+        "usr/share/zfs/compatibility.d/openzfs-2.0-freebsd",
+        "usr/share/zfs/compatibility.d/truenas-12.0"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 401,
+      "allocated_bytes": 4096,
+      "paths": [
+        "usr/share/zfs/compatibility.d/openzfsonosx-1.9.3",
+        "usr/share/zfs/compatibility.d/openzfsonosx-1.9.4"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 398,
+      "allocated_bytes": 4096,
+      "paths": [
+        "usr/share/zfs/compatibility.d/zol-0.8",
+        "usr/share/zfs/compatibility.d/ubuntu-20.04"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 382,
+      "allocated_bytes": 4096,
+      "paths": [
+        "usr/share/zfs/compatibility.d/grub2-2.12",
+        "usr/share/zfs/compatibility.d/grub2"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 83,
+      "allocated_bytes": 4096,
+      "paths": [
+        "usr/bin/zless",
+        "usr/bin/bzless",
+        "usr/bin/xzless",
+        "usr/bin/lzless",
+        "usr/bin/zstdless"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0555",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 306,
+      "allocated_bytes": 4096,
+      "paths": [
+        "usr/share/zfs/compatibility.d/compat-2021",
+        "usr/share/zfs/compatibility.d/2021"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 275,
+      "allocated_bytes": 4096,
+      "paths": [
+        "usr/share/zfs/compatibility.d/freebsd-11.2",
+        "usr/share/zfs/compatibility.d/freenas-11.2"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 267,
+      "allocated_bytes": 4096,
+      "paths": [
+        "usr/share/zfs/compatibility.d/zol-0.7",
+        "usr/share/zfs/compatibility.d/ubuntu-18.04"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 246,
+      "allocated_bytes": 4096,
+      "paths": [
+        "usr/share/zfs/compatibility.d/compat-2019",
+        "usr/share/zfs/compatibility.d/2019"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 246,
+      "allocated_bytes": 4096,
+      "paths": [
+        "usr/share/zfs/compatibility.d/compat-2020",
+        "usr/share/zfs/compatibility.d/2020"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "bytes": 211,
+      "allocated_bytes": 4096,
+      "paths": [
+        "usr/share/zfs/compatibility.d/compat-2018",
+        "usr/share/zfs/compatibility.d/2018"
+      ],
+      "metadata": [
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        },
+        {
+          "uname": "root",
+          "gname": "wheel",
+          "uid": null,
+          "gid": null,
+          "mode": "0444",
+          "flags": null,
+          "type": "file"
+        }
+      ]
+    }
+  ]
+}

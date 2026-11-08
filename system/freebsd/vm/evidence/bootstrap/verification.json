@@ -1,0 +1,83 @@
+{
+  "base_sha256": "a5289152ea5b9145cc89e58ab83186173e43b5ba1ed4e9358b8f357241476229",
+  "binary_transfer": {
+    "bytes": 589,
+    "returned_sha256": "8ab8077a327413b439cf64d2f36e45d3edf03293caec4105509ce731a0ae5dcc",
+    "source_sha256": "8ab8077a327413b439cf64d2f36e45d3edf03293caec4105509ce731a0ae5dcc",
+    "uid": 1000,
+    "user": "camera"
+  },
+  "copied_original_artifacts": {
+    "first-boot/closed.json": {
+      "bytes": 323,
+      "sha256": "e5fb3eb69358ce890ac57b1a425acb7f6d2232b11dc20563fa58dabe9acc4fe4",
+      "source": "/home/dy09/hf-task-freebsd-r10/vm-001/boot-8a427d4c-0825-4f69-8d48-5a23b41a0f7c/closed.json"
+    },
+    "first-boot/launch.json": {
+      "bytes": 1055,
+      "sha256": "8390b124728f6276521afd99caeff9f52d65dfde602ca2ef8af153499766f306",
+      "source": "/home/dy09/hf-task-freebsd-r10/vm-001/boot-8a427d4c-0825-4f69-8d48-5a23b41a0f7c/launch.json"
+    },
+    "first-boot/serial.log": {
+      "bytes": 44335,
+      "sha256": "f11e337b1c9ceb9cd68933f29ca02273714c7233a655d310e147964e48bba6f6",
+      "source": "/home/dy09/hf-task-freebsd-r10/vm-001/boot-8a427d4c-0825-4f69-8d48-5a23b41a0f7c/serial.log"
+    },
+    "ready-boot/launch.json": {
+      "bytes": 1055,
+      "sha256": "eeda428c4a998916918f3f20db9df9c3e9dc0b3b264ab9b6e5d2de041a57b5ad",
+      "source": "/home/dy09/hf-task-freebsd-r10/vm-001/boot-36c11dbc-738b-4b69-b1ba-9d0343aec645/launch.json"
+    },
+    "ready-boot/ready.json": {
+      "bytes": 478,
+      "sha256": "c09fe4d746322dc39b7e75ad94895ac323ea8e85f9c5ea3c5d15761c020a52ae",
+      "source": "/home/dy09/hf-task-freebsd-r10/vm-001/boot-36c11dbc-738b-4b69-b1ba-9d0343aec645/ready.json"
+    }
+  },
+  "current_helper_sha256": {
+    "system/freebsd/vm/README.md": "b31392f666215cbc32774aef5b510351ace17ee8e57d384f8e72a546cfc91c2a",
+    "system/freebsd/vm/profile.json": "4377fe619582edfe4c7bfc089a70c4c7ff3deec3d37338ac0fbba72ee6ba57df",
+    "tests/test_freebsd_seed.py": "28c447c8c4bcca97a6a68856d76e9101f52787598b6f9ff169466d95afa3a6b9",
+    "tests/test_freebsd_vm.py": "18e69c10ee1f47dcf6399f763a6abdc0c5349c119351a3b933ad5a281a440be2",
+    "tools/freebsd_seed.py": "161f63e443be97331e6394ebe99a188dd956538ebc31d735fdf9408ebd36018b",
+    "tools/freebsd_vm.py": "33602ca78c5e5a3f1248c0cc2f4ed1e374157b07ab59ff6672c9ae4f60f27753"
+  },
+  "effective_version": "15.1-RELEASE-p6",
+  "first_boot": "nuageinit default base-package upgrade requested clean reboot before readiness; preserved as failed readiness, not successful bootstrap",
+  "format": "hf-freebsd-bootstrap-verification-v1",
+  "guest_identity": {
+    "returncode": 0,
+    "seconds": 0.12060725200012712,
+    "stderr": "",
+    "stdout": "FreeBSD daos-freebsd-dev 15.1-RELEASE-p6 FreeBSD 15.1-RELEASE-p6 releng/15.1-n283643-95719d8a895b GENERIC amd64\n15.1-RELEASE-p6\n15.1-RELEASE-p6\n15.1-RELEASE-p6\nuid=1000(camera) gid=1000(camera) groups=1000(camera)\nFilesystem         Size    Used   Avail Capacity  Mounted on\n/dev/gpt/rootfs     30G    4.0G     24G    15%    /\npermitrootlogin without-password\npasswordauthentication no\nkbdinteractiveauthentication no\nallowusers root\nallowusers camera\nauthenticationmethods publickey\n16\n17139470336\n"
+  },
+  "guest_package_egress": true,
+  "host_mounts": false,
+  "host_shares": false,
+  "official_archive_sha256": "e4ca4db889f8559c9b9dfcacc70405c038476f4b6d41649b152d3809a2ed9e1f",
+  "passed": true,
+  "private_key_copied": false,
+  "qmp_status": {
+    "running": true,
+    "status": "running"
+  },
+  "ready_boot_seconds": 19.273685255000146,
+  "runtime_overlay": "private32GiBsparseoverlay, UFS",
+  "scope": "actual virtual FreeBSD amd64/KVM; no physical camera/display or production-security claim",
+  "ssh_bind": "127.0.0.1:22241",
+  "temporary_bootstrap_root_key_only": true,
+  "tests_observed": {
+    "command": "python3 -m unittest tests.test_freebsd_vm tests.test_freebsd_seed -v",
+    "linux": {
+      "passed": 21,
+      "skipped": 0,
+      "tests": 21
+    },
+    "scope": "host guards/processes and independently decoded NoCloud media; actual guest identity/transport above separate",
+    "windows": {
+      "passed": 16,
+      "skipped": 5,
+      "tests": 21
+    }
+  }
+}

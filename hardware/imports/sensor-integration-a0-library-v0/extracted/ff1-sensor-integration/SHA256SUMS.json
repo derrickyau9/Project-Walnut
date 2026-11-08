@@ -1,0 +1,14 @@
+{
+  "README_ZH.md": "52324388c5aa23fa8af823ea28b5d9a10e6a1525c97c2723a4aea8235cc201e8",
+  "analysis/throughput_budget.json": "85600a56cecfb99ad4a345f684a871e7ae880bbc2cf6b60d917d8f29fcbcc707",
+  "analysis/throughput_budget.py": "3daf9ff2cd0247749080dc37bed5ee59173c5c8c45517aa8483bfc1d34362d41",
+  "design/interface_requirements.json": "be2c1495ca104b9826f80ac6b1f47dcca11329a4596898456749d5619dadc244",
+  "design/zcu102_hpc0_rx.csv": "5bee4d49769ca0147f887aea25308607923c3fcb7b785fc27fbe15499e9a8c0c",
+  "design/zcu102_hpc0_rx_pins.xdc": "a037d363f523a000f76a349729d8cffd709d5d1dee355260cccbee72e905597d",
+  "docs/ARCHITECTURE.md": "e589b33d13ff408b0521bb7d63a0f682395f8712661f4661a6b2861b026f29eb",
+  "docs/DOCUMENT_REQUEST_CHECKLIST.md": "fa2ad5eaa9724adbec49d929ff7833a2fffbd7863a0e38621e5f6d7d0678de8c",
+  "docs/RELEASE_GATES.md": "175635a3615659f17119593fb04fe6e13567c2811a45ec7d805fbae301c7a1f3",
+  "docs/SOURCES.md": "8ee990f7e5ff617d9e87cd1a546ff3a0c03266990c4068ea88e87625f53948c5",
+  "tests/test_package.py": "530e77318a11eccacfcac5f75a88dad6ad6251e11594eff82b3684c048ffd0d0",
+  "tests/validation_report.txt": "3951824313eb06b30e5760cc0b4bd6a6703f2ec3837583f604c17ff1dc0fec22"
+}

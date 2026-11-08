@@ -1,0 +1,11 @@
+References,Quantity,Value,Package,Manufacturer_or_candidate,MPN_or_selection,status,notes
+U1,1,2.93V active-low open-drain 200ms,SOT-23,Texas Instruments,TLV803EA29DBZR,Exact electrical part checked,Pin1 GND; pin2 RESET; pin3 VDD. Generic KiCad SOT-23 land pattern requires final assembly review. Do not substitute R/V pinout variants.
+SW1 SW2,2,SPST-NO gold contacts,THT 6x6mm,Omron / Aratas,B3F-1002-G,Exact part and hole pattern checked,4.3mm plunger height; 6.5x4.5mm holes; independent buttons; not dual-stage shutter.
+R1 R2 R5,3,10k 1% >=0.1W,0603 1608 metric,To select,Parametric component,MPN not finalized,Choose qualified thick-film resistor; no purchasing approval implied.
+R3 R4,2,1k 1% >=0.1W,0603 1608 metric,To select,Parametric component,MPN not finalized,Series input filter resistors; not a level shifter or ESD solution.
+R6,1,2.2k 1% >=0.1W,0603 1608 metric,To select,Parametric component,MPN not finalized,LED current limiting; actual brightness must be tested.
+C1 C2 C3,3,100nF 16V X7R +/-10%,0603 1608 metric,To select,Parametric component,MPN not finalized,C1 local bypass; C2/C3 filter. Confirm effective capacitance at 3.3V bias.
+C4,1,1uF 16V X7R +/-10%,0603 1608 metric,To select,Parametric component,MPN not finalized,Local bulk; confirm effective capacitance at 3.3V bias.
+D1,1,Green LED,0805 2012 metric,Kingbright,APT2012SGC candidate,Candidate datasheet checked; footprint pending final review,Generic KiCad 0805 footprint; electrical current is conservative; low-current visibility untested.
+J1,1,1x6 straight male header 2.54mm,THT pin header,To select,Parametric connector,MPN and mating harness not finalized,Unkeyed bench connector; 1mm holes; verify pin section and assembly height before procurement.
+H1 H2 H3 H4,4,2.7mm NPTH mounting holes,M2.5 clearance,PCB fabrication,None,Mechanical feature not component,Prefer insulating fixings; fasteners and host enclosure not supplied.

@@ -1,0 +1,76 @@
+{
+  "format": "DaOS-bsd-build-profile-v1",
+  "name": "daos-rpi4-aarch64-usb",
+  "backend": "freebsd_usb",
+  "source_lock": "../../../freebsd/base/source-p6-arm64.lock.json",
+  "source_archive": "/home/camera/src-p6.txz",
+  "target": {
+    "machine": "arm64",
+    "architecture": "aarch64",
+    "board": "raspberrypi4"
+  },
+  "builder": {
+    "provider": "tools.freebsd_vm",
+    "work_dir": "/home/dy09/hf-task-freebsd-r10/vm-001",
+    "user": "root",
+    "python": "/usr/local/bin/python3.12"
+  },
+  "kernel": {
+    "name": "DaOS",
+    "config": "DaOS",
+    "boot_logo": "FreeBSD VT splash, source-built device splash kernel"
+  },
+  "base": {
+    "receipt": "/var/daos-builds/daos-base-arm64-pi-splash-001/build-state.json",
+    "receipt_sha256": "f8c0dd35aedc768f9127400c14173d0a2e6751fbf9cd7a2cfe347066e0abb914",
+    "source_root": "/var/daos-builds/daos-base-arm64-p6-001/source/usr/src",
+    "stage": "/var/daos-builds/daos-base-arm64-pi-splash-001/stage",
+    "kernel_object": "/var/daos-builds/daos-base-arm64-pi-splash-001/obj/var/daos-builds/daos-base-arm64-p6-001/source/usr/src/arm64.aarch64/sys/DaOS",
+    "object_prefix": "/var/daos-builds/daos-base-arm64-pi-splash-001/obj",
+    "src_conf": "/var/daos-builds/daos-base-arm64-pi-splash-001/config/src.conf"
+  },
+  "packages": [
+    "freebsd-ui-runtime",
+    "daos-native-camera",
+    "daos-usb-adb"
+  ],
+  "recipes": {
+    "base": "system/freebsd/base/build_base.py",
+    "usb_native": "system/adb/build_freebsd.py",
+    "usb_overlay": "system/adb/integration/install.py",
+    "image": "system/freebsd/raspberrypi/assemble_pi4.py"
+  },
+  "guest_inputs": {
+    "project": "/var/DaOS-usb-image-input-003/project",
+    "runtime": "/var/DaOS-runtime-arm64-r10-004",
+    "firmware": "/var/DaOS-pi4-firmware-003",
+    "native_evidence": "/var/tmp/DaOS-arm64-target-validation-r10.json",
+    "native_command": "/var/DaOS-usb-image-input-003/native/hf-camerad",
+    "authorized_keys": "/var/DaOS-usb-image-input-003/authorized-adb-keys.pub"
+  },
+  "image_work_root": "/var/DaOS-pi4-usb-build-memory",
+  "storage": {
+    "root_mib": 3072,
+    "var_mib": 256,
+    "calibration_mib": 32,
+    "photos_mib": 512,
+    "efi_mib": 128
+  },
+  "epoch": 1793836800,
+  "usb": {
+    "vid": 65535,
+    "pid": 55813,
+    "serial": "DaOS-USB-ADB-DEVELOPMENT",
+    "authorized_public_key_fingerprints": [
+      "8c01edc4c8ef74efa01bd49592df237bb78348f4bc68234ce2918d3698dbb9fd",
+      "77692ef6437a69c159767aea568f8cf2004ad982b9913a80c2ee031e15445dc5"
+    ],
+    "physical_usb_validated": false
+  },
+  "base_policy": "Verify and reuse the completed source-built world/splash kernel by default; explicit rebuild_base runs a fresh source world and kernel build.",
+  "SDK_policy": "Use matching installed source SDK as WORLDTMP; old world object cache is pruned, not a newly compiled toolchain.",
+  "validation": {
+    "FreeBSD_ARM64_protocol_reference": "system/adb/daemon/evidence/freebsd-arm64-001/summary.json",
+    "physical_pi4_usb_c": "pending"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "format": "daos.image-processing.sources.v1",
+  "opencv_version": "4.12.0",
+  "repository": "https://github.com/opencv/opencv",
+  "commit": "49486f61fb25722cbcf586b7f4320921d46fb38e",
+  "tag": "4.12.0",
+  "archive_url": "https://github.com/opencv/opencv/archive/refs/tags/4.12.0.zip",
+  "archive_sha256": "fa3faf7581f1fa943c9e670cf57dd6ba1c5b4178f363a188a2c8bff1eb28b7e4",
+  "modules": [
+    "core",
+    "imgproc",
+    "imgcodecs",
+    "photo",
+    "features2d",
+    "calib3d",
+    "flann"
+  ],
+  "native_codecs": [
+    "bundled libjpeg-turbo 3.1.0-70",
+    "bundled libpng 1.6.43",
+    "bundled libtiff 4.6.0",
+    "bundled zlib 1.3.1"
+  ],
+  "licenses": {
+    "OpenCV-Apache-2.0.txt": {
+      "upstream": "LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    "libjpeg-turbo-LICENSE.txt": {
+      "upstream": "3rdparty/libjpeg-turbo/LICENSE.md",
+      "sha256": "96f5b328adbb78eeaaec6980d73fd558cb1e4d62560ed615646bc3cf5e532430"
+    },
+    "libjpeg-IJG-README.txt": {
+      "upstream": "3rdparty/libjpeg-turbo/README.ijg",
+      "sha256": "75815e3bf6484201a3c3d17a1bbf10f2e8e3237f84df10a2357ea896db2a81d6"
+    },
+    "libpng-LICENSE.txt": {
+      "upstream": "3rdparty/libpng/LICENSE",
+      "sha256": "7317e078e2d3b5d7ba5a6159e650945153262b44b76f6700f8e9edb261c5143e"
+    },
+    "libtiff-COPYRIGHT.txt": {
+      "upstream": "3rdparty/libtiff/COPYRIGHT",
+      "sha256": "fbd6fed7938541d2c809c0826225fc85e551fdbfa8732b10f0c87e0847acafd7"
+    },
+    "zlib-LICENSE.txt": {
+      "upstream": "3rdparty/zlib/LICENSE",
+      "sha256": "845efc77857d485d91fb3e0b884aaa929368c717ae8186b66fe1ed2495753243"
+    }
+  },
+  "scope": "Synthetic/reference and imported photographic image processing. No sensor calibration or hardware performance is claimed."
+}

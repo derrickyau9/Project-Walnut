@@ -1,0 +1,40 @@
+{
+  "format": "hf-r9-independent-dng-v1",
+  "passed": true,
+  "scope": "fresh generic ARM64 native synthetic DNGs",
+  "hardware_calibrated": false,
+  "pixel_corrections_applied": false,
+  "tifffile": "2023.4.12",
+  "rawpy": "0.28.0",
+  "libraw": [
+    0,
+    22,
+    2
+  ],
+  "captures": [
+    {
+      "capture": "Qt",
+      "sha256": "df715bfc19ebb2dfa627e6fd2eda0ef483130ecf9e69f0d64d123bbc1770555f",
+      "exposure_us": 10100,
+      "samples": 12288,
+      "all_samples_equal_oracle": true,
+      "rgb_shape": [
+        96,
+        128,
+        3
+      ]
+    },
+    {
+      "capture": "bound offline basic",
+      "sha256": "993b7048080266f9e76c0d0c9612dca9eb14ade355ae29240df4094cb4b27b82",
+      "exposure_us": 11700,
+      "samples": 12288,
+      "all_samples_equal_oracle": true,
+      "rgb_shape": [
+        96,
+        128,
+        3
+      ]
+    }
+  ]
+}

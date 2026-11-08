@@ -1,0 +1,114 @@
+{
+  "format": "DaOS-image003-capture-canonical-evidence-v1",
+  "passed": true,
+  "request_id": "afb981a3-b924-4d55-88be-6402189c2242",
+  "source_image_sha256": "69c824a3aa1f992fcb38e285145e4549c76107cab95a2a26e2e391e401b4942a",
+  "DNG_sha256": "34526aaace0136e38935822d974fa8d548060d0d5ea8ab8b726894b31f9529e0",
+  "samples_compared_per_decoder": 12288,
+  "independent_decoders": [
+    "tifffile2023.4.12",
+    "rawpy0.28.0/LibRaw0.22.2"
+  ],
+  "parent_capture_rows": 1,
+  "child_capture_rows": 1,
+  "requested_and_actual_exposure_us": 10100,
+  "gain": 1,
+  "retained_DNG_and_export_byte_identical": true,
+  "export_count": 1,
+  "source_and_parent_child_COW_unchanged": true,
+  "physical_camera_validated": false,
+  "binary_DNG_and_journal_excluded": true,
+  "copied": [
+    {
+      "source": "build/DaOS_BSD_Unix_ARM64_R10/capture-verification/independent-Windows-parent003.json",
+      "destination": "independent-Windows-parent003.json",
+      "bytes": 1930,
+      "sha256": "73943c342724044a70c06a339345049ba0800de2fe71f5b8dab75122dc666c7e",
+      "original_bytes_preserved": true
+    },
+    {
+      "source": "build/DaOS_BSD_Unix_ARM64_R10/capture-verification/independent-Windows-resume004.json",
+      "destination": "independent-Windows-resume004.json",
+      "bytes": 1785,
+      "sha256": "63ef94f2f81d93bce83c79f8d2c463ba0ccc43216308cfa568223c1a27bcc821",
+      "original_bytes_preserved": true
+    },
+    {
+      "source": "build/DaOS_BSD_Unix_ARM64_R10/capture-verification/extracted/extraction-receipt.json",
+      "destination": "extraction-parent003.json",
+      "bytes": 8325,
+      "sha256": "3cc7d5fdcc4d233d89e71888a34823ccf5c6825d6b6be015f71ff39aa9323ba1",
+      "original_bytes_preserved": true
+    },
+    {
+      "source": "build/DaOS_BSD_Unix_ARM64_R10/capture-verification/extracted-child004/extraction-receipt.json",
+      "destination": "extraction-child004.json",
+      "bytes": 9409,
+      "sha256": "bde2f23d9d6a46cfc6a5ec967be270f51c874832fd9843d2b1a1908237eb65f9",
+      "original_bytes_preserved": true
+    },
+    {
+      "source": "build/DaOS_BSD_Unix_ARM64_R10/capture-verification/extract_stopped_capture.py",
+      "destination": "extract_stopped_capture.py",
+      "bytes": 7100,
+      "sha256": "82940b7a4e09e052bedcc41a3e90b4edf8a62864d17a46bbf66f1c5b41fcaeaa",
+      "original_bytes_preserved": true
+    },
+    {
+      "source": "build/DaOS_BSD_Unix_ARM64_R10/capture-verification/extract_stopped_resume.py",
+      "destination": "extract_stopped_resume.py",
+      "bytes": 7935,
+      "sha256": "6543bb522851dd87de6707b7b9eefdfd8ce16f02dd99c0d766cd319c43a03b01",
+      "original_bytes_preserved": true
+    },
+    {
+      "source": "build/DaOS_BSD_Unix_ARM64_R10/capture-verification/validate_capture_windows.py",
+      "destination": "validate_capture_windows.py",
+      "bytes": 6559,
+      "sha256": "47594c6e971e465266975103ff3d0979249723eed9fb7c5a24e5375527eb834a",
+      "original_bytes_preserved": true
+    },
+    {
+      "source": "build/DaOS_BSD_Unix_ARM64_R10/capture-verification/verify_resume_export_windows.py",
+      "destination": "verify_resume_export_windows.py",
+      "bytes": 4658,
+      "sha256": "ed284bff7cfa021df2ea8676e171a939a0768e5e321b19a8c21aa624fb28886c",
+      "original_bytes_preserved": true
+    },
+    {
+      "source": "build/DaOS_BSD_Unix_ARM64_R10/capture-verification/extracted/state/log/DaOS-Xorg.log",
+      "destination": "parent003-Xorg.txt",
+      "bytes": 14488,
+      "sha256": "6350ab0f6490252002470db846de5c91467e26ee2e914d490fe742bd99aae0e9",
+      "original_bytes_preserved": true
+    },
+    {
+      "source": "build/DaOS_BSD_Unix_ARM64_R10/capture-verification/extracted/state/log/DaOS-camera.log",
+      "destination": "parent003-camera.txt",
+      "bytes": 2756,
+      "sha256": "f05e90e9ceac9720c7f40259cf10d24e156e8a330b335cd3bb58059561975086",
+      "original_bytes_preserved": true
+    },
+    {
+      "source": "build/DaOS_BSD_Unix_ARM64_R10/capture-verification/extracted-child004/state/log/DaOS-Xorg.log",
+      "destination": "child004-Xorg.txt",
+      "bytes": 14488,
+      "sha256": "d057cdab5d945cd26a3f8711b1ffff218de0b760a283ed2f9e8d66da92107a16",
+      "original_bytes_preserved": true
+    },
+    {
+      "source": "build/DaOS_BSD_Unix_ARM64_R10/capture-verification/extracted-child004/state/log/DaOS-camera.log",
+      "destination": "child004-camera.txt",
+      "bytes": 5512,
+      "sha256": "2efc7737f0eda778d28cad85f0e78b202475d4e100d0b90d1bf66fbd0fe4f578",
+      "original_bytes_preserved": true
+    },
+    {
+      "source": "build/DaOS_BSD_Unix_ARM64_R10/firstboot-failure/tools-provenance.json",
+      "destination": "forensic-tools-provenance.json",
+      "bytes": 16527,
+      "sha256": "e33c79aa4acda7341312187bc5d6b3b5829fd4aa7d4121bd76dac8ff10bf7d8a",
+      "original_bytes_preserved": true
+    }
+  ]
+}

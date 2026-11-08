@@ -1,0 +1,1 @@
+(fp_lib_table (version 7) (lib (name "FF1") (type "KiCad") (uri "${KIPRJMOD}/FF1.pretty") (options "") (descr "Bundled KiCad 9 footprint snapshots")))

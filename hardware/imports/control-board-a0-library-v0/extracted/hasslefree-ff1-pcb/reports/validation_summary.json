@@ -1,0 +1,16 @@
+{
+  "result": "PASS",
+  "kicad_version": "9.0.2+dfsg-1",
+  "schematic_pin_net_assignments": 35,
+  "circuit_nets": 8,
+  "electrical_components": 15,
+  "mechanical_holes": 4,
+  "track_segments": 272,
+  "through_vias": 5,
+  "via_in_smd_pad": false,
+  "erc_report": "ERC.rpt",
+  "drc_report": "DRC.rpt",
+  "excluded_drc_items": 0,
+  "electrical_bench_validation": "NOT RUN",
+  "scope": "Low-speed 3.3 V controls and local supply supervisor only; not a sensor/mainboard"
+}

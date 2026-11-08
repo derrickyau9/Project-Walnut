@@ -1,0 +1,9 @@
+test_replaced_photo_directory_fences_admission_and_delayed_worker (tests.test_native_daemon.NativeDaemonTests.test_replaced_photo_directory_fences_admission_and_delayed_worker) ... ok
+test_late_output_conflicts_are_never_overwritten_or_removed (tests.test_native_daemon.NativeDaemonTests.test_late_output_conflicts_are_never_overwritten_or_removed) ... ok
+test_native_startup_refuses_junction_and_releases_process_lock (tests.test_capture_junctions.PhotoJunctionTests.test_native_startup_refuses_junction_and_releases_process_lock) ... ok
+test_reference_startup_refuses_junction_and_releases_lock (tests.test_capture_junctions.PhotoJunctionTests.test_reference_startup_refuses_junction_and_releases_lock) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 3.731s
+
+OK

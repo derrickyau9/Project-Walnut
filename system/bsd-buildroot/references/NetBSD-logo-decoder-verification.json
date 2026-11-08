@@ -1,0 +1,15 @@
+{
+  "width": 743,
+  "height": 554,
+  "source_components": 4,
+  "rgb_and_rgba_colors_equal": true,
+  "alpha_all_255": true,
+  "format": "DaOS-netbsd-boot-logo-decoder-check-v1",
+  "test_scope": "Host execution of upstream STBI decoder, not a target kernel or boot test.",
+  "decoded_RGBA_pixel_sha256": "d22c9708dcc3552ab6aafb67631781d5b18649f6adf9b3dea6a1a842244a3d05",
+  "matches_reviewed_asset_pixels": true,
+  "conversion_required": false,
+  "recommended_framebuffer_depth": 32,
+  "kernel_boot_verified": false,
+  "physical_board_boot_verified": false
+}

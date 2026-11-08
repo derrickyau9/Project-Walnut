@@ -1,0 +1,14 @@
+{
+  "UI_readiness_claimed": false,
+  "conversion": "RGB pixels unchanged; P6 to PNG format only",
+  "format": "DaOS-virtual-framebuffer-v1",
+  "height": 600,
+  "name": "export-complete-review",
+  "nonblack_pixels": 479946,
+  "png": "/home/dy09/hf-task-freebsd-r10/image-boot-004/screens/export-complete-review.png",
+  "png_sha256": "70593faf10e09c5f9d533d87feb37040a7da17be16591e979e5c3cf42ab1cc72",
+  "ppm": "/home/dy09/hf-task-freebsd-r10/image-boot-004/screens/export-complete-review.ppm",
+  "ppm_sha256": "e63e5555d0023663c45ca50b68c1ee11c1279f8a005bc9fb0d21002dff7de149",
+  "rgb_sha256": "631f7f781df40fb3b613613ff6b8d688599de5ccca045f3ed4cc5ff9dcc20bab",
+  "width": 800
+}

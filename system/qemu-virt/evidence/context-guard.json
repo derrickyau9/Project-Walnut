@@ -1,0 +1,9 @@
+{
+  "format": "hf-qemu-guest-context-guard-v1",
+  "passed": true,
+  "execution": "QEMU user mode only; guest init returns before guest-only actions",
+  "cases": [
+    "unmarked ordinary process refused",
+    "marked non-PID1 process refused"
+  ]
+}

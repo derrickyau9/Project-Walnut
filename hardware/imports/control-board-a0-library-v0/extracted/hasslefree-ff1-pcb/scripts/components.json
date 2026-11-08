@@ -1,0 +1,318 @@
+[
+  {
+    "ref": "R1",
+    "kind": "R",
+    "value": "10k 1%",
+    "uuid": "5801864d-9e77-5f65-9103-6c22f9fd6ac0",
+    "fp": "R_0603_1608Metric",
+    "nets": {
+      "1": "V3V3",
+      "2": "HALF_RAW"
+    },
+    "board": [
+      70,
+      67,
+      0
+    ],
+    "source": ""
+  },
+  {
+    "ref": "SW1",
+    "kind": "SW_Push",
+    "value": "B3F-1002-G",
+    "uuid": "0ef4e285-d1d8-5640-a09f-2e6092178bf5",
+    "fp": "SW_TH_Tactile_Omron_B3F-10xx",
+    "nets": {
+      "1": "HALF_RAW",
+      "2": "GND"
+    },
+    "board": [
+      72,
+      57,
+      0
+    ],
+    "source": "https://components.omron.com/system/files/2023-01/datasheet_pdf/A070-E1.pdf"
+  },
+  {
+    "ref": "R3",
+    "kind": "R",
+    "value": "1k 1%",
+    "uuid": "47f6ea33-72d8-5e1c-87b0-1c92b82ad2f0",
+    "fp": "R_0603_1608Metric",
+    "nets": {
+      "1": "HALF_RAW",
+      "2": "HALF_N"
+    },
+    "board": [
+      74,
+      69,
+      0
+    ],
+    "source": ""
+  },
+  {
+    "ref": "C2",
+    "kind": "C",
+    "value": "100n 16V X7R",
+    "uuid": "7dbac7ad-a6f6-522a-bf4a-ab35bb28bad0",
+    "fp": "C_0603_1608Metric",
+    "nets": {
+      "1": "HALF_N",
+      "2": "GND"
+    },
+    "board": [
+      78,
+      71,
+      0
+    ],
+    "source": ""
+  },
+  {
+    "ref": "R2",
+    "kind": "R",
+    "value": "10k 1%",
+    "uuid": "970469d9-7360-5420-8531-d72af27a9bf9",
+    "fp": "R_0603_1608Metric",
+    "nets": {
+      "1": "V3V3",
+      "2": "FULL_RAW"
+    },
+    "board": [
+      92,
+      67,
+      0
+    ],
+    "source": ""
+  },
+  {
+    "ref": "SW2",
+    "kind": "SW_Push",
+    "value": "B3F-1002-G",
+    "uuid": "047dc12b-e28f-5983-8a6e-ae4d0d125719",
+    "fp": "SW_TH_Tactile_Omron_B3F-10xx",
+    "nets": {
+      "1": "FULL_RAW",
+      "2": "GND"
+    },
+    "board": [
+      94,
+      57,
+      0
+    ],
+    "source": "https://components.omron.com/system/files/2023-01/datasheet_pdf/A070-E1.pdf"
+  },
+  {
+    "ref": "R4",
+    "kind": "R",
+    "value": "1k 1%",
+    "uuid": "ad4a48f9-1809-5ab7-8116-25b721dc0702",
+    "fp": "R_0603_1608Metric",
+    "nets": {
+      "1": "FULL_RAW",
+      "2": "FULL_N"
+    },
+    "board": [
+      96,
+      69,
+      0
+    ],
+    "source": ""
+  },
+  {
+    "ref": "C3",
+    "kind": "C",
+    "value": "100n 16V X7R",
+    "uuid": "c55a5ef2-4880-5bfe-8b82-cbd25d48484b",
+    "fp": "C_0603_1608Metric",
+    "nets": {
+      "1": "FULL_N",
+      "2": "GND"
+    },
+    "board": [
+      100,
+      71,
+      0
+    ],
+    "source": ""
+  },
+  {
+    "ref": "J1",
+    "kind": "Conn_01x06",
+    "value": "HOST 3V3 ONLY",
+    "uuid": "c72d21f8-e130-504d-be51-7af833cf8557",
+    "fp": "PinHeader_1x06_P2.54mm_Vertical",
+    "nets": {
+      "1": "V3V3",
+      "2": "GND",
+      "3": "HALF_N",
+      "4": "FULL_N",
+      "5": "RESET_N",
+      "6": "GND"
+    },
+    "board": [
+      57,
+      59,
+      0
+    ],
+    "source": ""
+  },
+  {
+    "ref": "C4",
+    "kind": "C",
+    "value": "1u 16V X7R",
+    "uuid": "45f952c6-3e8f-55d5-a65d-9fa1ecb50ca2",
+    "fp": "C_0603_1608Metric",
+    "nets": {
+      "1": "V3V3",
+      "2": "GND"
+    },
+    "board": [
+      62,
+      55,
+      0
+    ],
+    "source": ""
+  },
+  {
+    "ref": "U1",
+    "kind": "TLV803EA29DBZR",
+    "value": "TLV803EA29DBZR",
+    "uuid": "ee3fd9f1-302c-5a75-b47d-7bebe8934c92",
+    "fp": "SOT-23",
+    "nets": {
+      "1": "GND",
+      "2": "RESET_N",
+      "3": "V3V3"
+    },
+    "board": [
+      75,
+      81,
+      0
+    ],
+    "source": "https://www.ti.com/lit/ds/symlink/tlv803e.pdf"
+  },
+  {
+    "ref": "C1",
+    "kind": "C",
+    "value": "100n 16V X7R",
+    "uuid": "f86823f7-a247-5a1b-91c6-6ccadaadf733",
+    "fp": "C_0603_1608Metric",
+    "nets": {
+      "1": "V3V3",
+      "2": "GND"
+    },
+    "board": [
+      79,
+      80,
+      90
+    ],
+    "source": ""
+  },
+  {
+    "ref": "R5",
+    "kind": "R",
+    "value": "10k 1%",
+    "uuid": "2ebc8964-23ce-5298-96e4-ffba13d862d3",
+    "fp": "R_0603_1608Metric",
+    "nets": {
+      "1": "V3V3",
+      "2": "RESET_N"
+    },
+    "board": [
+      71,
+      78,
+      0
+    ],
+    "source": ""
+  },
+  {
+    "ref": "R6",
+    "kind": "R",
+    "value": "2k2 1%",
+    "uuid": "ee43f72f-b17f-59e6-a73d-ff7d6a609855",
+    "fp": "R_0603_1608Metric",
+    "nets": {
+      "1": "V3V3",
+      "2": "LED_A"
+    },
+    "board": [
+      94,
+      81,
+      0
+    ],
+    "source": ""
+  },
+  {
+    "ref": "D1",
+    "kind": "LED",
+    "value": "GREEN 0805",
+    "uuid": "dbde94ee-9160-59b9-98fb-ed51bba33774",
+    "fp": "LED_0805_2012Metric",
+    "nets": {
+      "1": "GND",
+      "2": "LED_A"
+    },
+    "board": [
+      98,
+      81,
+      180
+    ],
+    "source": "https://www.kingbrightusa.com/images/catalog/SPEC/APT2012SGC.pdf"
+  },
+  {
+    "ref": "H1",
+    "kind": "MountingHole",
+    "value": "M2.5 NPTH",
+    "uuid": "6e1ecc73-62b2-5fd2-a795-891f685dca9b",
+    "fp": "MountingHole_2.7mm_M2.5",
+    "nets": {},
+    "board": [
+      53,
+      53,
+      0
+    ],
+    "source": ""
+  },
+  {
+    "ref": "H2",
+    "kind": "MountingHole",
+    "value": "M2.5 NPTH",
+    "uuid": "6d23ddb9-e9fb-515f-ae5b-2d4655913ff7",
+    "fp": "MountingHole_2.7mm_M2.5",
+    "nets": {},
+    "board": [
+      107,
+      53,
+      0
+    ],
+    "source": ""
+  },
+  {
+    "ref": "H3",
+    "kind": "MountingHole",
+    "value": "M2.5 NPTH",
+    "uuid": "cb42f288-7992-5a4a-b734-ebc6a20a660e",
+    "fp": "MountingHole_2.7mm_M2.5",
+    "nets": {},
+    "board": [
+      53,
+      89,
+      0
+    ],
+    "source": ""
+  },
+  {
+    "ref": "H4",
+    "kind": "MountingHole",
+    "value": "M2.5 NPTH",
+    "uuid": "3dc7fd99-6b21-5b72-b595-9a35cd28690a",
+    "fp": "MountingHole_2.7mm_M2.5",
+    "nets": {},
+    "board": [
+      107,
+      89,
+      0
+    ],
+    "source": ""
+  }
+]

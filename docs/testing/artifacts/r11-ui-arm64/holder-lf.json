@@ -1,0 +1,9 @@
+{
+  "prelaunch_script_correction": "LF line endings",
+  "restricted": true,
+  "lifetime_seconds": 1800,
+  "holder_pid": 139980,
+  "started_utc": "2026-11-05T23:18:07.7636055Z",
+  "source_vm": "/home/dy09/hf-task-freebsd-r10/arm-vm-001",
+  "boot_timeout_seconds": 360
+}

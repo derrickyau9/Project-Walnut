@@ -1,0 +1,4 @@
+# Preserve source bytes across platforms. Existing manifests bind scripts,
+# notices, fixtures and catalogs by SHA-256, including their line endings.
+# Editors may use the existing line ending of each file; Git must not convert it.
+* -text

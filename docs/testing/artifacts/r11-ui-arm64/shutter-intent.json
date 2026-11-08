@@ -1,0 +1,7 @@
+{
+  "format": "DaOS-review-one-shutter-intent-v1",
+  "instruction": "Never rerun into this directory or replace the original request after uncertainty.",
+  "maximum_shutter_actions": 1,
+  "native_sha256": "be752fd42c631e763682fa96a34b929a2bd80b5ae9ab3eb1b6f17653bc31bc28",
+  "requested_exposure_us": 10100
+}

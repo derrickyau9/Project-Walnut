@@ -1,0 +1,14 @@
+{
+  "UI_readiness_claimed": false,
+  "conversion": "RGB pixels unchanged; P6 to PNG format only",
+  "format": "DaOS-virtual-framebuffer-v1",
+  "height": 600,
+  "name": "checked-01",
+  "nonblack_pixels": 480000,
+  "png": "/home/dy09/hf-task-freebsd-r10/image-boot-003/screens/checked-01.png",
+  "png_sha256": "4d2f336ab6a8d22a5b0eb3a26f56e1a5f437e9e9f9ba8db5050c99a437bbd26f",
+  "ppm": "/home/dy09/hf-task-freebsd-r10/image-boot-003/screens/checked-01.ppm",
+  "ppm_sha256": "cb39badefa676fa92eaececa5b52351f691d9876485cb6e4cf7e2c92d18a9b92",
+  "rgb_sha256": "a6541b465a4fc247c4d0c744490f53bfd844f8bda000c37c4456f06b056d3839",
+  "width": 800
+}

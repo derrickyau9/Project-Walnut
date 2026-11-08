@@ -1,0 +1,46 @@
+{
+  "repository": "https://github.com/notofonts/noto-cjk",
+  "commit": "f8d157532fbfaeda587e826d4cd5b21a49186f7c",
+  "license": "SIL Open Font License 1.1",
+  "format": "Static OpenType CFF (not a variable font)",
+  "family": "Noto Sans CJK SC",
+  "style": "Regular (body) / Medium (headings)",
+  "modifications": "None; upstream bytes retained without modification.",
+  "files": {
+    "NotoSansCJKsc-Regular.otf": {
+      "upstream_path": "Sans/OTF/SimplifiedChinese/NotoSansCJKsc-Regular.otf",
+      "url": "https://raw.githubusercontent.com/notofonts/noto-cjk/f8d157532fbfaeda587e826d4cd5b21a49186f7c/Sans/OTF/SimplifiedChinese/NotoSansCJKsc-Regular.otf",
+      "bytes": 16437364,
+      "sha256": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b",
+      "git_blob_sha1": "dc15562470b4f842321894787a0d066879ccff8b"
+    },
+    "OFL.txt": {
+      "upstream_path": "Sans/LICENSE",
+      "url": "https://raw.githubusercontent.com/notofonts/noto-cjk/f8d157532fbfaeda587e826d4cd5b21a49186f7c/Sans/LICENSE",
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+      "git_blob_sha1": "d952d62c065f3f35fb83a173496e90b21525aef3"
+    },
+    "NotoSansCJKsc-Medium.otf": {
+      "upstream_path": "Sans/OTF/SimplifiedChinese/NotoSansCJKsc-Medium.otf",
+      "url": "https://raw.githubusercontent.com/notofonts/noto-cjk/f8d157532fbfaeda587e826d4cd5b21a49186f7c/Sans/OTF/SimplifiedChinese/NotoSansCJKsc-Medium.otf",
+      "bytes": 16523632,
+      "sha256": "ca094f6b0001fb048ca39ddd797a0cdb0179e1e55c6561e111c49c3e6a61d7b7",
+      "git_blob_sha1": "00b01dff38ff8d0a345c53d64a71bfcf9ec55522"
+    }
+  },
+  "roles": {
+    "body": {
+      "family": "Noto Sans CJK SC",
+      "style": "Regular",
+      "file": "NotoSansCJKsc-Regular.otf",
+      "qt_weight": 50
+    },
+    "heading": {
+      "family": "Noto Sans CJK SC",
+      "style": "Medium",
+      "file": "NotoSansCJKsc-Medium.otf",
+      "qt_weight": 57
+    }
+  }
+}

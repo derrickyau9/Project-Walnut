@@ -1,0 +1,25 @@
+# Verification and release matrix
+
+All targets are provisional. Only a linked report with hardware/software revisions, environment, procedure, measured result and known limitations can mark a test passed.
+
+The complete clause-by-clause assessment is [requirements status R8](requirements-status-r8.md), grounded in the preserved [original specification](../product/original-user-specification.md). Current R8 host and fresh ARM results are recorded in [the verification record](artifacts/round8/verification.json); [round-seven verification](round7-verification.md) and earlier reports remain revision-specific history. R8 does not change the delivered R7 ZIP.
+
+| Area | Intended evidence | Current status |
+| --- | --- | --- |
+| Synthetic RAW | Deterministic pixels vary predictably with exposure/mode, with explicit synthetic metadata. | See executable test results; no sensor validation. |
+| DNG | Compare decoded Bayer samples; check CFA, dimensions, black/white, crop and color metadata. | Synthetic LibRaw, tifffile and libtiff reads verified; see [G1 evidence](g1-evidence.md). Real calibration and broad photographic application compatibility remain pending. |
+| Request identity | Repeat same request after interruption without triggering a duplicate; conflicting parameters rejected; unknown when outcome cannot be established. | See automated test results; hardware power-loss behavior pending. |
+| Control | Competing owners and stale epochs rejected; cancellation and timeout do not rely on a stuck plugin. | Native Windows/Linux authority, process fencing and bounded clients tested; independent MCU/hardware recovery pending. |
+| Faults | Delayed frame, bad frame, storage full, disconnect, restart and cancellation have visible states. | See automated test results; simulated faults do not prove real-device recovery. |
+| Device UI | Independent basic capture, retained UUID, truthful uncertainty, bounded actions and shared-authority attachment. | Recorded Qt/QML tests and actual ARM Python/Qt/native capture-review-export pass; R8 fresh first/resume boots also prove independent basic CLI with DaOS imports blocked and completed saved-workflow reopen without recapture. See [R8 records](artifacts/round8/verification.json) and historical [ARM UI evidence](arm64-ui-round7.md). Rendering is offscreen/software; physical display/GPU/touch/buttons remain untested. |
+| Retained images and recipes | Browse committed images, review real retained samples, export without replacement, share a bounded plan without credentials/results. | Native/reference/SDK/HTTP and Qt/console tests pass; portable recipes run offline. R8 recovered-cancel/ownership/continuation and retained-DNG/publication fixes have [separate evidence](requirements-status-r8.md#executed-r8-validation-and-evidence-boundaries). Synthetic imagery only. |
+| FPGA logical stream | Transferred pixels, frame IDs, FIFO stalls, error/loss/abort and held completion. | Six real Icarus configurations and Bayer-to-RTL-to-DNG integration pass. No sensor receiver, CDC, DMA, synthesis or bitstream validation. |
+| Linux host deployment | Native build, immutable package, nonroot capture/restart, isolated health and bounded trial state. | Recorded native POSIX builds, process tests, host package/health and durable A/B trial-model checks pass in their stated scope. The model does not install an image or select a target bootloader slot; real update/recovery integration remains absent. |
+| ARM64 and virtual Linux | Real target ELF/static/source checks, explicit emulation and architecture-safe deployment. | AArch64 native programs, ordinary ARM Python3.13.5/PyQt5.15.11/Qt5.15.15 and fresh generic Linux image boots pass. R8 retains the same Qt/basic CLI capture IDs and two saved-workflow DNGs through a second boot; [root hash is unchanged](artifacts/round8/verification.json). No physical ARM board/peripheral acceptance is implied. |
+| RAW reliability | Target 1,000 full real captures with no unexplained errors; exact conditions and exclusions reported. | Not run; hardware unavailable. |
+| Endurance | Target 8 hours with all errors recorded and explained, including temperatures and power. | Not run; hardware unavailable. |
+| Storage and power failure | Repeated slow media, full media and cuts at write/commit/update boundaries; inspect files and state after restart. | Process-crash windows, simulated full storage and clean ext4 guest reboot/persistence are tested. Real slow/full cards and physical write/update power-cut tests are not run. Virtual crash, slow-I/O and A/B integration remain feasible software work; clean reboot is not abrupt power loss. |
+| Mount | Named manual lenses, repeated assembly, flange position, sensor plane and corner focus/load measurements for each module. | Not run; no mechanical design fabricated. |
+| Rebuild | Independent developer builds source in clean environment and makes a photograph with supplied manufacturing package. | Not run. |
+
+Distinguish simulated application tests from native hardware-in-loop tests. No quantity above is a measured performance claim.

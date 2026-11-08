@@ -1,0 +1,13 @@
+{
+  "closed_receipt_sha256": "bd3012b8dbcbf3f63fe9a8fc149d6a3f5b2462c500227752f70cd68d2a1eb252",
+  "format": "DaOS-arm-controlled-reboot-shutdown-v1",
+  "immutable_inputs_unchanged": true,
+  "kernel_all_buffers_synced": true,
+  "old_boot_directory": "/home/dy09/hf-task-freebsd-r10/arm-vm-001/arm-boot-bd899741-0e41-40f5-ba5f-f7a72d74770e",
+  "qemu_exit_code": 0,
+  "request": "controlled-reboot-2d6e5023-fdf0-4a00-a2cf-df10dccfde81.json",
+  "scope": "kernel clean sync marker; no independent host UFS fsck claimed",
+  "serial_sha256": "bf6d4cdcdbaa23aa062e50c6812f5474a8810462de2c54cad38732b4df55d690",
+  "shutter_actions_requested": 0,
+  "source_capture_id": "e80344a4-718e-436e-b146-6efee5443d23"
+}

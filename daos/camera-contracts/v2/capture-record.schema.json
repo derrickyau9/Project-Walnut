@@ -1,0 +1,32 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://hasslefree.example/contracts/v2/capture-record.schema.json",
+  "title":"HF-Sim bound synthetic capture record v2",
+  "type":"object",
+  "required":["capture_record_version","request_id","capture_id","status","sensor_mode","requested_exposure_us","requested_analogue_gain","output_format","actual_exposure_us","actual_analogue_gain","frame_id","timestamp","sensor_id","calibration_id","calibration_binding","hardware_calibrated","pixel_corrections_applied","file_path","error"],
+  "properties":{
+    "capture_record_version":{"const":2},
+    "request_id":{"type":"string","format":"uuid"},
+    "capture_id":{"type":"string","format":"uuid"},
+    "status":{"enum":["accepted","capturing","complete","failed","cancelled","unknown"]},
+    "backend":{"enum":["python","native"]},
+    "sensor_mode":{"type":"string"},
+    "requested_exposure_us":{"type":"integer"},
+    "requested_analogue_gain":{"type":"number"},
+    "output_format":{"const":"dng"},
+    "simulation_scene":{"enum":["scene","dark","flat"]},
+    "actual_exposure_us":{"type":["integer","null"]},
+    "actual_analogue_gain":{"type":["number","null"]},
+    "frame_id":{"type":["string","null"]},
+    "timestamp":{"type":["number","null"]},
+    "sensor_id":{"const":"HF-Sim"},
+    "calibration_id":{"type":"string","pattern":"^cb1-[0-9a-f]{64}$"},
+    "calibration_binding":{"$ref":"https://hasslefree.example/contracts/v2/calibration-binding.schema.json"},
+    "hardware_calibrated":{"const":false},
+    "pixel_corrections_applied":{"const":false},
+    "file_path":{"type":["string","null"]},
+    "error":{"type":["string","null"]},
+    "fault":{"type":["string","null"]},
+    "deadline_unix_ms":{"type":["integer","null"]}
+  }
+}

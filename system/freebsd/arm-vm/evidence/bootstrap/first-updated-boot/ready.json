@@ -1,0 +1,29 @@
+{
+  "acceleration": "tcg",
+  "boot_directory": "/home/dy09/hf-task-freebsd-r10/arm-vm-001/arm-boot-16d0ba2b-6475-4816-830f-de156cb128ce",
+  "brand": "DaOS",
+  "cpus": 4,
+  "format": "hf-freebsd-arm-vm-ready-v1",
+  "guest_egress_enabled": true,
+  "identity": {
+    "application_uid": 1000,
+    "bootstrap_uid": 0,
+    "guest_machine": "arm64",
+    "guest_processor": "aarch64",
+    "guest_system": "FreeBSD",
+    "system_executable": {
+      "elf_machine": 183,
+      "elf_osabi": 9,
+      "format": "ELF64",
+      "path": "/bin/sh"
+    }
+  },
+  "memory_mib": 4096,
+  "physical_camera_validated": false,
+  "pid": 1347,
+  "ready": true,
+  "seconds": 246.91287548499986,
+  "ssh_host": "127.0.0.1",
+  "ssh_port": 22242,
+  "task_key_file": "/home/dy09/hf-task-freebsd-r10/arm-vm-001/task_ed25519"
+}

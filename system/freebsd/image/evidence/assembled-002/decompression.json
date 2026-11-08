@@ -1,0 +1,12 @@
+{
+  "format": "DaOS-bounded-RAM-raw-restoration-v1",
+  "passed": true,
+  "path": "/dev/shm/DaOS-FF1-r10-002/DaOS-arm64.img",
+  "bytes": 3187712000,
+  "sha256": "c99a6ecf22f8f3ac60bc8e7a1da6220f01ed431c4517dd825a401f930dd3b237",
+  "compressed_sha256": "bc99952a18f449e57d54faf1bb23d8fed13b90086fff24817d1d0e3ddc5d4ff9",
+  "storage": "Existing Linux tmpfs; no host mount or persistent RAW copy",
+  "uid": 1000,
+  "source_compressed_unchanged": true,
+  "temporary_source_readonly": true
+}

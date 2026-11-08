@@ -1,0 +1,76 @@
+{
+  "base_bootstrap_sha256": "0914cdc88fb4c149ea27183797ccb9b7436689663ef7bc1c959c32c62a5db921",
+  "base_root_sha256": "3358206b5f5ed7eaeaccc16ee7fa97a2bb607ee036e8b91e3983ed2b001f282a",
+  "bootstrap": "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/update-model-bound-r9-final-001/runtime/bootstrap.cpio.gz",
+  "bootstrap_sha256": "10f6264c1ab5e9b759b67993f1e09f3c92f1cf3807fa3826b9bfdc3bbd21a520",
+  "compile": {
+    "command": [
+      "/usr/bin/aarch64-linux-gnu-gcc",
+      "-std=c11",
+      "-O2",
+      "-static",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/system/update-model/init.c",
+      "-o",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/update-model-bound-r9-final-001/runtime/init"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": ""
+  },
+  "format": "hf-arm64-update-runtime-v1",
+  "health_profile": {
+    "capture_root": "ui-r7/offline/basic",
+    "data_abi": 2,
+    "expected_binding": {
+      "binding_id": "cb1-a4d0d90ce30689a7202a88b28945bb6bca37fba91745b99323687213d2d5be17",
+      "binding_schema_version": 1,
+      "hardware_calibrated": false,
+      "package_checksum": "sha256:34ac12f9cee2e71f0ee06295a07034864a67b39f14c3b4609f298e5497a0ee1e",
+      "package_payload": "{\"data\":{\"analogue_gain\":1.0,\"bit_depth\":14,\"cfa\":\"RGGB\",\"dark\":{\"maximum\":64,\"mean\":64.0,\"minimum\":64,\"population_stddev\":0.0,\"sample_count\":12288},\"exposure_us\":10000,\"flat\":{\"maximum\":2112,\"mean\":1702.0,\"minimum\":1292,\"population_stddev\":289.9137802864845,\"sample_count\":12288},\"height\":96,\"width\":128},\"hardware_calibrated\":false,\"notice\":\"Not measured hardware calibration; synthetic software data or an uncalibrated marker only.\",\"package_id\":\"target-software-statistics\",\"package_version\":\"1\",\"reason\":null,\"schema_version\":1,\"sensor_id\":\"HF-Sim\",\"source\":\"simulation.bayer.v1\",\"status\":\"synthetic\"}",
+      "pixel_corrections_applied": false,
+      "sensor_id": "HF-Sim"
+    },
+    "expected_calibration": {
+      "binding_id": "cb1-a4d0d90ce30689a7202a88b28945bb6bca37fba91745b99323687213d2d5be17",
+      "calibration_id": "cb1-a4d0d90ce30689a7202a88b28945bb6bca37fba91745b99323687213d2d5be17",
+      "hardware_calibrated": false,
+      "package_checksum": "sha256:34ac12f9cee2e71f0ee06295a07034864a67b39f14c3b4609f298e5497a0ee1e",
+      "pixel_corrections_applied": false,
+      "sensor_id": "HF-Sim"
+    },
+    "expected_capture_id": "374ff3b0-e4ed-47bf-92b3-a81c90f5c344",
+    "expected_dng_sha": "993b7048080266f9e76c0d0c9612dca9eb14ade355ae29240df4094cb4b27b82",
+    "expected_native_sha": "13b0d4db807c6df5fd19ee33803c6ea15fd89f3d89450c339c7daf88eb514fcd",
+    "expected_settings": {
+      "output_format": "dng",
+      "requested_analogue_gain": 1.0,
+      "requested_exposure_us": 11700,
+      "sensor_mode": "sim-small",
+      "simulation_scene": "scene"
+    },
+    "format": "hf-update-health-profile-v1",
+    "name": "bound-v2"
+  },
+  "health_profile_sha256": "477911191733b1c07693cbe071283698c6e65cb678930c883a63dc658b84c924",
+  "health_sha256": "ac42c7aac67f6ad7f7268dc9ff2ad42c43572771c3f75b97b3d70c75a7c588af",
+  "init_sha256": "e6391c1006917dc0a03376f9c194aef7bd67a4e828f87dc68a42737da60187a3",
+  "kernel": "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/update-model-bound-r9-final-001/runtime/kernel.img",
+  "kernel_sha256": "9c37ace54ef7e1919411fd912e9f34d6982ddd7f4c8ef3c8aee56f4c4d70db67",
+  "modules_sha256": {
+    "crc16": "845f60b94052cbfa534c92e23944741d7bd8e78c66f346fded17aa583122d86e",
+    "crc32c_generic": "413e44e7566d5d49bddde454f31fd5f9b17ba4602482a8a5f3ca4eef78689e73",
+    "ext4": "bbc5a04c06a86ce8a1a13305a52b34e329d1fc0af5af66317fd3ba1eedda1b9d",
+    "jbd2": "9fc7f1be231a7655788949079e4b3f4d82c7fd43083d20545651dfb671b2729c",
+    "mbcache": "e5eadc3e426f64fdc742dc51330875268c531cc8f0a539bb1dd573aca23a4e08",
+    "virtio_blk": "e20a5d9facf58c81ad3d45fd89e3248b9a5083c26a20ddaddd88d443066012bb"
+  },
+  "scope": "generic virtual ARM64 update model; synthetic camera only",
+  "source_sha256": {
+    "system/update-model/health.py": "ac42c7aac67f6ad7f7268dc9ff2ad42c43572771c3f75b97b3d70c75a7c588af",
+    "system/update-model/init.c": "6546e3ba051e8174f5cc5870867f7912a87db3b4744fdd4967fc8b8146aeb174",
+    "tools/update_guest_boot.py": "c4cefe2f433aa0d5f86467e9be2ffeb6870735674bd88f1ae75da2ae8d719662"
+  }
+}

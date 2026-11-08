@@ -1,0 +1,25 @@
+config BR2_PACKAGE_HASSLEFREE_CAMERA
+	bool "HassleFree native synthetic camera and DaOS-domain applications"
+	depends on BR2_INSTALL_LIBSTDCPP
+	depends on BR2_TOOLCHAIN_HAS_THREADS
+	depends on BR2_USE_MMU
+	depends on BR2_PACKAGE_QT5
+	depends on BR2_PACKAGE_QT5DECLARATIVE_QUICK
+	depends on BR2_PACKAGE_QT5BASE_OPENGL_LIB
+	depends on BR2_PACKAGE_QT5QUICKCONTROLS2
+	select BR2_PACKAGE_PYTHON3
+	select BR2_PACKAGE_PYTHON3_SQLITE
+	select BR2_PACKAGE_PYTHON3_ZLIB
+	select BR2_PACKAGE_PYTHON3_UNICODEDATA
+	select BR2_PACKAGE_PYTHON3_SSL
+	select BR2_PACKAGE_PYTHON_PYQT5
+	help
+	  Cross-compile hf-camerad and its independent synthetic DNG worker
+	  using this Buildroot target toolchain. Install the bounded Python
+	  clients, saved-workflow runner, browser console and Qt/QML body UI.
+
+	  This is a synthetic camera-domain implementation informed by DaOS
+	  patterns, with no imported upstream DaOS framework source. It does
+	  not provide a sensor driver, real RAW receiver, board BSP or measured
+	  calibration. Project-wide redistribution grants remain unresolved;
+	  third-party SQLite/nlohmann and system-package terms still apply.

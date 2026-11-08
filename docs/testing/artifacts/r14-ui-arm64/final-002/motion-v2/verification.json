@@ -1,0 +1,16 @@
+{
+  "animation_frames": 9,
+  "format": "DaOS-r14-arm64-motion-proof-download-v2",
+  "intermediate_intervals": {
+    "collapse": 1,
+    "expand": 1
+  },
+  "journal_rows": 0,
+  "observed_shutter_actions": 0,
+  "passed": true,
+  "planned_shutter_actions": 0,
+  "review_sha256": "ec1bb3ee1c00af22bb6e97ae78840d1394fc85e02b4d1ed66c23c2858be8f160",
+  "source_unchanged": true,
+  "static_frames": 5,
+  "timing_note": "Each actual Qt frame records request/ready observation bounds on one monotonic clock. Sampling is armed before mouse-release dispatch; offsets refer to transition sampling start, not physical release. Recorded-frame PNG encoding/hashing/disk writes are deferred until the transition settles. No exact render instant or FPS is claimed."
+}

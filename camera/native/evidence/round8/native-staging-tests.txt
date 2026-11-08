@@ -1,0 +1,11 @@
+test_concurrent_final_is_preserved_without_overwrite (tests.test_native_staging_integrity.NativeStagingIntegrityTests.test_concurrent_final_is_preserved_without_overwrite) ... ok
+test_fifo_replacement_is_bounded_preserved_and_not_published (tests.test_native_staging_integrity.NativeStagingIntegrityTests.test_fifo_replacement_is_bounded_preserved_and_not_published) ... ok
+test_in_place_modified_contents_are_not_published_or_removed (tests.test_native_staging_integrity.NativeStagingIntegrityTests.test_in_place_modified_contents_are_not_published_or_removed) ... ok
+test_same_size_replacement_is_preserved_and_not_published (tests.test_native_staging_integrity.NativeStagingIntegrityTests.test_same_size_replacement_is_preserved_and_not_published) ... ok
+test_symlink_replacement_preserves_target_and_is_not_published (tests.test_native_staging_integrity.NativeStagingIntegrityTests.test_symlink_replacement_preserves_target_and_is_not_published) ... ok
+test_untampered_closed_staging_completes (tests.test_native_staging_integrity.NativeStagingIntegrityTests.test_untampered_closed_staging_completes) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.762s
+
+OK

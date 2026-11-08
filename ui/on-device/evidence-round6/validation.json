@@ -1,0 +1,107 @@
+{
+  "audit_round": 6,
+  "camera_body_display_validated": false,
+  "checks": [
+    {
+      "command": "python -B -m unittest tests.test_device_ui -v",
+      "passed": 23,
+      "seconds": 19.652,
+      "skipped": 0
+    },
+    {
+      "command": "python -B -m unittest tests.test_workflow tests.test_workflow_recipes tests.test_console_contracts -v",
+      "passed": 30,
+      "seconds": 13.686,
+      "skipped": 0
+    },
+    {
+      "command": "python tests/ui/round6_smoke.py",
+      "result": "passed",
+      "screenshots_captured": false,
+      "skipped": 0
+    },
+    {
+      "command": "node --check daos/console/app.js; node --check daos/console/recipes.js; node --check daos/console/retained.js",
+      "result": "passed"
+    },
+    {
+      "command": "qmllint ui/on-device/Main.qml",
+      "result": "passed"
+    }
+  ],
+  "hardware_validated": false,
+  "measured_calibration": false,
+  "native_authority": {
+    "file": "build/native/Release/hf-camerad.exe",
+    "sha256": "8925fdc150023f21ad76797e9f93c7e004ac63178905a5bbd6a018243302a55e"
+  },
+  "node": "v24.19.0",
+  "notes": [
+    "Actual Qt reference and native-HTTP retained review/export were executed; current UUID and control epoch stayed unchanged.",
+    "The retained display conversion uses the selected committed DNG samples; synthetic and uncalibrated, not independent live preview.",
+    "Create-only client-local exports matched source bytes; duplicate destinations were refused without changing source or destination.",
+    "One pending gallery request on a separate worker kept a 0.6-second lease alive while a gated export waited for 1.3 seconds; 100 repeated actions queued only one export.",
+    "Gallery access did not resolve, acknowledge or replace an unknown current capture request.",
+    "Actual headless Edge verified native DNG review/download hash, portable recipe roundtrip, recent jobs, interval pause/resume/cancel and 390-pixel layout; it captured no screenshots.",
+    "Screenshots contain temporary fixture paths and UUIDs and are excluded from the minimal source handoff; fixture DNGs and browser profiles were cleaned.",
+    "Previous evidence and preserved snapshot/archive bytes were not modified. This metadata describes only the listed new checks.",
+    "Full-resolution backend transfer is separately documented in docs/testing/retained-media-round6.md; Qt gallery tests use small synthetic captures.",
+    "Physical removable media, body display/touch, real sensor acquisition, measured calibration, power-loss durability and real-time interval timing remain unverified."
+  ],
+  "platform": "Windows-11-10.0.26300-SP0",
+  "pyqt": "5.15.10",
+  "python": "3.12.7",
+  "qt": "5.15.2",
+  "recorded_at_utc": "2026-11-05T12:42:33.326375+00:00",
+  "schema_version": 1,
+  "scope": "Windows desktop UI/console/workflow software with synthetic HF-Sim captures",
+  "screenshots": [
+    {
+      "file": "retained-library-reference-800.png",
+      "height": 600,
+      "included_in_minimal_source_handoff": false,
+      "sha256": "d7467c613bd0bdcffdd331203910f2ddf8e90f5ad29435beff0b8b53c566b19e",
+      "visually_inspected": true,
+      "width": 800
+    },
+    {
+      "file": "retained-library-native-http-1024.png",
+      "height": 680,
+      "included_in_minimal_source_handoff": false,
+      "sha256": "db349e37d0f4146d1d7d4b2b0c35ca72ee2a0c906857ba186c80f74901c5a17c",
+      "visually_inspected": true,
+      "width": 1024
+    }
+  ],
+  "source_sha256": {
+    "camera/camerad/http_client.py": "c90d3db5dac62a5a36c8dc924186accb30dd38d1790fc2b2dc67eeeeb1ed1b4a",
+    "camera/camerad/native_client.py": "4e229f11a0130432fbe76ca313ec995ac01983df16059e05a06b6ab3f6d7b21b",
+    "camera/camerad/native_service.py": "125bd397d066c1aaf40f0813d3d8f9806598a40c9d1ab317c23cec7215d937aa",
+    "camera/camerad/retained.py": "a1518dc814d4634616917b305ca7a26ca08908263214c43183dcc75f11891d4b",
+    "camera/camerad/server.py": "ae5b2e9c92853f33890ce7919626884af1114f9bcdff93a7968dcd27e935569b",
+    "camera/dng/inspect.py": "e9abd880cc72a28f438a1494cfeea978b891d2831244bef46aae702e9c048ef7",
+    "camera/native/src/daemon.cpp": "af2bd7dc113dce3591fc60118cdc5d73633b245f4e43e21db72c16fd852fc445",
+    "daos/capability_runtime/README.md": "4f6c6e520a1e53d3beea6b9b583931ae9d34cd94f29ef9e029da4ec06e44fee9",
+    "daos/capability_runtime/__main__.py": "f7e2966613438e704d0b5b8c1e55e0447e7e4bd4db2ac73453caed7358d399a6",
+    "daos/capability_runtime/bracket.py": "92af3634fd230f9da3f445e808bc5488a3c2671b3f86a9cfd857f99e32740fc1",
+    "daos/capability_runtime/manager.py": "f7eca6ca3bed968f83bac4e74afd6d5a566afa79e76cbd7920a5480ba358e7f9",
+    "daos/capability_runtime/recipes.py": "4dd4195005b942bb45671309283b7bb0c056d19044f050fe734b3ecc8e60734e",
+    "daos/console/README.md": "c0fa6dbaf284734850b3ce1160e6563fef4a30472cdf1c45937a3049e1b4c5e8",
+    "daos/console/app.js": "a8a669b157ad476d7e29a7feb2658c7300b7b79d86c8542c366a38b1d4fbc5dc",
+    "daos/console/extras.css": "5dd7af80592c128791cc6410a10e7252bf086352df1a4d109f582b32582e18b8",
+    "daos/console/index.html": "f24e3cb823fa1a2beaf80e754be565c867b29fa97f9275bd2dcd7094e24c9e91",
+    "daos/console/recipes.js": "154e362fa238fa42ee27812ecffc37f0576a4c6e877c08d4acca465fdb7211e3",
+    "daos/console/retained.js": "49d52c6e8f7de328a9dabb2ea5243c60c60be9db56da38a5b2aba8d7b33c956d",
+    "docs/testing/retained-media-round6.md": "7929dc6da35dcbbfc52cfef84a9ae145bc7ac4b43c28a73ae80a48fdfeae856c",
+    "docs/testing/ui-workflow-round6.md": "3156edde3c2e2d7734018966a8e34f90b68647ed9efec182e84716b4e3e0db68",
+    "tests/test_console_contracts.py": "1006edbbb0c93d70871dac14443914435972036533548b4104429c87ef2dd1e6",
+    "tests/test_device_ui.py": "c071657f01809c6b274c8d37ecc278583f0b32a1b080e5cf218a1ca4ecfd9d2e",
+    "tests/test_workflow.py": "9efd210730e043ea5c3c4bb5b267f1981174ee06af43ca0159bcb73af58e4eee",
+    "tests/test_workflow_recipes.py": "72b0e71ae3c713dc7405823e5eed8a81205b32bd9c010f4e70ae1d91342adde0",
+    "tests/ui/round6_smoke.py": "fab25a5acbf98832c5b0db17b96a789ed7f81d7d8e97590b5bca2d2c24950dbe",
+    "ui/on-device/Main.qml": "21c342792baa5e8ecdc4c92710e10140d210437c39124040c580dd97f4831be5",
+    "ui/on-device/README.md": "c50e61f35e3ee9469e5f9b798a6b2fa8d6c4baba0cd3509d4f7b982c84f77bd5",
+    "ui/on-device/controller.py": "132efb958cd84e20f7969fe1426cd58be261a27b5b137862485ed445ce0c2876",
+    "ui/on-device/main.py": "f1494d77b282a18965168312b6d4bf7bbb4ba07389a1f2c071d603d711b6e292"
+  }
+}

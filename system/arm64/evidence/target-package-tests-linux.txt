@@ -1,0 +1,17 @@
+Command: /usr/bin/python3 -m unittest discover -s tests -p test_target_package.py -v
+Host: Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.41
+
+test_changed_native_source_or_artifact_refused_before_writing (test_target_package.TargetPackageTests.test_changed_native_source_or_artifact_refused_before_writing) ... ok
+test_distinct_manifest_and_runtime_notices_without_emulator_payload (test_target_package.TargetPackageTests.test_distinct_manifest_and_runtime_notices_without_emulator_payload) ... ok
+test_existing_release_and_invalid_id_never_overwrite (test_target_package.TargetPackageTests.test_existing_release_and_invalid_id_never_overwrite) ... ok
+test_persistent_storage_cannot_overlap_release_or_camera_tree (test_target_package.TargetPackageTests.test_persistent_storage_cannot_overlap_release_or_camera_tree) ... ok
+test_runtime_refuses_actual_wrong_host_before_creating_data (test_target_package.TargetPackageTests.test_runtime_refuses_actual_wrong_host_before_creating_data) ... ok
+test_staging_inside_original_source_is_refused_without_creating_files (test_target_package.TargetPackageTests.test_staging_inside_original_source_is_refused_without_creating_files) ... ok
+test_tampered_files_and_host_format_are_not_valid_arm_release (test_target_package.TargetPackageTests.test_tampered_files_and_host_format_are_not_valid_arm_release) ... ok
+test_unit_launch_plan_uses_only_packaged_native_binary (test_target_package.TargetPackageTests.test_unit_launch_plan_uses_only_packaged_native_binary) ... ok
+test_verified_regular_packages_win_over_external_pythonpath_packages (test_target_package.TargetPackageTests.test_verified_regular_packages_win_over_external_pythonpath_packages) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.159s
+
+OK

@@ -1,0 +1,12 @@
+{
+  "format": "DaOS-BSD-package-recipe-v1",
+  "name": "daos-core",
+  "version": "0.1.0",
+  "kind": "base-shell-source",
+  "target": {"system": "NetBSD", "architecture": "aarch64"},
+  "builder": "install.py",
+  "runtime_dependencies": ["NetBSD /bin/sh", "NetBSD cat", "NetBSD readlink", "NetBSD sha256"],
+  "install": {"cli": "/usr/sbin/daosctl", "release": "/usr/share/daos/release.json", "components": "/usr/share/daos/components.tsv", "file_manifest": "/usr/share/daos/files.sha256"},
+  "commands": ["info", "sourceversion", "profile", "components", "verify"],
+  "scope": "Read-only release/component identity and installed-file verification. No network, privilege escalation, update, repair or power command. Base package needs no Python."
+}

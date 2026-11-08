@@ -1,0 +1,1648 @@
+{
+  "schema_version": 1,
+  "imported_at_utc": "2026-11-05",
+  "status": "concept/prototype imports; not manufacture-ready",
+  "materialization": "Current Library prepare_materialize and unchanged Library helper; source archive Library ID/version verified as native NTFS EAs; extracted children linked by archive provenance and checksums.",
+  "archive_unchanged": true,
+  "safety_checks": [
+    "archive CRCs",
+    "no absolute or parent traversal paths",
+    "no duplicate case-insensitive member paths",
+    "no symlinks",
+    "expanded size <= 1 GiB",
+    "new extraction destinations only"
+  ],
+  "sources": [
+    {
+      "library_file_id": "libfile_0fa0a256c518819181ad1d5892f3a049",
+      "file_id": "file_00000000662081f9a2e7ac5975c25fa3",
+      "version_number": 0,
+      "directory": "mechanical-concept-v01-library-v0",
+      "file_name": "HassleFree_FF1_3D_Mechanical_Concept_v01.zip",
+      "size_bytes": 19294890,
+      "archive_relative_path": "mechanical-concept-v01-library-v0/HassleFree_FF1_3D_Mechanical_Concept_v01.zip",
+      "archive_sha256": "a32530b246091aca10956ad1b6fee9441bed1b987d52b4b1d459f452888955ce",
+      "files": [
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/README_\u5148\u8bfb.md",
+          "size_bytes": 7433,
+          "sha256": "17d79a1d586776cb268d8ac33cf04f865219cdb798c9b4a688286ccd7570e384"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/HassleFree_FF1_EF_assembly.step",
+          "size_bytes": 1254452,
+          "sha256": "4e082ffe80b6031311bc2490c93f8c98cccdf223171a9d7ad260d88b86c26e08"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/HassleFree_FF1_EF_visual_reference.stl",
+          "size_bytes": 1500884,
+          "sha256": "0374037eebbbbb2cb92a93920ddc55c31eb9a335a0f22099ad0889e23e2002bc"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/HassleFree_FF1_E_assembly.step",
+          "size_bytes": 1254426,
+          "sha256": "a6a08bb90f56f8688a0538f9c95d5ce129d214f1d65ec9c3774d32b4f719c524"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/HassleFree_FF1_E_preview.glb",
+          "size_bytes": 3094036,
+          "sha256": "5973bbe73ede4ff51a36fecee31e3ff23456041136671650e2b89536cabc297c"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/HassleFree_FF1_E_visual_reference.stl",
+          "size_bytes": 1500884,
+          "sha256": "570b602ceb161858a30ee04455da5ad5804bfb8562f2e50823522df8dbf85454"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/HassleFree_FF1_concept.blend",
+          "size_bytes": 2656964,
+          "sha256": "694f8ee13b3aaf4fbcde779b5761bd3774505fa4ee3e871dae5d75584ba527d3"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/assembly_manifest.json",
+          "size_bytes": 10920,
+          "sha256": "b621da60b09bf9589108a4e97491ab506bb8754fedd47edac30783552f3f1c02"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/mesh/01_front_shell.stl",
+          "size_bytes": 100584,
+          "sha256": "990c0db6792d8d83e8efb2ee6167bc7cf276ff0081c0aeb08e53134a1404dd27"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/mesh/02_grip_wrap.stl",
+          "size_bytes": 11084,
+          "sha256": "97764ecee9b63d319d828e06bb3b597a48b145bfd987e3de1dfe04d54b52a14f"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/mesh/03_rear_shell.stl",
+          "size_bytes": 53184,
+          "sha256": "5e6a80c9b995efc6a25136bf9de64baa309b3f3977048ab0b762d0163fc92a8f"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/mesh/04_load_bearing_chassis.stl",
+          "size_bytes": 208484,
+          "sha256": "dda943792e8752150298d6d934bd5c6891585730a49101e4127ac5495ab8bc7c"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/mesh/05_humi_common_interface.stl",
+          "size_bytes": 135684,
+          "sha256": "dd59f952f43ac102efc646346eeaed3e71f86dd5bce503e8e925db879f8ce2bb"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/mesh/06_e_mount_cartridge_body.stl",
+          "size_bytes": 135684,
+          "sha256": "8fb5a6100917a7f0ee7963da068baffb927acfc4c3f623901361f73bae63d79d"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/mesh/07_e_mount_reference_flange.stl",
+          "size_bytes": 135684,
+          "sha256": "6d6c18b451873355242cb6fa0e2cc602dfbab9a6b6102a25eedc598f76f50763"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/mesh/08_ef_mount_cartridge_body.stl",
+          "size_bytes": 135684,
+          "sha256": "e86cd15cd08be247842a9fda6d31cf63202f598aed3b78eed86e456f73302b8e"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/mesh/09_ef_mount_reference_flange.stl",
+          "size_bytes": 135684,
+          "sha256": "e3fda723f53a6259126f45ed99859cc526dfe1d4bd0ededc71ae4b70d34b1b09"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/mesh/10_independent_sensor_carrier.stl",
+          "size_bytes": 86284,
+          "sha256": "5fa793aee4be4f1d79abdb1d4a8fa1ad60d0c013e08803e2fab284dc3a5291c5"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/mesh/11_sensor_package_placeholder.stl",
+          "size_bytes": 684,
+          "sha256": "4eb6ba22ba0dc065dd1de2cb1761a3de4a15fced57b80d76eed707a58b448e34"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/mesh/12_sensor_active_36x24.stl",
+          "size_bytes": 684,
+          "sha256": "3e72ff573bbccc44e3eb5d766c0500874f9ec2c7d9ebd9a94885933c04af1240"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/mesh/13_three_point_sensor_spacers.stl",
+          "size_bytes": 100884,
+          "sha256": "b310e5a049c3b1d3b97175d107cfa47d158a464d169abf1f3476471708b3a1ef"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/mesh/14_heat_spreader_placeholder.stl",
+          "size_bytes": 17484,
+          "sha256": "cbde2504582675447474f50ce19ba4c3b0a9a02a11e01febfebeacddabfda433"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/mesh/15_main_processing_board_envelope.stl",
+          "size_bytes": 18484,
+          "sha256": "1947373f998901023f82dd6e28f6547edda979214101120c0b833b462ba6dcf6"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/mesh/16_control_board_provisional_envelope.stl",
+          "size_bytes": 306684,
+          "sha256": "53bee11217d2e640ea52f786337c814cf1ccf5a277575bdd00f264b9326d9d00"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/mesh/17_replaceable_battery_envelope.stl",
+          "size_bytes": 17484,
+          "sha256": "ea7edd8f1957d222869db279ca3814b682b7e73e8230fdb8b312192ccef4a04f"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/mesh/18_battery_service_door.stl",
+          "size_bytes": 17484,
+          "sha256": "8162e1464dd7fc708c7bdfe85380e498758230fab5c78b676bc623098b9f8832"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/mesh/19_removable_storage_envelope.stl",
+          "size_bytes": 684,
+          "sha256": "0aeefc3ea8e8de243089312c9c8a04d66973c652190fef2af752c7da8d1853ca"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/mesh/20_storage_service_door.stl",
+          "size_bytes": 17484,
+          "sha256": "100c44a8f19605f6055cf68624ffcdb031bab57dad2a36e311b2e420e9dcb779"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/mesh/21_display_module_envelope.stl",
+          "size_bytes": 17484,
+          "sha256": "d98a9233f3963211ea186cefc73798077054d6a802ae435610ee3b35d181e0c2"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/mesh/22_rear_buttons.stl",
+          "size_bytes": 83084,
+          "sha256": "339bfa332f6d98cc96880f14d20fe6e4ec6fdc0536f59f74a00a991a4156f01d"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/mesh/23_shutter_button.stl",
+          "size_bytes": 16684,
+          "sha256": "d3fb55ba78d3d09e77b8313dd68666ac9dee0717bf531f1e50069c059db59187"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/mesh/24_top_control_dial.stl",
+          "size_bytes": 16684,
+          "sha256": "831745b4cf80d630728f96c252d588e8a0c5ae4e6041e7e7fd188afa66d4eb93"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/mesh/25_sensor_datum_mark.stl",
+          "size_bytes": 2284,
+          "sha256": "fb0ce6ee0c8a805b035170b2058bc44c279699191ad0ee26f68782e1f4e1c781"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/mesh/26_control_board_component_envelopes.stl",
+          "size_bytes": 1884,
+          "sha256": "273e21af0c8ab3ac1e49b9a198d6724bf8c6abddbec809d6eb6e0b4362dc1d35"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/parts/01_front_shell.step",
+          "size_bytes": 214970,
+          "sha256": "1b4711e48602660632c5a64855a37b2b553c910fd91cc875dfc3a6c39d55fc06"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/parts/02_grip_wrap.step",
+          "size_bytes": 26652,
+          "sha256": "1b2fbafc2fd61d0ef19c7b9533f27b82fd27cc62967385495e0542acdc6a1427"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/parts/03_rear_shell.step",
+          "size_bytes": 106367,
+          "sha256": "709ff4477c4dd977579a3ea696821f083e31a1b45bb1a4c99dba27b024a06ef4"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/parts/04_load_bearing_chassis.step",
+          "size_bytes": 152211,
+          "sha256": "ce7ba468c20cc8f67b22eec7be1eea33d88e29557590ce7ce77a3ce9a86b7843"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/parts/05_humi_common_interface.step",
+          "size_bytes": 33101,
+          "sha256": "59b058945a802c94debf0b4816220adbf1d51e6897c56d740b945a32714c1092"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/parts/06_e_mount_cartridge_body.step",
+          "size_bytes": 33113,
+          "sha256": "66e0ce195988cf936ed930a729e0eee2a5fd72d89829a7f79cd51bc05c85f047"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/parts/07_e_mount_reference_flange.step",
+          "size_bytes": 33107,
+          "sha256": "aa22242f29922d3a0fa55fa56c084023d86e9a4d122a4ddec8e0850f5e2f6640"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/parts/08_ef_mount_cartridge_body.step",
+          "size_bytes": 33121,
+          "sha256": "8c3cdbb882ca85f00fb875d89e2639efca1844bc4d0aa18cb8da70f87127c579"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/parts/09_ef_mount_reference_flange.step",
+          "size_bytes": 33119,
+          "sha256": "5122bfdfb30707c00b22cd4c9523f34758ec58faac563e72150c3af3d945fb78"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/parts/10_independent_sensor_carrier.step",
+          "size_bytes": 76279,
+          "sha256": "ece15dffe61e976d30ca6b18c6d70f1977692f709c35d7316ffd67e3505bbbe5"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/parts/11_sensor_package_placeholder.step",
+          "size_bytes": 15587,
+          "sha256": "ea75c187e125eec9979bde3f99f676460e0bb48e1e40580fccaada7cf86467da"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/parts/12_sensor_active_36x24.step",
+          "size_bytes": 15594,
+          "sha256": "b32286048a8dd04b133aedb8e39ed4ec19ba4b60705f0796cd781e15f081680a"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/parts/13_three_point_sensor_spacers.step",
+          "size_bytes": 33160,
+          "sha256": "3cef7ac65b926dc6699dcc90a01783ca8eac4c1942e9bf7f3e87971ecdc25242"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/parts/14_heat_spreader_placeholder.step",
+          "size_bytes": 31998,
+          "sha256": "80de4df01edefffa6895ef4aea57312f8e8e11502ee0cf7118f98457bb75634a"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/parts/15_main_processing_board_envelope.step",
+          "size_bytes": 45797,
+          "sha256": "2967919ceef0fea397ab1ff47040e989c9eb695c1bf3a5f69466ea5945171c83"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/parts/16_control_board_provisional_envelope.step",
+          "size_bytes": 84199,
+          "sha256": "331c536aa60a6f5661fdd079c125da7d3acab72268ae87448cbc561fabbb7d1a"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/parts/17_replaceable_battery_envelope.step",
+          "size_bytes": 32068,
+          "sha256": "7fe52adb8fed246167906af46d6dbb487d0bd2ff9dde8711570cbd4148130ec1"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/parts/18_battery_service_door.step",
+          "size_bytes": 32163,
+          "sha256": "1a37c6f4143b670119711261ff8e34f07adea2783d0b2c87b95f93b93646a194"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/parts/19_removable_storage_envelope.step",
+          "size_bytes": 15569,
+          "sha256": "7e94c17f0cb40471e17d2a53ad48cc7943c8ef8432201b19b416289aecfa88cf"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/parts/20_storage_service_door.step",
+          "size_bytes": 32116,
+          "sha256": "343c42494372ceb1c88e004e558ef00f9229e872db0dce41a8ad3fd8f2ac90bf"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/parts/21_display_module_envelope.step",
+          "size_bytes": 32176,
+          "sha256": "3a10920d84eb1cf4233a510aa2a5dd3a6e3c7e103ad172d426bdf7d3049bd065"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/parts/22_rear_buttons.step",
+          "size_bytes": 36038,
+          "sha256": "efe02d74596039c8cde030d1b3c76e52728470022a5e7f4169776b1eb884d66a"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/parts/23_shutter_button.step",
+          "size_bytes": 6919,
+          "sha256": "72e4d67431d64f88e49fea303098b9d3573b5d4d2cdf8ebaa8ba980cb0d3bdf6"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/parts/24_top_control_dial.step",
+          "size_bytes": 6865,
+          "sha256": "038406cd19fd179ffd81271cb18824f393496f4b4438604d4bbc94ca0bdf4304"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/parts/25_sensor_datum_mark.step",
+          "size_bytes": 42518,
+          "sha256": "4e5dc6a8f6bd779e2117c9557e801f66489f922b4747c6531df60f3a20bc5786"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/parts/26_control_board_component_envelopes.step",
+          "size_bytes": 49725,
+          "sha256": "7d2ec090a42a7f33e6621dce665332944991dbe6d70ab634e49deec90388ef86"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/exports/parts_register.csv",
+          "size_bytes": 1965,
+          "sha256": "637adb9e237f5a4a51802bc644f466b1c3ed8b6a7c4d4fbc17ff741547d87b5c"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/renders/01_front_E.png",
+          "size_bytes": 3594333,
+          "sha256": "ef22e9dee4c8948df3f42a05a8e201b9fa609a7eaf95818c05d7e43be39655ec"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/renders/02_rear_controls.png",
+          "size_bytes": 3428141,
+          "sha256": "f0b9ed3a7a04ab2224a7883c4c75967ee38abd9608514619abc104d7d831954c"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/renders/03_front_EF.png",
+          "size_bytes": 3516002,
+          "sha256": "d705c17d2716a7ad674bd1798cde0558c58f326b572a09b35b2a193ac45fe8ad"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/renders/04_exploded_assembly.png",
+          "size_bytes": 2785972,
+          "sha256": "73bc45a7fb5bdc30d89e56a3c4f727ed6d9a72f5d1764e3a9175e3509877d151"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/renders/05_optical_chassis.png",
+          "size_bytes": 2785703,
+          "sha256": "2aeda49e8d9b793471f2f1b9d45a72c27348aa7fb826d7dbeff1058123ffe3f2"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/renders/06_optical_datums.png",
+          "size_bytes": 112875,
+          "sha256": "854e61e05056ddddb7e317b69bb23fd523faa2f8c941126479e7fcf04b03ca64"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/renders/06_optical_datums.svg",
+          "size_bytes": 7709,
+          "sha256": "ec06c27cbf9e90ee4134aab6e5f7f9f7c5c88678d0404a335591d2fb5e4660a1"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/source/FF1_Control_A0_board_only.step",
+          "size_bytes": 35563,
+          "sha256": "80e4e5af7d88640f4f1e25d1f83462baa7975416ef9bf139909df3378b330b6a"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/source/build_camera.py",
+          "size_bytes": 14953,
+          "sha256": "69318edb2eb9d72c603d5224c21b047638ceff2993617fd31a2668a78fbce136"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/source/draw_datums.py",
+          "size_bytes": 4120,
+          "sha256": "a4690c5773ca0a641cc444cd870b125c2333096da09fb5d8a954511ed665fd27"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/source/parameters.json",
+          "size_bytes": 1431,
+          "sha256": "317c8db670d231886263c77270d57fd9bfe8d88ff7377a251d022ee3f1232062"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/source/render_camera.py",
+          "size_bytes": 7321,
+          "sha256": "7c5eacf0fb31ad30047088c8e5e47a221f6084a2aca21b79a173ce0a55ab85f6"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/validation/final_QA.json",
+          "size_bytes": 1314,
+          "sha256": "187eef4779b4460ace402687089a5bd955042edede7e6d8e5190356ce3ea97c0"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/validation/geometry_report.json",
+          "size_bytes": 2851,
+          "sha256": "8ce6a137e50eccd262139182a1ee01f60555f7a373762c097432d9538e499e5d"
+        },
+        {
+          "path": "mechanical-concept-v01-library-v0/extracted/HassleFree_FF1_3D_Concept_v01/validation/step_roundtrip.json",
+          "size_bytes": 276,
+          "sha256": "8059cf4b4659e018c16cfca79a2867a635678c005eb41badd49dd0603604a494"
+        }
+      ],
+      "integration_role": "preserved historical mechanical concept revision 0.1"
+    },
+    {
+      "library_file_id": "libfile_4bd30fc2a728819181ba9d12fd2b3ede",
+      "file_id": "file_00000000cfb081f5849522725c7a4860",
+      "version_number": 0,
+      "directory": "control-board-a0-library-v0",
+      "file_name": "HassleFree_FF1_Control_A0_Engineering.zip",
+      "size_bytes": 428312,
+      "archive_relative_path": "control-board-a0-library-v0/HassleFree_FF1_Control_A0_Engineering.zip",
+      "archive_sha256": "0cf099e17e88e500de4a5770225432ca1d20ebdb93897fe160c48028a229d706",
+      "files": [
+        {
+          "path": "control-board-a0-library-v0/extracted/hasslefree-ff1-pcb/README_ZH.md",
+          "size_bytes": 4167,
+          "sha256": "c15228bf1b32db299e165afc1bb698586a521112896f052273421868e672d287"
+        },
+        {
+          "path": "control-board-a0-library-v0/extracted/hasslefree-ff1-pcb/SHA256SUMS.json",
+          "size_bytes": 3576,
+          "sha256": "678be8c81f00dfd284837f3cdac70856ca90943fa19607d4a3d45f001d1bbcbb"
+        },
+        {
+          "path": "control-board-a0-library-v0/extracted/hasslefree-ff1-pcb/docs/BOM.csv",
+          "size_bytes": 1918,
+          "sha256": "915408743e0ceef8202d1488e571fc9751a7b4258accfa31abc568c662bf55a5"
+        },
+        {
+          "path": "control-board-a0-library-v0/extracted/hasslefree-ff1-pcb/docs/ENGINEERING_NOTES.md",
+          "size_bytes": 6534,
+          "sha256": "d412c75bd5f463de6224ab5e7514d1f2fb3929b3480641897216b6c673ba44ac"
+        },
+        {
+          "path": "control-board-a0-library-v0/extracted/hasslefree-ff1-pcb/docs/KICAD_LIBRARY_LICENSE.txt",
+          "size_bytes": 19872,
+          "sha256": "48a86acd94e857211eac57a51700fc9b3d38539503c282e09ff9e9392fd6503f"
+        },
+        {
+          "path": "control-board-a0-library-v0/extracted/hasslefree-ff1-pcb/docs/TEST_PLAN.md",
+          "size_bytes": 3574,
+          "sha256": "2be2b546b8d2fb25e3bc6f3c5c1746ee9c76289dd0665b3cfe618ededd5af830"
+        },
+        {
+          "path": "control-board-a0-library-v0/extracted/hasslefree-ff1-pcb/hardware/FF1.kicad_sym",
+          "size_bytes": 15584,
+          "sha256": "3e7356141a7fb6b56b67d68cf5e15f4acc9e26ac45ee7082bcc7e4988ebc7a45"
+        },
+        {
+          "path": "control-board-a0-library-v0/extracted/hasslefree-ff1-pcb/hardware/FF1.pretty/C_0603_1608Metric.kicad_mod",
+          "size_bytes": 2427,
+          "sha256": "6817e127719273e03bb0a41f8d885aaa677ba6bbce6ee8292b2f18223e2ec419"
+        },
+        {
+          "path": "control-board-a0-library-v0/extracted/hasslefree-ff1-pcb/hardware/FF1.pretty/LED_0805_2012Metric.kicad_mod",
+          "size_bytes": 2618,
+          "sha256": "9886763499664dcbcbd9438893af4b1ab5143faf39ff147ed51da0388b300652"
+        },
+        {
+          "path": "control-board-a0-library-v0/extracted/hasslefree-ff1-pcb/hardware/FF1.pretty/MountingHole_2.7mm_M2.5.kicad_mod",
+          "size_bytes": 1078,
+          "sha256": "eda9be76e1e6e0feb69e270841b0bb1d87dc96ef5b9a0743f006a4fc9ba4c8e4"
+        },
+        {
+          "path": "control-board-a0-library-v0/extracted/hasslefree-ff1-pcb/hardware/FF1.pretty/PinHeader_1x06_P2.54mm_Vertical.kicad_mod",
+          "size_bytes": 3466,
+          "sha256": "332033cecf3bbc2c5a78c85d064fd71ad2fe8c3badd287ceba3fd13c45f62ea8"
+        },
+        {
+          "path": "control-board-a0-library-v0/extracted/hasslefree-ff1-pcb/hardware/FF1.pretty/R_0603_1608Metric.kicad_mod",
+          "size_bytes": 2460,
+          "sha256": "26fc677c5d1ee32f5f59895b2cd29b884b4a60b08f66427c2fb9759e69c030c4"
+        },
+        {
+          "path": "control-board-a0-library-v0/extracted/hasslefree-ff1-pcb/hardware/FF1.pretty/SOT-23.kicad_mod",
+          "size_bytes": 3897,
+          "sha256": "a047eb42e071414312e7f0d76149c378c6f390c6b852d3be21e1331d96b16bf8"
+        },
+        {
+          "path": "control-board-a0-library-v0/extracted/hasslefree-ff1-pcb/hardware/FF1.pretty/SW_TH_Tactile_Omron_B3F-10xx.kicad_mod",
+          "size_bytes": 4295,
+          "sha256": "870ac08c895d0c1c209ac9fca1ff69c07d79058b160df8aa472ca1b40499d0a3"
+        },
+        {
+          "path": "control-board-a0-library-v0/extracted/hasslefree-ff1-pcb/hardware/FF1_Control_A0.kicad_pcb",
+          "size_bytes": 116144,
+          "sha256": "7e5b313aec7d2353a55218fef2dc6be9216f9512c602272dc4bfbc96edccdfc5"
+        },
+        {
+          "path": "control-board-a0-library-v0/extracted/hasslefree-ff1-pcb/hardware/FF1_Control_A0.kicad_prl",
+          "size_bytes": 2065,
+          "sha256": "6f99936cbcb6e05b8db9871ae0ba4aafd9a192e542d3fd0c40469f7eae60b43f"
+        },
+        {
+          "path": "control-board-a0-library-v0/extracted/hasslefree-ff1-pcb/hardware/FF1_Control_A0.kicad_pro",
+          "size_bytes": 8369,
+          "sha256": "351fc43610c1f15ff1d69523a44d933e1641a7e05d70207f359b337472309e45"
+        },
+        {
+          "path": "control-board-a0-library-v0/extracted/hasslefree-ff1-pcb/hardware/FF1_Control_A0.kicad_sch",
+          "size_bytes": 40124,
+          "sha256": "7c4a91b7abbe0b47af17d06e2e3c52c78c814d05c486a1d71782d6732d127c77"
+        },
+        {
+          "path": "control-board-a0-library-v0/extracted/hasslefree-ff1-pcb/hardware/fp-lib-table",
+          "size_bytes": 151,
+          "sha256": "9066ce3007aba6b47e7b9f7c692d2a32012f60b7e6bc082374286cdcb19d40e7"
+        },
+        {
+          "path": "control-board-a0-library-v0/extracted/hasslefree-ff1-pcb/hardware/sym-lib-table",
+          "size_bytes": 178,
+          "sha256": "c45c3bc5e50c6ecd532ec197dcac796ffe311cb6ef3c7e220a776d1b5bff1fd0"
+        },
+        {
+          "path": "control-board-a0-library-v0/extracted/hasslefree-ff1-pcb/preview/FF1_Control_A0_board_only.step",
+          "size_bytes": 35563,
+          "sha256": "80e4e5af7d88640f4f1e25d1f83462baa7975416ef9bf139909df3378b330b6a"
+        },
+        {
+          "path": "control-board-a0-library-v0/extracted/hasslefree-ff1-pcb/preview/pcb.png",
+          "size_bytes": 144506,
+          "sha256": "6bfb2cb7a900bebca7e0f3e6014e20bb724fe7061ea4a314c5d42ee71749a476"
+        },
+        {
+          "path": "control-board-a0-library-v0/extracted/hasslefree-ff1-pcb/preview/pcb.svg",
+          "size_bytes": 95534,
+          "sha256": "101246d3b1bb17ca50e014dd40474ed239a5bb37ece2aa51fc6c7e9907f9b3e0"
+        },
+        {
+          "path": "control-board-a0-library-v0/extracted/hasslefree-ff1-pcb/preview/schematic.pdf",
+          "size_bytes": 104226,
+          "sha256": "bdbb067c155db4600a6f6a3b7f52d4c1264672f6cddf5317764e1b85a7228177"
+        },
+        {
+          "path": "control-board-a0-library-v0/extracted/hasslefree-ff1-pcb/preview/schematic.png",
+          "size_bytes": 119971,
+          "sha256": "b38e9f0bfd118f8276d95eab42a42ae1e8f88ff6df6804a9f9eebdfa7a9270f9"
+        },
+        {
+          "path": "control-board-a0-library-v0/extracted/hasslefree-ff1-pcb/reports/DRC.rpt",
+          "size_bytes": 203,
+          "sha256": "53d7b7786e2f8d9143b5d28398b77d5985f3f5d7f589c441eaa4369dfd0a5f6c"
+        },
+        {
+          "path": "control-board-a0-library-v0/extracted/hasslefree-ff1-pcb/reports/ERC.rpt",
+          "size_bytes": 111,
+          "sha256": "725bf5db768f3a189d993d31e8ee0322d2299ba57fbe65aa81573a25890c3449"
+        },
+        {
+          "path": "control-board-a0-library-v0/extracted/hasslefree-ff1-pcb/reports/netlist.xml",
+          "size_bytes": 21875,
+          "sha256": "8cb1e65c357ea30be6bdf6f3bef9cdb3a0fe06f6dedeb9857f5fce9670d7b224"
+        },
+        {
+          "path": "control-board-a0-library-v0/extracted/hasslefree-ff1-pcb/reports/router_log.json",
+          "size_bytes": 3054,
+          "sha256": "ddb35acf234f726fd79c0d6f1f502cac10a1287fa3634a8b9dd913410462234e"
+        },
+        {
+          "path": "control-board-a0-library-v0/extracted/hasslefree-ff1-pcb/reports/validation_summary.json",
+          "size_bytes": 467,
+          "sha256": "47de221b175ab54ae7e5eeaca91d1a7b16932d33856eb0dfb1942aafd83fc142"
+        },
+        {
+          "path": "control-board-a0-library-v0/extracted/hasslefree-ff1-pcb/scripts/README.md",
+          "size_bytes": 988,
+          "sha256": "dfaa4ade4a4edf9bf7270f5acfa36ad666129e92344f1bcc76068f2e17650409"
+        },
+        {
+          "path": "control-board-a0-library-v0/extracted/hasslefree-ff1-pcb/scripts/build_design.py",
+          "size_bytes": 12915,
+          "sha256": "ffa9f5928b4e260f63cb3286d8f22dae4a469d5dc6e2690ebd2ff6ff07cbcefe"
+        },
+        {
+          "path": "control-board-a0-library-v0/extracted/hasslefree-ff1-pcb/scripts/check.sh",
+          "size_bytes": 612,
+          "sha256": "86fd445e3eeef234fd603142a6eed3ba5fdb55719644136a3ba3f6efdc57d1ac"
+        },
+        {
+          "path": "control-board-a0-library-v0/extracted/hasslefree-ff1-pcb/scripts/components.json",
+          "size_bytes": 5629,
+          "sha256": "c4a509963a22bb6d131f44bf3f2fde249f84742bb664b21ea15e810853859457"
+        },
+        {
+          "path": "control-board-a0-library-v0/extracted/hasslefree-ff1-pcb/scripts/route_board.py",
+          "size_bytes": 5637,
+          "sha256": "09d79158c68786f6ebf85e52665f3d08572a307eb4e1063f300b55440f3a7fd7"
+        },
+        {
+          "path": "control-board-a0-library-v0/extracted/hasslefree-ff1-pcb/scripts/validate_design.py",
+          "size_bytes": 2177,
+          "sha256": "64d32fe3e674f1b14ebef7b61c96c0dbf0a886ddbefff3cbae535b026cbb909d"
+        }
+      ]
+    },
+    {
+      "library_file_id": "libfile_4e86d22c6814819195dbfefb683f76f9",
+      "file_id": "file_00000000dd2c81f588123594bf0c66c3",
+      "version_number": 0,
+      "directory": "sensor-integration-a0-library-v0",
+      "file_name": "FF1_Sensor_Integration_Requirements_A0.zip",
+      "size_bytes": 16744,
+      "archive_relative_path": "sensor-integration-a0-library-v0/FF1_Sensor_Integration_Requirements_A0.zip",
+      "archive_sha256": "b5a84d928bf76153a0c096906ee724ac653ab49f404c376bb49376c4fb38d46a",
+      "files": [
+        {
+          "path": "sensor-integration-a0-library-v0/extracted/ff1-sensor-integration/README_ZH.md",
+          "size_bytes": 3079,
+          "sha256": "52324388c5aa23fa8af823ea28b5d9a10e6a1525c97c2723a4aea8235cc201e8"
+        },
+        {
+          "path": "sensor-integration-a0-library-v0/extracted/ff1-sensor-integration/analysis/throughput_budget.json",
+          "size_bytes": 2142,
+          "sha256": "85600a56cecfb99ad4a345f684a871e7ae880bbc2cf6b60d917d8f29fcbcc707"
+        },
+        {
+          "path": "sensor-integration-a0-library-v0/extracted/ff1-sensor-integration/analysis/throughput_budget.py",
+          "size_bytes": 1396,
+          "sha256": "3daf9ff2cd0247749080dc37bed5ee59173c5c8c45517aa8483bfc1d34362d41"
+        },
+        {
+          "path": "sensor-integration-a0-library-v0/extracted/ff1-sensor-integration/design/interface_requirements.json",
+          "size_bytes": 2478,
+          "sha256": "be2c1495ca104b9826f80ac6b1f47dcca11329a4596898456749d5619dadc244"
+        },
+        {
+          "path": "sensor-integration-a0-library-v0/extracted/ff1-sensor-integration/design/zcu102_hpc0_rx.csv",
+          "size_bytes": 766,
+          "sha256": "5bee4d49769ca0147f887aea25308607923c3fcb7b785fc27fbe15499e9a8c0c"
+        },
+        {
+          "path": "sensor-integration-a0-library-v0/extracted/ff1-sensor-integration/design/zcu102_hpc0_rx_pins.xdc",
+          "size_bytes": 1464,
+          "sha256": "a037d363f523a000f76a349729d8cffd709d5d1dee355260cccbee72e905597d"
+        },
+        {
+          "path": "sensor-integration-a0-library-v0/extracted/ff1-sensor-integration/docs/ARCHITECTURE.md",
+          "size_bytes": 6175,
+          "sha256": "e589b33d13ff408b0521bb7d63a0f682395f8712661f4661a6b2861b026f29eb"
+        },
+        {
+          "path": "sensor-integration-a0-library-v0/extracted/ff1-sensor-integration/docs/DOCUMENT_REQUEST_CHECKLIST.md",
+          "size_bytes": 3074,
+          "sha256": "fa2ad5eaa9724adbec49d929ff7833a2fffbd7863a0e38621e5f6d7d0678de8c"
+        },
+        {
+          "path": "sensor-integration-a0-library-v0/extracted/ff1-sensor-integration/docs/RELEASE_GATES.md",
+          "size_bytes": 2929,
+          "sha256": "175635a3615659f17119593fb04fe6e13567c2811a45ec7d805fbae301c7a1f3"
+        },
+        {
+          "path": "sensor-integration-a0-library-v0/extracted/ff1-sensor-integration/docs/SOURCES.md",
+          "size_bytes": 3103,
+          "sha256": "8ee990f7e5ff617d9e87cd1a546ff3a0c03266990c4068ea88e87625f53948c5"
+        },
+        {
+          "path": "sensor-integration-a0-library-v0/extracted/ff1-sensor-integration/tests/test_package.py",
+          "size_bytes": 1393,
+          "sha256": "530e77318a11eccacfcac5f75a88dad6ad6251e11594eff82b3684c048ffd0d0"
+        },
+        {
+          "path": "sensor-integration-a0-library-v0/extracted/ff1-sensor-integration/tests/validation_report.txt",
+          "size_bytes": 325,
+          "sha256": "3951824313eb06b30e5760cc0b4bd6a6703f2ec3837583f604c17ff1dc0fec22"
+        },
+        {
+          "path": "sensor-integration-a0-library-v0/extracted/ff1-sensor-integration/SHA256SUMS.json",
+          "size_bytes": 1189,
+          "sha256": "72c6a728fc50aaf2c2e4a235df3fce470c0a843771aee0230a872d1bf16964aa"
+        }
+      ]
+    },
+    {
+      "library_file_id": "libfile_821e324acf5881918c0e77c226db841b",
+      "file_id": "file_00000000829881f6a060ed8fc29d0f7a",
+      "version_number": 0,
+      "directory": "mechanical-concept-v02-library-v0",
+      "file_name": "HassleFree_FF1_v02_Engineering_Review.zip",
+      "size_bytes": 23600558,
+      "archive_relative_path": "mechanical-concept-v02-library-v0/HassleFree_FF1_v02_Engineering_Review.zip",
+      "archive_sha256": "5cd8fb0506d9915f0f4a48aafec759e8bcfa69593c89c77405f84f0e9179b6d8",
+      "files": [
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/README_\u5148\u8bfb.md",
+          "size_bytes": 9764,
+          "sha256": "94e45c268405ec541718563c03adb5fc8d5c3862a4e0d23d25724bb9093e56ea"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/HassleFree_FF1_EF_assembly.step",
+          "size_bytes": 1826648,
+          "sha256": "b4fe0fceee0592c785a67dc7c340185a055d4aa16d24858b4f0784fda79d0f1c"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/HassleFree_FF1_EF_visual_reference.stl",
+          "size_bytes": 2266984,
+          "sha256": "921ec1de2c93a60800f930e45baec0de53aefa184c87bf2b33e446048727ea54"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/HassleFree_FF1_E_assembly.step",
+          "size_bytes": 1826622,
+          "sha256": "9f01334d8e2370d13e1c3d9a1970d1bbb88120c9f998035641b0c8ec37d7c57d"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/HassleFree_FF1_E_preview.glb",
+          "size_bytes": 4624608,
+          "sha256": "742975a03738070674209f6c4d0fc1ceb1f5d01cbf9b3b3baa5373ea0e7b6a07"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/HassleFree_FF1_E_visual_reference.stl",
+          "size_bytes": 2266984,
+          "sha256": "47d080f58c1c54e115030fc8e62b9827cb9b0d55b150cf5e8945721cf3f3c46c"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/HassleFree_FF1_concept.blend",
+          "size_bytes": 3390904,
+          "sha256": "2aeeb19ab97d17e2a21795bd965070c84caf6f2ba659663e0f4b68e8fff85d32"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/assembly_manifest.json",
+          "size_bytes": 12336,
+          "sha256": "978a4383dff5514be7006acafd12faea5e8fb440ca099f789afbfe6e52f75043"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/mesh/01_front_shell.stl",
+          "size_bytes": 136784,
+          "sha256": "ca3652312ce5774445a1c8ec71f9c3fb49641c65007ac59d2f856af1d6aa02c1"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/mesh/02_grip_wrap.stl",
+          "size_bytes": 9084,
+          "sha256": "8ab5c8a6976093e6d033e68ec880e4768ea0026bdec41cedfbde5506c694100d"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/mesh/03_rear_shell.stl",
+          "size_bytes": 139484,
+          "sha256": "6c7b4c0d8c41890be8319ef2ab2c0224e8d90db391446900bc43aa2f9cc43d9a"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/mesh/04_load_bearing_chassis.stl",
+          "size_bytes": 309484,
+          "sha256": "f5247bf3ed7d7b1294e62a5a109edce9f160e86d44d1266c4b2aad2e7ec4bbe6"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/mesh/05_humi_common_interface.stl",
+          "size_bytes": 135684,
+          "sha256": "dd59f952f43ac102efc646346eeaed3e71f86dd5bce503e8e925db879f8ce2bb"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/mesh/06_e_mount_cartridge_body.stl",
+          "size_bytes": 135684,
+          "sha256": "604b13c1364ffd9bace02e5f8219a6c01d7d316459444aabc142a6b270562990"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/mesh/07_e_mount_reference_flange.stl",
+          "size_bytes": 135684,
+          "sha256": "93d000bf22bd860ebbc3c0102dd8733363b87d85e4273dd45316489fe8e11f1f"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/mesh/08_ef_mount_cartridge_body.stl",
+          "size_bytes": 135684,
+          "sha256": "37ef720c5389cad9dda55e973f232b0725b5f3e4f3a43b92da0caca26c7ffcaa"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/mesh/09_ef_mount_reference_flange.stl",
+          "size_bytes": 135684,
+          "sha256": "d42fa482e962d47fdf402eb6fb17a8ae6cc047a492883344433d03bf186bdc18"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/mesh/10_independent_sensor_carrier.stl",
+          "size_bytes": 86284,
+          "sha256": "a7dcbc6af71ba964829d6b4e791daf079b6ac47ce8fb6818f123fac8c7268c14"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/mesh/11_sensor_package_placeholder.stl",
+          "size_bytes": 684,
+          "sha256": "4eb6ba22ba0dc065dd1de2cb1761a3de4a15fced57b80d76eed707a58b448e34"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/mesh/12_sensor_active_36x24.stl",
+          "size_bytes": 684,
+          "sha256": "3e72ff573bbccc44e3eb5d766c0500874f9ec2c7d9ebd9a94885933c04af1240"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/mesh/13_three_point_sensor_spacers.stl",
+          "size_bytes": 100884,
+          "sha256": "b310e5a049c3b1d3b97175d107cfa47d158a464d169abf1f3476471708b3a1ef"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/mesh/14_heat_spreader_placeholder.stl",
+          "size_bytes": 17484,
+          "sha256": "cbde2504582675447474f50ce19ba4c3b0a9a02a11e01febfebeacddabfda433"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/mesh/15_main_processing_board_envelope.stl",
+          "size_bytes": 18484,
+          "sha256": "1947373f998901023f82dd6e28f6547edda979214101120c0b833b462ba6dcf6"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/mesh/16_control_board_provisional_envelope.stl",
+          "size_bytes": 306684,
+          "sha256": "53bee11217d2e640ea52f786337c814cf1ccf5a277575bdd00f264b9326d9d00"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/mesh/17_replaceable_battery_envelope.stl",
+          "size_bytes": 17484,
+          "sha256": "ea7edd8f1957d222869db279ca3814b682b7e73e8230fdb8b312192ccef4a04f"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/mesh/18_battery_service_door.stl",
+          "size_bytes": 17484,
+          "sha256": "8162e1464dd7fc708c7bdfe85380e498758230fab5c78b676bc623098b9f8832"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/mesh/19_removable_storage_envelope.stl",
+          "size_bytes": 684,
+          "sha256": "0aeefc3ea8e8de243089312c9c8a04d66973c652190fef2af752c7da8d1853ca"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/mesh/20_storage_service_door.stl",
+          "size_bytes": 17484,
+          "sha256": "100c44a8f19605f6055cf68624ffcdb031bab57dad2a36e311b2e420e9dcb779"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/mesh/21_display_module_envelope.stl",
+          "size_bytes": 17484,
+          "sha256": "d98a9233f3963211ea186cefc73798077054d6a802ae435610ee3b35d181e0c2"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/mesh/22_rear_buttons.stl",
+          "size_bytes": 167084,
+          "sha256": "8bff1142c7b9628608953d3dc35b936fcd39e4132c5080449cb3bf4b962a08bf"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/mesh/23_shutter_button.stl",
+          "size_bytes": 33484,
+          "sha256": "e0bfee67cebd1156b231a83fe851a2bfa4d288f9bd8195d066138b19f731b5ea"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/mesh/24_top_control_dial.stl",
+          "size_bytes": 33484,
+          "sha256": "d1fe87503730dcb0ea909badb92b2ca64316a75421876240dd106054bcceeb14"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/mesh/25_sensor_datum_mark.stl",
+          "size_bytes": 33484,
+          "sha256": "f2fdae7f8d95363559879d4c24335d4b097140f08014270a0fdcb7dcc57be6bd"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/mesh/26_control_board_component_envelopes.stl",
+          "size_bytes": 1884,
+          "sha256": "273e21af0c8ab3ac1e49b9a198d6724bf8c6abddbec809d6eb6e0b4362dc1d35"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/mesh/27_removable_sensor_bridge.stl",
+          "size_bytes": 124284,
+          "sha256": "5e8f13b424d2cff7189bb0e60fba3b3f90986c55bda33488b406c3f19357fb52"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/mesh/28_removable_control_mount_rails.stl",
+          "size_bytes": 137284,
+          "sha256": "5cab95fff0919af14092bf9ca42a5080f282e8d7ae751074a011d60881b6e041"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/mesh/29_control_board_mount_spacers.stl",
+          "size_bytes": 134484,
+          "sha256": "4a219b2fba182ef5ff0204914077f3a447249533a3f17fafdf07b8d7f5eb2f2f"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/parts/01_front_shell.step",
+          "size_bytes": 246858,
+          "sha256": "3f8797cd6480093a7ab188c31e2e2c9a8a26a962e312382dd53297512989c790"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/parts/02_grip_wrap.step",
+          "size_bytes": 36116,
+          "sha256": "f0cdc0a6ab11f1eb67b029ec8f88020e6afebe835e6db4c5ba37b5c520df0456"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/parts/03_rear_shell.step",
+          "size_bytes": 152888,
+          "sha256": "1ba653f4864934ff80d7fc52951feb140c61380b750e3543204041592059d2ef"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/parts/04_load_bearing_chassis.step",
+          "size_bytes": 351200,
+          "sha256": "953a494c6d4ff3a3e04e05e45f6c22f9b43dc145c1c2c600e4525ba2b335f67c"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/parts/05_humi_common_interface.step",
+          "size_bytes": 33101,
+          "sha256": "fb1b77808df8ed4c8d6606bbe49b4c6e7f2264083bc99ac90521c81ddcf80482"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/parts/06_e_mount_cartridge_body.step",
+          "size_bytes": 33109,
+          "sha256": "e6f89ca72775d23367aa1e1991e99e556bb20a9c667df69cc9e93fb63428b334"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/parts/07_e_mount_reference_flange.step",
+          "size_bytes": 33109,
+          "sha256": "0680f9eef7c849fa85093be1cd68bf259a1bb24cb824695d4f890cf304ae75f0"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/parts/08_ef_mount_cartridge_body.step",
+          "size_bytes": 33119,
+          "sha256": "428adfc44fa2719fff67e664d155cae36d583c5df3e71bf1f9b1bb3e198e2419"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/parts/09_ef_mount_reference_flange.step",
+          "size_bytes": 33121,
+          "sha256": "7dc8ebf1c419860a006c4081974819b42f1a95a0540269a6fab3b48f00d22a74"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/parts/10_independent_sensor_carrier.step",
+          "size_bytes": 76297,
+          "sha256": "f90f4903a355aec9d9d2e1d15816bee0cfe2d1567a1f92501bd2710a8379f814"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/parts/11_sensor_package_placeholder.step",
+          "size_bytes": 15587,
+          "sha256": "063803a7e04f5f8c32b093c571385219c4ffbf62fc6a63b1baf70df75d7fe23b"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/parts/12_sensor_active_36x24.step",
+          "size_bytes": 15594,
+          "sha256": "5a2efaf02e3fb6821caebcde499d2b5636b6325aa65cf9f1d0dcf3ff911dc2b0"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/parts/13_three_point_sensor_spacers.step",
+          "size_bytes": 33160,
+          "sha256": "5ff00e7b19991d543ebf4974566164d64bdffa858c0a601ac8250a59a0430968"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/parts/14_heat_spreader_placeholder.step",
+          "size_bytes": 31998,
+          "sha256": "abd640e0f642d0327237ea3ff88ba0de866d68494c72ced8afb979cf9c04860a"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/parts/15_main_processing_board_envelope.step",
+          "size_bytes": 45797,
+          "sha256": "3342c5b1047e46323f8454cd4801ceeece74a559d80283818e439fc6a660d6e7"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/parts/16_control_board_provisional_envelope.step",
+          "size_bytes": 84199,
+          "sha256": "63e0a0de7bd12a3b6e305abe9ac016b49ac8e49ac696c64fd6f5cab2be47660b"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/parts/17_replaceable_battery_envelope.step",
+          "size_bytes": 32068,
+          "sha256": "3668263a82b4c68fdf22cc1544214a95bced46c422551a814f52fa03bdd4826c"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/parts/18_battery_service_door.step",
+          "size_bytes": 32163,
+          "sha256": "edf2e00b2fa8e59d566ee35230af1fed318744c98e3e1e30afd8de9201a741bc"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/parts/19_removable_storage_envelope.step",
+          "size_bytes": 15569,
+          "sha256": "c3ecdd4b2144afb445bef14cffc9bb374e9e9022454ee12138a865f121d12bfe"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/parts/20_storage_service_door.step",
+          "size_bytes": 32116,
+          "sha256": "1b33f010ba106c706fe3bbc644bba41ce1507d970d510bb323ea2120098f272d"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/parts/21_display_module_envelope.step",
+          "size_bytes": 32176,
+          "sha256": "7f603472d33dd08c70ab981105c962bad9943c8d2cb787ad98c99f0b20732f1a"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/parts/22_rear_buttons.step",
+          "size_bytes": 61403,
+          "sha256": "7384e4b3a21590aff8941b875b15d8814ead620683de2b9d9a4c24f2590569e3"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/parts/23_shutter_button.step",
+          "size_bytes": 12053,
+          "sha256": "bc186986f7aab69ae3ec6da05d692194fe2268a86e415a869acd570a47351322"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/parts/24_top_control_dial.step",
+          "size_bytes": 11945,
+          "sha256": "2e1c71f07c662e2a86c8d64a0edc2438283533c1211c173ee36dbb2f0946a2f0"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/parts/25_sensor_datum_mark.step",
+          "size_bytes": 46974,
+          "sha256": "88fdd56bb89c439c50f4903ae47119b7866f3454d97bf0b28ad3c1b77dc693ff"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/parts/26_control_board_component_envelopes.step",
+          "size_bytes": 49728,
+          "sha256": "f291ecabd824695713c7784fbf1caaed53340059843664f31074f2b2ec12fde6"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/parts/27_removable_sensor_bridge.step",
+          "size_bytes": 112235,
+          "sha256": "e8a4fab184a36c629bbf5b8497f91a2bf2f70710a02d9ab7a4b3d173e1bd30fa"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/parts/28_removable_control_mount_rails.step",
+          "size_bytes": 63338,
+          "sha256": "04e31176060e16bf1d30dfafec29501c1a74b073161706de914f47dc9811aac5"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/parts/29_control_board_mount_spacers.step",
+          "size_bytes": 43853,
+          "sha256": "4f1aa76fbf59869f90171fd999afedbf1eb20ec8ffbf968f621555f89061a55c"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/exports/parts_register.csv",
+          "size_bytes": 2364,
+          "sha256": "cd3db185c14cc2731754755db98019d9c2087f853549019facb6e043b287a8a9"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/renders/01_front_E.png",
+          "size_bytes": 3562818,
+          "sha256": "dfe2fd5f17d2224b6b2991764b85bb2452f454740eea219e949009500ce52b27"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/renders/02_rear_controls.png",
+          "size_bytes": 3432353,
+          "sha256": "aec41dec8707d039e2f94dcba9f907f443314fda1b717ac5b2192c7e4b7e7dc5"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/renders/03_front_EF.png",
+          "size_bytes": 3485914,
+          "sha256": "2cb30a0e52f3b210eef2fe090d9022751955cedbadc76e24d081e7e3616b8ad8"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/renders/04_exploded_assembly.png",
+          "size_bytes": 2802949,
+          "sha256": "e688f56b2de799c4e77211cfce4a3fce915aa3d2a02f5f2ecae1cc119bfa01e6"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/renders/05_optical_chassis.png",
+          "size_bytes": 2791469,
+          "sha256": "df9c9c4745480b79dc10d45548f35c84b162552e4eaeaae6166f6c3c4e044b6e"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/renders/06_optical_datums.png",
+          "size_bytes": 112951,
+          "sha256": "de537d4fce428537a065cdd36ac13f24bc5df2bf547f9c1dbbfd730f2c546867"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/renders/06_optical_datums.svg",
+          "size_bytes": 7709,
+          "sha256": "08b52a32ffc73d333d9f69e836d68a409ade76a8c2502f61abdd0a7b49e62864"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/renders/07_rear_service_structure.png",
+          "size_bytes": 2981442,
+          "sha256": "d666232734ae252fa56bfbead76af6a84e9be4d4fe5c09c1f2981c58150962ff"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/source/FF1_Control_A0_board_only.step",
+          "size_bytes": 35563,
+          "sha256": "80e4e5af7d88640f4f1e25d1f83462baa7975416ef9bf139909df3378b330b6a"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/source/audit_feasibility.py",
+          "size_bytes": 7654,
+          "sha256": "5036c6871539f6ef82e783bd9c090500963fb94d44a68e949aff8dd72e73c401"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/source/build_camera.py",
+          "size_bytes": 17605,
+          "sha256": "059b8fa93cfcba22ed27995fb9005dd96676fcfe455870484e2966643aace409"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/source/draw_datums.py",
+          "size_bytes": 4120,
+          "sha256": "09ec1003eaa52d4ea7efd2febd6e84a107268cbdbb52d6dae40bc9bf26fbad7c"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/source/parameters.json",
+          "size_bytes": 1521,
+          "sha256": "89fa2eab056b4d65534934c49ad3a90cc7f058ae3ae91c2d59c51c1640668c9b"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/source/render_camera.py",
+          "size_bytes": 7561,
+          "sha256": "558045a0ac36a0746c1d32f3fef9c37f8bb7ae6bc99cb90c661bd03ee80cbdd2"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/validation/feasibility_audit.json",
+          "size_bytes": 5100,
+          "sha256": "912daf11c353de105c6ed3cf466909b0c03458ee9c312e6ad22b6f057c64247c"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/validation/final_QA.json",
+          "size_bytes": 1744,
+          "sha256": "9c3f5c23e42e1931eac28d4eebf02dd5c09d95d019253563c84421f0ae4c96c0"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/validation/geometry_report.json",
+          "size_bytes": 2851,
+          "sha256": "47dfc8e23fee5d625b82925834fb0209829b7c4e6418af0b71099af6c87e19f5"
+        },
+        {
+          "path": "mechanical-concept-v02-library-v0/extracted/HassleFree_FF1_v02_Engineering_Review/validation/step_roundtrip.json",
+          "size_bytes": 286,
+          "sha256": "44445a73f104de75b41e1be3ba26b85ee8088beb6c432aab12013b67df85c1bd"
+        }
+      ],
+      "integration_role": "preserved historical mechanical concept revision 0.2",
+      "supersedes_for_mechanical_review": "libfile_0fa0a256c518819181ad1d5892f3a049"
+    },
+    {
+      "library_file_id": "libfile_6f0eb403282c81918e4dd8defb32c972",
+      "file_id": "file_00000000fec481f58d076060090a837d",
+      "version_number": 0,
+      "directory": "mechanical-concept-v03-library-v0",
+      "file_name": "HassleFree_FF1_v03_Noncontact_Thermal_Concept.zip",
+      "size_bytes": 26808671,
+      "archive_relative_path": "mechanical-concept-v03-library-v0/HassleFree_FF1_v03_Noncontact_Thermal_Concept.zip",
+      "archive_sha256": "2bf7c170f803fbe6eb67f2f04d46d1369d15b95c8ac6247218b04011ed478d1d",
+      "files": [
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/README_\u5148\u8bfb.md",
+          "size_bytes": 7612,
+          "sha256": "c99d7f2eb912d2885a79a147646e5d9444ed4bc4887a6a8c8e3acd73311dcdbc"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/HassleFree_FF1_EF_assembly.step",
+          "size_bytes": 2037860,
+          "sha256": "33c411ae35b97dd9a8766e3e1c215ac2934a0c664f5b4f84899a1dda08bbefdb"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/HassleFree_FF1_EF_visual_reference.stl",
+          "size_bytes": 2437584,
+          "sha256": "926183fa678f8478210ee347cb07e010f61e02b8cfbd6a7a315b4add0bde49dd"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/HassleFree_FF1_E_assembly.step",
+          "size_bytes": 2037834,
+          "sha256": "a8489b32402d887b682c1eeff56e1818905dc6acb871e5445191ffc31d1c55d5"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/HassleFree_FF1_E_preview.glb",
+          "size_bytes": 5215372,
+          "sha256": "33552532e1b5ffca30a3f53d4236a43178fdf0e626179b0a58c097ad8a3f15f4"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/HassleFree_FF1_E_visual_reference.stl",
+          "size_bytes": 2437584,
+          "sha256": "0d41dfd8c3f7ec6f34e5c1e45847d83819ba9002564b031c5914f3ed37dde7dd"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/HassleFree_FF1_concept.blend",
+          "size_bytes": 3597420,
+          "sha256": "f83c94993ac801c44d6b0761f7a3b82a4422b83b9b47f57c511aa6843b1c72ff"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/assembly_manifest.json",
+          "size_bytes": 13719,
+          "sha256": "3de3e53d5d5b73a5defa85205f4491a038cb97c1edb76a1a4b03bef98750e28a"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/mesh/01_front_shell.stl",
+          "size_bytes": 136784,
+          "sha256": "ca3652312ce5774445a1c8ec71f9c3fb49641c65007ac59d2f856af1d6aa02c1"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/mesh/02_grip_wrap.stl",
+          "size_bytes": 9084,
+          "sha256": "8ab5c8a6976093e6d033e68ec880e4768ea0026bdec41cedfbde5506c694100d"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/mesh/03_rear_shell.stl",
+          "size_bytes": 139484,
+          "sha256": "6c7b4c0d8c41890be8319ef2ab2c0224e8d90db391446900bc43aa2f9cc43d9a"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/mesh/04_load_bearing_chassis.stl",
+          "size_bytes": 345084,
+          "sha256": "25b051d1f34cfa75b00135e8ef8185cba93124d3f2ea45152445beeb2380c157"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/mesh/05_humi_common_interface.stl",
+          "size_bytes": 135684,
+          "sha256": "dd59f952f43ac102efc646346eeaed3e71f86dd5bce503e8e925db879f8ce2bb"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/mesh/06_e_mount_cartridge_body.stl",
+          "size_bytes": 135684,
+          "sha256": "604b13c1364ffd9bace02e5f8219a6c01d7d316459444aabc142a6b270562990"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/mesh/07_e_mount_reference_flange.stl",
+          "size_bytes": 135684,
+          "sha256": "93d000bf22bd860ebbc3c0102dd8733363b87d85e4273dd45316489fe8e11f1f"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/mesh/08_ef_mount_cartridge_body.stl",
+          "size_bytes": 135684,
+          "sha256": "37ef720c5389cad9dda55e973f232b0725b5f3e4f3a43b92da0caca26c7ffcaa"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/mesh/09_ef_mount_reference_flange.stl",
+          "size_bytes": 135684,
+          "sha256": "d42fa482e962d47fdf402eb6fb17a8ae6cc047a492883344433d03bf186bdc18"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/mesh/10_independent_sensor_carrier.stl",
+          "size_bytes": 86284,
+          "sha256": "a7dcbc6af71ba964829d6b4e791daf079b6ac47ce8fb6818f123fac8c7268c14"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/mesh/11_sensor_package_placeholder.stl",
+          "size_bytes": 684,
+          "sha256": "4eb6ba22ba0dc065dd1de2cb1761a3de4a15fced57b80d76eed707a58b448e34"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/mesh/12_sensor_active_36x24.stl",
+          "size_bytes": 684,
+          "sha256": "3e72ff573bbccc44e3eb5d766c0500874f9ec2c7d9ebd9a94885933c04af1240"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/mesh/13_three_point_sensor_spacers.stl",
+          "size_bytes": 100884,
+          "sha256": "b310e5a049c3b1d3b97175d107cfa47d158a464d169abf1f3476471708b3a1ef"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/mesh/14_heat_spreader_placeholder.stl",
+          "size_bytes": 67084,
+          "sha256": "c03188bcbbb1199533262b09bea8e96aa28ec8421bde50d122430956df30a0c2"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/mesh/15_main_processing_board_envelope.stl",
+          "size_bytes": 18484,
+          "sha256": "1947373f998901023f82dd6e28f6547edda979214101120c0b833b462ba6dcf6"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/mesh/16_control_board_provisional_envelope.stl",
+          "size_bytes": 306684,
+          "sha256": "53bee11217d2e640ea52f786337c814cf1ccf5a277575bdd00f264b9326d9d00"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/mesh/17_replaceable_battery_envelope.stl",
+          "size_bytes": 17484,
+          "sha256": "ea7edd8f1957d222869db279ca3814b682b7e73e8230fdb8b312192ccef4a04f"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/mesh/18_battery_service_door.stl",
+          "size_bytes": 17484,
+          "sha256": "8162e1464dd7fc708c7bdfe85380e498758230fab5c78b676bc623098b9f8832"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/mesh/19_removable_storage_envelope.stl",
+          "size_bytes": 684,
+          "sha256": "0aeefc3ea8e8de243089312c9c8a04d66973c652190fef2af752c7da8d1853ca"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/mesh/20_storage_service_door.stl",
+          "size_bytes": 17484,
+          "sha256": "100c44a8f19605f6055cf68624ffcdb031bab57dad2a36e311b2e420e9dcb779"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/mesh/21_display_module_envelope.stl",
+          "size_bytes": 17484,
+          "sha256": "d98a9233f3963211ea186cefc73798077054d6a802ae435610ee3b35d181e0c2"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/mesh/22_rear_buttons.stl",
+          "size_bytes": 167084,
+          "sha256": "8bff1142c7b9628608953d3dc35b936fcd39e4132c5080449cb3bf4b962a08bf"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/mesh/23_shutter_button.stl",
+          "size_bytes": 33484,
+          "sha256": "e0bfee67cebd1156b231a83fe851a2bfa4d288f9bd8195d066138b19f731b5ea"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/mesh/24_top_control_dial.stl",
+          "size_bytes": 33484,
+          "sha256": "d1fe87503730dcb0ea909badb92b2ca64316a75421876240dd106054bcceeb14"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/mesh/25_sensor_datum_mark.stl",
+          "size_bytes": 33484,
+          "sha256": "f2fdae7f8d95363559879d4c24335d4b097140f08014270a0fdcb7dcc57be6bd"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/mesh/26_control_board_component_envelopes.stl",
+          "size_bytes": 1884,
+          "sha256": "273e21af0c8ab3ac1e49b9a198d6724bf8c6abddbec809d6eb6e0b4362dc1d35"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/mesh/27_removable_sensor_bridge.stl",
+          "size_bytes": 124284,
+          "sha256": "5e8f13b424d2cff7189bb0e60fba3b3f90986c55bda33488b406c3f19357fb52"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/mesh/28_removable_control_mount_rails.stl",
+          "size_bytes": 137284,
+          "sha256": "5cab95fff0919af14092bf9ca42a5080f282e8d7ae751074a011d60881b6e041"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/mesh/29_control_board_mount_spacers.stl",
+          "size_bytes": 134484,
+          "sha256": "4a219b2fba182ef5ff0204914077f3a447249533a3f17fafdf07b8d7f5eb2f2f"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/mesh/32_thermal_adjustable_landing.stl",
+          "size_bytes": 18484,
+          "sha256": "43e79ad78289fb0534629e74272dcadfb2bb8a62ee08a791ab3e3f51da629763"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/mesh/33_thermal_clamp_screw_reservation.stl",
+          "size_bytes": 33484,
+          "sha256": "8849f83af4e5da9a13139ccba225eb56d317ee86ab67e8fc489700cc7b4e50b8"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/mesh/34_thermal_clamp_nut_reservation.stl",
+          "size_bytes": 33684,
+          "sha256": "5fbafa0dee7d6f552567aad02f6dbb17128dc9089a68832c49c5d8ad352e498c"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/parts/01_front_shell.step",
+          "size_bytes": 246858,
+          "sha256": "0a28008a829ee92c2f35864f2305d442387463b9ff60be25fbce4aa30bd2d18b"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/parts/02_grip_wrap.step",
+          "size_bytes": 36116,
+          "sha256": "15998c6df30d337cbbda2eb42534fac2c4d74bd465337c733bbd5393a6eecc50"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/parts/03_rear_shell.step",
+          "size_bytes": 152888,
+          "sha256": "b7260ba25bf2bc75f6acaa397f3592a52e8c03a80e23762b92d546b02002969f"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/parts/04_load_bearing_chassis.step",
+          "size_bytes": 388064,
+          "sha256": "9483aeb2c3c818db20b878c46934f8e9d53ba358dbba5e741312480b7cd5a691"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/parts/05_humi_common_interface.step",
+          "size_bytes": 33103,
+          "sha256": "9772e4e7093132a25cdc3ce52ecce7c83c25771335e906f825b76b66e3e217ae"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/parts/06_e_mount_cartridge_body.step",
+          "size_bytes": 33111,
+          "sha256": "946ee387a31f7872ef3c1bc4fac503c3cdce34d487c2310813f3c4f49d842c19"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/parts/07_e_mount_reference_flange.step",
+          "size_bytes": 33109,
+          "sha256": "de087a9227606612a281d4178c541211c874dc68671d3f5098dccf9be4347d01"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/parts/08_ef_mount_cartridge_body.step",
+          "size_bytes": 33119,
+          "sha256": "d054bce5d977d489256fbb3fbed3b3c5b4ec31a5b6b12a1940af725b8f072baf"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/parts/09_ef_mount_reference_flange.step",
+          "size_bytes": 33121,
+          "sha256": "782826bb7021fb2db620d3a5c70062a00b9af3ccc5bf487b6c1c5d7e460f6583"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/parts/10_independent_sensor_carrier.step",
+          "size_bytes": 76297,
+          "sha256": "3361529a011e0ce5b05bc391b97eaca766eef7e8f13b0bf5eeaebcc0ed84e838"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/parts/11_sensor_package_placeholder.step",
+          "size_bytes": 15587,
+          "sha256": "dce0faa404fa659a1727e72ea5f84f607b47548f00be56029d41991dc46fff0d"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/parts/12_sensor_active_36x24.step",
+          "size_bytes": 15594,
+          "sha256": "930c27ead86a9b6a4af1727b48dbd3872ca54c12e23e3d53e1551f83e94ddbc3"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/parts/13_three_point_sensor_spacers.step",
+          "size_bytes": 33160,
+          "sha256": "02b0e58756e7da423d223d1d50f8f18e7ac3ef65952e015fee33dec4b189206a"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/parts/14_heat_spreader_placeholder.step",
+          "size_bytes": 132907,
+          "sha256": "a729b5f75e2ac8fe3b06fc2e5f8a1aa08294c433b07db5e38ceb271e06dba3e4"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/parts/15_main_processing_board_envelope.step",
+          "size_bytes": 45797,
+          "sha256": "917c4c8104b0cd5fa264a3b5d7e9a6e820488700c3353dd8ef64e251f06bf671"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/parts/16_control_board_provisional_envelope.step",
+          "size_bytes": 84199,
+          "sha256": "0e2ae0081b7cb92d9749c5fa8e581058baf1858d8242121b8c642cc3e86262bb"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/parts/17_replaceable_battery_envelope.step",
+          "size_bytes": 32068,
+          "sha256": "aff554d688392b2dac8168e0cd485f1c2606570855f037f6589b746e18165b40"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/parts/18_battery_service_door.step",
+          "size_bytes": 32163,
+          "sha256": "d91980102260c064bdc8c786c5e733218a1aecb51e2ee0afbc14b2ae4defbf31"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/parts/19_removable_storage_envelope.step",
+          "size_bytes": 15569,
+          "sha256": "16820148ffd711d4742eed4634abad0f09b04109662c39d37e7eb35dfedf8c5d"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/parts/20_storage_service_door.step",
+          "size_bytes": 32116,
+          "sha256": "82ed3ff9273f9b180e30dcf54b97df7b0cb86286ab8f806d074dd276836bb805"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/parts/21_display_module_envelope.step",
+          "size_bytes": 32176,
+          "sha256": "28291eda0cca80cb12843167f0d3f016dd07e433563b15ba5895e74cd928398d"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/parts/22_rear_buttons.step",
+          "size_bytes": 61403,
+          "sha256": "161cd2b50a614433e601f5e2fade558b36b8b263b9680ef68a45327271595dba"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/parts/23_shutter_button.step",
+          "size_bytes": 12053,
+          "sha256": "500b27a55b74e1fd3c5e54cd5799dd0e0233cd66ecf92cfa5f9d33b6fba2313b"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/parts/24_top_control_dial.step",
+          "size_bytes": 11945,
+          "sha256": "aaaea9896334fec813ed9df24af0c4ef852d3e369442a0cdb106597e973c7ec8"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/parts/25_sensor_datum_mark.step",
+          "size_bytes": 46974,
+          "sha256": "8ebd8a835242775542bd9a8eabf054c509af3ada001cb7b58f8dece2ca038b16"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/parts/26_control_board_component_envelopes.step",
+          "size_bytes": 49728,
+          "sha256": "ff07e3b26b8b3184d243c9719380246d4ca517e486fc8c192deb87bf2c22796b"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/parts/27_removable_sensor_bridge.step",
+          "size_bytes": 112235,
+          "sha256": "50940c464488e783c227a75ce2a6e4940d816f2246ae64c83e4b88b05f61ffb8"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/parts/28_removable_control_mount_rails.step",
+          "size_bytes": 63338,
+          "sha256": "fb5c3b8f8d5627146fc4555d8b996b3320f1017304a47524a8e44138a3eafc97"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/parts/29_control_board_mount_spacers.step",
+          "size_bytes": 43853,
+          "sha256": "88f636a7715a8390c740a263223e6e96f313f70cd272bdba740c8464a4f9736a"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/parts/32_thermal_adjustable_landing.step",
+          "size_bytes": 36376,
+          "sha256": "64c85613aa2dd1c5d546683f2c7b7ad19a37381a9f7ab264eb7f897e386e8c48"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/parts/33_thermal_clamp_screw_reservation.step",
+          "size_bytes": 11956,
+          "sha256": "13db26f44b1dae9f7cc23d18cf6ea3f832018a5e8f9f73556954488780b14c56"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/parts/34_thermal_clamp_nut_reservation.step",
+          "size_bytes": 10592,
+          "sha256": "e83e7192bc329d0fb4ae93ea27b23b0d1fc2da9b31af8d1584ca08bbaf837e2f"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/exports/parts_register.csv",
+          "size_bytes": 2718,
+          "sha256": "274533e11fea5c44077e3ede2d82f823a074dfa33fc92ccb224a3bb43f1b24df"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/keepouts/IMX410_chip_corridor.step",
+          "size_bytes": 15727,
+          "sha256": "235dc4f91275d0636f25df194157b494c7be2947cd288d6d4a4ce363707f0766"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/keepouts/IMX410_chip_corridor.stl",
+          "size_bytes": 684,
+          "sha256": "b31c457a46ba13ea580ecd6e842b2025f7e609141f75e5b8f5537a7ccb23946a"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/keepouts/IMX410_guard.step",
+          "size_bytes": 15727,
+          "sha256": "856c2124c6a62c8cb050d9c044c33fc1a1351c26c043d0dc8d154751d959544f"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/keepouts/IMX410_guard.stl",
+          "size_bytes": 684,
+          "sha256": "5ccc22c7980185bffa4612e3b08a35f83404b59dc5da220cc10f468e53a6d159"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/keepouts/README.json",
+          "size_bytes": 578,
+          "sha256": "74309991e74d4f2263652260964617156174466845c5dc0fbefbaa539b576fe7"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/renders/01_front_E.png",
+          "size_bytes": 3562818,
+          "sha256": "dfe2fd5f17d2224b6b2991764b85bb2452f454740eea219e949009500ce52b27"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/renders/02_rear_controls.png",
+          "size_bytes": 3432353,
+          "sha256": "aec41dec8707d039e2f94dcba9f907f443314fda1b717ac5b2192c7e4b7e7dc5"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/renders/03_front_EF.png",
+          "size_bytes": 3485914,
+          "sha256": "2cb30a0e52f3b210eef2fe090d9022751955cedbadc76e24d081e7e3616b8ad8"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/renders/04_exploded_assembly.png",
+          "size_bytes": 2808276,
+          "sha256": "267692772bdb6aa96a11d6944a53b382dd9323f2379199e63d95e5b3f938c22c"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/renders/05_optical_chassis.png",
+          "size_bytes": 2791230,
+          "sha256": "d49641e3186e648a6a911acd0549958b9a255b35998629c02f5dd9c76aaaa772"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/renders/06_optical_datums.png",
+          "size_bytes": 112965,
+          "sha256": "6097eb176d5e7e58118ef9df8187fe88effea61f96a95b87872785c61bfd1d20"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/renders/06_optical_datums.svg",
+          "size_bytes": 7709,
+          "sha256": "677abb1f4e7e5a9348a92d0eaa6943d3fb44a5bb5faa02a9e4d0ea88334719d6"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/renders/07_rear_service_structure.png",
+          "size_bytes": 2982764,
+          "sha256": "0f32c62d800fd96ffc210335999afde6c9806f1c43f6b70b382dc54825bdde07"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/renders/08_noncontact_thermal_concept.png",
+          "size_bytes": 2825329,
+          "sha256": "9f8a6e8d8321baabe00273c781eba7d238708f65f7f09c57298f2732d6ad9b5f"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/source/FF1_Control_A0_board_only.step",
+          "size_bytes": 35563,
+          "sha256": "80e4e5af7d88640f4f1e25d1f83462baa7975416ef9bf139909df3378b330b6a"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/source/audit_feasibility.py",
+          "size_bytes": 9170,
+          "sha256": "342029de1048deded642976fdb2d1c2b5f779019d674444fc086871fa7cde380"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/source/audit_parameters.py",
+          "size_bytes": 1911,
+          "sha256": "1378c11c26da287c6138e6ea81c0aede77023e8096a4da7ee90de990bf301588"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/source/audit_thermal.py",
+          "size_bytes": 4477,
+          "sha256": "9ef2a64e464167f971be279651a329f919a8d4a699367b427bbbc1511fe68347"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/source/build_camera.py",
+          "size_bytes": 19410,
+          "sha256": "1f0251d2f48b8ef86bdf5e7cd4e61b0f9e6127e0143ce804c6ef78ac1d74f72b"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/source/draw_datums.py",
+          "size_bytes": 4120,
+          "sha256": "03519cb2d027102d4d21cc73fb643a71f5fcba329a1b88f2ebbcc4983751d26e"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/source/final_qa.py",
+          "size_bytes": 3258,
+          "sha256": "51d0db4d44f9d14270ab124d545b3a7ea286e3894d207e92ebb05d57ff6e96c6"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/source/parameters.json",
+          "size_bytes": 2296,
+          "sha256": "488dfdba1edb4b8148b088020bce2e2cdf3fe9e79c179aa89fd8b5ca41a2abf1"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/source/render_camera.py",
+          "size_bytes": 8812,
+          "sha256": "663e0cadb471b15d1aec88babc31988a0187ca9f18e0eaa235acf2ca6dc9e286"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/source/thermal_bridge.py",
+          "size_bytes": 5636,
+          "sha256": "e67048e16ea33141a6260cab3a25b0fc6ecd74d406eae6ef10798b88b0259d27"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/validation/feasibility_audit.json",
+          "size_bytes": 6002,
+          "sha256": "2cf18d4cd0629e756c0ac078ef9b5077d547315e6731867447094318cc01ae79"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/validation/final_QA.json",
+          "size_bytes": 2958,
+          "sha256": "c21c0ba0d038619c3fdb2e45cc0b6807ae0b1b465239f7eb2d27b53ce342f346"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/validation/geometry_report.json",
+          "size_bytes": 2851,
+          "sha256": "479288c0264083a51928931bdd056bd563066c175bfdad4c2c1452717bf38b60"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/validation/parameter_regression.json",
+          "size_bytes": 1700,
+          "sha256": "ed8d596919adbdd5a41f5ae196d835802a00f1bf76734455db43563c4136dd81"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/validation/step_roundtrip.json",
+          "size_bytes": 286,
+          "sha256": "87fc09a3471325dcc7c271246735e35f6146273bc727d7357a5a6f81386d68fa"
+        },
+        {
+          "path": "mechanical-concept-v03-library-v0/extracted/HassleFree_FF1_v03/validation/thermal_audit.json",
+          "size_bytes": 4885,
+          "sha256": "2c775a71ecc8e662b234c7f5d9ca166c12410befed3d5115c3a1c7f460382cb7"
+        }
+      ],
+      "integration_role": "active mechanical concept revision 0.3; conditional noncontact thermal routing only; not engineering release",
+      "supersedes_for_mechanical_review": "libfile_821e324acf5881918c0e77c226db841b"
+    }
+  ],
+  "active_mechanical_source_library_file_id": "libfile_6f0eb403282c81918e4dd8defb32c972"
+}

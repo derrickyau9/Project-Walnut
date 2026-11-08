@@ -1,0 +1,30 @@
+part,group,status,solid_count,volume_mm3
+01_front_shell,shell,PROVISIONAL,1,93789.99
+02_grip_wrap,shell,PROVISIONAL,1,3589.18
+03_rear_shell,rear,PROVISIONAL,1,31042.3
+04_load_bearing_chassis,chassis,PROVISIONAL,1,81849.06
+27_removable_sensor_bridge,sensor,REAR-SERVICE BRIDGE; FASTENER/THREAD DESIGN NOT RELEASED,1,10580.68
+28_removable_control_mount_rails,electronics,TWO REMOVABLE RAILS; RETAINING HARDWARE TBD,2,1788.39
+29_control_board_mount_spacers,electronics,2 mm CONCEPT SPACERS; HARDWARE/INSULATION UNVALIDATED,4,137.41
+05_humi_common_interface,humi,PROVISIONAL,1,3401.65
+06_e_mount_cartridge_body,E,FLANGE DATUM ONLY; NO BAYONET,1,8239.02
+07_e_mount_reference_flange,E,NOMINAL Z=18; NO FIT CLAIM,1,4578.18
+08_ef_mount_cartridge_body,EF,ALTERNATIVE TO E; NO BAYONET,1,61792.61
+09_ef_mount_reference_flange,EF,NOMINAL Z=44; NO FIT CLAIM,1,4578.18
+10_independent_sensor_carrier,sensor,PROVISIONAL,1,5997.59
+11_sensor_package_placeholder,sensor,PACKAGE UNSELECTED,1,2072.0
+12_sensor_active_36x24,sensor,REQUIRED ACTIVE AREA; FRONT Z=0,1,129.6
+13_three_point_sensor_spacers,sensor,ADJUSTMENT CONCEPT; NO SHIM TOLERANCE,3,137.79
+14_heat_spreader_placeholder,electronics,"THERMAL RESERVATION ONLY: 19 mm GAP, NO HEAT PATH IMPLEMENTED",1,5360.55
+15_main_processing_board_envelope,electronics,ENVELOPE ONLY; NO CIRCUIT DESIGN,1,8128.91
+16_control_board_provisional_envelope,electronics,PCB A0 outline/holes imported from STEP and re-extruded to nominal 1.6 mm; raw STEP dielectric solid 1.51 mm does not define finished stackup; mating/cable clearances not validated,1,3977.76
+26_control_board_component_envelopes,electronics,BENCH BUTTONS + UPRIGHT HEADER; MATING/CABLE KEEP-OUT TBD,3,949.6
+17_replaceable_battery_envelope,battery,NO CELL/PACK SELECTED; NO ELECTRICAL SAFETY CLAIM,1,38748.04
+18_battery_service_door,battery,LATCH AND SEAL NOT ENGINEERED,1,1929.13
+19_removable_storage_envelope,storage,MEDIA TYPE AND CONNECTOR UNSELECTED,1,2816.0
+20_storage_service_door,storage,HINGE AND SEAL NOT ENGINEERED,1,2102.14
+21_display_module_envelope,rear,ACTIVE AREA/PANEL PART UNSELECTED,1,10563.81
+22_rear_buttons,rear,CAPS AND SHAFTS WITH HOLES; SWITCH LINKAGE/TRAVEL UNVALIDATED,5,694.55
+23_shutter_button,controls,PROVISIONAL,1,278.02
+24_top_control_dial,controls,PROVISIONAL,1,910.28
+25_sensor_datum_mark,shell,PROVISIONAL,1,7.14

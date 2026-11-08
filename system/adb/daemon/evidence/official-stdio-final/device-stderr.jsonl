@@ -1,0 +1,32 @@
+{"authentication_required": true, "event": "transport_opened", "time": 1793944821.0428853}
+{"event": "authenticated", "serial": "DAOS-BSD-DEV", "time": 1793944821.044154}
+{"event": "shell_started", "pid": 797469, "pty": false, "stream": 1, "time": 1793944821.0925872, "v2": true}
+{"event": "shell_reaped", "pid": 797469, "returncode": 7, "stream": 1, "time": 1793944821.2253044}
+{"event": "shell_started", "pid": 797473, "pty": true, "stream": 2, "time": 1793944821.2287157, "v2": false}
+{"event": "shell_reaped", "pid": 797473, "returncode": 0, "stream": 2, "time": 1793944821.288587}
+{"event": "shell_started", "pid": 797477, "pty": false, "stream": 3, "time": 1793944821.2923548, "v2": true}
+{"event": "shell_reaped", "pid": 797477, "returncode": 0, "stream": 3, "time": 1793944822.0970938}
+{"event": "shell_started", "pid": 797487, "pty": false, "stream": 4, "time": 1793944822.100846, "v2": true}
+{"event": "shell_reaped", "pid": 797487, "returncode": 0, "stream": 4, "time": 1793944823.5811138}
+{"event": "shell_started", "pid": 797501, "pty": true, "stream": 5, "time": 1793944823.584996, "v2": true}
+{"event": "shell_reaped", "pid": 797501, "returncode": 0, "stream": 5, "time": 1793944823.7291014}
+{"event": "shell_started", "pid": 797530, "pty": true, "stream": 6, "time": 1793944823.7324817, "v2": true}
+{"event": "shell_reaped", "pid": 797530, "returncode": 9, "stream": 6, "time": 1793944823.9130764}
+{"event": "shell_started", "pid": 797543, "pty": false, "stream": 7, "time": 1793944823.923668, "v2": true}
+{"event": "shell_started", "pid": 797547, "pty": false, "stream": 8, "time": 1793944823.924452, "v2": true}
+{"event": "shell_started", "pid": 797551, "pty": false, "stream": 9, "time": 1793944823.9252963, "v2": true}
+{"event": "shell_started", "pid": 797555, "pty": false, "stream": 10, "time": 1793944823.9257839, "v2": true}
+{"event": "shell_reaped", "pid": 797543, "returncode": 0, "stream": 7, "time": 1793944824.069551}
+{"event": "shell_reaped", "pid": 797547, "returncode": 0, "stream": 8, "time": 1793944824.1172814}
+{"event": "shell_reaped", "pid": 797551, "returncode": 0, "stream": 9, "time": 1793944824.1176212}
+{"event": "shell_reaped", "pid": 797555, "returncode": 0, "stream": 10, "time": 1793944824.1178296}
+{"event": "service_rejected", "remote_id": 47, "time": 1793944824.5916345}
+{"event": "shell_started", "pid": 797588, "pty": false, "stream": 13, "time": 1793944824.5945468, "v2": true}
+{"event": "shell_reaped", "pid": 797588, "returncode": -1, "stream": 13, "time": 1793944824.6462767}
+{"event": "transport_closed", "reason": "transport EOF", "time": 1793944824.69034}
+{"event": "stdio_adapter_connection_finished", "child_pid": 797444, "exit_code": 0, "headers": 136, "payloads": 84, "usb_hardware_validated": false}
+{"authentication_required": true, "event": "transport_opened", "time": 1793944825.0085146}
+{"event": "authorization_denied", "received_public_key": false, "time": 1793944825.0097578}
+{"event": "authorization_denied", "received_public_key": true, "time": 1793944825.053128}
+{"event": "transport_closed", "reason": "transport EOF", "time": 1793944825.0560236}
+{"event": "stdio_adapter_connection_finished", "child_pid": 797607, "exit_code": 0, "headers": 3, "payloads": 3, "usb_hardware_validated": false}

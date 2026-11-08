@@ -1,0 +1,54 @@
+{
+  "format": "DaOS-r12-windows-intermediate-evidence-v1",
+  "runtime": "Windows AMD64 / Python3.12.7 / Qt5.15.2 / PyQt5.15.10",
+  "initial_camera_first": {
+    "tests": 12,
+    "passed": 12,
+    "skips": 0
+  },
+  "content_fence_model": {
+    "tests": 21,
+    "passed": 21,
+    "skips": 0
+  },
+  "content_fence_camera_first": {
+    "tests": 12,
+    "passed": 12,
+    "skips": 0
+  },
+  "combined_first": {
+    "tests": 72,
+    "passed": 71,
+    "failures": 1,
+    "skips": 0,
+    "failed_case": "test_retained_page_replaces_model_and_slow_export_does_not_starve_lease",
+    "phase": "initial short-lease fixture capture rejected before slow export"
+  },
+  "files": [
+    {
+      "source": "build/camera-first-r12-test.log",
+      "file": "initial-camera-first-tests.txt",
+      "sha256": "65c10fd1a727b9802a586ff8648e5c820dd977b8db63a4c83127807e269d2d98",
+      "bytes": 2354
+    },
+    {
+      "source": "build/shell-model-r12-content-fence-test.log",
+      "file": "content-fence-model-tests.txt",
+      "sha256": "7323936ff3dedcfedb71d37d238725053a8bbc49b4e99f80d4723de300a70481",
+      "bytes": 3797
+    },
+    {
+      "source": "build/camera-first-r12-content-fence-test.log",
+      "file": "content-fence-camera-tests.txt",
+      "sha256": "d03fed50a1e2968096cf0d44b4fbba6b2e2ad5f9f508aaf6ed85ea0b0b1ffb80",
+      "bytes": 2354
+    },
+    {
+      "source": "build/r12-windows-final-tests.log",
+      "file": "combined-first-tests.txt",
+      "sha256": "a05cff7f88e883377c3e0fc46f07be67aa809d4af30136ef06352b5c3cd2a784",
+      "bytes": 13709
+    }
+  ],
+  "final_results": "Separate final verification receipt; these results are not relabeled."
+}

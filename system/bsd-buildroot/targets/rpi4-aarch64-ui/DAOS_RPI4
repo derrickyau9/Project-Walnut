@@ -1,0 +1,22 @@
+# DaOS Raspberry Pi 4 AArch64 kernel.
+# Build this against the source archives in ../../sources.lock.json.
+# GENERIC64 is deliberately inherited while the board port is brought up;
+# it is not a claim that every inherited device has been minimized or tested.
+include "./GENERIC64"
+
+# Pi 4's onboard VL805 USB controller sits behind the BCM2711/STB PCIe host.
+# These drivers exist upstream but are not selected in stock GENERIC64.
+bcm2838pcie* at fdt?
+bcm2838rng* at fdt?
+
+# Core product is AArch64 only and does not serve network root filesystems.
+no options COMPAT_NETBSD32
+no options NFSSERVER
+no file-system NFS
+no pseudo-device raid
+no options RAID_AUTOCONFIG
+
+# NetBSD wscons/genfb kernel splash, not the FreeBSD vt loader interface.
+# configure must copy the reviewed asset into the private KERNCONFDIR.
+options SPLASHSCREEN
+makeoptions SPLASHSCREEN_IMAGE="${KERNCONFDIR}/daos-boot-logo.png"

@@ -1,0 +1,15 @@
+{
+  "format": "hf-qemu-virt-final-validation-v1",
+  "passed": true,
+  "source_sha256": {
+    "tools/qemu_target.py": "845a84af0712d3093cb326fb13544e7f1df0451000d7993b4331d97ed8e195a9",
+    "system/qemu-virt/init.c": "d7cc2b6762e33a449394b0a030dc61a25cebd10dea3545894bf3c84838123ef1",
+    "system/qemu-virt/rpc.c": "09a731d68a50aa88f353591c39bbdcfbc438711cce3c49dc743feea6f8f62e7d"
+  },
+  "serial_log_sha256": "c99041500ba33445123b554fff977d534429a795c407d79b9af37a7ebc354b74",
+  "guest_dng_sha256": "97472763b7d9b8a97d98027415c4fa94516aa58b92cd634c650551745e89533c",
+  "exact_samples": 12288,
+  "physical_board_tested": false,
+  "context_guard_verified": true,
+  "repeatable_initramfs": true
+}

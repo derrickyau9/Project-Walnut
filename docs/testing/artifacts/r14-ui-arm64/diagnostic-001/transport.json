@@ -1,0 +1,6 @@
+{
+  "returncode": 1,
+  "seconds": 3.85420143500005,
+  "stderr": "QQmlComponent: Component is not ready\n",
+  "stdout": "{\"complete\": false, \"seconds\": 2.3890299039999263, \"phases\": [], \"qml_events\": 0, \"screenshots\": [], \"error\": \"RuntimeError: \"}\n"
+}

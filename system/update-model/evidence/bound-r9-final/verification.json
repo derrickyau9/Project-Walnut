@@ -1,0 +1,227 @@
+{
+  "format": "hf-final-bound-update-verification-v1",
+  "passed": true,
+  "source_image": "build/target-e6ac70179d285645aab4226b",
+  "base_orchestration": "/home/dy09/hf-task-orchestrated-r9-003/run-state.json",
+  "final_source_snapshot_unchanged": true,
+  "upstream_sha256": {
+    "bootstrap.cpio.gz": "0914cdc88fb4c149ea27183797ccb9b7436689663ef7bc1c959c32c62a5db921",
+    "data.ext4": "ec8a14cb0fcb0db04ad1d17adbdea91d237e2da52016d9d6e4c6f24f3b4381e8",
+    "kernel.img": "9c37ace54ef7e1919411fd912e9f34d6982ddd7f4c8ef3c8aee56f4c4d70db67",
+    "rootfs.ext4": "3358206b5f5ed7eaeaccc16ee7fa97a2bb607ee036e8b91e3983ed2b001f282a"
+  },
+  "upstream_unchanged": true,
+  "capture_id": "374ff3b0-e4ed-47bf-92b3-a81c90f5c344",
+  "binding_id": "cb1-a4d0d90ce30689a7202a88b28945bb6bca37fba91745b99323687213d2d5be17",
+  "actual_exposure_us": 11700,
+  "protected_sha256": {
+    "calibration": "30b67dadec386cf491300e0ce9074365fa1837f68eb2f42d004210fbb6266597",
+    "calibration_binding": "ab6e8af80afa06f380d2f2fe5accd59dcc756a3d563945068ec35e3a221d121a",
+    "configuration": "1ba02356fcd6777d19530d571b98667dee126f32c011181e49050d3869f87a08",
+    "device_settings": "23ac102b0dcf22df13f90780992b241c4ee8860ebee3d973d4c9b66ea227e06b",
+    "journal_capture_rows": "d0049bb6388f31890c6d3b9fc3bcb143fd365376145dc1a19595e3f2a6df5185",
+    "original_dng": "993b7048080266f9e76c0d0c9612dca9eb14ade355ae29240df4094cb4b27b82"
+  },
+  "final_confirmed_slot": "A",
+  "boot_sequence": [
+    {
+      "attempt_id": "b14cb8a5-86f5-4148-9007-44db05368ffb",
+      "attempts_remaining": 0,
+      "healthy": true,
+      "is_trial": false,
+      "slot": "A",
+      "version": 1,
+      "seconds": 13.406557752000026,
+      "root_sha256": "abd519880249f9618aa73460279bea6da95325a5048acb1d471266199bde07e6"
+    },
+    {
+      "attempt_id": "9dd38510-b634-4038-89fc-9feead9dd5de",
+      "attempts_remaining": 0,
+      "healthy": false,
+      "is_trial": true,
+      "slot": "B",
+      "version": 2,
+      "seconds": 13.641836636999983,
+      "root_sha256": "fefb9536c41183646efed5051c21c9a53f10a306c37e5cc19d8eb4a9e5bfdb9f"
+    },
+    {
+      "attempt_id": "941ed79e-870f-4d00-a998-3354f785b6c0",
+      "attempts_remaining": 0,
+      "healthy": true,
+      "is_trial": false,
+      "slot": "A",
+      "version": 1,
+      "seconds": 13.740905476999956,
+      "root_sha256": "abd519880249f9618aa73460279bea6da95325a5048acb1d471266199bde07e6"
+    }
+  ],
+  "copies": [
+    {
+      "source": "build/update-model-bound-r9-final-001/bound-demo-evidence.json",
+      "copy": "bound-demo-evidence.json",
+      "bytes": 3041,
+      "sha256": "7d639bb60830fabc368cf4a17e66f313fd95a8502cf56e86554c4cc87e1d3985"
+    },
+    {
+      "source": "build/update-model-bound-r9-final-001/policy.json",
+      "copy": "policy.json",
+      "bytes": 2994,
+      "sha256": "431777962dd1d7f164d25a88e25e58aaeb9add4d976a280f6e232c3d4745c6d8"
+    },
+    {
+      "source": "build/update-model-bound-r9-final-001/control.sqlite3",
+      "copy": "control.sqlite3",
+      "bytes": 53248,
+      "sha256": "52dfefb9b7753617e6c9b059b92acb0038994b21c1b0aeef4d48ae80de79812f"
+    },
+    {
+      "source": "build/update-model-bound-r9-final-001/runtime/runtime-evidence.json",
+      "copy": "runtime/runtime-evidence.json",
+      "bytes": 4431,
+      "sha256": "34723363e87f1949820f62bc18a50e0b1035e6e1b2d00d111c006495234542f3"
+    },
+    {
+      "source": "build/update-model-bound-r9-final-001-command.txt",
+      "copy": "command/update-model-bound-r9-final-001-command.txt",
+      "bytes": 3931,
+      "sha256": "45ddb6e6ef7f28df87f02ce8d3c2fe118ce6b1f2238c4618f267690afe7c14eb"
+    },
+    {
+      "source": "build/update-model-bound-r9-final-001/attempts/941ed79e-870f-4d00-a998-3354f785b6c0/941ed79e-870f-4d00-a998-3354f785b6c0.json",
+      "copy": "attempts/941ed79e-870f-4d00-a998-3354f785b6c0/941ed79e-870f-4d00-a998-3354f785b6c0.json",
+      "bytes": 3678,
+      "sha256": "e0d68af32963838acfa60c5a5c26d0f94bfcb73947f78457d5e874318bc915a9"
+    },
+    {
+      "source": "build/update-model-bound-r9-final-001/attempts/941ed79e-870f-4d00-a998-3354f785b6c0/boot-evidence.json",
+      "copy": "attempts/941ed79e-870f-4d00-a998-3354f785b6c0/boot-evidence.json",
+      "bytes": 7905,
+      "sha256": "3c75d7dd03970c0c2c9b1dd4115df64a0dcdb0fbda1a6bd5ac8c16f57a1b623c"
+    },
+    {
+      "source": "build/update-model-bound-r9-final-001/attempts/941ed79e-870f-4d00-a998-3354f785b6c0/serial.log",
+      "copy": "attempts/941ed79e-870f-4d00-a998-3354f785b6c0/serial.log",
+      "bytes": 19478,
+      "sha256": "c5d3457c406a9cb27cce387f3734e7229b3567f0901facb98e57d625d4623b17"
+    },
+    {
+      "source": "build/update-model-bound-r9-final-001/attempts/9dd38510-b634-4038-89fc-9feead9dd5de/9dd38510-b634-4038-89fc-9feead9dd5de.json",
+      "copy": "attempts/9dd38510-b634-4038-89fc-9feead9dd5de/9dd38510-b634-4038-89fc-9feead9dd5de.json",
+      "bytes": 3675,
+      "sha256": "dd8f3d8a869f81ddc72af5c664221a3bf443064383f5e3b9da243eaad50c4ddc"
+    },
+    {
+      "source": "build/update-model-bound-r9-final-001/attempts/9dd38510-b634-4038-89fc-9feead9dd5de/boot-evidence.json",
+      "copy": "attempts/9dd38510-b634-4038-89fc-9feead9dd5de/boot-evidence.json",
+      "bytes": 7897,
+      "sha256": "065c075e258003efaeebf63a88e8483461ae3456dd5ede933e72c12df24993d5"
+    },
+    {
+      "source": "build/update-model-bound-r9-final-001/attempts/9dd38510-b634-4038-89fc-9feead9dd5de/serial.log",
+      "copy": "attempts/9dd38510-b634-4038-89fc-9feead9dd5de/serial.log",
+      "bytes": 19471,
+      "sha256": "a916e2334a4d7df34f166ee64b4f21fbafe1abbe4e9e1ab0ae4869be47aa6ee0"
+    },
+    {
+      "source": "build/update-model-bound-r9-final-001/attempts/b14cb8a5-86f5-4148-9007-44db05368ffb/b14cb8a5-86f5-4148-9007-44db05368ffb.json",
+      "copy": "attempts/b14cb8a5-86f5-4148-9007-44db05368ffb/b14cb8a5-86f5-4148-9007-44db05368ffb.json",
+      "bytes": 3677,
+      "sha256": "7dad6a5dbd2d1445584f9a042d6223f5e2c4997be64b63d77aa972b0655e9698"
+    },
+    {
+      "source": "build/update-model-bound-r9-final-001/attempts/b14cb8a5-86f5-4148-9007-44db05368ffb/boot-evidence.json",
+      "copy": "attempts/b14cb8a5-86f5-4148-9007-44db05368ffb/boot-evidence.json",
+      "bytes": 7904,
+      "sha256": "bda023cb5c9ac50c383b0152ca56defdc8c3e59b76fbbb223cce23226dc98130"
+    },
+    {
+      "source": "build/update-model-bound-r9-final-001/attempts/b14cb8a5-86f5-4148-9007-44db05368ffb/serial.log",
+      "copy": "attempts/b14cb8a5-86f5-4148-9007-44db05368ffb/serial.log",
+      "bytes": 19479,
+      "sha256": "b5f3e9b92566dd00f67fb66bc0cc46b0d96073b1cc8f5660f5517d879a3be7e4"
+    },
+    {
+      "source": "build/update-model-bound-r9-final-001/bundles/214c3aa0-5963-469f-b043-3e89c35650b9/manifest.json",
+      "copy": "bundles/214c3aa0-5963-469f-b043-3e89c35650b9/manifest.json",
+      "bytes": 666,
+      "sha256": "d01579bf6d14dc12df2fd1c59a9b6461fc9096b4084f3889377f60314ba002cc"
+    },
+    {
+      "source": "build/update-model-bound-r9-final-001/bundles/6f9c8dcd-afd9-41aa-ba7e-bb3d044c8bb6/manifest.json",
+      "copy": "bundles/6f9c8dcd-afd9-41aa-ba7e-bb3d044c8bb6/manifest.json",
+      "bytes": 663,
+      "sha256": "f8b0a46c1eac835c7bf3612f69b2d254f4befabbe875552d3dfedc76d112c6fb"
+    },
+    {
+      "source": "build/target-e6ac70179d285645aab4226b/build-evidence.json",
+      "copy": "base-image/build-evidence.json",
+      "bytes": 16328,
+      "sha256": "9d22ef6c01e798213df96dce9ac3c932cb1ccf9e9bc5d7689538fc02b1d86c90"
+    },
+    {
+      "source": "build/target-e6ac70179d285645aab4226b/boots/first/boot-evidence.json",
+      "copy": "base-image/boots/first/boot-evidence.json",
+      "bytes": 12431,
+      "sha256": "3cca3c08a10ff06d7ebbc37c1b0ec3ecaef6e18fce1109e2042cc49e7844dbd8"
+    },
+    {
+      "source": "build/target-e6ac70179d285645aab4226b/boots/resume/boot-evidence.json",
+      "copy": "base-image/boots/resume/boot-evidence.json",
+      "bytes": 12468,
+      "sha256": "eaa6a2f3783aeb54fa59c80590ecdb500a6bd71dc85e6d4c3b34b5c759209c46"
+    }
+  ],
+  "preflight_source_copies": [
+    {
+      "source": "/home/dy09/hf-task-orchestrated-r9-003/run-state.json",
+      "copy": "base-run-state.json",
+      "bytes": 14166,
+      "sha256": "c923ef42b9331e27b20109c3a433c1f8e14e3720bfcb81fd9118513fe0f866fb"
+    },
+    {
+      "source": "tools/update_model.py",
+      "copy": "source/tools/update_model.py",
+      "bytes": 43820,
+      "sha256": "8f044a4664ac11fa6457fb8d437133701df9e73d91c352f6792d308678effece"
+    },
+    {
+      "source": "tools/update_guest_boot.py",
+      "copy": "source/tools/update_guest_boot.py",
+      "bytes": 27632,
+      "sha256": "c4cefe2f433aa0d5f86467e9be2ffeb6870735674bd88f1ae75da2ae8d719662"
+    },
+    {
+      "source": "system/update-model/init.c",
+      "copy": "source/system/update-model/init.c",
+      "bytes": 8546,
+      "sha256": "6546e3ba051e8174f5cc5870867f7912a87db3b4744fdd4967fc8b8146aeb174"
+    },
+    {
+      "source": "system/update-model/health.py",
+      "copy": "source/system/update-model/health.py",
+      "bytes": 23001,
+      "sha256": "ac42c7aac67f6ad7f7268dc9ff2ad42c43572771c3f75b97b3d70c75a7c588af"
+    },
+    {
+      "source": "system/update-model/README.md",
+      "copy": "source/system/update-model/README.md",
+      "bytes": 8612,
+      "sha256": "e4ce82c499bce5b97ec2208a207492ed730ef5ce3f49879ec1784176f325dfa1"
+    },
+    {
+      "source": "tests/test_update_model.py",
+      "copy": "source/tests/test_update_model.py",
+      "bytes": 22006,
+      "sha256": "3b1066e37b41b2c47b01f46666792d817cf01859604d945b7d554699a7bf92c9"
+    },
+    {
+      "source": "tests/test_update_guest.py",
+      "copy": "source/tests/test_update_guest.py",
+      "bytes": 13578,
+      "sha256": "57805ef7f3ebd92039761c498febfe36bb54a422d516a1fc8217718936df5d2b"
+    }
+  ],
+  "new_tests_run": false,
+  "product_changes": false,
+  "physical_update_verified": false
+}

@@ -1,0 +1,178 @@
+{
+  "files": {
+    "camera/__init__.py": {
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "camera/calibration/__init__.py": {
+      "bytes": 648,
+      "sha256": "145ef81dd62004f0d7ff607bb8d7a0d221a6a4279bb7ee6bd8eae78dafdecc7c"
+    },
+    "camera/calibration/binding.py": {
+      "bytes": 9694,
+      "sha256": "9abe0ce308550aa7a3f9f56d6342105c5e8fc827698d21cf931875f910fb1362"
+    },
+    "camera/calibration/store.py": {
+      "bytes": 17987,
+      "sha256": "23dc05c64847a2303fc778c42d3f012cfdfcf1c62ea035cf435211264938f228"
+    },
+    "camera/camerad/__init__.py": {
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "camera/camerad/__main__.py": {
+      "bytes": 8611,
+      "sha256": "fc25bee012b7877f3e2905702992573d112881e20e05a69f2026db103fc04f73"
+    },
+    "camera/camerad/calibration_context.py": {
+      "bytes": 5854,
+      "sha256": "255b523780b84a6e6372966626931d67075ccf79c068f64bcb3ac9ff537cfe45"
+    },
+    "camera/camerad/http_client.py": {
+      "bytes": 32696,
+      "sha256": "e0e449c23cec8b5f2f8074a7038a75f855b2dd512a042bd8eb2dcb179420fd16"
+    },
+    "camera/camerad/native_backend.py": {
+      "bytes": 8360,
+      "sha256": "4320372629d5cd035947a9f74360c90d7c52ac91635202f80a0a9cb311430f5a"
+    },
+    "camera/camerad/native_client.py": {
+      "bytes": 30328,
+      "sha256": "5dc77424d9aa71400c0cf0d476d9d8d3759d56570c4f8de742067bc6bf5fdbca"
+    },
+    "camera/camerad/native_service.py": {
+      "bytes": 3348,
+      "sha256": "e31bb085407683f070ef0aad477000cfdcad22a11871a6265fd7ae483a0544f9"
+    },
+    "camera/camerad/retained.py": {
+      "bytes": 18973,
+      "sha256": "a1518dc814d4634616917b305ca7a26ca08908263214c43183dcc75f11891d4b"
+    },
+    "camera/camerad/server.py": {
+      "bytes": 22923,
+      "sha256": "122bd5fe963edfcae73deec3aa69c44e81f15f2af9f58db5827e453d1235d50a"
+    },
+    "camera/camerad/service.py": {
+      "bytes": 46478,
+      "sha256": "c1d90d37d2a913ef255b1cf0481120629e863a404ba70923e01b83dd721e0316"
+    },
+    "camera/dng/hf_dng.py": {
+      "bytes": 7912,
+      "sha256": "8969aef7fa59c33791f55cf14271581c10b51a264b57b572873032f93e03d7b5"
+    },
+    "camera/dng/inspect.py": {
+      "bytes": 11984,
+      "sha256": "4200ac573d1a0373bc5cacde10d024948fab046af88d065356387d71c7033342"
+    },
+    "camera/pipeline/__init__.py": {
+      "bytes": 78,
+      "sha256": "e14baeff3beab5b6f1b8f144fdb98b95158db1178eb49e038dab03b44b56b12d"
+    },
+    "camera/pipeline/preview.py": {
+      "bytes": 5617,
+      "sha256": "2f6df30c727173450473386698166ce9dcc0d7cd856499068f9a6fe24e2afbc7"
+    },
+    "daos/capability_runtime/__init__.py": {
+      "bytes": 74,
+      "sha256": "a347df9a4513dac86c119fcf581da6ef63a96b0c01117d35b68af46f07406faa"
+    },
+    "daos/capability_runtime/__main__.py": {
+      "bytes": 9891,
+      "sha256": "105c4743bfe9d2cb3fc3525e34d0343f483fe8d7a56f5e0e2e558fb66d885e0d"
+    },
+    "daos/capability_runtime/bracket.py": {
+      "bytes": 25359,
+      "sha256": "0621a20fa3188da919e647e3fef26c98a8f4cd1e805a6e3ec848fe80983f336a"
+    },
+    "daos/capability_runtime/manager.py": {
+      "bytes": 6376,
+      "sha256": "adf916baf8578a2a3b1cdf815ad646d51feec9bd2a7ac776d263f75e1c39f47a"
+    },
+    "daos/capability_runtime/recipes.py": {
+      "bytes": 5236,
+      "sha256": "4dd4195005b942bb45671309283b7bb0c056d19044f050fe734b3ecc8e60734e"
+    },
+    "simulation/bayer.py": {
+      "bytes": 2084,
+      "sha256": "a1a02e82a13d07962fc05f168d2b89e5fb581981097a5611687a4760e101a810"
+    },
+    "tests/test_camera_first_ui.py": {
+      "bytes": 19853,
+      "sha256": "fc2329db4873e9aeab270f57546d58362cf78b25833833a86e864b0a5b1ddea7"
+    },
+    "tests/test_device_apps.py": {
+      "bytes": 13114,
+      "sha256": "fe73c63622b14eca97e0582e9532d62338b0423049fa0d4cc977eeb7dbda73cb"
+    },
+    "tests/test_device_shell_model.py": {
+      "bytes": 16384,
+      "sha256": "f6d7e6d549a2e7b12783894a53efc0051bd314cc278ca5a393694100751a55b5"
+    },
+    "tests/test_device_ui.py": {
+      "bytes": 44943,
+      "sha256": "74d60863f1c1b932eb18900b4b2b0f61648766d09e107cd385754422813103eb"
+    },
+    "ui/on-device/AppsWorkspace.qml": {
+      "bytes": 84420,
+      "sha256": "c9f24557e0763201e13f7e3ab71de8b0fee3b5bce9779d954fd4df821ce723b9"
+    },
+    "ui/on-device/CameraMenu.qml": {
+      "bytes": 26855,
+      "sha256": "4159f800f3adaed380575882dcfe0535193252ac16efdf11a248befac895dc5a"
+    },
+    "ui/on-device/CameraPlayback.qml": {
+      "bytes": 21922,
+      "sha256": "719c854718667b38dccd772c07ed261b9937a39a5e289ffd391ca2244f47b1c7"
+    },
+    "ui/on-device/Console.qml": {
+      "bytes": 59032,
+      "sha256": "8749bcc4aecb2688ece43998a6bc560268116f2fd76168b4baa7c39c7b0c15c9"
+    },
+    "ui/on-device/DaOSDock.qml": {
+      "bytes": 5643,
+      "sha256": "996328e02cd43850ac7f22ffefbf85302cf2385f04332079f3508ef3994403a4"
+    },
+    "ui/on-device/DaOSIcon.qml": {
+      "bytes": 2715,
+      "sha256": "2f7ef1d1c0e01ed7a40adbee747cf599a98bb29740c6d953d74bec9874275be8"
+    },
+    "ui/on-device/Main.qml": {
+      "bytes": 19405,
+      "sha256": "c2e328c72a210ef4b78f053eefb24fcb683d2b86a7ec94a46c6bafbee4774798"
+    },
+    "ui/on-device/apps_controller.py": {
+      "bytes": 20133,
+      "sha256": "49705efbcbc4de271d985fccac2ef897b668a9eb1b9015837f35e14a247cbd50"
+    },
+    "ui/on-device/controller.py": {
+      "bytes": 45454,
+      "sha256": "e9121da43b61148e9263867bdf8fc1c896af2c91e93dd230830e0cec46231dab"
+    },
+    "ui/on-device/main.py": {
+      "bytes": 6411,
+      "sha256": "6e36f57cd94bbe6a14850ba8a201d4a983c5b8913b41d9026bf25b99655b6f94"
+    },
+    "ui/on-device/retail-theme.json": {
+      "bytes": 4446,
+      "sha256": "b3bb1de337f3a9059dcbde813ac12eadc72c6bb66c19d9e99bdf2b75fa2d45a4"
+    },
+    "ui/on-device/review_camera_first.py": {
+      "bytes": 20924,
+      "sha256": "94f44a0ba32cb9f3389ca1fa9d7c2a4e14272459f56bb402dc3d1c310b392e8d"
+    },
+    "ui/on-device/review_capture.py": {
+      "bytes": 14689,
+      "sha256": "29870c1842b55ae9400677a4f710cc345d9eca9a95de6df93e87004ab4d61e8c"
+    },
+    "ui/on-device/review_shell.py": {
+      "bytes": 20712,
+      "sha256": "e714cddc68303be3a00b83cfc389fcc90f7802b4a95459805e68512af52100c0"
+    },
+    "ui/on-device/shell_model.py": {
+      "bytes": 20536,
+      "sha256": "e22770bd50026a347837bf5331bd0e4652c2ef1f65f91c040d9582f6ceccc97d"
+    }
+  },
+  "format": "DaOS-r12-arm64-source-stage-v1",
+  "tar_sha256": "137bdef58d9946ae804dfcb1f58f3bdda343b0e8a53b7fc00c71ef736cbee46f"
+}

@@ -1,0 +1,7 @@
+{
+  "actual_collector_sha256": "f6e6a6cf53b836f176c755a4ea57b1f8c9a005d0d2eb928a6dc418b9524809ef",
+  "actual_tools_archive_sha256": "f3b1c6ea850ea4c1c8417ddb90da853dbe558e3c3f463831327a3ca426c82948",
+  "actual_source_snapshot": "collector-executed.py",
+  "canonical_collector_sha256": "c673f62ef0cc4865301fc94485e1aa4bb937fb438edf27219553c37e4aa0e315",
+  "difference": "Canonical adds disjointness rejection for unsafe reused/output tree overlaps. Actual003 uses separate sibling collection paths; this guard is not exercised by those safe parameters. No prior failed run promoted."
+}

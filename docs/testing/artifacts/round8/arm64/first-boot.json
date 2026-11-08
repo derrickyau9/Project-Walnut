@@ -1,0 +1,340 @@
+{
+  "boot_script_sha256": "efae5e85094a14e26564cfcd62837b36b290177ee85256a1d32515ff06bab976",
+  "build_evidence_sha256": "4011e07f30e811713d3e0918cda68dd0b137cddf74cdb7d8fc906dd7b922f615",
+  "command": [
+    "/usr/bin/qemu-system-aarch64",
+    "-machine",
+    "virt,gic-version=3",
+    "-cpu",
+    "cortex-a53",
+    "-smp",
+    "2",
+    "-m",
+    "1536",
+    "-accel",
+    "tcg",
+    "-nodefaults",
+    "-display",
+    "none",
+    "-serial",
+    "stdio",
+    "-monitor",
+    "none",
+    "-nic",
+    "none",
+    "-no-reboot",
+    "-sandbox",
+    "on,obsolete=deny,elevateprivileges=deny,spawn=deny,resourcecontrol=deny",
+    "-kernel",
+    "/proc/self/fd/5",
+    "-initrd",
+    "/proc/self/fd/6",
+    "-append",
+    "console=ttyAMA0 panic=-1 HASSLEFREE_ARM64_IMAGE=1 HF_IMAGE_PHASE=first rdinit=/init",
+    "-drive",
+    "file=/proc/self/fd/3,format=raw,if=none,id=hfroot,readonly=on",
+    "-device",
+    "virtio-blk-pci,drive=hfroot",
+    "-drive",
+    "file=/proc/self/fd/4,format=raw,if=none,id=hfdata,cache=writeback",
+    "-device",
+    "virtio-blk-pci,drive=hfdata"
+  ],
+  "data_fsck": {
+    "command": [
+      "/usr/sbin/e2fsck",
+      "-fn",
+      "/proc/self/fd/3"
+    ],
+    "returncode": 0,
+    "stderr": "e2fsck 1.47.2 (1-Jan-2025)\n",
+    "stdout": "Pass 1: Checking inodes, blocks, and sizes\nPass 2: Checking directory structure\nPass 3: Checking directory connectivity\nPass 4: Checking reference counts\nPass 5: Checking group summary information\nHF_R7_DATA: 57/16384 files (7.0% non-contiguous), 5343/65536 blocks\n"
+  },
+  "data_sha256_after": "00705f2a5b324e8f671ce5b37375496c4d38682b0eb55b68efbb7b2d8b52243e",
+  "data_sha256_before": "12078f5edd62b70a76fea72e0514f6e213eb4d932a6ae0d84998b53a12539943",
+  "extracted": {
+    "first-complete.png": {
+      "command": [
+        "/usr/sbin/debugfs",
+        "-R",
+        "dump /ui-r7/first-complete.png /proc/self/fd/5",
+        "/proc/self/fd/3"
+      ],
+      "debugfs": {
+        "command": [
+          "/usr/sbin/debugfs",
+          "-R",
+          "dump /ui-r7/first-complete.png /proc/self/fd/5",
+          "/proc/self/fd/3"
+        ],
+        "returncode": 0,
+        "stderr": "debugfs 1.47.2 (1-Jan-2025)\n",
+        "stdout": ""
+      },
+      "destination": "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/target-a46f8569e5d9146d26f42a6c/boots/first/guest/first-complete.png",
+      "dimensions": [
+        1024,
+        680
+      ],
+      "format": "hf-image-extract-v1",
+      "guest_path": "/ui-r7/first-complete.png",
+      "mounted": false,
+      "sha256": "abd2e20c0eec7f6b30157074a6c923e6ca37eaa8c4f7c8a7578ac54bc13605fa",
+      "size_bytes": 58907
+    },
+    "first-copy.dng": {
+      "command": [
+        "/usr/sbin/debugfs",
+        "-R",
+        "dump /ui-r7/first-copy.dng /proc/self/fd/5",
+        "/proc/self/fd/3"
+      ],
+      "debugfs": {
+        "command": [
+          "/usr/sbin/debugfs",
+          "-R",
+          "dump /ui-r7/first-copy.dng /proc/self/fd/5",
+          "/proc/self/fd/3"
+        ],
+        "returncode": 0,
+        "stderr": "debugfs 1.47.2 (1-Jan-2025)\n",
+        "stdout": ""
+      },
+      "destination": "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/target-a46f8569e5d9146d26f42a6c/boots/first/guest/first-copy.dng",
+      "format": "hf-image-extract-v1",
+      "guest_path": "/ui-r7/first-copy.dng",
+      "mounted": false,
+      "sha256": "13381de928a4406b242274306dfa599a9c0c4336ea7f6af0e91c339620290fa5",
+      "size_bytes": 25662
+    },
+    "first-gallery.png": {
+      "command": [
+        "/usr/sbin/debugfs",
+        "-R",
+        "dump /ui-r7/first-gallery.png /proc/self/fd/5",
+        "/proc/self/fd/3"
+      ],
+      "debugfs": {
+        "command": [
+          "/usr/sbin/debugfs",
+          "-R",
+          "dump /ui-r7/first-gallery.png /proc/self/fd/5",
+          "/proc/self/fd/3"
+        ],
+        "returncode": 0,
+        "stderr": "debugfs 1.47.2 (1-Jan-2025)\n",
+        "stdout": ""
+      },
+      "destination": "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/target-a46f8569e5d9146d26f42a6c/boots/first/guest/first-gallery.png",
+      "dimensions": [
+        1024,
+        680
+      ],
+      "format": "hf-image-extract-v1",
+      "guest_path": "/ui-r7/first-gallery.png",
+      "mounted": false,
+      "sha256": "e532496223714d3e851917208b7b74b69db6d8e4addfe6cdf3ed725ae7e810d0",
+      "size_bytes": 40109
+    },
+    "first-retained.png": {
+      "command": [
+        "/usr/sbin/debugfs",
+        "-R",
+        "dump /ui-r7/first-retained.png /proc/self/fd/5",
+        "/proc/self/fd/3"
+      ],
+      "debugfs": {
+        "command": [
+          "/usr/sbin/debugfs",
+          "-R",
+          "dump /ui-r7/first-retained.png /proc/self/fd/5",
+          "/proc/self/fd/3"
+        ],
+        "returncode": 0,
+        "stderr": "debugfs 1.47.2 (1-Jan-2025)\n",
+        "stdout": ""
+      },
+      "destination": "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/target-a46f8569e5d9146d26f42a6c/boots/first/guest/first-retained.png",
+      "dimensions": [
+        64,
+        48
+      ],
+      "format": "hf-image-extract-v1",
+      "guest_path": "/ui-r7/first-retained.png",
+      "mounted": false,
+      "sha256": "16673212acd18e0f4d17665ac1e55bf150f5489bec4eda93ecc136cff1a3c9e7",
+      "size_bytes": 1831
+    },
+    "first-source.dng": {
+      "command": [
+        "/usr/sbin/debugfs",
+        "-R",
+        "dump /ui-r7/session/photos/b86572e6-c679-4079-8f3d-2d2c5c1239bb.dng /proc/self/fd/5",
+        "/proc/self/fd/3"
+      ],
+      "debugfs": {
+        "command": [
+          "/usr/sbin/debugfs",
+          "-R",
+          "dump /ui-r7/session/photos/b86572e6-c679-4079-8f3d-2d2c5c1239bb.dng /proc/self/fd/5",
+          "/proc/self/fd/3"
+        ],
+        "returncode": 0,
+        "stderr": "debugfs 1.47.2 (1-Jan-2025)\n",
+        "stdout": ""
+      },
+      "destination": "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/target-a46f8569e5d9146d26f42a6c/boots/first/guest/first-source.dng",
+      "format": "hf-image-extract-v1",
+      "guest_path": "/ui-r7/session/photos/b86572e6-c679-4079-8f3d-2d2c5c1239bb.dng",
+      "mounted": false,
+      "sha256": "13381de928a4406b242274306dfa599a9c0c4336ea7f6af0e91c339620290fa5",
+      "size_bytes": 25662
+    }
+  },
+  "format": "hf-arm64-image-boot-v1",
+  "guest_report": {
+    "actual_exposure_us": 10100,
+    "capture_id": "b86572e6-c679-4079-8f3d-2d2c5c1239bb",
+    "capture_status": "complete",
+    "dng_bytes": 25662,
+    "dng_sha256": "13381de928a4406b242274306dfa599a9c0c4336ea7f6af0e91c339620290fa5",
+    "effective_uid": 1000,
+    "execution_mode": "qemu-system",
+    "export_bytes": 25662,
+    "export_sha256": "13381de928a4406b242274306dfa599a9c0c4336ea7f6af0e91c339620290fa5",
+    "format": "hf-arm64-qt-smoke-v1",
+    "frame_id": "b86572e6-c679-4079-8f3d-2d2c5c1239bb",
+    "journal_rows": 1,
+    "machine": "aarch64",
+    "native_authority": {
+      "elf_machine": 183,
+      "file": "hf-camerad",
+      "sha256": "27cb408b7a8d413282d3ea5eba2d3c106004942742932503d0b79ee6b811d1d0"
+    },
+    "native_process_closed": true,
+    "offline_camera": {
+      "basic": {
+        "actual_exposure_us": 11700,
+        "automation_import_blocked": true,
+        "dng_sha256": "2bed91cab1738f3be5406b3990924c888accfd68803e4d1d5b72fb62f4f568ae",
+        "export_sha256": "2bed91cab1738f3be5406b3990924c888accfd68803e4d1d5b72fb62f4f568ae",
+        "journal_rows": 1,
+        "request_id": "abd646a3-77e6-4063-97cf-a6e557eee799"
+      },
+      "commands": 6,
+      "format": "hf-offline-camera-smoke-v1",
+      "machine": "aarch64",
+      "passed": true,
+      "phase": "first",
+      "physical_camera_validated": false,
+      "python": "3.13.5",
+      "simulated": true,
+      "workflow": {
+        "job_id": "offline-5f2535c7efde4ef49b51eb0312f17236",
+        "journal_rows": 2,
+        "photos": {
+          "02f8a0b9-33ce-4e7d-958f-b2659cde5e53.dng": "978501b0ee1bf4d117c59174e9ed60a6afa8e7c972b87c32ade877cde9509fdf",
+          "88fb4a63-c09f-400c-86ff-f1e7900ac6a0.dng": "ac061950f2bbc801012138c9721872b2d1fea4bc90577bb12dc728e33086bd4c"
+        },
+        "resumed_saved_plan": false,
+        "status": "completed"
+      }
+    },
+    "passed": true,
+    "phase": "first",
+    "physical_display_validated": false,
+    "pyqt_version": "5.15.11",
+    "python": "3.13.5",
+    "python_elf": {
+      "elf_machine": 183,
+      "file": "python3.13",
+      "sha256": "273cb29e073b748379ba546affa562283ed795f84ff230349e12ce610e60975c"
+    },
+    "qt_extensions": {
+      "QtCore": {
+        "elf_machine": 183,
+        "file": "QtCore.abi3.so",
+        "sha256": "580dbe1980f694d4b4ecbab2055d1889452a13d97fe37111e7ef90641468a95a"
+      },
+      "QtGui": {
+        "elf_machine": 183,
+        "file": "QtGui.abi3.so",
+        "sha256": "c08249a6bc95444bbf3cfcd88e8c0dcd243553f9110f26089417651632f147e1"
+      },
+      "QtQml": {
+        "elf_machine": 183,
+        "file": "QtQml.abi3.so",
+        "sha256": "12868e547a57366c9ce9bc7557d977e22c4db2cd2f5f15b2d868b8ee91ce5126"
+      },
+      "QtQuick": {
+        "elf_machine": 183,
+        "file": "QtQuick.abi3.so",
+        "sha256": "2c2105544d2d4c54ab653faff9f9260a11f779c02043d7626838da3455a30b13"
+      },
+      "QtTest": {
+        "elf_machine": 183,
+        "file": "QtTest.abi3.so",
+        "sha256": "a04a18f313e388aaf02d059facd246af8db33a5b6c867fdf4e250f0f012da6ca"
+      }
+    },
+    "qt_platform": "offscreen",
+    "qt_quick_backend": "software",
+    "qt_runtime_version": "5.15.15",
+    "qt_version": "5.15.15",
+    "request_id": "b86572e6-c679-4079-8f3d-2d2c5c1239bb",
+    "restart_same_id_without_recapture": false,
+    "screenshots": [
+      {
+        "file": "first-complete.png",
+        "height": 680,
+        "rendering": "ARM64 Qt Quick offscreen software; no physical display",
+        "sampled_colors": 83,
+        "sha256": "abd2e20c0eec7f6b30157074a6c923e6ca37eaa8c4f7c8a7578ac54bc13605fa",
+        "width": 1024
+      },
+      {
+        "file": "first-gallery.png",
+        "height": 680,
+        "rendering": "ARM64 Qt Quick offscreen software; no physical display",
+        "sampled_colors": 61,
+        "sha256": "e532496223714d3e851917208b7b74b69db6d8e4addfe6cdf3ed725ae7e810d0",
+        "width": 1024
+      }
+    ],
+    "sensor_acquisition_validated": false,
+    "simulated": true,
+    "source_sha256": {
+      "camera/camerad/native_client.py": "4e229f11a0130432fbe76ca313ec995ac01983df16059e05a06b6ab3f6d7b21b",
+      "camera/camerad/retained.py": "a1518dc814d4634616917b305ca7a26ca08908263214c43183dcc75f11891d4b",
+      "camera/dng/inspect.py": "4200ac573d1a0373bc5cacde10d024948fab046af88d065356387d71c7033342",
+      "tests/ui/arm64_smoke.py": "0d45a53775935f70e8ca76b87bf643512cce72448893f63c8e3baaef34660b84",
+      "tests/ui/offline_smoke.py": "15eaaf1e4d07d1dfb001d7fea1d9611c197d2a9409ddccdfb27255c31c660c67",
+      "ui/on-device/Main.qml": "21c342792baa5e8ecdc4c92710e10140d210437c39124040c580dd97f4831be5",
+      "ui/on-device/controller.py": "132efb958cd84e20f7969fe1426cd58be261a27b5b137862485ed445ce0c2876"
+    },
+    "thumbnail": {
+      "bytes": 1831,
+      "calibrated": false,
+      "file": "first-retained.png",
+      "height": 48,
+      "sha256": "16673212acd18e0f4d17665ac1e55bf150f5489bec4eda93ecc136cff1a3c9e7",
+      "source": "actual retained synthetic DNG",
+      "width": 64
+    }
+  },
+  "host_filesystem_sharing": false,
+  "host_mounts": false,
+  "network": false,
+  "passed": true,
+  "persistent_same_request_id": false,
+  "phase": "first",
+  "qemu_inherited_process_group": true,
+  "qemu_version": "QEMU emulator version 10.0.13 (Debian 1:10.0.13+ds-0+deb13u1)",
+  "request_id": "b86572e6-c679-4079-8f3d-2d2c5c1239bb",
+  "rootfs_sha256_after": "675c2212ef7a893ef7525c3137848c752bf23837ccabe5e1823b438159ab5882",
+  "rootfs_sha256_before": "675c2212ef7a893ef7525c3137848c752bf23837ccabe5e1823b438159ab5882",
+  "rootfs_unchanged": true,
+  "scope": "generic full-system virtual ARM64, software camera only",
+  "seconds": 28.909021333999988,
+  "serial_sha256": "253291bd0b3f0c10da586702919eabe62fc06cb81b546c3d437a251e4e6a5869"
+}

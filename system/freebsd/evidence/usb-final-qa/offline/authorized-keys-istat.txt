@@ -1,0 +1,15 @@
+inode: 1056
+Allocated
+Group: 0
+uid / gid: 0 / 0
+mode: rrw-------
+size: 1432
+num of links: 1
+
+Inode Times:
+Accessed:	0000-00-00 00:00:00 (UTC)
+File Modified:	0000-00-00 00:00:00 (UTC)
+Inode Modified:	0000-00-00 00:00:00 (UTC)
+
+Direct Blocks:
+32015 

@@ -1,0 +1,11 @@
+test_active_palette_is_opaque_achromatic_with_explicit_user_override (tests.test_device_neutral_theme.NeutralPaletteContractTests.test_active_palette_is_opaque_achromatic_with_explicit_user_override) ... ok
+test_dark_menu_backgrounds_render_achromatically_without_capture (tests.test_device_neutral_theme.NeutralRenderedBackgroundTests.test_dark_menu_backgrounds_render_achromatically_without_capture) ... ok
+test_light_menu_backgrounds_render_achromatically_without_capture (tests.test_device_neutral_theme.NeutralRenderedBackgroundTests.test_light_menu_backgrounds_render_achromatically_without_capture) ... ok
+test_optional_tool_surfaces_are_neutral_without_changing_camera_settings (tests.test_device_neutral_theme.NeutralRenderedBackgroundTests.test_optional_tool_surfaces_are_neutral_without_changing_camera_settings) ... ok
+test_preview_retains_source_color_while_shooting_hud_is_achromatic (tests.test_device_neutral_theme.NeutralRenderedBackgroundTests.test_preview_retains_source_color_while_shooting_hud_is_achromatic) ... ok
+test_quick_controls_and_shooting_bar_are_neutral_in_both_modes (tests.test_device_neutral_theme.NeutralRenderedBackgroundTests.test_quick_controls_and_shooting_bar_are_neutral_in_both_modes) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 5.677s
+
+OK

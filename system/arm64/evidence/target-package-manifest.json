@@ -1,0 +1,312 @@
+{
+  "architecture": "aarch64",
+  "files": [
+    {
+      "mode": 493,
+      "path": "bin/hf-camerad",
+      "sha256": "a3ade7e0fb5eb1c075483550cd5b4cd9d61463b0b4350795c4a90a5d1f0d892c",
+      "size": 4595864
+    },
+    {
+      "mode": 493,
+      "path": "bin/hf-native-worker",
+      "sha256": "aebb779b523be6b3c520b2e1c04be624904d2726d4180cb6c596feb01fd1156c",
+      "size": 2981776
+    },
+    {
+      "mode": 420,
+      "path": "notices/arm64-build-evidence.json",
+      "sha256": "d7949cd9dcaab52f054895b9b54755dec0d754d8eddf37e7248e411c5a2324ff",
+      "size": 27759
+    },
+    {
+      "mode": 420,
+      "path": "notices/gcc-cross-copyright.txt",
+      "sha256": "20390f8a6f3b1e4d7cb45dd8652dabb259bbef688cbad839bcdb0b9ba7252f79",
+      "size": 69004
+    },
+    {
+      "mode": 420,
+      "path": "notices/glibc-cross-copyright.txt",
+      "sha256": "f5788886720a2605a946e81d571e6c8162b09f58d2e2ceb8d36e5768fccd850d",
+      "size": 51200
+    },
+    {
+      "mode": 420,
+      "path": "notices/native-source-manifest.json",
+      "sha256": "178f5be5bdceb1930fe4f83c96474db359dd414199ead21194d57c2326398ea7",
+      "size": 1436
+    },
+    {
+      "mode": 420,
+      "path": "notices/native-third-party.md",
+      "sha256": "72557f237c2bf1f188b219a0d642932d976ca46c33978fb8dd529fb7f12dada0",
+      "size": 1031
+    },
+    {
+      "mode": 420,
+      "path": "notices/nlohmann-LICENSE.MIT",
+      "sha256": "46a65cffd1ea955132d95a8dd921640714a8d6b537d2e4e482d31145ae95b603",
+      "size": 1076
+    },
+    {
+      "mode": 420,
+      "path": "notices/project-rights.md",
+      "sha256": "4c0abf37400765b9420a40a0157f31042add758fb8d06cb7d9324e982c16fcf7",
+      "size": 2019
+    },
+    {
+      "mode": 420,
+      "path": "notices/sources.json",
+      "sha256": "f9bd6aa51bacd6fd6b6af167d5f0237ba088f8a1ceb74daaf9f35195ed88f06a",
+      "size": 743
+    },
+    {
+      "mode": 420,
+      "path": "runtime/camera/__init__.py",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "size": 1
+    },
+    {
+      "mode": 420,
+      "path": "runtime/camera/calibration/__init__.py",
+      "sha256": "4350c0cc0fa979ea459c6b1ed0abb7408265ecb6be58aa1b3d8c56e1b9d7f2ea",
+      "size": 427
+    },
+    {
+      "mode": 420,
+      "path": "runtime/camera/calibration/store.py",
+      "sha256": "4002dcf37324fd42d6641def6590038ad2fa7cc0a8611fe9a37716bf8f108970",
+      "size": 17486
+    },
+    {
+      "mode": 420,
+      "path": "runtime/camera/camerad/__init__.py",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "size": 1
+    },
+    {
+      "mode": 420,
+      "path": "runtime/camera/camerad/__main__.py",
+      "sha256": "1ef77cd652c56987928a32bf4dbde0fedf8143d07393a4c7d327a99fac1a4016",
+      "size": 4493
+    },
+    {
+      "mode": 420,
+      "path": "runtime/camera/camerad/http_client.py",
+      "sha256": "c90d3db5dac62a5a36c8dc924186accb30dd38d1790fc2b2dc67eeeeb1ed1b4a",
+      "size": 30379
+    },
+    {
+      "mode": 420,
+      "path": "runtime/camera/camerad/native_backend.py",
+      "sha256": "4320372629d5cd035947a9f74360c90d7c52ac91635202f80a0a9cb311430f5a",
+      "size": 8360
+    },
+    {
+      "mode": 420,
+      "path": "runtime/camera/camerad/native_client.py",
+      "sha256": "4e229f11a0130432fbe76ca313ec995ac01983df16059e05a06b6ab3f6d7b21b",
+      "size": 27980
+    },
+    {
+      "mode": 420,
+      "path": "runtime/camera/camerad/native_service.py",
+      "sha256": "125bd397d066c1aaf40f0813d3d8f9806598a40c9d1ab317c23cec7215d937aa",
+      "size": 3309
+    },
+    {
+      "mode": 420,
+      "path": "runtime/camera/camerad/retained.py",
+      "sha256": "a1518dc814d4634616917b305ca7a26ca08908263214c43183dcc75f11891d4b",
+      "size": 18973
+    },
+    {
+      "mode": 420,
+      "path": "runtime/camera/camerad/server.py",
+      "sha256": "ae5b2e9c92853f33890ce7919626884af1114f9bcdff93a7968dcd27e935569b",
+      "size": 22341
+    },
+    {
+      "mode": 420,
+      "path": "runtime/camera/camerad/service.py",
+      "sha256": "0d9466c5cc6ef3ae12bc5e4c0f0c7c9425e49432ac7a54e3547b9408f049a337",
+      "size": 26993
+    },
+    {
+      "mode": 420,
+      "path": "runtime/camera/dng/hf_dng.py",
+      "sha256": "8969aef7fa59c33791f55cf14271581c10b51a264b57b572873032f93e03d7b5",
+      "size": 7912
+    },
+    {
+      "mode": 420,
+      "path": "runtime/camera/dng/inspect.py",
+      "sha256": "e9abd880cc72a28f438a1494cfeea978b891d2831244bef46aae702e9c048ef7",
+      "size": 10736
+    },
+    {
+      "mode": 420,
+      "path": "runtime/camera/native/third_party/manifest.json",
+      "sha256": "178f5be5bdceb1930fe4f83c96474db359dd414199ead21194d57c2326398ea7",
+      "size": 1436
+    },
+    {
+      "mode": 420,
+      "path": "runtime/camera/pipeline/__init__.py",
+      "sha256": "e14baeff3beab5b6f1b8f144fdb98b95158db1178eb49e038dab03b44b56b12d",
+      "size": 78
+    },
+    {
+      "mode": 420,
+      "path": "runtime/camera/pipeline/preview.py",
+      "sha256": "2f6df30c727173450473386698166ce9dcc0d7cd856499068f9a6fe24e2afbc7",
+      "size": 5617
+    },
+    {
+      "mode": 420,
+      "path": "runtime/daos/camera-contracts/v1/capture-asset.schema.json",
+      "sha256": "f5663535ca6f780c2c95aeac6d422ebc76d8fea27ce1d14f505267984e9e3b8e",
+      "size": 721
+    },
+    {
+      "mode": 420,
+      "path": "runtime/daos/camera-contracts/v1/capture-list.schema.json",
+      "sha256": "6f2bd0f8abe68371191c5dcadd3daf777ea54cc63c4f228a8393e1a4eabb2ee9",
+      "size": 2614
+    },
+    {
+      "mode": 420,
+      "path": "runtime/daos/camera-contracts/v1/capture-record.schema.json",
+      "sha256": "7742a8becdec8c67eaab5ba2921370287ea2574ef0375a3f2059388ecf56e7b7",
+      "size": 1657
+    },
+    {
+      "mode": 420,
+      "path": "runtime/daos/camera-contracts/v1/capture-request.schema.json",
+      "sha256": "b8a2ad7ced1fc6eaf87d43463b4282f27cc1854ac7828388ff72f951468a13ce",
+      "size": 1220
+    },
+    {
+      "mode": 420,
+      "path": "runtime/daos/capability_runtime/__init__.py",
+      "sha256": "a347df9a4513dac86c119fcf581da6ef63a96b0c01117d35b68af46f07406faa",
+      "size": 74
+    },
+    {
+      "mode": 420,
+      "path": "runtime/daos/capability_runtime/__main__.py",
+      "sha256": "f7e2966613438e704d0b5b8c1e55e0447e7e4bd4db2ac73453caed7358d399a6",
+      "size": 6852
+    },
+    {
+      "mode": 420,
+      "path": "runtime/daos/capability_runtime/bracket.py",
+      "sha256": "92af3634fd230f9da3f445e808bc5488a3c2671b3f86a9cfd857f99e32740fc1",
+      "size": 20392
+    },
+    {
+      "mode": 420,
+      "path": "runtime/daos/capability_runtime/manager.py",
+      "sha256": "f7eca6ca3bed968f83bac4e74afd6d5a566afa79e76cbd7920a5480ba358e7f9",
+      "size": 4773
+    },
+    {
+      "mode": 420,
+      "path": "runtime/daos/capability_runtime/recipes.py",
+      "sha256": "4dd4195005b942bb45671309283b7bb0c056d19044f050fe734b3ecc8e60734e",
+      "size": 5236
+    },
+    {
+      "mode": 420,
+      "path": "runtime/daos/console/app.js",
+      "sha256": "a8a669b157ad476d7e29a7feb2658c7300b7b79d86c8542c366a38b1d4fbc5dc",
+      "size": 21123
+    },
+    {
+      "mode": 420,
+      "path": "runtime/daos/console/extras.css",
+      "sha256": "5dd7af80592c128791cc6410a10e7252bf086352df1a4d109f582b32582e18b8",
+      "size": 2100
+    },
+    {
+      "mode": 420,
+      "path": "runtime/daos/console/index.html",
+      "sha256": "f24e3cb823fa1a2beaf80e754be565c867b29fa97f9275bd2dcd7094e24c9e91",
+      "size": 10280
+    },
+    {
+      "mode": 420,
+      "path": "runtime/daos/console/recipes.js",
+      "sha256": "154e362fa238fa42ee27812ecffc37f0576a4c6e877c08d4acca465fdb7211e3",
+      "size": 5604
+    },
+    {
+      "mode": 420,
+      "path": "runtime/daos/console/retained.js",
+      "sha256": "49d52c6e8f7de328a9dabb2ea5243c60c60be9db56da38a5b2aba8d7b33c956d",
+      "size": 7211
+    },
+    {
+      "mode": 420,
+      "path": "runtime/daos/console/styles.css",
+      "sha256": "0487ad96bf7952bbf550dc113611ab63c62cccab731a543ae0e3346b8633d91a",
+      "size": 7675
+    },
+    {
+      "mode": 420,
+      "path": "runtime/simulation/bayer.py",
+      "sha256": "a1a02e82a13d07962fc05f168d2b89e5fb581981097a5611687a4760e101a810",
+      "size": 2084
+    },
+    {
+      "mode": 420,
+      "path": "runtime/system/arm64/runtime.py",
+      "sha256": "ecdd8b003a72e683420395fee8f6469512b06950fb30c18887bdd454129ba775",
+      "size": 10651
+    },
+    {
+      "mode": 420,
+      "path": "runtime/tools/__init__.py",
+      "sha256": "e41d06c260c1de1179908cda3e460ba7ab5db7ed2a05cb5d56cb73e765eb467a",
+      "size": 53
+    },
+    {
+      "mode": 420,
+      "path": "runtime/tools/arm64_elf.py",
+      "sha256": "45d53a6da3b97209d562550bb29fb697a0aeeae9ba87bc99e3f837ca78c5f30d",
+      "size": 2316
+    },
+    {
+      "mode": 420,
+      "path": "runtime/tools/diagnostics.py",
+      "sha256": "cd0fa26458bd8214e686fe43f5c059fbdd1a287ba5e4f95d615238ca2a7f9daa",
+      "size": 21918
+    },
+    {
+      "mode": 420,
+      "path": "runtime/daos/__init__.py",
+      "sha256": "6a51ec51c0437fc1570da095b59c3b9440eef7d74cead87e903e6035c90b86ea",
+      "size": 51
+    },
+    {
+      "mode": 420,
+      "path": "runtime/simulation/__init__.py",
+      "sha256": "6a51ec51c0437fc1570da095b59c3b9440eef7d74cead87e903e6035c90b86ea",
+      "size": 51
+    },
+    {
+      "mode": 420,
+      "path": "runtime/system/__init__.py",
+      "sha256": "6a51ec51c0437fc1570da095b59c3b9440eef7d74cead87e903e6035c90b86ea",
+      "size": 51
+    }
+  ],
+  "format": "hf-static-arm64-sim-package-v1",
+  "native_evidence_sha256": "d7949cd9dcaab52f054895b9b54755dec0d754d8eddf37e7248e411c5a2324ff",
+  "package_id": "arm64-static-r6",
+  "project_rights": "pending",
+  "python_min": "3.10",
+  "simulated": true,
+  "target": "aarch64-linux-static-simulator"
+}

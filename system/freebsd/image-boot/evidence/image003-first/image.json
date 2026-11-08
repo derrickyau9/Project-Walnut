@@ -1,0 +1,94 @@
+{
+  "NoCloud": false,
+  "SSH": false,
+  "UI_readiness_claimed": false,
+  "ancestor_work_directories": [],
+  "backing_inputs": [
+    {
+      "format": "raw",
+      "identity": [
+        65,
+        7,
+        3187712000,
+        1793915685519116724,
+        1793915685519116724
+      ],
+      "path": "/dev/shm/DaOS-FF1-r10-003/DaOS-arm64.img",
+      "sha256": "69c824a3aa1f992fcb38e285145e4549c76107cab95a2a26e2e391e401b4942a"
+    }
+  ],
+  "brand": "DaOS",
+  "build_receipt_validated": true,
+  "firmware_sha256": {
+    "uefi-code.fd": "5d3147294c56ce8cb636c57c181776a89bc7ba254274c35698dc5795758052d3",
+    "uefi-vars.fd": "b3b855c5a80310168051164986855692d1bdb06e67619856177965cd87c6774f"
+  },
+  "format": "DaOS-freebsd-image-boot-inputs-v1",
+  "guest_writes": "private qcow2 and UEFI variables only",
+  "host_mounts": false,
+  "host_shares": false,
+  "network": false,
+  "prepared": true,
+  "provenance_sha256": "28d117a3d73ff30cf71143a84284106387fe385ef24ca2346931e3ddde4281a2",
+  "qemu": "/usr/bin/qemu-system-aarch64",
+  "raw_gpt": {
+    "appliance_layout_verified": true,
+    "disk_guid": "2ed4084c-d963-11f1-2887-fbd68f5c160e",
+    "filesystem_payloads_parsed": false,
+    "format": "hf-raw-gpt-image-v1",
+    "gpt_backup_crc_verified": true,
+    "gpt_primary_crc_verified": true,
+    "partitions": [
+      {
+        "first_lba": 40,
+        "label": "DaOS-efi",
+        "last_lba": 131111,
+        "partition_guid": "2ed40248-d963-11f1-067b-ff9d86f8dced",
+        "size_bytes": 67108864,
+        "type_guid": "c12a7328-f81f-11d2-ba4b-00a0c93ec93b"
+      },
+      {
+        "first_lba": 131112,
+        "label": "DaOS-root",
+        "last_lba": 5373991,
+        "partition_guid": "2ed40252-d963-11f1-1d08-61407e6af4da",
+        "size_bytes": 2684354560,
+        "type_guid": "516e7cb6-6ecf-11d6-8ff8-00022d09712b"
+      },
+      {
+        "first_lba": 5373992,
+        "label": "DaOS-state",
+        "last_lba": 5636135,
+        "partition_guid": "2ed40252-d963-11f1-17a5-d14fff7c5968",
+        "size_bytes": 134217728,
+        "type_guid": "516e7cb6-6ecf-11d6-8ff8-00022d09712b"
+      },
+      {
+        "first_lba": 5636136,
+        "label": "DaOS-calibration",
+        "last_lba": 5701671,
+        "partition_guid": "2ed40252-d963-11f1-0432-f1d3b03b0818",
+        "size_bytes": 33554432,
+        "type_guid": "516e7cb6-6ecf-11d6-8ff8-00022d09712b"
+      },
+      {
+        "first_lba": 5701672,
+        "label": "DaOS-photos",
+        "last_lba": 6225959,
+        "partition_guid": "2ed40252-d963-11f1-3fe7-9181628e1ee9",
+        "size_bytes": 268435456,
+        "type_guid": "516e7cb6-6ecf-11d6-8ff8-00022d09712b"
+      }
+    ],
+    "sector_bytes": 512,
+    "size_bytes": 3187712000
+  },
+  "source_image": "/dev/shm/DaOS-FF1-r10-003/DaOS-arm64.img",
+  "source_image_bytes": 3187712000,
+  "source_image_sha256": "69c824a3aa1f992fcb38e285145e4549c76107cab95a2a26e2e391e401b4942a",
+  "source_sha256": {
+    "tools/freebsd_image_boot.py": "c6949270902c7e8640905b37971abdd191704dafed0d842d31a15a65a5c41279",
+    "tools/freebsd_vm.py": "ee8a5e5216f0ad515ef5ee07b9e2dbca4470801099748f0cf63638775a4875f1"
+  },
+  "temporary_guest_key_injected": false
+}

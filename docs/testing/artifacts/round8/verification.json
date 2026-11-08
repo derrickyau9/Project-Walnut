@@ -1,0 +1,104 @@
+{
+  "format": "hf-round8-verification-v1",
+  "scope": "software camera only; no physical hardware validation",
+  "windows_full_suite": {
+    "ran": 428,
+    "passed": 405,
+    "skipped": 23,
+    "seconds": 102.048
+  },
+  "windows_final_delivery_checks": {
+    "ran": 16,
+    "passed": 16,
+    "skipped": 0,
+    "note": "one new delivery-only case was added after full-suite discovery; this separate current run covers it"
+  },
+  "linux_critical_and_delivery": {
+    "ran": 120,
+    "passed": 120,
+    "skipped": 0,
+    "seconds": 23.805
+  },
+  "arm64_target": {
+    "passed": true,
+    "root_image_sha256": "675c2212ef7a893ef7525c3137848c752bf23837ccabe5e1823b438159ab5882",
+    "root_unchanged": true,
+    "qt_request_id": "b86572e6-c679-4079-8f3d-2d2c5c1239bb",
+    "basic_request_id": "abd646a3-77e6-4063-97cf-a6e557eee799",
+    "workflow_job_id": "offline-5f2535c7efde4ef49b51eb0312f17236",
+    "same_ids_and_dngs_after_reboot": true,
+    "basic_automation_import_blocked": true
+  },
+  "preserved_snapshots": {
+    "HassleFree_FF1_R7_Source_Engineering_Handoff_2026-11-05.zip": "826e7d432d145b6858a87c74ebb64122b83409cff9f9a99b901c77d46b4bd250",
+    "HassleFree_FF1_R6_Source_Engineering_Handoff_2026-11-05.zip": "49ae3ed5eb6426505f0ef978522dee8f3615b2eab7458b0a95c84e353a76c010"
+  },
+  "evidence_copies": [
+    {
+      "path": "docs/testing/artifacts/round8/arm64/run-state.json",
+      "bytes": 12859,
+      "source_sha256": "c78c44505f812b9f7f7d75dd602c354fb92c0a4211d2706b2078358690c23d89"
+    },
+    {
+      "path": "docs/testing/artifacts/round8/arm64/native-build.json",
+      "bytes": 26926,
+      "source_sha256": "5b5cf1c343d189b7cb61c54bacf0744553d7cf113e3bfb49bbc2f78aaacdc9fa"
+    },
+    {
+      "path": "docs/testing/artifacts/round8/arm64/image-build.json",
+      "bytes": 15741,
+      "source_sha256": "4011e07f30e811713d3e0918cda68dd0b137cddf74cdb7d8fc906dd7b922f615"
+    },
+    {
+      "path": "docs/testing/artifacts/round8/arm64/first-boot.json",
+      "bytes": 12080,
+      "source_sha256": "3e51b042907254ac3f33f6f748a5f31ef3fb054304a0af20a18ca297ac684da9"
+    },
+    {
+      "path": "docs/testing/artifacts/round8/arm64/resume-boot.json",
+      "bytes": 12111,
+      "source_sha256": "854c8e0c747dc7d3c51728ad38684ec78a82ba478baa5e16ae19e2d3ba6fade0"
+    },
+    {
+      "path": "docs/testing/artifacts/round8/windows-suite.txt",
+      "bytes": 75376,
+      "source_sha256": "30506574eda652872fc4aa62dd94e21bbe79a4f3a132f46b501001d24fa264aa"
+    },
+    {
+      "path": "docs/testing/artifacts/round8/historical/windows-fixture-failure.txt",
+      "bytes": 75933,
+      "source_sha256": "ecca45e3c23ac34a131812b495191fb124f84971e5f2ec13e9b661be184e9f0a"
+    },
+    {
+      "path": "docs/testing/artifacts/round8/linux-critical-tests.txt",
+      "bytes": 20939,
+      "source_sha256": "16929bb64abd12fc6fbd547d2ce491262186073c7ad88d6599d92a193587ab56"
+    },
+    {
+      "path": "docs/testing/artifacts/round8/source-bundle-windows-tests.txt",
+      "bytes": 2796,
+      "source_sha256": "5e9baebdfd89971797e0e4c122fb4a18cca38780dcf8e85a833b6a187b69fa49"
+    },
+    {
+      "path": "docs/testing/artifacts/round8/arm64/independent-dng.json",
+      "bytes": 413,
+      "source_sha256": "16fac735567f19e15fbfdd3d4a08a55fc737670cdde8d224c8e154ea644a5a8f"
+    },
+    {
+      "path": "docs/testing/artifacts/round8/historical/reference-fixture-failure.txt",
+      "bytes": 3249,
+      "source_sha256": "8fb5c723f70740bef75956ff8bb82232cf44017f3dc862cf542008a9d1c8ccac"
+    },
+    {
+      "path": "docs/testing/artifacts/round8/historical/reference-admission-failure.txt",
+      "bytes": 4696,
+      "source_sha256": "2699ce9b77f78cab0be0a1f8676e6b0cb8e1dd726b7e7ad19e24a9f9b942eee3"
+    },
+    {
+      "path": "docs/testing/artifacts/round8/historical/clock-fixture-failure.txt",
+      "bytes": 5700,
+      "source_sha256": "0dcc3168c3d8bdb212f16642f25584313e398d8f2430895c33f1130532dcbdf1"
+    }
+  ],
+  "privacy_note": "Original local bytes are preserved here. Source ZIP evidence copies may redact private task paths and retain original source_sha256 in its own manifest."
+}

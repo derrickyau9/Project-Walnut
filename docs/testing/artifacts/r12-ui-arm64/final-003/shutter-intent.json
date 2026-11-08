@@ -1,0 +1,13 @@
+{
+  "format": "DaOS-camera-first-one-shutter-intent-v1",
+  "instruction": "Retain the original UUID after uncertainty; never retry this shutter or rerun this directory.",
+  "maximum_shutter_actions": 1,
+  "native_sha256": "be752fd42c631e763682fa96a34b929a2bd80b5ae9ab3eb1b6f17653bc31bc28",
+  "requested_settings": {
+    "output_format": "dng",
+    "requested_analogue_gain": 1.25,
+    "requested_exposure_us": 8000,
+    "sensor_mode": "sim-small",
+    "simulation_scene": "scene"
+  }
+}

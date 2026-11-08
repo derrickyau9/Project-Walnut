@@ -1,0 +1,134 @@
+{
+  "format": "hf-bound-update-evidence-copy-v1",
+  "files": [
+    {
+      "source": "build/update-model-bound-r9-001/bound-demo-evidence.json",
+      "copy": "bound-demo-evidence.json",
+      "bytes": 3033,
+      "sha256": "f5929cff6a92edc24d5f133dec9f3d5c04cb1e605e5e2c892f5f7864b1e66db2"
+    },
+    {
+      "source": "build/update-model-bound-r9-001/policy.json",
+      "copy": "policy.json",
+      "bytes": 2994,
+      "sha256": "ca6e0ea48baca475d56cc7e93d81ce9c2b83443ddbb99f0623926f880f2f5c83"
+    },
+    {
+      "source": "build/update-model-bound-r9-001/runtime/runtime-evidence.json",
+      "copy": "runtime/runtime-evidence.json",
+      "bytes": 4413,
+      "sha256": "74016d1688710f0ed3e9de20e2a9e8db370f85e7e865f05f52fc98c118ab7949"
+    },
+    {
+      "source": "build/update-model-r9-profiles-final2-tests.txt",
+      "copy": "tests/update-model-r9-profiles-final2-tests.txt",
+      "bytes": 5353,
+      "sha256": "eafd5e55e268e39b407dda5429751641fa110feb3d6df364ce25186755cb8229"
+    },
+    {
+      "source": "build/update-model-bound-r9-001/attempts/4363fb20-79ba-48c2-9cae-746118ee7847/4363fb20-79ba-48c2-9cae-746118ee7847.json",
+      "copy": "attempts/4363fb20-79ba-48c2-9cae-746118ee7847/4363fb20-79ba-48c2-9cae-746118ee7847.json",
+      "bytes": 3678,
+      "sha256": "3e59ec24421e149749e9cbc3723840da4e738fd42a8fa312b66459ba3c00e7d7"
+    },
+    {
+      "source": "build/update-model-bound-r9-001/attempts/4363fb20-79ba-48c2-9cae-746118ee7847/boot-evidence.json",
+      "copy": "attempts/4363fb20-79ba-48c2-9cae-746118ee7847/boot-evidence.json",
+      "bytes": 7904,
+      "sha256": "256fc8c787947d90b72325b02144426738583b44c0be005be2b0e8c092eb2ce1"
+    },
+    {
+      "source": "build/update-model-bound-r9-001/attempts/4363fb20-79ba-48c2-9cae-746118ee7847/serial.log",
+      "copy": "attempts/4363fb20-79ba-48c2-9cae-746118ee7847/serial.log",
+      "bytes": 19479,
+      "sha256": "48e284ad170345188bc5d8b12b40c45d9d09aecd367d17a98fbaaeec1a750f27"
+    },
+    {
+      "source": "build/update-model-bound-r9-001/attempts/f17e503a-c7d6-4522-9e6a-4be2801e8e3b/boot-evidence.json",
+      "copy": "attempts/f17e503a-c7d6-4522-9e6a-4be2801e8e3b/boot-evidence.json",
+      "bytes": 7896,
+      "sha256": "86bf156645ec7895d705dc0f9e19beca57654dba71c086b2d2dfa734938a2405"
+    },
+    {
+      "source": "build/update-model-bound-r9-001/attempts/f17e503a-c7d6-4522-9e6a-4be2801e8e3b/f17e503a-c7d6-4522-9e6a-4be2801e8e3b.json",
+      "copy": "attempts/f17e503a-c7d6-4522-9e6a-4be2801e8e3b/f17e503a-c7d6-4522-9e6a-4be2801e8e3b.json",
+      "bytes": 3675,
+      "sha256": "1e91393e848f28e3943524abfefd58b42004d09e43904d7c62e5f7ddf8136153"
+    },
+    {
+      "source": "build/update-model-bound-r9-001/attempts/f17e503a-c7d6-4522-9e6a-4be2801e8e3b/serial.log",
+      "copy": "attempts/f17e503a-c7d6-4522-9e6a-4be2801e8e3b/serial.log",
+      "bytes": 19470,
+      "sha256": "87498777a7a8dc04f5af2438ead9e3ac2311ac1da72ee2e842c27cb0414aae7f"
+    },
+    {
+      "source": "build/update-model-bound-r9-001/attempts/fa5ed16d-2898-46a2-b50d-16280edf47a3/boot-evidence.json",
+      "copy": "attempts/fa5ed16d-2898-46a2-b50d-16280edf47a3/boot-evidence.json",
+      "bytes": 7897,
+      "sha256": "c05e9a753a407878f6a7a4df8ffc56bcc905098bb8fb14d8e484b771ead20130"
+    },
+    {
+      "source": "build/update-model-bound-r9-001/attempts/fa5ed16d-2898-46a2-b50d-16280edf47a3/fa5ed16d-2898-46a2-b50d-16280edf47a3.json",
+      "copy": "attempts/fa5ed16d-2898-46a2-b50d-16280edf47a3/fa5ed16d-2898-46a2-b50d-16280edf47a3.json",
+      "bytes": 3677,
+      "sha256": "252f96913919cc75da567edc6a2f1e0c542387b3c62e7685f214bf5e82710533"
+    },
+    {
+      "source": "build/update-model-bound-r9-001/attempts/fa5ed16d-2898-46a2-b50d-16280edf47a3/serial.log",
+      "copy": "attempts/fa5ed16d-2898-46a2-b50d-16280edf47a3/serial.log",
+      "bytes": 19478,
+      "sha256": "edeeaf69d2a44c247d8a8d8df9382a1cb8730d90555a45f44e7d920433dec285"
+    },
+    {
+      "source": "build/update-model-bound-r9-001/bundles/86d8f7f1-3441-4bf8-a952-edc3de01bb9f/manifest.json",
+      "copy": "bundles/86d8f7f1-3441-4bf8-a952-edc3de01bb9f/manifest.json",
+      "bytes": 666,
+      "sha256": "bfa4e9e2131868455ffff8784062d93384af3d9cb215fdf944297d46d80de074"
+    },
+    {
+      "source": "build/update-model-bound-r9-001/bundles/90cbbbc3-78a3-4141-9727-4d3521f974c9/manifest.json",
+      "copy": "bundles/90cbbbc3-78a3-4141-9727-4d3521f974c9/manifest.json",
+      "bytes": 663,
+      "sha256": "2c637e88fa8233d0eaf53a4333179d40edd05aa45993811b65cff5531ecc1f20"
+    },
+    {
+      "source": "tools/update_model.py",
+      "copy": "source/tools/update_model.py",
+      "bytes": 43818,
+      "sha256": "c54a34751a085072984b2d33ade5c5e24472ac112cf5dd46b36560275f7d6871"
+    },
+    {
+      "source": "tools/update_guest_boot.py",
+      "copy": "source/tools/update_guest_boot.py",
+      "bytes": 27632,
+      "sha256": "c4cefe2f433aa0d5f86467e9be2ffeb6870735674bd88f1ae75da2ae8d719662"
+    },
+    {
+      "source": "system/update-model/init.c",
+      "copy": "source/system/update-model/init.c",
+      "bytes": 8546,
+      "sha256": "6546e3ba051e8174f5cc5870867f7912a87db3b4744fdd4967fc8b8146aeb174"
+    },
+    {
+      "source": "system/update-model/health.py",
+      "copy": "source/system/update-model/health.py",
+      "bytes": 23001,
+      "sha256": "ac42c7aac67f6ad7f7268dc9ff2ad42c43572771c3f75b97b3d70c75a7c588af"
+    },
+    {
+      "source": "tests/test_update_model.py",
+      "copy": "source/tests/test_update_model.py",
+      "bytes": 22006,
+      "sha256": "3b1066e37b41b2c47b01f46666792d817cf01859604d945b7d554699a7bf92c9"
+    },
+    {
+      "source": "tests/test_update_guest.py",
+      "copy": "source/tests/test_update_guest.py",
+      "bytes": 13578,
+      "sha256": "57805ef7f3ebd92039761c498febfe36bb54a422d516a1fc8217718936df5d2b"
+    }
+  ],
+  "revision_scope": "Actual immutable R9 target-9fe924461465880cc2e67da2 from main target001 before later Python SDK/reference hardening; native C++/ABI2 already frozen.",
+  "baseline_label_correction": "The original report initialized.baseline inherited the words verified R8 image. Its policy source_build, image hashes, native/API1.1/fullbinding evidence and bound-v2 profile establish that this run used the R9 target above. Original report bytes are preserved; future code uses a generic base-image label.",
+  "physical_update_verified": false
+}

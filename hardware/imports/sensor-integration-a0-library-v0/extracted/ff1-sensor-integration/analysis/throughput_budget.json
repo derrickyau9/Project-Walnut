@@ -1,0 +1,56 @@
+{
+  "assumptions": {
+    "MB": 1000000,
+    "GB": 1000000000,
+    "buffer_frames": 4,
+    "storage_compression": "none assumed",
+    "source": "https://www.sony-semicon.com/files/62/pdf/p-13_IMX410CQK_Flyer.pdf"
+  },
+  "modes": [
+    {
+      "mode": "mode0_full14",
+      "active_width": 6064,
+      "active_height": 4040,
+      "bits": 14,
+      "fps": 19.2,
+      "packed_frame_bytes": 42872480,
+      "container16_frame_bytes": 48997120,
+      "active_payload_bits_per_second": 6585212928.0,
+      "packed_active_MB_per_second": 823.151616,
+      "container16_MB_per_second": 940.744704,
+      "four_frame_buffer16_bytes": 195988480,
+      "one_write_one_read_container16_GB_per_second": 1.881489408,
+      "caveat": "Active pixels only; excludes blanking, embedded data, protocol/encoding overhead, memory inefficiency and additional ISP passes."
+    },
+    {
+      "mode": "mode2_full12",
+      "active_width": 6064,
+      "active_height": 4040,
+      "bits": 12,
+      "fps": 40.58,
+      "packed_frame_bytes": 36747840,
+      "container16_frame_bytes": 48997120,
+      "active_payload_bits_per_second": 11929818777.6,
+      "packed_active_MB_per_second": 1491.2273472,
+      "container16_MB_per_second": 1988.3031296,
+      "four_frame_buffer16_bytes": 195988480,
+      "one_write_one_read_container16_GB_per_second": 3.9766062592,
+      "caveat": "Active pixels only; excludes blanking, embedded data, protocol/encoding overhead, memory inefficiency and additional ISP passes."
+    },
+    {
+      "mode": "mode5_crop12",
+      "active_width": 4160,
+      "active_height": 2160,
+      "bits": 12,
+      "fps": 97.57,
+      "packed_frame_bytes": 13478400,
+      "container16_frame_bytes": 17971200,
+      "active_payload_bits_per_second": 10520699904.0,
+      "packed_active_MB_per_second": 1315.087488,
+      "container16_MB_per_second": 1753.4499839999999,
+      "four_frame_buffer16_bytes": 71884800,
+      "one_write_one_read_container16_GB_per_second": 3.5068999679999995,
+      "caveat": "Active pixels only; excludes blanking, embedded data, protocol/encoding overhead, memory inefficiency and additional ISP passes."
+    }
+  ]
+}

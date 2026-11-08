@@ -1,0 +1,14 @@
+{
+  "UI_readiness_claimed": false,
+  "conversion": "RGB pixels unchanged; P6 to PNG format only",
+  "format": "DaOS-virtual-framebuffer-v1",
+  "height": 600,
+  "name": "live-held-click",
+  "nonblack_pixels": 479946,
+  "png": "/home/dy09/hf-task-freebsd-r10/image-boot-003/screens/live-held-click.png",
+  "png_sha256": "6f64fa5b8c302025bb146dee01740f670f794c5e7c4c4e3c812306b8ede82274",
+  "ppm": "/home/dy09/hf-task-freebsd-r10/image-boot-003/screens/live-held-click.ppm",
+  "ppm_sha256": "400cbb2d33ad9c200d2f057f12bba1002d8e85e63e8f1cf33f2f487daa8e3f2a",
+  "rgb_sha256": "62a532141997045606003162a1ee016a509222359f102593ff965d9903db716a",
+  "width": 800
+}

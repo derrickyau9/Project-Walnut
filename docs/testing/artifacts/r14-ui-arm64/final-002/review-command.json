@@ -1,0 +1,6 @@
+{
+  "command": "env QT_QPA_PLATFORM=offscreen QT_QUICK_BACKEND=software QSG_RENDER_LOOP=basic QML_DISABLE_DISK_CACHE=1 PYTHONDONTWRITEBYTECODE=1 XDG_RUNTIME_DIR=/home/camera/DaOS-UI-R14-project-002/runtime /usr/local/bin/python3.12 -B /home/camera/DaOS-UI-R14-project-002/ui/on-device/review_camera_first.py --output /home/camera/DaOS-UI-R14-review-002 --native-command /opt/hasslefree/build/freebsd-arm64-native-001/hf-camerad --timeout-seconds 240 --stage-timeout-seconds 20",
+  "maximum_review_shutter_actions": 1,
+  "no_automatic_retry": true,
+  "parent_go_received": true
+}

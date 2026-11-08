@@ -1,0 +1,129 @@
+{
+  "revision": "0.3",
+  "classification": "NONCONTACT ROUTING / ADJUSTMENT CONCEPT ONLY",
+  "positions": [
+    {
+      "landing_front_z_mm": -5,
+      "axial_span_mm": 16.0,
+      "interferences": [],
+      "guard_intersection_mm3": 0.0,
+      "clearances_to_existing_optical_parts_mm": {
+        "10_independent_sensor_carrier": 7.700000000000003,
+        "11_sensor_package_placeholder": 16.819334112859526,
+        "12_sensor_active_36x24": 19.092210453480764,
+        "13_three_point_sensor_spacers": 14.0,
+        "27_removable_sensor_bridge": 6.700000000000003
+      },
+      "side_route_to_guard_clearance_mm": 14.164500000000004,
+      "nominal_joint_surface_gaps_mm": {
+        "one-piece fixed bus -> slider": 0.0
+      },
+      "pass": true
+    },
+    {
+      "landing_front_z_mm": -4,
+      "axial_span_mm": 17.0,
+      "interferences": [],
+      "guard_intersection_mm3": 0.0,
+      "clearances_to_existing_optical_parts_mm": {
+        "10_independent_sensor_carrier": 7.700000000000003,
+        "11_sensor_package_placeholder": 16.819334112859526,
+        "12_sensor_active_36x24": 19.092210453480764,
+        "13_three_point_sensor_spacers": 14.0,
+        "27_removable_sensor_bridge": 6.700000000000003
+      },
+      "side_route_to_guard_clearance_mm": 14.164500000000004,
+      "nominal_joint_surface_gaps_mm": {
+        "one-piece fixed bus -> slider": 0.0
+      },
+      "pass": true
+    },
+    {
+      "landing_front_z_mm": -3,
+      "axial_span_mm": 18.0,
+      "interferences": [],
+      "guard_intersection_mm3": 0.0,
+      "clearances_to_existing_optical_parts_mm": {
+        "10_independent_sensor_carrier": 7.700000000000003,
+        "11_sensor_package_placeholder": 16.819334112859526,
+        "12_sensor_active_36x24": 19.092210453480764,
+        "13_three_point_sensor_spacers": 14.0,
+        "27_removable_sensor_bridge": 6.700000000000003
+      },
+      "side_route_to_guard_clearance_mm": 14.164500000000004,
+      "nominal_joint_surface_gaps_mm": {
+        "one-piece fixed bus -> slider": 0.0
+      },
+      "pass": true
+    },
+    {
+      "landing_front_z_mm": -2,
+      "axial_span_mm": 19.0,
+      "interferences": [],
+      "guard_intersection_mm3": 0.0,
+      "clearances_to_existing_optical_parts_mm": {
+        "10_independent_sensor_carrier": 7.700000000000003,
+        "11_sensor_package_placeholder": 16.819334112859526,
+        "12_sensor_active_36x24": 19.092210453480764,
+        "13_three_point_sensor_spacers": 14.0,
+        "27_removable_sensor_bridge": 6.700000000000003
+      },
+      "side_route_to_guard_clearance_mm": 14.164500000000004,
+      "nominal_joint_surface_gaps_mm": {
+        "one-piece fixed bus -> slider": 0.0
+      },
+      "pass": true
+    },
+    {
+      "landing_front_z_mm": -1,
+      "axial_span_mm": 20.0,
+      "interferences": [],
+      "guard_intersection_mm3": 0.0,
+      "clearances_to_existing_optical_parts_mm": {
+        "10_independent_sensor_carrier": 7.700000000000003,
+        "11_sensor_package_placeholder": 16.819334112859526,
+        "12_sensor_active_36x24": 19.092210453480764,
+        "13_three_point_sensor_spacers": 14.0,
+        "27_removable_sensor_bridge": 6.700000000000003
+      },
+      "side_route_to_guard_clearance_mm": 14.164500000000004,
+      "nominal_joint_surface_gaps_mm": {
+        "one-piece fixed bus -> slider": 0.0
+      },
+      "pass": true
+    }
+  ],
+  "nominal_slot_stop_tests": [
+    {
+      "nominal_endpoint_z": -5,
+      "attempted_extra_travel_mm": -0.2,
+      "shaft_interference_mm3": 0.620832003093762,
+      "pass_if_shaft_is_retained": true
+    },
+    {
+      "nominal_endpoint_z": -1,
+      "attempted_extra_travel_mm": 0.2,
+      "shaft_interference_mm3": 0.6208320030937063,
+      "pass_if_shaft_is_retained": true
+    }
+  ],
+  "chip_xy_source": "https://www.sony-semicon.com/files/62/pdf/p-13_IMX410CQK_Flyer.pdf",
+  "verified_chip_xy_lower_bound_mm": [
+    41.071,
+    30.815
+  ],
+  "package_dimensions_and_height_known": false,
+  "guard_axial_extent_basis": "Z=-21..0 is the chosen existing routing bay, not a chip/package thickness.",
+  "no_sensor_heat_connection": true,
+  "no_thermal_performance_claim": true,
+  "no_direct_optical_part_contact": true,
+  "engineering_release_ready": false,
+  "geometric_checks_passed": true,
+  "conditions": [
+    "Only a supplier-approved package/module heat interface can close the sensor heat path.",
+    "Current 40x28 sensor placeholder is smaller than the verified chip XY lower bound; no sensor mounting is released.",
+    "Clamp screw/nut are fit envelopes, not manufactured threads or validated fastening hardware.",
+    "Shared-chassis thermoelastic deformation, joint preload, thermal contact resistance, temperatures, reliability and manufacturability remain unverified.",
+    "No contact with or pressure on bare die, optical cover or unapproved package surfaces is authorized by this model."
+  ]
+}

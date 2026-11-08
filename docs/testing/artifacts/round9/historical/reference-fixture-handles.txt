@@ -1,0 +1,292 @@
+test_failed_or_ambiguous_commit_fences_capture_without_claiming_new_memory (tests.test_persistent_settings.PersistentReferenceSettingsTests.test_failed_or_ambiguous_commit_fences_capture_without_claiming_new_memory) ... ok
+test_invalid_or_partially_missing_persisted_settings_are_preserved_and_release_lock (tests.test_persistent_settings.PersistentReferenceSettingsTests.test_invalid_or_partially_missing_persisted_settings_are_preserved_and_release_lock) ... 
+  test_invalid_or_partially_missing_persisted_settings_are_preserved_and_release_lock (tests.test_persistent_settings.PersistentReferenceSettingsTests.test_invalid_or_partially_missing_persisted_settings_are_preserved_and_release_lock) (raw=None) ... ERROR
+  test_invalid_or_partially_missing_persisted_settings_are_preserved_and_release_lock (tests.test_persistent_settings.PersistentReferenceSettingsTests.test_invalid_or_partially_missing_persisted_settings_are_preserved_and_release_lock) (raw='{bad') ... ERROR
+  test_invalid_or_partially_missing_persisted_settings_are_preserved_and_release_lock (tests.test_persistent_settings.PersistentReferenceSettingsTests.test_invalid_or_partially_missing_persisted_settings_are_preserved_and_release_lock) (raw='{"format":"hf-device-settings-v1","format":"other","settings":{}}') ... ERROR
+  test_invalid_or_partially_missing_persisted_settings_are_preserved_and_release_lock (tests.test_persistent_settings.PersistentReferenceSettingsTests.test_invalid_or_partially_missing_persisted_settings_are_preserved_and_release_lock) (raw='{"format": "future", "settings": {"sensor_mode": "sim-small", "requested_exposure_us": 10000, "requested_analogue_gain": 1.0, "output_format": "dng", "simulation_scene": "scene"}}') ... ERROR
+  test_invalid_or_partially_missing_persisted_settings_are_preserved_and_release_lock (tests.test_persistent_settings.PersistentReferenceSettingsTests.test_invalid_or_partially_missing_persisted_settings_are_preserved_and_release_lock) (raw='{"format": "hf-device-settings-v1", "settings": {"sensor_mode": [], "requested_exposure_us": 10000, "requested_analogue_gain": 1.0, "output_format": "dng", "simulation_scene": "scene"}}') ... ERROR
+  test_invalid_or_partially_missing_persisted_settings_are_preserved_and_release_lock (tests.test_persistent_settings.PersistentReferenceSettingsTests.test_invalid_or_partially_missing_persisted_settings_are_preserved_and_release_lock) (raw='{"format": "hf-device-settings-v1", "settings": {"sensor_mode": "sim-small", "requested_exposure_us": true, "requested_analogue_gain": 1.0, "output_format": "dng", "simulation_scene": "scene"}}') ... ERROR
+  test_invalid_or_partially_missing_persisted_settings_are_preserved_and_release_lock (tests.test_persistent_settings.PersistentReferenceSettingsTests.test_invalid_or_partially_missing_persisted_settings_are_preserved_and_release_lock) (raw='{"format": "hf-device-settings-v1", "settings": {"sensor_mode": "sim-small", "requested_exposure_us": 10000, "requested_analogue_gain": 1e999, "output_format": "dng", "simulation_scene": "scene"}}') ... ERROR
+  test_invalid_or_partially_missing_persisted_settings_are_preserved_and_release_lock (tests.test_persistent_settings.PersistentReferenceSettingsTests.test_invalid_or_partially_missing_persisted_settings_are_preserved_and_release_lock) (raw='                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ') ... ERROR
+test_old_journal_without_either_setting_key_migrates_once (tests.test_persistent_settings.PersistentReferenceSettingsTests.test_old_journal_without_either_setting_key_migrates_once) ... ERROR
+test_settings_survive_abrupt_process_exit_and_explicit_capture_does_not_replace_them (tests.test_persistent_settings.PersistentReferenceSettingsTests.test_settings_survive_abrupt_process_exit_and_explicit_capture_does_not_replace_them) ... ok
+test_actual_process_lock_and_abrupt_exit_recovery (tests.test_camera_service.CameraServiceTests.test_actual_process_lock_and_abrupt_exit_recovery) ... ok
+test_capture_identity_and_payload_conflict (tests.test_camera_service.CameraServiceTests.test_capture_identity_and_payload_conflict) ... ok
+test_disconnect_persists_until_authorized_reconnect (tests.test_camera_service.CameraServiceTests.test_disconnect_persists_until_authorized_reconnect) ... ok
+test_expiration_does_not_interrupt_capture_or_allow_overlap (tests.test_camera_service.CameraServiceTests.test_expiration_does_not_interrupt_capture_or_allow_overlap) ... ok
+test_failed_admission_commit_rolls_back_and_stops_service (tests.test_camera_service.CameraServiceTests.test_failed_admission_commit_rolls_back_and_stops_service) ... ok
+test_fault_and_cancellation (tests.test_camera_service.CameraServiceTests.test_fault_and_cancellation) ... ok
+test_files_created_after_admission_are_never_overwritten_or_deleted (tests.test_camera_service.CameraServiceTests.test_files_created_after_admission_are_never_overwritten_or_deleted) ... ok
+test_interrupted_record_becomes_unknown_without_reexecution (tests.test_camera_service.CameraServiceTests.test_interrupted_record_becomes_unknown_without_reexecution) ... ok
+test_lease_heartbeat_and_expiry_fence (tests.test_camera_service.CameraServiceTests.test_lease_heartbeat_and_expiry_fence) ... ok
+test_no_completion_before_file_commit (tests.test_camera_service.CameraServiceTests.test_no_completion_before_file_commit) ... ok
+test_one_instance_per_data_dir (tests.test_camera_service.CameraServiceTests.test_one_instance_per_data_dir) ... ok
+test_process_crash_after_rename_is_unknown_and_not_reexecuted (tests.test_camera_service.CameraServiceTests.test_process_crash_after_rename_is_unknown_and_not_reexecuted) ... ok
+test_stale_epoch_and_restart (tests.test_camera_service.CameraServiceTests.test_stale_epoch_and_restart) ... ok
+test_thread_start_failure_releases_slot_and_journals_failure (tests.test_camera_service.CameraServiceTests.test_thread_start_failure_releases_slot_and_journals_failure) ... ok
+
+======================================================================
+ERROR: test_invalid_or_partially_missing_persisted_settings_are_preserved_and_release_lock (tests.test_persistent_settings.PersistentReferenceSettingsTests.test_invalid_or_partially_missing_persisted_settings_are_preserved_and_release_lock) (raw=None)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ProgramData\anaconda3\Lib\shutil.py", line 633, in _rmtree_unsafe
+    os.unlink(fullname)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\derri\\AppData\\Local\\Temp\\tmp3h_edcwd\\journal.sqlite3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\derri\Documents\Codex\2026-11-05\task\tests\test_persistent_settings.py", line 56, in test_invalid_or_partially_missing_persisted_settings_are_preserved_and_release_lock
+    with self.subTest(raw=raw),tempfile.TemporaryDirectory() as tmp:
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\tempfile.py", line 946, in __exit__
+    self.cleanup()
+  File "C:\ProgramData\anaconda3\Lib\tempfile.py", line 950, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "C:\ProgramData\anaconda3\Lib\tempfile.py", line 930, in _rmtree
+    _shutil.rmtree(name, onexc=onexc)
+  File "C:\ProgramData\anaconda3\Lib\shutil.py", line 781, in rmtree
+    return _rmtree_unsafe(path, onexc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\shutil.py", line 635, in _rmtree_unsafe
+    onexc(os.unlink, fullname, err)
+  File "C:\ProgramData\anaconda3\Lib\tempfile.py", line 905, in onexc
+    _os.unlink(path)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\derri\\AppData\\Local\\Temp\\tmp3h_edcwd\\journal.sqlite3'
+
+======================================================================
+ERROR: test_invalid_or_partially_missing_persisted_settings_are_preserved_and_release_lock (tests.test_persistent_settings.PersistentReferenceSettingsTests.test_invalid_or_partially_missing_persisted_settings_are_preserved_and_release_lock) (raw='{bad')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ProgramData\anaconda3\Lib\shutil.py", line 633, in _rmtree_unsafe
+    os.unlink(fullname)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\derri\\AppData\\Local\\Temp\\tmp44kawo1u\\journal.sqlite3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\derri\Documents\Codex\2026-11-05\task\tests\test_persistent_settings.py", line 56, in test_invalid_or_partially_missing_persisted_settings_are_preserved_and_release_lock
+    with self.subTest(raw=raw),tempfile.TemporaryDirectory() as tmp:
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\tempfile.py", line 946, in __exit__
+    self.cleanup()
+  File "C:\ProgramData\anaconda3\Lib\tempfile.py", line 950, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "C:\ProgramData\anaconda3\Lib\tempfile.py", line 930, in _rmtree
+    _shutil.rmtree(name, onexc=onexc)
+  File "C:\ProgramData\anaconda3\Lib\shutil.py", line 781, in rmtree
+    return _rmtree_unsafe(path, onexc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\shutil.py", line 635, in _rmtree_unsafe
+    onexc(os.unlink, fullname, err)
+  File "C:\ProgramData\anaconda3\Lib\tempfile.py", line 905, in onexc
+    _os.unlink(path)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\derri\\AppData\\Local\\Temp\\tmp44kawo1u\\journal.sqlite3'
+
+======================================================================
+ERROR: test_invalid_or_partially_missing_persisted_settings_are_preserved_and_release_lock (tests.test_persistent_settings.PersistentReferenceSettingsTests.test_invalid_or_partially_missing_persisted_settings_are_preserved_and_release_lock) (raw='{"format":"hf-device-settings-v1","format":"other","settings":{}}')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ProgramData\anaconda3\Lib\shutil.py", line 633, in _rmtree_unsafe
+    os.unlink(fullname)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\derri\\AppData\\Local\\Temp\\tmpemm2j0di\\journal.sqlite3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\derri\Documents\Codex\2026-11-05\task\tests\test_persistent_settings.py", line 56, in test_invalid_or_partially_missing_persisted_settings_are_preserved_and_release_lock
+    with self.subTest(raw=raw),tempfile.TemporaryDirectory() as tmp:
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\tempfile.py", line 946, in __exit__
+    self.cleanup()
+  File "C:\ProgramData\anaconda3\Lib\tempfile.py", line 950, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "C:\ProgramData\anaconda3\Lib\tempfile.py", line 930, in _rmtree
+    _shutil.rmtree(name, onexc=onexc)
+  File "C:\ProgramData\anaconda3\Lib\shutil.py", line 781, in rmtree
+    return _rmtree_unsafe(path, onexc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\shutil.py", line 635, in _rmtree_unsafe
+    onexc(os.unlink, fullname, err)
+  File "C:\ProgramData\anaconda3\Lib\tempfile.py", line 905, in onexc
+    _os.unlink(path)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\derri\\AppData\\Local\\Temp\\tmpemm2j0di\\journal.sqlite3'
+
+======================================================================
+ERROR: test_invalid_or_partially_missing_persisted_settings_are_preserved_and_release_lock (tests.test_persistent_settings.PersistentReferenceSettingsTests.test_invalid_or_partially_missing_persisted_settings_are_preserved_and_release_lock) (raw='{"format": "future", "settings": {"sensor_mode": "sim-small", "requested_exposure_us": 10000, "requested_analogue_gain": 1.0, "output_format": "dng", "simulation_scene": "scene"}}')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ProgramData\anaconda3\Lib\shutil.py", line 633, in _rmtree_unsafe
+    os.unlink(fullname)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\derri\\AppData\\Local\\Temp\\tmp8lsvemoi\\journal.sqlite3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\derri\Documents\Codex\2026-11-05\task\tests\test_persistent_settings.py", line 56, in test_invalid_or_partially_missing_persisted_settings_are_preserved_and_release_lock
+    with self.subTest(raw=raw),tempfile.TemporaryDirectory() as tmp:
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\tempfile.py", line 946, in __exit__
+    self.cleanup()
+  File "C:\ProgramData\anaconda3\Lib\tempfile.py", line 950, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "C:\ProgramData\anaconda3\Lib\tempfile.py", line 930, in _rmtree
+    _shutil.rmtree(name, onexc=onexc)
+  File "C:\ProgramData\anaconda3\Lib\shutil.py", line 781, in rmtree
+    return _rmtree_unsafe(path, onexc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\shutil.py", line 635, in _rmtree_unsafe
+    onexc(os.unlink, fullname, err)
+  File "C:\ProgramData\anaconda3\Lib\tempfile.py", line 905, in onexc
+    _os.unlink(path)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\derri\\AppData\\Local\\Temp\\tmp8lsvemoi\\journal.sqlite3'
+
+======================================================================
+ERROR: test_invalid_or_partially_missing_persisted_settings_are_preserved_and_release_lock (tests.test_persistent_settings.PersistentReferenceSettingsTests.test_invalid_or_partially_missing_persisted_settings_are_preserved_and_release_lock) (raw='{"format": "hf-device-settings-v1", "settings": {"sensor_mode": [], "requested_exposure_us": 10000, "requested_analogue_gain": 1.0, "output_format": "dng", "simulation_scene": "scene"}}')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ProgramData\anaconda3\Lib\shutil.py", line 633, in _rmtree_unsafe
+    os.unlink(fullname)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\derri\\AppData\\Local\\Temp\\tmpqfestvqv\\journal.sqlite3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\derri\Documents\Codex\2026-11-05\task\tests\test_persistent_settings.py", line 56, in test_invalid_or_partially_missing_persisted_settings_are_preserved_and_release_lock
+    with self.subTest(raw=raw),tempfile.TemporaryDirectory() as tmp:
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\tempfile.py", line 946, in __exit__
+    self.cleanup()
+  File "C:\ProgramData\anaconda3\Lib\tempfile.py", line 950, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "C:\ProgramData\anaconda3\Lib\tempfile.py", line 930, in _rmtree
+    _shutil.rmtree(name, onexc=onexc)
+  File "C:\ProgramData\anaconda3\Lib\shutil.py", line 781, in rmtree
+    return _rmtree_unsafe(path, onexc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\shutil.py", line 635, in _rmtree_unsafe
+    onexc(os.unlink, fullname, err)
+  File "C:\ProgramData\anaconda3\Lib\tempfile.py", line 905, in onexc
+    _os.unlink(path)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\derri\\AppData\\Local\\Temp\\tmpqfestvqv\\journal.sqlite3'
+
+======================================================================
+ERROR: test_invalid_or_partially_missing_persisted_settings_are_preserved_and_release_lock (tests.test_persistent_settings.PersistentReferenceSettingsTests.test_invalid_or_partially_missing_persisted_settings_are_preserved_and_release_lock) (raw='{"format": "hf-device-settings-v1", "settings": {"sensor_mode": "sim-small", "requested_exposure_us": true, "requested_analogue_gain": 1.0, "output_format": "dng", "simulation_scene": "scene"}}')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ProgramData\anaconda3\Lib\shutil.py", line 633, in _rmtree_unsafe
+    os.unlink(fullname)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\derri\\AppData\\Local\\Temp\\tmpli2jjcrt\\journal.sqlite3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\derri\Documents\Codex\2026-11-05\task\tests\test_persistent_settings.py", line 56, in test_invalid_or_partially_missing_persisted_settings_are_preserved_and_release_lock
+    with self.subTest(raw=raw),tempfile.TemporaryDirectory() as tmp:
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\tempfile.py", line 946, in __exit__
+    self.cleanup()
+  File "C:\ProgramData\anaconda3\Lib\tempfile.py", line 950, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "C:\ProgramData\anaconda3\Lib\tempfile.py", line 930, in _rmtree
+    _shutil.rmtree(name, onexc=onexc)
+  File "C:\ProgramData\anaconda3\Lib\shutil.py", line 781, in rmtree
+    return _rmtree_unsafe(path, onexc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\shutil.py", line 635, in _rmtree_unsafe
+    onexc(os.unlink, fullname, err)
+  File "C:\ProgramData\anaconda3\Lib\tempfile.py", line 905, in onexc
+    _os.unlink(path)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\derri\\AppData\\Local\\Temp\\tmpli2jjcrt\\journal.sqlite3'
+
+======================================================================
+ERROR: test_invalid_or_partially_missing_persisted_settings_are_preserved_and_release_lock (tests.test_persistent_settings.PersistentReferenceSettingsTests.test_invalid_or_partially_missing_persisted_settings_are_preserved_and_release_lock) (raw='{"format": "hf-device-settings-v1", "settings": {"sensor_mode": "sim-small", "requested_exposure_us": 10000, "requested_analogue_gain": 1e999, "output_format": "dng", "simulation_scene": "scene"}}')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ProgramData\anaconda3\Lib\shutil.py", line 633, in _rmtree_unsafe
+    os.unlink(fullname)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\derri\\AppData\\Local\\Temp\\tmppseipja3\\journal.sqlite3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\derri\Documents\Codex\2026-11-05\task\tests\test_persistent_settings.py", line 56, in test_invalid_or_partially_missing_persisted_settings_are_preserved_and_release_lock
+    with self.subTest(raw=raw),tempfile.TemporaryDirectory() as tmp:
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\tempfile.py", line 946, in __exit__
+    self.cleanup()
+  File "C:\ProgramData\anaconda3\Lib\tempfile.py", line 950, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "C:\ProgramData\anaconda3\Lib\tempfile.py", line 930, in _rmtree
+    _shutil.rmtree(name, onexc=onexc)
+  File "C:\ProgramData\anaconda3\Lib\shutil.py", line 781, in rmtree
+    return _rmtree_unsafe(path, onexc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\shutil.py", line 635, in _rmtree_unsafe
+    onexc(os.unlink, fullname, err)
+  File "C:\ProgramData\anaconda3\Lib\tempfile.py", line 905, in onexc
+    _os.unlink(path)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\derri\\AppData\\Local\\Temp\\tmppseipja3\\journal.sqlite3'
+
+======================================================================
+ERROR: test_invalid_or_partially_missing_persisted_settings_are_preserved_and_release_lock (tests.test_persistent_settings.PersistentReferenceSettingsTests.test_invalid_or_partially_missing_persisted_settings_are_preserved_and_release_lock) (raw='                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ProgramData\anaconda3\Lib\shutil.py", line 633, in _rmtree_unsafe
+    os.unlink(fullname)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\derri\\AppData\\Local\\Temp\\tmpku1700cb\\journal.sqlite3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\derri\Documents\Codex\2026-11-05\task\tests\test_persistent_settings.py", line 56, in test_invalid_or_partially_missing_persisted_settings_are_preserved_and_release_lock
+    with self.subTest(raw=raw),tempfile.TemporaryDirectory() as tmp:
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\tempfile.py", line 946, in __exit__
+    self.cleanup()
+  File "C:\ProgramData\anaconda3\Lib\tempfile.py", line 950, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "C:\ProgramData\anaconda3\Lib\tempfile.py", line 930, in _rmtree
+    _shutil.rmtree(name, onexc=onexc)
+  File "C:\ProgramData\anaconda3\Lib\shutil.py", line 781, in rmtree
+    return _rmtree_unsafe(path, onexc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\shutil.py", line 635, in _rmtree_unsafe
+    onexc(os.unlink, fullname, err)
+  File "C:\ProgramData\anaconda3\Lib\tempfile.py", line 905, in onexc
+    _os.unlink(path)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\derri\\AppData\\Local\\Temp\\tmpku1700cb\\journal.sqlite3'
+
+======================================================================
+ERROR: test_old_journal_without_either_setting_key_migrates_once (tests.test_persistent_settings.PersistentReferenceSettingsTests.test_old_journal_without_either_setting_key_migrates_once)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ProgramData\anaconda3\Lib\shutil.py", line 633, in _rmtree_unsafe
+    os.unlink(fullname)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\derri\\AppData\\Local\\Temp\\tmpqi92wkzu\\journal.sqlite3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\derri\Documents\Codex\2026-11-05\task\tests\test_persistent_settings.py", line 37, in test_old_journal_without_either_setting_key_migrates_once
+    with tempfile.TemporaryDirectory() as tmp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\tempfile.py", line 946, in __exit__
+    self.cleanup()
+  File "C:\ProgramData\anaconda3\Lib\tempfile.py", line 950, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "C:\ProgramData\anaconda3\Lib\tempfile.py", line 930, in _rmtree
+    _shutil.rmtree(name, onexc=onexc)
+  File "C:\ProgramData\anaconda3\Lib\shutil.py", line 781, in rmtree
+    return _rmtree_unsafe(path, onexc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\shutil.py", line 635, in _rmtree_unsafe
+    onexc(os.unlink, fullname, err)
+  File "C:\ProgramData\anaconda3\Lib\tempfile.py", line 905, in onexc
+    _os.unlink(path)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\derri\\AppData\\Local\\Temp\\tmpqi92wkzu\\journal.sqlite3'
+
+----------------------------------------------------------------------
+Ran 18 tests in 4.887s
+
+FAILED (errors=9)

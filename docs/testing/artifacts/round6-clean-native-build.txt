@@ -1,0 +1,75 @@
++ "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -S C:\Users\derri\AppData\Local\Temp\hf-clean-r6-z0e20qig\HassleFree-FF1\camera\native -B C:\Users\derri\AppData\Local\Temp\hf-clean-r6-z0e20qig\HassleFree-FF1\build\native -DHF_BUILD_WORKER=ON -DHF_BUILD_DAEMON=ON -G "Visual Studio 17 2022" -A x64
+-- Selecting Windows SDK version 10.0.26100.0 to target Windows 10.0.26300.
+-- The C compiler identification is MSVC 19.44.35228.0
+-- The CXX compiler identification is MSVC 19.44.35228.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - not found
+-- Found Threads: TRUE
+-- Configuring done (5.2s)
+-- Generating done (0.1s)
+-- Build files have been written to: C:/Users/derri/AppData/Local/Temp/hf-clean-r6-z0e20qig/HassleFree-FF1/build/native
++ "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --build C:\Users\derri\AppData\Local\Temp\hf-clean-r6-z0e20qig\HassleFree-FF1\build\native --config Release --parallel
+MSBuild version 17.14.51+25f168cee for .NET Framework
+
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(548,5): warning MSB8029: The Intermediate directory or Output directory cannot reside under the Temporary directory as it could lead to issues with incremental build. [C:\Users\derri\AppData\Local\Temp\hf-clean-r6-z0e20qig\HassleFree-FF1\build\native\ZERO_CHECK.vcxproj]
+  1>Checking Build System
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(548,5): warning MSB8029: The Intermediate directory or Output directory cannot reside under the Temporary directory as it could lead to issues with incremental build. [C:\Users\derri\AppData\Local\Temp\hf-clean-r6-z0e20qig\HassleFree-FF1\build\native\hf_capture.vcxproj]
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(548,5): warning MSB8029: The Intermediate directory or Output directory cannot reside under the Temporary directory as it could lead to issues with incremental build. [C:\Users\derri\AppData\Local\Temp\hf-clean-r6-z0e20qig\HassleFree-FF1\build\native\hf_sqlite.vcxproj]
+  Building Custom Rule C:/Users/derri/AppData/Local/Temp/hf-clean-r6-z0e20qig/HassleFree-FF1/camera/native/CMakeLists.txt
+  Building Custom Rule C:/Users/derri/AppData/Local/Temp/hf-clean-r6-z0e20qig/HassleFree-FF1/camera/native/CMakeLists.txt
+  sqlite3.c
+  core.cpp
+  hf_capture.vcxproj -> C:\Users\derri\AppData\Local\Temp\hf-clean-r6-z0e20qig\HassleFree-FF1\build\native\Release\hf_capture.lib
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(548,5): warning MSB8029: The Intermediate directory or Output directory cannot reside under the Temporary directory as it could lead to issues with incremental build. [C:\Users\derri\AppData\Local\Temp\hf-clean-r6-z0e20qig\HassleFree-FF1\build\native\hf-native-worker.vcxproj]
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(548,5): warning MSB8029: The Intermediate directory or Output directory cannot reside under the Temporary directory as it could lead to issues with incremental build. [C:\Users\derri\AppData\Local\Temp\hf-clean-r6-z0e20qig\HassleFree-FF1\build\native\hf-core-tests.vcxproj]
+  Building Custom Rule C:/Users/derri/AppData/Local/Temp/hf-clean-r6-z0e20qig/HassleFree-FF1/camera/native/CMakeLists.txt
+  Building Custom Rule C:/Users/derri/AppData/Local/Temp/hf-clean-r6-z0e20qig/HassleFree-FF1/camera/native/CMakeLists.txt
+  worker.cpp
+  test_core.cpp
+  dng.cpp
+  hf-core-tests.vcxproj -> C:\Users\derri\AppData\Local\Temp\hf-clean-r6-z0e20qig\HassleFree-FF1\build\native\Release\hf-core-tests.exe
+  Generating Code...
+  hf-native-worker.vcxproj -> C:\Users\derri\AppData\Local\Temp\hf-clean-r6-z0e20qig\HassleFree-FF1\build\native\Release\hf-native-worker.exe
+  hf_sqlite.vcxproj -> C:\Users\derri\AppData\Local\Temp\hf-clean-r6-z0e20qig\HassleFree-FF1\build\native\Release\hf_sqlite.lib
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(548,5): warning MSB8029: The Intermediate directory or Output directory cannot reside under the Temporary directory as it could lead to issues with incremental build. [C:\Users\derri\AppData\Local\Temp\hf-clean-r6-z0e20qig\HassleFree-FF1\build\native\hf_daemon.vcxproj]
+  Building Custom Rule C:/Users/derri/AppData/Local/Temp/hf-clean-r6-z0e20qig/HassleFree-FF1/camera/native/CMakeLists.txt
+  daemon.cpp
+  dng.cpp
+  Generating Code...
+  hf_daemon.vcxproj -> C:\Users\derri\AppData\Local\Temp\hf-clean-r6-z0e20qig\HassleFree-FF1\build\native\Release\hf_daemon.lib
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(548,5): warning MSB8029: The Intermediate directory or Output directory cannot reside under the Temporary directory as it could lead to issues with incremental build. [C:\Users\derri\AppData\Local\Temp\hf-clean-r6-z0e20qig\HassleFree-FF1\build\native\hf-camerad.vcxproj]
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(548,5): warning MSB8029: The Intermediate directory or Output directory cannot reside under the Temporary directory as it could lead to issues with incremental build. [C:\Users\derri\AppData\Local\Temp\hf-clean-r6-z0e20qig\HassleFree-FF1\build\native\hf-daemon-tests.vcxproj]
+  Building Custom Rule C:/Users/derri/AppData/Local/Temp/hf-clean-r6-z0e20qig/HassleFree-FF1/camera/native/CMakeLists.txt
+  Building Custom Rule C:/Users/derri/AppData/Local/Temp/hf-clean-r6-z0e20qig/HassleFree-FF1/camera/native/CMakeLists.txt
+  camerad.cpp
+  test_daemon.cpp
+  hf-daemon-tests.vcxproj -> C:\Users\derri\AppData\Local\Temp\hf-clean-r6-z0e20qig\HassleFree-FF1\build\native\Release\hf-daemon-tests.exe
+  hf-camerad.vcxproj -> C:\Users\derri\AppData\Local\Temp\hf-clean-r6-z0e20qig\HassleFree-FF1\build\native\Release\hf-camerad.exe
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(548,5): warning MSB8029: The Intermediate directory or Output directory cannot reside under the Temporary directory as it could lead to issues with incremental build. [C:\Users\derri\AppData\Local\Temp\hf-clean-r6-z0e20qig\HassleFree-FF1\build\native\ALL_BUILD.vcxproj]
+  Building Custom Rule C:/Users/derri/AppData/Local/Temp/hf-clean-r6-z0e20qig/HassleFree-FF1/camera/native/CMakeLists.txt
++ "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" -C Release --output-on-failure
+Test project C:/Users/derri/AppData/Local/Temp/hf-clean-r6-z0e20qig/HassleFree-FF1/build/native
+    Start 1: native-core
+1/2 Test #1: native-core ......................   Passed    0.03 sec
+    Start 2: native-authority
+2/2 Test #2: native-authority .................   Passed    0.79 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =   0.82 sec
+HF_NATIVE_WORKER=C:\Users\derri\AppData\Local\Temp\hf-clean-r6-z0e20qig\HassleFree-FF1\build\native\Release\hf-native-worker.exe
+HF_NATIVE_DAEMON=C:\Users\derri\AppData\Local\Temp\hf-clean-r6-z0e20qig\HassleFree-FF1\build\native\Release\hf-camerad.exe

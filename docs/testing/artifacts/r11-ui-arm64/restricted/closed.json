@@ -1,0 +1,14 @@
+{
+  "format": "hf-freebsd-arm-vm-closed-v1",
+  "immutable_sha256_after": {
+    "arm-seed.iso": "55bd97338cef7a40e4781246c84bc928ee90a1bbfd24ed1a5d241fe76b7ec75a",
+    "base.qcow2": "ae13edc018ad2d862020de3fdccc24581fae12b3323bfd800db73cb2b7fce23c",
+    "uefi-code.fd": "5d3147294c56ce8cb636c57c181776a89bc7ba254274c35698dc5795758052d3"
+  },
+  "immutable_unchanged": true,
+  "ready": false,
+  "reason": "RuntimeError: ARM64 FreeBSD SSH did not finish within boot budget",
+  "returncode": 0,
+  "seconds": 374.42224124,
+  "serial_sha256": "a8edf14cae2732ea4c97ebc185fdd7b4acc7fff2db39ea492fbcf096b2ee5976"
+}

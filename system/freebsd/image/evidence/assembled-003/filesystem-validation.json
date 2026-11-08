@@ -1,0 +1,100 @@
+{
+  "format": "DaOS-freebsd-filesystem-validation-v1",
+  "passed": true,
+  "read_only": true,
+  "checks": [
+    {
+      "name": "efi",
+      "path": "/var/DaOS-image-memory-r10/DaOS-image-arm64-r10-003/efi.fat",
+      "argv": [
+        "/sbin/fsck_msdosfs",
+        "-M",
+        "-n",
+        "/var/DaOS-image-memory-r10/DaOS-image-arm64-r10-003/efi.fat"
+      ],
+      "returncode": 0,
+      "bytes": 67108864,
+      "sha256_before": "6365214a707a5288e8e81c0baf3406d8d8725b341212be1540defb5b846fbc2e",
+      "sha256_after": "6365214a707a5288e8e81c0baf3406d8d8725b341212be1540defb5b846fbc2e",
+      "unchanged": true,
+      "log_sha256": "32af84465677e31a1176dffa10fff6464241d5a386451ac66506ca1ac1046d01",
+      "header_validation": {
+        "passed": true,
+        "scope": "BPB volume/cluster/FAT capacity and reserved-sector bounds; full fsck follows",
+        "bytes": 67108864,
+        "bytes_per_sector": 512,
+        "sectors_per_cluster": 1,
+        "reserved_sectors": 32,
+        "num_FAT": 2,
+        "sectors_per_fat": 1009,
+        "data_clusters": 129022,
+        "fat_entry_capacity": 129152,
+        "required_fat_entries": 129024
+      }
+    },
+    {
+      "name": "root",
+      "path": "/var/DaOS-image-memory-r10/DaOS-image-arm64-r10-003/root.ufs",
+      "argv": [
+        "/sbin/fsck_ffs",
+        "-n",
+        "/var/DaOS-image-memory-r10/DaOS-image-arm64-r10-003/root.ufs"
+      ],
+      "returncode": 0,
+      "bytes": 2684354560,
+      "sha256_before": "8ae33884fdda767a7f66ab5363e02423a221ee78e91bb2c7e3d8db7b8b2e19ec",
+      "sha256_after": "8ae33884fdda767a7f66ab5363e02423a221ee78e91bb2c7e3d8db7b8b2e19ec",
+      "unchanged": true,
+      "log_sha256": "3c0927fab114048457139ab8aeda207a519e8f6c36ffbc78dc748fe0b0ea4cf8",
+      "header_validation": null
+    },
+    {
+      "name": "var",
+      "path": "/var/DaOS-image-memory-r10/DaOS-image-arm64-r10-003/var.ufs",
+      "argv": [
+        "/sbin/fsck_ffs",
+        "-n",
+        "/var/DaOS-image-memory-r10/DaOS-image-arm64-r10-003/var.ufs"
+      ],
+      "returncode": 0,
+      "bytes": 134217728,
+      "sha256_before": "952717eaa1e59b60bb958f37da3f684f06fab18844cef7ce2cb5a80e6b3dc3f6",
+      "sha256_after": "952717eaa1e59b60bb958f37da3f684f06fab18844cef7ce2cb5a80e6b3dc3f6",
+      "unchanged": true,
+      "log_sha256": "ac90e73b936ca3c2a41c0e7ee60d4afdcbb7ace31670b464c452b2d583a8b0fe",
+      "header_validation": null
+    },
+    {
+      "name": "calibration",
+      "path": "/var/DaOS-image-memory-r10/DaOS-image-arm64-r10-003/calibration.ufs",
+      "argv": [
+        "/sbin/fsck_ffs",
+        "-n",
+        "/var/DaOS-image-memory-r10/DaOS-image-arm64-r10-003/calibration.ufs"
+      ],
+      "returncode": 0,
+      "bytes": 33554432,
+      "sha256_before": "17ae86156053d2a78b995a5d1cfc183d015723e9b3b7d1084e2a47330e895174",
+      "sha256_after": "17ae86156053d2a78b995a5d1cfc183d015723e9b3b7d1084e2a47330e895174",
+      "unchanged": true,
+      "log_sha256": "d41c12933350f3864cb753b8d1122d35ab26c7eeeb47e008ffa2080162ae223d",
+      "header_validation": null
+    },
+    {
+      "name": "photos",
+      "path": "/var/DaOS-image-memory-r10/DaOS-image-arm64-r10-003/photos.ufs",
+      "argv": [
+        "/sbin/fsck_ffs",
+        "-n",
+        "/var/DaOS-image-memory-r10/DaOS-image-arm64-r10-003/photos.ufs"
+      ],
+      "returncode": 0,
+      "bytes": 268435456,
+      "sha256_before": "3120e23b5733d353e87bb238a084b04cf08b01ab20a5f6d3b1845b2e5ad4d055",
+      "sha256_after": "3120e23b5733d353e87bb238a084b04cf08b01ab20a5f6d3b1845b2e5ad4d055",
+      "unchanged": true,
+      "log_sha256": "c87e59e588abf80d9c5f5b29a8326047e10a417da91359ea45a6711d041b0ac4",
+      "header_validation": null
+    }
+  ]
+}

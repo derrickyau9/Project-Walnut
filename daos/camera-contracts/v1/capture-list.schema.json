@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hasslefree.local/contracts/v1/capture-list.schema.json",
+  "title": "Retained completed capture page (simulation)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["items", "next_cursor", "limit", "order"],
+  "properties": {
+    "items": {"type": "array", "maxItems": 50, "items": {"$ref": "#/$defs/item"}},
+    "next_cursor": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/uuid"}]},
+    "limit": {"type": "integer", "minimum": 1, "maximum": 50},
+    "order": {"const": "newest_first"}
+  },
+  "$defs": {
+    "uuid": {"type": "string", "format": "uuid", "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"},
+    "exposure": {"type": "integer", "minimum": 100, "maximum": 30000000},
+    "gain": {"type": "number", "minimum": 1, "maximum": 16},
+    "item": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["request_id", "capture_id", "frame_id", "status", "timestamp", "sensor_mode", "width", "height", "bit_depth", "cfa", "requested_exposure_us", "actual_exposure_us", "requested_analogue_gain", "actual_analogue_gain", "sensor_id", "calibration_id", "simulated", "filename"],
+      "properties": {
+        "request_id": {"$ref": "#/$defs/uuid"},
+        "capture_id": {"$ref": "#/$defs/uuid"},
+        "frame_id": {"$ref": "#/$defs/uuid"},
+        "status": {"const": "complete"},
+        "timestamp": {"type": "number", "exclusiveMinimum": 0},
+        "sensor_mode": {"enum": ["sim-small", "sim-full"]},
+        "width": {"enum": [128, 6064]},
+        "height": {"enum": [96, 4040]},
+        "bit_depth": {"const": 14},
+        "cfa": {"const": "RGGB"},
+        "requested_exposure_us": {"$ref": "#/$defs/exposure"},
+        "actual_exposure_us": {"$ref": "#/$defs/exposure"},
+        "requested_analogue_gain": {"$ref": "#/$defs/gain"},
+        "actual_analogue_gain": {"$ref": "#/$defs/gain"},
+        "sensor_id": {"type": "string", "minLength": 1, "maxLength": 256},
+        "calibration_id": {"type": "string", "minLength": 1, "maxLength": 256},
+        "simulated": {"const": true},
+        "filename": {"type": "string", "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\\.dng$"}
+      },
+      "allOf": [
+        {"if": {"properties": {"sensor_mode": {"const": "sim-small"}}}, "then": {"properties": {"width": {"const": 128}, "height": {"const": 96}}}},
+        {"if": {"properties": {"sensor_mode": {"const": "sim-full"}}}, "then": {"properties": {"width": {"const": 6064}, "height": {"const": 4040}}}}
+      ]
+    }
+  }
+}

@@ -1,0 +1,559 @@
+{
+  "format": "hf-arm64-cross-build-v1",
+  "simulated": true,
+  "target_triple": "aarch64-linux-gnu",
+  "target_architecture": "aarch64",
+  "host": {
+    "machine": "x86_64",
+    "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.41"
+  },
+  "user_mode_emulation": true,
+  "physical_board_tested": false,
+  "tests_passed": true,
+  "native_input_sha256": {
+    "camera/native/CMakeLists.txt": "c1a0cd5b8c10f1281d62b8d63f9126af5735b20a2d80da0685ca2270552a494f",
+    "camera/native/include/hf/core.hpp": "103a67b58d51956d0fc3f631ff3892ec317e976ca1c4dfc359ecadc236c6c6ba",
+    "camera/native/include/hf/daemon.hpp": "a7405649cb4b575630340ae69bd1c5d967e14d9e8799107625d35e1f50867498",
+    "camera/native/include/hf/dng.hpp": "3a87bd1fdbaa88ba8e97cdf23e0b1af9d6e886b813dc5b4b5bfb39a92b277c08",
+    "camera/native/src/camerad.cpp": "1bc447d72c76a29f0d0656a688bfeb80598dc75e9a20f9edc1463e2a6eb33f88",
+    "camera/native/src/core.cpp": "f59bd9609ad19aed9fa5089637a78e6330f5e7455ebc3facfa887350f1268d3f",
+    "camera/native/src/daemon.cpp": "af2bd7dc113dce3591fc60118cdc5d73633b245f4e43e21db72c16fd852fc445",
+    "camera/native/src/dng.cpp": "f51dfeb536ca4f5f386f08f47ce408d51288cdd96345f69e0f6851b817833a39",
+    "camera/native/src/worker.cpp": "266a6a6345d51b221eeec27eee0e99dab083ec6840e5b630ac636d53e14cf821",
+    "camera/native/tests/test_core.cpp": "ac1b2c05d6005c68cd0d2ba6961b91967ab10c9f96b4eb9be6ecc7d75729323b",
+    "camera/native/tests/test_daemon.cpp": "63156fabadd779ec87dc4a95b82b4c71642df85fe8692487e00d6c62d88b067b",
+    "camera/native/third_party/nlohmann/json.hpp": "aaf127c04cb31c406e5b04a63f1ae89369fccde6d8fa7cdda1ed4f32dfc5de63",
+    "camera/native/third_party/sqlite/sqlite3.c": "0c657666d819f261cc4007526ad57e1669de9949df7a8ea847aa284a2bf0ee52",
+    "camera/native/third_party/sqlite/sqlite3.h": "d6c84557261893439b341d2e6c35187ae3ea24fbfd843ad94616f72d89242b8c",
+    "system/arm64/toolchain-lock.json": "8103d9734dfcf0eb2c0c4380148775b03230d9c267c3f443d22d863aff86d117",
+    "tests/test_arm64_elf.py": "3f172a6ff6507950afd655743cd50831b609777f241d860138143de246bbfddc",
+    "tests/test_arm64_tools.py": "9a4b2fc24ebcae899e332b64dd9ebb14e614e221b6aa348e859c216f2d4780a4",
+    "tools/arm64_build.py": "cb14ea7247b7de3e2e120433057a6779c93282b2ed0badb56f49c14b579ab712",
+    "tools/arm64_elf.py": "45d53a6da3b97209d562550bb29fb697a0aeeae9ba87bc99e3f837ca78c5f30d",
+    "tools/arm64_toolchain.py": "b2f7c8a600b534d75ec4d746d72bc91e5eca79ae89947f3f5506eeadd1ce2be6",
+    "tools/linux_build.py": "6f4943a974b1ccc178f685a5dd30301c8544caf2e99454de7c0d7594342d2edd"
+  },
+  "toolchain": {
+    "c_compiler": {
+      "path": "/usr/bin/aarch64-linux-gnu-gcc",
+      "resolved_path": "/usr/bin/aarch64-linux-gnu-gcc-14",
+      "sha256": "fb743ca27a77466c91da66047eec879a615993feaabd860aaf3750e7b222b131",
+      "version": "aarch64-linux-gnu-gcc (Debian 14.2.0-19) 14.2.0"
+    },
+    "cxx_compiler": {
+      "path": "/usr/bin/clang++",
+      "resolved_path": "/usr/lib/llvm-19/bin/clang",
+      "sha256": "0a3c55936ac43954fbe4914e6e73b577ca9e35e75d89ef13d3e28c187f41ca1a",
+      "version": "Debian clang version 19.1.7 (3+b1)"
+    },
+    "qemu_user": {
+      "path": "/usr/bin/qemu-aarch64",
+      "resolved_path": "/usr/bin/qemu-aarch64",
+      "sha256": "73cc2584f119f9e74c85c0a8549dbb6fd104ae3897a06a7500797f9e5b4d0943",
+      "version": "qemu-aarch64 version 10.0.13 (Debian 1:10.0.13+ds-0+deb13u1)"
+    },
+    "linker": {
+      "path": "/usr/bin/aarch64-linux-gnu-ld",
+      "resolved_path": "/usr/bin/aarch64-linux-gnu-ld.bfd",
+      "sha256": "bdb57a3334f460af5921b65de134f128642325a2087ff716dafd0adbfcc0778a",
+      "version": "GNU ld (GNU Binutils for Debian) 2.44"
+    }
+  },
+  "extra_tool_package": {
+    "format": "hf-arm64-extra-toolchain-v1",
+    "status": "ready",
+    "package": {
+      "name": "libstdc++-14-dev-arm64-cross",
+      "version": "14.2.0-19cross1",
+      "architecture": "all",
+      "source": "https://deb.debian.org/debian/pool/main/g/gcc-14-cross/libstdc++-14-dev-arm64-cross_14.2.0-19cross1_all.deb",
+      "sha256": "dc2d2e1e59f2687a6cb30f3f5ed25e795f2769482ee8f7c5835f00481bf5ad65",
+      "bytes": 2551912,
+      "metadata": "Debian trixie apt package metadata; source package gcc-14-cross, built using gcc-14 14.2.0-19"
+    },
+    "lock_sha256": "8103d9734dfcf0eb2c0c4380148775b03230d9c267c3f443d22d863aff86d117",
+    "archive_sha256": "dc2d2e1e59f2687a6cb30f3f5ed25e795f2769482ee8f7c5835f00481bf5ad65",
+    "headers": "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-tools/sysroot-extra/usr/aarch64-linux-gnu/include/c++/14",
+    "library": "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-tools/sysroot-extra/usr/lib/gcc-cross/aarch64-linux-gnu/14/libstdc++.a",
+    "library_sha256": "b350d05e7771ab6ff680a63c28ba08f03df9bf22a027c32a8318bd6007ece1d4",
+    "system_packages_installed": false,
+    "limits": "Supplement to already installed Debian cross GCC C/sysroot, Clang and QEMU; not a board SDK."
+  },
+  "target_runtime_inputs": {
+    "libstdc++.a": {
+      "path": "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-tools/sysroot-extra/usr/lib/gcc-cross/aarch64-linux-gnu/14/libstdc++.a",
+      "sha256": "b350d05e7771ab6ff680a63c28ba08f03df9bf22a027c32a8318bd6007ece1d4"
+    },
+    "libc.a": {
+      "path": "/usr/aarch64-linux-gnu/lib/libc.a",
+      "sha256": "804402064b0766d3e379796ab1539081267fab63673f3585c21427a67867c812"
+    },
+    "libm.a": {
+      "path": "/usr/aarch64-linux-gnu/lib/libm.a",
+      "sha256": "1869063898f8bf785fcad02e63bdc80dd633d1404f405c6e95fa95b80d857791"
+    },
+    "libgcc.a": {
+      "path": "/usr/lib/gcc-cross/aarch64-linux-gnu/14/libgcc.a",
+      "sha256": "60dbf748e1c310aa50300a33f30bf4ee070061071aee74a52cf115a7b8765e50"
+    },
+    "libgcc_eh.a": {
+      "path": "/usr/lib/gcc-cross/aarch64-linux-gnu/14/libgcc_eh.a",
+      "sha256": "650392d9d4c54a58752b848625c60fbc6efa102f0ba93eb206a493bcc31cfdc8"
+    },
+    "crtbeginT.o": {
+      "path": "/usr/lib/gcc-cross/aarch64-linux-gnu/14/crtbeginT.o",
+      "sha256": "b6f88fcf16d3fd5d0dfcb8a55ec5ce394fe3b8ad15ae9c8d2d3128d2ee35ea56"
+    },
+    "crtend.o": {
+      "path": "/usr/lib/gcc-cross/aarch64-linux-gnu/14/crtend.o",
+      "sha256": "e305989588bedaaccad21303e4b2fa40c8d8889ae88a2e45b2cf6979ff86c1ec"
+    },
+    "crt1.o": {
+      "path": "/usr/aarch64-linux-gnu/lib/crt1.o",
+      "sha256": "dcb22c83c2382211d3bf03be7dc430e45e2e902e1947e1f525c2905c3123cd40"
+    },
+    "crti.o": {
+      "path": "/usr/aarch64-linux-gnu/lib/crti.o",
+      "sha256": "4cd4fb7ae57f7925a641e857510ac8cbb5bc5d78b8586c28d8a1b788c82c63ad"
+    },
+    "crtn.o": {
+      "path": "/usr/aarch64-linux-gnu/lib/crtn.o",
+      "sha256": "d215867c82f4b5b5cc82c3472b5c1500322e82798fb204e0a6bb1ead36b7d528"
+    }
+  },
+  "target_header_trees": {
+    "cross_cxx_headers": {
+      "root": "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-tools/sysroot-extra/usr/aarch64-linux-gnu/include/c++/14",
+      "files": 825,
+      "sha256": "06eb7523536a3943af1ffe507e6b914df030864b08816bb28cc867df4a137b57"
+    },
+    "cross_c_headers": {
+      "root": "/usr/aarch64-linux-gnu/include",
+      "files": 1442,
+      "sha256": "36b3f430b9beece4e2e94115d547af1a8c505ab0d0bfce27ed65d132e8343e13"
+    },
+    "clang_resource_headers": {
+      "root": "/usr/lib/llvm-19/lib/clang/19/include",
+      "files": 258,
+      "sha256": "f5f6447ea90f6dbb4a4fe935267d8191bde59ac5bb5952ee9c8001fc7304156c"
+    }
+  },
+  "commands": [
+    [
+      "/usr/bin/clang++",
+      "--target=aarch64-linux-gnu",
+      "--gcc-toolchain=/usr",
+      "--rtlib=libgcc",
+      "-nostdinc++",
+      "-isystem",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-tools/sysroot-extra/usr/aarch64-linux-gnu/include/c++/14",
+      "-isystem",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-tools/sysroot-extra/usr/aarch64-linux-gnu/include/c++/14/aarch64-linux-gnu",
+      "-isystem",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-tools/sysroot-extra/usr/aarch64-linux-gnu/include/c++/14/backward",
+      "-std=c++17",
+      "-O2",
+      "-DNDEBUG",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-ffp-contract=off",
+      "-pthread",
+      "-I/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/camera/native/include",
+      "-I/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/camera/native/third_party",
+      "-I/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/camera/native/third_party/sqlite",
+      "-c",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/camera/native/src/core.cpp",
+      "-o",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-native/core.o"
+    ],
+    [
+      "/usr/bin/clang++",
+      "--target=aarch64-linux-gnu",
+      "--gcc-toolchain=/usr",
+      "--rtlib=libgcc",
+      "-nostdinc++",
+      "-isystem",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-tools/sysroot-extra/usr/aarch64-linux-gnu/include/c++/14",
+      "-isystem",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-tools/sysroot-extra/usr/aarch64-linux-gnu/include/c++/14/aarch64-linux-gnu",
+      "-isystem",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-tools/sysroot-extra/usr/aarch64-linux-gnu/include/c++/14/backward",
+      "-std=c++17",
+      "-O2",
+      "-DNDEBUG",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-ffp-contract=off",
+      "-pthread",
+      "-I/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/camera/native/include",
+      "-I/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/camera/native/third_party",
+      "-I/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/camera/native/third_party/sqlite",
+      "-c",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/camera/native/src/dng.cpp",
+      "-o",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-native/dng.o"
+    ],
+    [
+      "/usr/bin/clang++",
+      "--target=aarch64-linux-gnu",
+      "--gcc-toolchain=/usr",
+      "--rtlib=libgcc",
+      "-nostdinc++",
+      "-isystem",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-tools/sysroot-extra/usr/aarch64-linux-gnu/include/c++/14",
+      "-isystem",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-tools/sysroot-extra/usr/aarch64-linux-gnu/include/c++/14/aarch64-linux-gnu",
+      "-isystem",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-tools/sysroot-extra/usr/aarch64-linux-gnu/include/c++/14/backward",
+      "-std=c++17",
+      "-O2",
+      "-DNDEBUG",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-ffp-contract=off",
+      "-pthread",
+      "-I/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/camera/native/include",
+      "-I/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/camera/native/third_party",
+      "-I/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/camera/native/third_party/sqlite",
+      "-c",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/camera/native/src/daemon.cpp",
+      "-o",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-native/daemon.o"
+    ],
+    [
+      "/usr/bin/clang++",
+      "--target=aarch64-linux-gnu",
+      "--gcc-toolchain=/usr",
+      "--rtlib=libgcc",
+      "-nostdinc++",
+      "-isystem",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-tools/sysroot-extra/usr/aarch64-linux-gnu/include/c++/14",
+      "-isystem",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-tools/sysroot-extra/usr/aarch64-linux-gnu/include/c++/14/aarch64-linux-gnu",
+      "-isystem",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-tools/sysroot-extra/usr/aarch64-linux-gnu/include/c++/14/backward",
+      "-std=c++17",
+      "-O2",
+      "-DNDEBUG",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-ffp-contract=off",
+      "-pthread",
+      "-I/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/camera/native/include",
+      "-I/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/camera/native/third_party",
+      "-I/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/camera/native/third_party/sqlite",
+      "-c",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/camera/native/src/worker.cpp",
+      "-o",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-native/worker.o"
+    ],
+    [
+      "/usr/bin/clang++",
+      "--target=aarch64-linux-gnu",
+      "--gcc-toolchain=/usr",
+      "--rtlib=libgcc",
+      "-nostdinc++",
+      "-isystem",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-tools/sysroot-extra/usr/aarch64-linux-gnu/include/c++/14",
+      "-isystem",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-tools/sysroot-extra/usr/aarch64-linux-gnu/include/c++/14/aarch64-linux-gnu",
+      "-isystem",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-tools/sysroot-extra/usr/aarch64-linux-gnu/include/c++/14/backward",
+      "-std=c++17",
+      "-O2",
+      "-DNDEBUG",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-ffp-contract=off",
+      "-pthread",
+      "-I/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/camera/native/include",
+      "-I/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/camera/native/third_party",
+      "-I/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/camera/native/third_party/sqlite",
+      "-c",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/camera/native/src/camerad.cpp",
+      "-o",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-native/camerad.o"
+    ],
+    [
+      "/usr/bin/clang++",
+      "--target=aarch64-linux-gnu",
+      "--gcc-toolchain=/usr",
+      "--rtlib=libgcc",
+      "-nostdinc++",
+      "-isystem",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-tools/sysroot-extra/usr/aarch64-linux-gnu/include/c++/14",
+      "-isystem",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-tools/sysroot-extra/usr/aarch64-linux-gnu/include/c++/14/aarch64-linux-gnu",
+      "-isystem",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-tools/sysroot-extra/usr/aarch64-linux-gnu/include/c++/14/backward",
+      "-std=c++17",
+      "-O2",
+      "-DNDEBUG",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-ffp-contract=off",
+      "-pthread",
+      "-I/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/camera/native/include",
+      "-I/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/camera/native/third_party",
+      "-I/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/camera/native/third_party/sqlite",
+      "-c",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/camera/native/tests/test_core.cpp",
+      "-o",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-native/test_core.o"
+    ],
+    [
+      "/usr/bin/clang++",
+      "--target=aarch64-linux-gnu",
+      "--gcc-toolchain=/usr",
+      "--rtlib=libgcc",
+      "-nostdinc++",
+      "-isystem",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-tools/sysroot-extra/usr/aarch64-linux-gnu/include/c++/14",
+      "-isystem",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-tools/sysroot-extra/usr/aarch64-linux-gnu/include/c++/14/aarch64-linux-gnu",
+      "-isystem",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-tools/sysroot-extra/usr/aarch64-linux-gnu/include/c++/14/backward",
+      "-std=c++17",
+      "-O2",
+      "-DNDEBUG",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-ffp-contract=off",
+      "-pthread",
+      "-I/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/camera/native/include",
+      "-I/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/camera/native/third_party",
+      "-I/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/camera/native/third_party/sqlite",
+      "-c",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/camera/native/tests/test_daemon.cpp",
+      "-o",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-native/test_daemon.o"
+    ],
+    [
+      "/usr/bin/aarch64-linux-gnu-gcc",
+      "-O2",
+      "-DNDEBUG",
+      "-DSQLITE_THREADSAFE=1",
+      "-DSQLITE_DQS=0",
+      "-DSQLITE_OMIT_LOAD_EXTENSION=1",
+      "-pthread",
+      "-c",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/camera/native/third_party/sqlite/sqlite3.c",
+      "-o",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-native/sqlite3.o"
+    ],
+    [
+      "/usr/bin/clang++",
+      "--target=aarch64-linux-gnu",
+      "--gcc-toolchain=/usr",
+      "--rtlib=libgcc",
+      "-L/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-tools/sysroot-extra/usr/lib/gcc-cross/aarch64-linux-gnu/14",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-native/test_core.o",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-native/core.o",
+      "-static",
+      "-pthread",
+      "-o",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-native/hf-core-tests"
+    ],
+    [
+      "/usr/bin/clang++",
+      "--target=aarch64-linux-gnu",
+      "--gcc-toolchain=/usr",
+      "--rtlib=libgcc",
+      "-L/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-tools/sysroot-extra/usr/lib/gcc-cross/aarch64-linux-gnu/14",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-native/test_daemon.o",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-native/daemon.o",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-native/dng.o",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-native/core.o",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-native/sqlite3.o",
+      "-static",
+      "-pthread",
+      "-o",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-native/hf-daemon-tests"
+    ],
+    [
+      "/usr/bin/clang++",
+      "--target=aarch64-linux-gnu",
+      "--gcc-toolchain=/usr",
+      "--rtlib=libgcc",
+      "-L/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-tools/sysroot-extra/usr/lib/gcc-cross/aarch64-linux-gnu/14",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-native/worker.o",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-native/dng.o",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-native/core.o",
+      "-static",
+      "-pthread",
+      "-o",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-native/hf-native-worker"
+    ],
+    [
+      "/usr/bin/clang++",
+      "--target=aarch64-linux-gnu",
+      "--gcc-toolchain=/usr",
+      "--rtlib=libgcc",
+      "-L/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-tools/sysroot-extra/usr/lib/gcc-cross/aarch64-linux-gnu/14",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-native/camerad.o",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-native/daemon.o",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-native/dng.o",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-native/core.o",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-native/sqlite3.o",
+      "-static",
+      "-pthread",
+      "-o",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-native/hf-camerad"
+    ],
+    [
+      "/usr/bin/qemu-aarch64",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-native/hf-core-tests"
+    ],
+    [
+      "/usr/bin/qemu-aarch64",
+      "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-native/hf-daemon-tests"
+    ],
+    [
+      "/usr/bin/python3",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_native_daemon.py",
+      "-v"
+    ],
+    [
+      "/usr/bin/python3",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_arm64_*.py",
+      "-v"
+    ]
+  ],
+  "artifacts": {
+    "hf-core-tests": {
+      "sha256": "ef47d03e3631fe4116948a1dc5686d64c4e1cb37e3f3fc7b58151c873ff4a218",
+      "bytes": 2701472,
+      "elf": {
+        "elf_class": 64,
+        "endianness": "little",
+        "machine": 183,
+        "machine_name": "EM_AARCH64",
+        "type": 2,
+        "entry": 4195840,
+        "program_headers": 8,
+        "has_interpreter": false,
+        "static_interpreter_absent": true,
+        "has_needed_libraries": false
+      }
+    },
+    "hf-daemon-tests": {
+      "sha256": "4c0c1ad45743a9fd169b84c51da0ed095904a338b3e57771b0777c2fb9c174ad",
+      "bytes": 4592752,
+      "elf": {
+        "elf_class": 64,
+        "endianness": "little",
+        "machine": 183,
+        "machine_name": "EM_AARCH64",
+        "type": 2,
+        "entry": 4195840,
+        "program_headers": 8,
+        "has_interpreter": false,
+        "static_interpreter_absent": true,
+        "has_needed_libraries": false
+      }
+    },
+    "hf-native-worker": {
+      "sha256": "aebb779b523be6b3c520b2e1c04be624904d2726d4180cb6c596feb01fd1156c",
+      "bytes": 2981776,
+      "elf": {
+        "elf_class": 64,
+        "endianness": "little",
+        "machine": 183,
+        "machine_name": "EM_AARCH64",
+        "type": 2,
+        "entry": 4195840,
+        "program_headers": 8,
+        "has_interpreter": false,
+        "static_interpreter_absent": true,
+        "has_needed_libraries": false
+      }
+    },
+    "hf-camerad": {
+      "sha256": "a3ade7e0fb5eb1c075483550cd5b4cd9d61463b0b4350795c4a90a5d1f0d892c",
+      "bytes": 4595864,
+      "elf": {
+        "elf_class": 64,
+        "endianness": "little",
+        "machine": 183,
+        "machine_name": "EM_AARCH64",
+        "type": 2,
+        "entry": 4195840,
+        "program_headers": 8,
+        "has_interpreter": false,
+        "static_interpreter_absent": true,
+        "has_needed_libraries": false
+      }
+    }
+  },
+  "launchers": {
+    "hf-camerad": {
+      "path": "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-native/hf-camerad-qemu",
+      "sha256": "4123387e7d0aa57565c036bc219f2ed857b91d87e20c49845b659c2ab4087b56",
+      "mode": "explicit qemu user-mode launcher"
+    },
+    "hf-native-worker": {
+      "path": "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-native/hf-native-worker-qemu",
+      "sha256": "79355eb2222dc7817d759b20027b9f3114c47d1274c38e275e8de21becd419a3",
+      "mode": "explicit qemu user-mode launcher"
+    }
+  },
+  "tests": {
+    "native_core": {
+      "command": [
+        "/usr/bin/qemu-aarch64",
+        "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-native/hf-core-tests"
+      ],
+      "returncode": 0,
+      "stdout": "PASS: 89 native core assertions\n",
+      "stderr": ""
+    },
+    "native_authority": {
+      "command": [
+        "/usr/bin/qemu-aarch64",
+        "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/arm64-native/hf-daemon-tests"
+      ],
+      "returncode": 0,
+      "stdout": "PASS: 82 native authority assertions\n",
+      "stderr": ""
+    },
+    "test_native_daemon.py": {
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "test_accepted_request_survives_process_kill_as_unknown (test_native_daemon.NativeDaemonTests.test_accepted_request_survives_process_kill_as_unknown) ... ok\ntest_capture_identity_metadata_and_no_duplicate_execution (test_native_daemon.NativeDaemonTests.test_capture_identity_metadata_and_no_duplicate_execution) ... ok\ntest_capture_slot_cancel_deadline_and_close_busy (test_native_daemon.NativeDaemonTests.test_capture_slot_cancel_deadline_and_close_busy) ... ok\ntest_context_exit_does_not_leave_native_process_or_directory_lock (test_native_daemon.NativeDaemonTests.test_context_exit_does_not_leave_native_process_or_directory_lock) ... ok\ntest_corrupt_persisted_rows_fence_queries_and_admission_without_rewriting (test_native_daemon.NativeDaemonTests.test_corrupt_persisted_rows_fence_queries_and_admission_without_rewriting) ... ok\ntest_crash_after_admission_is_unknown_and_never_reexecuted (test_native_daemon.NativeDaemonTests.test_crash_after_admission_is_unknown_and_never_reexecuted) ... ok\ntest_crash_after_rename_is_unknown_with_exactly_one_existing_dng (test_native_daemon.NativeDaemonTests.test_crash_after_rename_is_unknown_with_exactly_one_existing_dng) ... ok\ntest_dangerous_faults_require_explicit_cli_flag (test_native_daemon.NativeDaemonTests.test_dangerous_faults_require_explicit_cli_flag) ... ok\ntest_disconnect_and_authorized_reconnect (test_native_daemon.NativeDaemonTests.test_disconnect_and_authorized_reconnect) ... ok\ntest_failed_admission_commit_fences_authority_without_execution (test_native_daemon.NativeDaemonTests.test_failed_admission_commit_fences_authority_without_execution) ... ok\ntest_failed_completion_commit_is_unknown_after_rename (test_native_daemon.NativeDaemonTests.test_failed_completion_commit_is_unknown_after_rename) ... ok\ntest_invalid_native_metadata_does_not_truncate_or_wrap (test_native_daemon.NativeDaemonTests.test_invalid_native_metadata_does_not_truncate_or_wrap) ... ok\ntest_late_output_conflicts_are_never_overwritten_or_removed (test_native_daemon.NativeDaemonTests.test_late_output_conflicts_are_never_overwritten_or_removed) ... ok\ntest_real_lease_renewal_expiry_and_new_owner (test_native_daemon.NativeDaemonTests.test_real_lease_renewal_expiry_and_new_owner) ... ok\ntest_real_process_exclusivity_and_epoch_fencing (test_native_daemon.NativeDaemonTests.test_real_process_exclusivity_and_epoch_fencing) ... ok\ntest_retained_asset_descriptors_require_committed_regular_expected_files (test_native_daemon.NativeDaemonTests.test_retained_asset_descriptors_require_committed_regular_expected_files) ... ok\ntest_retained_pages_are_durable_bounded_complete_only_and_do_not_replay (test_native_daemon.NativeDaemonTests.test_retained_pages_are_durable_bounded_complete_only_and_do_not_replay) ... ok\ntest_rpc_input_limit_is_bounded_and_closes_process (test_native_daemon.NativeDaemonTests.test_rpc_input_limit_is_bounded_and_closes_process) ... ok\ntest_rpc_malformed_duplicate_depth_types_and_recovery (test_native_daemon.NativeDaemonTests.test_rpc_malformed_duplicate_depth_types_and_recovery) ... ok\ntest_worker_start_failure_is_journaled_and_releases_slot (test_native_daemon.NativeDaemonTests.test_worker_start_failure_is_journaled_and_releases_slot) ... ok\n\n----------------------------------------------------------------------\nRan 20 tests in 10.502s\n\nOK\n"
+    },
+    "test_arm64_*.py": {
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "test_dynamic_interpreter_or_needed_library_is_not_claimed_static (test_arm64_elf.Arm64ElfTests.test_dynamic_interpreter_or_needed_library_is_not_claimed_static) ... ok\ntest_genuine_machine_fields_required_not_a_reported_architecture_string (test_arm64_elf.Arm64ElfTests.test_genuine_machine_fields_required_not_a_reported_architecture_string) ... ok\ntest_truncated_or_wrong_class_headers_are_rejected (test_arm64_elf.Arm64ElfTests.test_truncated_or_wrong_class_headers_are_rejected) ... ok\ntest_clangxx_invocation_name_is_preserved (test_arm64_tools.Arm64ToolSelectionTests.test_clangxx_invocation_name_is_preserved) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.001s\n\nOK\n"
+    }
+  },
+  "sqlite_compile_profile": {
+    "threadsafe": 1,
+    "dqs": 0,
+    "omit_load_extension": 1
+  },
+  "limits": [
+    "QEMU user mode maps target process syscalls to the host Linux kernel.",
+    "No board BSP, bootloader, sensor/FPGA/DMA driver or physical timing evidence.",
+    "Static target archives and tool hashes are recorded, not a hermetic toolchain attestation."
+  ]
+}

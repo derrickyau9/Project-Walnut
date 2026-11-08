@@ -1,0 +1,29 @@
+#!/bin/sh
+# PROVIDE: DaOS_usb_adb
+# REQUIRE: FILESYSTEMS ldconfig devd
+# BEFORE: LOGIN
+# KEYWORD: shutdown
+
+# An init_script recovery owner is independent of /var and must retain the
+# peripheral if normal boot later aborts. Never launch a second USB transport.
+case "${1-}" in
+start|faststart|onestart|restart|fastrestart|onerestart|status)
+    if [ -r /usr/local/libexec/DaOS-recovery/early_adb.py ] &&
+       /usr/local/bin/python3.12 -I -B /usr/local/libexec/DaOS-recovery/early_adb.py status >/dev/null 2>&1; then
+        echo 'DaOS USB ADB is provided by the early recovery supervisor.'
+        exit 0
+    fi
+    ;;
+esac
+
+. /etc/rc.subr
+name="DaOS_usb_adb"
+rcvar="DaOS_usb_adb_enable"
+command="/usr/sbin/daemon"
+procname="/usr/sbin/daemon"
+pidfile="/var/run/DaOS-usb-adb-supervisor.pid"
+command_args="-c -P ${pidfile} -p /var/run/DaOS-usb-adb-session.pid -f /usr/local/bin/python3.12 -B /usr/local/libexec/DaOS-usb-adb-session.py"
+required_files="/etc/daos/adb_keys /boot/modules/daos_adb_template.ko /usr/local/libexec/daos-usb-adb /usr/local/etc/daos/usb-adb.json"
+load_rc_config "$name"
+: ${DaOS_usb_adb_enable:=NO}
+run_rc_command "$1"

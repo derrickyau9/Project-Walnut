@@ -1,0 +1,1 @@
+{"format":"DaOS-early-recovery-adb-v1","vid":65535,"pid":55813,"authorized_keys":"/etc/daos/adb_keys","daemon_root":"/usr/local/libexec/daos-adb","helper":"/usr/local/libexec/daos-usb-adb","python":"/usr/local/bin/python3.12","entry":"/usr/local/libexec/DaOS-recovery/early_daemon.py"}

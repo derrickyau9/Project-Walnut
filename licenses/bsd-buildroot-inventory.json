@@ -1,0 +1,37 @@
+{
+  "format": "DaOS-BSD-buildroot-origin-inventory-v1",
+  "scope": "Local engineering image and build inputs; no public publishing operation",
+  "base": {
+    "upstream": "NetBSD",
+    "release": "11.1",
+    "source_lock": "system/bsd-buildroot/sources-ui.lock.json",
+    "source_signature_receipt": "system/bsd-buildroot/references/NetBSD-11.1-metadata-verification.json",
+    "build": "Source-built tools, base system, X11 and DAOS_RPI4 kernel",
+    "upstream_notices": ["src/distrib/notes/common/legal.common", "src/doc/3RDPARTY"],
+    "terms": "Preserve the applicable upstream terms and notices; NetBSD source contains components under multiple licenses."
+  },
+  "ui_runtime": {
+    "origin": "Official NetBSD pkgsrc aarch64/11.0_2026Q3 binary repository",
+    "target_system": "NetBSD 11.1 / aarch64",
+    "binary_package_count": 101,
+    "exact_versions_hashes_sources_and_license_expressions": "system/bsd-buildroot/packages/daos-ui/runtime.lock.json",
+    "metadata_archive_audit": "system/bsd-buildroot/packages/daos-ui/metadata/archive-audit.json",
+    "source_built_Qt_claimed": false,
+    "package_scripts": "Run by native offline pkg_add before GUI acceptance; retain their target finalization receipt."
+  },
+  "camera": {
+    "origin": "Existing independently implemented project camera source",
+    "recipe": "system/bsd-buildroot/packages/daos-camera/recipe.json",
+    "third_party_source_inventory": "camera/native/third_party/manifest.json",
+    "original_DaOS_typescript_runtime_imported": false
+  },
+  "boot_logo": {
+    "origin": "User supplied image",
+    "provenance": "assets/boot-logo/provenance.json",
+    "image_content_modifications": "None; existing lossless PNG is embedded in the NetBSD splash kernel."
+  },
+  "pi_firmware": {
+    "origin": "NetBSD locked source archive: external/broadcom/rpi-firmware/dist",
+    "notice": "LICENCE.broadcom included with the firmware in the image boot partition"
+  }
+}

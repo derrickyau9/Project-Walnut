@@ -1,0 +1,14 @@
+{
+  "UI_readiness_claimed": false,
+  "conversion": "RGB pixels unchanged; P6 to PNG format only",
+  "format": "DaOS-virtual-framebuffer-v1",
+  "height": 600,
+  "name": "one-capture",
+  "nonblack_pixels": 479946,
+  "png": "/home/dy09/hf-task-freebsd-r10/image-boot-003/screens/one-capture.png",
+  "png_sha256": "701185c24ae0d10fab3cb33a0867c48a396d909a937217f194268931af852b14",
+  "ppm": "/home/dy09/hf-task-freebsd-r10/image-boot-003/screens/one-capture.ppm",
+  "ppm_sha256": "23591c6830edd6cf59ef0f10e9d1422bf743ddfd60e5238a4e1a1f027574f871",
+  "rgb_sha256": "1b868eaf3c8b2ddb344fe6258d12c6a8e379dd61064b2f97c39bde351dabb0e1",
+  "width": 800
+}

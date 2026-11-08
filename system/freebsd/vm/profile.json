@@ -1,0 +1,21 @@
+{
+  "format": "hf-freebsd-development-vm-profile-v1",
+  "guest_system": "FreeBSD",
+  "release": "15.1-RELEASE",
+  "architecture": "amd64",
+  "image_variant": "BASIC-CLOUDINIT-ufs.qcow2.xz",
+  "cpus": 16,
+  "memory_mib": 16384,
+  "overlay_virtual_gib": 32,
+  "minimum_host_free_gib": 28,
+  "ssh_bind": "127.0.0.1",
+  "ssh_port": 22241,
+  "application_user": "camera",
+  "application_uid": 1000,
+  "bootstrap_authentication": "temporary task key only; root administration inside guest",
+  "default_guest_egress": "enabled for explicit provisioning; --restricted disables it",
+  "host_mounts": false,
+  "host_filesystem_shares": false,
+  "physical_camera_validated": false,
+  "production_image": false
+}

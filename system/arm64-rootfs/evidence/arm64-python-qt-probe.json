@@ -1,0 +1,42 @@
+{
+  "emulator": {
+    "path": "/usr/bin/qemu-aarch64",
+    "sha256": "73cc2584f119f9e74c85c0a8549dbb6fd104ae3897a06a7500797f9e5b4d0943",
+    "version": "qemu-aarch64 version 10.0.13 (Debian 1:10.0.13+ds-0+deb13u1)"
+  },
+  "format": "hf-arm64-qt-rootfs-probe-v1",
+  "full_system_guest": false,
+  "host_machine": "x86_64",
+  "passed": true,
+  "physical_board_tested": false,
+  "rootfs": {
+    "aarch64_elf_files": 562,
+    "entries": 5765,
+    "format": "hf-arm64-qt-rootfs-v1",
+    "package_lock_sha256": "63ea9d9f62faf2e22b5e68e5977b9d72eee367ddc71246458dae58cd4efac0ef",
+    "python_sources_compiled_without_execution": 627,
+    "tree_sha256": "c7e360551ef0f39fa453fd4c7c4cf99854656dc517744545ca61dc5631823295",
+    "verified": true
+  },
+  "runtime": {
+    "executable": "usr/bin/python3.13",
+    "machine": "aarch64",
+    "modules": {
+      "PyQt5.QtCore": "usr/lib/python3/dist-packages/PyQt5/QtCore.abi3.so",
+      "PyQt5.QtGui": "usr/lib/python3/dist-packages/PyQt5/QtGui.abi3.so",
+      "PyQt5.QtQml": "usr/lib/python3/dist-packages/PyQt5/QtQml.abi3.so",
+      "PyQt5.QtQuick": "usr/lib/python3/dist-packages/PyQt5/QtQuick.abi3.so",
+      "PyQt5.QtTest": "usr/lib/python3/dist-packages/PyQt5/QtTest.abi3.so"
+    },
+    "pyqt": "5.15.11",
+    "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+    "qml_controls_layouts_window_created": true,
+    "qt_compile": "5.15.15",
+    "qt_runtime": "5.15.15",
+    "sqlite": "3.46.1"
+  },
+  "stage_manifest_sha256": "40616c60ac6ec51171f0a684ee7023ec32889b2f3944311a6268bb077fadf30d",
+  "staged_tree_unchanged": true,
+  "stderr": "",
+  "user_mode_emulation": true
+}

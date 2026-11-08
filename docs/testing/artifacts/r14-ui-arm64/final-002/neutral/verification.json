@@ -1,0 +1,15 @@
+{
+  "format": "DaOS-r14-arm64-neutral-proof-download-v1",
+  "frames": 13,
+  "observed_capture_rows": {
+    "test_dark_menu_backgrounds_render_achromatically_without_capture": 0,
+    "test_light_menu_backgrounds_render_achromatically_without_capture": 0,
+    "test_optional_tool_surfaces_are_neutral_without_changing_camera_settings": 0,
+    "test_preview_retains_source_color_while_shooting_hud_is_achromatic": 0,
+    "test_quick_controls_and_shooting_bar_are_neutral_in_both_modes": 0
+  },
+  "passed": true,
+  "planned_shutter_actions": 0,
+  "renders_sha256": "f8e5a2eecd8f5a569148820a3ce75409bf9dcf995d258a155fd2be7f895f01d8",
+  "source_unchanged": true
+}

@@ -1,0 +1,15 @@
+{
+  "format": "DaOS-BSD-package-recipe-v1",
+  "name": "daos-camera",
+  "version": "0.1.0",
+  "kind": "native-source",
+  "target": {"system": "NetBSD", "architecture": "aarch64"},
+  "source": "camera/native",
+  "builder": "build.py",
+  "build_dependencies": ["NetBSD build.sh tools", "NetBSD DESTDIR headers and libraries"],
+  "runtime_dependencies": ["NetBSD libc", "NetBSD libstdc++", "NetBSD libpthread"],
+  "programs": ["hf-camerad", "hf-native-worker", "hf-core-tests", "hf-daemon-tests", "hf-sha256-tests", "hf-calibration-tests"],
+  "install": {"authority": "/usr/libexec/daos/hf-camerad", "worker": "/usr/libexec/daos/hf-native-worker", "tests": "/usr/libexec/daos/tests", "ui_sources": "/usr/share/daos/camera-app"},
+  "ui": {"optional": true, "source_only": true, "requires": ["target-native NetBSD Python", "target-native NetBSD PyQt5", "target-native NetBSD Qt Quick/Controls2", "target-native display/input closure"], "FreeBSD_binaries_permitted": false},
+  "scope": "Synthetic camera authority and its unchanged capture contracts; no physical sensor driver is supplied. Cross-compilation alone does not establish target execution."
+}

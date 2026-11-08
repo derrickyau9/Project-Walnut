@@ -1,0 +1,15 @@
+{
+  "application_user": "camera",
+  "boot_directory": "/home/dy09/hf-task-freebsd-r10/vm-001/boot-36c11dbc-738b-4b69-b1ba-9d0343aec645",
+  "bootstrap_user": "root",
+  "format": "hf-freebsd-vm-ready-v1",
+  "guest_egress_enabled": true,
+  "guest_machine": "amd64",
+  "guest_system": "FreeBSD",
+  "pid": 409,
+  "ready": true,
+  "seconds": 19.273685255000146,
+  "ssh_host": "127.0.0.1",
+  "ssh_port": 22241,
+  "task_key_file": "/home/dy09/hf-task-freebsd-r10/vm-001/task_ed25519"
+}

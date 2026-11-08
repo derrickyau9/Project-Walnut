@@ -1,0 +1,83 @@
+{
+  "arm_body_validated": false,
+  "audit_round": 4,
+  "command": "python -B -m unittest tests.test_device_ui -v",
+  "corrupt_state_lossless_recovery_verified": true,
+  "explicit_unknown_acknowledgment_verified": true,
+  "final_run_seconds": 13.843,
+  "hardware_validated": false,
+  "http_attach_verified": true,
+  "native_authority": {
+    "file": "build/native/Release/hf-camerad.exe",
+    "sha256": "f58b8921dd93207da72d7a8d887487b41177e770aac1264a239e29efd5538846"
+  },
+  "notes": [
+    "Screenshots contain temporary software test IDs and paths; fixture DNGs were cleaned after verification.",
+    "Explicit acknowledgment enabled a new UUID capture while the old native record remained unchanged/unknown; exactly two journal rows were verified.",
+    "Query/restart never reapplied saved acknowledgment as capture permission.",
+    "Malformed UI state held capture; bounded byte-exact backup and explicit acknowledgment were required before a fresh shot.",
+    "Actual native HTTP short-lease renewal and stale-client handoff preserved server availability and the new owner epoch.",
+    "Malformed completion/state metadata, atomic state write failures, action bounds, and eventual reference closure were covered.",
+    "Preview is independent synthetic data; no hardware sensor or measured calibration was tested."
+  ],
+  "platform": "Windows-11-10.0.26300-SP0",
+  "pyqt": "5.15.10",
+  "python": "3.12.7",
+  "qt": "5.15.2",
+  "schema_version": 1,
+  "scope": "Windows desktop software with synthetic HF-Sim authority",
+  "screenshots": [
+    {
+      "file": "corrupt-state-held-800.png",
+      "height": 600,
+      "sha256": "95f5be1a6b2a8bd423eaf355395fe91fb0d45da2d33b12cfdfa1c7dec9623b14",
+      "visually_inspected": true,
+      "width": 800
+    },
+    {
+      "file": "http-attach-complete-1024.png",
+      "height": 680,
+      "sha256": "391f49b1a2346357ae37cae23882a20d83daded548069f300f57d828b304ca20",
+      "visually_inspected": true,
+      "width": 1024
+    },
+    {
+      "file": "native-acknowledged-800.png",
+      "height": 600,
+      "sha256": "182c5c4676e05f672bce7d6d5ed08f620ecb30cf16a47aa52724f83181c82da2",
+      "visually_inspected": true,
+      "width": 800
+    },
+    {
+      "file": "native-complete-1024.png",
+      "height": 680,
+      "sha256": "087c3feb51b97b8b31a49e7dcf2655a5326b6cc2b4535e9b7ac410713afc220b",
+      "visually_inspected": true,
+      "width": 1024
+    },
+    {
+      "file": "native-unknown-800.png",
+      "height": 600,
+      "sha256": "44734e2d836787a4892ae2567a425073d85d72388f8694b5399750dfb11153b1",
+      "visually_inspected": true,
+      "width": 800
+    },
+    {
+      "file": "reference-ready.png",
+      "height": 680,
+      "sha256": "a9a1a8eb362900430c3831e8f9439d0ad9bda0f8abad5f0cb01448719b6eb43d",
+      "visually_inspected": true,
+      "width": 1024
+    }
+  ],
+  "sources": {
+    "camera/camerad/http_client.py": "914d69dfdd7174f72da59a94d1f9cefba4aa6adc9d1ed955745431353fae9b3a",
+    "camera/camerad/native_client.py": "666791fdaf7de280c14eddf71fe51839e200323aceab9aae9f88e0bd66b0d112",
+    "tests/test_device_ui.py": "0c8e802763406d83ddce78d4c64a330ee3629b19ca10d7eaf5580186b62c83ab",
+    "ui/on-device/Main.qml": "b93ddd6028519c63a090ed35d5b7bc87bb10d31a4512ae70d472ce2d0036346f",
+    "ui/on-device/controller.py": "c9560235d25f3a1451e74fc7cce370e94e66c3275c592adf4cbf6f25cb14a587",
+    "ui/on-device/main.py": "f1494d77b282a18965168312b6d4bf7bbb4ba07389a1f2c071d603d711b6e292"
+  },
+  "tests_passed": 19,
+  "tests_skipped": 0
+}

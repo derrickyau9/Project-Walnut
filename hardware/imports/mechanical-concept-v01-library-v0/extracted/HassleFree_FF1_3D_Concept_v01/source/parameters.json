@@ -1,0 +1,57 @@
+{
+  "revision": "0.1 concept",
+  "units": "mm",
+  "sensor_width": 36.0,
+  "sensor_height": 24.0,
+  "sensor_plane_z": 0.0,
+  "humi_plane_z": 12.0,
+  "e_flange_z": 18.0,
+  "ef_flange_z": 44.0,
+  "mount_clear_bore": 50.0,
+  "mount_base_od": 74.0,
+  "humi_bolt_circle": 64.0,
+  "humi_clearance_hole": 3.2,
+  "shell_wall": 2.0,
+  "body_width": 112.0,
+  "body_height": 96.0,
+  "body_center_x": -10.0,
+  "body_center_y": 2.0,
+  "body_rear_z": -45.0,
+  "body_front_z": 12.0,
+  "body_corner_radius": 9.0,
+  "grip_width": 41.0,
+  "grip_height": 89.0,
+  "grip_center_x": 62.5,
+  "grip_center_y": 1.5,
+  "battery_envelope": [
+    29.0,
+    61.0,
+    22.0
+  ],
+  "battery_center": [
+    62.0,
+    -4.5,
+    -20.0
+  ],
+  "control_board_envelope": [
+    60.0,
+    42.0,
+    1.6
+  ],
+  "control_board_center": [
+    -8.0,
+    0.0,
+    -36.2
+  ],
+  "control_board_status": "PCB A0 outline/holes imported from STEP and re-extruded to nominal 1.6 mm; raw STEP dielectric solid 1.51 mm does not define finished stackup; mating/cable clearances not validated",
+  "screen_window": [
+    72.0,
+    49.0
+  ],
+  "screen_center": [
+    -10.0,
+    3.0
+  ],
+  "note": "Only sensor active area is a project requirement. E/EF flange distances are nominal reference values. All packaging, HUMI geometry, holes, interfaces and wall sizes are unvalidated design assumptions. No proprietary bayonet or contact geometry is implemented.",
+  "right_hand_grip": true
+}

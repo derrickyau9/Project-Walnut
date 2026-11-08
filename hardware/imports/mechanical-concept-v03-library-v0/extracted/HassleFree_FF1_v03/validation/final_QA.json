@@ -1,0 +1,84 @@
+{
+  "revision": "0.3",
+  "date": "2026-11-05",
+  "status": "MODELED GEOMETRY CHECKS PASS; ENGINEERING RELEASE BLOCKED",
+  "engineering_release_ready": false,
+  "part_groups": 32,
+  "basic_geometry_checks_passed": 17,
+  "all_pair_count_per_variant": {
+    "E": 435,
+    "EF": 435
+  },
+  "service_paths_passed": [
+    "Battery downward service",
+    "Storage outward service",
+    "Sensor bridge rear service",
+    "Control PCB and rails rear service",
+    "Whole thermal module rear service"
+  ],
+  "thermal_positions_passed_z_mm": [
+    -5,
+    -4,
+    -3,
+    -2,
+    -1
+  ],
+  "nominal_axial_span_mm": 19,
+  "candidate_usable_span_mm": [
+    16.5,
+    19.5
+  ],
+  "hard_slot_geometric_span_mm": [
+    16,
+    20
+  ],
+  "no_sensor_heat_connection": true,
+  "no_thermal_performance_claim": true,
+  "direct_contact_to_modeled_sensor_or_support": false,
+  "parameter_regression_all_passed": true,
+  "step_roundtrip": [
+    {
+      "file": "exports/HassleFree_FF1_E_assembly.step",
+      "valid": true,
+      "solid_count": 42,
+      "volume_mm3": 326417.65193033306
+    },
+    {
+      "file": "exports/HassleFree_FF1_EF_assembly.step",
+      "valid": true,
+      "solid_count": 42,
+      "volume_mm3": 379971.2509227205
+    }
+  ],
+  "glb_mesh_nodes": 41,
+  "glb_mm_to_m_scale": [
+    0.0010000000474974513,
+    0.0010000000474974513,
+    0.0010000000474974513
+  ],
+  "sensor_chip_xy_lower_bound_mm": [
+    41.071,
+    30.815
+  ],
+  "sensor_package_dimensions_known": false,
+  "source": "https://www.sony-semicon.com/files/62/pdf/p-13_IMX410CQK_Flyer.pdf",
+  "open_p0": [
+    "Selected sensor/module package drawing, optical datum and approved heat interface",
+    "Power dissipation, operating conditions and temperature limits",
+    "Real populated electronics, mating connectors and wiring",
+    "Materials, manufacturability, retention hardware, preload and tolerances",
+    "Actual lens interface and rear-group/optical clearance"
+  ],
+  "limits": [
+    "Model intersections are not tolerance-stack proof.",
+    "Real populated PCB, mating connectors, wires and selected sensor package are not provided.",
+    "Service checks omit all unmodeled retaining hardware and cables.",
+    "Thermal route ends at an isolated side landing; actual sensor heat interface is unresolved.",
+    "HUMI rings are axial datum references, not functional E/EF interfaces.",
+    "Only a supplier-approved package/module heat interface can close the sensor heat path.",
+    "Current 40x28 sensor placeholder is smaller than the verified chip XY lower bound; no sensor mounting is released.",
+    "Clamp screw/nut are fit envelopes, not manufactured threads or validated fastening hardware.",
+    "Shared-chassis thermoelastic deformation, joint preload, thermal contact resistance, temperatures, reliability and manufacturability remain unverified.",
+    "No contact with or pressure on bare die, optical cover or unapproved package surfaces is authorized by this model."
+  ]
+}

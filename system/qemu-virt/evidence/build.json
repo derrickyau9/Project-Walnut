@@ -1,0 +1,56 @@
+{
+  "format": "hf-qemu-virt-build-v1",
+  "scope": "generic virtual ARM64, synthetic images only",
+  "init_source_sha256": "d7cc2b6762e33a449394b0a030dc61a25cebd10dea3545894bf3c84838123ef1",
+  "init_sha256": "451154dad2e6e285a650242a2b967dd1603d7ea6982104f3327235c132830966",
+  "initramfs_sha256": "cd4e805f34aa5342abe808e50702243f9620a97ac66003f35d60e22af127b3a8",
+  "native_sha256": {
+    "hf-core-tests": "ef47d03e3631fe4116948a1dc5686d64c4e1cb37e3f3fc7b58151c873ff4a218",
+    "hf-daemon-tests": "4c0c1ad45743a9fd169b84c51da0ed095904a338b3e57771b0777c2fb9c174ad",
+    "hf-native-worker": "aebb779b523be6b3c520b2e1c04be624904d2726d4180cb6c596feb01fd1156c",
+    "hf-camerad": "a3ade7e0fb5eb1c075483550cd5b4cd9d61463b0b4350795c4a90a5d1f0d892c"
+  },
+  "command": [
+    "aarch64-linux-gnu-gcc",
+    "-std=c11",
+    "-O2",
+    "-static",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/system/qemu-virt/init.c",
+    "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/system/qemu-virt/rpc.c",
+    "-o",
+    "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/qemu-guarded-round6/init"
+  ],
+  "arm64_build_evidence_sha256": "d7949cd9dcaab52f054895b9b54755dec0d754d8eddf37e7248e411c5a2324ff",
+  "native_input_sha256": {
+    "camera/native/CMakeLists.txt": "c1a0cd5b8c10f1281d62b8d63f9126af5735b20a2d80da0685ca2270552a494f",
+    "camera/native/include/hf/core.hpp": "103a67b58d51956d0fc3f631ff3892ec317e976ca1c4dfc359ecadc236c6c6ba",
+    "camera/native/include/hf/daemon.hpp": "a7405649cb4b575630340ae69bd1c5d967e14d9e8799107625d35e1f50867498",
+    "camera/native/include/hf/dng.hpp": "3a87bd1fdbaa88ba8e97cdf23e0b1af9d6e886b813dc5b4b5bfb39a92b277c08",
+    "camera/native/src/camerad.cpp": "1bc447d72c76a29f0d0656a688bfeb80598dc75e9a20f9edc1463e2a6eb33f88",
+    "camera/native/src/core.cpp": "f59bd9609ad19aed9fa5089637a78e6330f5e7455ebc3facfa887350f1268d3f",
+    "camera/native/src/daemon.cpp": "af2bd7dc113dce3591fc60118cdc5d73633b245f4e43e21db72c16fd852fc445",
+    "camera/native/src/dng.cpp": "f51dfeb536ca4f5f386f08f47ce408d51288cdd96345f69e0f6851b817833a39",
+    "camera/native/src/worker.cpp": "266a6a6345d51b221eeec27eee0e99dab083ec6840e5b630ac636d53e14cf821",
+    "camera/native/tests/test_core.cpp": "ac1b2c05d6005c68cd0d2ba6961b91967ab10c9f96b4eb9be6ecc7d75729323b",
+    "camera/native/tests/test_daemon.cpp": "63156fabadd779ec87dc4a95b82b4c71642df85fe8692487e00d6c62d88b067b",
+    "camera/native/third_party/nlohmann/json.hpp": "aaf127c04cb31c406e5b04a63f1ae89369fccde6d8fa7cdda1ed4f32dfc5de63",
+    "camera/native/third_party/sqlite/sqlite3.c": "0c657666d819f261cc4007526ad57e1669de9949df7a8ea847aa284a2bf0ee52",
+    "camera/native/third_party/sqlite/sqlite3.h": "d6c84557261893439b341d2e6c35187ae3ea24fbfd843ad94616f72d89242b8c",
+    "system/arm64/toolchain-lock.json": "8103d9734dfcf0eb2c0c4380148775b03230d9c267c3f443d22d863aff86d117",
+    "tests/test_arm64_elf.py": "3f172a6ff6507950afd655743cd50831b609777f241d860138143de246bbfddc",
+    "tests/test_arm64_tools.py": "9a4b2fc24ebcae899e332b64dd9ebb14e614e221b6aa348e859c216f2d4780a4",
+    "tools/arm64_build.py": "cb14ea7247b7de3e2e120433057a6779c93282b2ed0badb56f49c14b579ab712",
+    "tools/arm64_elf.py": "45d53a6da3b97209d562550bb29fb697a0aeeae9ba87bc99e3f837ca78c5f30d",
+    "tools/arm64_toolchain.py": "b2f7c8a600b534d75ec4d746d72bc91e5eca79ae89947f3f5506eeadd1ce2be6",
+    "tools/linux_build.py": "6f4943a974b1ccc178f685a5dd30301c8544caf2e99454de7c0d7594342d2edd"
+  },
+  "guest_input_sha256": {
+    "system/qemu-virt/init.c": "d7cc2b6762e33a449394b0a030dc61a25cebd10dea3545894bf3c84838123ef1",
+    "system/qemu-virt/rpc.c": "09a731d68a50aa88f353591c39bbdcfbc438711cce3c49dc743feea6f8f62e7d",
+    "tools/qemu_target.py": "845a84af0712d3093cb326fb13544e7f1df0451000d7993b4331d97ed8e195a9"
+  },
+  "cc_version": "aarch64-linux-gnu-gcc (Debian 14.2.0-19) 14.2.0"
+}

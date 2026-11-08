@@ -1,0 +1,6 @@
+{
+  "returncode": 0,
+  "seconds": 1.204437568000003,
+  "stderr": "",
+  "stdout": "{\"system\": \"FreeBSD\", \"machine\": \"arm64\", \"release\": \"15.1-RELEASE-p6\", \"transport_uid\": 0, \"native_path\": \"/opt/hasslefree/build/freebsd-arm64-native-001/hf-camerad\", \"native_sha256\": \"be752fd42c631e763682fa96a34b929a2bd80b5ae9ab3eb1b6f17653bc31bc28\", \"elf_machine\": 183, \"elf_osabi\": 9}\n"
+}

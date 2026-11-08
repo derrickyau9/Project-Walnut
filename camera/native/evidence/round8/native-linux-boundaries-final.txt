@@ -1,0 +1,9 @@
+test_startup_rejects_redirected_photos_and_releases_ownership (tests.test_native_daemon.NativeDaemonTests.test_startup_rejects_redirected_photos_and_releases_ownership) ... ok
+test_replaced_photo_directory_fences_admission_and_delayed_worker (tests.test_native_daemon.NativeDaemonTests.test_replaced_photo_directory_fences_admission_and_delayed_worker) ... ok
+test_delayed_capture_rejects_late_photo_symlink_without_external_write (tests.test_native_daemon.NativeDaemonTests.test_delayed_capture_rejects_late_photo_symlink_without_external_write) ... ok
+test_late_output_conflicts_are_never_overwritten_or_removed (tests.test_native_daemon.NativeDaemonTests.test_late_output_conflicts_are_never_overwritten_or_removed) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 4.187s
+
+OK

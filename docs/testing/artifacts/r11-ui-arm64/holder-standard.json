@@ -1,0 +1,9 @@
+{
+  "guest_egress_enabled": true,
+  "started_utc": "2026-11-05T23:37:08.9744636Z",
+  "attempt": "one authorized standard profile",
+  "source_vm": "/home/dy09/hf-task-freebsd-r10/arm-vm-001",
+  "holder_pid": 160344,
+  "boot_timeout_seconds": 360,
+  "lifetime_seconds": 1800
+}

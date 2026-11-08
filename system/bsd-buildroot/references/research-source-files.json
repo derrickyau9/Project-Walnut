@@ -1,0 +1,114 @@
+{
+  "format": "DaOS-upstream-research-files-v1",
+  "scope": "Research references from moving netbsd-11 branch; not locked build inputs",
+  "files": [
+    {
+      "path": "netbsd-11/BUILDING",
+      "url": "https://raw.githubusercontent.com/NetBSD/src/netbsd-11/BUILDING",
+      "sha256": "d3d8d666f9403325ce00043e7b3c0d7a3522c681c82270ee081de858230741fa",
+      "bytes": 42791
+    },
+    {
+      "path": "netbsd-11/share/mk/bsd.own.mk",
+      "url": "https://raw.githubusercontent.com/NetBSD/src/netbsd-11/share/mk/bsd.own.mk",
+      "sha256": "c1b8f9d82d3894f179dac56d7746d63b1aa8c58b4e7517b9d34b7e430d34b472",
+      "bytes": 52605
+    },
+    {
+      "path": "netbsd-11/sys/arch/arm/broadcom/files.bcm2835",
+      "url": "https://raw.githubusercontent.com/NetBSD/src/netbsd-11/sys/arch/arm/broadcom/files.bcm2835",
+      "sha256": "5856cc43aee8013310e03a98b5e7cc6e7dbaef5fc3e15a8670780fad3b1ee2e4",
+      "bytes": 4537
+    },
+    {
+      "path": "netbsd-11/sys/arch/evbarm/conf/GENERIC.common",
+      "url": "https://raw.githubusercontent.com/NetBSD/src/netbsd-11/sys/arch/evbarm/conf/GENERIC.common",
+      "sha256": "4505945316bf08630b1edf20d21d06fe8c69ac892547f7752c8c8ff3e0781c83",
+      "bytes": 6387
+    },
+    {
+      "path": "netbsd-11/sys/arch/evbarm/conf/GENERIC64",
+      "url": "https://raw.githubusercontent.com/NetBSD/src/netbsd-11/sys/arch/evbarm/conf/GENERIC64",
+      "sha256": "463e8d482d652c20493cc3b685a0e99039bc859f53ab1658df18e8dfe155031c",
+      "bytes": 19105
+    },
+    {
+      "path": "netbsd-11/sys/arch/evbarm/conf/std.generic64",
+      "url": "https://raw.githubusercontent.com/NetBSD/src/netbsd-11/sys/arch/evbarm/conf/std.generic64",
+      "sha256": "673a18d3c1c473ce9cd66240f20fd203f135ae8336fe02438a4a7f409e0f3db2",
+      "bytes": 1173
+    },
+    {
+      "path": "netbsd-11/sys/conf/Makefile.kern.inc",
+      "url": "https://raw.githubusercontent.com/NetBSD/src/netbsd-11/sys/conf/Makefile.kern.inc",
+      "sha256": "c8725e9657369b1e0de0497fdaa2c782c74b05e6e752efd5f6b31755fc7d4810",
+      "bytes": 16029
+    },
+    {
+      "path": "netbsd-11/sys/conf/newvers.mk",
+      "url": "https://raw.githubusercontent.com/NetBSD/src/netbsd-11/sys/conf/newvers.mk",
+      "sha256": "1d7cb487cf0c3e96b07d8696a488d00a16348b1f71c03d198199fe85cc389365",
+      "bytes": 644
+    },
+    {
+      "path": "netbsd-11/sys/dev/splash/files.splash",
+      "url": "https://raw.githubusercontent.com/NetBSD/src/netbsd-11/sys/dev/splash/files.splash",
+      "sha256": "e5636b743a089b499bddb7e292e3daa38588a6284f8201ad209f22b7c37a3e23",
+      "bytes": 271
+    },
+    {
+      "path": "netbsd-11/sys/dev/splash/splash.c",
+      "url": "https://raw.githubusercontent.com/NetBSD/src/netbsd-11/sys/dev/splash/splash.c",
+      "sha256": "d2a0c87dff1b84c892a49ec9c1b55d7bf5cdba38cd1390a6762a91438e183f86",
+      "bytes": 10737
+    },
+    {
+      "path": "netbsd-11/sys/dev/splash/splash.mk",
+      "url": "https://raw.githubusercontent.com/NetBSD/src/netbsd-11/sys/dev/splash/splash.mk",
+      "sha256": "c92d1495ebf7195dc8e1c22ceb9bb35605b86f2d28de6eac867e8593a4f8d217",
+      "bytes": 890
+    },
+    {
+      "path": "netbsd-11/sys/dev/stbi/stb_image.c",
+      "url": "https://raw.githubusercontent.com/NetBSD/src/netbsd-11/sys/dev/stbi/stb_image.c",
+      "sha256": "eca3543981331f1e65fa88a20b72ac23536e446135e4eab4323e73189029acfe",
+      "bytes": 161826
+    },
+    {
+      "path": "netbsd-11/sys/dev/stbi/stbiconfig.h",
+      "url": "https://raw.githubusercontent.com/NetBSD/src/netbsd-11/sys/dev/stbi/stbiconfig.h",
+      "sha256": "9631c6ccf469760a179cc491ac09336bda3fad48a53512e43de92183321159f0",
+      "bytes": 2126
+    },
+    {
+      "path": "netbsd-11/sys/dev/wscons/wsconsio.h",
+      "url": "https://raw.githubusercontent.com/NetBSD/src/netbsd-11/sys/dev/wscons/wsconsio.h",
+      "sha256": "cc0e435d6212ff4db69b0a3bd494d72c8c236670e4afb1f28ec666eea2cc28a9",
+      "bytes": 27078
+    },
+    {
+      "path": "netbsd-11/sys/dev/wsfb/genfb.c",
+      "url": "https://raw.githubusercontent.com/NetBSD/src/netbsd-11/sys/dev/wsfb/genfb.c",
+      "sha256": "57b91fb20c1bee82662a0e0dd5a8ca7c7ba7782865d0bc6c0e07abf4e5a74f74",
+      "bytes": 31859
+    },
+    {
+      "path": "netbsd-11/sys/dev/wsfb/genfbvar.h",
+      "url": "https://raw.githubusercontent.com/NetBSD/src/netbsd-11/sys/dev/wsfb/genfbvar.h",
+      "sha256": "72a4996d89c5e9801b44cf948b0a2e08cb60cc30336dafaf382a6e0ada6d9f11",
+      "bytes": 3886
+    },
+    {
+      "path": "netbsd-11/sys/kern/init_main.c",
+      "url": "https://raw.githubusercontent.com/NetBSD/src/netbsd-11/sys/kern/init_main.c",
+      "sha256": "e03e539865264b9282d2f28e6627a410ba0be7877cbeec7440f1a33f30825de8",
+      "bytes": 29953
+    },
+    {
+      "path": "netbsd-11/usr.bin/config/mkmakefile.c",
+      "url": "https://raw.githubusercontent.com/NetBSD/src/netbsd-11/usr.bin/config/mkmakefile.c",
+      "sha256": "4674875fc8ad3af8925757f61259cd9fce681301244369068c95243d532f9412",
+      "bytes": 15228
+    }
+  ]
+}

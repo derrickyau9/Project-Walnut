@@ -1,0 +1,25 @@
+{
+  "raw_sha256": "ed84cce5eb14da514732f88909d0baee8f22266a3f837569185b30f855e1394e",
+  "run": "1dea85c94c834a2d98c5e7763f957956",
+  "qemu_pid": 799358,
+  "actions": [
+    {
+      "label": "Back to shot",
+      "x": 705,
+      "y": 23,
+      "mouse_button_pairs": 1
+    },
+    {
+      "label": "One explicit synthetic shutter",
+      "x": 748,
+      "y": 458,
+      "mouse_button_pairs": 1
+    },
+    {
+      "label": "Playback",
+      "x": 192,
+      "y": 568,
+      "mouse_button_pairs": 1
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+test_all_rx_channels (__main__.PackageTests.test_all_rx_channels) ... ok
+test_raw14_frame (__main__.PackageTests.test_raw14_frame) ... ok
+test_unknowns_remain_unknown (__main__.PackageTests.test_unknowns_remain_unknown) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK

@@ -1,0 +1,32 @@
+{
+  "reviewed_at_utc": "2026-11-05T09:37:42Z",
+  "review_method": "Parent/root agent independently opened official AMD and Sony primary PDFs during this integration session; findings communicated to hardware integration agent.",
+  "amd": {
+    "title": "ZCU102 Evaluation Board User Guide UG1182 v1.7",
+    "publication_date": "2023-02-21",
+    "url": "https://docs.amd.com/api/khub/documents/rt6tROKcAceWoROXFPMY5w/content",
+    "tables": ["3-44", "3-45"],
+    "pages": [96, 97],
+    "checked": "All 8 imported J5 HPC0 mezzanine-to-carrier RX P/N pairs match the official host pin table.",
+    "host_rx_pairs": [
+      {"channel":0,"j5_p":"C6","j5_n":"C7","fpga_p":"H2","fpga_n":"H1"},
+      {"channel":1,"j5_p":"A2","j5_n":"A3","fpga_p":"J4","fpga_n":"J3"},
+      {"channel":2,"j5_p":"A6","j5_n":"A7","fpga_p":"F2","fpga_n":"F1"},
+      {"channel":3,"j5_p":"A10","j5_n":"A11","fpga_p":"K2","fpga_n":"K1"},
+      {"channel":4,"j5_p":"A14","j5_n":"A15","fpga_p":"L4","fpga_n":"L3"},
+      {"channel":5,"j5_p":"A18","j5_n":"A19","fpga_p":"P2","fpga_n":"P1"},
+      {"channel":6,"j5_p":"B16","j5_n":"B17","fpga_p":"T2","fpga_n":"T1"},
+      {"channel":7,"j5_p":"B12","j5_n":"B13","fpga_p":"M2","fpga_n":"M1"}
+    ],
+    "vadj_fmc_options_V": [1.2, 1.5, 1.8],
+    "other_observations": ["GBTCLK0 D4/D5 to G8/G7", "GBTCLK1 B20/B21 to L8/L7", "Carrier documentation describes series AC coupling"],
+    "limits": ["No sensor lane order established", "No actual board revision confirmed", "No sensor PHY/coupling/termination or GT reference frequency released", "3.3V control accessory is not approved for direct FMC connection"]
+  },
+  "sony": {
+    "title": "IMX410CQK Product Information v1.0 (2018)",
+    "url": "https://www.sony-semicon.com/files/62/pdf/p-13_IMX410CQK_Flyer.pdf",
+    "checked": {"active_pixels":[6064,4040],"mode0_bits":14,"mode0_fps":19.2,"advertised_SLVS_EC_lanes":8,"input_clock_MHz":72,"package_description":"294-pin LGA","page2_chip_size_mm_not_package_extents":[41.071,30.815]},
+    "mechanical_consequence": "Mechanical concept sensor placeholder 40x28mm is smaller than the listed chip in both directions and cannot validate IMX410 fit.",
+    "limits": ["No complete pinout", "No package/datum/land-pattern drawing", "No supply sequencing, complete mode registers or current budget", "No complete receiver PHY design or publishing rights established"]
+  }
+}

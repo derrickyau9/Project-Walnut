@@ -1,0 +1,7 @@
+test_metadata_traceability_and_exact_reference_pixels (tests.test_native_worker.NativeWorkerTests.test_metadata_traceability_and_exact_reference_pixels) ... ok
+test_tifffile_cfa_crop_color_and_exif (tests.test_native_worker.NativeWorkerTests.test_tifffile_cfa_crop_color_and_exif) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.128s
+
+OK

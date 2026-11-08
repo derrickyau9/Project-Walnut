@@ -1,0 +1,17 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://hasslefree.example/contracts/v2/calibration-binding.schema.json",
+  "title":"HF-Sim immutable calibration binding artifact v1",
+  "type":"object",
+  "additionalProperties":false,
+  "required":["binding_schema_version","binding_id","sensor_id","package_checksum","package_payload","hardware_calibrated","pixel_corrections_applied"],
+  "properties":{
+    "binding_schema_version":{"const":1},
+    "binding_id":{"type":"string","pattern":"^cb1-[0-9a-f]{64}$"},
+    "sensor_id":{"const":"HF-Sim"},
+    "package_checksum":{"type":"string","pattern":"^sha256:[0-9a-f]{64}$"},
+    "package_payload":{"type":"string","minLength":1,"maxLength":65536,"description":"Exact ASCII JSON bytes of a strict standalone v1 package without checksum. Runtime validators parse semantics and verify SHA256; JSON Schema alone cannot verify those checks."},
+    "hardware_calibrated":{"const":false},
+    "pixel_corrections_applied":{"const":false}
+  }
+}

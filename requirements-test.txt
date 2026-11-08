@@ -1,0 +1,8 @@
+# Optional independent decoders and JSON Schema validator; not runtime requirements.
+# Use Python 3.12 for the complete pinned binary-wheel test environment.
+numpy==1.26.4
+tifffile==2023.4.12
+rawpy==0.28.0
+jsonschema==4.23.0
+websocket-client==1.8.0
+zstandard==0.23.0

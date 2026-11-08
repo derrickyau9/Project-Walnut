@@ -1,0 +1,455 @@
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
+Provenance verification passed: 5 archives / 313 extracted files
+{
+  "status": "PASS for static consistency only",
+  "reviewed_at_utc": "2026-11-05",
+  "python_sources_ast_parsed": 21,
+  "pcb": {
+    "footprints": 19,
+    "electrical_components": 15,
+    "pin_net_assignments": 35,
+    "segments": 272,
+    "vias": 5,
+    "j1_pin_nets": {
+      "1": "/V3V3",
+      "2": "/GND",
+      "3": "/HALF_N",
+      "4": "/FULL_N",
+      "5": "/RESET_N",
+      "6": "/GND"
+    },
+    "mounting_holes": [
+      {
+        "ref": "H1",
+        "at": [
+          "53",
+          "53"
+        ],
+        "drills": [
+          [
+            "2.7"
+          ]
+        ]
+      },
+      {
+        "ref": "H2",
+        "at": [
+          "107",
+          "53"
+        ],
+        "drills": [
+          [
+            "2.7"
+          ]
+        ]
+      },
+      {
+        "ref": "H3",
+        "at": [
+          "53",
+          "89"
+        ],
+        "drills": [
+          [
+            "2.7"
+          ]
+        ]
+      },
+      {
+        "ref": "H4",
+        "at": [
+          "107",
+          "89"
+        ],
+        "drills": [
+          [
+            "2.7"
+          ]
+        ]
+      }
+    ],
+    "source_schematic_refs": [
+      "R1",
+      "SW1",
+      "R3",
+      "C2",
+      "R2",
+      "SW2",
+      "R4",
+      "C3",
+      "J1",
+      "C4",
+      "#FLG01",
+      "#FLG02",
+      "U1",
+      "C1",
+      "R5",
+      "R6",
+      "D1",
+      "H1",
+      "H2",
+      "H3",
+      "H4"
+    ],
+    "schematic_labels": [
+      "FULL_N",
+      "FULL_N",
+      "FULL_RAW",
+      "GND",
+      "GND",
+      "GND",
+      "GND",
+      "GND",
+      "GND",
+      "GND",
+      "GND",
+      "GND",
+      "GND",
+      "HALF_N",
+      "HALF_N",
+      "HALF_RAW",
+      "LED_A",
+      "RESET_N",
+      "RESET_N",
+      "V3V3",
+      "V3V3",
+      "V3V3",
+      "V3V3",
+      "V3V3",
+      "V3V3",
+      "V3V3",
+      "V3V3"
+    ],
+    "source_pcb_netlist_parity": true,
+    "schematic_connectivity_regeneration": false
+  },
+  "mechanical": {
+    "active_revision": "0.3",
+    "historical_v01_stl_bounds_mm": {
+      "07_e_mount_reference_flange": [
+        -35.0,
+        -35.0,
+        16.0,
+        35.0,
+        35.0,
+        18.0
+      ],
+      "09_ef_mount_reference_flange": [
+        -35.0,
+        -35.0,
+        42.0,
+        35.0,
+        35.0,
+        44.0
+      ],
+      "12_sensor_active_36x24": [
+        -18.0,
+        -12.0,
+        -0.15000000596046448,
+        18.0,
+        12.0,
+        0.0
+      ],
+      "16_control_board_provisional_envelope": [
+        -22.0,
+        -21.0,
+        -37.0,
+        38.0,
+        21.0,
+        -35.400001525878906
+      ]
+    },
+    "historical_v02": {
+      "status": "static_source_mesh_and_report_consistency_only",
+      "mesh_groups_inspected": 29,
+      "maximum_STL_vs_supplied_manifest_bounds_difference_mm": 2.1853144431815963e-06,
+      "selected_stl_bounds_mm": {
+        "07_e_mount_reference_flange": [
+          -37.0,
+          -37.0,
+          16.0,
+          37.0,
+          37.0,
+          18.0
+        ],
+        "09_ef_mount_reference_flange": [
+          -37.0,
+          -37.0,
+          42.0,
+          37.0,
+          37.0,
+          44.0
+        ],
+        "11_sensor_package_placeholder": [
+          -20.0,
+          -14.0,
+          -2.0,
+          20.0,
+          14.0,
+          -0.15000000596046448
+        ],
+        "12_sensor_active_36x24": [
+          -18.0,
+          -12.0,
+          -0.15000000596046448,
+          18.0,
+          12.0,
+          0.0
+        ],
+        "14_heat_spreader_placeholder": [
+          -28.0,
+          -24.0,
+          -23.0,
+          28.0,
+          24.0,
+          -21.0
+        ],
+        "16_control_board_provisional_envelope": [
+          -22.0,
+          -21.0,
+          -37.0,
+          38.0,
+          21.0,
+          -35.400001525878906
+        ]
+      },
+      "independently_inspected_sensor_placeholder_mm": [
+        40,
+        28
+      ],
+      "independently_inspected_Z_gap_to_thermal_reservation_mm": 19.0,
+      "shared_board_STEP_identical": true,
+      "supplied_report_only": {
+        "part_groups": 29,
+        "part_pairs_per_variant": 351,
+        "service_paths": [
+          "Battery downward service",
+          "Storage outward service",
+          "Sensor bridge rear service",
+          "Control PCB and rails rear service"
+        ],
+        "engineering_release_ready": false
+      },
+      "cad_intersections_or_sweeps_rerun": false,
+      "limits": [
+        "No actual sensor package or optical stack",
+        "No validated E/EF bayonet/lens fit",
+        "HUMI Z12 remains an assumption",
+        "Thermal path unbridged",
+        "No populated electronics/cable/retaining-hardware fit",
+        "No tolerance-stack or manufacturing release"
+      ]
+    },
+    "v03": {
+      "status": "static_source_mesh_keepout_and_report_consistency_only",
+      "mesh_groups_inspected": 32,
+      "maximum_STL_vs_supplied_manifest_bounds_difference_mm": 2.1853144431815963e-06,
+      "selected_stl_bounds_mm": {
+        "07_e_mount_reference_flange": [
+          -37.0,
+          -37.0,
+          16.0,
+          37.0,
+          37.0,
+          18.0
+        ],
+        "09_ef_mount_reference_flange": [
+          -37.0,
+          -37.0,
+          42.0,
+          37.0,
+          37.0,
+          44.0
+        ],
+        "11_sensor_package_placeholder": [
+          -20.0,
+          -14.0,
+          -2.0,
+          20.0,
+          14.0,
+          -0.15000000596046448
+        ],
+        "14_heat_spreader_placeholder": [
+          -38.0,
+          -24.0,
+          -25.0,
+          56.0,
+          28.0,
+          -4.0
+        ],
+        "32_thermal_adjustable_landing": [
+          38.0,
+          8.0,
+          -16.0,
+          46.0,
+          14.0,
+          -2.0
+        ],
+        "33_thermal_clamp_screw_reservation": [
+          39.5,
+          4.0,
+          -12.5,
+          44.5,
+          12.5,
+          -7.5
+        ],
+        "34_thermal_clamp_nut_reservation": [
+          39.0,
+          9.5,
+          -13.0,
+          45.0,
+          12.0,
+          -7.0
+        ]
+      },
+      "keepout_stl_bounds_mm": {
+        "chip_corridor": [
+          -20.535499572753906,
+          -15.407500267028809,
+          -21.0,
+          20.535499572753906,
+          15.407500267028809,
+          0.0
+        ],
+        "guard": [
+          -22.535499572753906,
+          -17.407499313354492,
+          -21.0,
+          22.535499572753906,
+          17.407499313354492,
+          0.0
+        ]
+      },
+      "nominal_exported_landing_and_clamp_AABB_separation_from_guard_mm": {
+        "32_thermal_adjustable_landing": 15.464500427246094,
+        "33_thermal_clamp_screw_reservation": 16.964500427246094,
+        "34_thermal_clamp_nut_reservation": 16.464500427246094
+      },
+      "published_chip_XY_only_mm": [
+        41.071,
+        30.815
+      ],
+      "guard_XY_mm": [
+        45.071,
+        34.815
+      ],
+      "guard_Z_is_provisional_routing_bay_not_package_height": true,
+      "sensor_placeholder_mm": [
+        40,
+        28
+      ],
+      "nominal_axial_routing_span_mm": 19,
+      "shared_board_STEP_identical": true,
+      "supplied_report_only": {
+        "part_groups": 32,
+        "part_pairs_per_variant": 435,
+        "service_paths": [
+          "Battery downward service",
+          "Storage outward service",
+          "Sensor bridge rear service",
+          "Control PCB and rails rear service",
+          "Whole thermal module rear service"
+        ],
+        "thermal_adjustment_positions_z_mm": [
+          -5,
+          -4,
+          -3,
+          -2,
+          -1
+        ],
+        "parameter_regression_cases": 14,
+        "engineering_release_ready": false
+      },
+      "cad_intersections_service_sweeps_parameter_cases_and_thermal_positions_rerun": false,
+      "sensor_heat_connection_complete": false,
+      "thermal_performance_validated": false,
+      "limits": [
+        "Actual sensor package and approved heat interface unknown",
+        "Chip-sized routing exclusion is not a package model",
+        "Thermal adjustment sampled at five supplied positions, not continuous swept range verification",
+        "No thermal contact resistance, preload, thermoelastic or temperature validation",
+        "No real fastening, lens fit, tolerance-stack or manufacturing release"
+      ]
+    }
+  },
+  "sensor": {
+    "persisted_budget_recomputed": [
+      {
+        "mode": "mode0_full14",
+        "packed_frame_bytes": 42872480.0,
+        "container16_frame_bytes": 48997120,
+        "active_payload_bits_per_second": 6585212928.0,
+        "packed_active_MB_per_second": 823.151616,
+        "container16_MB_per_second": 940.744704,
+        "four_frame_buffer16_bytes": 195988480,
+        "one_write_one_read_container16_GB_per_second": 1.881489408
+      },
+      {
+        "mode": "mode2_full12",
+        "packed_frame_bytes": 36747840.0,
+        "container16_frame_bytes": 48997120,
+        "active_payload_bits_per_second": 11929818777.6,
+        "packed_active_MB_per_second": 1491.2273472,
+        "container16_MB_per_second": 1988.3031296,
+        "four_frame_buffer16_bytes": 195988480,
+        "one_write_one_read_container16_GB_per_second": 3.9766062592
+      },
+      {
+        "mode": "mode5_crop12",
+        "packed_frame_bytes": 13478400.0,
+        "container16_frame_bytes": 17971200,
+        "active_payload_bits_per_second": 10520699904.0,
+        "packed_active_MB_per_second": 1315.087488,
+        "container16_MB_per_second": 1753.4499839999999,
+        "four_frame_buffer16_bytes": 71884800,
+        "one_write_one_read_container16_GB_per_second": 3.5068999679999995
+      }
+    ],
+    "csv_xdc_consistent": true,
+    "csv_matches_independent_primary_review": true,
+    "primary_source_pinout_validation": "Official AMD UG1182 v1.7 tables 3-44/45 independently reviewed in this session; see primary-source-review.json; sensor lane order/PHY still unverified"
+  },
+  "supplied_checksum_manifests": [
+    {
+      "package": "hasslefree-ff1-pcb",
+      "files_verified": 35
+    },
+    {
+      "package": "ff1-sensor-integration",
+      "files_verified": 12
+    }
+  ],
+  "tools_available": {
+    "cadquery": false,
+    "pcbnew": false
+  },
+  "not_performed": [
+    "KiCad ERC/DRC rerun",
+    "CadQuery B-rep regeneration",
+    "FPGA synthesis/implementation/timing",
+    "electrical bench tests",
+    "optical alignment",
+    "mechanical fit",
+    "supplier approval",
+    "fabrication"
+  ]
+}
+{
+  "verified": [
+    "sqlite/sqlite3.c",
+    "sqlite/sqlite3.h",
+    "nlohmann/json.hpp",
+    "nlohmann/LICENSE.MIT"
+  ],
+  "sqlite_version": "3.54.1",
+  "nlohmann_json_version": "3.12.0"
+}
+{'python': '3.12.7', 'numpy': '1.26.4', 'tifffile': '2023.4.12', 'rawpy': '0.28.0', 'libraw': (0, 22, 2)}
+ALL CLEAN SUPPLEMENTAL CHECKS PASSED

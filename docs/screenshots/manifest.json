@@ -1,0 +1,1171 @@
+{
+  "format": "Project-HassleFree-bilingual-UI-gallery-v1",
+  "passed": true,
+  "scope": "Actual Windows Qt offscreen rendering with a freshly built native HF-Sim authority; not physical Pi/display/sensor validation",
+  "language_pairs": 47,
+  "images": 94,
+  "same_feature_keys_and_sources": true,
+  "PNG_bytes_unchanged": true,
+  "runtime": {
+    "system": "Windows",
+    "machine": "AMD64",
+    "qt": "5.15.2",
+    "pyqt": "5.15.10",
+    "qpa": "offscreen",
+    "width": 960,
+    "height": 600,
+    "font_family": "Noto Sans CJK SC"
+  },
+  "native_sha256": "920c7b8283fac6cbd41adcad307b76e637e48e349512c15639802b1f68bbe928",
+  "source_sha256": {
+    "ui/on-device/AnimatedPageLoader.qml": "b453b7658b1e661c30c008b86f6bca9320b669d005d131675b2d29c0e927803e",
+    "ui/on-device/AppsWorkspace.qml": "b7de5a01c5e6c981fcf64cf9fcb3507b077363bb73bd5584f8ef147b061c68f2",
+    "ui/on-device/apps_controller.py": "54ec3d9d69612761262290e8706560fc36ca2a40dcc01594d12f4a1bf985b9d8",
+    "ui/on-device/BootSplash.qml": "2dbe3fc54f2052b8a5a46de76c3df91a786f464eaad7c4f9007e582fd382a8e7",
+    "ui/on-device/boot_status.py": "a095ad0ac84a1589cab3294ba9657e964335131ffca1be6b99da3e980ca4983f",
+    "ui/on-device/CameraMenu.qml": "bc364a13c41a277099b531457a6db7a4112e336b3b78d4607310326600d2654f",
+    "ui/on-device/CameraPlayback.qml": "cfed7dfa8c6c727b2dc911f9bd35cff8edb18842a9c3b61af1e3bfb36393bb4d",
+    "ui/on-device/CameraTaskbar.qml": "af008b227b3a6a1370550b6248b3c11a4ba679bce45f872238e19d5785b93ef2",
+    "ui/on-device/camera_capabilities.py": "063952d3acaba42818a733bba60b681bf4e31a2ac469700d8bca5e2ea5acb6f6",
+    "ui/on-device/camera_link.py": "6fb5cac7a2f30c84165716760de6ee59f01b06b11deba77f7d46b370f4aafb0f",
+    "ui/on-device/CapabilityPage.qml": "54db1cf92d2167289bbd18c51201220656bd09755436016ec413293d9ddd6be6",
+    "ui/on-device/Console.qml": "7023b631d42dceec9883e7c85e66f993807fc348b2d6f4362fa91e34f91c5f65",
+    "ui/on-device/controller.py": "8e575cd631ecd8eac0a023a2cd97a963fa450cb5a93f41dc7de48bb4201ac150",
+    "ui/on-device/DaOSDock.qml": "ed30845c1e37004dc9576f0ff879fbd993995679ba8cd5eecdc166fdb55037df",
+    "ui/on-device/DaOSIcon.qml": "2ae2072ee69fad0088bd92c2ddd83c694001c58fa3c2b68f1d225fa9ac8b1f5b",
+    "ui/on-device/ImageTools.qml": "194fe3caec64ea3af918c82ecd19af4ee169d1ecc5e97fa46429182328100a5b",
+    "ui/on-device/image_pipeline.py": "720ca528be4c2fe57370248840523801f111fdc300621923d25805e12f9b2492",
+    "ui/on-device/image_processing.py": "5298d074483bba117bfa58ada71b355214a8d1e192c90f59b571841fa082a7a3",
+    "ui/on-device/input_router.py": "8cb65fd7afdb01b4f6a574d3ad1ae12bd2d709303fbb4e46085f7f8163cc620a",
+    "ui/on-device/localization.py": "eee5e61ce1d582f9e50dfcbb31b2bbbde53d4f225b168b21794aefc6e472638b",
+    "ui/on-device/LocalizedComboBox.qml": "fbbe9323f00653f06f64d878f26761f541a17f53f2616ac8a46b1b366b761eab",
+    "ui/on-device/main.py": "c96a9a5da2fa772b2ecd3fb94940c10a7875eeff65e2b94ccf983db4b56c4619",
+    "ui/on-device/Main.qml": "ad55f5673551ebb2f11e5cc3f18d856e7f47b7013b0247a71b7f4582c25e4c36",
+    "ui/on-device/MediaButton.qml": "8fd4dbcb227d61769db8ec8eac92874a954c7436cd94e769df522a36f12a08ab",
+    "ui/on-device/MediaGallery.qml": "e7fc90b798bc474071e9ed6b723c2186baba2d4a7e12def1a85eb1e014eaa73a",
+    "ui/on-device/media_catalog.py": "5d768bfb1c99060ac336f1a3e0d9ed5f3821dae31d878a49bf299cc307033645",
+    "ui/on-device/media_library.py": "223d495e87739bc9b6d21acbe14e7f42fb45204eab91049f3357d24d40c647b8",
+    "ui/on-device/media_workspace.py": "cfb9b5edf9d67d748f8e156c6381eae5eefc0a8cbbb660888333eaa62bed2ab9",
+    "ui/on-device/MonochromeWindow.qml": "a9021a269568188bdfc110322aebb50e3beae072a1d22f6c2fcf8a775e991910",
+    "ui/on-device/NumericReadout.qml": "9c9efcc8e384bea461a2dbe47aa20e58c15a499cbf42239de6f3e7047a8dd0fc",
+    "ui/on-device/parameter_state.py": "4a4b58d8864e3701ef242d14bcb51ee4a0fbca9d423037c0ed8b0e70bb9cc9c0",
+    "ui/on-device/performance.py": "a202ca215ddedc57f6153e76b5b336600c6e9fa1b955ad03fac2b6b82e03fb74",
+    "ui/on-device/photo_styles.py": "deb1c70c0998626e84d9f8c3df4884e3e065b2e1605058d4aa160a4d697f252d",
+    "ui/on-device/pinyin_ime.py": "dd94e00432ba0179de9681b57fa1d967b1c52dc93db16448da0d8a20384d717c",
+    "ui/on-device/raw_analysis.py": "1b56ece21f7220a154add17bb3fba2eab877429b297204d2795dbf62f8889a3e",
+    "ui/on-device/RecipeWorkspace.qml": "2ee7ac953ddfe1cb49e1f28f69482a81a443f8749cead8eba09d0a3ca18dde21",
+    "ui/on-device/retail-theme.json": "88ee438bcafff191a4bb6bb38e762e939709693ab99c4fe8669d5e3840a217e2",
+    "ui/on-device/review_camera_first.py": "94f44a0ba32cb9f3389ca1fa9d7c2a4e14272459f56bb402dc3d1c310b392e8d",
+    "ui/on-device/review_capture.py": "29870c1842b55ae9400677a4f710cc345d9eca9a95de6df93e87004ab4d61e8c",
+    "ui/on-device/review_shell.py": "e714cddc68303be3a00b83cfc389fcc90f7802b4a95459805e68512af52100c0",
+    "ui/on-device/runtime_health.py": "f5a9a2089a6aac179daaa2ff6d71f725dcc4751bdc172af189718e1491cab987",
+    "ui/on-device/shell_model.py": "f1855bf4a5e6375005fccb2e1f71a8e31aff4b331510a60facc02963896542bb",
+    "ui/on-device/ShootingWorkspacePanel.qml": "a009e7db3a7d9f91eece2a18b51646cbdab9ce2a596c1730e63c53be082555b9",
+    "ui/on-device/shooting_workspace.py": "df1ed8cdfca8b03793ec67858d757175245d9b0323c75ca9bb2e529cb70980fd",
+    "ui/on-device/SoftKeyboard.qml": "31198839f2e28c06c4b22f0cb6dbcac7185b73028269ea796b7a96c307d0e34f",
+    "ui/on-device/soft_keyboard.py": "6e15c56f05993d86f9f98bcfb599c982355fc2fa762da81fa651927d545e9706",
+    "ui/on-device/SystemPage.qml": "f6d90ec10bdad1c282330fa8d538315c88d549d8a40c656aa89b11c046e8c5c6",
+    "ui/on-device/system_archive.py": "606629fb5aa5a9e594e53d3179fd125567b5ff954ab745dc6400142ea294e23b",
+    "ui/on-device/system_control.py": "1f244b095aa825e80abf695e09fbaacf45d2a9df33edf58cec60f342d475f454",
+    "ui/on-device/system_settings.py": "8936fd1fda5aca99594eeaaf258bc206c7d8d44824e8ea1614c0e6e16d96814c",
+    "ui/on-device/TasksPage.qml": "932ca57c86c2a4bc6285fb4fa4a901700b903a03dac709f6ecc681132f838463",
+    "ui/on-device/task_hub.py": "4661758108404f63dbeed2ed40e364b80557abe0b17a80d65a33b3fe00b1497c",
+    "ui/on-device/task_service.py": "332354418322f48a4f402c91e18042821b2ce88e5fb85e98a76916c9f83cbcd9",
+    "ui/on-device/TerminalPage.qml": "4e3d854c920c08b03d2c96767a5d9c67bdcae55ec5fb1c1024d82f0653dc7964",
+    "ui/on-device/terminal_exec.py": "780dbe2cd68d46b450299ff3f3db4876ede6e5f375c9c7cec86e607de9d006ff",
+    "ui/on-device/terminal_surface.py": "e66c67e377caa4de3fd17daa878ef11e2e4bca62adad1f3a924574e3a42305bc",
+    "ui/on-device/Typography.qml": "e26f537b0ce3b74a83e237af79fc50027e0e8cb0cd921a11e52df677bb41d6a0",
+    "ui/on-device/ui_palette.py": "34162e82a296718b5ef5b671ffe6455d173b04a7d2017a3bdef84b24577cf325",
+    "ui/on-device/WifiPage.qml": "2411451c006f42c88780da6040e6241bcbcd339869007d727e7eb6a4f93193fa",
+    "ui/on-device/workflow_helpers.py": "f1e045bbe3703bbe7e068bbcb41853512e1959b698029dacb718cfcd0fa70c32",
+    "ui/on-device/locales/en_US.json": "a42a5e3e83575b3de81a16cc5630a833c9aff368f18a741fcce190ddb65961c9",
+    "ui/on-device/locales/manifest.json": "54b46fafbd7b97db2ea6e7426e8072f6a24610c3e04b385bfbef162ed203ad7e",
+    "ui/on-device/locales/zh_CN.json": "f05f90c7f9f5663a3d0cdb515569af96545cdfd6183e7ec03725ea1b2d636934",
+    "ui/on-device/locales/en_US.qm": "1b82c5473abd7048d3b111977863c29521f3ecac1b6e5dd8d29306c04030e829",
+    "ui/on-device/locales/zh_CN.qm": "72ad7aefe720e3a34c60ec38fc855321df408f72c1d6e76f90f58f0afaabaa02",
+    "ui/on-device/fonts/NotoSansCJKsc-Medium.otf": "ca094f6b0001fb048ca39ddd797a0cdb0179e1e55c6561e111c49c3e6a61d7b7",
+    "ui/on-device/fonts/NotoSansCJKsc-Regular.otf": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b",
+    "tests/test_camera_first_ui.py": "cd87748775359edbc3369fca43dd23f73dff081514f7fd4b20b432a756fd59ca",
+    "tools/capture_readme_gallery.py": "3c379e90c257472eac811cbb3a0d4684fae29553290f016fbc7f827c49c371c8"
+  },
+  "native_source_sha256": {
+    "camera/native/CMakeLists.txt": "b2dfb12b26f0a7df512c349cba82c5ddd7e504aa161c1a1ffbe51a7e01361601",
+    "camera/native/src/calibration.cpp": "53a29d96fc083d7e0e0ed14febbd3d8e22257c07b50853b2b5ccdb83c0381fad",
+    "camera/native/src/camerad.cpp": "7d35594f501b45c668fa20a0a46fe4eb5ba5f4fa7c701fa0e417bee67b441c8a",
+    "camera/native/src/core.cpp": "f59bd9609ad19aed9fa5089637a78e6330f5e7455ebc3facfa887350f1268d3f",
+    "camera/native/src/daemon.cpp": "9ac9f7c73d3723ecdd509f2a15510dc0ac1e33ae16c8bab3d95689637fa8666d",
+    "camera/native/src/dng.cpp": "179025e008a7247669b9ebc091ae3f6f8544c52c9728ab3b945eca7be5bb2b13",
+    "camera/native/src/library_extension.inc": "f9a76090a104fd9825b6a07f4e8af426aa141c8ffa85c5b8a0b17ec81769d60a",
+    "camera/native/src/sha256.cpp": "0a1e3c17c4a2ed521df0627348ccd986a415880f678d3e38d82e5367378e9312",
+    "camera/native/src/worker.cpp": "266a6a6345d51b221eeec27eee0e99dab083ec6840e5b630ac636d53e14cf821",
+    "camera/native/include/hf/calibration.hpp": "89c43fdb1e1fb7af5a74e3d7d4798fa01bd35351eb23de4298daf319c6cb9cfc",
+    "camera/native/include/hf/core.hpp": "103a67b58d51956d0fc3f631ff3892ec317e976ca1c4dfc359ecadc236c6c6ba",
+    "camera/native/include/hf/daemon.hpp": "93cdf0862f48cbbf6491d9f2b275e8b4107510dd351101d73f70f7f57bdb242d",
+    "camera/native/include/hf/dng.hpp": "68ff5d64592a812141071a4d55ac997c321ecc049a69709a76042b1da3898bb8",
+    "camera/native/include/hf/sha256.hpp": "f0337d079b6737c34ec404d976a886a16f39c5bd865a483b39ddf2b7544010fa"
+  },
+  "physical_camera_display_network_or_GPIO_validated": false,
+  "limitations": [
+    "Windows desktop offscreen Qt rendering, not a photographed device display",
+    "Video Q is a layout; recording is unsupported by current backend",
+    "Desktop Wi-Fi/system/terminal unavailable states are genuine",
+    "No network service or pairing enabled; no credentials shown",
+    "Views demonstrate controls; screenshots are not proof every operation was executed"
+  ],
+  "entries": [
+    {
+      "key": "01-capture",
+      "title_en": "Capture and live preview",
+      "title_zh": "拍摄与实时预览",
+      "features": [
+        "capture",
+        "synthetic-preview",
+        "framing-grid",
+        "confirmed-settings"
+      ],
+      "en_US": {
+        "file": "en_US/01-capture.png",
+        "sha256": "6ab999718534aa3c927ceda0e0fd28c326b8265e28a6f1a1671060e6b3a74f6d"
+      },
+      "zh_CN": {
+        "file": "zh_CN/01-capture.png",
+        "sha256": "81e1c6a66c877952b156d9e8b571bed563b4403d16072b850d1c3aa3fe2e3aa3"
+      },
+      "width": 960,
+      "height": 600
+    },
+    {
+      "key": "02-taskbar",
+      "title_en": "Application taskbar",
+      "title_zh": "应用任务栏",
+      "features": [
+        "taskbar",
+        "camera-navigation",
+        "app-navigation"
+      ],
+      "en_US": {
+        "file": "en_US/02-taskbar.png",
+        "sha256": "b773c1021700f1299e9e941c6deb9425ed46d2deeaa405f2409abde27b41a4b2"
+      },
+      "zh_CN": {
+        "file": "zh_CN/02-taskbar.png",
+        "sha256": "279d11efd9d1c7b1d30d904834203c18999206ec5f5766f27ebf855aea5403e0"
+      },
+      "width": 960,
+      "height": 600
+    },
+    {
+      "key": "03-exposure-editor",
+      "title_en": "Exposure and analogue gain",
+      "title_zh": "曝光与增益",
+      "features": [
+        "exposure",
+        "analogue-gain",
+        "confirmed-control"
+      ],
+      "en_US": {
+        "file": "en_US/03-exposure-editor.png",
+        "sha256": "e00719b243f853b1015c551a1d07a3ff1520c7f44989697608a3a105042642e1"
+      },
+      "zh_CN": {
+        "file": "zh_CN/03-exposure-editor.png",
+        "sha256": "8547b0d69bf92883904ac7e5a875c5a752f80983096d5186411ea384bf350847"
+      },
+      "width": 960,
+      "height": 600
+    },
+    {
+      "key": "04-quick-photo",
+      "title_en": "Photo quick controls",
+      "title_zh": "照片十二格快捷面板",
+      "features": [
+        "photo-Q",
+        "12-custom-slots",
+        "direct-parameter-control"
+      ],
+      "en_US": {
+        "file": "en_US/04-quick-photo.png",
+        "sha256": "c85fee6eb466e62a48363c0b00a70a4539a0cead68c0eaf05549d36b2dce0ac4"
+      },
+      "zh_CN": {
+        "file": "zh_CN/04-quick-photo.png",
+        "sha256": "e671a561e4d171d87503aa5a3160f9bf10bab4ed00ef366c9e9443e18581c465"
+      },
+      "width": 960,
+      "height": 600
+    },
+    {
+      "key": "05-quick-video",
+      "title_en": "Video layout and capability limits",
+      "title_zh": "视频布局与能力边界",
+      "features": [
+        "video-Q-layout",
+        "unsupported-recording-reason"
+      ],
+      "en_US": {
+        "file": "en_US/05-quick-video.png",
+        "sha256": "6911c3779c4edbc980dd7fb207fe678621d2f305a01c89547022606e6de39bfa"
+      },
+      "zh_CN": {
+        "file": "zh_CN/05-quick-video.png",
+        "sha256": "3fcb0779f9652d0a50783d10bba8ae479b4949c9dc73d3df51a1fc1085649973"
+      },
+      "width": 960,
+      "height": 600
+    },
+    {
+      "key": "06-quick-assignment",
+      "title_en": "Quick-control assignment",
+      "title_zh": "快捷功能分配",
+      "features": [
+        "quick-slot-assignment",
+        "available-actions",
+        "unavailable-reasons"
+      ],
+      "en_US": {
+        "file": "en_US/06-quick-assignment.png",
+        "sha256": "14c7bea1b4587c1bf609f52a6ae68739dcbd191035009a6e9427acd6d3c6ceb5"
+      },
+      "zh_CN": {
+        "file": "zh_CN/06-quick-assignment.png",
+        "sha256": "e71f07fd0bec25ce62912b3b13b8d63a95ce0af7c60815e8729322628d47d2ab"
+      },
+      "width": 960,
+      "height": 600
+    },
+    {
+      "key": "07-my-menu",
+      "title_en": "My Menu",
+      "title_zh": "我的菜单",
+      "features": [
+        "favorites",
+        "pinned-tools",
+        "favorites-management"
+      ],
+      "en_US": {
+        "file": "en_US/07-my-menu.png",
+        "sha256": "cc609c625b9738040368a0487e32083960d84f08e2972c1a7a4129025ddbb9cd"
+      },
+      "zh_CN": {
+        "file": "zh_CN/07-my-menu.png",
+        "sha256": "5a0aacdacdc1ee8f0bb5d5dc6047bf44fb26d945b646bd3e46a9768ab280dba3"
+      },
+      "width": 960,
+      "height": 600
+    },
+    {
+      "key": "08-custom-profiles",
+      "title_en": "C1–C3 custom profiles",
+      "title_zh": "C1–C3 记忆",
+      "features": [
+        "C1",
+        "C2",
+        "C3",
+        "save-confirmed-settings",
+        "load-profile"
+      ],
+      "en_US": {
+        "file": "en_US/08-custom-profiles.png",
+        "sha256": "28ba7f298a9e7f22e7cbe5701f353d5b7bcc95d01f1c4ce4bc49469bce33dc84"
+      },
+      "zh_CN": {
+        "file": "zh_CN/08-custom-profiles.png",
+        "sha256": "e102f02db6ac06a67e9c6bb97a62ebe23309422d36d6812d2997d015588e6bd7"
+      },
+      "width": 960,
+      "height": 600
+    },
+    {
+      "key": "09-input-mappings",
+      "title_en": "Fn and dial mappings",
+      "title_zh": "Fn 与拨轮映射",
+      "features": [
+        "Fn1",
+        "Fn2",
+        "dial",
+        "hold-actions",
+        "taskbar-autohide",
+        "reduced-motion"
+      ],
+      "en_US": {
+        "file": "en_US/09-input-mappings.png",
+        "sha256": "4eeb9272a6ca888485a111e5876c370f7cd3d90c9c1c6c3471d8454e654897c1"
+      },
+      "zh_CN": {
+        "file": "zh_CN/09-input-mappings.png",
+        "sha256": "6a6cdedce49486f1f876a6ef66f5eb839b37a28473f28abc0d04a48d6e946f55"
+      },
+      "width": 960,
+      "height": 600
+    },
+    {
+      "key": "10-layout-import",
+      "title_en": "Workspace configuration sharing",
+      "title_zh": "工作台配置分享",
+      "features": [
+        "layout-presets",
+        "export-workspace",
+        "import-workspace"
+      ],
+      "en_US": {
+        "file": "en_US/10-layout-import.png",
+        "sha256": "d22a9123cd664f6eb9c76c6033a887ebbf91bc1f9b5cc0d962309205407657d9"
+      },
+      "zh_CN": {
+        "file": "zh_CN/10-layout-import.png",
+        "sha256": "67495733795928e84daec923b3988734ce61aff67d6faf0d40a23617e4f3bff9"
+      },
+      "width": 960,
+      "height": 600
+    },
+    {
+      "key": "11-exposure-menu",
+      "title_en": "Exposure settings",
+      "title_zh": "曝光菜单",
+      "features": [
+        "manual-exposure",
+        "shutter",
+        "gain"
+      ],
+      "en_US": {
+        "file": "en_US/11-exposure-menu.png",
+        "sha256": "e195205b3f9984bb63b68e5dcfeeb7f43a04224c552c856fd7ca77d757350ba7"
+      },
+      "zh_CN": {
+        "file": "zh_CN/11-exposure-menu.png",
+        "sha256": "24876e348d5d5fd1d4b1ec795c66cebc0dc31de79597ff495a90c0d6a0435e6c"
+      },
+      "width": 960,
+      "height": 600
+    },
+    {
+      "key": "12-image-raw",
+      "title_en": "Image and RAW",
+      "title_zh": "图像与 RAW",
+      "features": [
+        "sensor-mode",
+        "Bayer",
+        "DNG",
+        "RAW-capabilities"
+      ],
+      "en_US": {
+        "file": "en_US/12-image-raw.png",
+        "sha256": "cc1e54e2ffb20104df5d37bac6d66690c58eb1babc4ce5578dba65a6e68f249b"
+      },
+      "zh_CN": {
+        "file": "zh_CN/12-image-raw.png",
+        "sha256": "f85f6459f1064dcb73078f75a35689a23cf67fdfabacb5eec5f0e0aa69e936d6"
+      },
+      "width": 960,
+      "height": 600
+    },
+    {
+      "key": "13-display",
+      "title_en": "Display and framing",
+      "title_zh": "显示与构图",
+      "features": [
+        "theme",
+        "preview-brightness",
+        "grid"
+      ],
+      "en_US": {
+        "file": "en_US/13-display.png",
+        "sha256": "b102dec82bab41d0302bd18308711513b2f487a96cd20a77b803d6307bd02c74"
+      },
+      "zh_CN": {
+        "file": "zh_CN/13-display.png",
+        "sha256": "ae049936d34b4a6e6fec4cf97ca9d7dda1f6e266ac0de4767077e4a49462a204"
+      },
+      "width": 960,
+      "height": 600
+    },
+    {
+      "key": "14-storage",
+      "title_en": "Storage information",
+      "title_zh": "存储信息",
+      "features": [
+        "storage-capacity",
+        "saved-captures",
+        "storage-limitations"
+      ],
+      "en_US": {
+        "file": "en_US/14-storage.png",
+        "sha256": "fe279dcf75967dae5601b219404e0f3665a3c12e8678fa3bd8a0a6774449dd68"
+      },
+      "zh_CN": {
+        "file": "zh_CN/14-storage.png",
+        "sha256": "393beefd2fc217ff75c04f36c4e6b2aba9919e93bd85111a60464cfee263b090"
+      },
+      "width": 960,
+      "height": 600
+    },
+    {
+      "key": "15-wifi",
+      "title_en": "Wireless network",
+      "title_zh": "无线网络",
+      "features": [
+        "wifi-settings",
+        "desktop-service-unavailable"
+      ],
+      "en_US": {
+        "file": "en_US/15-wifi.png",
+        "sha256": "d939ef4da5f7fb2a56ea508340b1a6ced8b7cf5a76e8a58dda0a55896c9046bf"
+      },
+      "zh_CN": {
+        "file": "zh_CN/15-wifi.png",
+        "sha256": "b9988f99ac3cc3ca3c60cf313ac76b956b24e79c6a2c335bdd6503d074079963"
+      },
+      "width": 960,
+      "height": 600
+    },
+    {
+      "key": "16-system",
+      "title_en": "System preferences",
+      "title_zh": "系统偏好",
+      "features": [
+        "language",
+        "timezone",
+        "idle-screen",
+        "clock",
+        "safe-power-actions"
+      ],
+      "en_US": {
+        "file": "en_US/16-system.png",
+        "sha256": "34ea51ea5586d2d2f25cb3a01391d0c500bcf894be33db5d2650a0102935e415"
+      },
+      "zh_CN": {
+        "file": "zh_CN/16-system.png",
+        "sha256": "1ebd40ea228613d4cecf15d58ff7f466d89bfe2bed7fc0135bbd63169f6188a7"
+      },
+      "width": 960,
+      "height": 600
+    },
+    {
+      "key": "17-backup",
+      "title_en": "Configuration backup and restore",
+      "title_zh": "配置备份与恢复",
+      "features": [
+        "backup",
+        "backup-inspection",
+        "restore-confirmation"
+      ],
+      "en_US": {
+        "file": "en_US/17-backup.png",
+        "sha256": "777e397c3e1f2a8e543c48c1d9de280e632d6dcbeb282447212b3a33a755714f"
+      },
+      "zh_CN": {
+        "file": "zh_CN/17-backup.png",
+        "sha256": "a02533dd317a368197624be23e4bace252aad5d6cd63c4281e1ea361d3ae3c61"
+      },
+      "width": 960,
+      "height": 600
+    },
+    {
+      "key": "18-updates",
+      "title_en": "Application update and rollback",
+      "title_zh": "应用更新与回退",
+      "features": [
+        "update-inspection",
+        "SHA256",
+        "version-rollback"
+      ],
+      "en_US": {
+        "file": "en_US/18-updates.png",
+        "sha256": "d001e671b1dbf903aab10cd246341f1e6fa9a1d8138cb7e2ff3a68ecf7c421f7"
+      },
+      "zh_CN": {
+        "file": "zh_CN/18-updates.png",
+        "sha256": "0b024c05a0a90c6e11cb4058b3e91a244addf1f5901c9ffc5dbce50c2a284859"
+      },
+      "width": 960,
+      "height": 600
+    },
+    {
+      "key": "19-developer",
+      "title_en": "Developer and diagnostics",
+      "title_zh": "开发与诊断",
+      "features": [
+        "developer-mode",
+        "authorized-USB",
+        "diagnostic-export"
+      ],
+      "en_US": {
+        "file": "en_US/19-developer.png",
+        "sha256": "a8066b2187f8ab57a8738a51b370c749b7cddbe5435338ed32dde139cc6db74a"
+      },
+      "zh_CN": {
+        "file": "zh_CN/19-developer.png",
+        "sha256": "403c2f10f45299191d96aafa3d37782672ba8a26b5f47976c50ad5c47f6bf0f8"
+      },
+      "width": 960,
+      "height": 600
+    },
+    {
+      "key": "20-link",
+      "title_en": "Controlled tethering",
+      "title_zh": "受控联机",
+      "features": [
+        "USB-controlled-interface",
+        "local-takeover",
+        "pairing-disabled",
+        "LAN-disabled"
+      ],
+      "en_US": {
+        "file": "en_US/20-link.png",
+        "sha256": "18bfbae6f4f6fcf2cf1d488f80bc20a17f5cd1892a50ccae2495680620e51bc3"
+      },
+      "zh_CN": {
+        "file": "zh_CN/20-link.png",
+        "sha256": "634b728776989f4b2d45028561aa88a78cc220c0038cf3217fdc664fa4b44bf1"
+      },
+      "width": 960,
+      "height": 600
+    },
+    {
+      "key": "21-terminal",
+      "title_en": "Terminal entry",
+      "title_zh": "终端入口",
+      "features": [
+        "terminal",
+        "POSIX-required-desktop-state",
+        "terminal-shortcuts"
+      ],
+      "en_US": {
+        "file": "en_US/21-terminal.png",
+        "sha256": "6af8465f80a5f17b3522198d058284dd66cbc6a256652aef2ad7333b959d029b"
+      },
+      "zh_CN": {
+        "file": "zh_CN/21-terminal.png",
+        "sha256": "82e8cd1ee4ae48855186eb44909f32fe937f76513b68a4bf17393ad8ccd2807c"
+      },
+      "width": 960,
+      "height": 600
+    },
+    {
+      "key": "22-touch-keyboard",
+      "title_en": "Touch keyboard",
+      "title_zh": "触摸键盘",
+      "features": [
+        "soft-keyboard",
+        "text-entry",
+        "pinyin-option",
+        "symbols"
+      ],
+      "en_US": {
+        "file": "en_US/22-touch-keyboard.png",
+        "sha256": "3d291ef6bfaf95ba9594da30cf7ba8e3085e931dd53eacc745ac14698aed8e59"
+      },
+      "zh_CN": {
+        "file": "zh_CN/22-touch-keyboard.png",
+        "sha256": "eb5deb867816555f790e85c2a1d3440a2f3ce1d17f2b0b0775924721c3767e91"
+      },
+      "width": 960,
+      "height": 600
+    },
+    {
+      "key": "23-capabilities",
+      "title_en": "Capabilities and performance",
+      "title_zh": "能力与性能",
+      "features": [
+        "actual-capabilities",
+        "unsupported-features",
+        "observed-UI-performance"
+      ],
+      "en_US": {
+        "file": "en_US/23-capabilities.png",
+        "sha256": "807ff3962ac8977dda10fbdd0587ccbab581dbadd6dfb486e62005d05ffd8b71"
+      },
+      "zh_CN": {
+        "file": "zh_CN/23-capabilities.png",
+        "sha256": "6ca36762690f6d65bdee5764a7eba5563a07f6ca85b05f757f7a89739677def5"
+      },
+      "width": 960,
+      "height": 600
+    },
+    {
+      "key": "24-diagnostics",
+      "title_en": "Runtime diagnostics",
+      "title_zh": "运行诊断",
+      "features": [
+        "runtime-identity",
+        "diagnostics",
+        "actual-backend-status"
+      ],
+      "en_US": {
+        "file": "en_US/24-diagnostics.png",
+        "sha256": "ec7dd23fa2b047cc463b87065719d4d767f0c4f2714c5d287841b55ba4fa485c"
+      },
+      "zh_CN": {
+        "file": "zh_CN/24-diagnostics.png",
+        "sha256": "154a9195612ccc6497529f8af481bee4c0bc7d4ce63fe6947cbb22c129d502c1"
+      },
+      "width": 960,
+      "height": 600
+    },
+    {
+      "key": "25-recipes",
+      "title_en": "Capture plans",
+      "title_zh": "拍摄计划",
+      "features": [
+        "workflow-plans",
+        "pause-resume-cancel",
+        "UUID-reconciliation"
+      ],
+      "en_US": {
+        "file": "en_US/25-recipes.png",
+        "sha256": "c79f5d23a7c9a96f0e9408f02e681416fca2c7c75cab457a4b79f002de5df1d3"
+      },
+      "zh_CN": {
+        "file": "zh_CN/25-recipes.png",
+        "sha256": "0c1f88ff1661afc4486367740df42f391a208efce5de58d900613a611adfd619"
+      },
+      "width": 960,
+      "height": 600
+    },
+    {
+      "key": "26-bracketing",
+      "title_en": "Exposure-bracket plan",
+      "title_zh": "曝光包围计划",
+      "features": [
+        "bracketing",
+        "bounded-synthetic-sequence"
+      ],
+      "en_US": {
+        "file": "en_US/26-bracketing.png",
+        "sha256": "d09852019aa017a93224e1536a7efaaa5708e4f3173bdc9f20c16bfa100c410d"
+      },
+      "zh_CN": {
+        "file": "zh_CN/26-bracketing.png",
+        "sha256": "4d9c8abaf0bde3683c2dc91baa00c5389d7979c22929eb8e600f5ab5b309512d"
+      },
+      "width": 960,
+      "height": 600
+    },
+    {
+      "key": "27-interval",
+      "title_en": "Interval and calibration sequences",
+      "title_zh": "间隔与校准序列",
+      "features": [
+        "interval",
+        "dark-sequence",
+        "flat-sequence",
+        "timing-limits"
+      ],
+      "en_US": {
+        "file": "en_US/27-interval.png",
+        "sha256": "caa0dc946f368177e84898c7e10003e6e7847ff86adc47dc2f30886235e35c2a"
+      },
+      "zh_CN": {
+        "file": "zh_CN/27-interval.png",
+        "sha256": "34476692c0e5c396e1b0c1c99960cd268b2a1b28e193095ed0e9109cb239ebd1"
+      },
+      "width": 960,
+      "height": 600
+    },
+    {
+      "key": "28-photo-looks",
+      "title_en": "Photo rendering looks",
+      "title_zh": "照片显示风格",
+      "features": [
+        "non-destructive-looks",
+        "RAW-preservation"
+      ],
+      "en_US": {
+        "file": "en_US/28-photo-looks.png",
+        "sha256": "e23845348f7f9a5b13265d7e67a006683e752e5259273350f5ca52a972e3f1f8"
+      },
+      "zh_CN": {
+        "file": "zh_CN/28-photo-looks.png",
+        "sha256": "2609dd49c5cc0fa4c7153ec5fcf2d7f4d8a80b8131f9fffef75b4a14f39dbeb1"
+      },
+      "width": 960,
+      "height": 600
+    },
+    {
+      "key": "29-tasks",
+      "title_en": "Background task center",
+      "title_zh": "后台任务中心",
+      "features": [
+        "persistent-tasks",
+        "processing-tasks",
+        "transfer-tasks",
+        "cancellation"
+      ],
+      "en_US": {
+        "file": "en_US/29-tasks.png",
+        "sha256": "0c950728538d1e641643afe1bcd120b16df73e584bfe826ef1ab49ddc55eb79c"
+      },
+      "zh_CN": {
+        "file": "zh_CN/29-tasks.png",
+        "sha256": "2166668ae85f3ba39c47666f3f5c46d5a733030516957dbd0817a0584e8e9ad5"
+      },
+      "width": 960,
+      "height": 600
+    },
+    {
+      "key": "30-image-tools",
+      "title_en": "Image processing workspace",
+      "title_zh": "图像计算工作台",
+      "features": [
+        "image-analysis",
+        "histogram",
+        "processing-inputs",
+        "derived-output"
+      ],
+      "en_US": {
+        "file": "en_US/30-image-tools.png",
+        "sha256": "848a01b914afac5a40ec95311e07e99fa2ea9b9c400b36571144ec13892dcb8c"
+      },
+      "zh_CN": {
+        "file": "zh_CN/30-image-tools.png",
+        "sha256": "ac4d507cbe43f21d7a2c18633fbf1856c655dcd73628a3c9fac5bbc11082ff0f"
+      },
+      "width": 960,
+      "height": 600
+    },
+    {
+      "key": "31-processing-operations",
+      "title_en": "Image processing operations",
+      "title_zh": "图像处理功能",
+      "features": [
+        "JPEG",
+        "16bit-TIFF",
+        "HDR",
+        "exposure-fusion",
+        "focus-stack",
+        "denoise-stack",
+        "panorama",
+        "astro-stack",
+        "dark-flat",
+        "negative"
+      ],
+      "en_US": {
+        "file": "en_US/31-processing-operations.png",
+        "sha256": "ff4634a6cc95952f24253680df8ddd75b723ef09761bee174b0af82392544056"
+      },
+      "zh_CN": {
+        "file": "zh_CN/31-processing-operations.png",
+        "sha256": "bb214cfd5af41e90e89f543a5b3b7ca20f0efbc619b4410706dd92d719004d41"
+      },
+      "width": 960,
+      "height": 600
+    },
+    {
+      "key": "32-photo-library",
+      "title_en": "Photo library",
+      "title_zh": "照片库",
+      "features": [
+        "thumbnail-library",
+        "filters",
+        "sort",
+        "pagination",
+        "import"
+      ],
+      "en_US": {
+        "file": "en_US/32-photo-library.png",
+        "sha256": "8e133470ffe79d7463218d6c3e38c5fa848969eb941d099b4c7bf64fee172d03"
+      },
+      "zh_CN": {
+        "file": "zh_CN/32-photo-library.png",
+        "sha256": "2ec516d991ca2c4d61b6ccfb2c2c144f8654048ba2d08190240301cefc50d7e7"
+      },
+      "width": 960,
+      "height": 600
+    },
+    {
+      "key": "33-multi-select",
+      "title_en": "Multi-selection and batch management",
+      "title_zh": "多选与批量管理",
+      "features": [
+        "persistent-selection",
+        "batch-actions",
+        "selected-count"
+      ],
+      "en_US": {
+        "file": "en_US/33-multi-select.png",
+        "sha256": "b13305db8ab2e0bfea538ebb42796023c915fa4877e9ec905f3c96bbe10ea848"
+      },
+      "zh_CN": {
+        "file": "zh_CN/33-multi-select.png",
+        "sha256": "f8fe34da4e66eaa293fbb8e644cbae8a5dbc6aff62ef8cd2fe65e82eb079337b"
+      },
+      "width": 960,
+      "height": 600
+    },
+    {
+      "key": "34-viewer",
+      "title_en": "Photo playback",
+      "title_zh": "照片回放",
+      "features": [
+        "image-viewer",
+        "rendered-review",
+        "RAW-metadata"
+      ],
+      "en_US": {
+        "file": "en_US/34-viewer.png",
+        "sha256": "becc513a8c516d122b8c2f4b47138834afcc4fe6a8b43521d5dc68f2fb98620a"
+      },
+      "zh_CN": {
+        "file": "zh_CN/34-viewer.png",
+        "sha256": "bbf5f7922245d5550b0682f5833e96cb1f6a4d329a00ef572746f2916bdbd7e9"
+      },
+      "width": 960,
+      "height": 600
+    },
+    {
+      "key": "35-compare-zoom",
+      "title_en": "Side-by-side and pixel inspection",
+      "title_zh": "并排与像素查看",
+      "features": [
+        "comparison",
+        "native-pixel-tiles",
+        "pan-zoom"
+      ],
+      "en_US": {
+        "file": "en_US/35-compare-zoom.png",
+        "sha256": "8526859bb1f99a4cd8b9830d7c923fbfddea8a9ac8fd234e0e0a09985553c85f"
+      },
+      "zh_CN": {
+        "file": "zh_CN/35-compare-zoom.png",
+        "sha256": "9b597441b483f7162656a927309a413cd13fa64d7bf8a709d3e2f0ca90e405aa"
+      },
+      "width": 960,
+      "height": 600
+    },
+    {
+      "key": "36-tone-crop",
+      "title_en": "Non-destructive tone editing",
+      "title_zh": "非破坏明暗编辑",
+      "features": [
+        "exposure-edit",
+        "contrast",
+        "saturation",
+        "noise",
+        "sharpen",
+        "original-preserved"
+      ],
+      "en_US": {
+        "file": "en_US/36-tone-crop.png",
+        "sha256": "9e97aba4b94b69bf894975f996b00243ffe04e4b8854de60ecd705222a1bd1f3"
+      },
+      "zh_CN": {
+        "file": "zh_CN/36-tone-crop.png",
+        "sha256": "6bdf2b24ec10cf95c55a81274af8349ed5baa3cfdc457cb8c99a5d1d2a59b141"
+      },
+      "width": 960,
+      "height": 600
+    },
+    {
+      "key": "36b-rotation-crop",
+      "title_en": "Rotation and crop",
+      "title_zh": "旋转与裁切",
+      "features": [
+        "rotation",
+        "crop",
+        "undo-redo",
+        "reset-edits"
+      ],
+      "en_US": {
+        "file": "en_US/36b-rotation-crop.png",
+        "sha256": "fb486a1fe9265bd38802530a79719ce8c8c6498ffc1b44b73de16d0698df3a1c"
+      },
+      "zh_CN": {
+        "file": "zh_CN/36b-rotation-crop.png",
+        "sha256": "f62d2e8f271e3563338734a867b94d7fefca4ad090fa44efbeab31d7f3373c4b"
+      },
+      "width": 960,
+      "height": 600
+    },
+    {
+      "key": "37-white-balance",
+      "title_en": "White balance and RGB",
+      "title_zh": "白平衡与 RGB",
+      "features": [
+        "white-balance",
+        "RGB-gains",
+        "neutral-picker"
+      ],
+      "en_US": {
+        "file": "en_US/37-white-balance.png",
+        "sha256": "b3565247c5820e016938b442975eaefb38bf00f2749e2abcf29d648b006e62af"
+      },
+      "zh_CN": {
+        "file": "zh_CN/37-white-balance.png",
+        "sha256": "c9a3f74c0016ad7066a29946275a2973cf98289d75b8e8042914c69e1aa8ce8f"
+      },
+      "width": 960,
+      "height": 600
+    },
+    {
+      "key": "38-tone-curve",
+      "title_en": "Tone curve",
+      "title_zh": "色调曲线",
+      "features": [
+        "curve-control",
+        "shadow-midtone-highlight"
+      ],
+      "en_US": {
+        "file": "en_US/38-tone-curve.png",
+        "sha256": "ab01542937a5c05d154aed8db0ae2b213837c5030c10f3b48dc1f20c59ad727a"
+      },
+      "zh_CN": {
+        "file": "zh_CN/38-tone-curve.png",
+        "sha256": "ad35d35f4b13c1e2916ca1164c5c6652fcef8333f14014800242b12ef5988b5a"
+      },
+      "width": 960,
+      "height": 600
+    },
+    {
+      "key": "39-custom-styles",
+      "title_en": "Custom styles",
+      "title_zh": "自定义风格",
+      "features": [
+        "save-style",
+        "apply-style",
+        "non-destructive-preset"
+      ],
+      "en_US": {
+        "file": "en_US/39-custom-styles.png",
+        "sha256": "dd15b9428fb07eb5c8782b18cb184f42596a59fa3c2faa070bf3c01b426b14b2"
+      },
+      "zh_CN": {
+        "file": "zh_CN/39-custom-styles.png",
+        "sha256": "b4e00fe9846b7687d26aa9ce7a6175989214b5520795a03556bf47e164dd890d"
+      },
+      "width": 960,
+      "height": 600
+    },
+    {
+      "key": "40-edit-history",
+      "title_en": "Edit history",
+      "title_zh": "编辑历史",
+      "features": [
+        "edit-history",
+        "revision-selection",
+        "restore-edit-version"
+      ],
+      "en_US": {
+        "file": "en_US/40-edit-history.png",
+        "sha256": "b57363a869be28dbfd1c7d06f45672480fd7bbec27c4c389b7b3f160f43f620e"
+      },
+      "zh_CN": {
+        "file": "zh_CN/40-edit-history.png",
+        "sha256": "1b8f22194af1d7bed139fb4409fdade9b015113ccc437c76c083b5fdf8dba4f0"
+      },
+      "width": 960,
+      "height": 600
+    },
+    {
+      "key": "41-export",
+      "title_en": "Batch export",
+      "title_zh": "批量导出",
+      "features": [
+        "original-and-sidecar",
+        "full-size-JPEG",
+        "16bit-TIFF",
+        "background-export"
+      ],
+      "en_US": {
+        "file": "en_US/41-export.png",
+        "sha256": "971b2fe254344751b99e816ae9d95f10aef39af6f476fa21bc37e572edd343cf"
+      },
+      "zh_CN": {
+        "file": "zh_CN/41-export.png",
+        "sha256": "efc61eba37ac7f0bc7534d62b7996db8f6549d74204c57b5641863a8d2b33fb8"
+      },
+      "width": 960,
+      "height": 600
+    },
+    {
+      "key": "42-import",
+      "title_en": "File browser and copy import",
+      "title_zh": "文件浏览与复制导入",
+      "features": [
+        "import-browser",
+        "copy-import",
+        "destination-browser"
+      ],
+      "en_US": {
+        "file": "en_US/42-import.png",
+        "sha256": "62f89fdb31d1e84d22445f05600c67fe78d801690b3d51b1183f60693901dd7f"
+      },
+      "zh_CN": {
+        "file": "zh_CN/42-import.png",
+        "sha256": "5d92c6ddb32c0a935f93cea76aab06f57d4b52ba20994224334eb843da296f43"
+      },
+      "width": 960,
+      "height": 600
+    },
+    {
+      "key": "43-library-actions",
+      "title_en": "Photo library actions",
+      "title_zh": "照片库工具",
+      "features": [
+        "search",
+        "protect",
+        "trash",
+        "restore",
+        "rescan"
+      ],
+      "en_US": {
+        "file": "en_US/43-library-actions.png",
+        "sha256": "2f4c5891439b917d2fa57dbbe3f833357abf0123d604acfac145dc2182f85b77"
+      },
+      "zh_CN": {
+        "file": "zh_CN/43-library-actions.png",
+        "sha256": "98dc23a9afb68c3636446b7b9fdf86d118514b599b3fb97ccc4ee16fd2ca2703"
+      },
+      "width": 960,
+      "height": 600
+    },
+    {
+      "key": "44-rating",
+      "title_en": "Photo ratings",
+      "title_zh": "照片评分",
+      "features": [
+        "rating",
+        "batch-rating"
+      ],
+      "en_US": {
+        "file": "en_US/44-rating.png",
+        "sha256": "c5b31f532ffa815aee827cea40e80ff3af7293c2744c32ead65129b29f5bb194"
+      },
+      "zh_CN": {
+        "file": "zh_CN/44-rating.png",
+        "sha256": "addbceab9fddef21348c1ff647d32656a0995a419a2b3c3a4a713c41b5dc42d1"
+      },
+      "width": 960,
+      "height": 600
+    },
+    {
+      "key": "45-photo-info",
+      "title_en": "Photo metadata",
+      "title_zh": "照片元数据",
+      "features": [
+        "capture-identity",
+        "metadata",
+        "editing-provenance"
+      ],
+      "en_US": {
+        "file": "en_US/45-photo-info.png",
+        "sha256": "562ff9757a2916b1c837dbcc93894b17e7ccc0efdc6fdc1188a19649aa1423ab"
+      },
+      "zh_CN": {
+        "file": "zh_CN/45-photo-info.png",
+        "sha256": "af804cf5cda0eb97a383f839551bd97f44d642380adb313fa892818caf4866cc"
+      },
+      "width": 960,
+      "height": 600
+    },
+    {
+      "key": "46-trash-confirmation",
+      "title_en": "Permanent-delete confirmation",
+      "title_zh": "永久清空确认",
+      "features": [
+        "trash-purge-confirmation",
+        "cancel-safe-default"
+      ],
+      "en_US": {
+        "file": "en_US/46-trash-confirmation.png",
+        "sha256": "926c9730537852564de05ed05b48600a4c222504c1ceec20e479e8da32238125"
+      },
+      "zh_CN": {
+        "file": "zh_CN/46-trash-confirmation.png",
+        "sha256": "b0bc0d35c93bb39e14d500c1694757ef8b750fc60895dc28ccc6d64a7c49cb54"
+      },
+      "width": 960,
+      "height": 600
+    }
+  ],
+  "source_capture_receipts": {
+    "en_US": {
+      "file": "en_US-capture.json",
+      "sha256": "a8dfd03d8efc34e3804d7dde883bd44c0781a542491f77ded5d51300e29930ac"
+    },
+    "zh_CN": {
+      "file": "zh_CN-capture.json",
+      "sha256": "3ec6e2ad767a03f0e7c3171bd33c8737e1ec760e7aae58daab1b0c23b1ec6318"
+    }
+  },
+  "capture_driver_sha256": "3c379e90c257472eac811cbb3a0d4684fae29553290f016fbc7f827c49c371c8",
+  "assembly_driver_sha256": "b7714796ee4fc893ec1557204171ca6a726d09d589513909aad261c299554d79",
+  "factory_application_package_binding": {
+    "package": "camera-experience-005-final.tar.gz",
+    "sha256": "fa6851185d5fa0e91152fddf997b03f3593ec91f74f2aacc42af79235d28a92b",
+    "version": "camera-experience-005",
+    "UI_files_exactly_matched": 67,
+    "UI_source_correspondence": {
+      "ui/on-device/AnimatedPageLoader.qml": "b453b7658b1e661c30c008b86f6bca9320b669d005d131675b2d29c0e927803e",
+      "ui/on-device/AppsWorkspace.qml": "b7de5a01c5e6c981fcf64cf9fcb3507b077363bb73bd5584f8ef147b061c68f2",
+      "ui/on-device/apps_controller.py": "54ec3d9d69612761262290e8706560fc36ca2a40dcc01594d12f4a1bf985b9d8",
+      "ui/on-device/BootSplash.qml": "2dbe3fc54f2052b8a5a46de76c3df91a786f464eaad7c4f9007e582fd382a8e7",
+      "ui/on-device/boot_status.py": "a095ad0ac84a1589cab3294ba9657e964335131ffca1be6b99da3e980ca4983f",
+      "ui/on-device/CameraMenu.qml": "bc364a13c41a277099b531457a6db7a4112e336b3b78d4607310326600d2654f",
+      "ui/on-device/CameraPlayback.qml": "cfed7dfa8c6c727b2dc911f9bd35cff8edb18842a9c3b61af1e3bfb36393bb4d",
+      "ui/on-device/CameraTaskbar.qml": "af008b227b3a6a1370550b6248b3c11a4ba679bce45f872238e19d5785b93ef2",
+      "ui/on-device/camera_capabilities.py": "063952d3acaba42818a733bba60b681bf4e31a2ac469700d8bca5e2ea5acb6f6",
+      "ui/on-device/camera_link.py": "6fb5cac7a2f30c84165716760de6ee59f01b06b11deba77f7d46b370f4aafb0f",
+      "ui/on-device/CapabilityPage.qml": "54db1cf92d2167289bbd18c51201220656bd09755436016ec413293d9ddd6be6",
+      "ui/on-device/Console.qml": "7023b631d42dceec9883e7c85e66f993807fc348b2d6f4362fa91e34f91c5f65",
+      "ui/on-device/controller.py": "8e575cd631ecd8eac0a023a2cd97a963fa450cb5a93f41dc7de48bb4201ac150",
+      "ui/on-device/DaOSDock.qml": "ed30845c1e37004dc9576f0ff879fbd993995679ba8cd5eecdc166fdb55037df",
+      "ui/on-device/DaOSIcon.qml": "2ae2072ee69fad0088bd92c2ddd83c694001c58fa3c2b68f1d225fa9ac8b1f5b",
+      "ui/on-device/ImageTools.qml": "194fe3caec64ea3af918c82ecd19af4ee169d1ecc5e97fa46429182328100a5b",
+      "ui/on-device/image_pipeline.py": "720ca528be4c2fe57370248840523801f111fdc300621923d25805e12f9b2492",
+      "ui/on-device/image_processing.py": "5298d074483bba117bfa58ada71b355214a8d1e192c90f59b571841fa082a7a3",
+      "ui/on-device/input_router.py": "8cb65fd7afdb01b4f6a574d3ad1ae12bd2d709303fbb4e46085f7f8163cc620a",
+      "ui/on-device/localization.py": "eee5e61ce1d582f9e50dfcbb31b2bbbde53d4f225b168b21794aefc6e472638b",
+      "ui/on-device/LocalizedComboBox.qml": "fbbe9323f00653f06f64d878f26761f541a17f53f2616ac8a46b1b366b761eab",
+      "ui/on-device/main.py": "c96a9a5da2fa772b2ecd3fb94940c10a7875eeff65e2b94ccf983db4b56c4619",
+      "ui/on-device/Main.qml": "ad55f5673551ebb2f11e5cc3f18d856e7f47b7013b0247a71b7f4582c25e4c36",
+      "ui/on-device/MediaButton.qml": "8fd4dbcb227d61769db8ec8eac92874a954c7436cd94e769df522a36f12a08ab",
+      "ui/on-device/MediaGallery.qml": "e7fc90b798bc474071e9ed6b723c2186baba2d4a7e12def1a85eb1e014eaa73a",
+      "ui/on-device/media_catalog.py": "5d768bfb1c99060ac336f1a3e0d9ed5f3821dae31d878a49bf299cc307033645",
+      "ui/on-device/media_library.py": "223d495e87739bc9b6d21acbe14e7f42fb45204eab91049f3357d24d40c647b8",
+      "ui/on-device/media_workspace.py": "cfb9b5edf9d67d748f8e156c6381eae5eefc0a8cbbb660888333eaa62bed2ab9",
+      "ui/on-device/MonochromeWindow.qml": "a9021a269568188bdfc110322aebb50e3beae072a1d22f6c2fcf8a775e991910",
+      "ui/on-device/NumericReadout.qml": "9c9efcc8e384bea461a2dbe47aa20e58c15a499cbf42239de6f3e7047a8dd0fc",
+      "ui/on-device/parameter_state.py": "4a4b58d8864e3701ef242d14bcb51ee4a0fbca9d423037c0ed8b0e70bb9cc9c0",
+      "ui/on-device/performance.py": "a202ca215ddedc57f6153e76b5b336600c6e9fa1b955ad03fac2b6b82e03fb74",
+      "ui/on-device/photo_styles.py": "deb1c70c0998626e84d9f8c3df4884e3e065b2e1605058d4aa160a4d697f252d",
+      "ui/on-device/pinyin_ime.py": "dd94e00432ba0179de9681b57fa1d967b1c52dc93db16448da0d8a20384d717c",
+      "ui/on-device/raw_analysis.py": "1b56ece21f7220a154add17bb3fba2eab877429b297204d2795dbf62f8889a3e",
+      "ui/on-device/RecipeWorkspace.qml": "2ee7ac953ddfe1cb49e1f28f69482a81a443f8749cead8eba09d0a3ca18dde21",
+      "ui/on-device/retail-theme.json": "88ee438bcafff191a4bb6bb38e762e939709693ab99c4fe8669d5e3840a217e2",
+      "ui/on-device/review_camera_first.py": "94f44a0ba32cb9f3389ca1fa9d7c2a4e14272459f56bb402dc3d1c310b392e8d",
+      "ui/on-device/review_capture.py": "29870c1842b55ae9400677a4f710cc345d9eca9a95de6df93e87004ab4d61e8c",
+      "ui/on-device/review_shell.py": "e714cddc68303be3a00b83cfc389fcc90f7802b4a95459805e68512af52100c0",
+      "ui/on-device/runtime_health.py": "f5a9a2089a6aac179daaa2ff6d71f725dcc4751bdc172af189718e1491cab987",
+      "ui/on-device/shell_model.py": "f1855bf4a5e6375005fccb2e1f71a8e31aff4b331510a60facc02963896542bb",
+      "ui/on-device/ShootingWorkspacePanel.qml": "a009e7db3a7d9f91eece2a18b51646cbdab9ce2a596c1730e63c53be082555b9",
+      "ui/on-device/shooting_workspace.py": "df1ed8cdfca8b03793ec67858d757175245d9b0323c75ca9bb2e529cb70980fd",
+      "ui/on-device/SoftKeyboard.qml": "31198839f2e28c06c4b22f0cb6dbcac7185b73028269ea796b7a96c307d0e34f",
+      "ui/on-device/soft_keyboard.py": "6e15c56f05993d86f9f98bcfb599c982355fc2fa762da81fa651927d545e9706",
+      "ui/on-device/SystemPage.qml": "f6d90ec10bdad1c282330fa8d538315c88d549d8a40c656aa89b11c046e8c5c6",
+      "ui/on-device/system_archive.py": "606629fb5aa5a9e594e53d3179fd125567b5ff954ab745dc6400142ea294e23b",
+      "ui/on-device/system_control.py": "1f244b095aa825e80abf695e09fbaacf45d2a9df33edf58cec60f342d475f454",
+      "ui/on-device/system_settings.py": "8936fd1fda5aca99594eeaaf258bc206c7d8d44824e8ea1614c0e6e16d96814c",
+      "ui/on-device/TasksPage.qml": "932ca57c86c2a4bc6285fb4fa4a901700b903a03dac709f6ecc681132f838463",
+      "ui/on-device/task_hub.py": "4661758108404f63dbeed2ed40e364b80557abe0b17a80d65a33b3fe00b1497c",
+      "ui/on-device/task_service.py": "332354418322f48a4f402c91e18042821b2ce88e5fb85e98a76916c9f83cbcd9",
+      "ui/on-device/TerminalPage.qml": "4e3d854c920c08b03d2c96767a5d9c67bdcae55ec5fb1c1024d82f0653dc7964",
+      "ui/on-device/terminal_exec.py": "780dbe2cd68d46b450299ff3f3db4876ede6e5f375c9c7cec86e607de9d006ff",
+      "ui/on-device/terminal_surface.py": "e66c67e377caa4de3fd17daa878ef11e2e4bca62adad1f3a924574e3a42305bc",
+      "ui/on-device/Typography.qml": "e26f537b0ce3b74a83e237af79fc50027e0e8cb0cd921a11e52df677bb41d6a0",
+      "ui/on-device/ui_palette.py": "34162e82a296718b5ef5b671ffe6455d173b04a7d2017a3bdef84b24577cf325",
+      "ui/on-device/WifiPage.qml": "2411451c006f42c88780da6040e6241bcbcd339869007d727e7eb6a4f93193fa",
+      "ui/on-device/workflow_helpers.py": "f1e045bbe3703bbe7e068bbcb41853512e1959b698029dacb718cfcd0fa70c32",
+      "ui/on-device/locales/en_US.json": "a42a5e3e83575b3de81a16cc5630a833c9aff368f18a741fcce190ddb65961c9",
+      "ui/on-device/locales/manifest.json": "54b46fafbd7b97db2ea6e7426e8072f6a24610c3e04b385bfbef162ed203ad7e",
+      "ui/on-device/locales/zh_CN.json": "f05f90c7f9f5663a3d0cdb515569af96545cdfd6183e7ec03725ea1b2d636934",
+      "ui/on-device/locales/en_US.qm": "1b82c5473abd7048d3b111977863c29521f3ecac1b6e5dd8d29306c04030e829",
+      "ui/on-device/locales/zh_CN.qm": "72ad7aefe720e3a34c60ec38fc855321df408f72c1d6e76f90f58f0afaabaa02",
+      "ui/on-device/fonts/NotoSansCJKsc-Medium.otf": "ca094f6b0001fb048ca39ddd797a0cdb0179e1e55c6561e111c49c3e6a61d7b7",
+      "ui/on-device/fonts/NotoSansCJKsc-Regular.otf": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b"
+    },
+    "package_ARM64_authority_sha256": "09af8c3ccc9f70dcc3b3e77fb4afab1343a0ffb72225c71575e85fe5009f8e2e",
+    "gallery_Windows_authority_sha256": "920c7b8283fac6cbd41adcad307b76e637e48e349512c15639802b1f68bbe928",
+    "platform_binaries_are_different": true,
+    "ARM64_package_runtime_not_claimed_by_desktop_screenshots": true
+  }
+}

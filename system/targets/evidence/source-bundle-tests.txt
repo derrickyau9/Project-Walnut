@@ -1,0 +1,44 @@
+Windows 3.12.7
+test_arm64_and_guest_evidence_copies_redact_paths_without_changing_sources (tests.test_source_bundle.SourceBundleTests.test_arm64_and_guest_evidence_copies_redact_paths_without_changing_sources) ... ok
+test_boundary_exclusions_redaction_and_unchanged_hardware (tests.test_source_bundle.SourceBundleTests.test_boundary_exclusions_redaction_and_unchanged_hardware) ... ok
+test_debian_runtime_inventory_matches_all_binary_pins_and_original_notices (tests.test_source_bundle.SourceBundleTests.test_debian_runtime_inventory_matches_all_binary_pins_and_original_notices) ... ok
+test_deterministic_and_exclusive_publication (tests.test_source_bundle.SourceBundleTests.test_deterministic_and_exclusive_publication) ... ok
+test_evidence_private_keys_redacted_and_collisions_refused (tests.test_source_bundle.SourceBundleTests.test_evidence_private_keys_redacted_and_collisions_refused) ... ok
+test_redaction_respects_task_path_and_source_sibling_boundaries (tests.test_source_bundle.SourceBundleTests.test_redaction_respects_task_path_and_source_sibling_boundaries) ... ok
+test_round7_evidence_families_redact_only_copies (tests.test_source_bundle.SourceBundleTests.test_round7_evidence_families_redact_only_copies) ... ok
+test_round7_redaction_refuses_key_loss (tests.test_source_bundle.SourceBundleTests.test_round7_redaction_refuses_key_loss) ... ok
+test_secret_and_included_destination_fail_closed (tests.test_source_bundle.SourceBundleTests.test_secret_and_included_destination_fail_closed) ... ok
+test_source_json_privacy_is_inspected_without_rewriting_bytes (tests.test_source_bundle.SourceBundleTests.test_source_json_privacy_is_inspected_without_rewriting_bytes) ... ok
+test_source_links_refused (tests.test_source_bundle.SourceBundleTests.test_source_links_refused) ... ok
+test_unredacted_task_home_fails_without_modifying_authored_source (tests.test_source_bundle.SourceBundleTests.test_unredacted_task_home_fails_without_modifying_authored_source) ... ok
+test_upstream_metadata_identity_and_misplaced_runtime_exclusions (tests.test_source_bundle.SourceBundleTests.test_upstream_metadata_identity_and_misplaced_runtime_exclusions) ... ok
+test_verifier_rejects_hashed_private_paths_and_missing_rights (tests.test_source_bundle.SourceBundleTests.test_verifier_rejects_hashed_private_paths_and_missing_rights) ... ok
+test_verifier_rejects_unlisted_tampering_and_traversal (tests.test_source_bundle.SourceBundleTests.test_verifier_rejects_unlisted_tampering_and_traversal) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 1.561s
+
+OK
+
+Debian Linux
+test_arm64_and_guest_evidence_copies_redact_paths_without_changing_sources (tests.test_source_bundle.SourceBundleTests.test_arm64_and_guest_evidence_copies_redact_paths_without_changing_sources) ... ok
+test_boundary_exclusions_redaction_and_unchanged_hardware (tests.test_source_bundle.SourceBundleTests.test_boundary_exclusions_redaction_and_unchanged_hardware) ... ok
+test_debian_runtime_inventory_matches_all_binary_pins_and_original_notices (tests.test_source_bundle.SourceBundleTests.test_debian_runtime_inventory_matches_all_binary_pins_and_original_notices) ... ok
+test_deterministic_and_exclusive_publication (tests.test_source_bundle.SourceBundleTests.test_deterministic_and_exclusive_publication) ... ok
+test_evidence_private_keys_redacted_and_collisions_refused (tests.test_source_bundle.SourceBundleTests.test_evidence_private_keys_redacted_and_collisions_refused) ... ok
+test_redaction_respects_task_path_and_source_sibling_boundaries (tests.test_source_bundle.SourceBundleTests.test_redaction_respects_task_path_and_source_sibling_boundaries) ... ok
+test_round7_evidence_families_redact_only_copies (tests.test_source_bundle.SourceBundleTests.test_round7_evidence_families_redact_only_copies) ... ok
+test_round7_redaction_refuses_key_loss (tests.test_source_bundle.SourceBundleTests.test_round7_redaction_refuses_key_loss) ... ok
+test_secret_and_included_destination_fail_closed (tests.test_source_bundle.SourceBundleTests.test_secret_and_included_destination_fail_closed) ... ok
+test_source_json_privacy_is_inspected_without_rewriting_bytes (tests.test_source_bundle.SourceBundleTests.test_source_json_privacy_is_inspected_without_rewriting_bytes) ... ok
+test_source_links_refused (tests.test_source_bundle.SourceBundleTests.test_source_links_refused) ... ok
+test_unredacted_task_home_fails_without_modifying_authored_source (tests.test_source_bundle.SourceBundleTests.test_unredacted_task_home_fails_without_modifying_authored_source) ... ok
+test_upstream_metadata_identity_and_misplaced_runtime_exclusions (tests.test_source_bundle.SourceBundleTests.test_upstream_metadata_identity_and_misplaced_runtime_exclusions) ... ok
+test_verifier_rejects_hashed_private_paths_and_missing_rights (tests.test_source_bundle.SourceBundleTests.test_verifier_rejects_hashed_private_paths_and_missing_rights) ... ok
+test_verifier_rejects_unlisted_tampering_and_traversal (tests.test_source_bundle.SourceBundleTests.test_verifier_rejects_unlisted_tampering_and_traversal) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.717s
+
+OK
+

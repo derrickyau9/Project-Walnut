@@ -1,0 +1,193 @@
+{
+  "active_base": {
+    "kernel_object": "/var/daos-builds/daos-base-arm64-pi-splash-001/obj/var/daos-builds/daos-base-arm64-p6-001/source/usr/src/arm64.aarch64/sys/DaOS",
+    "object_prefix": "/var/daos-builds/daos-base-arm64-pi-splash-001/obj",
+    "receipt": "/var/daos-builds/daos-base-arm64-pi-splash-001/build-state.json",
+    "receipt_sha256": "f8c0dd35aedc768f9127400c14173d0a2e6751fbf9cd7a2cfe347066e0abb914",
+    "source_root": "/var/daos-builds/daos-base-arm64-p6-001/source/usr/src",
+    "src_conf": "/var/daos-builds/daos-base-arm64-pi-splash-001/config/src.conf",
+    "stage": "/var/daos-builds/daos-base-arm64-pi-splash-001/stage"
+  },
+  "executed": false,
+  "finished_at": "2026-11-06T06:49:11.401970+00:00",
+  "format": "DaOS-FreeBSD-USB-buildroot-v1",
+  "input_hash": "cf7c6866b3b589d4803a3335816a569a6e8a3ef6fae2aa5aa330249413611541",
+  "inputs": {
+    "rebuild_base_requested": false,
+    "source_sha256": {
+      "/mnt/f/Project HasselFree/system/adb/build_freebsd.py": "fceeaa34b5cd952a3d9c27d1e6c1163079255e480e2f204e75ec050bb64d4cb5",
+      "/mnt/f/Project HasselFree/system/adb/daemon/__init__.py": "bb451f3fb0c5fa4bd7bc4bbb9d657782195bfeeb9d147fe62f9b6c48e9aabd0f",
+      "/mnt/f/Project HasselFree/system/adb/daemon/auth.py": "74f02ff881ba001db865141729e09f608c318b5da2d626e100ab5f174573556a",
+      "/mnt/f/Project HasselFree/system/adb/daemon/daos_adbd.py": "4c88c8b190a20002db3e8a8b4cf7a1af911d261a391eb2171529be927cad86cd",
+      "/mnt/f/Project HasselFree/system/adb/daemon/protocol.py": "c81e8de010065c0914c05bdc5fd29d7748628141fcac95b02177515ef3afde5d",
+      "/mnt/f/Project HasselFree/system/adb/daemon/pty_child.py": "5316ccc13bbbb7247b5132c566c9fd71c22397ac832d79b1ee64ed9db4499c82",
+      "/mnt/f/Project HasselFree/system/adb/daemon/runtime-manifest.json": "aabddb0681593f16e13782da0a66f8dcbcdb4bd55280a38c969da8516a871b41",
+      "/mnt/f/Project HasselFree/system/adb/daemon/server.py": "9347db4e1f4b20841533f31c5f7e2e0ae7ecba9e2159bba71f85672e45e5d12e",
+      "/mnt/f/Project HasselFree/system/adb/daemon/shell_service.py": "771dfd17c2ffa3bd6081309b8c56e406ae6d9f7079d9552f5dfd8f4ce07e1489",
+      "/mnt/f/Project HasselFree/system/adb/daemon/sync_service.py": "3885d34b65bce179c824d2cb817494a99a2c5fe62ec3a4cdd152004854553b5b",
+      "/mnt/f/Project HasselFree/system/adb/freebsd_usb/Makefile": "ef70d4b096ffebbf421f09696addb4092719713132056b317ae217dea9f33185",
+      "/mnt/f/Project HasselFree/system/adb/freebsd_usb/adb_packet.h": "457a8b07ff849420fff5ed6b1d027d3da4d7a14315c88e48cff833f0b88bc0ad",
+      "/mnt/f/Project HasselFree/system/adb/freebsd_usb/build-in-env.sh": "7a989e3eed45098481b6374e27f3276581aff2e32c83f5dd52b17e3950ccf1a0",
+      "/mnt/f/Project HasselFree/system/adb/freebsd_usb/daos_ms_os.h": "3631f774ea201261244895666cd4a6011b2a8f1e6ddd979caa4ea326839c647a",
+      "/mnt/f/Project HasselFree/system/adb/freebsd_usb/daos_usb_adb.c": "be8ebe1bb4eedf3f46b5be691856eb112a1a02c26c994f6e7639f270185ef695",
+      "/mnt/f/Project HasselFree/system/adb/freebsd_usb/kmod/Makefile": "709a624725452da47fc1bda5a030c567b1cb8066a4534a3f66b7e33aa47cfa8d",
+      "/mnt/f/Project HasselFree/system/adb/freebsd_usb/kmod/daos_adb_template.c": "a3f8acc27df430b805092aac3300be4f01f8817a04538dba1b3239923c71bf52",
+      "/mnt/f/Project HasselFree/system/adb/freebsd_usb/recipe.json": "1ab13f980d5364ccc17c3dca2484ec236083a372cfc72306d7f0c4495b7c5c56",
+      "/mnt/f/Project HasselFree/system/adb/integration/apply_overlay.py": "923eaf68cdf3dd1fbd488df6ff385da3272304cec0b88e7ad1ffe4ed9e4a0313",
+      "/mnt/f/Project HasselFree/system/adb/integration/device_tree.py": "7280ca8ff13922749c20514d821f5f9c61583f20073c159f6d07ac849dc2468d",
+      "/mnt/f/Project HasselFree/system/adb/integration/files/etc/rc.conf.d/DaOS_usb_adb": "1c4c36f3fc6a861dc316a448b0d80e33332cd7cff44c7ec6985ec893edd42507",
+      "/mnt/f/Project HasselFree/system/adb/integration/files/usr/local/etc/rc.d/DaOS-usb-adb": "afbdacd5f8e83dd8608d7e136d371d9a362d301dadc38e4c7fc3304e706344b7",
+      "/mnt/f/Project HasselFree/system/adb/integration/files/usr/local/libexec/DaOS-usb-adb-session.py": "9fc399376753d3792746de800f9267d867ee49618e038b8e75a33df324fab92e",
+      "/mnt/f/Project HasselFree/system/adb/integration/install.py": "6a4c82ea53e4766b401bec0714cd5f9fc92bd05c86dc50ab2b5845050031a2f4",
+      "/mnt/f/Project HasselFree/system/bsd-buildroot/backends/freebsd_usb.py": "298e5652f74c69f7b5b5084078128cc1b9b45ecdc1bfe5faa11226c8a5aaff20",
+      "/mnt/f/Project HasselFree/system/bsd-buildroot/backends/freebsd_usb_guest.py": "913268122b58bfa24b88cd842b2f09471d95d8330ff5a5b4ffaf03d77c87ddbc",
+      "/mnt/f/Project HasselFree/system/bsd-buildroot/backends/netbsd.py": "8c1aebc91eadfb4fc23fa06ab892ac15c3b5fd02abd54522d19deedea6aa9147",
+      "/mnt/f/Project HasselFree/system/bsd-buildroot/daos.py": "6db22d6efec70ec8f898f8c47ef23a3e681d2536ae140702b7acf56ce94fe193",
+      "/mnt/f/Project HasselFree/system/bsd-buildroot/targets/rpi4-aarch64-usb/DaOS": "0078574f7ce0214f6d129427649e7641e282aad12e73c4f0232143f0377479ec",
+      "/mnt/f/Project HasselFree/system/bsd-buildroot/targets/rpi4-aarch64-usb/profile.json": "46121a11d62c85dca09a8b4006d3417487aad3a1a441cd80afdab58a76f049e9",
+      "/mnt/f/Project HasselFree/system/freebsd/base/build_base.py": "d7b608c04162f0252a7a3d829a9d9053154e5bdcf427e4aeb41dd97fb8b5d948",
+      "/mnt/f/Project HasselFree/system/freebsd/base/source-p6-arm64.lock.json": "cf8a647af9ac7df44869ec778a7398125e616b05725de588709f302ff8ff8ed1",
+      "/mnt/f/Project HasselFree/system/freebsd/base/src.conf": "6c9cab361708bce4d85a076c6095233ade570ab7ffc2c2c197909c8f00c8b8b8",
+      "/mnt/f/Project HasselFree/system/freebsd/image/assemble_image.py": "55162225422d4498897ad268aa141b6e7dced7488d85b6afd008a5e6c85c1d7f",
+      "/mnt/f/Project HasselFree/system/freebsd/image/collect_runtime.py": "cf5713a17f4b220a3c697e654ef72748796b7c8e874f93d086acc218d04995fd",
+      "/mnt/f/Project HasselFree/system/freebsd/image/common.py": "ec70ada437eacc46eecd03175e5b035f0dc96b32959dfc9a58589568b8d9ea50",
+      "/mnt/f/Project HasselFree/system/freebsd/image/elf_dependencies.py": "fc63f34e5b95476fed43c29a97b9e49fdc955f926bfe2a851ef1e7743aeda5ec",
+      "/mnt/f/Project HasselFree/system/freebsd/image/export_runtime_metadata.py": "b875da9dd166e09c176e6783835bbd695c8c196605d1acd7eae25ed9c7d3bb1b",
+      "/mnt/f/Project HasselFree/system/freebsd/image/pkg_checksum.py": "980a68a2a27999ab0e2ab20562f24adda9e02641b1ee9a3f562c2bae2f2922f7",
+      "/mnt/f/Project HasselFree/system/freebsd/image/runtime_profile.py": "4f29ba06a68641c627612569ded721c38fe62973303c0149cf4c18f4f4c6a5d6",
+      "/mnt/f/Project HasselFree/system/freebsd/image/verify_runtime_offline.py": "7ff47cc0578183de99af55c3a4bdfe03e85310a58f927e28f3ffd1a3f48dc2cc",
+      "/mnt/f/Project HasselFree/system/freebsd/raspberrypi/assemble_pi4.py": "668287073eaf1511e3f5e6a1bca9d593442baff838919296fc53c19a30657130",
+      "/mnt/f/Project HasselFree/tools/freebsd_vm.py": "ee8a5e5216f0ad515ef5ee07b9e2dbca4470801099748f0cf63638775a4875f1"
+    },
+    "usb_source_archive_sha256": "21d5fc4c2a7f392e1b25291a8287f8a08bb5fe65d6e6ab30de9c62bc222979ff"
+  },
+  "operation": "configure",
+  "paths": {
+    "base_work": "/var/daos-builds/daos-base-buildroot-c88e781512378d",
+    "bundle": "/var/daos-builds/daos-buildroot-usb-c88e781512378d/adb-bundle",
+    "guest_root": "/var/daos-builds/daos-buildroot-usb-c88e781512378d",
+    "image_work": "/var/DaOS-pi4-usb-build-memory/DaOS-image-buildroot-usb-c88e781512378d",
+    "usb_source_archive": "/var/daos-builds/daos-buildroot-usb-c88e781512378d/usb-source.tar",
+    "usb_work": "/var/daos-builds/daos-build-usb-adb-c88e781512378d"
+  },
+  "project_snapshot_verification": {
+    "sha256": {
+      "system/adb/daemon/__init__.py": "bb451f3fb0c5fa4bd7bc4bbb9d657782195bfeeb9d147fe62f9b6c48e9aabd0f",
+      "system/adb/daemon/auth.py": "74f02ff881ba001db865141729e09f608c318b5da2d626e100ab5f174573556a",
+      "system/adb/daemon/daos_adbd.py": "4c88c8b190a20002db3e8a8b4cf7a1af911d261a391eb2171529be927cad86cd",
+      "system/adb/daemon/protocol.py": "c81e8de010065c0914c05bdc5fd29d7748628141fcac95b02177515ef3afde5d",
+      "system/adb/daemon/pty_child.py": "5316ccc13bbbb7247b5132c566c9fd71c22397ac832d79b1ee64ed9db4499c82",
+      "system/adb/daemon/runtime-manifest.json": "aabddb0681593f16e13782da0a66f8dcbcdb4bd55280a38c969da8516a871b41",
+      "system/adb/daemon/server.py": "9347db4e1f4b20841533f31c5f7e2e0ae7ecba9e2159bba71f85672e45e5d12e",
+      "system/adb/daemon/shell_service.py": "771dfd17c2ffa3bd6081309b8c56e406ae6d9f7079d9552f5dfd8f4ce07e1489",
+      "system/adb/daemon/sync_service.py": "3885d34b65bce179c824d2cb817494a99a2c5fe62ec3a4cdd152004854553b5b",
+      "system/adb/integration/apply_overlay.py": "923eaf68cdf3dd1fbd488df6ff385da3272304cec0b88e7ad1ffe4ed9e4a0313",
+      "system/adb/integration/device_tree.py": "7280ca8ff13922749c20514d821f5f9c61583f20073c159f6d07ac849dc2468d",
+      "system/adb/integration/files/etc/rc.conf.d/DaOS_usb_adb": "1c4c36f3fc6a861dc316a448b0d80e33332cd7cff44c7ec6985ec893edd42507",
+      "system/adb/integration/files/usr/local/etc/rc.d/DaOS-usb-adb": "afbdacd5f8e83dd8608d7e136d371d9a362d301dadc38e4c7fc3304e706344b7",
+      "system/adb/integration/files/usr/local/libexec/DaOS-usb-adb-session.py": "9fc399376753d3792746de800f9267d867ee49618e038b8e75a33df324fab92e",
+      "system/adb/integration/install.py": "6a4c82ea53e4766b401bec0714cd5f9fc92bd05c86dc50ab2b5845050031a2f4",
+      "system/freebsd/image/assemble_image.py": "55162225422d4498897ad268aa141b6e7dced7488d85b6afd008a5e6c85c1d7f",
+      "system/freebsd/image/collect_runtime.py": "cf5713a17f4b220a3c697e654ef72748796b7c8e874f93d086acc218d04995fd",
+      "system/freebsd/image/common.py": "ec70ada437eacc46eecd03175e5b035f0dc96b32959dfc9a58589568b8d9ea50",
+      "system/freebsd/image/elf_dependencies.py": "fc63f34e5b95476fed43c29a97b9e49fdc955f926bfe2a851ef1e7743aeda5ec",
+      "system/freebsd/image/export_runtime_metadata.py": "b875da9dd166e09c176e6783835bbd695c8c196605d1acd7eae25ed9c7d3bb1b",
+      "system/freebsd/image/pkg_checksum.py": "980a68a2a27999ab0e2ab20562f24adda9e02641b1ee9a3f562c2bae2f2922f7",
+      "system/freebsd/image/runtime_profile.py": "4f29ba06a68641c627612569ded721c38fe62973303c0149cf4c18f4f4c6a5d6",
+      "system/freebsd/image/verify_runtime_offline.py": "7ff47cc0578183de99af55c3a4bdfe03e85310a58f927e28f3ffd1a3f48dc2cc",
+      "system/freebsd/raspberrypi/assemble_pi4.py": "668287073eaf1511e3f5e6a1bca9d593442baff838919296fc53c19a30657130"
+    },
+    "verified_files": 24
+  },
+  "rebuild_base_requested": false,
+  "receipt": "/home/dy09/daos-bsd-buildroot-usb/state/configure.json",
+  "reused": true,
+  "status": "success",
+  "usb_source_archive_sha256": "21d5fc4c2a7f392e1b25291a8287f8a08bb5fe65d6e6ab30de9c62bc222979ff",
+  "verification": {
+    "SDK_header_sha256": {
+      "usr/include/sys/param.h": "c73d822136e12d97c7c77cbe060ce9dc42019fc32fd10933a551035072ff89eb",
+      "usr/include/sys/types.h": "935d524a575a178474f9b986d9710ab7d819fe87757f11ce9a017885b6fd0ce8"
+    },
+    "active_base": {
+      "kernel_object": "/var/daos-builds/daos-base-arm64-pi-splash-001/obj/var/daos-builds/daos-base-arm64-p6-001/source/usr/src/arm64.aarch64/sys/DaOS",
+      "object_prefix": "/var/daos-builds/daos-base-arm64-pi-splash-001/obj",
+      "receipt": "/var/daos-builds/daos-base-arm64-pi-splash-001/build-state.json",
+      "receipt_sha256": "f8c0dd35aedc768f9127400c14173d0a2e6751fbf9cd7a2cfe347066e0abb914",
+      "source_root": "/var/daos-builds/daos-base-arm64-p6-001/source/usr/src",
+      "src_conf": "/var/daos-builds/daos-base-arm64-pi-splash-001/config/src.conf",
+      "stage": "/var/daos-builds/daos-base-arm64-pi-splash-001/stage"
+    },
+    "builder": {
+      "machine": "amd64",
+      "release": "15.1-RELEASE-p6",
+      "system": "FreeBSD"
+    },
+    "elf": {
+      "bin/sh": {
+        "OSABI": 9,
+        "class": 64,
+        "machine": 183,
+        "sha256": "a60e9e757429a512c1551913a79a044e3b72bb0e4ac4ba68b49f1067e4cb2a4a"
+      },
+      "boot/kernel/kernel": {
+        "OSABI": 0,
+        "class": 64,
+        "machine": 183,
+        "sha256": "5ac681d051cb623b23a724f91e6ecb818a883f034c8aa88eab678162221f2dec"
+      },
+      "lib/libc.so.7": {
+        "OSABI": 9,
+        "class": 64,
+        "machine": 183,
+        "sha256": "dde4d8989c4a2425a2a65bbf873917e091db1b351d6bc95a3eff85f47daaabb6"
+      }
+    },
+    "executed": false,
+    "format": "DaOS-FreeBSD-source-reuse-verification-v1",
+    "kernel_object_options_sha256": "ccba0f5f200b127082660af56a9dd13765c4ef73e7839c1824e8bd23aa160c67",
+    "kernel_recompiled": false,
+    "receipt_sha256": "f8c0dd35aedc768f9127400c14173d0a2e6751fbf9cd7a2cfe347066e0abb914",
+    "reused": true,
+    "source": {
+      "architecture": "arm64",
+      "archive_bytes": 285589524,
+      "archive_git_commit_comment_required": true,
+      "archive_sha256": "62616e1381734098f3351a0dc97dd153fe78d5cdd74cea41c771c1c6e2e3c9b6",
+      "archive_source_command": "git archive --format=tar --prefix=usr/src/ 95719d8a895bf8170851e9844d9b4092b1d2b6fe | xz -T8 -3",
+      "archive_url": null,
+      "commit": "95719d8a895bf8170851e9844d9b4092b1d2b6fe",
+      "format": "DaOS-freebsd-base-source-v2",
+      "git_url": "https://git.FreeBSD.org/src.git",
+      "release": "15.1-RELEASE-p6",
+      "release_gitbranch": "releng/15.1",
+      "release_revision": "95719d8a895b",
+      "security_scope": "Pinned releng/15.1 p6 source matching the actual bootstrapped VM; not a promise of future security currency.",
+      "source_prefix": "usr/src",
+      "source_profile_note": "Complete FreeBSD source archive reused with identical byte/hash pins; ARM64 target selected by the build recipe.",
+      "source_tree_architecture_independent": true,
+      "verification": "Official FreeBSD git HTTPS clone; commit object and git archive PAX commit marker verified; XZ integrity checked. No PGP signature claim.",
+      "verified_at": "2026-11-05"
+    },
+    "source_anchor_sha256": {
+      "Makefile": "4f55537f67445ebb2e2c65c447ead1eee6243dd68025abbd5ab585c790d91416",
+      "Makefile.inc1": "a1181d9760669fe12bdd74db1258da5b6ba522c492877bf5d01de9f9d93643df",
+      "sys/arm64/conf/GENERIC": "6e4ca35da7e92190cbd43904185a0bfab0191ce3fa1abc6074fb89ba137f1a5e",
+      "sys/conf/newvers.sh": "7ec86dd079529b3137bc1648633d94d6ba22dbb8996dabcc5e777984cbc6958a"
+    },
+    "source_archive_sha256": "62616e1381734098f3351a0dc97dd153fe78d5cdd74cea41c771c1c6e2e3c9b6",
+    "stage_anchor_sha256": {
+      "METALOG": "e038b32a895118667a5442774699561d15e2410905282ec02db5c8ce8f19223d",
+      "bin/sh": "a60e9e757429a512c1551913a79a044e3b72bb0e4ac4ba68b49f1067e4cb2a4a",
+      "boot/kernel/kernel": "5ac681d051cb623b23a724f91e6ecb818a883f034c8aa88eab678162221f2dec",
+      "etc/master.passwd": "55dfb5a41ebad44523b26cba443d94c3d55e0b39a32558f81a1d50fed964ec34",
+      "etc/rc": "243891789c003e6d8ab56454b70176a770cbed6ac86f261250285d83caaca753",
+      "lib/libc.so.7": "dde4d8989c4a2425a2a65bbf873917e091db1b351d6bc95a3eff85f47daaabb6",
+      "sbin/init": "70621ffd991e433ca1cbc177c4d7355f5ab16253e2f28a9da1307f22b8d5feae"
+    },
+    "status": "success",
+    "verification_executed": true,
+    "world_recompiled": false
+  },
+  "verification_executed": true
+}

@@ -1,0 +1,8 @@
+{
+  "rejected": true,
+  "reason": "Native FAT formatter returned0 despite too few clusters for FAT32; EFI image zero-filled. AllfourUFSread-onlychecks passed. Do not treat this initial image as bootable.",
+  "raw_sha256": "66bfdf7177e62cab82be26716f3de44ca1fca8ff874f440852aad647e2d6165e",
+  "raw_bytes": 3187712000,
+  "compressed_restoration_verified": true,
+  "source_inputs_unchanged": true
+}

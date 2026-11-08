@@ -1,0 +1,52 @@
+{
+  "format": "DaOS-Windows-independent-capture-validation-v1",
+  "passed": true,
+  "scope": "actual source-built ARM64 DaOS image capture, independently decoded on Windows",
+  "host_system": "Windows",
+  "python": "3.12.7",
+  "tifffile": "2023.4.12",
+  "rawpy": "0.28.0",
+  "libraw": [
+    0,
+    22,
+    2
+  ],
+  "samples": 12288,
+  "all_tifffile_samples_equal_oracle": true,
+  "all_LibRaw_samples_equal_oracle": true,
+  "rgb_shape": [
+    96,
+    128,
+    3
+  ],
+  "request_id": "afb981a3-b924-4d55-88be-6402189c2242",
+  "capture_rows": 1,
+  "status": "complete",
+  "requested_exposure_us": 10100,
+  "actual_exposure_us": 10100,
+  "requested_analogue_gain": 1,
+  "actual_analogue_gain": 1,
+  "native_frame_sequence": 1,
+  "settings": {
+    "output_format": "dng",
+    "requested_analogue_gain": 1.0,
+    "requested_exposure_us": 10100,
+    "sensor_mode": "sim-small",
+    "simulation_scene": "scene"
+  },
+  "UI_retained_original_request": true,
+  "photo_files": 1,
+  "DNG_bytes": 25662,
+  "DNG_sha256": "34526aaace0136e38935822d974fa8d548060d0d5ea8ab8b726894b31f9529e0",
+  "journal_sha256": "603d608e6931c5a8bad1b560c7d216fa0bba9f965f2e9fbde2e0ba52c57195ba",
+  "oracle_sha256": "a1a02e82a13d07962fc05f168d2b89e5fb581981097a5611687a4760e101a810",
+  "oracle_pixels_sha256": "427c05a4266baca4853ea564c36e7f18451373c865dc655e2d1a977855b5dc5a",
+  "validation_script_sha256": "47594c6e971e465266975103ff3d0979249723eed9fb7c5a24e5375527eb834a",
+  "extraction_receipt_sha256": "3cc7d5fdcc4d233d89e71888a34823ccf5c6825d6b6be015f71ff39aa9323ba1",
+  "source_image_sha256": "69c824a3aa1f992fcb38e285145e4549c76107cab95a2a26e2e391e401b4942a",
+  "parent_cow_sha256": "2c5e7b84e538fac8bacb11dc25d60885a5e333e718cf84ef6227d8d0198b3d0a",
+  "new_capture_submitted": false,
+  "source_images_modified": false,
+  "physical_camera_validated": false,
+  "measured_color_accuracy_validated": false
+}

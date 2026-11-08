@@ -1,0 +1,65 @@
+{
+  "format": "DaOS-read-only-image-filesystem-validation-v1",
+  "passed": false,
+  "checks": [
+    {
+      "name": "root",
+      "command": [
+        "/sbin/fsck_ffs",
+        "-n",
+        "/var/DaOS-image-memory-r10/DaOS-image-arm64-r10-001/root.ufs"
+      ],
+      "returncode": 0,
+      "stdout": "/var/DaOS-image-memory-r10/DaOS-image-arm64-r10-001/root.ufs IS NOT A DISK DEVICE\n\nCONTINUE? yes\n\n** /var/DaOS-image-memory-r10/DaOS-image-arm64-r10-001/root.ufs (NO WRITE)\n** Last Mounted on \n** Phase 1 - Check Blocks and Sizes\n** Phase 2 - Check Pathnames\n\nUPDATE FILESYSTEM TO TRACK DIRECTORY DEPTH? no\n\n** Phase 3 - Check Connectivity\n** Phase 4 - Check Reference Counts\n** Phase 5 - Check Cyl groups\n48774 files, 479413 used, 150762 free (2 frags, 18845 blocks, 0.0% fragmentation)\n",
+      "stderr": ""
+    },
+    {
+      "name": "var",
+      "command": [
+        "/sbin/fsck_ffs",
+        "-n",
+        "/var/DaOS-image-memory-r10/DaOS-image-arm64-r10-001/var.ufs"
+      ],
+      "returncode": 0,
+      "stdout": "/var/DaOS-image-memory-r10/DaOS-image-arm64-r10-001/var.ufs IS NOT A DISK DEVICE\n\nCONTINUE? yes\n\n** /var/DaOS-image-memory-r10/DaOS-image-arm64-r10-001/var.ufs (NO WRITE)\n** Last Mounted on \n** Phase 1 - Check Blocks and Sizes\n** Phase 2 - Check Pathnames\n\nUPDATE FILESYSTEM TO TRACK DIRECTORY DEPTH? no\n\n** Phase 3 - Check Connectivity\n** Phase 4 - Check Reference Counts\n** Phase 5 - Check Cyl groups\n65 files, 596 used, 31107 free (3 frags, 3888 blocks, 0.0% fragmentation)\n",
+      "stderr": ""
+    },
+    {
+      "name": "calibration",
+      "command": [
+        "/sbin/fsck_ffs",
+        "-n",
+        "/var/DaOS-image-memory-r10/DaOS-image-arm64-r10-001/calibration.ufs"
+      ],
+      "returncode": 0,
+      "stdout": "/var/DaOS-image-memory-r10/DaOS-image-arm64-r10-001/calibration.ufs IS NOT A DISK DEVICE\n\nCONTINUE? yes\n\n** /var/DaOS-image-memory-r10/DaOS-image-arm64-r10-001/calibration.ufs (NO WRITE)\n** Last Mounted on \n** Phase 1 - Check Blocks and Sizes\n** Phase 2 - Check Pathnames\n** Phase 3 - Check Connectivity\n** Phase 4 - Check Reference Counts\n** Phase 5 - Check Cyl groups\n1 files, 1 used, 7894 free (6 frags, 986 blocks, 0.1% fragmentation)\n",
+      "stderr": ""
+    },
+    {
+      "name": "photos",
+      "command": [
+        "/sbin/fsck_ffs",
+        "-n",
+        "/var/DaOS-image-memory-r10/DaOS-image-arm64-r10-001/photos.ufs"
+      ],
+      "returncode": 0,
+      "stdout": "/var/DaOS-image-memory-r10/DaOS-image-arm64-r10-001/photos.ufs IS NOT A DISK DEVICE\n\nCONTINUE? yes\n\n** /var/DaOS-image-memory-r10/DaOS-image-arm64-r10-001/photos.ufs (NO WRITE)\n** Last Mounted on \n** Phase 1 - Check Blocks and Sizes\n** Phase 2 - Check Pathnames\n** Phase 3 - Check Connectivity\n** Phase 4 - Check Reference Counts\n** Phase 5 - Check Cyl groups\n1 files, 1 used, 63446 free (6 frags, 7930 blocks, 0.0% fragmentation)\n",
+      "stderr": ""
+    },
+    {
+      "name": "efi",
+      "command": [
+        "/sbin/fsck_msdosfs",
+        "-n",
+        "/var/DaOS-image-memory-r10/DaOS-image-arm64-r10-001/efi.fat"
+      ],
+      "returncode": 8,
+      "stdout": "** /var/DaOS-image-memory-r10/DaOS-image-arm64-r10-001/efi.fat\nInvalid signature in boot block: 0000\n",
+      "stderr": ""
+    }
+  ],
+  "raw_image_unchanged": true,
+  "base_anchors_unchanged": true,
+  "source_rescue_hardlinks": 146,
+  "mounts_or_attachments": false
+}

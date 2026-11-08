@@ -1,0 +1,46 @@
+{
+  "format": "DaOS-boot-logo-asset-v1",
+  "source": {
+    "origin": "User-supplied JPEG attachment, 2026-11-05 America/Los_Angeles",
+    "file": "boot-logo-source.jpg",
+    "sha256": "153a528048e42f4534259708a1efbca4ee88c7fa63151f297572f39fc21f043d",
+    "rights": "User requested use as the project Boot Logo. No additional copyright or public redistribution grant is asserted."
+  },
+  "output": {
+    "file": "DaOS-logo.png",
+    "sha256": "cd0f2623465ea660e225ab390dfbfcc42746ad6fe0809f10611a45352c248d7a",
+    "bytes": 348454,
+    "width": 743,
+    "height": 554,
+    "mode": "RGBA",
+    "bit_depth_per_channel": 8,
+    "alpha": "255 for every pixel",
+    "decoded_RGBA_pixel_sha256": "d22c9708dcc3552ab6aafb67631781d5b18649f6adf9b3dea6a1a842244a3d05"
+  },
+  "conversion": {
+    "method": "Pillow JPEG decode, convert RGBA, lossless PNG encode",
+    "resized": false,
+    "cropped": false,
+    "generated_pixels": false,
+    "source_decoded_RGBA_and_PNG_RGBA_byte_identical": true
+  },
+  "integration": {
+    "suggested_install_path": "/boot/images/DaOS-logo.png",
+    "requires_kernel_device_splash": true,
+    "requires_graphics_console": true,
+    "requires_boot_mute": true,
+    "physical_board_boot_verified": false,
+    "virtual_boot_verified": false
+  },
+  "source_verification": {
+    "FreeBSD_commit": "95719d8a895bf8170851e9844d9b4092b1d2b6fe",
+    "references": [
+      "https://raw.githubusercontent.com/freebsd/freebsd-src/95719d8a895bf8170851e9844d9b4092b1d2b6fe/stand/defaults/loader.conf",
+      "https://raw.githubusercontent.com/freebsd/freebsd-src/95719d8a895bf8170851e9844d9b4092b1d2b6fe/stand/common/gfx_fb.c",
+      "https://raw.githubusercontent.com/freebsd/freebsd-src/95719d8a895bf8170851e9844d9b4092b1d2b6fe/stand/efi/loader/bootinfo.c",
+      "https://raw.githubusercontent.com/freebsd/freebsd-src/95719d8a895bf8170851e9844d9b4092b1d2b6fe/sys/dev/vt/vt_core.c",
+      "https://raw.githubusercontent.com/freebsd/freebsd-src/95719d8a895bf8170851e9844d9b4092b1d2b6fe/sys/conf/files",
+      "https://raw.githubusercontent.com/freebsd/freebsd-src/95719d8a895bf8170851e9844d9b4092b1d2b6fe/sys/arm64/conf/std.dev"
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+test_post_publication_replacement_stays_unknown_and_preserves_both_directories (tests.test_reference_capture_paths.ReferenceCapturePathTests.test_post_publication_replacement_stays_unknown_and_preserves_both_directories) ... ok
+test_redirect_after_admission_never_creates_an_outside_photo_or_cleans_foreign_files (tests.test_reference_capture_paths.ReferenceCapturePathTests.test_redirect_after_admission_never_creates_an_outside_photo_or_cleans_foreign_files) ... ok
+test_replaced_produced_file_never_becomes_a_completed_photograph (tests.test_reference_capture_paths.ReferenceCapturePathTests.test_replaced_produced_file_never_becomes_a_completed_photograph) ... ok
+test_staging_directory_replacement_during_generation_cannot_write_foreign_files (tests.test_reference_capture_paths.ReferenceCapturePathTests.test_staging_directory_replacement_during_generation_cannot_write_foreign_files) ... ok
+test_startup_rejects_linked_photo_directory_before_journal_creation (tests.test_reference_capture_paths.ReferenceCapturePathTests.test_startup_rejects_linked_photo_directory_before_journal_creation) ... ok
+test_actual_process_lock_and_abrupt_exit_recovery (tests.test_camera_service.CameraServiceTests.test_actual_process_lock_and_abrupt_exit_recovery) ... ok
+test_capture_identity_and_payload_conflict (tests.test_camera_service.CameraServiceTests.test_capture_identity_and_payload_conflict) ... ok
+test_disconnect_persists_until_authorized_reconnect (tests.test_camera_service.CameraServiceTests.test_disconnect_persists_until_authorized_reconnect) ... ok
+test_expiration_does_not_interrupt_capture_or_allow_overlap (tests.test_camera_service.CameraServiceTests.test_expiration_does_not_interrupt_capture_or_allow_overlap) ... ERROR
+test_failed_admission_commit_rolls_back_and_stops_service (tests.test_camera_service.CameraServiceTests.test_failed_admission_commit_rolls_back_and_stops_service) ... ok
+test_fault_and_cancellation (tests.test_camera_service.CameraServiceTests.test_fault_and_cancellation) ... ok
+test_files_created_after_admission_are_never_overwritten_or_deleted (tests.test_camera_service.CameraServiceTests.test_files_created_after_admission_are_never_overwritten_or_deleted) ... ok
+test_interrupted_record_becomes_unknown_without_reexecution (tests.test_camera_service.CameraServiceTests.test_interrupted_record_becomes_unknown_without_reexecution) ... ok
+test_lease_heartbeat_and_expiry_fence (tests.test_camera_service.CameraServiceTests.test_lease_heartbeat_and_expiry_fence) ... ERROR
+test_no_completion_before_file_commit (tests.test_camera_service.CameraServiceTests.test_no_completion_before_file_commit) ... ok
+test_one_instance_per_data_dir (tests.test_camera_service.CameraServiceTests.test_one_instance_per_data_dir) ... ok
+test_process_crash_after_rename_is_unknown_and_not_reexecuted (tests.test_camera_service.CameraServiceTests.test_process_crash_after_rename_is_unknown_and_not_reexecuted) ... ok
+test_stale_epoch_and_restart (tests.test_camera_service.CameraServiceTests.test_stale_epoch_and_restart) ... ok
+test_thread_start_failure_releases_slot_and_journals_failure (tests.test_camera_service.CameraServiceTests.test_thread_start_failure_releases_slot_and_journals_failure) ... ok
+test_fault_and_invalid_input (tests.test_camera_cli.BasicCaptureCliTests.test_fault_and_invalid_input) ... ok
+test_independent_capture_query_and_same_id_does_not_retake (tests.test_camera_cli.BasicCaptureCliTests.test_independent_capture_query_and_same_id_does_not_retake) ... ok
+
+======================================================================
+ERROR: test_expiration_does_not_interrupt_capture_or_allow_overlap (tests.test_camera_service.CameraServiceTests.test_expiration_does_not_interrupt_capture_or_allow_overlap)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/tests/test_camera_service.py", line 140, in test_expiration_does_not_interrupt_capture_or_allow_overlap
+    self.svc.release(self.lease['token'], self.lease['epoch'])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/camera/camerad/service.py", line 256, in release
+    self._authorize(token, epoch)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/camera/camerad/service.py", line 218, in _authorize
+    raise CameraError('control_denied', 'control token or epoch is invalid')
+camera.camerad.service.CameraError: control token or epoch is invalid
+
+======================================================================
+ERROR: test_lease_heartbeat_and_expiry_fence (tests.test_camera_service.CameraServiceTests.test_lease_heartbeat_and_expiry_fence)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/tests/test_camera_service.py", line 122, in test_lease_heartbeat_and_expiry_fence
+    self.svc.release(self.lease['token'], self.lease['epoch'])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/camera/camerad/service.py", line 256, in release
+    self._authorize(token, epoch)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/camera/camerad/service.py", line 218, in _authorize
+    raise CameraError('control_denied', 'control token or epoch is invalid')
+camera.camerad.service.CameraError: control token or epoch is invalid
+
+----------------------------------------------------------------------
+Ran 21 tests in 4.563s
+
+FAILED (errors=2)

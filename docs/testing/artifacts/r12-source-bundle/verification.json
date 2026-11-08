@@ -1,0 +1,19 @@
+{
+  "format": "DaOS-r12-source-bundle-test-v1",
+  "passed": true,
+  "tests": 21,
+  "skips": 0,
+  "failures": 0,
+  "seconds": 6.436,
+  "initial_fixture_failure": "The test originally used an excluded target directory; it was corrected to an admitted evidence directory before the final run.",
+  "privacy_scope": "Copy-only normalization of UTF-8 logs within existing evidence locations; original files and all remaining guards unchanged.",
+  "source_sha256": {
+    "tools/source_bundle.py": "567b6b0033d103c326dd3a5fb73b985d7a93e9121f8d5cc0212bc906dad7e9da",
+    "tests/test_source_bundle.py": "ad1eedcc0e4da2e16eaecf9eaeb23e423c965b1c52d210c4d43d44497f4d7142"
+  },
+  "evidence_sha256": {
+    "initial-refusal.txt": "c1baa47ca9f1e781e1b9550d2026010dc83e20f30f0c6c0e366867afcb6cc38d",
+    "initial-fixture-test.txt": "b3f8fe22d2d28ff70e3e46c2edb35894a2601a2cd0d1bb2fad54f2214aa6b098",
+    "verified-tests.txt": "fa0038a46b0dde2a2bd64058c287f920818005f0c36c273131e577fbecd46cd5"
+  }
+}

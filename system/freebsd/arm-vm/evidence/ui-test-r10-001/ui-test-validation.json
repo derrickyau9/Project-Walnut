@@ -1,0 +1,168 @@
+{
+  "format": "DaOS-freebsd-arm64-ui-interaction-validation-v1",
+  "status": "completed",
+  "passed": true,
+  "scope": "full unmodified Qt interaction suite in actual ARM64 FreeBSD reference guest, offscreen; not visible custom-image boot",
+  "uname": {
+    "sysname": "FreeBSD",
+    "nodename": "daos-arm64-dev",
+    "release": "15.1-RELEASE-p6",
+    "version": "FreeBSD 15.1-RELEASE-p6 releng/15.1-n283643-95719d8a895b GENERIC",
+    "machine": "arm64"
+  },
+  "uid": 1000,
+  "python": "3.12.15 (main, Oct 29 2026, 02:27:54) [Clang 19.1.7 (https://github.com/llvm/llvm-project.git llvmorg-19.1.7-0-gcd7080",
+  "native": {
+    "bytes": 1931240,
+    "sha256": "be752fd42c631e763682fa96a34b929a2bd80b5ae9ab3eb1b6f17653bc31bc28",
+    "elf_class": 64,
+    "endianness": "little",
+    "osabi": 9,
+    "osabi_name": "FreeBSD",
+    "machine": 183,
+    "machine_name": "EM_AARCH64",
+    "elf_type": 2,
+    "entry": 2441200,
+    "interpreter": "/libexec/ld-elf.so.1"
+  },
+  "modules": [
+    "tests.test_device_ui"
+  ],
+  "source_sha256": {
+    "camera/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "camera/calibration/__init__.py": "145ef81dd62004f0d7ff607bb8d7a0d221a6a4279bb7ee6bd8eae78dafdecc7c",
+    "camera/calibration/binding.py": "9abe0ce308550aa7a3f9f56d6342105c5e8fc827698d21cf931875f910fb1362",
+    "camera/calibration/fixtures/binding-synthetic.json": "818b7205db8d56b7f1e391e0cc767e94e693a9dce14295b76610683ad7c75e40",
+    "camera/calibration/fixtures/binding-uncalibrated.json": "5f2ef8f7c9fc5b8174a23b564b5616bfa1602d80c0f79b508a48b34d9dd55840",
+    "camera/calibration/fixtures/binding-unicode.json": "6bc62c274cf7b975e336fdb9fbc5eec0c837f5f8e421ca51285cc7eb79e49373",
+    "camera/calibration/store.py": "23dc05c64847a2303fc778c42d3f012cfdfcf1c62ea035cf435211264938f228",
+    "camera/camerad/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "camera/camerad/__main__.py": "fc25bee012b7877f3e2905702992573d112881e20e05a69f2026db103fc04f73",
+    "camera/camerad/calibration_context.py": "255b523780b84a6e6372966626931d67075ccf79c068f64bcb3ac9ff537cfe45",
+    "camera/camerad/http_client.py": "e0e449c23cec8b5f2f8074a7038a75f855b2dd512a042bd8eb2dcb179420fd16",
+    "camera/camerad/native_backend.py": "4320372629d5cd035947a9f74360c90d7c52ac91635202f80a0a9cb311430f5a",
+    "camera/camerad/native_client.py": "5dc77424d9aa71400c0cf0d476d9d8d3759d56570c4f8de742067bc6bf5fdbca",
+    "camera/camerad/native_service.py": "e31bb085407683f070ef0aad477000cfdcad22a11871a6265fd7ae483a0544f9",
+    "camera/camerad/retained.py": "a1518dc814d4634616917b305ca7a26ca08908263214c43183dcc75f11891d4b",
+    "camera/camerad/server.py": "122bd5fe963edfcae73deec3aa69c44e81f15f2af9f58db5827e453d1235d50a",
+    "camera/camerad/service.py": "c1d90d37d2a913ef255b1cf0481120629e863a404ba70923e01b83dd721e0316",
+    "camera/dng/hf_dng.py": "8969aef7fa59c33791f55cf14271581c10b51a264b57b572873032f93e03d7b5",
+    "camera/dng/inspect.py": "4200ac573d1a0373bc5cacde10d024948fab046af88d065356387d71c7033342",
+    "camera/pipeline/__init__.py": "e14baeff3beab5b6f1b8f144fdb98b95158db1178eb49e038dab03b44b56b12d",
+    "camera/pipeline/preview.py": "2f6df30c727173450473386698166ce9dcc0d7cd856499068f9a6fe24e2afbc7",
+    "daos/camera-contracts/v1/capture-asset.schema.json": "f5663535ca6f780c2c95aeac6d422ebc76d8fea27ce1d14f505267984e9e3b8e",
+    "daos/camera-contracts/v1/capture-list.schema.json": "6f2bd0f8abe68371191c5dcadd3daf777ea54cc63c4f228a8393e1a4eabb2ee9",
+    "daos/camera-contracts/v1/capture-record.schema.json": "7742a8becdec8c67eaab5ba2921370287ea2574ef0375a3f2059388ecf56e7b7",
+    "daos/camera-contracts/v1/capture-request.schema.json": "b8a2ad7ced1fc6eaf87d43463b4282f27cc1854ac7828388ff72f951468a13ce",
+    "daos/camera-contracts/v2/calibration-binding.schema.json": "a410ae6a7eaf0d107f00de44c3521a7548f93d4cf52802826aaa6c141b76158b",
+    "daos/camera-contracts/v2/capture-record.schema.json": "571749e472b14d9b66c273cfdc8919775385b2bdb07ab0d1f28a939f51b87b42",
+    "daos/capability_runtime/__init__.py": "a347df9a4513dac86c119fcf581da6ef63a96b0c01117d35b68af46f07406faa",
+    "daos/capability_runtime/__main__.py": "105c4743bfe9d2cb3fc3525e34d0343f483fe8d7a56f5e0e2e558fb66d885e0d",
+    "daos/capability_runtime/bracket.py": "0621a20fa3188da919e647e3fef26c98a8f4cd1e805a6e3ec848fe80983f336a",
+    "daos/capability_runtime/manager.py": "adf916baf8578a2a3b1cdf815ad646d51feec9bd2a7ac776d263f75e1c39f47a",
+    "daos/capability_runtime/recipes.py": "4dd4195005b942bb45671309283b7bb0c056d19044f050fe734b3ecc8e60734e",
+    "run_ui_tests.py": "f355583712956f5448783079ddc54cdcabab6b563e43314deffdd17febf0657e",
+    "simulation/bayer.py": "a1a02e82a13d07962fc05f168d2b89e5fb581981097a5611687a4760e101a810",
+    "tests/test_device_ui.py": "923e9206bc18db1bb3ed0748118b2011d6fc852780b9433c1445f80fd4103dae",
+    "tools/__init__.py": "e41d06c260c1de1179908cda3e460ba7ab5db7ed2a05cb5d56cb73e765eb467a",
+    "tools/freebsd_build.py": "ab0870aefe6b3e51f1c949f2926017bf0cfc787c6f32f686a38d63a84ecbb446",
+    "tools/linux_build.py": "b60fc725e472a88f1610f410e332400130e75e8541516dcc76bb02beb98942dc",
+    "ui/on-device/Main.qml": "99f493d4783ae6628523efbabe20a275cecac422feb5ccd3306894659a5d310d",
+    "ui/on-device/controller.py": "e9121da43b61148e9263867bdf8fc1c896af2c91e93dd230830e0cec46231dab",
+    "ui/on-device/main.py": "a0b2666d149f8d87a7ce10bf0d0fda2af66651114a405bde0f59898380c80f7a",
+    "ui/on-device/review_capture.py": "d18cd86bcf31c5d1bae0f2dafc23aa16015b6ddb6dc1256354a8b155806e4fdb"
+  },
+  "compiled_on_target": false,
+  "production_photos_accessed": false,
+  "physical_camera_validated": false,
+  "physical_display_validated": false,
+  "custom_image_boot_validated": false,
+  "command": {
+    "command": [
+      "/usr/local/bin/python3.12",
+      "-B",
+      "-c",
+      "RUNTIME='/home/camera/DaOS-ui-test-r10-001/results/qt-runtime.json'\nimport json,os,platform\nfrom pathlib import Path\nfrom PyQt5.QtCore import QT_VERSION_STR,PYQT_VERSION_STR\nfrom PyQt5.QtGui import QGuiApplication\napp=QGuiApplication([])\nruntime={'system':platform.system(),'machine':platform.machine(),'uid':os.geteuid(),'qt':QT_VERSION_STR,'pyqt':PYQT_VERSION_STR,'qpa':app.platformName()}\nwith Path(RUNTIME).open('x') as output:json.dump(runtime,output,indent=2)\nassert runtime['qpa']=='offscreen'\n\n\nimport json,sys,unittest\nfrom pathlib import Path\nclass CapturingResult(unittest.TextTestResult):\n    def __init__(self,*args,**kwargs):\n        super().__init__(*args,**kwargs); self.successes=[]\n    def addSuccess(self,test):\n        super().addSuccess(test);self.successes.append(test.id())\nsuite=unittest.defaultTestLoader.loadTestsFromNames(sys.argv[2:])\nresult=unittest.TextTestRunner(verbosity=2,resultclass=CapturingResult).run(suite)\nrecord={'format':'hf-freebsd-native-python-tests-v1','passed':result.wasSuccessful(),\n        'ran':result.testsRun,'passed_count':len(result.successes),'successful_tests':result.successes,\n        'failures':[test.id() for test,_ in result.failures],\n        'errors':[test.id() for test,_ in result.errors],\n        'skipped':[{'test':test.id(),'reason':reason} for test,reason in result.skipped]}\nwith Path(sys.argv[1]).open('x',encoding='utf-8') as stream:json.dump(record,stream,indent=2)\nraise SystemExit(0 if result.wasSuccessful() else 1)\n",
+      "/home/camera/DaOS-ui-test-r10-001/results/python-tests.json",
+      "tests.test_device_ui"
+    ],
+    "returncode": 0,
+    "seconds": 42.75,
+    "log": "ui-tests.log",
+    "log_bytes": 3992,
+    "log_sha256": "915bb1df6a9c867dbbd776bfe559371018ada02a3b735fbfa6e8af870e0347b6"
+  },
+  "python_tests": {
+    "format": "hf-freebsd-native-python-tests-v1",
+    "passed": true,
+    "ran": 23,
+    "passed_count": 23,
+    "successful_tests": [
+      "tests.test_device_ui.QtDeviceTests.test_atomic_state_replace_failure_retains_previous_uuid_and_file",
+      "tests.test_device_ui.QtDeviceTests.test_browsing_does_not_resolve_an_unconfirmed_current_request",
+      "tests.test_device_ui.QtDeviceTests.test_busy_reference_shutdown_closes_authority_after_capture_finishes",
+      "tests.test_device_ui.QtDeviceTests.test_camera_action_queue_stays_bounded_under_repeated_clicks",
+      "tests.test_device_ui.QtDeviceTests.test_corrupt_state_backup_failure_or_oversize_keeps_capture_held",
+      "tests.test_device_ui.QtDeviceTests.test_http_attach_native_capture_releases_lease_and_keeps_server_alive",
+      "tests.test_device_ui.QtDeviceTests.test_invalid_lease_metadata_cannot_reach_qt_timer",
+      "tests.test_device_ui.QtDeviceTests.test_late_preview_cannot_return_after_disconnect",
+      "tests.test_device_ui.QtDeviceTests.test_malformed_authority_state_cannot_overflow_qt_properties",
+      "tests.test_device_ui.QtDeviceTests.test_malformed_completion_fields_are_held_without_opening_metadata_paths",
+      "tests.test_device_ui.QtDeviceTests.test_native_authority_actual_capture_and_dng",
+      "tests.test_device_ui.QtDeviceTests.test_native_cancel_is_confirmed_by_original_request",
+      "tests.test_device_ui.QtDeviceTests.test_native_corrupt_state_ack_preserves_backup_and_original_record",
+      "tests.test_device_ui.QtDeviceTests.test_native_disconnect_unknown_reconnect_does_not_resubmit",
+      "tests.test_device_ui.QtDeviceTests.test_native_http_retained_qml_export_uses_client_destination",
+      "tests.test_device_ui.QtDeviceTests.test_native_http_short_lease_and_stale_client_shutdown_handoff",
+      "tests.test_device_ui.QtDeviceTests.test_native_unknown_acknowledgment_allows_new_uuid_and_preserves_old_record",
+      "tests.test_device_ui.QtDeviceTests.test_pending_saved_uuid_without_journal_record_is_not_replayed",
+      "tests.test_device_ui.QtDeviceTests.test_reference_controls_preview_capture_query_and_retained_id",
+      "tests.test_device_ui.QtDeviceTests.test_request_id_storage_failure_prevents_submission",
+      "tests.test_device_ui.QtDeviceTests.test_retained_page_replaces_model_and_slow_export_does_not_starve_lease",
+      "tests.test_device_ui.QtDeviceTests.test_retained_reference_review_and_export_preserve_current_capture",
+      "tests.test_device_ui.QtDeviceTests.test_unknown_submission_disables_shutter_and_queries_original_without_retry"
+    ],
+    "failures": [],
+    "errors": [],
+    "skipped": []
+  },
+  "runtime": {
+    "system": "FreeBSD",
+    "machine": "arm64",
+    "uid": 1000,
+    "qt": "5.15.19",
+    "pyqt": "5.15.11",
+    "qpa": "offscreen"
+  },
+  "screenshots": {
+    "corrupt-state-held-800.png": {
+      "bytes": 84024,
+      "sha256": "748cb4ccc2d454be3dfec6293cfc5fd545da38b83f0a9f18b948a68b597473d3"
+    },
+    "http-attach-complete-1024.png": {
+      "bytes": 71426,
+      "sha256": "241660ce5cd25518a462907ae931acbf17d3e9b4e2c6d5e670396011db5b2665"
+    },
+    "native-acknowledged-800.png": {
+      "bytes": 82892,
+      "sha256": "ca324545acf4f3ccf310b3db28c5a0cba3ee051143fd5998ed65cbce1c614ca7"
+    },
+    "native-complete-1024.png": {
+      "bytes": 71476,
+      "sha256": "29f43e57d562786102e82eb6e2d419a0d55fae3e85bb74ccb586e0de1ab62fba"
+    },
+    "native-unknown-800.png": {
+      "bytes": 80716,
+      "sha256": "f61533ffc875a2c2473a9f310c77f6c2b78ff08baa436b89b37de4955351d7ca"
+    },
+    "retained-library-native-http-1024.png": {
+      "bytes": 89240,
+      "sha256": "f0f03f72da5feb7bcc74a514c35e9707d155d3faed54338cc19a4a5e84c85254"
+    },
+    "retained-library-reference-800.png": {
+      "bytes": 62799,
+      "sha256": "c80e577aa94e1680e47fb6a6e2b7707d455c4acdfb76e81862409e41a73a8a5f"
+    }
+  },
+  "python_report_sha256": "a3c5b869403eed5fecba3b60587f59d7d9417a8851024254e79330edd0b838c9"
+}

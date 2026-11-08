@@ -1,0 +1,11 @@
+# R13 neutral UI on actual FreeBSD ARM64
+
+The frozen R13 source passed all 79 tests with zero skips on the existing FreeBSD 15.1-RELEASE-p6 ARM64 reference guest as UID1000. Unittest took 118.216 seconds; the bounded harness took 121.708 seconds. Actual Python, QtCore, QtTest and native executable ELF identities are retained. The exact 44-file source snapshot and before/after source hashes are included.
+
+The six new neutral-theme cases saved 13 separate reference-authority renders: dark/light MENU and quick controls, four Tools in both modes, and a colored live preview. All five rendered fixtures recorded zero capture rows and no request UUID. Active background roles and sampled rendered UI surfaces were opaque achromatic black/white/gray; photographic preview pixels retained color. These render checks did not take photographs. The image-processing source hashes remain the same as R12.
+
+One separately authorized native review then passed with eight original PNGs, seven at 800×600 and one at 1280×800. Original UUID: `589e74a4-d66a-4f0c-98f4-12a8a48f0893`. Exactly one review shutter produced one complete native HF-Sim DNG at 8000 us and gain 1.25. Saved and exported DNG bytes had SHA256 `c2c939663b4e1a4534534a72b7dd5102a63a0b3cfcb44166e628f15d848b47c5`. Dark QML background and recreated preferences matched. The native process closed with exit0 and no QML warnings. Live preview is the separate Python synthetic Bayer PreviewStream; retained playback is derived from the native DNG.
+
+The single bounded standard-NAT boot used four virtual CPUs and 4 GiB RAM with guest egress enabled and only a loopback SSH forward. No install or download was performed. Guest shutdown was clean, owned QEMU PID403 and hidden holder PID148140 exited, and original base/seed/firmware-code hashes remained unchanged. R12 receipts, images and ZIP were preserved. No private keys, DNG bytes or databases are included here.
+
+This is reference-guest offscreen/software Qt validation, not a rebuilt R13 appliance-image boot or physical display/sensor validation. SHA256 establishes byte consistency, not publisher authenticity. Native review images and the 13 no-shutter neutral proofs are kept as distinct series under `final-001` and `final-001/neutral`.

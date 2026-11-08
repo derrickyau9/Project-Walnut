@@ -1,0 +1,41 @@
+test_active_palette_is_opaque_achromatic_with_explicit_user_override (tests.test_device_neutral_theme.NeutralPaletteContractTests.test_active_palette_is_opaque_achromatic_with_explicit_user_override) ... ok
+test_dark_menu_backgrounds_render_achromatically_without_capture (tests.test_device_neutral_theme.NeutralRenderedBackgroundTests.test_dark_menu_backgrounds_render_achromatically_without_capture) ... ok
+test_light_menu_backgrounds_render_achromatically_without_capture (tests.test_device_neutral_theme.NeutralRenderedBackgroundTests.test_light_menu_backgrounds_render_achromatically_without_capture) ... ok
+test_optional_tool_surfaces_are_neutral_without_changing_camera_settings (tests.test_device_neutral_theme.NeutralRenderedBackgroundTests.test_optional_tool_surfaces_are_neutral_without_changing_camera_settings) ... 
+  test_optional_tool_surfaces_are_neutral_without_changing_camera_settings (tests.test_device_neutral_theme.NeutralRenderedBackgroundTests.test_optional_tool_surfaces_are_neutral_without_changing_camera_settings) (mode='dark', app='recipes') ... FAIL
+  test_optional_tool_surfaces_are_neutral_without_changing_camera_settings (tests.test_device_neutral_theme.NeutralRenderedBackgroundTests.test_optional_tool_surfaces_are_neutral_without_changing_camera_settings) (mode='light', app='recipes') ... FAIL
+test_preview_retains_source_color_while_shooting_hud_is_achromatic (tests.test_device_neutral_theme.NeutralRenderedBackgroundTests.test_preview_retains_source_color_while_shooting_hud_is_achromatic) ... FAIL
+test_quick_controls_and_shooting_bar_are_neutral_in_both_modes (tests.test_device_neutral_theme.NeutralRenderedBackgroundTests.test_quick_controls_and_shooting_bar_are_neutral_in_both_modes) ... ok
+
+======================================================================
+FAIL: test_optional_tool_surfaces_are_neutral_without_changing_camera_settings (tests.test_device_neutral_theme.NeutralRenderedBackgroundTests.test_optional_tool_surfaces_are_neutral_without_changing_camera_settings) (mode='dark', app='recipes')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\derri\Documents\Codex\2026-11-05\task\tests\test_device_neutral_theme.py", line 257, in test_optional_tool_surfaces_are_neutral_without_changing_camera_settings
+    self.assert_flat_regions_are_neutral(self.frame())
+  File "C:\Users\derri\Documents\Codex\2026-11-05\task\tests\test_device_neutral_theme.py", line 159, in assert_flat_regions_are_neutral
+    self.assertEqual(255, pixel[3], 'Final UI frame must be opaque.')
+AssertionError: 255 != 0 : Final UI frame must be opaque.
+
+======================================================================
+FAIL: test_optional_tool_surfaces_are_neutral_without_changing_camera_settings (tests.test_device_neutral_theme.NeutralRenderedBackgroundTests.test_optional_tool_surfaces_are_neutral_without_changing_camera_settings) (mode='light', app='recipes')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\derri\Documents\Codex\2026-11-05\task\tests\test_device_neutral_theme.py", line 257, in test_optional_tool_surfaces_are_neutral_without_changing_camera_settings
+    self.assert_flat_regions_are_neutral(self.frame())
+  File "C:\Users\derri\Documents\Codex\2026-11-05\task\tests\test_device_neutral_theme.py", line 159, in assert_flat_regions_are_neutral
+    self.assertEqual(255, pixel[3], 'Final UI frame must be opaque.')
+AssertionError: 255 != 0 : Final UI frame must be opaque.
+
+======================================================================
+FAIL: test_preview_retains_source_color_while_shooting_hud_is_achromatic (tests.test_device_neutral_theme.NeutralRenderedBackgroundTests.test_preview_retains_source_color_while_shooting_hud_is_achromatic)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\derri\Documents\Codex\2026-11-05\task\tests\test_device_neutral_theme.py", line 241, in test_preview_retains_source_color_while_shooting_hud_is_achromatic
+    self.assertTrue(data[0::4] != data[1::4] or data[1::4] != data[2::4],
+AssertionError: False is not true : UI neutralization must not globally desaturate photographic pixels.
+
+----------------------------------------------------------------------
+Ran 6 tests in 4.488s
+
+FAILED (failures=3)

@@ -1,0 +1,34 @@
+test_post_publication_replacement_stays_unknown_and_preserves_both_directories (tests.test_reference_capture_paths.ReferenceCapturePathTests.test_post_publication_replacement_stays_unknown_and_preserves_both_directories) ... ERROR
+test_redirect_after_admission_never_creates_an_outside_photo_or_cleans_foreign_files (tests.test_reference_capture_paths.ReferenceCapturePathTests.test_redirect_after_admission_never_creates_an_outside_photo_or_cleans_foreign_files) ... ERROR
+test_startup_rejects_linked_photo_directory_before_journal_creation (tests.test_reference_capture_paths.ReferenceCapturePathTests.test_startup_rejects_linked_photo_directory_before_journal_creation) ... ok
+
+======================================================================
+ERROR: test_post_publication_replacement_stays_unknown_and_preserves_both_directories (tests.test_reference_capture_paths.ReferenceCapturePathTests.test_post_publication_replacement_stays_unknown_and_preserves_both_directories)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/tests/test_reference_capture_paths.py", line 71, in test_post_publication_replacement_stays_unknown_and_preserves_both_directories
+    service.capture({'request_id':rid,'token':lease['token'],'control_epoch':lease['epoch']})
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/camera/camerad/service.py", line 366, in capture
+    data = self._validate(request)
+  File "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/camera/camerad/service.py", line 237, in _validate
+    raise CameraError('invalid_request', 'unsupported sensor mode or output format')
+camera.camerad.service.CameraError: unsupported sensor mode or output format
+
+======================================================================
+ERROR: test_redirect_after_admission_never_creates_an_outside_photo_or_cleans_foreign_files (tests.test_reference_capture_paths.ReferenceCapturePathTests.test_redirect_after_admission_never_creates_an_outside_photo_or_cleans_foreign_files)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/tests/test_reference_capture_paths.py", line 42, in test_redirect_after_admission_never_creates_an_outside_photo_or_cleans_foreign_files
+    service.capture({'request_id':rid,**{'token':lease['token'],'control_epoch':lease['epoch']},'fault':'delay'})
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/camera/camerad/service.py", line 366, in capture
+    data = self._validate(request)
+  File "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/camera/camerad/service.py", line 237, in _validate
+    raise CameraError('invalid_request', 'unsupported sensor mode or output format')
+camera.camerad.service.CameraError: unsupported sensor mode or output format
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.018s
+
+FAILED (errors=2)

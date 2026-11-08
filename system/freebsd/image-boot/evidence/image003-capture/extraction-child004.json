@@ -1,0 +1,334 @@
+{
+  "format": "DaOS-stopped-capture-UFS-forensics-v1",
+  "host_uid": 1000,
+  "host_gid": 1000,
+  "host": [
+    "Linux",
+    "DESKTOP-KF0QMR3",
+    "6.18.54.1-microsoft-standard-WSL2",
+    "#1 SMP PREEMPT_DYNAMIC Tue Oct  6 19:13:07 UTC 2026",
+    "x86_64"
+  ],
+  "source_image_sha256": "69c824a3aa1f992fcb38e285145e4549c76107cab95a2a26e2e391e401b4942a",
+  "parent_cow_sha256": "f3e085f7cf1b68926b1a3e63018554d7ac69a23d56bb9483112ac3ec9d539a3e",
+  "observation_sha256": "17419e820eb5cd9a652d13143e9644d0c8a319e4528bae4510bdc1471004c075",
+  "script_sha256": "6543bb522851dd87de6707b7b9eefdfd8ce16f02dd99c0d766cd319c43a03b01",
+  "tools_provenance_sha256": "e33c79aa4acda7341312187bc5d6b3b5829fd4aa7d4121bd76dac8ff10bf7d8a",
+  "clean_stop_verified": true,
+  "images_unchanged": {
+    "parent_cow": true,
+    "source_raw": true,
+    "readonly_backing_chain": true
+  },
+  "readonly_backing_before": {
+    "/home/dy09/hf-task-freebsd-r10/image-boot-003/guest.qcow2": "2c5e7b84e538fac8bacb11dc25d60885a5e333e718cf84ef6227d8d0198b3d0a",
+    "/dev/shm/DaOS-FF1-r10-003/DaOS-arm64.img": "69c824a3aa1f992fcb38e285145e4549c76107cab95a2a26e2e391e401b4942a"
+  },
+  "readonly_backing_after": {
+    "/home/dy09/hf-task-freebsd-r10/image-boot-003/guest.qcow2": "2c5e7b84e538fac8bacb11dc25d60885a5e333e718cf84ef6227d8d0198b3d0a",
+    "/dev/shm/DaOS-FF1-r10-003/DaOS-arm64.img": "69c824a3aa1f992fcb38e285145e4549c76107cab95a2a26e2e391e401b4942a"
+  },
+  "slices": [
+    {
+      "partition": {
+        "first_lba": 5373992,
+        "label": "DaOS-state",
+        "last_lba": 5636135,
+        "partition_guid": "2ed40252-d963-11f1-17a5-d14fff7c5968",
+        "size_bytes": 134217728,
+        "type_guid": "516e7cb6-6ecf-11d6-8ff8-00022d09712b"
+      },
+      "file": "/dev/shm/DaOS-FF1-r10-003/capture-forensics-child004/state.ufs",
+      "bytes": 134217728,
+      "sha256": "627457df8fcfbc48e9fac35c75abc83a53149dff5dfb79534c466c39e167360f",
+      "allocated_regular_paths": [
+        {
+          "path": "DaOS/cache/fontconfig/CACHEDIR.TAG",
+          "inode": 107,
+          "selected": false
+        },
+        {
+          "path": "DaOS/cache/fontconfig/ba1d92d9e40780c65c2952558e6fa6f5-le64.cache-9",
+          "inode": 113,
+          "selected": false
+        },
+        {
+          "path": "DaOS/cache/fontconfig/4c599c202bc5c08e2d34565a40eac3b2-le64.cache-9",
+          "inode": 108,
+          "selected": false
+        },
+        {
+          "path": "DaOS/cache/fontconfig/830bb1cbfd3d582459af9eb69ef1dd53-le64.cache-9",
+          "inode": 109,
+          "selected": false
+        },
+        {
+          "path": "DaOS/cache/fontconfig/b505adbf72d7253408dd67084a8aa967-le64.cache-9",
+          "inode": 110,
+          "selected": false
+        },
+        {
+          "path": "DaOS/cache/fontconfig/ece4193fc5c4a4effb1dc60970b2e31e-le64.cache-9",
+          "inode": 111,
+          "selected": false
+        },
+        {
+          "path": "DaOS/cache/fontconfig/d3b21a501470a17bfd0b9b6aedc735bd-le64.cache-9",
+          "inode": 112,
+          "selected": false
+        },
+        {
+          "path": "DaOS/camera/.service.lock",
+          "inode": 106,
+          "selected": true
+        },
+        {
+          "path": "DaOS/camera/journal.sqlite3",
+          "inode": 114,
+          "selected": true
+        },
+        {
+          "path": "DaOS/ui/device-ui.json",
+          "inode": 115,
+          "selected": true
+        },
+        {
+          "path": "crash/minfree",
+          "inode": 38,
+          "selected": false
+        },
+        {
+          "path": "db/services.db",
+          "inode": 49,
+          "selected": false
+        },
+        {
+          "path": "db/entropy-file",
+          "inode": 70,
+          "selected": false
+        },
+        {
+          "path": "log/utx.lastlogin",
+          "inode": 67,
+          "selected": false
+        },
+        {
+          "path": "log/utx.log",
+          "inode": 68,
+          "selected": false
+        },
+        {
+          "path": "log/DaOS-camera.log",
+          "inode": 76,
+          "selected": true
+        },
+        {
+          "path": "log/DaOS-Xorg.log",
+          "inode": 128,
+          "selected": true
+        },
+        {
+          "path": "log/auth.log",
+          "inode": 81,
+          "selected": false
+        },
+        {
+          "path": "log/cron",
+          "inode": 82,
+          "selected": false
+        },
+        {
+          "path": "log/daemon.log",
+          "inode": 83,
+          "selected": false
+        },
+        {
+          "path": "log/debug.log",
+          "inode": 84,
+          "selected": false
+        },
+        {
+          "path": "log/devd.log",
+          "inode": 85,
+          "selected": false
+        },
+        {
+          "path": "log/maillog",
+          "inode": 86,
+          "selected": false
+        },
+        {
+          "path": "log/messages",
+          "inode": 87,
+          "selected": false
+        },
+        {
+          "path": "log/security",
+          "inode": 88,
+          "selected": false
+        },
+        {
+          "path": "log/lpd-errs",
+          "inode": 89,
+          "selected": false
+        },
+        {
+          "path": "log/ppp.log",
+          "inode": 90,
+          "selected": false
+        },
+        {
+          "path": "log/DaOS-Xorg.log.old",
+          "inode": 98,
+          "selected": false
+        },
+        {
+          "path": "msgs/bounds",
+          "inode": 101,
+          "selected": false
+        },
+        {
+          "path": "run/clean_var",
+          "inode": 75,
+          "selected": false
+        },
+        {
+          "path": "run/ld-elf32.so.hints",
+          "inode": 93,
+          "selected": false
+        },
+        {
+          "path": "run/ld-elf.so.hints",
+          "inode": 92,
+          "selected": false
+        },
+        {
+          "path": "run/dmesg.boot",
+          "inode": 120,
+          "selected": false
+        },
+        {
+          "path": "run/os-release",
+          "inode": 119,
+          "selected": false
+        },
+        {
+          "path": "run/motd",
+          "inode": 121,
+          "selected": false
+        },
+        {
+          "path": "run/syslogd.sockets",
+          "inode": 122,
+          "selected": false
+        },
+        {
+          "path": "run/DaOS-camera/session.lock",
+          "inode": 126,
+          "selected": false
+        },
+        {
+          "path": "run/utx.active",
+          "inode": 127,
+          "selected": false
+        },
+        {
+          "path": "spool/lock/clean_var",
+          "inode": 77,
+          "selected": false
+        },
+        {
+          "path": "tmp/ff1-review.dng",
+          "inode": 69,
+          "selected": true
+        },
+        {
+          "path": "yp/Makefile.dist",
+          "inode": 66,
+          "selected": false
+        }
+      ]
+    },
+    {
+      "partition": {
+        "first_lba": 5701672,
+        "label": "DaOS-photos",
+        "last_lba": 6225959,
+        "partition_guid": "2ed40252-d963-11f1-3fe7-9181628e1ee9",
+        "size_bytes": 268435456,
+        "type_guid": "516e7cb6-6ecf-11d6-8ff8-00022d09712b"
+      },
+      "file": "/dev/shm/DaOS-FF1-r10-003/capture-forensics-child004/photos.ufs",
+      "bytes": 268435456,
+      "sha256": "1b972fcf876ba1fda8c10c8fca7dd04d68a5f57ba28cd082b6e38e86b25f8c79",
+      "allocated_regular_paths": [
+        {
+          "path": "afb981a3-b924-4d55-88be-6402189c2242.dng",
+          "inode": 3,
+          "selected": true
+        }
+      ]
+    }
+  ],
+  "extracted": [
+    {
+      "partition": "DaOS-state",
+      "path": "DaOS/camera/.service.lock",
+      "inode": 106,
+      "output": "state/DaOS/camera/.service.lock",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "partition": "DaOS-state",
+      "path": "DaOS/camera/journal.sqlite3",
+      "inode": 114,
+      "output": "state/DaOS/camera/journal.sqlite3",
+      "bytes": 20480,
+      "sha256": "649bc2c2587738df5ed3ed9cb33bab09fffa8a61be5ab43d730f9bdc6e5a27cd"
+    },
+    {
+      "partition": "DaOS-state",
+      "path": "DaOS/ui/device-ui.json",
+      "inode": 115,
+      "output": "state/DaOS/ui/device-ui.json",
+      "bytes": 149,
+      "sha256": "946862f17d21f9deb773538a5f522ad95c4510b7e9f2aea0d125779409cfd8bd"
+    },
+    {
+      "partition": "DaOS-state",
+      "path": "log/DaOS-camera.log",
+      "inode": 76,
+      "output": "state/log/DaOS-camera.log",
+      "bytes": 5512,
+      "sha256": "2efc7737f0eda778d28cad85f0e78b202475d4e100d0b90d1bf66fbd0fe4f578"
+    },
+    {
+      "partition": "DaOS-state",
+      "path": "log/DaOS-Xorg.log",
+      "inode": 128,
+      "output": "state/log/DaOS-Xorg.log",
+      "bytes": 14488,
+      "sha256": "d057cdab5d945cd26a3f8711b1ffff218de0b760a283ed2f9e8d66da92107a16"
+    },
+    {
+      "partition": "DaOS-state",
+      "path": "tmp/ff1-review.dng",
+      "inode": 69,
+      "output": "state/tmp/ff1-review.dng",
+      "bytes": 25662,
+      "sha256": "34526aaace0136e38935822d974fa8d548060d0d5ea8ab8b726894b31f9529e0"
+    },
+    {
+      "partition": "DaOS-photos",
+      "path": "afb981a3-b924-4d55-88be-6402189c2242.dng",
+      "inode": 3,
+      "output": "photos/afb981a3-b924-4d55-88be-6402189c2242.dng",
+      "bytes": 25662,
+      "sha256": "34526aaace0136e38935822d974fa8d548060d0d5ea8ab8b726894b31f9529e0"
+    }
+  ],
+  "host_mounts": false,
+  "VM_lifecycle_actions": false,
+  "live_lock_overrides": false
+}

@@ -1,0 +1,145 @@
+{
+  "format": "hf-native-settings-binding-evidence-v1",
+  "passed": true,
+  "simulated": true,
+  "physical_board_tested": false,
+  "native_source_input_sha256": {
+    "camera/calibration/fixtures/binding-synthetic.json": "818b7205db8d56b7f1e391e0cc767e94e693a9dce14295b76610683ad7c75e40",
+    "camera/calibration/fixtures/binding-uncalibrated.json": "5f2ef8f7c9fc5b8174a23b564b5616bfa1602d80c0f79b508a48b34d9dd55840",
+    "camera/calibration/fixtures/binding-unicode.json": "6bc62c274cf7b975e336fdb9fbc5eec0c837f5f8e421ca51285cc7eb79e49373",
+    "camera/native/CMakeLists.txt": "f1b226e185ed0bca78fd99612fcd7f3e07d17ebf5c863798aa27cdfe2f2d53d8",
+    "camera/native/include/hf/calibration.hpp": "89c43fdb1e1fb7af5a74e3d7d4798fa01bd35351eb23de4298daf319c6cb9cfc",
+    "camera/native/include/hf/core.hpp": "103a67b58d51956d0fc3f631ff3892ec317e976ca1c4dfc359ecadc236c6c6ba",
+    "camera/native/include/hf/daemon.hpp": "3d1e7e25a5808083f0b9b281fd30bc915430a5eb8123998cb581fd3566e1dc99",
+    "camera/native/include/hf/dng.hpp": "68ff5d64592a812141071a4d55ac997c321ecc049a69709a76042b1da3898bb8",
+    "camera/native/include/hf/sha256.hpp": "f0337d079b6737c34ec404d976a886a16f39c5bd865a483b39ddf2b7544010fa",
+    "camera/native/src/calibration.cpp": "53a29d96fc083d7e0e0ed14febbd3d8e22257c07b50853b2b5ccdb83c0381fad",
+    "camera/native/src/camerad.cpp": "0914b5bc333555abb1732d4daa306938d4d6e145779c1a246f514561b3718dda",
+    "camera/native/src/core.cpp": "f59bd9609ad19aed9fa5089637a78e6330f5e7455ebc3facfa887350f1268d3f",
+    "camera/native/src/daemon.cpp": "28a337e9fc923048a6ab3cca06071dc1900d5e57c03b8243ea232155dc355208",
+    "camera/native/src/dng.cpp": "179025e008a7247669b9ebc091ae3f6f8544c52c9728ab3b945eca7be5bb2b13",
+    "camera/native/src/sha256.cpp": "0a1e3c17c4a2ed521df0627348ccd986a415880f678d3e38d82e5367378e9312",
+    "camera/native/src/worker.cpp": "266a6a6345d51b221eeec27eee0e99dab083ec6840e5b630ac636d53e14cf821",
+    "camera/native/tests/test_calibration.cpp": "7a1774760dce21506e4904132134ab28e04404cc51b12e35137219344dfeb90c",
+    "camera/native/tests/test_core.cpp": "ac1b2c05d6005c68cd0d2ba6961b91967ab10c9f96b4eb9be6ecc7d75729323b",
+    "camera/native/tests/test_daemon.cpp": "aac493936329fa03e8fc90956378823f61560c706d634fd79722b35c2c77eb7e",
+    "camera/native/tests/test_sha256.cpp": "ad10da4e7e9963572bec4c21270f80296f3324e1bccc5ac73a74d58d89f3fcdf",
+    "camera/native/third_party/nlohmann/json.hpp": "aaf127c04cb31c406e5b04a63f1ae89369fccde6d8fa7cdda1ed4f32dfc5de63",
+    "camera/native/third_party/sqlite/sqlite3.c": "0c657666d819f261cc4007526ad57e1669de9949df7a8ea847aa284a2bf0ee52",
+    "camera/native/third_party/sqlite/sqlite3.h": "d6c84557261893439b341d2e6c35187ae3ea24fbfd843ad94616f72d89242b8c",
+    "system/arm64/toolchain-lock.json": "8103d9734dfcf0eb2c0c4380148775b03230d9c267c3f443d22d863aff86d117",
+    "tests/test_arm64_elf.py": "3f172a6ff6507950afd655743cd50831b609777f241d860138143de246bbfddc",
+    "tests/test_arm64_tools.py": "9a4b2fc24ebcae899e332b64dd9ebb14e614e221b6aa348e859c216f2d4780a4",
+    "tools/arm64_build.py": "961800876dd866e9b656781a11737b2f34d99f58d9cb43d08aee8c34b6f8972c",
+    "tools/arm64_elf.py": "45d53a6da3b97209d562550bb29fb697a0aeeae9ba87bc99e3f837ca78c5f30d",
+    "tools/arm64_toolchain.py": "b2f7c8a600b534d75ec4d746d72bc91e5eca79ae89947f3f5506eeadd1ce2be6",
+    "tools/linux_build.py": "b60fc725e472a88f1610f410e332400130e75e8541516dcc76bb02beb98942dc"
+  },
+  "additional_test_input_sha256": {
+    "tests/test_native_settings.py": "8b32931374157dcc109cf27e81446409515aa22dca2c6d3e28c386ed8057e211",
+    "tests/test_native_calibration_binding.py": "1ee31123dbe0326d247611677875cc7b98154180826e64c80ecb1ce1a1aa6621",
+    "tests/test_linux_package.py": "0e980f684da4aedac400caee77934bc0ed1ba2fef615b680de6bfbc963864215",
+    "tests/test_target_package.py": "5fc05fc5764d8530b287a30b16bb03a9647eb62de50eb3e5086fc10574859e64"
+  },
+  "contracts": {
+    "settings": "hf-device-settings-v1",
+    "settings_rows": [
+      "settings",
+      "settings_format"
+    ],
+    "binding": "hf-active-calibration-v1",
+    "binding_rows": [
+      "calibration_binding",
+      "calibration_binding_format"
+    ],
+    "bound_capture_record_version": 2,
+    "unbound_capture_record_version": "legacy shape unchanged",
+    "api_version": "1.1",
+    "max_rpc_request_bytes": 65536,
+    "hardware_calibrated": false,
+    "pixel_corrections_applied": false
+  },
+  "native_checks": {
+    "core_assertions": 89,
+    "authority_assertions": 126,
+    "sha256_reference_vectors": 21,
+    "calibration_binding_checks": 325
+  },
+  "windows": {
+    "cmake_build": "build/native-round9",
+    "ctest_passed": 4,
+    "process_tests_run": 57,
+    "process_tests_passed": 55,
+    "process_tests_skipped": 2,
+    "skip_reason": "two unprivileged POSIX directory symlink cases; covered on Linux",
+    "seconds": 15.407,
+    "daemon_sha256": "5250714b456160b3dba2a959c3e35bef9a7a2b93dd37a9543be6b83782926b44"
+  },
+  "linux": {
+    "native_build": "build/linux-native-round9",
+    "process_tests_run": 57,
+    "process_tests_passed": 57,
+    "process_tests_skipped": 0,
+    "seconds": 10.978,
+    "artifacts": {
+      "hf-core-tests": "978dd166f73250f9793f6c4bab7c5b9ebf2b9738907c4308018c305e7b117135",
+      "hf-daemon-tests": "d8f5ed5193de24422c2055f3f931368633f9dcd54ea6d06cf865bace8b5c9c30",
+      "hf-sha256-tests": "0c497b914f308aaab8f7d7f264e63a95713ba5b004f4ca3f736c5e10caada7ea",
+      "hf-calibration-tests": "f937f554bf1725026fe032ef6e3d7dab7735b21eb234289ce1fd3d5ac6d2f4c9",
+      "hf-native-worker": "49f685f6f3ae8111fb86a812d68974832192702526ca4134a78714b76990232a",
+      "hf-camerad": "131a5e299a60dbb6e7957de28210c18378992950219d90bcb410b73f902d942f"
+    }
+  },
+  "arm64": {
+    "native_build": "build/arm64-native-round9",
+    "execution": "explicit QEMU user emulation on x86_64 Linux",
+    "static_artifacts": [
+      "hf-core-tests",
+      "hf-daemon-tests",
+      "hf-sha256-tests",
+      "hf-calibration-tests",
+      "hf-native-worker",
+      "hf-camerad"
+    ],
+    "python_test_counts": {
+      "test_native_daemon.py": 23,
+      "test_native_settings.py": 8,
+      "test_native_calibration_binding.py": 10,
+      "test_arm64_*.py": 4
+    },
+    "python_tests_passed": 45,
+    "python_tests_skipped": 0,
+    "evidence_sha256": "b5b88591001feca600fc08b734bcf6c8a514df3e1349693ba9d04dae1a9dfe94"
+  },
+  "package_fixture_regressions": {
+    "run": 14,
+    "passed": 14,
+    "skipped": 0,
+    "seconds": 1.43
+  },
+  "verified_boundaries": [
+    "configure commit precedes confirmed memory and success response",
+    "forced crash after commit before memory recovers durable settings",
+    "real SQLite trigger rejection and injected rollback retain last confirmed baseline and fence mutation",
+    "partial/corrupt/unsupported state refuses startup before epoch mutation, preserving metadata bytes",
+    "capture parameters do not change configured baseline",
+    "exact payload checksums, sensor and complete v1 semantics checked before binding",
+    "binding snapshot and DNG trace ID survive selection changes and restart without pixel correction",
+    "original capture IDs return original admission binding after active selection changes"
+  ],
+  "limits": [
+    "synthetic services only; no measured calibration or applied pixel correction",
+    "SHA256 provides integrity identity, not authenticity/signature",
+    "SQLite FULL transaction boundaries tested; arbitrary physical-media power loss not established",
+    "artifact store can hold larger objects than the unchanged 64KiB RPC transport accepts"
+  ],
+  "preserved_logs": {
+    "windows-build.txt": "63109fd6c493650b27245fa1c7805f71fbf903fe8498608ebc556d686bd15b96",
+    "linux-build.txt": "9b1558a71720c99404273d49bc837b8e89d39587db506184c5c6f56b6fc63f79",
+    "windows-process-tests.txt": "99c74a27e4c9b2908381fae2f2555d6baaa66dd2d7caa7a84d1cf683b9c12823",
+    "linux-process-tests.txt": "f0b3c849bb673d9a31a6e70ef548a065001fb69779f9b4ba4759611eb0b0787d",
+    "package-tests.txt": "af87451262b98950913c4c15799d492aadb066866a9b89b837e21650c41ac327",
+    "arm64-build-evidence.json": "b5b88591001feca600fc08b734bcf6c8a514df3e1349693ba9d04dae1a9dfe94",
+    "arm64-build-tests.txt": "2f7754431b72e0d71bbf372c2fb5683e9aad275ba148b6b80502e5b8a174de20"
+  }
+}

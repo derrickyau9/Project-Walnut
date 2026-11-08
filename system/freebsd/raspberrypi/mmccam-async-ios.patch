@@ -1,0 +1,102 @@
+--- a/sys/dev/sdhci/sdhci.c
++++ b/sys/dev/sdhci/sdhci.c
+@@ -126,6 +126,7 @@
+ static int sdhci_cam_request(struct sdhci_slot *slot, union ccb *ccb);
+ static int sdhci_cam_settran_settings(struct sdhci_slot *slot, union ccb *ccb);
+ static int sdhci_cam_update_ios(struct sdhci_slot *slot);
++static void sdhci_cam_ios_task(void *arg, int pending);
+ #endif
+ 
+ /* helper routines */
+@@ -1133,6 +1134,10 @@
+ 	    "timeout", CTLFLAG_RWTUN, &slot->timeout, 0,
+ 	    "Maximum timeout for SDHCI transfers (in secs)");
+ 	TASK_INIT(&slot->card_task, 0, sdhci_card_task, slot);
++#ifdef MMCCAM
++	TASK_INIT(&slot->cam_ios_task, 0, sdhci_cam_ios_task, slot);
++	slot->cam_ios_ccb = NULL;
++#endif
+ 	TIMEOUT_TASK_INIT(taskqueue_bus, &slot->card_delayed_task, 0,
+ 		sdhci_card_task, slot);
+ 	callout_init(&slot->card_poll_callout, 1);
+@@ -1187,6 +1192,9 @@
+ {
+ 	device_t d;
+ 
++#ifdef MMCCAM
++	taskqueue_drain(taskqueue_thread, &slot->cam_ios_task);
++#endif
+ 	callout_drain(&slot->timeout_callout);
+ 	callout_drain(&slot->card_poll_callout);
+ 	callout_drain(&slot->retune_callout);
+@@ -2643,6 +2651,35 @@
+ 		cam_simq_free(slot->devq);
+ }
+ 
++/*
++ * XPT_MMC_SET_TRAN_SETTINGS is queued, unlike the legacy synchronous opcode.
++ * Platform regulator/firmware/GPIO power operations may sleep. Running them
++ * from sim_action holds both the CAM path and SIM mutexes and can panic when
++ * xpt_register_async contends for the device mutex at early boot.
++ * Match the generic cam/mmc/mmc_sim.c taskqueue completion model instead.
++ */
++static void
++sdhci_cam_ios_task(void *arg, int pending __unused)
++{
++    struct sdhci_slot *slot = arg;
++    union ccb *ccb;
++    int error;
++
++    mtx_lock(&slot->sim_mtx);
++    ccb = slot->cam_ios_ccb;
++    mtx_unlock(&slot->sim_mtx);
++    if (ccb == NULL)
++        return;
++
++    error = sdhci_cam_settran_settings(slot, ccb);
++
++    mtx_lock(&slot->sim_mtx);
++    ccb->ccb_h.status = error == 0 ? CAM_REQ_CMP : CAM_REQ_INVALID;
++    slot->cam_ios_ccb = NULL;
++    mtx_unlock(&slot->sim_mtx);
++    xpt_done(ccb);
++}
++
+ void
+ sdhci_cam_action(struct cam_sim *sim, union ccb *ccb)
+ {
+@@ -2656,6 +2693,12 @@
+ 	}
+ 
+ 	mtx_assert(&slot->sim_mtx, MA_OWNED);
++
++	if (slot->cam_ios_ccb != NULL) {
++		ccb->ccb_h.status = CAM_BUSY;
++		xpt_done(ccb);
++		return;
++	}
+ 
+ 	switch (ccb->ccb_h.func_code) {
+ 	case XPT_PATH_INQ:
+@@ -2698,6 +2741,10 @@
+ 		break;
+ 	}
+ 	case XPT_MMC_SET_TRAN_SETTINGS:
++		ccb->ccb_h.status = CAM_SIM_QUEUED;
++		slot->cam_ios_ccb = ccb;
++		taskqueue_enqueue(taskqueue_thread, &slot->cam_ios_task);
++		return;
+ 	case XPT_SET_TRAN_SETTINGS:
+ 		if (sdhci_debug > 1)
+ 			slot_printf(slot, "Got XPT_SET_TRAN_SETTINGS\n");
+--- a/sys/dev/sdhci/sdhci.h
++++ b/sys/dev/sdhci/sdhci.h
+@@ -414,6 +414,8 @@
+ 	struct cam_devq	*devq;
+ 	struct cam_sim	*sim;
+ 	struct mtx	sim_mtx;
++	struct task	cam_ios_task;
++	union ccb	*cam_ios_ccb;
+ 	u_char		card_present;	/* XXX Maybe derive this from elsewhere? */
+ #endif
+ };

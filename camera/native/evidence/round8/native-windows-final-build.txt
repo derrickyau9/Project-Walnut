@@ -1,0 +1,28 @@
++ "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -S C:\Users\derri\Documents\Codex\2026-11-05\task\camera\native -B C:\Users\derri\Documents\Codex\2026-11-05\task\build\native -DHF_BUILD_WORKER=ON -DHF_BUILD_DAEMON=ON
+-- Selecting Windows SDK version 10.0.26100.0 to target Windows 10.0.26300.
+-- Configuring done (0.0s)
+-- Generating done (0.1s)
+-- Build files have been written to: C:/Users/derri/Documents/Codex/2026-11-05/task/build/native
++ "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --build C:\Users\derri\Documents\Codex\2026-11-05\task\build\native --config Release --parallel
+MSBuild version 17.14.51+25f168cee for .NET Framework
+
+  hf_sqlite.vcxproj -> C:\Users\derri\Documents\Codex\2026-11-05\task\build\native\Release\hf_sqlite.lib
+  hf_capture.vcxproj -> C:\Users\derri\Documents\Codex\2026-11-05\task\build\native\Release\hf_capture.lib
+  hf-core-tests.vcxproj -> C:\Users\derri\Documents\Codex\2026-11-05\task\build\native\Release\hf-core-tests.exe
+  hf-native-worker.vcxproj -> C:\Users\derri\Documents\Codex\2026-11-05\task\build\native\Release\hf-native-worker.exe
+  daemon.cpp
+  hf_daemon.vcxproj -> C:\Users\derri\Documents\Codex\2026-11-05\task\build\native\Release\hf_daemon.lib
+  hf-daemon-tests.vcxproj -> C:\Users\derri\Documents\Codex\2026-11-05\task\build\native\Release\hf-daemon-tests.exe
+  hf-camerad.vcxproj -> C:\Users\derri\Documents\Codex\2026-11-05\task\build\native\Release\hf-camerad.exe
++ "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" -C Release --output-on-failure
+Test project C:/Users/derri/Documents/Codex/2026-11-05/task/build/native
+    Start 1: native-core
+1/2 Test #1: native-core ......................   Passed    0.02 sec
+    Start 2: native-authority
+2/2 Test #2: native-authority .................   Passed    1.98 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =   2.01 sec
+HF_NATIVE_WORKER=C:\Users\derri\Documents\Codex\2026-11-05\task\build\native\Release\hf-native-worker.exe
+HF_NATIVE_DAEMON=C:\Users\derri\Documents\Codex\2026-11-05\task\build\native\Release\hf-camerad.exe

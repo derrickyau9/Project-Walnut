@@ -1,0 +1,8 @@
+{
+  "system": "FreeBSD",
+  "machine": "arm64",
+  "uid": 1000,
+  "qt": "5.15.19",
+  "pyqt": "5.15.11",
+  "qpa": "offscreen"
+}

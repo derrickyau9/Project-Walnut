@@ -1,0 +1,2 @@
+# Optional on-device Qt/QML desktop verification runtime.
+PyQt5==5.15.10

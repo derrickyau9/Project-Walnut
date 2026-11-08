@@ -1,0 +1,32 @@
+{
+  "FreeBSD_ARM64_receipt": "freebsd-arm64-001/summary.json",
+  "FreeBSD_target_execution_validated": true,
+  "format": "DaOS-ADB-host-interoperability-summary-v1",
+  "physical_usb_c_validated": false,
+  "private_material_exported": false,
+  "status": "success",
+  "tests": [
+    {
+      "adb_cases": 17,
+      "receipt": "official-stdio-final/integration-receipt.json",
+      "sha256": "28ecf6b0145654256361471a4bdd609c9f41d80f8990dfd6d28fa15bee12d317",
+      "transport": "stdio-via-loopback",
+      "unauthorized_host_rejected": true
+    },
+    {
+      "adb_cases": 17,
+      "receipt": "official-tcp-final/integration-receipt.json",
+      "sha256": "b792464a08dd0aaddc27de0c0ad4d2df6a6be7272310cab94798a2fa24ddfb4d",
+      "transport": "loopback-tcp",
+      "unauthorized_host_rejected": true
+    }
+  ],
+  "usb_hardware_validated": false,
+  "windows_host_interoperability": {
+    "receipt": "windows-stdio-integration.json",
+    "sha256": "836ece4962eb21736c7865c69674ab30d0e5abb867d47534f67e5b9a2b2ab9de",
+    "status": "success",
+    "transport": "TCP to WSL loopback stdio adapter",
+    "usb_hardware_validated": false
+  }
+}

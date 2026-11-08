@@ -1,0 +1,52 @@
+{
+  "format": "DaOS-NetBSD-fixed-GUI-startup-v1",
+  "raw_image_sha256": "d5a857db096555f2523b801e54a723ff3278610aaf0ed64897b12f8885ad709b",
+  "vm_uuid": "92c0b68d-7175-417e-ac77-7a263f2f2d60",
+  "native_GUI_supervisor_events": [
+    {
+      "event": "package-finalization-started"
+    },
+    {
+      "event": "package-finalization-complete"
+    },
+    {
+      "architecture": "aarch64",
+      "event": "base-identity",
+      "kernel_machine": "evbarm",
+      "kernel_sha256": "5b75ebb7766fe56a279329085be607f499166ef131b1b4c52a4c53cd8690e4be",
+      "kernel_version": "NetBSD 11.1 (DAOS_RPI4) #0: Mon Nov  2 00:00:00 UTC 2026\n\tmkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/DAOS_RPI4",
+      "release": "11.1",
+      "shell_sha256": "17c16710ee4f41ba7d5b6e68bce81b2ed83d09fad8e02a52cecd4e714efd43df",
+      "source_built_Qt": false,
+      "system": "NetBSD"
+    },
+    {
+      "event": "Xorg-started",
+      "framebuffer": "wsfb",
+      "pid": 7485,
+      "tcp": false
+    },
+    {
+      "event": "camera-started",
+      "framebuffer": "wsfb",
+      "physical_camera": false,
+      "pid": 8052,
+      "uid": 1000
+    }
+  ],
+  "GUI_started_uid1000": true,
+  "screenshot": "/mnt/f/Project HasselFree/system/bsd-buildroot/evidence/netbsd-fixed-92c0b68d/fixed-gui-live.png",
+  "relative_mouse_default": true,
+  "mice": [
+    {
+      "index": 2,
+      "name": "QEMU HID Mouse",
+      "current": true,
+      "absolute": false
+    }
+  ],
+  "rcorder_warning_present": false,
+  "event_source": "Actual guest /var/log/daos-ui.log; after Xorg console routing, serial is insufficient for event observation",
+  "physical_Pi4_validation": false,
+  "USB_ADB_supported": false
+}

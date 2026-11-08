@@ -1,0 +1,60 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+captures/
+var/
+build/
+.native-worker-build/
+*.dng
+*.sqlite
+*.sqlite3
+*.sqlite3-shm
+*.sqlite3-wal
+*.tmp
+
+# Redistributable input-method dictionary, not a user/session database.
+!ui/on-device/ime_data/pinyin_simp.sqlite3
+
+# Generated machine/package inventories are local build evidence.
+/system/freebsd/image/evidence/runtime-004/runtime.json
+/system/freebsd/image/evidence/runtime-004/offline-validation.json
+
+# Local credentials, device identities, and private deployment state.
+.env
+.env.*
+!.env.example
+!.env.sample
+**/adbkey
+**/adbkey.pub
+**/this-pc-adbkey.pub
+**/id_rsa
+**/id_ed25519
+**/client_ed25519
+**/ssh_host_*_key
+**/test-ap-private.json
+**/test-psk
+**/inputs-private.json
+
+# Firmware and VM outputs are distributed through Releases, not Git history.
+*.img
+*.img.gz
+*.img.xz
+*.img.zst
+*.qcow2
+*.vdi
+*.vmdk
+*.vhd
+*.vhdx
+*.iso
+*.ufs
+*.ufs.gz
+*.raw
+
+# Editor state and local caches.
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
+*.pid

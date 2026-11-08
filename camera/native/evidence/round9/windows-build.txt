@@ -1,0 +1,35 @@
++ "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -S C:\Users\derri\Documents\Codex\2026-11-05\task\camera\native -B C:\Users\derri\Documents\Codex\2026-11-05\task\build\native-round9 -DHF_BUILD_WORKER=ON -DHF_BUILD_DAEMON=ON
+-- Selecting Windows SDK version 10.0.26100.0 to target Windows 10.0.26300.
+-- Configuring done (0.0s)
+-- Generating done (0.1s)
+-- Build files have been written to: C:/Users/derri/Documents/Codex/2026-11-05/task/build/native-round9
++ "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --build C:\Users\derri\Documents\Codex\2026-11-05\task\build\native-round9 --config Release --parallel
+MSBuild version 17.14.51+25f168cee for .NET Framework
+
+  hf_capture.vcxproj -> C:\Users\derri\Documents\Codex\2026-11-05\task\build\native-round9\Release\hf_capture.lib
+  hf_sqlite.vcxproj -> C:\Users\derri\Documents\Codex\2026-11-05\task\build\native-round9\Release\hf_sqlite.lib
+  hf-core-tests.vcxproj -> C:\Users\derri\Documents\Codex\2026-11-05\task\build\native-round9\Release\hf-core-tests.exe
+  hf-native-worker.vcxproj -> C:\Users\derri\Documents\Codex\2026-11-05\task\build\native-round9\Release\hf-native-worker.exe
+  daemon.cpp
+  hf_daemon.vcxproj -> C:\Users\derri\Documents\Codex\2026-11-05\task\build\native-round9\Release\hf_daemon.lib
+  test_daemon.cpp
+  hf-sha256-tests.vcxproj -> C:\Users\derri\Documents\Codex\2026-11-05\task\build\native-round9\Release\hf-sha256-tests.exe
+  hf-camerad.vcxproj -> C:\Users\derri\Documents\Codex\2026-11-05\task\build\native-round9\Release\hf-camerad.exe
+  hf-calibration-tests.vcxproj -> C:\Users\derri\Documents\Codex\2026-11-05\task\build\native-round9\Release\hf-calibration-tests.exe
+  hf-daemon-tests.vcxproj -> C:\Users\derri\Documents\Codex\2026-11-05\task\build\native-round9\Release\hf-daemon-tests.exe
++ "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" -C Release --output-on-failure
+Test project C:/Users/derri/Documents/Codex/2026-11-05/task/build/native-round9
+    Start 1: native-core
+1/4 Test #1: native-core ......................   Passed    0.02 sec
+    Start 2: native-authority
+2/4 Test #2: native-authority .................   Passed    2.02 sec
+    Start 3: native-sha256
+3/4 Test #3: native-sha256 ....................   Passed    0.02 sec
+    Start 4: native-calibration
+4/4 Test #4: native-calibration ...............   Passed    0.02 sec
+
+100% tests passed, 0 tests failed out of 4
+
+Total Test time (real) =   2.09 sec
+HF_NATIVE_WORKER=C:\Users\derri\Documents\Codex\2026-11-05\task\build\native-round9\Release\hf-native-worker.exe
+HF_NATIVE_DAEMON=C:\Users\derri\Documents\Codex\2026-11-05\task\build\native-round9\Release\hf-camerad.exe

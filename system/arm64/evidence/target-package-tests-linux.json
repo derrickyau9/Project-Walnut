@@ -1,0 +1,21 @@
+{
+  "format": "hf-static-arm64-package-tests-v1",
+  "host_python_machine": "x86_64",
+  "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.41",
+  "command": [
+    "/usr/bin/python3",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_target_package.py",
+    "-v"
+  ],
+  "returncode": 0,
+  "tests_run": 9,
+  "skipped": 0,
+  "passed": true,
+  "scope": "Actual Linux host package safety/integrity tests; not a physical ARM host execution."
+}

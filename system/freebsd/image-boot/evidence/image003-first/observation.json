@@ -1,0 +1,99 @@
+{
+  "NoCloud": false,
+  "SSH": false,
+  "UEFI_code_unchanged": true,
+  "UI_readiness_claimed": false,
+  "all_buffers_synced_marker_seen": true,
+  "backing_inputs_unchanged": true,
+  "completed": true,
+  "format": "DaOS-freebsd-image-boot-observation-v1",
+  "framebuffer_observations": [
+    {
+      "UI_readiness_claimed": false,
+      "conversion": "RGB pixels unchanged; P6 to PNG format only",
+      "format": "DaOS-virtual-framebuffer-v1",
+      "height": 600,
+      "name": "auto-1",
+      "nonblack_pixels": 0,
+      "png": "/home/dy09/hf-task-freebsd-r10/image-boot-003/screens/auto-1.png",
+      "png_sha256": "0e78e1e00e1b64efefcadff280b26c47573f6b85aa1a36b6d7773abfbc2088f9",
+      "ppm": "/home/dy09/hf-task-freebsd-r10/image-boot-003/screens/auto-1.ppm",
+      "ppm_sha256": "c3b3d73f6bbb08ab3fa3dfa65d01f89916ba25d37a4f5fbd8cd2202edaa58077",
+      "rgb_sha256": "eda525bab6d74d439bd683b578242e87fd3146fc4d631b7c81d9f76dd4d47a2d",
+      "width": 800
+    },
+    {
+      "UI_readiness_claimed": false,
+      "conversion": "RGB pixels unchanged; P6 to PNG format only",
+      "format": "DaOS-virtual-framebuffer-v1",
+      "height": 600,
+      "name": "auto-2",
+      "nonblack_pixels": 480000,
+      "png": "/home/dy09/hf-task-freebsd-r10/image-boot-003/screens/auto-2.png",
+      "png_sha256": "4d2f336ab6a8d22a5b0eb3a26f56e1a5f437e9e9f9ba8db5050c99a437bbd26f",
+      "ppm": "/home/dy09/hf-task-freebsd-r10/image-boot-003/screens/auto-2.ppm",
+      "ppm_sha256": "cb39badefa676fa92eaececa5b52351f691d9876485cb6e4cf7e2c92d18a9b92",
+      "rgb_sha256": "a6541b465a4fc247c4d0c744490f53bfd844f8bda000c37c4456f06b056d3839",
+      "width": 800
+    },
+    {
+      "UI_readiness_claimed": false,
+      "conversion": "RGB pixels unchanged; P6 to PNG format only",
+      "format": "DaOS-virtual-framebuffer-v1",
+      "height": 600,
+      "name": "auto-3",
+      "nonblack_pixels": 479946,
+      "png": "/home/dy09/hf-task-freebsd-r10/image-boot-003/screens/auto-3.png",
+      "png_sha256": "cf352bcbfc5ef1c828e5f1a26f99bc487975971695bf58e69ee9e97fac30dc9c",
+      "ppm": "/home/dy09/hf-task-freebsd-r10/image-boot-003/screens/auto-3.ppm",
+      "ppm_sha256": "de6ab255b7a2e00d1fb40c35a8405c476726dd394528958f218ba09646e54bfd",
+      "rgb_sha256": "91f4bf20436f8ad68e3dc8e3a63428a3ed3adf997d35f8a385d3c4f29f701cda",
+      "width": 800
+    }
+  ],
+  "host_mounts": false,
+  "host_shares": false,
+  "image_sha256": "69c824a3aa1f992fcb38e285145e4549c76107cab95a2a26e2e391e401b4942a",
+  "input_metadata_sha256": "e97d2235ff27b6e6dcf9e4962762739238d2cf61509f2bac59e394d6d5bb43c0",
+  "network": false,
+  "private_state": {
+    "overlay": {
+      "identity": [
+        2096,
+        3573993,
+        1769472,
+        1793916742087101220,
+        1793916742087101220
+      ],
+      "path": "/home/dy09/hf-task-freebsd-r10/image-boot-003/guest.qcow2",
+      "sha256": "2c5e7b84e538fac8bacb11dc25d60885a5e333e718cf84ef6227d8d0198b3d0a"
+    },
+    "uefi_variables": {
+      "identity": [
+        2096,
+        3573992,
+        67108864,
+        1793915958167111415,
+        1793915958167111415
+      ],
+      "path": "/home/dy09/hf-task-freebsd-r10/image-boot-003/uefi-vars.fd",
+      "sha256": "b14e6b99194d5e242bc254b12bedbc5753b823dfbe585867f03d554df5f23c3e"
+    }
+  },
+  "private_state_error": null,
+  "process_returncode": 0,
+  "provenance_sha256": "28d117a3d73ff30cf71143a84284106387fe385ef24ca2346931e3ddde4281a2",
+  "reason": "bounded lifetime complete",
+  "requires_human_framebuffer_review": true,
+  "resume_parent": null,
+  "seconds": 797.2114724899998,
+  "serial_bytes": 8562,
+  "serial_prefix_sha256": null,
+  "serial_read_capped": false,
+  "serial_sha256": "d51f409f7424d96c9414876975b634d211651657575d4196fc34d11b083d8719",
+  "source_image_unchanged": true,
+  "source_sha256": {
+    "tools/freebsd_image_boot.py": "c6949270902c7e8640905b37971abdd191704dafed0d842d31a15a65a5c41279",
+    "tools/freebsd_vm.py": "ee8a5e5216f0ad515ef5ee07b9e2dbca4470801099748f0cf63638775a4875f1"
+  }
+}

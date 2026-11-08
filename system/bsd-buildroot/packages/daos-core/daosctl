@@ -1,0 +1,56 @@
+#!/bin/sh
+# DaOS BSD base CLI. Its operations only read files or calculate digests.
+set -eu
+root=/
+if [ "${1-}" = "--root" ]; then
+    [ "$#" -ge 3 ] || { echo 'usage: daosctl [--root DIR] info|sourceversion|profile|components|verify' >&2; exit 2; }
+    root=$2
+    shift 2
+fi
+[ -d "$root" ] || { echo 'daosctl: root is not a directory' >&2; exit 2; }
+case "${1-info}" in
+info) cat "$root/usr/share/daos/release.json" ;;
+sourceversion) cat "$root/usr/share/daos/sourceversion.json" ;;
+profile) cat "$root/usr/share/daos/profile.json" ;;
+components) cat "$root/usr/share/daos/components.tsv" ;;
+verify)
+    manifest=$root/usr/share/daos/files.sha256
+    [ -f "$manifest" ] && [ ! -L "$manifest" ] || { echo 'daosctl: manifest unavailable' >&2; exit 1; }
+    failures=0
+    count=0
+    tab=$(printf '\t')
+    while IFS="$tab" read -r kind expected rel; do
+        case "$kind" in ''|'#'*) continue ;; f|l) ;; *) echo 'daosctl: invalid manifest kind' >&2; exit 1 ;; esac
+        case "$rel" in ''|/*|..|../*|*/../*|*/..|*//* ) echo 'daosctl: unconfined manifest path' >&2; exit 1 ;; esac
+        case "$expected" in *[!0-9a-f]*|'') echo 'daosctl: invalid manifest digest' >&2; exit 1 ;; esac
+        [ "${#expected}" -eq 64 ] || { echo 'daosctl: invalid digest length' >&2; exit 1; }
+        path=$root/$rel
+        actual=
+        parent=${rel%/*}
+        redirected=0
+        while [ "$parent" != "$rel" ] && [ "$parent" != . ]; do
+            if [ -L "$root/$parent" ]; then redirected=1; break; fi
+            next=${parent%/*}
+            [ "$next" != "$parent" ] || break
+            parent=$next
+        done
+        if [ "$redirected" -eq 1 ]; then
+            actual=
+        elif [ "$kind" = f ] && [ -f "$path" ] && [ ! -L "$path" ]; then
+            actual=$(sha256 -q "$path") || actual=
+        elif [ "$kind" = l ] && [ -L "$path" ]; then
+            target=$(readlink "$path") || target=
+            actual=$(printf '%s' "$target" | sha256 -q) || actual=
+        fi
+        if [ "$actual" != "$expected" ]; then
+            printf 'FAILED %s\n' "$rel" >&2
+            failures=$((failures + 1))
+        fi
+        count=$((count + 1))
+    done < "$manifest"
+    printf 'DaOS verify: %s files, %s failures\n' "$count" "$failures"
+    [ "$failures" -eq 0 ]
+    ;;
+help|--help|-h) echo 'usage: daosctl [--root DIR] info|sourceversion|profile|components|verify' ;;
+*) echo 'usage: daosctl [--root DIR] info|sourceversion|profile|components|verify' >&2; exit 2 ;;
+esac

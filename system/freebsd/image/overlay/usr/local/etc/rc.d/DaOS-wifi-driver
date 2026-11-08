@@ -1,0 +1,15 @@
+#!/bin/sh
+# PROVIDE: DaOS_wifi_driver
+# REQUIRE: FILESYSTEMS kld ldconfig devd
+# BEFORE: DaOS_system
+# KEYWORD: nojail
+. /etc/rc.subr
+name="DaOS_wifi_driver"
+rcvar="DaOS_wifi_driver_enable"
+command="/usr/sbin/daemon"
+procname="/usr/sbin/daemon"
+pidfile="/var/run/DaOS-wifi-driver-supervisor.pid"
+command_args="-P ${pidfile} -f -o /var/log/DaOS-wifi-driver.log /usr/local/bin/python3.12 -B /usr/local/libexec/DaOS-wifi-load.py"
+load_rc_config "$name"
+: ${DaOS_wifi_driver_enable:="NO"}
+run_rc_command "$1"

@@ -1,0 +1,50 @@
+DaOS_GUI_EVENT {"architecture": "arm64", "event": "base-identity", "kernel_ident": "DaOS", "kernel_sha256": "a4e6121c99aae567340b478bfdc2d4ff309bec7ff29541785e7602887968e82d", "release": "15.1-RELEASE-p6", "shell_sha256": "a60e9e757429a512c1551913a79a044e3b72bb0e4ac4ba68b49f1067e4cb2a4a", "system": "FreeBSD"}
+DaOS_GUI_EVENT {"event": "Xorg-started", "pid": 2340, "qpa": "xcb", "tcp": false}
+
+X.Org X Server 1.21.1.25
+X Protocol Version 11, Revision 0
+Current Operating System: FreeBSD DaOS 15.1-RELEASE-p6 FreeBSD 15.1-RELEASE-p6 DaOS arm64
+ 
+Current version of pixman: 0.46.4
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(++) Log file: "/var/log/DaOS-Xorg.log", Time: Thu Nov  5 21:59:59 2026
+(==) Using config directory: "/usr/local/etc/X11/xorg.conf.d"
+(==) Using system config directory "/usr/local/share/X11/xorg.conf.d"
+DaOS_GUI_EVENT {"architecture": "arm64", "event": "camera-started", "framebuffer": "scfb", "gid": 1000, "physical_camera": false, "pid": 2352, "uid": 1000}
+scfb trace: probe start
+scfb trace: probe done
+scfb: PreInit 0
+scfb: PreInit done
+scfb: ScfbScreenInit 0
+	bitsPerPixel=32, depth=24, defaultVisual=TrueColor
+	mask: ff0000,ff00,ff, offset: 16,8,0
+mmap returns: addr 0xf4e20000 len 0x1d5000, fd 11, off 0
+scfb: ScfbSave 0
+scfb: ScfbSave done
+scfb: ScfbScreenInit done
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Multiple symbols for level 1/group 1 on key <FK23>
+>                   Using F23, ignoring XF86TouchpadOff
+> Warning:          Symbol map for key <FK23> redefined
+>                   Using last definition for conflicting fields
+> Warning:          Symbol map for key <FK24> redefined
+>                   Using last definition for conflicting fields
+> Warning:          Could not resolve keysym XF86ElectronicPrivacyScreenOn
+> Warning:          Could not resolve keysym XF86ElectronicPrivacyScreenOff
+> Warning:          Could not resolve keysym XF86ActionOnSelection
+> Warning:          Could not resolve keysym XF86ContextualInsert
+> Warning:          Could not resolve keysym XF86ContextualQuery
+Errors from xkbcomp are not fatal to the X server
+scfb: SaveScreen 0
+scfb: SaveScreen done
+Fontconfig error: Cannot load default config file: No such file: (null)
+scfb: ScfbCloseScreen 0
+scfb: ScfbRestore 0
+scfb: ScfbRestore done
+scfb: ScfbCloseScreen done
+(II) Server terminated successfully (0). Closing log file.
+DaOS_GUI_EVENT {"application_returncode": 0, "event": "session-stopped", "forced_application_stop": false, "server_returncode": 0}

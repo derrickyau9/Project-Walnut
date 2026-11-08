@@ -1,0 +1,24 @@
+{
+  "diagnostic": "002",
+  "files": {
+    "qml-cached-middle.png": {
+      "bytes": 38897,
+      "sha256": "be206b02639974a4538846c611b100250ec550d0f115eac6cef8cf1ca3f88e90"
+    },
+    "source.py": {
+      "bytes": 9246,
+      "sha256": "5a65844416e4cf0ea5b71883f51282e05797971e25c6fb47442cb86c7c432add"
+    },
+    "trace.json": {
+      "bytes": 20134,
+      "sha256": "cb00f1b3d1d3ecd5b63715ac28900cdcae028e3c021cb5236a13b77bf84279d4"
+    },
+    "transport.json": {
+      "bytes": 518,
+      "sha256": "ff5dcb3aa2c4e02af68ff0425df864ed9d0d2e97fbe518242da98b4e4c7c0c27"
+    }
+  },
+  "final_product_proof": false,
+  "format": "DaOS-r14-animation-diagnostic-archive-v1",
+  "notes": "002 completed; original lookup phase had no intermediate rows, cached phase had two, with a warmer-phase caveat. No Space/shutter action."
+}

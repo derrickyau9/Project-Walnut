@@ -1,0 +1,14 @@
+{
+  "repository": "https://github.com/rime/rime-pinyin-simp",
+  "commit": "0c6861ef7420ee780270ca6d993d18d4101049d0",
+  "license": "Apache-2.0",
+  "upstream_source": "pinyin_simp.dict.yaml",
+  "upstream_sha256": "e341598343a0f0f2035bb1aafc34a7f3bb7887deeecb3f60796262aaa2983e6b",
+  "local_additions": "camera_vocabulary.tsv",
+  "entry_count": 65132,
+  "index_sha256": "49ece9b0f0f59f1a686676721163fc02f2d269f4426f6feae6899f6b8415c3e6",
+  "runtime_dependencies": [
+    "Python sqlite3 (standard library)"
+  ],
+  "modification": "Converted tab-separated Rime entries into a read-only SQLite index."
+}

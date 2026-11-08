@@ -1,0 +1,76 @@
+{
+  "revision": "0.3",
+  "cases": [
+    {
+      "check": "disable unsupported module",
+      "expected": "rejected",
+      "pass": true
+    },
+    {
+      "check": "shrink guard rear",
+      "expected": "rejected",
+      "pass": true
+    },
+    {
+      "check": "shrink guard front",
+      "expected": "rejected",
+      "pass": true
+    },
+    {
+      "check": "understate verified chip width",
+      "expected": "rejected",
+      "pass": true
+    },
+    {
+      "check": "inconsistent slot stroke",
+      "expected": "rejected",
+      "pass": true
+    },
+    {
+      "check": "negative material thickness",
+      "expected": "rejected",
+      "pass": true
+    },
+    {
+      "check": "route into guard",
+      "expected": "rejected",
+      "pass": true
+    },
+    {
+      "check": "set nominal at hard limit",
+      "expected": "rejected",
+      "pass": true
+    },
+    {
+      "check": "usable setting -4.5",
+      "expected": "valid connected fixed bus",
+      "pass": true
+    },
+    {
+      "check": "usable setting -3",
+      "expected": "valid connected fixed bus",
+      "pass": true
+    },
+    {
+      "check": "usable setting -2",
+      "expected": "valid connected fixed bus",
+      "pass": true
+    },
+    {
+      "check": "usable setting -1.5",
+      "expected": "valid connected fixed bus",
+      "pass": true
+    },
+    {
+      "check": "nut bore follows changed clamp clearance",
+      "intersection_mm3": 0,
+      "pass": true
+    },
+    {
+      "check": "collector movement preserves connected bus",
+      "pass": true
+    }
+  ],
+  "all_passed": true,
+  "limitation": "These regression cases do not certify arbitrary parameter combinations; full geometric audits remain required."
+}

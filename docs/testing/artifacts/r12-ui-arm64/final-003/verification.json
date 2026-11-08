@@ -1,0 +1,450 @@
+{
+  "capture_backend": "C++ hf-camerad / HF-Sim",
+  "custom_appliance_image_boot_validated": false,
+  "files": {
+    "boot/closed.json": {
+      "bytes": 557,
+      "sha256": "cd0704474fb53b4449364349b0d3313797fa177ee007e25057614e458c60ad75"
+    },
+    "boot/launch.json": {
+      "bytes": 2145,
+      "sha256": "6bbd75c34953a45a9f2587bb982927e82d9ec3c947336fe2906812093f302c31"
+    },
+    "boot/ready-sanitized.json": {
+      "bytes": 716,
+      "sha256": "945ed88bd98f4cebab3df831440578c566ab27cf188f7a0c4fdd41e85e08afd8"
+    },
+    "boot/serial.log": {
+      "bytes": 10079,
+      "sha256": "d6a25c238d21ae8a566cfaeef40c3fbcc6288910972db8f06f3f3b1a9a8f8afa"
+    },
+    "final-003/01-live-800.png": {
+      "bytes": 39130,
+      "sha256": "2eda9fe62fb7b9b9328c3871fb04dbe7c09517fe84adfb44cfd568b633805a04"
+    },
+    "final-003/02-quick-800.png": {
+      "bytes": 26174,
+      "sha256": "7d5c9cf85483a04d6d29a293f3574fb4c79dd32e20845e321e5b0314c74414c0"
+    },
+    "final-003/03-menu-exposure-800.png": {
+      "bytes": 27039,
+      "sha256": "6b794ecd2d15353db8925463cde074d4824db9edfa7f22c5c5b2e0682e229bcb"
+    },
+    "final-003/04-menu-display-800.png": {
+      "bytes": 30240,
+      "sha256": "6532c27abc5ae2285e4ff89a01257bac841bb9ec2f851704a5faaff9a3b2f292"
+    },
+    "final-003/05-menu-tools-800.png": {
+      "bytes": 25157,
+      "sha256": "27156853477e87259d40fa41c9b0477eeab3af79720f218116e91be1f3381949"
+    },
+    "final-003/06-saved-800.png": {
+      "bytes": 17345,
+      "sha256": "5b03ff7d2579fb83b8f1320be922acd837b58096320e5a6366341000233323be"
+    },
+    "final-003/07-playback-800.png": {
+      "bytes": 19875,
+      "sha256": "c9ca2c529df22764ada61bdf3d564cdf94f99dd7216e9f71c1622443212c6c57"
+    },
+    "final-003/08-live-1280.png": {
+      "bytes": 46226,
+      "sha256": "bf264151e33e55b9e1a1eea09f1663b9bff97633fa8f6deac364b87e626630c1"
+    },
+    "final-003/holder-exit.json": {
+      "bytes": 303,
+      "sha256": "ce4d4c8ed1d1a749d3f9921ff40c615bc3e2685d6f338924db6b80291e094073"
+    },
+    "final-003/live-native-verification.json": {
+      "bytes": 403,
+      "sha256": "a52a3042f6bcf3368a1b992a746819f2b4da3c655250d90be9f2901a7ce82081"
+    },
+    "final-003/review-command.json": {
+      "bytes": 579,
+      "sha256": "289777965f441f5f85e2aad9a1eaacc2d1b5f74125400f1b21a99657dd8373b4"
+    },
+    "final-003/review-transport.json": {
+      "bytes": 2266,
+      "sha256": "6a85f2e97a05a9f2166d2ec87a86b6a12efca43c4b55e5e47d279bdf7c3cad7f"
+    },
+    "final-003/review.json": {
+      "bytes": 6550,
+      "sha256": "facf6b682705d587afde34b9aa7c782817827f34cd88e24722872176be1b3898"
+    },
+    "final-003/shell-preferences.json": {
+      "bytes": 98,
+      "sha256": "d5b8490711835aea9f90c3e3c0c54d994a836a5cb994c9dd309188c64a177a7b"
+    },
+    "final-003/shutdown-transport.json": {
+      "bytes": 191,
+      "sha256": "270d8096ac733f337d39a1ae27598dce4cb19bc645166584ae0addd3f24110ae"
+    },
+    "final-003/shutter-intent.json": {
+      "bytes": 486,
+      "sha256": "bca76e9371a68c873e9057d00baeb53a548cb6d05f4f8980b49e3b9c9364bd9c"
+    },
+    "final-003/source-final.json": {
+      "bytes": 6932,
+      "sha256": "43fc077ed87581099a1effde0be085f6b75563d682f72ec916851fcdaa1c4d07"
+    },
+    "final-003/source/camera/__init__.py": {
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "final-003/source/camera/calibration/__init__.py": {
+      "bytes": 648,
+      "sha256": "145ef81dd62004f0d7ff607bb8d7a0d221a6a4279bb7ee6bd8eae78dafdecc7c"
+    },
+    "final-003/source/camera/calibration/binding.py": {
+      "bytes": 9694,
+      "sha256": "9abe0ce308550aa7a3f9f56d6342105c5e8fc827698d21cf931875f910fb1362"
+    },
+    "final-003/source/camera/calibration/store.py": {
+      "bytes": 17987,
+      "sha256": "23dc05c64847a2303fc778c42d3f012cfdfcf1c62ea035cf435211264938f228"
+    },
+    "final-003/source/camera/camerad/__init__.py": {
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "final-003/source/camera/camerad/__main__.py": {
+      "bytes": 8611,
+      "sha256": "fc25bee012b7877f3e2905702992573d112881e20e05a69f2026db103fc04f73"
+    },
+    "final-003/source/camera/camerad/calibration_context.py": {
+      "bytes": 5854,
+      "sha256": "255b523780b84a6e6372966626931d67075ccf79c068f64bcb3ac9ff537cfe45"
+    },
+    "final-003/source/camera/camerad/http_client.py": {
+      "bytes": 32696,
+      "sha256": "e0e449c23cec8b5f2f8074a7038a75f855b2dd512a042bd8eb2dcb179420fd16"
+    },
+    "final-003/source/camera/camerad/native_backend.py": {
+      "bytes": 8360,
+      "sha256": "4320372629d5cd035947a9f74360c90d7c52ac91635202f80a0a9cb311430f5a"
+    },
+    "final-003/source/camera/camerad/native_client.py": {
+      "bytes": 30328,
+      "sha256": "5dc77424d9aa71400c0cf0d476d9d8d3759d56570c4f8de742067bc6bf5fdbca"
+    },
+    "final-003/source/camera/camerad/native_service.py": {
+      "bytes": 3348,
+      "sha256": "e31bb085407683f070ef0aad477000cfdcad22a11871a6265fd7ae483a0544f9"
+    },
+    "final-003/source/camera/camerad/retained.py": {
+      "bytes": 18973,
+      "sha256": "a1518dc814d4634616917b305ca7a26ca08908263214c43183dcc75f11891d4b"
+    },
+    "final-003/source/camera/camerad/server.py": {
+      "bytes": 22923,
+      "sha256": "122bd5fe963edfcae73deec3aa69c44e81f15f2af9f58db5827e453d1235d50a"
+    },
+    "final-003/source/camera/camerad/service.py": {
+      "bytes": 46478,
+      "sha256": "c1d90d37d2a913ef255b1cf0481120629e863a404ba70923e01b83dd721e0316"
+    },
+    "final-003/source/camera/dng/hf_dng.py": {
+      "bytes": 7912,
+      "sha256": "8969aef7fa59c33791f55cf14271581c10b51a264b57b572873032f93e03d7b5"
+    },
+    "final-003/source/camera/dng/inspect.py": {
+      "bytes": 11984,
+      "sha256": "4200ac573d1a0373bc5cacde10d024948fab046af88d065356387d71c7033342"
+    },
+    "final-003/source/camera/pipeline/__init__.py": {
+      "bytes": 78,
+      "sha256": "e14baeff3beab5b6f1b8f144fdb98b95158db1178eb49e038dab03b44b56b12d"
+    },
+    "final-003/source/camera/pipeline/preview.py": {
+      "bytes": 5617,
+      "sha256": "2f6df30c727173450473386698166ce9dcc0d7cd856499068f9a6fe24e2afbc7"
+    },
+    "final-003/source/daos/capability_runtime/__init__.py": {
+      "bytes": 74,
+      "sha256": "a347df9a4513dac86c119fcf581da6ef63a96b0c01117d35b68af46f07406faa"
+    },
+    "final-003/source/daos/capability_runtime/__main__.py": {
+      "bytes": 9891,
+      "sha256": "105c4743bfe9d2cb3fc3525e34d0343f483fe8d7a56f5e0e2e558fb66d885e0d"
+    },
+    "final-003/source/daos/capability_runtime/bracket.py": {
+      "bytes": 25359,
+      "sha256": "0621a20fa3188da919e647e3fef26c98a8f4cd1e805a6e3ec848fe80983f336a"
+    },
+    "final-003/source/daos/capability_runtime/manager.py": {
+      "bytes": 6376,
+      "sha256": "adf916baf8578a2a3b1cdf815ad646d51feec9bd2a7ac776d263f75e1c39f47a"
+    },
+    "final-003/source/daos/capability_runtime/recipes.py": {
+      "bytes": 5236,
+      "sha256": "4dd4195005b942bb45671309283b7bb0c056d19044f050fe734b3ecc8e60734e"
+    },
+    "final-003/source/simulation/bayer.py": {
+      "bytes": 2084,
+      "sha256": "a1a02e82a13d07962fc05f168d2b89e5fb581981097a5611687a4760e101a810"
+    },
+    "final-003/source/tests/test_camera_first_ui.py": {
+      "bytes": 20315,
+      "sha256": "7ca15add396ca0840d3affd00e2170116bce6a9c8b18fdd3e6f9ea167129a6b6"
+    },
+    "final-003/source/tests/test_device_apps.py": {
+      "bytes": 13114,
+      "sha256": "fe73c63622b14eca97e0582e9532d62338b0423049fa0d4cc977eeb7dbda73cb"
+    },
+    "final-003/source/tests/test_device_shell_model.py": {
+      "bytes": 21039,
+      "sha256": "2625b1355cad603dc043911091600491b4f090ba03382c0c8ba6c3263167b8e3"
+    },
+    "final-003/source/tests/test_device_ui.py": {
+      "bytes": 46882,
+      "sha256": "6cd98a84868b680953538c1cd987e5cd91fd6dbbc4569f9b46ee6662cc2ed5dc"
+    },
+    "final-003/source/ui/on-device/AppsWorkspace.qml": {
+      "bytes": 84420,
+      "sha256": "c9f24557e0763201e13f7e3ab71de8b0fee3b5bce9779d954fd4df821ce723b9"
+    },
+    "final-003/source/ui/on-device/CameraMenu.qml": {
+      "bytes": 26855,
+      "sha256": "4159f800f3adaed380575882dcfe0535193252ac16efdf11a248befac895dc5a"
+    },
+    "final-003/source/ui/on-device/CameraPlayback.qml": {
+      "bytes": 21922,
+      "sha256": "719c854718667b38dccd772c07ed261b9937a39a5e289ffd391ca2244f47b1c7"
+    },
+    "final-003/source/ui/on-device/Console.qml": {
+      "bytes": 59032,
+      "sha256": "8749bcc4aecb2688ece43998a6bc560268116f2fd76168b4baa7c39c7b0c15c9"
+    },
+    "final-003/source/ui/on-device/DaOSDock.qml": {
+      "bytes": 5643,
+      "sha256": "996328e02cd43850ac7f22ffefbf85302cf2385f04332079f3508ef3994403a4"
+    },
+    "final-003/source/ui/on-device/DaOSIcon.qml": {
+      "bytes": 2715,
+      "sha256": "2f7ef1d1c0e01ed7a40adbee747cf599a98bb29740c6d953d74bec9874275be8"
+    },
+    "final-003/source/ui/on-device/Main.qml": {
+      "bytes": 20498,
+      "sha256": "b66b2f8bc828604c705ed63c79c13412bd15b2e5eac323e67982a1d9ca298dd9"
+    },
+    "final-003/source/ui/on-device/apps_controller.py": {
+      "bytes": 20133,
+      "sha256": "49705efbcbc4de271d985fccac2ef897b668a9eb1b9015837f35e14a247cbd50"
+    },
+    "final-003/source/ui/on-device/controller.py": {
+      "bytes": 45454,
+      "sha256": "e9121da43b61148e9263867bdf8fc1c896af2c91e93dd230830e0cec46231dab"
+    },
+    "final-003/source/ui/on-device/main.py": {
+      "bytes": 6411,
+      "sha256": "6e36f57cd94bbe6a14850ba8a201d4a983c5b8913b41d9026bf25b99655b6f94"
+    },
+    "final-003/source/ui/on-device/retail-theme.json": {
+      "bytes": 4446,
+      "sha256": "b3bb1de337f3a9059dcbde813ac12eadc72c6bb66c19d9e99bdf2b75fa2d45a4"
+    },
+    "final-003/source/ui/on-device/review_camera_first.py": {
+      "bytes": 20924,
+      "sha256": "94f44a0ba32cb9f3389ca1fa9d7c2a4e14272459f56bb402dc3d1c310b392e8d"
+    },
+    "final-003/source/ui/on-device/review_capture.py": {
+      "bytes": 14689,
+      "sha256": "29870c1842b55ae9400677a4f710cc345d9eca9a95de6df93e87004ab4d61e8c"
+    },
+    "final-003/source/ui/on-device/review_shell.py": {
+      "bytes": 20712,
+      "sha256": "e714cddc68303be3a00b83cfc389fcc90f7802b4a95459805e68512af52100c0"
+    },
+    "final-003/source/ui/on-device/shell_model.py": {
+      "bytes": 21372,
+      "sha256": "ce4e64d107c9833cc12cd395945c8c9d6dbeae6142535821eb09af6581948178"
+    },
+    "final-003/tests-result.json": {
+      "bytes": 10314,
+      "sha256": "b684fd6299523e84fd126493c4784de40c073f06645ebaf59fa1895cbf067c87"
+    },
+    "final-003/tests-transport.json": {
+      "bytes": 267,
+      "sha256": "9d0c3cbf0d328d0b26b5abfd32d5fd5520e21f309c16f4843089c47e2bbc194f"
+    },
+    "final-003/tests.log": {
+      "bytes": 12659,
+      "sha256": "f7a5d4937b83e9fd67c000db69899e8c6f2d6800992b221dc0150b65d974e7a5"
+    }
+  },
+  "format": "DaOS-r12-arm64-camera-first-verification-v1",
+  "guest_shutdown_clean": true,
+  "holder_exit": {
+    "holder_pid": 16296,
+    "holder_running": false,
+    "initial_started_utc": "2026-11-06T00:02:12.8559388Z",
+    "observed_utc": "2026-11-06T00:26:33.4179478Z",
+    "owned_qemu_pid": 410,
+    "scope": "Observed the owned hidden Windows WSL holder only; no global controls or termination were used."
+  },
+  "immutable_base_seed_firmware_code_unchanged": true,
+  "network": {
+    "guest_egress_enabled": true,
+    "hostforward_loopback_only": true
+  },
+  "no_automatic_review_capture_retry": true,
+  "no_new_installs_or_downloads_performed": true,
+  "no_private_keys_dngs_or_databases_copied": true,
+  "original_base_sha256": "ae13edc018ad2d862020de3fdccc24581fae12b3323bfd800db73cb2b7fce23c",
+  "owned_qemu_absent_after_shutdown": true,
+  "owned_qemu_pid": 410,
+  "passed": true,
+  "physical_display_validated": false,
+  "physical_sensor_validated": false,
+  "preview_source": "Python synthetic Bayer PreviewStream; separate scene, not sensor readout",
+  "prior_evidence": {
+    "failed_gate": "failed-001/verification.json",
+    "fifo_reproduction": "fifo-reproduction/result.json",
+    "intermediate_72_pass": "tested-002/verification.json"
+  },
+  "python_elf": {
+    "elf_machine": 183,
+    "elf_osabi": 9,
+    "path": "/usr/local/bin/python3.12",
+    "sha256": "520bb03c617e54592ba3ab596663abba5f554f606e29010609d8e97909f9d378"
+  },
+  "qtcore_elf": {
+    "elf_machine": 183,
+    "elf_osabi": 9,
+    "path": "/usr/local/lib/python3.12/site-packages/PyQt5/QtCore.abi3.so",
+    "sha256": "cefade3b63d521a5c9eecedd48087764ce56b58c60bf6ff6ecaadf1f350e1772"
+  },
+  "qttest_elf": {
+    "elf_machine": 183,
+    "elf_osabi": 9,
+    "path": "/usr/local/lib/python3.12/site-packages/PyQt5/QtTest.abi3.so",
+    "sha256": "9e1bf94adbed5b7fe3db081517f557964f969517d0a6f05b95e6149f6fe38357"
+  },
+  "review": {
+    "actual_analogue_gain": 1.25,
+    "actual_exposure_us": 8000,
+    "capture_id": "3c3d1529-ae62-410f-8cfc-a2a7180a661a",
+    "dng_sha256": "6d28e892bc4ef68479a7253f0c58c251c9eb0c95350c76f6aa373671204069ca",
+    "export_dng_sha256": "6d28e892bc4ef68479a7253f0c58c251c9eb0c95350c76f6aa373671204069ca",
+    "frame_id": "3c3d1529-ae62-410f-8cfc-a2a7180a661a",
+    "journal_rows": 1,
+    "native_process_closed": true,
+    "native_process_exit_code": 0,
+    "native_sha256": "be752fd42c631e763682fa96a34b929a2bd80b5ae9ab3eb1b6f17653bc31bc28",
+    "passed": true,
+    "preferences": {
+      "grid_enabled": false,
+      "preview_brightness": 100,
+      "theme": "dark"
+    },
+    "preferences_recreated": {
+      "grid_enabled": false,
+      "preview_brightness": 100,
+      "theme": "dark"
+    },
+    "qml_theme_background": "#151a22",
+    "qml_warnings": [],
+    "request_id": "3c3d1529-ae62-410f-8cfc-a2a7180a661a",
+    "shutter_actions": 1
+  },
+  "review_source_sha256": {
+    "camera/camerad/calibration_context.py": "255b523780b84a6e6372966626931d67075ccf79c068f64bcb3ac9ff537cfe45",
+    "camera/camerad/native_client.py": "5dc77424d9aa71400c0cf0d476d9d8d3759d56570c4f8de742067bc6bf5fdbca",
+    "camera/pipeline/preview.py": "2f6df30c727173450473386698166ce9dcc0d7cd856499068f9a6fe24e2afbc7",
+    "simulation/bayer.py": "a1a02e82a13d07962fc05f168d2b89e5fb581981097a5611687a4760e101a810",
+    "ui/on-device/AppsWorkspace.qml": "c9f24557e0763201e13f7e3ab71de8b0fee3b5bce9779d954fd4df821ce723b9",
+    "ui/on-device/CameraMenu.qml": "4159f800f3adaed380575882dcfe0535193252ac16efdf11a248befac895dc5a",
+    "ui/on-device/CameraPlayback.qml": "719c854718667b38dccd772c07ed261b9937a39a5e289ffd391ca2244f47b1c7",
+    "ui/on-device/Console.qml": "8749bcc4aecb2688ece43998a6bc560268116f2fd76168b4baa7c39c7b0c15c9",
+    "ui/on-device/DaOSDock.qml": "996328e02cd43850ac7f22ffefbf85302cf2385f04332079f3508ef3994403a4",
+    "ui/on-device/DaOSIcon.qml": "2f7ef1d1c0e01ed7a40adbee747cf599a98bb29740c6d953d74bec9874275be8",
+    "ui/on-device/Main.qml": "b66b2f8bc828604c705ed63c79c13412bd15b2e5eac323e67982a1d9ca298dd9",
+    "ui/on-device/apps_controller.py": "49705efbcbc4de271d985fccac2ef897b668a9eb1b9015837f35e14a247cbd50",
+    "ui/on-device/controller.py": "e9121da43b61148e9263867bdf8fc1c896af2c91e93dd230830e0cec46231dab",
+    "ui/on-device/main.py": "6e36f57cd94bbe6a14850ba8a201d4a983c5b8913b41d9026bf25b99655b6f94",
+    "ui/on-device/retail-theme.json": "b3bb1de337f3a9059dcbde813ac12eadc72c6bb66c19d9e99bdf2b75fa2d45a4",
+    "ui/on-device/review_camera_first.py": "94f44a0ba32cb9f3389ca1fa9d7c2a4e14272459f56bb402dc3d1c310b392e8d",
+    "ui/on-device/review_capture.py": "29870c1842b55ae9400677a4f710cc345d9eca9a95de6df93e87004ab4d61e8c",
+    "ui/on-device/review_shell.py": "e714cddc68303be3a00b83cfc389fcc90f7802b4a95459805e68512af52100c0",
+    "ui/on-device/shell_model.py": "ce4e64d107c9833cc12cd395945c8c9d6dbeae6142535821eb09af6581948178"
+  },
+  "runtime": {
+    "machine": "arm64",
+    "pyqt": "5.15.11",
+    "python": "3.12.15",
+    "qpa": "offscreen",
+    "qt": "5.15.19",
+    "release": "15.1-RELEASE-p6",
+    "system": "FreeBSD",
+    "ui_label": "FreeBSD UI preview / arm64"
+  },
+  "scope": "Actual FreeBSD ARM64 reference guest, UID1000, offscreen/software Qt; not a rebuilt custom appliance image or physical display/sensor.",
+  "screenshots": [
+    {
+      "description": "Actual 800 by 600 camera-first live composition; Python HF-Sim synthetic preview.",
+      "file": "01-live-800.png",
+      "height": 600,
+      "sha256": "2eda9fe62fb7b9b9328c3871fb04dbe7c09517fe84adfb44cfd568b633805a04",
+      "width": 800
+    },
+    {
+      "description": "Quick controls over the camera scene; requested exposure and gain confirmed by the native authority.",
+      "file": "02-quick-800.png",
+      "height": 600,
+      "sha256": "7d5c9cf85483a04d6d29a293f3574fb4c79dd32e20845e321e5b0314c74414c0",
+      "width": 800
+    },
+    {
+      "description": "Grouped camera exposure settings; no desktop navigation dock.",
+      "file": "03-menu-exposure-800.png",
+      "height": 600,
+      "sha256": "6b794ecd2d15353db8925463cde074d4824db9edfa7f22c5c5b2e0682e229bcb",
+      "width": 800
+    },
+    {
+      "description": "Camera display preferences inside MENU, separate from captured RAW.",
+      "file": "04-menu-display-800.png",
+      "height": 600,
+      "sha256": "6532c27abc5ae2285e4ff89a01257bac841bb9ec2f851704a5faaff9a3b2f292",
+      "width": 800
+    },
+    {
+      "description": "Optional local apps are behind MENU rather than on the shooting screen.",
+      "file": "05-menu-tools-800.png",
+      "height": 600,
+      "sha256": "27156853477e87259d40fa41c9b0477eeab3af79720f218116e91be1f3381949",
+      "width": 800
+    },
+    {
+      "description": "Exactly one completed native HF-Sim DNG; shooting face remains free of paths and request logs.",
+      "file": "06-saved-800.png",
+      "height": 600,
+      "sha256": "5b03ff7d2579fb83b8f1320be922acd837b58096320e5a6366341000233323be",
+      "width": 800
+    },
+    {
+      "description": "Actual single-image playback decoded from the retained DNG, not the independent live preview.",
+      "file": "07-playback-800.png",
+      "height": 600,
+      "sha256": "c9ca2c529df22764ada61bdf3d564cdf94f99dd7216e9f71c1622443212c6c57",
+      "width": 800
+    },
+    {
+      "description": "Secondary actual 1280 by 800 host preview of the same camera-first layout.",
+      "file": "08-live-1280.png",
+      "height": 800,
+      "sha256": "bf264151e33e55b9e1a1eea09f1663b9bff97633fa8f6deac364b87e626630c1",
+      "width": 1280
+    }
+  ],
+  "source_files": 43,
+  "source_unchanged_during_test": true,
+  "test_fixture_captures_are_separate_from_one_review_capture": true,
+  "tests": {
+    "failed": 0,
+    "harness_seconds": 98.3298795510002,
+    "passed": 73,
+    "skipped": 0,
+    "unittest_seconds": 95.335
+  },
+  "uid": 1000
+}

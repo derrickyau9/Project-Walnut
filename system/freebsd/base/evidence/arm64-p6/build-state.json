@@ -1,0 +1,231 @@
+{
+  "format": "DaOS-freebsd-base-build-v2",
+  "status": "completed",
+  "scope": "DaOS source-built FreeBSD appliance base; not yet target image/boot/UI validation",
+  "build_kind": "cross",
+  "target": {
+    "architecture": "arm64",
+    "make_target": "arm64",
+    "make_target_arch": "aarch64",
+    "kernel_ident": "DaOS",
+    "elf_machine": 183
+  },
+  "source": {
+    "format": "DaOS-freebsd-base-source-v2",
+    "release": "15.1-RELEASE-p6",
+    "architecture": "arm64",
+    "git_url": "https://git.FreeBSD.org/src.git",
+    "commit": "95719d8a895bf8170851e9844d9b4092b1d2b6fe",
+    "archive_url": null,
+    "archive_bytes": 285589524,
+    "archive_sha256": "62616e1381734098f3351a0dc97dd153fe78d5cdd74cea41c771c1c6e2e3c9b6",
+    "release_revision": "95719d8a895b",
+    "release_gitbranch": "releng/15.1",
+    "verified_at": "2026-11-05",
+    "verification": "Official FreeBSD git HTTPS clone; commit object and git archive PAX commit marker verified; XZ integrity checked. No PGP signature claim.",
+    "security_scope": "Pinned releng/15.1 p6 source matching the actual bootstrapped VM; not a promise of future security currency.",
+    "source_prefix": "usr/src",
+    "archive_git_commit_comment_required": true,
+    "archive_source_command": "git archive --format=tar --prefix=usr/src/ 95719d8a895bf8170851e9844d9b4092b1d2b6fe | xz -T8 -3",
+    "source_tree_architecture_independent": true,
+    "source_profile_note": "Complete FreeBSD source archive reused with identical byte/hash pins; ARM64 target selected by the build recipe."
+  },
+  "source_lock_sha256": "cf8a647af9ac7df44869ec778a7398125e616b05725de588709f302ff8ff8ed1",
+  "host": {
+    "system": "FreeBSD",
+    "release": "15.1-RELEASE-p6",
+    "machine": "amd64",
+    "architecture": "amd64",
+    "uid": 1000
+  },
+  "work_dir": "/var/daos-builds/daos-base-arm64-p6-001",
+  "destination": "/var/daos-builds/daos-base-arm64-p6-001/stage",
+  "stage_directory": "/var/daos-builds/daos-base-arm64-p6-001/stage",
+  "steps": [
+    {
+      "argv": [
+        "/usr/bin/make",
+        "TARGET=arm64",
+        "TARGET_ARCH=aarch64",
+        "SRCCONF=/var/daos-builds/daos-base-arm64-p6-001/config/src.conf",
+        "SRC_ENV_CONF=/dev/null",
+        "__MAKE_CONF=/dev/null",
+        "KERNCONF=DaOS",
+        "KERNCONFDIR=/var/daos-builds/daos-base-arm64-p6-001/kernel-config",
+        "-j12",
+        "buildworld"
+      ],
+      "returncode": 0,
+      "seconds": 154.456,
+      "log_bytes": 52344882,
+      "log_sha256": "42a3ab926728320a08676ee25012b8c830a33e2ef6c4b1bb0be19272879eee59",
+      "log": "buildworld.log",
+      "step": "buildworld"
+    },
+    {
+      "argv": [
+        "/usr/bin/make",
+        "TARGET=arm64",
+        "TARGET_ARCH=aarch64",
+        "SRCCONF=/var/daos-builds/daos-base-arm64-p6-001/config/src.conf",
+        "SRC_ENV_CONF=/dev/null",
+        "__MAKE_CONF=/dev/null",
+        "KERNCONF=DaOS",
+        "KERNCONFDIR=/var/daos-builds/daos-base-arm64-p6-001/kernel-config",
+        "-j12",
+        "buildkernel"
+      ],
+      "returncode": 0,
+      "seconds": 101.537,
+      "log_bytes": 16270684,
+      "log_sha256": "05f109d208566f321d4c1b1f61f3b0487eb2edba3408b712b7d51445dd5ec9b4",
+      "log": "buildkernel.log",
+      "step": "buildkernel"
+    },
+    {
+      "argv": [
+        "/usr/bin/make",
+        "TARGET=arm64",
+        "TARGET_ARCH=aarch64",
+        "SRCCONF=/var/daos-builds/daos-base-arm64-p6-001/config/src.conf",
+        "SRC_ENV_CONF=/dev/null",
+        "__MAKE_CONF=/dev/null",
+        "KERNCONF=DaOS",
+        "KERNCONFDIR=/var/daos-builds/daos-base-arm64-p6-001/kernel-config",
+        "DESTDIR=/var/daos-builds/daos-base-arm64-p6-001/stage",
+        "NO_ROOT=yes",
+        "installworld"
+      ],
+      "returncode": 0,
+      "seconds": 19.98,
+      "log_bytes": 2351511,
+      "log_sha256": "198f735c990ff665012c4a8e16d3ef5696c8347159685a6482a7188e2afabe92",
+      "log": "installworld.log",
+      "step": "installworld"
+    },
+    {
+      "argv": [
+        "/usr/bin/make",
+        "TARGET=arm64",
+        "TARGET_ARCH=aarch64",
+        "SRCCONF=/var/daos-builds/daos-base-arm64-p6-001/config/src.conf",
+        "SRC_ENV_CONF=/dev/null",
+        "__MAKE_CONF=/dev/null",
+        "KERNCONF=DaOS",
+        "KERNCONFDIR=/var/daos-builds/daos-base-arm64-p6-001/kernel-config",
+        "DESTDIR=/var/daos-builds/daos-base-arm64-p6-001/stage",
+        "NO_ROOT=yes",
+        "distribution"
+      ],
+      "returncode": 0,
+      "seconds": 9.15,
+      "log_bytes": 220870,
+      "log_sha256": "ab458c4203e9810bef2c2dddeb24497c727dc17e61ec7c7fb15eca84e2f25243",
+      "log": "distribution.log",
+      "step": "distribution"
+    },
+    {
+      "argv": [
+        "/usr/bin/make",
+        "TARGET=arm64",
+        "TARGET_ARCH=aarch64",
+        "SRCCONF=/var/daos-builds/daos-base-arm64-p6-001/config/src.conf",
+        "SRC_ENV_CONF=/dev/null",
+        "__MAKE_CONF=/dev/null",
+        "KERNCONF=DaOS",
+        "KERNCONFDIR=/var/daos-builds/daos-base-arm64-p6-001/kernel-config",
+        "DESTDIR=/var/daos-builds/daos-base-arm64-p6-001/stage",
+        "NO_ROOT=yes",
+        "installkernel"
+      ],
+      "returncode": 0,
+      "seconds": 4.173,
+      "log_bytes": 217818,
+      "log_sha256": "3c95607f8496b856c64cfce5c1d0038ddeda49c96cdf2040f8e4bffbf622a77d",
+      "log": "installkernel.log",
+      "step": "installkernel"
+    }
+  ],
+  "install_policy": {
+    "no_root": true,
+    "destination_is_private": true,
+    "live_root_installed": false
+  },
+  "limits": {
+    "jobs": 12,
+    "stage_timeout_seconds": 7200,
+    "log_max_bytes": 536870912
+  },
+  "configuration_sha256": {
+    "src.conf": "6c9cab361708bce4d85a076c6095233ade570ab7ffc2c2c197909c8f00c8b8b8",
+    "DaOS": "25be2f730c550a346e664a0d7e2a292b206923af074c1ee310af2884037460e0"
+  },
+  "source_directory": "/var/daos-builds/daos-base-arm64-p6-001/source/usr/src",
+  "source_anchor_sha256": {
+    "Makefile": "4f55537f67445ebb2e2c65c447ead1eee6243dd68025abbd5ab585c790d91416",
+    "Makefile.inc1": "a1181d9760669fe12bdd74db1258da5b6ba522c492877bf5d01de9f9d93643df",
+    "sys/conf/newvers.sh": "7ec86dd079529b3137bc1648633d94d6ba22dbb8996dabcc5e777984cbc6958a",
+    "sys/arm64/conf/GENERIC": "6e4ca35da7e92190cbd43904185a0bfab0191ce3fa1abc6074fb89ba137f1a5e"
+  },
+  "host_toolchain": {
+    "compiler": {
+      "argv": [
+        "/usr/bin/cc",
+        "--version"
+      ],
+      "returncode": 0,
+      "stdout": "FreeBSD clang version 19.1.7 (https://github.com/llvm/llvm-project.git llvmorg-19.1.7-0-gcd708029e0b2)\nTarget: x86_64-unknown-freebsd15.1\nThread model: posix\nInstalledDir: /usr/bin\n",
+      "stderr": ""
+    },
+    "compiler_targets": {
+      "argv": [
+        "/usr/bin/cc",
+        "--print-targets"
+      ],
+      "returncode": 0,
+      "stdout": "\n  Registered Targets:\n    aarch64    - AArch64 (little endian)\n    aarch64_32 - AArch64 (little endian ILP32)\n    aarch64_be - AArch64 (big endian)\n    arm        - ARM\n    arm64      - ARM64 (little endian)\n    arm64_32   - ARM64 (little endian ILP32)\n    armeb      - ARM (big endian)\n    ppc32      - PowerPC 32\n    ppc32le    - PowerPC 32 LE\n    ppc64      - PowerPC 64\n    ppc64le    - PowerPC 64 LE\n    riscv32    - 32-bit RISC-V\n    riscv64    - 64-bit RISC-V\n    thumb      - Thumb\n    thumbeb    - Thumb (big endian)\n    x86        - 32-bit X86: Pentium-Pro and above\n    x86-64     - 64-bit X86: EM64T and AMD64\n",
+      "stderr": ""
+    },
+    "linker": {
+      "argv": [
+        "/usr/bin/ld.lld",
+        "--version"
+      ],
+      "returncode": 0,
+      "stdout": "LLD 19.1.7 (FreeBSD llvmorg-19.1.7-0-gcd708029e0b2-1500001) (https://github.com/llvm/llvm-project.git llvmorg-19.1.7-0-gcd708029e0b2) (compatible with GNU linkers)\n",
+      "stderr": ""
+    }
+  },
+  "active_step": null,
+  "target_elf_checks": {
+    "bin/sh": {
+      "class": 64,
+      "byte_order": "little",
+      "machine": 183,
+      "osabi": 9
+    },
+    "lib/libc.so.7": {
+      "class": 64,
+      "byte_order": "little",
+      "machine": 183,
+      "osabi": 9
+    },
+    "boot/kernel/kernel": {
+      "class": 64,
+      "byte_order": "little",
+      "machine": 183,
+      "osabi": 0
+    }
+  },
+  "artifact_sha256": {
+    "bin/sh": "a60e9e757429a512c1551913a79a044e3b72bb0e4ac4ba68b49f1067e4cb2a4a",
+    "sbin/init": "70621ffd991e433ca1cbc177c4d7355f5ab16253e2f28a9da1307f22b8d5feae",
+    "lib/libc.so.7": "dde4d8989c4a2425a2a65bbf873917e091db1b351d6bc95a3eff85f47daaabb6",
+    "boot/kernel/kernel": "a4e6121c99aae567340b478bfdc2d4ff309bec7ff29541785e7602887968e82d",
+    "etc/rc": "243891789c003e6d8ab56454b70176a770cbed6ac86f261250285d83caaca753",
+    "etc/master.passwd": "55dfb5a41ebad44523b26cba443d94c3d55e0b39a32558f81a1d50fed964ec34",
+    "METALOG": "4ed64dff1037ead9cbbc6c56bde05573cc257c255fbebef9ab25201c864e4d91"
+  },
+  "image_boot_validated": false,
+  "ui_validated": false
+}

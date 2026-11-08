@@ -1,0 +1,52 @@
+{
+  "project": "HassleFree FF-1",
+  "status": "architecture_and_interface_study_not_a_sensor_PCB",
+  "sensor": {
+    "part": "IMX410CQK",
+    "evidence": "Sony product flyer version 1.0, 2018",
+    "publicly_verified": {
+      "interface": "SLVS-EC",
+      "lane_count_advertised": 8,
+      "input_clock_MHz": 72,
+      "active_width": 6064,
+      "active_height": 4040,
+      "pixel_pitch_um": 5.94,
+      "package_description": "294-pin LGA",
+      "chip_size_mm_not_package_drawing": [41.071,30.815],
+      "full_active_14bit_mode0_fps": 19.2
+    },
+    "unresolved": [
+      "complete pinout with revision and orientation",
+      "package/land pattern, optical datum, stack height and tolerances",
+      "rail names, voltage limits, static and transient currents",
+      "power-up/down order, reset and clock timing",
+      "lane baud rate and supported lane-count modes",
+      "SLVS-EC protocol revision and required packet features",
+      "electrical swing, common-mode, coupling and termination",
+      "serial control interface voltage/timing and register initialization",
+      "mode register sets, test-pattern and optical-black processing",
+      "document, register-table and design-source redistribution rights"
+    ]
+  },
+  "receiver_candidate": {
+    "lab_board": "AMD ZCU102 with XCZU9EG; exact PCB revision to be matched",
+    "connector": "HPC0 J5",
+    "verified_exposed_PL_rx_channels": 8,
+    "mapping_source": "AMD UG1182 v1.7 Tables 3-44 and 3-45",
+    "ip_candidate": "FRAMOS SLVS-EC RX IP; commercial terms and exact device/mode support not contracted",
+    "carrier_DP_to_sensor_lane_assignment": null,
+    "GT_reference_clock_frequency": null,
+    "sensor_clock_electrical_standard": null,
+    "impedance_and_skew_release_limits": null,
+    "fabrication_release": false
+  },
+  "gates": [
+    {"id":"G1","name":"authorized_sensor_design_package","state":"blocked_missing_documents"},
+    {"id":"G2","name":"receiver_RAW14_baud_protocol_license","state":"pending_vendor_confirmation"},
+    {"id":"G3","name":"exact_FPGA_board_module_revision_pinout","state":"lab_candidate_mapped_production_unselected"},
+    {"id":"G4","name":"rail_budget_and_power_sequence","state":"blocked_by_G1"},
+    {"id":"G5","name":"SI_stackup_connector_coupling_review","state":"blocked_by_G1_G2_G3"},
+    {"id":"G6","name":"sensor_test_pattern_to_memory_bench","state":"not_run"},
+    {"id":"G7","name":"first_optical_frame_and_thermal_validation","state":"not_run"}
+  ]
+}

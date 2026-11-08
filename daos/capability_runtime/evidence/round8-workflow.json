@@ -1,0 +1,49 @@
+{
+  "format": "hf-workflow-recovery-audit-v1",
+  "passed": true,
+  "physical_hardware_tested": false,
+  "source_input_sha256": {
+    "daos/capability_runtime/bracket.py": "0621a20fa3188da919e647e3fef26c98a8f4cd1e805a6e3ec848fe80983f336a",
+    "daos/capability_runtime/manager.py": "adf916baf8578a2a3b1cdf815ad646d51feec9bd2a7ac776d263f75e1c39f47a",
+    "daos/capability_runtime/__main__.py": "105c4743bfe9d2cb3fc3525e34d0343f483fe8d7a56f5e0e2e558fb66d885e0d",
+    "daos/capability_runtime/recipes.py": "4dd4195005b942bb45671309283b7bb0c056d19044f050fe734b3ecc8e60734e",
+    "daos/capability_runtime/README.md": "1b6c0c89ead809e3e7e26539b2acc686695c3fe8d85c7d427401274c600dda9d",
+    "tests/test_workflow.py": "d1d2649f6a69be2714d05e3fa30bf5ba4e531f47e93572ede5c0a1ff725c3d5f",
+    "tests/test_workflow_recovery.py": "6741009b26ab14e1c9772572224d3df68b6b27545c8733e9c833556ceb500fff",
+    "tests/test_workflow_continuation_cli.py": "c45cd4a3e61c9d0eb75549c5b42dd9791fa253b87faf5f4dabcf4fbbf9b1133a",
+    "tests/test_workflow_recipes.py": "72b0e71ae3c713dc7405823e5eed8a81205b32bd9c010f4e70ae1d91342adde0"
+  },
+  "command": "python -B -m unittest tests.test_workflow tests.test_workflow_recovery tests.test_workflow_continuation_cli tests.test_workflow_recipes -v",
+  "windows": {
+    "log": "round8-workflow-windows.txt",
+    "seconds": 21.497,
+    "passed": 45,
+    "run": 45,
+    "skipped": 0
+  },
+  "linux": {
+    "log": "round8-workflow-linux.txt",
+    "native_daemon": "build/linux-native-round8/hf-camerad",
+    "skipped": 0,
+    "seconds": 10.625,
+    "run": 45,
+    "passed": 45
+  },
+  "confirmed_behaviors": [
+    "Reserved request IDs reconcile before cancellation can settle",
+    "Absent or mismatched evidence remains unknown and is never replaced",
+    "Legacy terminal rows with pending requests reopen unknown under execution ownership",
+    "Per-journal local OS ownership prevents overlapping execution and false interruption",
+    "Process death releases execution ownership",
+    "Clean pause snapshots current settings on its next lease",
+    "Saved-plan CLI resume needs no recipe or exposure arguments",
+    "CLI pause and active cancel acknowledge controls without competing authority",
+    "Completed saved jobs return without opening an authority"
+  ],
+  "limits": [
+    "Synthetic camera services only",
+    "Local filesystem locking, not a distributed lease",
+    "Cooperative pause and backend cancellation; completion may win a cancellation race",
+    "No general malformed-journal repair or exactly-once physical acquisition guarantee"
+  ]
+}

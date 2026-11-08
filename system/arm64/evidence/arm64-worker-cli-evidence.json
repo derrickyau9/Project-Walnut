@@ -1,0 +1,19 @@
+{
+  "format": "hf-arm64-worker-cli-tests-v1",
+  "user_mode_emulation": true,
+  "physical_board_tested": false,
+  "command": "HF_NATIVE_WORKER=build/arm64-native/hf-native-worker-qemu python3 -m unittest discover -s tests -p test_native_worker.py -v",
+  "tests_run": 9,
+  "passed": 6,
+  "skipped": 3,
+  "failures": 0,
+  "errors": 0,
+  "skipped_checks": [
+    "full-frame opt-in unset",
+    "optional LibRaw/rawpy unavailable",
+    "optional tifffile unavailable"
+  ],
+  "worker_sha256": "aebb779b523be6b3c520b2e1c04be624904d2726d4180cb6c596feb01fd1156c",
+  "test_source_sha256": "737cbf35a1d23dde946a2761885415fb8d553950621302573d20077d4a9807f8",
+  "scope": "Explicit QEMU user mode on host Linux, exact synthetic Bayer/reference and worker CLI behavior only."
+}

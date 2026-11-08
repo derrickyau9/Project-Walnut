@@ -1,0 +1,16 @@
+{
+  "architecture": "aarch64",
+  "bin_sh": {
+    "OSABI": 9,
+    "bytes": 167384,
+    "machine": 183,
+    "sha256": "a926cb397e68f278891af35853fa46b2e85854a0a6e7f7538b2f2c446ba032e8",
+    "type": 3
+  },
+  "machine": "arm64",
+  "python": "3.12.15 (main, Oct 29 2026, 02:27:54) [Clang 19.1.7 (https://github.com/llvm/llvm-project.git llvmorg-19.1.7-0-gcd7080",
+  "release": "15.1-RELEASE-p6",
+  "system": "FreeBSD",
+  "uid": 0,
+  "uname": "FreeBSD daos-arm64-dev 15.1-RELEASE-p6 FreeBSD 15.1-RELEASE-p6 releng/15.1-n283643-95719d8a895b GENERIC arm64"
+}

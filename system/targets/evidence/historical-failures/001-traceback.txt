@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/tools/target_build.py", line 303, in <module>
+    if __name__=='__main__': main()
+                             ~~~~^^
+  File "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/tools/target_build.py", line 299, in main
+    else: result=build(value,args.work_dir,profile_path=args.profile,native_dir=args.native_dir,kernel_dir=args.kernel_dir,inputs_dir=args.inputs_dir,offline=args.offline)
+                 ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/tools/target_build.py", line 275, in build
+    result=run_stage(stage,work/(stage['id']+'.log'))
+  File "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/tools/target_build.py", line 223, in run_stage
+    raise RuntimeError(stage['id']+': '+(reason or 'component exited '+str(child.returncode))+'; inspect '+Path(log).name)
+RuntimeError: image: component exited 1; inspect image.log

@@ -1,0 +1,16 @@
+{
+  "source": "https://www.sony-semicon.com/files/62/pdf/p-13_IMX410CQK_Flyer.pdf",
+  "verified_chip_xy_mm": [
+    41.071,
+    30.815
+  ],
+  "package": "294-pin LGA; complete package dimensions and height unknown",
+  "z_extent_mm": [
+    -21,
+    0
+  ],
+  "z_extent_basis": "DESIGN ROUTING CORRIDOR ONLY, NOT PUBLISHED CHIP OR PACKAGE THICKNESS",
+  "guard_xy_margin_mm": 2,
+  "margin_basis": "PROVISIONAL DESIGN ALLOWANCE, NOT A MANUFACTURING TOLERANCE",
+  "warning": "Corridor is an exclusion zone for this thermal concept, not an actual sensor STEP or proof of package fit."
+}

@@ -1,0 +1,16 @@
+{
+  "bytes": 21819,
+  "format": "DaOS-r14-additional-inspection-tool-v1",
+  "not_in_original_87_test_package": true,
+  "original_source_files_unchanged": 47,
+  "path": "tools/review_taskbar_motion.py",
+  "sha256": "3117271b12246652c1987e7159fe83288eb53db6431d143de9e0b409ff1fdd98",
+  "upload": {
+    "destination": "/home/camera/DaOS-UI-R14-project-002/tools/review_taskbar_motion.py",
+    "direction": "to-guest",
+    "format": "hf-freebsd-vm-copy-v1",
+    "sha256": "3117271b12246652c1987e7159fe83288eb53db6431d143de9e0b409ff1fdd98",
+    "size_bytes": 21819,
+    "source": "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/tools/review_taskbar_motion.py"
+  }
+}

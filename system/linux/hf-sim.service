@@ -1,0 +1,23 @@
+[Unit]
+Description=HF-Sim local synthetic camera (native authority, no hardware driver)
+StartLimitIntervalSec=60
+StartLimitBurst=3
+
+[Service]
+Type=simple
+WorkingDirectory=%h/.local/opt/hf-sim/current/runtime
+ExecStart=/usr/bin/python3 -B -m system.linux.serve --runtime-root %h/.local/opt/hf-sim/current/runtime --native-daemon %h/.local/opt/hf-sim/current/bin/hf-camerad --data-dir %h/.local/share/hf-sim/native-authority --port 8787
+Restart=on-failure
+RestartSec=2
+KillSignal=SIGINT
+KillMode=mixed
+TimeoutStopSec=15
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=%h/.local/share/hf-sim/native-authority
+
+[Install]
+WantedBy=default.target

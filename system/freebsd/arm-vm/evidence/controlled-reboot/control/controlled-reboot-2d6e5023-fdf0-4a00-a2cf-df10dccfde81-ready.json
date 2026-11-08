@@ -1,0 +1,26 @@
+{
+  "application_or_native_camera_calls_made": 0,
+  "format": "DaOS-arm-controlled-reboot-ready-v1",
+  "immutable_inputs_unchanged": true,
+  "immutable_sha256_after": {
+    "arm-seed.iso": "55bd97338cef7a40e4781246c84bc928ee90a1bbfd24ed1a5d241fe76b7ec75a",
+    "base.qcow2": "ae13edc018ad2d862020de3fdccc24581fae12b3323bfd800db73cb2b7fce23c",
+    "uefi-code.fd": "5d3147294c56ce8cb636c57c181776a89bc7ba254274c35698dc5795758052d3"
+  },
+  "new_boot_directory": "/home/dy09/hf-task-freebsd-r10/arm-vm-001/arm-boot-61541b3a-98cf-4223-b41c-514be9a2b7bf",
+  "old_closed_receipt_sha256": "bd3012b8dbcbf3f63fe9a8fc149d6a3f5b2462c500227752f70cd68d2a1eb252",
+  "qemu_pid": 2853,
+  "ready": true,
+  "ready_receipt_sha256": "0c3d2f78bc60f29c11bc35b0df086fc8bb27ecad9fb98927cc15acaedc181bcf",
+  "ready_seconds": 52.29945594400033,
+  "request": "controlled-reboot-2d6e5023-fdf0-4a00-a2cf-df10dccfde81.json",
+  "same_private_UEFI_variables": true,
+  "same_private_overlay": true,
+  "same_task_keys_and_SSH_port": true,
+  "saved_capture_resume_validation": "parent-owned next step; no reconciliation claim in this reboot receipt",
+  "scope": "actual development FreeBSD ARM64 kernel reboot; custom DaOS appliance image remains separate",
+  "serve_exec_session": 30171,
+  "shutter_actions_requested": 0,
+  "source_capture_id": "e80344a4-718e-436e-b146-6efee5443d23",
+  "ssh_port": 22242
+}

@@ -1,0 +1,112 @@
+{
+  "format": "DaOS-final-USB-VM-QA-v1",
+  "recorded_utc": "2026-11-06T07:06:45.334995+00:00",
+  "status": "completed",
+  "raw_sha256": "ed84cce5eb14da514732f88909d0baee8f22266a3f837569185b30f855e1394e",
+  "scope": "Actual QEMU ARM64 GUI operation and a clean stop/restart of its private persistent COW. Physical Raspberry Pi, USB enumeration and camera were not exercised.",
+  "assembly_receipt_modified": false,
+  "passed": {
+    "boot_logo_exact_rgb_pixel_match": true,
+    "menu_navigation": true,
+    "system_page_identity": true,
+    "one_synthetic_capture": true,
+    "playback_and_photo_information": true,
+    "export_copy": true,
+    "export_exact_bytes_match": true,
+    "guest_requested_poweroff_qemu_exit_zero": true,
+    "application_and_xorg_clean_exit": true,
+    "raw_and_cow_unchanged_during_stopped_inspection": true,
+    "usb_rc_helper_started_and_waited_for_host": true,
+    "usb_helper_clean_stop": true,
+    "embedded_usb_payloads_match_release_receipt": true,
+    "derived_dtb_matches_three_boot_paths": true,
+    "authorized_public_key_fingerprints_and_root_0600": true,
+    "same_capture_restored_after_restart": true,
+    "camera_page_with_synthetic_preview_left_running": true
+  },
+  "not_verified": {
+    "physical_raspberry_pi_4_boot": true,
+    "physical_usb_enumeration": true,
+    "windows_usb_driver_binding": true,
+    "physical_camera_capture": true,
+    "second_shutdown_and_offline_comparison": true
+  },
+  "system": {
+    "architecture": "arm64",
+    "event": "base-identity",
+    "kernel_ident": "DaOS",
+    "kernel_sha256": "5ac681d051cb623b23a724f91e6ecb818a883f034c8aa88eab678162221f2dec",
+    "release": "15.1-RELEASE-p6",
+    "shell_sha256": "a60e9e757429a512c1551913a79a044e3b72bb0e4ac4ba68b49f1067e4cb2a4a",
+    "system": "FreeBSD"
+  },
+  "capture": {
+    "id": "361f0ccb-1882-4bdf-a557-b206f4161dad",
+    "synthetic": true,
+    "dimensions": [
+      128,
+      96
+    ],
+    "exposure_us": 10000,
+    "gain": 1.0,
+    "bytes": 25662,
+    "sha256": "2ecab9bcbb66ebe3d5ee9257a2c4fed90e1838784bf56bf61c054c5746470cd5",
+    "first_playback_count": "1/1",
+    "restored_playback_count": "1/1",
+    "restored_identity_screenshot": "16-restart-photo-info.png"
+  },
+  "shutdown": {
+    "qemu_exit_code": 0,
+    "all_buffers_synced_serial_marker_seen": false,
+    "marker_scope": "EFI console does not yield the serial marker; actual guest poweroff and clean app/Xorg shutdown checked separately",
+    "application": {
+      "application_returncode": 0,
+      "event": "session-stopped",
+      "forced_application_stop": false,
+      "server_returncode": 0
+    }
+  },
+  "usb": {
+    "checked_payload_files": 27,
+    "embedded_manifest_sha256": "6ae7cc35a566d201f9aa470569dd95e9b37c6f06f1ba64dcefef61769f9d2391",
+    "qemu_state": "helper started and waited for configured USB host; stopped status0",
+    "physical_usb_verified": false,
+    "windows_binding_verified": false
+  },
+  "logo": {
+    "matched_frame": "boot-logo/frame-0009.png",
+    "exact_rgb_match": {
+      "x": 28,
+      "y": 23,
+      "width": 743,
+      "height": 554,
+      "exact_rgb_pixel_match": true
+    },
+    "observation_seconds": 7.669,
+    "evidence": "boot-logo/logo-validation.json"
+  },
+  "final_running_instance": {
+    "work_dir": "/home/dy09/daos-vm-usb-adb",
+    "qemu_name": "DaOS-BSD-R14",
+    "run": "8b2c1d0a15e04e75890e74155855a14f",
+    "qemu_pid": 800211,
+    "visible": true,
+    "state_at_last_observation": "running",
+    "last_observation_utc": "2026-11-06T07:05:33.822352+00:00",
+    "page": "Camera",
+    "preview": "HF-Sim synthetic",
+    "screenshot": "19-final-camera-settled.png"
+  },
+  "evidence": {
+    "menu": "03-menu-open.png",
+    "system": "05-system-second.png",
+    "playback": "08-playback.png",
+    "photo_info": "09-photo-info.png",
+    "export": "11-export-copy-result.png",
+    "restored_playback": "15-restart-playback.png",
+    "restored_photo_info": "16-restart-photo-info.png",
+    "offline": "offline/offline-validation.json",
+    "stopped_snapshot_receipt": "offline/extraction-receipt.json"
+  },
+  "note": "No new test or VM operation was performed during evidence organization. Original assembly-only evidence remains unchanged."
+}

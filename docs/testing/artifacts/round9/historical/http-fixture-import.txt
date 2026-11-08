@@ -1,0 +1,83 @@
+test_calibration_http (unittest.loader._FailedTest.test_calibration_http) ... ERROR
+test_bounded_eof_and_chunked_json_framing (tests.test_http_client.HttpClientFaultTests.test_bounded_eof_and_chunked_json_framing) ... ok
+test_calls_serialized_and_close_is_local_only (tests.test_http_client.HttpClientFaultTests.test_calls_serialized_and_close_is_local_only) ... ok
+test_capture_and_query_reject_wrong_identity_or_status (tests.test_http_client.HttpClientFaultTests.test_capture_and_query_reject_wrong_identity_or_status) ... ok
+test_capture_server_errors_preserve_codes_and_mark_uncertain_admission (tests.test_http_client.HttpClientFaultTests.test_capture_server_errors_preserve_codes_and_mark_uncertain_admission) ... ok
+test_capture_timeout_has_finite_budget_and_no_retry (tests.test_http_client.HttpClientFaultTests.test_capture_timeout_has_finite_budget_and_no_retry) ... ok
+test_close_interrupts_attachment_without_cancelling_server_capture (tests.test_http_client.HttpClientFaultTests.test_close_interrupts_attachment_without_cancelling_server_capture) ... ok
+test_completed_capture_actuals_stay_within_advertised_ranges (tests.test_http_client.HttpClientFaultTests.test_completed_capture_actuals_stay_within_advertised_ranges) ... ok
+test_known_connect_failure_does_not_claim_capture_uncertainty (tests.test_http_client.HttpClientFaultTests.test_known_connect_failure_does_not_claim_capture_uncertainty) ... ok
+test_lone_surrogate_identifier_is_rejected_before_sending (tests.test_http_client.HttpClientFaultTests.test_lone_surrogate_identifier_is_rejected_before_sending) ... ok
+test_loopback_origin_validation_and_proxy_ignored (tests.test_http_client.HttpClientFaultTests.test_loopback_origin_validation_and_proxy_ignored) ... ok
+test_lost_capture_response_retains_id_and_is_never_retried (tests.test_http_client.HttpClientFaultTests.test_lost_capture_response_retains_id_and_is_never_retried) ... ok
+test_malformed_capture_response_is_uncertain_but_known_error_is_preserved (tests.test_http_client.HttpClientFaultTests.test_malformed_capture_response_is_uncertain_but_known_error_is_preserved) ... ok
+test_non_capture_timeout_and_bad_protocol (tests.test_http_client.HttpClientFaultTests.test_non_capture_timeout_and_bad_protocol) ... ok
+test_query_not_found_and_local_request_bound (tests.test_http_client.HttpClientFaultTests.test_query_not_found_and_local_request_bound) ... ok
+test_request_thread_start_failure_is_known_not_sent (tests.test_http_client.HttpClientFaultTests.test_request_thread_start_failure_is_known_not_sent) ... ok
+test_timeout_constructor_rejects_nonfinite_or_platform_overflow (tests.test_http_client.HttpClientFaultTests.test_timeout_constructor_rejects_nonfinite_or_platform_overflow) ... ok
+test_native_http_clients_and_workflow_share_one_authority (tests.test_http_client.HttpClientNativeTests.test_native_http_clients_and_workflow_share_one_authority) ... ok
+test_preview_cancel_disconnect_and_reconnect (tests.test_http_client.HttpClientReferenceTests.test_preview_cancel_disconnect_and_reconnect) ... ok
+test_two_clients_share_lease_and_one_capture_commit (tests.test_http_client.HttpClientReferenceTests.test_two_clients_share_lease_and_one_capture_commit) ... ok
+test_control_capture_and_query (tests.test_camera_http.HttpTests.test_control_capture_and_query) ... 127.0.0.1 - - [05/Nov/2026 08:25:51] "GET /api/v1/capabilities HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:25:51] "POST /api/v1/control/acquire HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:25:51] "POST /api/v1/control/heartbeat HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:25:51] "POST /api/v1/captures HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:25:51] "GET /api/v1/captures/cbba65a2-149d-4242-bb34-e9abef95b5c9 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:25:51] "GET /api/v1/captures/cbba65a2-149d-4242-bb34-e9abef95b5c9 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:25:51] "POST /api/v1/control/release HTTP/1.1" 200 -
+ok
+test_disconnect_and_explicit_reconnect_via_http (tests.test_camera_http.HttpTests.test_disconnect_and_explicit_reconnect_via_http) ... 127.0.0.1 - - [05/Nov/2026 08:25:51] "POST /api/v1/control/acquire HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:25:51] "POST /api/v1/preview/start HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:25:51] "POST /api/v1/captures HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:25:51] "GET /api/v1/captures/e81844bc-b2e9-4bb5-844c-95d2baee37bb HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:25:51] "GET /api/v1/captures/e81844bc-b2e9-4bb5-844c-95d2baee37bb HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:25:51] "GET /api/v1/state HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:25:51] "GET /api/v1/preview.png HTTP/1.1" 503 -
+127.0.0.1 - - [05/Nov/2026 08:25:51] "POST /api/v1/device/reconnect HTTP/1.1" 403 -
+127.0.0.1 - - [05/Nov/2026 08:25:51] "POST /api/v1/device/reconnect HTTP/1.1" 200 -
+ok
+test_preview_requires_control_to_start_and_serves_png (tests.test_camera_http.HttpTests.test_preview_requires_control_to_start_and_serves_png) ... 127.0.0.1 - - [05/Nov/2026 08:25:52] "GET /api/v1/preview.png HTTP/1.1" 503 -
+127.0.0.1 - - [05/Nov/2026 08:25:52] "POST /api/v1/preview/start HTTP/1.1" 403 -
+127.0.0.1 - - [05/Nov/2026 08:25:52] "POST /api/v1/control/acquire HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:25:52] "POST /api/v1/preview/start HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:25:52] "GET /api/v1/preview.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:25:52] "POST /api/v1/preview/stop HTTP/1.1" 200 -
+ok
+test_rejects_foreign_origin_host_and_non_json (tests.test_camera_http.HttpTests.test_rejects_foreign_origin_host_and_non_json) ... 127.0.0.1 - - [05/Nov/2026 08:25:53] "POST /api/v1/control/acquire HTTP/1.1" 403 -
+127.0.0.1 - - [05/Nov/2026 08:25:53] "POST /api/v1/control/acquire HTTP/1.1" 400 -
+127.0.0.1 - - [05/Nov/2026 08:25:53] "GET /api/v1/state HTTP/1.1" 403 -
+127.0.0.1 - - [05/Nov/2026 08:25:53] "GET /../journal.sqlite3 HTTP/1.1" 404 -
+ok
+test_request_workers_are_bounded (tests.test_camera_http.HttpTests.test_request_workers_are_bounded) ... 127.0.0.1 - - [05/Nov/2026 08:25:53] "POST /api/v1/control/acquire HTTP/1.1" 400 -
+ok
+test_workflow_execution_via_http (tests.test_camera_http.HttpTests.test_workflow_execution_via_http) ... 127.0.0.1 - - [05/Nov/2026 08:25:54] "POST /api/v1/workflows HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:25:54] "GET /api/v1/workflows/http-sequence HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:25:54] "GET /api/v1/workflows/http-sequence HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:25:54] "GET /api/v1/workflows/http-sequence HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:25:54] "GET /api/v1/workflows/http-sequence HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:25:54] "GET /api/v1/workflows/http-sequence HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:25:54] "GET /api/v1/workflows/http-sequence HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:25:54] "GET /api/v1/workflows/http-sequence HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:25:55] "GET /api/v1/workflows/http-sequence HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:25:55] "GET /api/v1/workflows/http-sequence HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:25:55] "GET /api/v1/workflows/http-sequence HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:25:55] "GET /api/v1/workflows HTTP/1.1" 200 -
+ok
+
+======================================================================
+ERROR: test_calibration_http (unittest.loader._FailedTest.test_calibration_http)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_calibration_http
+Traceback (most recent call last):
+  File "C:\ProgramData\anaconda3\Lib\unittest\loader.py", line 137, in loadTestsFromName
+    module = __import__(module_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\derri\Documents\Codex\2026-11-05\task\tests\test_calibration_http.py", line 12, in <module>
+    from camera.camerad.http_client import HttpClient
+ImportError: cannot import name 'HttpClient' from 'camera.camerad.http_client' (C:\Users\derri\Documents\Codex\2026-11-05\task\camera\camerad\http_client.py)
+
+
+----------------------------------------------------------------------
+Ran 26 tests in 7.146s
+
+FAILED (errors=1)

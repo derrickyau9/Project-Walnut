@@ -1,0 +1,1 @@
+{"transport": "loopback-tcp-test", "host": "127.0.0.1", "port": 54406, "pid": 2657, "usb_hardware_validated": false, "authorized_key_fingerprints": ["8c01edc4c8ef74efa01bd49592df237bb78348f4bc68234ce2918d3698dbb9fd", "77692ef6437a69c159767aea568f8cf2004ad982b9913a80c2ee031e15445dc5"]}

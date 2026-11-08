@@ -1,0 +1,14 @@
+# DaOS QEMU virt AArch64 kernel. Boot with UEFI and a firmware framebuffer.
+# This target validates the generic ARM64 appliance, not physical Pi drivers.
+include "./GENERIC64"
+
+no options COMPAT_NETBSD32
+no options NFSSERVER
+no file-system NFS
+no pseudo-device raid
+no options RAID_AUTOCONFIG
+
+# GENERIC64 supplies ACPI/FDT, virtio, genfb and USB input devices.
+# No FreeBSD splash loader variables apply to this kernel.
+options SPLASHSCREEN
+makeoptions SPLASHSCREEN_IMAGE="${KERNCONFDIR}/daos-boot-logo.png"

@@ -1,0 +1,21 @@
+{
+  "format": "hf-target-recipe-v1",
+  "id": "qemu-arm64-qt5",
+  "target": "generic-virt-aarch64-linux-qt5",
+  "simulated": true,
+  "physical_board": false,
+  "rootfs_profile": "system/arm64-rootfs/debian-trixie-qt5.json",
+  "rootfs_lock": "system/arm64-rootfs/package-lock.json",
+  "kernel_lock": "system/qemu-virt/kernel-lock.json",
+  "phases": ["first", "resume"],
+  "stage_timeout_seconds": {
+    "native": 600,
+    "kernel": 240,
+    "rootfs-inputs": 600,
+    "rootfs-stage": 240,
+    "image": 300,
+    "first": 360,
+    "resume": 360
+  },
+  "scope": "Locked binary userland plus locally built camera code for a generic ARM64 virtual machine; no sensor, board BSP, display hardware or physical-media validation."
+}

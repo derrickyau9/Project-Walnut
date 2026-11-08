@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/tools/target_build.py", line 321, in <module>
+    if __name__=='__main__': main()
+                             ~~~~^^
+  File "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/tools/target_build.py", line 317, in main
+    else: result=build(value,args.work_dir,profile_path=args.profile,native_dir=args.native_dir,kernel_dir=args.kernel_dir,inputs_dir=args.inputs_dir,offline=args.offline)
+                 ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/tools/target_build.py", line 294, in build
+    if stage['id']=='image': base_hash=digest(image/'rootfs.ext4')
+                                       ~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/tools/target_build.py", line 33, in digest
+    with Path(path).open('rb') as handle:
+         ~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.13/pathlib/_local.py", line 539, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NotADirectoryError: [Errno 20] Not a directory: '/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/qemu-kernel-round6/extracted/boot/vmlinuz-6.12.107+deb13-arm64/rootfs.ext4'

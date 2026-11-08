@@ -1,0 +1,15 @@
+{
+  "format": "hf-buildroot-release-lock-v1",
+  "version": "2025.02.19",
+  "series": "2025.02 LTS",
+  "source_url": "https://buildroot.org/downloads/buildroot-2025.02.19.tar.xz",
+  "source_sha256": "e5e58bff1da91f022f60cefdfe280140c08023cd0aeec1e5f6f9da0ea866d69c",
+  "signature_url": "https://buildroot.org/downloads/buildroot-2025.02.19.tar.xz.sign",
+  "key_url": "https://gitlab.com/-/snippets/4836881/raw/main/arnout@rnout.be.asc",
+  "signer_fingerprint": "18C7DF2819C1733D822D599EA500D6EE9CB0E540",
+  "trust_basis": "Official Buildroot HTTPS release page and release signature's maintainer-key URL; pinned fingerprint and verified signed SHA256, not an independent key ceremony",
+  "release_page": "https://buildroot.org/download.html",
+  "target": "generic QEMU virt AArch64, no physical board support claim",
+  "external_toolchain": "Bootlin aarch64 glibc stable 2024.05-1, downloaded and checksum-verified by the pinned Buildroot package",
+  "native_application": "compiled from project source with Buildroot target compiler; no Debian runtime binaries"
+}

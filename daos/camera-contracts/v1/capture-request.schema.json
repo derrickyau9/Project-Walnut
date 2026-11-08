@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hasslefree.example/contracts/v1/capture-request.schema.json",
+  "title": "HF-Sim capture request v1",
+  "type": "object",
+  "required": ["request_id", "token", "control_epoch", "sensor_mode", "requested_exposure_us", "requested_analogue_gain", "output_format"],
+  "properties": {
+    "request_id": {"type": "string", "format": "uuid", "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$", "description": "Client-generated durable identity; reconcile this ID after an uncertain result."},
+    "token": {"type": "string", "minLength": 1},
+    "control_epoch": {"type": "integer", "minimum": 1},
+    "sensor_mode": {"enum": ["sim-small", "sim-full"]},
+    "requested_exposure_us": {"type": "integer", "minimum": 100, "maximum": 30000000},
+    "requested_analogue_gain": {"type": "number", "minimum": 1, "maximum": 16},
+    "output_format": {"const": "dng"},
+    "simulation_scene": {"enum": ["scene", "dark", "flat"], "default": "scene"},
+    "deadline_unix_ms": {"type": ["integer", "null"]},
+    "fault": {"enum": [null, "delay", "storage_full", "disconnect", "corrupt_frame"]}
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,88 @@
+{
+  "SDK_header_sha256": {
+    "usr/include/sys/param.h": "c73d822136e12d97c7c77cbe060ce9dc42019fc32fd10933a551035072ff89eb",
+    "usr/include/sys/types.h": "935d524a575a178474f9b986d9710ab7d819fe87757f11ce9a017885b6fd0ce8"
+  },
+  "active_base": {
+    "kernel_object": "/var/daos-builds/daos-base-arm64-pi-splash-001/obj/var/daos-builds/daos-base-arm64-p6-001/source/usr/src/arm64.aarch64/sys/DaOS",
+    "object_prefix": "/var/daos-builds/daos-base-arm64-pi-splash-001/obj",
+    "receipt": "/var/daos-builds/daos-base-arm64-pi-splash-001/build-state.json",
+    "receipt_sha256": "f8c0dd35aedc768f9127400c14173d0a2e6751fbf9cd7a2cfe347066e0abb914",
+    "source_root": "/var/daos-builds/daos-base-arm64-p6-001/source/usr/src",
+    "src_conf": "/var/daos-builds/daos-base-arm64-pi-splash-001/config/src.conf",
+    "stage": "/var/daos-builds/daos-base-arm64-pi-splash-001/stage"
+  },
+  "builder": {
+    "machine": "amd64",
+    "release": "15.1-RELEASE-p6",
+    "system": "FreeBSD"
+  },
+  "elf": {
+    "bin/sh": {
+      "OSABI": 9,
+      "class": 64,
+      "machine": 183,
+      "sha256": "a60e9e757429a512c1551913a79a044e3b72bb0e4ac4ba68b49f1067e4cb2a4a"
+    },
+    "boot/kernel/kernel": {
+      "OSABI": 0,
+      "class": 64,
+      "machine": 183,
+      "sha256": "5ac681d051cb623b23a724f91e6ecb818a883f034c8aa88eab678162221f2dec"
+    },
+    "lib/libc.so.7": {
+      "OSABI": 9,
+      "class": 64,
+      "machine": 183,
+      "sha256": "dde4d8989c4a2425a2a65bbf873917e091db1b351d6bc95a3eff85f47daaabb6"
+    }
+  },
+  "executed": false,
+  "format": "DaOS-FreeBSD-source-reuse-verification-v1",
+  "input_hash": "34167c704a21b1aaa1da64be3ab7526f8282e01fb1066c14555a01cf77b7326b",
+  "kernel_object_options_sha256": "ccba0f5f200b127082660af56a9dd13765c4ef73e7839c1824e8bd23aa160c67",
+  "kernel_recompiled": false,
+  "operation": "base",
+  "receipt": "/home/dy09/daos-bsd-buildroot-usb-scratchguard-002/state/base.json",
+  "receipt_sha256": "f8c0dd35aedc768f9127400c14173d0a2e6751fbf9cd7a2cfe347066e0abb914",
+  "reused": true,
+  "source": {
+    "architecture": "arm64",
+    "archive_bytes": 285589524,
+    "archive_git_commit_comment_required": true,
+    "archive_sha256": "62616e1381734098f3351a0dc97dd153fe78d5cdd74cea41c771c1c6e2e3c9b6",
+    "archive_source_command": "git archive --format=tar --prefix=usr/src/ 95719d8a895bf8170851e9844d9b4092b1d2b6fe | xz -T8 -3",
+    "archive_url": null,
+    "commit": "95719d8a895bf8170851e9844d9b4092b1d2b6fe",
+    "format": "DaOS-freebsd-base-source-v2",
+    "git_url": "https://git.FreeBSD.org/src.git",
+    "release": "15.1-RELEASE-p6",
+    "release_gitbranch": "releng/15.1",
+    "release_revision": "95719d8a895b",
+    "security_scope": "Pinned releng/15.1 p6 source matching the actual bootstrapped VM; not a promise of future security currency.",
+    "source_prefix": "usr/src",
+    "source_profile_note": "Complete FreeBSD source archive reused with identical byte/hash pins; ARM64 target selected by the build recipe.",
+    "source_tree_architecture_independent": true,
+    "verification": "Official FreeBSD git HTTPS clone; commit object and git archive PAX commit marker verified; XZ integrity checked. No PGP signature claim.",
+    "verified_at": "2026-11-05"
+  },
+  "source_anchor_sha256": {
+    "Makefile": "4f55537f67445ebb2e2c65c447ead1eee6243dd68025abbd5ab585c790d91416",
+    "Makefile.inc1": "a1181d9760669fe12bdd74db1258da5b6ba522c492877bf5d01de9f9d93643df",
+    "sys/arm64/conf/GENERIC": "6e4ca35da7e92190cbd43904185a0bfab0191ce3fa1abc6074fb89ba137f1a5e",
+    "sys/conf/newvers.sh": "7ec86dd079529b3137bc1648633d94d6ba22dbb8996dabcc5e777984cbc6958a"
+  },
+  "source_archive_sha256": "62616e1381734098f3351a0dc97dd153fe78d5cdd74cea41c771c1c6e2e3c9b6",
+  "stage_anchor_sha256": {
+    "METALOG": "e038b32a895118667a5442774699561d15e2410905282ec02db5c8ce8f19223d",
+    "bin/sh": "a60e9e757429a512c1551913a79a044e3b72bb0e4ac4ba68b49f1067e4cb2a4a",
+    "boot/kernel/kernel": "5ac681d051cb623b23a724f91e6ecb818a883f034c8aa88eab678162221f2dec",
+    "etc/master.passwd": "55dfb5a41ebad44523b26cba443d94c3d55e0b39a32558f81a1d50fed964ec34",
+    "etc/rc": "243891789c003e6d8ab56454b70176a770cbed6ac86f261250285d83caaca753",
+    "lib/libc.so.7": "dde4d8989c4a2425a2a65bbf873917e091db1b351d6bc95a3eff85f47daaabb6",
+    "sbin/init": "70621ffd991e433ca1cbc177c4d7355f5ab16253e2f28a9da1307f22b8d5feae"
+  },
+  "status": "success",
+  "verification_executed": true,
+  "world_recompiled": false
+}

@@ -1,0 +1,16 @@
+DaOS offline Pinyin dictionary
+
+This product includes data from Rime rime-pinyin-simp:
+https://github.com/rime/rime-pinyin-simp
+Pinned commit: 0c6861ef7420ee780270ca6d993d18d4101049d0
+
+Upstream attribution (also retained in AUTHORS):
+Derived from Android Pinyin IME : (Apache License version 2.0)
+  pinyin_simp.dict.yaml
+
+Modifications by the DaOS project:
+- Added photographic vocabulary listed in camera_vocabulary.tsv.
+- Converted the UTF-8 tab-separated source into a read-only SQLite index.
+
+The upstream source, full Apache License 2.0, authors, hashes and rebuild
+script are distributed alongside the generated index in this directory.

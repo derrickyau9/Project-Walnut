@@ -1,0 +1,21 @@
+--- a/sys/arm/broadcom/bcm2835/bcm2835_sdhci.c
++++ b/sys/arm/broadcom/bcm2835/bcm2835_sdhci.c
+@@ -314,5 +314,17 @@
+ 		sc->sc_slot.caps |= SDHCI_CAN_DO_HISPD;
+ 	sc->sc_slot.caps |= (default_freq << SDHCI_CLOCK_BASE_SHIFT);
+-	sc->sc_slot.quirks = sc->conf->quirks;
++	sc->sc_slot.quirks = (sc->conf->quirks & ~sdhci_quirk_clear) |
++	    sdhci_quirk_set;
++	/*
++	 * pio_mode must disable both the BCM platform transfer callback and
++	 * generic SDMA.  eMMC2 advertises SDMA in its real capability register,
++	 * so merely omitting SDHCI_PLATFORM_TRANSFER can silently select a
++	 * different DMA implementation instead of selecting PIO.
++	 */
++	if (bcm2835_sdhci_pio_mode) {
++		sc->sc_slot.quirks &= ~SDHCI_QUIRK_FORCE_DMA;
++		sc->sc_slot.quirks |= SDHCI_QUIRK_BROKEN_DMA;
++		device_printf(dev, "DaOS diagnostic: platform DMA and generic SDMA disabled\n");
++	}
+ 
+ 	sdhci_init_slot(dev, &sc->sc_slot, 0);

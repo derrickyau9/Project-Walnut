@@ -1,0 +1,5 @@
+menu "DaOS Camera / HassleFree"
+
+source "$BR2_EXTERNAL_DAOS_CAMERA_PATH/package/hasslefree/Config.in"
+
+endmenu

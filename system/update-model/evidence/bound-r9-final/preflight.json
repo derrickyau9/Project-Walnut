@@ -1,0 +1,58 @@
+{
+  "format": "hf-update-final-preflight-v1",
+  "base_status": "completed",
+  "base_image": "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/target-e6ac70179d285645aab4226b",
+  "available_bytes": 31304024064,
+  "estimated_new_bytes_with_reserve": 2222804864,
+  "source_copies": [
+    {
+      "source": "/home/dy09/hf-task-orchestrated-r9-003/run-state.json",
+      "copy": "base-run-state.json",
+      "bytes": 14166,
+      "sha256": "c923ef42b9331e27b20109c3a433c1f8e14e3720bfcb81fd9118513fe0f866fb"
+    },
+    {
+      "source": "tools/update_model.py",
+      "copy": "source/tools/update_model.py",
+      "bytes": 43820,
+      "sha256": "8f044a4664ac11fa6457fb8d437133701df9e73d91c352f6792d308678effece"
+    },
+    {
+      "source": "tools/update_guest_boot.py",
+      "copy": "source/tools/update_guest_boot.py",
+      "bytes": 27632,
+      "sha256": "c4cefe2f433aa0d5f86467e9be2ffeb6870735674bd88f1ae75da2ae8d719662"
+    },
+    {
+      "source": "system/update-model/init.c",
+      "copy": "source/system/update-model/init.c",
+      "bytes": 8546,
+      "sha256": "6546e3ba051e8174f5cc5870867f7912a87db3b4744fdd4967fc8b8146aeb174"
+    },
+    {
+      "source": "system/update-model/health.py",
+      "copy": "source/system/update-model/health.py",
+      "bytes": 23001,
+      "sha256": "ac42c7aac67f6ad7f7268dc9ff2ad42c43572771c3f75b97b3d70c75a7c588af"
+    },
+    {
+      "source": "system/update-model/README.md",
+      "copy": "source/system/update-model/README.md",
+      "bytes": 8612,
+      "sha256": "e4ce82c499bce5b97ec2208a207492ed730ef5ce3f49879ec1784176f325dfa1"
+    },
+    {
+      "source": "tests/test_update_model.py",
+      "copy": "source/tests/test_update_model.py",
+      "bytes": 22006,
+      "sha256": "3b1066e37b41b2c47b01f46666792d817cf01859604d945b7d554699a7bf92c9"
+    },
+    {
+      "source": "tests/test_update_guest.py",
+      "copy": "source/tests/test_update_guest.py",
+      "bytes": 13578,
+      "sha256": "57805ef7f3ebd92039761c498febfe36bb54a422d516a1fc8217718936df5d2b"
+    }
+  ],
+  "scope": "actual final-source R9 target003; no existing image/product files modified"
+}

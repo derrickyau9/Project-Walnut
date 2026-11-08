@@ -1,0 +1,238 @@
+[    37.832] 
+X.Org X Server 1.21.1.25
+X Protocol Version 11, Revision 0
+[    37.842] Current Operating System: FreeBSD DaOS 15.1-RELEASE-p6 FreeBSD 15.1-RELEASE-p6 DaOS arm64
+[    37.842]  
+[    37.842] Current version of pixman: 0.46.4
+[    37.842] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[    37.842] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[    37.842] (++) Log file: "/var/log/DaOS-Xorg.log", Time: Thu Nov  5 21:59:59 2026
+[    37.862] (==) Using config directory: "/usr/local/etc/X11/xorg.conf.d"
+[    37.862] (==) Using system config directory "/usr/local/share/X11/xorg.conf.d"
+[    37.872] (==) No Layout section.  Using the first Screen section.
+[    37.872] (==) No screen section available. Using defaults.
+[    37.872] (**) |-->Screen "Default Screen Section" (0)
+[    37.872] (**) |   |-->Monitor "<default monitor>"
+[    37.882] (==) No device specified for screen "Default Screen Section".
+	Using the first device section listed.
+[    37.882] (**) |   |-->Device "DaOS UEFI framebuffer"
+[    37.882] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[    37.882] (**) Allowing byte-swapped clients
+[    37.882] (==) Automatically adding devices
+[    37.882] (==) Automatically enabling devices
+[    37.882] (==) Automatically adding GPU devices
+[    37.882] (==) Automatically binding GPU devices
+[    37.882] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[    37.882] (WW) The directory "/usr/local/share/fonts/misc/" does not exist.
+[    37.882] 	Entry deleted from font path.
+[    37.882] (WW) `fonts.dir' not found (or not valid) in "/usr/local/share/fonts/TTF/".
+[    37.882] 	Entry deleted from font path.
+[    37.882] 	(Run 'mkfontdir' on "/usr/local/share/fonts/TTF/").
+[    37.882] (WW) `fonts.dir' not found (or not valid) in "/usr/local/share/fonts/OTF/".
+[    37.882] 	Entry deleted from font path.
+[    37.882] 	(Run 'mkfontdir' on "/usr/local/share/fonts/OTF/").
+[    37.882] (WW) The directory "/usr/local/share/fonts/Type1/" does not exist.
+[    37.882] 	Entry deleted from font path.
+[    37.882] (WW) The directory "/usr/local/share/fonts/100dpi/" does not exist.
+[    37.882] 	Entry deleted from font path.
+[    37.882] (WW) The directory "/usr/local/share/fonts/75dpi/" does not exist.
+[    37.882] 	Entry deleted from font path.
+[    37.882] (==) FontPath set to:
+	catalogue:/usr/local/etc/X11/fontpath.d
+[    37.882] (==) ModulePath set to "/usr/local/lib/xorg/modules"
+[    37.882] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[    37.892] (II) Module ABI versions:
+[    37.892] 	X.Org ANSI C Emulation: 0.4
+[    37.892] 	X.Org Video Driver: 25.2
+[    37.892] 	X.Org XInput driver : 24.4
+[    37.892] 	X.Org Server Extension : 10.0
+[    37.992] (II) LoadModule: "glx"
+[    38.012] (II) Loading /usr/local/lib/xorg/modules/extensions/libglx.so
+[    38.143] (II) Module glx: vendor="X.Org Foundation"
+[    38.143] 	compiled for 1.21.1.25, module version = 1.0.0
+[    38.143] 	ABI class: X.Org Server Extension, version 10.0
+[    38.143] (II) LoadModule: "scfb"
+[    38.143] (II) Loading /usr/local/lib/xorg/modules/drivers/scfb_drv.so
+[    38.152] (II) Module scfb: vendor="X.Org Foundation"
+[    38.152] 	compiled for 1.21.1.25, module version = 0.0.5
+[    38.152] 	ABI class: X.Org Video Driver, version 25.2
+[    38.152] (II) scfb: driver for wsdisplay framebuffer: scfb
+[    38.152] (--) Using syscons driver with X support (version 9128624036773890.0)
+[    38.152] (++) using VT number 9
+
+[    38.172] (WW) Falling back to old probe method for scfb
+[    38.172] scfb trace: probe start
+[    38.172] (II) scfb(0): using default device
+[    38.172] scfb trace: probe done
+[    38.172] (WW) VGA arbiter: cannot open kernel arbiter, no multi-card support
+[    38.172] scfb: PreInit 0
+[    38.172] (II) scfb(0): Using: depth (32),	width (800),	 height (600)
+[    38.172] (II) scfb(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[    38.182] (==) scfb(0): Depth 24, (==) framebuffer bpp 32
+[    38.182] (==) scfb(0): RGB weight 888
+[    38.182] (==) scfb(0): Default visual is TrueColor
+[    38.182] (==) scfb(0): Using gamma correction (1.0, 1.0, 1.0)
+[    38.182] (II) scfb(0): Vidmem: 1875k
+[    38.182] (DB) xf86MergeOutputClassOptions unsupported bus type 0
+[    38.182] (==) scfb(0): DPI set to (96, 96)
+[    38.182] (**) scfb(0): Using "Shadow Framebuffer"
+[    38.182] (II) Loading sub module "shadow"
+[    38.182] (II) LoadModule: "shadow"
+[    38.182] (II) Loading /usr/local/lib/xorg/modules/libshadow.so
+[    38.192] (II) Module shadow: vendor="X.Org Foundation"
+[    38.192] 	compiled for 1.21.1.25, module version = 1.1.0
+[    38.192] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[    38.192] (II) Loading sub module "fb"
+[    38.192] (II) LoadModule: "fb"
+[    38.192] (II) Module "fb" already built-in
+[    38.192] scfb: PreInit done
+[    38.192] scfb: ScfbScreenInit 0
+[    38.192] 	bitsPerPixel=32, depth=24, defaultVisual=TrueColor
+	mask: ff0000,ff00,ff, offset: 16,8,0
+[    38.192] mmap returns: addr 0xf4e20000 len 0x1d5000, fd 11, off 0
+[    38.192] scfb: ScfbSave 0
+[    38.192] scfb: ScfbSave done
+[    38.212] (==) scfb(0): Backing store enabled
+[    38.232] scfb: ScfbScreenInit done
+[    38.242] (II) Initializing extension Generic Event Extension
+[    38.252] (II) Initializing extension SHAPE
+[    38.252] (II) Initializing extension MIT-SHM
+[    38.262] (II) Initializing extension XInputExtension
+[    38.262] (II) Initializing extension XTEST
+[    38.262] (II) Initializing extension BIG-REQUESTS
+[    38.272] (II) Initializing extension SYNC
+[    38.272] (II) Initializing extension XKEYBOARD
+[    38.272] (II) Initializing extension XC-MISC
+[    38.282] (II) Initializing extension SECURITY
+[    38.282] (II) Initializing extension XFIXES
+[    38.292] (II) Initializing extension RENDER
+[    38.292] (II) Initializing extension RANDR
+[    38.302] (II) Initializing extension COMPOSITE
+[    38.302] (II) Initializing extension DAMAGE
+[    38.312] (II) Initializing extension MIT-SCREEN-SAVER
+[    38.312] (II) Initializing extension DOUBLE-BUFFER
+[    38.312] (II) Initializing extension RECORD
+[    38.322] (II) Initializing extension DPMS
+[    38.322] (II) Initializing extension Present
+[    38.322] (II) Initializing extension DRI3
+[    38.322] (II) Initializing extension X-Resource
+[    38.322] (II) Initializing extension XVideo
+[    38.322] (II) Initializing extension XVideo-MotionCompensation
+[    38.322] (II) Initializing extension GLX
+[    38.332] (II) AIGLX: Screen 0 is not DRI2 capable
+[    41.872] (II) IGLX: Loaded and initialized swrast
+[    41.872] (II) GLX: Initialized DRISWRAST GL provider for screen 0
+[    41.872] (II) Initializing extension XFree86-VidModeExtension
+[    41.872] (II) Initializing extension XFree86-DGA
+[    41.872] (II) Initializing extension XFree86-DRI
+[    41.872] (II) Initializing extension DRI2
+[    42.762] (II) config/udev: Adding input device System keyboard multiplexer (/dev/input/event0)
+[    42.762] (**) System keyboard multiplexer: Applying InputClass "Evdev keyboard"
+[    42.762] (**) System keyboard multiplexer: Applying InputClass "libinput keyboard catchall"
+[    42.762] (II) LoadModule: "libinput"
+[    42.762] (II) Loading /usr/local/lib/xorg/modules/input/libinput_drv.so
+[    42.832] (II) Module libinput: vendor="X.Org Foundation"
+[    42.832] 	compiled for 1.21.1.25, module version = 1.5.0
+[    42.832] 	Module class: X.Org XInput Driver
+[    42.832] 	ABI class: X.Org XInput driver, version 24.4
+[    42.842] (II) Using input driver 'libinput' for 'System keyboard multiplexer'
+[    42.842] (**) System keyboard multiplexer: always reports core events
+[    42.842] (**) Option "Device" "/dev/input/event0"
+[    42.922] (II) event0  - System keyboard multiplexer: is tagged by udev as: Keyboard
+[    42.932] (II) event0  - System keyboard multiplexer: device is a keyboard
+[    42.942] (II) event0  - System keyboard multiplexer: device removed
+[    42.942] (**) Option "config_info" "udev:/dev/input/event0"
+[    42.942] (II) XINPUT: Adding extended input device "System keyboard multiplexer" (type: KEYBOARD, id 6)
+[    42.942] (**) Option "xkb_rules" "evdev"
+[    43.322] (II) event0  - System keyboard multiplexer: is tagged by udev as: Keyboard
+[    43.332] (II) event0  - System keyboard multiplexer: device is a keyboard
+[    43.342] (II) config/udev: Adding input device System mouse (/dev/input/event1)
+[    43.342] (**) System mouse: Applying InputClass "libinput pointer catchall"
+[    43.342] (II) Using input driver 'libinput' for 'System mouse'
+[    43.342] (**) System mouse: always reports core events
+[    43.342] (**) Option "Device" "/dev/input/event1"
+[    43.352] (II) event1  - System mouse: is tagged by udev as: Mouse
+[    43.352] (II) event1  - System mouse: emulating high-resolution scroll wheel events.
+[    43.362] (II) event1  - System mouse: device is a pointer
+[    43.362] (II) event1  - System mouse: device removed
+[    43.362] (II) libinput: System mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    43.362] (II) libinput: System mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    43.362] (II) libinput: System mouse: Step value 0 was provided, libinput Fallback acceleration function is used.
+[    43.372] (**) Option "config_info" "udev:/dev/input/event1"
+[    43.372] (II) XINPUT: Adding extended input device "System mouse" (type: MOUSE, id 7)
+[    43.392] (**) Option "AccelerationScheme" "none"
+[    43.392] (**) System mouse: (accel) selected scheme none/0
+[    43.392] (**) System mouse: (accel) acceleration factor: 2.000
+[    43.392] (**) System mouse: (accel) acceleration threshold: 4
+[    43.402] (II) event1  - System mouse: is tagged by udev as: Mouse
+[    43.402] (II) event1  - System mouse: emulating high-resolution scroll wheel events.
+[    43.412] (II) event1  - System mouse: device is a pointer
+[    43.422] (II) config/udev: Adding input device Power Button (/dev/input/event2)
+[    43.422] (**) Power Button: Applying InputClass "Evdev keyboard"
+[    43.422] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[    43.422] (II) Using input driver 'libinput' for 'Power Button'
+[    43.422] (**) Power Button: always reports core events
+[    43.422] (**) Option "Device" "/dev/input/event2"
+[    43.432] (II) event2  - Power Button: is tagged by udev as: Keyboard
+[    43.442] (II) event2  - Power Button: device is a keyboard
+[    43.442] (II) event2  - Power Button: device removed
+[    43.442] (**) Option "config_info" "udev:/dev/input/event2"
+[    43.442] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 8)
+[    43.442] (**) Option "xkb_rules" "evdev"
+[    43.452] (II) event2  - Power Button: is tagged by udev as: Keyboard
+[    43.462] (II) event2  - Power Button: device is a keyboard
+[    43.462] (II) config/udev: Adding input device QEMU QEMU USB Keyboard (/dev/input/event3)
+[    43.462] (**) QEMU QEMU USB Keyboard: Applying InputClass "Evdev keyboard"
+[    43.462] (**) QEMU QEMU USB Keyboard: Applying InputClass "libinput keyboard catchall"
+[    43.462] (II) Using input driver 'libinput' for 'QEMU QEMU USB Keyboard'
+[    43.462] (**) QEMU QEMU USB Keyboard: always reports core events
+[    43.462] (**) Option "Device" "/dev/input/event3"
+[    43.472] (II) event3  - QEMU QEMU USB Keyboard: is tagged by udev as: Keyboard
+[    43.472] (II) event3  - QEMU QEMU USB Keyboard: device is a keyboard
+[    43.482] (II) event3  - QEMU QEMU USB Keyboard: device removed
+[    43.482] (**) Option "config_info" "udev:/dev/input/event3"
+[    43.482] (II) XINPUT: Adding extended input device "QEMU QEMU USB Keyboard" (type: KEYBOARD, id 9)
+[    43.482] (**) Option "xkb_rules" "evdev"
+[    43.492] (II) event3  - QEMU QEMU USB Keyboard: is tagged by udev as: Keyboard
+[    43.492] (II) event3  - QEMU QEMU USB Keyboard: device is a keyboard
+[    43.502] (II) config/udev: Adding input device QEMU QEMU USB Tablet (/dev/input/event4)
+[    43.502] (**) QEMU QEMU USB Tablet: Applying InputClass "libinput pointer catchall"
+[    43.502] (II) Using input driver 'libinput' for 'QEMU QEMU USB Tablet'
+[    43.502] (**) QEMU QEMU USB Tablet: always reports core events
+[    43.502] (**) Option "Device" "/dev/input/event4"
+[    43.512] (II) event4  - QEMU QEMU USB Tablet: is tagged by udev as: Mouse
+[    43.512] (II) event4  - QEMU QEMU USB Tablet: emulating high-resolution scroll wheel events.
+[    43.532] (II) event4  - QEMU QEMU USB Tablet: device is a pointer
+[    43.542] (II) event4  - QEMU QEMU USB Tablet: device removed
+[    43.542] (**) Option "config_info" "udev:/dev/input/event4"
+[    43.542] (II) XINPUT: Adding extended input device "QEMU QEMU USB Tablet" (type: MOUSE, id 10)
+[    43.542] (**) Option "AccelerationScheme" "none"
+[    43.542] (**) QEMU QEMU USB Tablet: (accel) selected scheme none/0
+[    43.542] (**) QEMU QEMU USB Tablet: (accel) acceleration factor: 2.000
+[    43.542] (**) QEMU QEMU USB Tablet: (accel) acceleration threshold: 4
+[    43.562] (II) event4  - QEMU QEMU USB Tablet: is tagged by udev as: Mouse
+[    43.562] (II) event4  - QEMU QEMU USB Tablet: emulating high-resolution scroll wheel events.
+[    43.582] (II) event4  - QEMU QEMU USB Tablet: device is a pointer
+[    43.592] scfb: SaveScreen 0
+[    43.592] scfb: SaveScreen done
+[   772.475] (II) event0  - System keyboard multiplexer: device removed
+[   772.475] (II) event1  - System mouse: device removed
+[   772.475] (II) event2  - Power Button: device removed
+[   772.475] (II) event3  - QEMU QEMU USB Keyboard: device removed
+[   772.475] (II) event4  - QEMU QEMU USB Tablet: device removed
+[   772.492] (II) UnloadModule: "libinput"
+[   772.502] (II) UnloadModule: "libinput"
+[   772.502] (II) UnloadModule: "libinput"
+[   772.502] (II) UnloadModule: "libinput"
+[   772.502] (II) UnloadModule: "libinput"
+[   772.502] scfb: ScfbCloseScreen 0
+[   772.502] scfb: ScfbRestore 0
+[   772.512] scfb: ScfbRestore done
+[   772.532] scfb: ScfbCloseScreen done
+[   772.532] (II) Server terminated successfully (0). Closing log file.

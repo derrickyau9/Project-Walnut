@@ -1,0 +1,6 @@
+{
+  "returncode": 0,
+  "seconds": 0.4516263149998849,
+  "stderr": "shutdown: [pid 3134]\n",
+  "stdout": "Shutdown NOW!\nShutdown NOW!\n\r\nSystem shutdown time has arrived\u0007\u0007\r\n"
+}

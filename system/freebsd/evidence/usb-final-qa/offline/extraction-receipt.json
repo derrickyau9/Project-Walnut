@@ -1,0 +1,269 @@
+{
+  "format": "DaOS-final-USB-stopped-UFS-inspection-v1",
+  "source_raw_sha256": "ed84cce5eb14da514732f88909d0baee8f22266a3f837569185b30f855e1394e",
+  "private_cow_sha256": "d2c9efeaa18ad62bd20c9d1f4e521b7a7c3a5ac939cf0e7fc9be0addf0e586ea",
+  "clean_qemu_exit_code": 0,
+  "all_buffers_synced_marker_seen": false,
+  "marker_scope": "EFI console does not yield the serial marker; actual guest poweroff and clean app/Xorg shutdown checked separately",
+  "tools_provenance_sha256": "e33c79aa4acda7341312187bc5d6b3b5829fd4aa7d4121bd76dac8ff10bf7d8a",
+  "raw_and_cow_unchanged": true,
+  "host_mounts": false,
+  "live_lock_override": false,
+  "snapshot": "/home/dy09/daos-vm-usb-adb/verification/offline-run1-1dea85c9/stopped-snapshot.img",
+  "partitions": [
+    {
+      "index": 1,
+      "label": "DaOS-efi",
+      "type": "c12a7328-f81f-11d2-ba4b-00a0c93ec93b",
+      "guid": "d0a0e3aa-d9ab-11f1-067b-ff9d86f8dced",
+      "start_sector": 40,
+      "sectors": 262144,
+      "offset": 20480,
+      "bytes": 134217728,
+      "attributes": 0
+    },
+    {
+      "index": 2,
+      "label": "DaOS-root",
+      "type": "516e7cb6-6ecf-11d6-8ff8-00022d09712b",
+      "guid": "d0a0e3be-d9ab-11f1-1d08-61407e6af4da",
+      "start_sector": 262184,
+      "sectors": 5242880,
+      "offset": 134238208,
+      "bytes": 2684354560,
+      "attributes": 0
+    },
+    {
+      "index": 3,
+      "label": "DaOS-state",
+      "type": "516e7cb6-6ecf-11d6-8ff8-00022d09712b",
+      "guid": "d0a0e3be-d9ab-11f1-17a5-d14fff7c5968",
+      "start_sector": 5505064,
+      "sectors": 262144,
+      "offset": 2818592768,
+      "bytes": 134217728,
+      "attributes": 0
+    },
+    {
+      "index": 4,
+      "label": "DaOS-calibration",
+      "type": "516e7cb6-6ecf-11d6-8ff8-00022d09712b",
+      "guid": "d0a0e3be-d9ab-11f1-0432-f1d3b03b0818",
+      "start_sector": 5767208,
+      "sectors": 65536,
+      "offset": 2952810496,
+      "bytes": 33554432,
+      "attributes": 0
+    },
+    {
+      "index": 5,
+      "label": "DaOS-photos",
+      "type": "516e7cb6-6ecf-11d6-8ff8-00022d09712b",
+      "guid": "d0a0e3be-d9ab-11f1-3fe7-9181628e1ee9",
+      "start_sector": 5832744,
+      "sectors": 524288,
+      "offset": 2986364928,
+      "bytes": 268435456,
+      "attributes": 0
+    }
+  ],
+  "extracted": [
+    {
+      "partition": "DaOS-efi",
+      "path": "bcm2711-rpi-4-b.dtb",
+      "inode": "28993",
+      "bytes": 56511,
+      "sha256": "7dd716ef16f317ec4db9f0bb40cdc4e4832264ce16714730dc286c978c6674c2",
+      "output": "/home/dy09/daos-vm-usb-adb/verification/offline-run1-1dea85c9/files/DaOS-efi/bcm2711-rpi-4-b.dtb"
+    },
+    {
+      "partition": "DaOS-efi",
+      "path": "config.txt",
+      "inode": "35070",
+      "bytes": 616,
+      "sha256": "81a239ad45c6d73851d59b27b4a5fce894540ce2947acfc003ae729b58ed7185",
+      "output": "/home/dy09/daos-vm-usb-adb/verification/offline-run1-1dea85c9/files/DaOS-efi/config.txt"
+    },
+    {
+      "partition": "DaOS-efi",
+      "path": "daos-rpi4-usb-device.dtb",
+      "inode": "41588",
+      "bytes": 56511,
+      "sha256": "7dd716ef16f317ec4db9f0bb40cdc4e4832264ce16714730dc286c978c6674c2",
+      "output": "/home/dy09/daos-vm-usb-adb/verification/offline-run1-1dea85c9/files/DaOS-efi/daos-rpi4-usb-device.dtb"
+    },
+    {
+      "partition": "DaOS-root",
+      "path": "boot/dtb/daos-rpi4-usb-device.dtb",
+      "inode": "110",
+      "bytes": 56511,
+      "sha256": "7dd716ef16f317ec4db9f0bb40cdc4e4832264ce16714730dc286c978c6674c2",
+      "output": "/home/dy09/daos-vm-usb-adb/verification/offline-run1-1dea85c9/files/DaOS-root/boot/dtb/daos-rpi4-usb-device.dtb"
+    },
+    {
+      "partition": "DaOS-root",
+      "path": "boot/modules/daos_adb_template.ko",
+      "inode": "220",
+      "bytes": 10184,
+      "sha256": "dfbfa4346cad57d2dc581f1b2b28f5389f221d386b6f58ca36a3364b76e19e67",
+      "output": "/home/dy09/daos-vm-usb-adb/verification/offline-run1-1dea85c9/files/DaOS-root/boot/modules/daos_adb_template.ko"
+    },
+    {
+      "partition": "DaOS-root",
+      "path": "boot/kernel/usb_template.ko",
+      "inode": "904",
+      "bytes": 76856,
+      "sha256": "c385973ab0fd4483ad8238bfc760f4cdffc5a1b41213a7dca6ad4ce6be6f4fbc",
+      "output": "/home/dy09/daos-vm-usb-adb/verification/offline-run1-1dea85c9/files/DaOS-root/boot/kernel/usb_template.ko"
+    },
+    {
+      "partition": "DaOS-root",
+      "path": "etc/daos/adb_keys",
+      "inode": "1056",
+      "bytes": 1432,
+      "sha256": "8f3697da79eca3449c03a1053468a4a42a181c9b27ae5938f77722d2bbe79b77",
+      "output": "/home/dy09/daos-vm-usb-adb/verification/offline-run1-1dea85c9/files/DaOS-root/etc/daos/adb_keys"
+    },
+    {
+      "partition": "DaOS-root",
+      "path": "usr/local/libexec/daos-usb-adb",
+      "inode": "24918",
+      "bytes": 18968,
+      "sha256": "fab7cc1ffbbfd0875ef740df655771368d3da4b2d7cd5a4178903caa01bdfafd",
+      "output": "/home/dy09/daos-vm-usb-adb/verification/offline-run1-1dea85c9/files/DaOS-root/usr/local/libexec/daos-usb-adb"
+    },
+    {
+      "partition": "DaOS-root",
+      "path": "usr/share/DaOS/usb-adb-build.json",
+      "inode": "44425",
+      "bytes": 3170,
+      "sha256": "655260d9199e08062b27c5d453e4f7c1e70a497a5c49ac8ad7b5ec3dbf526972",
+      "output": "/home/dy09/daos-vm-usb-adb/verification/offline-run1-1dea85c9/files/DaOS-root/usr/share/DaOS/usb-adb-build.json"
+    },
+    {
+      "partition": "DaOS-root",
+      "path": "usr/share/DaOS/usb-adb-overlay.json",
+      "inode": "44426",
+      "bytes": 7477,
+      "sha256": "6ae7cc35a566d201f9aa470569dd95e9b37c6f06f1ba64dcefef61769f9d2391",
+      "output": "/home/dy09/daos-vm-usb-adb/verification/offline-run1-1dea85c9/files/DaOS-root/usr/share/DaOS/usb-adb-overlay.json"
+    },
+    {
+      "partition": "DaOS-root",
+      "path": "usr/share/DaOS/usb-adb-runtime.json",
+      "inode": "44427",
+      "bytes": 2268,
+      "sha256": "aabddb0681593f16e13782da0a66f8dcbcdb4bd55280a38c969da8516a871b41",
+      "output": "/home/dy09/daos-vm-usb-adb/verification/offline-run1-1dea85c9/files/DaOS-root/usr/share/DaOS/usb-adb-runtime.json"
+    },
+    {
+      "partition": "DaOS-root",
+      "path": "usr/share/DaOS/usb-dtb-derivation.json",
+      "inode": "44428",
+      "bytes": 1420,
+      "sha256": "e749ee02cc5b76346ca9cdc79e6ad66e6072942a8caf2f19e5369c69112c0aab",
+      "output": "/home/dy09/daos-vm-usb-adb/verification/offline-run1-1dea85c9/files/DaOS-root/usr/share/DaOS/usb-dtb-derivation.json"
+    },
+    {
+      "partition": "DaOS-state",
+      "path": "DaOS/camera/.service.lock",
+      "inode": "113",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output": "/home/dy09/daos-vm-usb-adb/verification/offline-run1-1dea85c9/files/DaOS-state/DaOS/camera/.service.lock"
+    },
+    {
+      "partition": "DaOS-state",
+      "path": "DaOS/camera/journal.sqlite3",
+      "inode": "121",
+      "bytes": 20480,
+      "sha256": "a07104a937f7c5b9474fb2d63decf758841705b6dc042235be232baed2ef2798",
+      "output": "/home/dy09/daos-vm-usb-adb/verification/offline-run1-1dea85c9/files/DaOS-state/DaOS/camera/journal.sqlite3"
+    },
+    {
+      "partition": "DaOS-state",
+      "path": "DaOS/ui/apps/exports/photo-361f0ccb-1882-4bdf-a557-b206f4161dad-1793948151794.dng",
+      "inode": "125",
+      "bytes": 25662,
+      "sha256": "2ecab9bcbb66ebe3d5ee9257a2c4fed90e1838784bf56bf61c054c5746470cd5",
+      "output": "/home/dy09/daos-vm-usb-adb/verification/offline-run1-1dea85c9/files/DaOS-state/DaOS/ui/apps/exports/photo-361f0ccb-1882-4bdf-a557-b206f4161dad-1793948151794.dng"
+    },
+    {
+      "partition": "DaOS-state",
+      "path": "DaOS/ui/shell-preferences.json",
+      "inode": "105",
+      "bytes": 98,
+      "sha256": "d5b8490711835aea9f90c3e3c0c54d994a836a5cb994c9dd309188c64a177a7b",
+      "output": "/home/dy09/daos-vm-usb-adb/verification/offline-run1-1dea85c9/files/DaOS-state/DaOS/ui/shell-preferences.json"
+    },
+    {
+      "partition": "DaOS-state",
+      "path": "DaOS/ui/device-ui.json",
+      "inode": "122",
+      "bytes": 149,
+      "sha256": "b3f2513f8e16006165e1276100be6aaf989024f5c3cf93d6339c0c0ffc9372ce",
+      "output": "/home/dy09/daos-vm-usb-adb/verification/offline-run1-1dea85c9/files/DaOS-state/DaOS/ui/device-ui.json"
+    },
+    {
+      "partition": "DaOS-state",
+      "path": "log/DaOS-camera.log",
+      "inode": "76",
+      "bytes": 2756,
+      "sha256": "102a2945cd88fb942f0443bc50104501531f5c3e49a95548d350992037be79a5",
+      "output": "/home/dy09/daos-vm-usb-adb/verification/offline-run1-1dea85c9/files/DaOS-state/log/DaOS-camera.log"
+    },
+    {
+      "partition": "DaOS-state",
+      "path": "log/DaOS-Xorg.log",
+      "inode": "100",
+      "bytes": 14488,
+      "sha256": "6c32088b52564ffd7078f5d13e130bc557011c4388243983bad623a37bd20ea4",
+      "output": "/home/dy09/daos-vm-usb-adb/verification/offline-run1-1dea85c9/files/DaOS-state/log/DaOS-Xorg.log"
+    },
+    {
+      "partition": "DaOS-state",
+      "path": "log/DaOS-usb-adb.log",
+      "inode": "101",
+      "bytes": 244,
+      "sha256": "b5776a830c1c3b5f12bac9a33077a0b0ba48ba62e81ffaef2978a907a5ce62d6",
+      "output": "/home/dy09/daos-vm-usb-adb/verification/offline-run1-1dea85c9/files/DaOS-state/log/DaOS-usb-adb.log"
+    },
+    {
+      "partition": "DaOS-photos",
+      "path": "361f0ccb-1882-4bdf-a557-b206f4161dad.dng",
+      "inode": "3",
+      "bytes": 25662,
+      "sha256": "2ecab9bcbb66ebe3d5ee9257a2c4fed90e1838784bf56bf61c054c5746470cd5",
+      "output": "/home/dy09/daos-vm-usb-adb/verification/offline-run1-1dea85c9/files/DaOS-photos/361f0ccb-1882-4bdf-a557-b206f4161dad.dng"
+    }
+  ],
+  "source_status": {
+    "format": "DaOS-r14-desktop-vm-v1",
+    "run": "1dea85c94c834a2d98c5e7763f957956",
+    "manager_pid": 799341,
+    "started": "2026-11-06T06:38:23.353844+00:00",
+    "detail": "QEMU started; inspect its window to establish UI readiness",
+    "state": "stopped",
+    "updated": "2026-11-06T06:56:45.265137+00:00",
+    "qemu_pid": 799358,
+    "qemu_start_ticks": 1180739,
+    "serial_log": "/home/dy09/daos-vm-usb-adb/serial-20261106T063901-1dea85c9.log",
+    "qemu_log": "/home/dy09/daos-vm-usb-adb/qemu-20261106T063901-1dea85c9.log",
+    "image_sha256": "ed84cce5eb14da514732f88909d0baee8f22266a3f837569185b30f855e1394e",
+    "exit_code": 0,
+    "all_buffers_synced_marker_seen": false,
+    "ended": "2026-11-06T06:56:45.265100+00:00"
+  },
+  "conversion_argv": [
+    "qemu-img",
+    "convert",
+    "-f",
+    "qcow2",
+    "-O",
+    "raw",
+    "-S",
+    "4k",
+    "/home/dy09/daos-vm-usb-adb/guest.qcow2",
+    "/home/dy09/daos-vm-usb-adb/verification/offline-run1-1dea85c9/stopped-snapshot.img"
+  ]
+}

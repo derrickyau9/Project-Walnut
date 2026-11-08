@@ -1,0 +1,18 @@
+{
+  "format": "hf-freebsd-release-lock-v1",
+  "base_release": "15.1-RELEASE",
+  "initial_architecture": "amd64",
+  "scope": "FreeBSD kernel and userland guest; independent DaOS camera-domain software, no existing DaOS framework source imported",
+  "image_url": "https://download.freebsd.org/releases/VM-IMAGES/15.1-RELEASE/amd64/Latest/FreeBSD-15.1-RELEASE-amd64-BASIC-CLOUDINIT-ufs.qcow2.xz",
+  "image_bytes": 664729340,
+  "image_sha256": "e4ca4db889f8559c9b9dfcacc70405c038476f4b6d41649b152d3809a2ed9e1f",
+  "checksums_url": "https://download.freebsd.org/releases/VM-IMAGES/15.1-RELEASE/amd64/Latest/CHECKSUM.SHA256",
+  "source_url": "https://download.freebsd.org/releases/amd64/15.1-RELEASE/src.txz",
+  "source_bytes": 253039000,
+  "source_sha256": "cf5762da53fd52e1eaf0f9ceee9bf58cbe314c821031d0d9ffa76823185a89e1",
+  "source_commit": "96841ea08dcfa84b954a32dc5ae1a26c28966cf4",
+  "source_tag": "release/15.1.0",
+  "trust_basis": "SHA256 and source identity retrieved from official FreeBSD HTTPS endpoints; not claimed to be independently verified PGP signatures",
+  "security_scope": "Pinned original release for reproducible prototype verification, not a claim of current security-patch level or a production distribution",
+  "arm64": "Separate future build/boot target, not validated by the amd64 guest"
+}

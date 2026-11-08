@@ -1,0 +1,41 @@
+#!/bin/sh
+# PROVIDE: daos_ui
+# REQUIRE: LOGIN mountall daos_image_check
+# KEYWORD: shutdown
+
+$_rc_subr_loaded . /etc/rc.subr
+
+name="daos_ui"
+rcvar=$name
+pidfile="/var/run/daos-ui.pid"
+start_cmd="daos_ui_start"
+stop_cmd="daos_ui_stop"
+
+daos_ui_start()
+{
+    if [ -s "$pidfile" ] && kill -0 "$(cat "$pidfile")" 2>/dev/null; then
+        echo 'DaOS UI supervisor is already running'
+        return 1
+    fi
+    echo 'Starting the DaOS NetBSD camera supervisor...'
+    /usr/pkg/bin/python3.12 -B /usr/libexec/daos/camera-session.py </dev/null >>/var/log/daos-ui.log 2>&1 &
+    echo $! > "$pidfile"
+}
+
+daos_ui_stop()
+{
+    if [ ! -s "$pidfile" ]; then return 0; fi
+    _daos_pid=$(cat "$pidfile")
+    case "$_daos_pid" in *[!0-9]*|'') return 1;; esac
+    kill -TERM "$_daos_pid" 2>/dev/null || return 0
+    _daos_wait=0
+    while kill -0 "$_daos_pid" 2>/dev/null && [ "$_daos_wait" -lt 30 ]; do
+        sleep 1
+        _daos_wait=$((_daos_wait + 1))
+    done
+    if kill -0 "$_daos_pid" 2>/dev/null; then return 1; fi
+    rm -f "$pidfile"
+}
+
+load_rc_config $name
+run_rc_command "$1"

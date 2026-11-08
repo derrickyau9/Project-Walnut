@@ -1,0 +1,58 @@
+{
+  "format": "DaOS-NetBSD-live-system-native-v1",
+  "raw_image_sha256": "01f86dfbb57cb15cc87c9ded17ad5380e250643d693f0cca4d7585e9ea8e2d35",
+  "vm_uuid": "0236b38b-7047-4219-a928-f775f713402b",
+  "native_four_tests_passed": true,
+  "native_assertions": {
+    "core": 89,
+    "authority": 126,
+    "SHA256_vectors": 21,
+    "calibration": 325
+  },
+  "kernel_sha256": "5b75ebb7766fe56a279329085be607f499166ef131b1b4c52a4c53cd8690e4be",
+  "shell_sha256": "17c16710ee4f41ba7d5b6e68bce81b2ed83d09fad8e02a52cecd4e714efd43df",
+  "results": [
+    {
+      "name": "uname",
+      "exit_code": 0,
+      "output": "NetBSD daos-rpi4-aarch64-ui 11.1 NetBSD 11.1 (DAOS_RPI4) #0: Mon Nov  2 00:00:00 UTC 2026  mkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/DAOS_RPI4 evbarm\n"
+    },
+    {
+      "name": "sysctl",
+      "exit_code": 0,
+      "output": "daos-rpi4-aarch64-ui# hw.machine = evbarm\nhw.machine_arch = aarch64\nkern.version = NetBSD 11.1 (DAOS_RPI4) #0: Mon Nov  2 00:00:00 UTC 2026\n\tmkrepro@mkrepro.NetBSD.org:/usr/src/sys/arch/evbarm/compile/DAOS_RPI4\n\n"
+    },
+    {
+      "name": "mount",
+      "exit_code": 0,
+      "output": "daos-rpi4-aarch64-ui# /dev/dk1 on / type ffs (noatime, local)\n/dev/dk2 on /var type ffs (noatime, local)\n/dev/dk0 on /boot type msdos (local)\ntmpfs on /tmp type tmpfs (local)\nptyfs on /dev/pts type ptyfs (local)\ntmpfs on /var/shm type tmpfs (local)\n/dev/dk3 on /var/DaOS/camera/photos type ffs (noatime, local)\n"
+    },
+    {
+      "name": "native",
+      "exit_code": 0,
+      "output": "daos-rpi4-aarch64-ui# DAOS_NATIVE_TEST_BEGIN hf-core-tests\nPASS: 89 native core assertions\nDAOS_NATIVE_TEST_BEGIN hf-daemon-tests\nPASS: 126 native authority assertions\nDAOS_NATIVE_TEST_BEGIN hf-sha256-tests\nPASS: 21 SHA-256 reference vectors\nDAOS_NATIVE_TEST_BEGIN hf-calibration-tests\nPASS: 325 calibration binding checks\nDAOS_NATIVE_TESTS_PASSED 4\n"
+    },
+    {
+      "name": "kernel",
+      "exit_code": 0,
+      "output": "daos-rpi4-aarch64-ui# 5b75ebb7766fe56a279329085be607f499166ef131b1b4c52a4c53cd8690e4be\n"
+    },
+    {
+      "name": "shell",
+      "exit_code": 0,
+      "output": "daos-rpi4-aarch64-ui# 17c16710ee4f41ba7d5b6e68bce81b2ed83d09fad8e02a52cecd4e714efd43df\n"
+    },
+    {
+      "name": "ui",
+      "exit_code": 0,
+      "output": "daos-rpi4-aarch64-ui# Current version of pixman: 0.46.4\n\tBefore reporting problems, check http://wiki.x.org\n\tto make sure that you have the latest version.\nMarkers: (--) probed, (**) from config file, (==) default setting,\n\t(++) from command line, (!!) notice, (II) informational,\n\t(WW) warning, (EE) error, (NI) not implemented, (??) unknown.\n(++) Log file: \"/var/log/DaOS-Xorg.log\", Time: Fri Nov  6 05:55:34 2026\n(==) Using config directory: \"/etc/X11/xorg.conf.d\"\nDAOS_GUI_EVENT {\"event\": \"camera-started\", \"framebuffer\": \"wsfb\", \"physical_camera\": false, \"pid\": 7206, \"uid\": 1000}\nThe XKEYBOARD keymap compiler (xkbcomp) reports:\n> Error:            Couldn't lookup keysym\n>                   Symbol interpretation ignored\n> Error:            Couldn't lookup keysym\n>                   Symbol interpretation ignored\nErrors from xkbcomp are not fatal to the X server\n\n4) you may also have to put /usr/pkg/qt5/bin in your PATH\n\n===========================================================================\nDAOS_UI_PACKAGES_FINALIZED {\"format\": \"DaOS-NetBSD-ui-native-finalization-v1\", \"runtime_lock_sha256\": \"bfc5452c747ac773ad08247c4b506ea7bab3078ad8176990c5a1157c3f6c2245\", \"package_count\": 101, \"native_package_scripts_completed\": true, \"source_built_Qt\": false, \"GUI_execution_verified\": false, \"factory_payload_unchanged\": true, \"factory_payload_files_verified\": 36244}\n"
+    }
+  ],
+  "console_log": "/home/dy09/daos-netbsd-vm/validation/native-attempt-0008/console.log",
+  "architecture_verified": true,
+  "source_built_Qt": false,
+  "physical_Pi4_validation": false,
+  "USB_ADB_supported": false,
+  "kernel_matches_source_image": true,
+  "shell_matches_source_image": true
+}

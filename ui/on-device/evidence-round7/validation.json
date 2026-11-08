@@ -1,0 +1,115 @@
+{
+  "audit_round": 7,
+  "dng_bytes": 25662,
+  "dng_sha256": "95e539f204daf53e58423847f4ea9ccdc091f023a6dd66611daf45ac08dddcd4",
+  "effective_uid": 1000,
+  "execution_mode": "qemu-system",
+  "format": "hf-arm64-qt-visual-qa-v1",
+  "image_build_report": "build/arm64-image-r7-b/build-evidence.json",
+  "image_build_report_sha256": "1b96bea576a63acfe4cb531c4445c7be656e6caa5e381f3ad2da711a307fcdc2",
+  "machine": "aarch64",
+  "native_authority": {
+    "elf_machine": 183,
+    "file": "hf-camerad",
+    "sha256": "a3ade7e0fb5eb1c075483550cd5b4cd9d61463b0b4350795c4a90a5d1f0d892c"
+  },
+  "notes": [
+    "Four actual ARM Qt complete/gallery screenshots were visually inspected at1024x680; fonts, labels, path, UUID, thumbnail caption and export result are legible.",
+    "Screenshots and copied retained PNGs are workspace-only and excluded from the minimal source handoff. Reports contain no control tokens.",
+    "First phase used the actual QML exposure key/shutter/library/export controls. Resume phase queried the persisted UUID without another shutter action.",
+    "Both exports and both extracted sources match the same original 25,662-byte DNG hash; the retained PNG is sampled from that committed synthetic DNG.",
+    "The rootfs was unchanged across both separate QEMU boots; the same writable data image was reused. No host filesystem sharing, host mounts or network were used.",
+    "No product UI compatibility patch was needed. Normal launcher main.py is included in the final image overlay.",
+    "Capture settings after restart represent authority defaults for the next shot; retained metadata still correctly displays original exposure10100us.",
+    "Guest reports are copied byte-for-byte from extracted artifacts. Host boot-tool guard hardening between phases is recorded by each original boot report hash.",
+    "Physical display/touch/buttons/GPU, real sensor acquisition, measured calibration and power-loss behavior remain unvalidated.",
+    "Previous round-six snapshot and evidence files remain unchanged."
+  ],
+  "passed": true,
+  "phases": {
+    "first": {
+      "boot_report": "build/arm64-image-r7-b/boots/first/boot-evidence.json",
+      "boot_report_sha256": "6f08e0d1aef131547089fd27eb1a2c8204e7ebbaeec0c24431a9363014e0895b",
+      "journal_rows": 1,
+      "native_process_closed": true,
+      "report": "first.json",
+      "report_sha256": "6fc26e93f60e25c561fcbfe36063eb3fcab9b58f352e07137550f9cbf6498851",
+      "rootfs_unchanged": true,
+      "seconds": 14.778018817999964,
+      "serial_sha256": "ccc543627b4ddad6d3c29a89d9b1ed0dd7a67ed03a79a90e124a92eb3ab8cb0b"
+    },
+    "resume": {
+      "boot_report": "build/arm64-image-r7-b/boots/resume/boot-evidence.json",
+      "boot_report_sha256": "a18321523956ce93b0ece24955ff188994d40098903e552d0faf576bc4cd2e70",
+      "journal_rows": 1,
+      "native_process_closed": true,
+      "report": "resume.json",
+      "report_sha256": "4aa0e2b9a70b563d7af41b19950f342d62bcb89e2bedbe74e538e5c1389119d7",
+      "rootfs_unchanged": true,
+      "seconds": 14.316459676000022,
+      "serial_sha256": "489ad151b77ac9fc4714e8c8af1b25986a154b62d77f9d9ee6c3f47876a6818e"
+    }
+  },
+  "physical_display_validated": false,
+  "pyqt": "5.15.11",
+  "python": "3.13.5",
+  "qt_platform": "offscreen",
+  "qt_quick_backend": "software",
+  "qt_runtime": "5.15.15",
+  "request_id": "f63bfb93-223d-4d55-ab60-0a7480777166",
+  "rootfs_image_sha256": "40acc21e909b4ab326ec0f8c1390b2662d5e8e7b2c372c9b0aac967fba04a777",
+  "scope": "Actual ARM64 Python/Qt and ARM native authority in full-system QEMU; synthetic captures",
+  "screenshots": [
+    {
+      "file": "first-complete.png",
+      "height": 680,
+      "included_in_minimal_source_handoff": false,
+      "rendering": "ARM64 Qt Quick offscreen software; no physical display",
+      "sampled_colors": 83,
+      "sha256": "38bc090997188f0ef0de0fcf24bd630229d3acbe9ba8a798b3f8b54e23f1130e",
+      "visually_inspected": true,
+      "width": 1024
+    },
+    {
+      "file": "first-gallery.png",
+      "height": 680,
+      "included_in_minimal_source_handoff": false,
+      "rendering": "ARM64 Qt Quick offscreen software; no physical display",
+      "sampled_colors": 64,
+      "sha256": "681f2cbcc67fed0900633f8c2bdfa9cd0f3577c303379db2e71a1158f0f83318",
+      "visually_inspected": true,
+      "width": 1024
+    },
+    {
+      "file": "resume-complete.png",
+      "height": 680,
+      "included_in_minimal_source_handoff": false,
+      "rendering": "ARM64 Qt Quick offscreen software; no physical display",
+      "sampled_colors": 85,
+      "sha256": "9ce6dc9c67ec9fb1301093139c570f6e03d538b0d9320302a0c3633167e7d49b",
+      "visually_inspected": true,
+      "width": 1024
+    },
+    {
+      "file": "resume-gallery.png",
+      "height": 680,
+      "included_in_minimal_source_handoff": false,
+      "rendering": "ARM64 Qt Quick offscreen software; no physical display",
+      "sampled_colors": 64,
+      "sha256": "89a3889fdb6926108ece2a9c232873bab9dcbf91dc5aefeb94201400f33e8cdc",
+      "visually_inspected": true,
+      "width": 1024
+    }
+  ],
+  "sensor_acquisition_validated": false,
+  "source_sha256": {
+    "docs/testing/arm64-ui-round7.md": "3aed4ad9d7915afec274d3ef90821d870e78887b77dc13a0ab83f940561fac78",
+    "tests/test_ui_arm64_smoke.py": "039635c130a0732bcb71cd6a5a1838462065ee52a408729888d97a095086fe5a",
+    "tests/ui/arm64_smoke.py": "2a17a6575263778d5e062dd11c557c3ef0ad8c235a9953841d3bb20c7efd9933",
+    "ui/on-device/Main.qml": "21c342792baa5e8ecdc4c92710e10140d210437c39124040c580dd97f4831be5",
+    "ui/on-device/README.md": "d15bf54b14a0109d583e1f207e4c526f08c4ab4f4ebda3168faded585721619c",
+    "ui/on-device/controller.py": "132efb958cd84e20f7969fe1426cd58be261a27b5b137862485ed445ce0c2876",
+    "ui/on-device/main.py": "f1494d77b282a18965168312b6d4bf7bbb4ba07389a1f2c071d603d711b6e292",
+    "ui/on-device/requirements.txt": "89bacda07f234a199b34f450444212885298d7d677156d9e793b56645eb086cc"
+  }
+}

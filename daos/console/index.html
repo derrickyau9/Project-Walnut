@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DaOS Camera — HF-Sim</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/extras.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+<div class="brand"><span class="brand-mark">H<span>F</span></span><div><strong>HASSLEFREE</strong><small>DaOS CAMERA / FF-1</small></div></div>
+    <div class="top-status"><span class="sim-badge">SIMULATION</span><span id="connection" class="connection"><i></i>Connecting</span></div>
+  </header>
+  <main class="layout">
+    <section class="workspace">
+      <div class="section-head"><div><p class="eyebrow">CAMERA CONSOLE <span>/ 01</span></p><h1>Capture studio</h1><p class="intro">Control and inspect a simulated capture, from request to committed DNG.</p></div><div class="version">HF-SIM<br><strong>G1 / SOFTWARE</strong></div></div>
+      <div class="notice"><strong>Simulator only.</strong> No physical sensor or live view is connected. Exposure, frames and images are synthetic.</div>
+      <div class="capture-grid">
+        <section class="viewfinder" aria-label="Preview status">
+          <div class="view-top"><span>VIEWFINDER</span><span>HF-SIM</span></div>
+          <div class="view-center"><img id="preview-image" alt="Synthetic HF-Sim preview" hidden><div id="preview-placeholder"><div class="focus-frame"><span></span></div><strong id="preview-message">Preview stopped</strong><p>Start the simulated viewfinder to see a synthetic scene.</p></div></div>
+          <div class="view-bottom"><span>MANUAL</span><span id="preview-frame">NO FRAME</span><span>SIMULATED</span></div>
+          <div class="preview-buttons"><button id="preview-start" type="button" class="secondary" disabled>Start preview</button><button id="preview-stop" type="button" class="secondary" disabled>Stop preview</button></div>
+        </section>
+        <section class="panel controls">
+          <div class="panel-heading"><div><p class="eyebrow">01 / EXPOSURE</p><h2>Capture settings</h2></div><span class="tag">MANUAL</span></div>
+          <form id="capture-form">
+            <label for="mode">Sensor mode <span>SIMULATOR</span></label><select id="mode" name="mode"><option value="sim-small">sim-small</option></select>
+            <label for="exposure">Requested exposure <span>µs</span></label><input id="exposure" type="number" min="100" max="30000000" value="10000" required>
+            <label for="gain">Requested analogue gain <span>×</span></label><input id="gain" type="number" min="1" max="16" step="0.1" value="1" required>
+            <label for="fault">Fault injection <span>SIMULATION ONLY</span></label><select id="fault"><option value="">None</option><option value="delay">Delay</option><option value="storage_full">Storage full</option><option value="disconnect">Device disconnect</option><option value="corrupt_frame">Corrupt frame</option></select>
+            <div class="output-line"><span>Output</span><strong>DNG <small>/ Bayer</small></strong></div>
+            <button id="apply-settings" class="secondary apply-settings" type="button" disabled>Apply settings to preview</button>
+            <button id="capture" type="submit" disabled><span class="shutter-icon"></span>Capture frame <span class="button-arrow">↗</span></button>
+          </form>
+          <p id="capture-hint" class="hint">Acquire control to enable capture.</p>
+        </section>
+      </div>
+      <section class="panel result-panel">
+        <div class="panel-heading"><div><p class="eyebrow">02 / EXECUTION</p><h2>Capture record</h2></div><span id="capture-status" class="tag">NO REQUEST</span></div>
+        <p id="result-message" class="result-message">Your capture record will appear here.</p>
+        <dl class="result-grid"><div><dt>Request ID</dt><dd id="request-id">—</dd></div><div><dt>Frame ID</dt><dd id="frame-id">—</dd></div><div><dt>Requested exposure</dt><dd id="requested-value">—</dd></div><div><dt>Actual exposure</dt><dd id="actual-value">—</dd></div><div><dt>Requested gain</dt><dd id="requested-gain">—</dd></div><div><dt>Actual gain</dt><dd id="actual-gain">—</dd></div><div class="wide"><dt>Committed file</dt><dd id="file-path">—</dd></div></dl>
+        <div class="query"><label for="lookup">Look up a request ID</label><div><input id="lookup" autocomplete="off" placeholder="Paste a previous request ID"><button id="query" class="secondary" type="button">Query</button><button id="cancel" class="secondary" type="button" disabled>Cancel</button></div><p>After an interrupted response, query the same ID. A new capture is never sent automatically. Cancellation is a request; check the resulting status.</p></div>
+      </section>
+      <section class="panel result-panel retained-panel" aria-label="Retained captures">
+        <div class="panel-heading"><div><p class="eyebrow">03 / RETAINED PHOTOS</p><h2>Review and download</h2></div><span class="tag">COMMITTED DNG</span></div>
+        <p id="library-message" class="result-message">Loading committed captures...</p>
+        <div class="button-row"><button id="library-refresh" type="button" class="secondary">Newest captures</button><button id="library-next" type="button" class="secondary" disabled>Next older page</button></div>
+        <div class="retained-grid"><ul id="library-items" class="retained-list" aria-label="Committed capture page"></ul><div class="retained-review"><img id="library-image" alt="Display conversion from the selected retained synthetic DNG" hidden><p id="library-selected">Select a committed capture.</p><p class="hint">Retained DNG display conversion only: synthetic, uncalibrated color, not live preview. Download keeps the original DNG bytes.</p><a id="library-download" class="download-link" hidden>Download retained DNG</a><p class="hint">The browser chooses the download destination. The server never receives an export path.</p></div></div>
+      </section>
+      <section class="panel result-panel workflow-panel">
+        <div class="panel-heading"><div><p class="eyebrow">03 / AUTOMATION</p><h2>Capture workflow</h2></div><span id="workflow-status" class="tag">NO JOB</span></div>
+        <p class="result-message">Run a simulated exposure bracket, interval, dark or flat sequence. Release console control first; the workflow acquires its own lease.</p>
+        <form id="workflow-form" class="workflow-form">
+          <div><label for="workflow-kind">Sequence</label><select id="workflow-kind"><option value="bracket">Exposure bracket</option><option value="interval">Interval</option><option value="dark">Dark calibration</option><option value="flat">Flat calibration</option></select></div>
+          <div><label for="workflow-exposures">Exposures <span>µs, comma separated</span></label><input id="workflow-exposures" value="5000, 10000, 20000" required></div>
+          <div><label for="workflow-interval">Interval <span>ms</span></label><input id="workflow-interval" type="number" value="1000" min="0" step="1"></div>
+          <button id="workflow-start" class="secondary" type="submit">Start sequence</button>
+        </form>
+        <div class="recipe-tools">
+          <label for="recipe-name">Portable recipe name</label><input id="recipe-name" value="Offline exposure recipe" maxlength="80">
+          <div class="button-row"><button id="recipe-import" class="secondary" type="button">Import recipe JSON</button><button id="recipe-export" class="secondary" type="button">Export recipe JSON</button><input id="recipe-file" type="file" accept="application/json,.json" hidden></div>
+          <p id="recipe-message" class="hint">A recipe contains only a name and exposure plan. Import fills settings; it never starts a job. Share the exported JSON file yourself.</p>
+        </div>
+        <div class="query"><label for="workflow-recent">Recent jobs <span>Latest 50</span></label><div><select id="workflow-recent" aria-label="Recent workflow jobs"><option value="">No jobs loaded</option></select><button id="workflow-list-refresh" class="secondary" type="button">Refresh jobs</button><button id="workflow-list-open" class="secondary" type="button">Inspect selected</button></div></div>
+        <div class="query"><label for="workflow-id">Workflow job ID</label><div><input id="workflow-id" autocomplete="off" placeholder="Job ID"><button id="workflow-query" class="secondary" type="button">Query</button><button id="workflow-pause" class="secondary" type="button">Pause</button><button id="workflow-resume" class="secondary" type="button">Resume</button><button id="workflow-cancel" class="secondary" type="button">Cancel</button></div><p id="workflow-message">A pause completes the current shot before releasing control. A cancellation requests the active capture to stop; query the job for its final state.</p><pre id="workflow-details" class="workflow-details">No job selected.</pre></div>
+      </section>
+    </section>
+    <aside class="sidebar">
+      <div class="side-head"><p class="eyebrow">SYSTEM / STATUS</p><h2>Camera health</h2></div>
+      <div class="status-block"><div class="status-label">DEVICE <span id="device-dot" class="dot"></span></div><strong id="device-state">Connecting</strong><p>HF-Sim software camera</p><button id="reconnect" class="secondary" type="button" disabled>Reconnect simulated device</button></div>
+      <div class="status-block"><div class="status-label">CONTROL OWNER</div><strong id="owner">—</strong><p id="epoch">Epoch —</p><div class="button-row"><button id="acquire" class="secondary" type="button" disabled>Acquire</button><button id="release" class="secondary" type="button" disabled>Release</button></div></div>
+      <div class="status-block"><div class="status-label">AVAILABLE CAPABILITIES</div><ul id="capabilities"><li>Waiting for service…</li></ul></div>
+      <div class="side-note"><span>✳</span><p>Preview and workflows use synthetic data. This console talks to the local simulator service.</p></div>
+    </aside>
+  </main>
+  <footer><span>HASSLEFREE / OPEN CAMERA PLATFORM</span><span>LOCAL DEVELOPMENT BUILD</span></footer>
+  <div id="announcement" class="sr-only" aria-live="polite"></div>
+</body>
+</html>

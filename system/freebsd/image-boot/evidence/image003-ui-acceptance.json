@@ -1,0 +1,98 @@
+{
+  "format": "DaOS-freebsd-arm64-human-ui-acceptance-v1",
+  "target": {
+    "architecture": "arm64",
+    "elf_machine": 183,
+    "os": "FreeBSD 15.1-RELEASE-p6",
+    "kernel_ident": "DaOS"
+  },
+  "image_sha256": "69c824a3aa1f992fcb38e285145e4549c76107cab95a2a26e2e391e401b4942a",
+  "runs": {
+    "image003-first": {
+      "observation_sha256": "98394c69c3c977257c334a160d0d9a6f03fbc22135ecdf81b2f30d849a5e8621",
+      "serial_sha256": "d51f409f7424d96c9414876975b634d211651657575d4196fc34d11b083d8719",
+      "seconds": 797.2114724899998,
+      "clean_stop": true,
+      "immutable_inputs_unchanged": true
+    },
+    "image003-resume": {
+      "observation_sha256": "17419e820eb5cd9a652d13143e9644d0c8a319e4528bae4510bdc1471004c075",
+      "serial_sha256": "82417d0e56ba0d411b9c07bc56c2bac901c8217a1d19e0b8406ea446dd7ae891",
+      "seconds": 242.35427017999973,
+      "clean_stop": true,
+      "immutable_inputs_unchanged": true
+    }
+  },
+  "review_method": "Human inspection of unchanged RGB QMP framebuffer captures and explicit bounded input",
+  "actual_framebuffer": [
+    800,
+    600
+  ],
+  "native_qt_full_viewport_visible": true,
+  "synthetic_live_preview_observed": true,
+  "capture": {
+    "request_id": "afb981a3-b924-4d55-88be-6402189c2242",
+    "capture_actions_first_boot": 1,
+    "capture_actions_resume": 0,
+    "automatic_retry": false,
+    "requested_exposure_us": 10100,
+    "requested_analogue_gain": 1.0,
+    "mode": "sim-small",
+    "synthetic_bayer_size": [
+      128,
+      96
+    ],
+    "UI_completion_seen": true,
+    "same_original_ID_after_full_kernel_restart": true,
+    "retained_DNG_display_after_restart": true,
+    "export_copy": "/var/tmp/ff1-review.dng",
+    "UI_reported_export_bytes": 25662,
+    "independent_pixel_and_journal_validation": "separate capture-verification evidence"
+  },
+  "screenshots": [
+    {
+      "name": "01-idle.png",
+      "sha256": "4d2f336ab6a8d22a5b0eb3a26f56e1a5f437e9e9f9ba8db5050c99a437bbd26f"
+    },
+    {
+      "name": "03-live-held.png",
+      "sha256": "6f64fa5b8c302025bb146dee01740f670f794c5e7c4c4e3c812306b8ede82274"
+    },
+    {
+      "name": "07-details-settled.png",
+      "sha256": "088f4c193c5a5ce1716eaca2ae805c5e0ff4c1ef6ce1c8dcacf555f49aa2f51a"
+    },
+    {
+      "name": "09-retained-image.png",
+      "sha256": "b9b7747616ebf6b2b178ba94c20317ff54d1bd61290484cd4528a4478b0bc9b5"
+    },
+    {
+      "name": "11-restored-ui.png",
+      "sha256": "bff3b8f82972cf2d1b7aab080cce2d33cb285738cd017e71e75f2a771e5bd425"
+    },
+    {
+      "name": "12-restored-details.png",
+      "sha256": "088f4c193c5a5ce1716eaca2ae805c5e0ff4c1ef6ce1c8dcacf555f49aa2f51a"
+    },
+    {
+      "name": "13-restored-retained-image.png",
+      "sha256": "b9b7747616ebf6b2b178ba94c20317ff54d1bd61290484cd4528a4478b0bc9b5"
+    },
+    {
+      "name": "15-export-complete.png",
+      "sha256": "70593faf10e09c5f9d533d87feb37040a7da17be16591e979e5c3cf42ab1cc72"
+    }
+  ],
+  "automated_observation_UI_readiness_claimed": false,
+  "physical_sensor_or_display_validated": false,
+  "original_DaOS_source_imported": false,
+  "all_components_built_from_source": false,
+  "power_loss_safety_or_BSD_AB_update_validated": false,
+  "known_limits": [
+    "FreeBSD-derived camera appliance using a source-built world/kernel, packaged Qt/Python and HF-Sim.",
+    "No NIC, SSH or host sharing; these two GUI boots do not validate network or remote-control deployment.",
+    "Read-only /etc hostid/machine-id and entropy-save warnings remain in the boot console; fresh virtio RNG is provided.",
+    "No claim of bit-for-bit image rebuild, sensor support, electrical/optical validation or manufacture readiness.",
+    "Source-only follow-up fixes to console branding and operator click timing are identified separately from the frozen image."
+  ]
+}

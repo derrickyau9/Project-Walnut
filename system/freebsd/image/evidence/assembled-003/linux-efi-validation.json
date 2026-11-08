@@ -1,0 +1,19 @@
+{
+  "format": "DaOS-independent-Linux-ESP-check-v1",
+  "passed": true,
+  "source": "/var/DaOS-image-memory-r10/DaOS-image-arm64-r10-003/efi.fat",
+  "bytes": 67108864,
+  "sha256": "6365214a707a5288e8e81c0baf3406d8d8725b341212be1540defb5b846fbc2e",
+  "unchanged": true,
+  "returncode": 0,
+  "stdout": "fsck.fat 4.2 (2021-01-31)\nChecking we can access the last sector of the filesystem\nBoot sector contents:\nSystem ID \"BSD4.4  \"\nMedia byte 0xf0 (5.25\" or 3.5\" HD floppy)\n       512 bytes per logical sector\n       512 bytes per cluster\n        32 reserved sectors\nFirst FAT starts at byte 16384 (sector 32)\n         2 FATs, 32 bit entries\n    516608 bytes per FAT (= 1009 sectors)\nRoot directory start at cluster 2 (arbitrary size)\nData area starts at byte 1049600 (sector 2050)\n    129022 data clusters (66059264 bytes)\n63 sectors/track, 255 heads\n         0 hidden sectors\n    131072 sectors total\nChecking for unused clusters.\nChecking free cluster summary.\nFree cluster summary uninitialized (should be 127341)\n/proc/self/fd/3: 3 files, 1681/129022 clusters\n",
+  "stderr": "",
+  "host": {
+    "system": "Linux",
+    "release": "6.18.54.1-microsoft-standard-WSL2",
+    "machine": "x86_64"
+  },
+  "read_only": true,
+  "host_file_writes_or_mounts": false,
+  "input_transport": "exact bounded64MiB private guest file, checked via anonymous memfd only"
+}

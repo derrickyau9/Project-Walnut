@@ -1,0 +1,28 @@
+cmake_minimum_required(VERSION 3.16)
+project(daos_image_processing VERSION 1.0 LANGUAGES C CXX)
+find_package(OpenCV 4.12.0 EXACT REQUIRED COMPONENTS core imgproc imgcodecs photo features2d calib3d)
+add_executable(hf-imager main.cpp raster.cpp algorithms.cpp hash.cpp)
+target_compile_features(hf-imager PRIVATE cxx_std_17)
+target_compile_definitions(hf-imager PRIVATE NOMINMAX WIN32_LEAN_AND_MEAN)
+target_include_directories(hf-imager PRIVATE ../native/third_party ../native/include)
+target_link_libraries(hf-imager PRIVATE ${OpenCV_LIBS})
+if(DAOS_OPENCV_SOURCE AND DAOS_OPENCV_BUILD)
+    target_include_directories(hf-imager PRIVATE
+        "${DAOS_OPENCV_BUILD}/3rdparty/libjpeg-turbo" "${DAOS_OPENCV_SOURCE}/3rdparty/libjpeg-turbo/src"
+        "${DAOS_OPENCV_BUILD}/3rdparty/libtiff" "${DAOS_OPENCV_SOURCE}/3rdparty/libtiff"
+        "${DAOS_OPENCV_BUILD}/3rdparty/libpng" "${DAOS_OPENCV_SOURCE}/3rdparty/libpng"
+        "${DAOS_OPENCV_BUILD}/3rdparty/zlib" "${DAOS_OPENCV_SOURCE}/3rdparty/zlib")
+else()
+    find_package(JPEG REQUIRED)
+    find_package(PNG REQUIRED)
+    find_package(TIFF REQUIRED)
+    target_link_libraries(hf-imager PRIVATE JPEG::JPEG PNG::PNG TIFF::TIFF)
+endif()
+if(MSVC)
+    target_link_libraries(hf-imager PRIVATE Psapi)
+    set_property(TARGET hf-imager PROPERTY MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
+    target_compile_options(hf-imager PRIVATE /W4 /permissive- /utf-8)
+else()
+    target_compile_options(hf-imager PRIVATE -Wall -Wextra -Wpedantic)
+endif()
+install(TARGETS hf-imager RUNTIME DESTINATION bin)

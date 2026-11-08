@@ -1,0 +1,339 @@
+{
+  "accepted_product_ui": false,
+  "capture_state": "complete",
+  "custom_appliance_image_boot_validated": false,
+  "failure_scope": "Intended dark-button action was not reflected in saved theme. Read-only evidence cannot distinguish missed automation input from UI handling.",
+  "files": {
+    "01-camera-live.png": {
+      "bytes": 111272,
+      "sha256": "48442cd54627fbbb246e0eeb78874d04eab66beef9f7137bee86bdc9b66381e8"
+    },
+    "02-camera-saved.png": {
+      "bytes": 104264,
+      "sha256": "1d650cb465e616d2461584e79d279634dee466de7ad682beb13d239ba2687047"
+    },
+    "03-photos.png": {
+      "bytes": 83904,
+      "sha256": "f4419095152dae3c7242dff8ffbaf63b4858296228d02801b3b3241dd37bfda8"
+    },
+    "04-settings-exposure.png": {
+      "bytes": 86322,
+      "sha256": "7838b57427ac9b47cdf8772e76441d88f12f359f27ed5b7557b3be8477fd8da0"
+    },
+    "05-settings-display.png": {
+      "bytes": 76486,
+      "sha256": "09bd4044f6f299065208c0d3c3c2bd36f6151f4ac0aac40b93897a58aeea4f85"
+    },
+    "06-recipes.png": {
+      "bytes": 97537,
+      "sha256": "a206fe1471ed7f7cdbba2e3305089cab6beee24ff3cebe4cb125b8ddb83e190a"
+    },
+    "07-diagnostics.png": {
+      "bytes": 94033,
+      "sha256": "2687916200a6f46325fcb30914295c8d20beb3d2e4154a3638ceced3de6a67e4"
+    },
+    "08-devices.png": {
+      "bytes": 77612,
+      "sha256": "d2f7766e2439e26460c6117216626725d91c7cb2fa6a3f13ee78dc90a0f5d2b1"
+    },
+    "09-system.png": {
+      "bytes": 87490,
+      "sha256": "c310f0cf6e1d41b1d37b045cb3987275f455495c5857c2dd8ec702e2478eb54d"
+    },
+    "10-launcher.png": {
+      "bytes": 71405,
+      "sha256": "1cc8d5663024c218deebe397171f5fe0740b9da7dcb72a70857ab771f0fd5110"
+    },
+    "11-command-palette.png": {
+      "bytes": 111421,
+      "sha256": "ac8ddc9e2db8449b508b4e51a98d99db6bcfadc4399d093fbe2df41cf9fdc6d0"
+    },
+    "12-compact-settings.png": {
+      "bytes": 62163,
+      "sha256": "0e3bb142ff4f5e9bc079ff546f6b6b3637a5e5798a86b021ca74d762cf175488"
+    },
+    "13-compact-camera-dark.png": {
+      "bytes": 84537,
+      "sha256": "529f3ce4228e248b498efe6b948a71d928debfaa916d7743d2d40e36edffc8a0"
+    },
+    "holder-lf.json": {
+      "bytes": 278,
+      "sha256": "f1fadb9cc0e501d6a8bea86396d5bcb99509e5851a363f91d9cdfe7f37180f4e"
+    },
+    "holder-standard.json": {
+      "bytes": 284,
+      "sha256": "7ff07045032ba9473e4490062cca5df864eb0909480b69a11472572d848a0b0f"
+    },
+    "live-native-verification.json": {
+      "bytes": 403,
+      "sha256": "bc6e8c2afb715a0c72f24d3b60bcc8acda439995500d9c55403de19ba0bc2057"
+    },
+    "restricted/closed.json": {
+      "bytes": 605,
+      "sha256": "de981a8ae4165e5436459505a311242354193abb243f7d7946069832272d2d04"
+    },
+    "restricted/launch.json": {
+      "bytes": 2145,
+      "sha256": "58cc98ac5f6299d262159e193179b29f8d2c3c6a49634ce04a7d9943c927268e"
+    },
+    "restricted/serial.log": {
+      "bytes": 10286,
+      "sha256": "a8edf14cae2732ea4c97ebc185fdd7b4acc7fff2db39ea492fbcf096b2ee5976"
+    },
+    "review-transport.json": {
+      "bytes": 3746,
+      "sha256": "035bafd3076385712e2adaad2a94b41a5f7a3f939b932610c7d6b745ab652164"
+    },
+    "review.json": {
+      "bytes": 8172,
+      "sha256": "4ad51eaab8cea4507d10dceb3715c834a5ca2d316ff4180f8fa0ded714174c22"
+    },
+    "shell-preferences.json": {
+      "bytes": 98,
+      "sha256": "77ac4d7718a8cb2328fc57a70b53cf23da642ee615c8c228305b9d1091b085b4"
+    },
+    "shutdown-transport.json": {
+      "bytes": 192,
+      "sha256": "35e91d1e4073d4b42f685d516f5d77baf1146134cbcdcf946f9f34c29ea5dd87"
+    },
+    "shutter-intent.json": {
+      "bytes": 308,
+      "sha256": "2c204a35f9648d35d633c8a229695328ecb8e4c58c705fcaed81d2984782ba73"
+    },
+    "source-final.json": {
+      "bytes": 6153,
+      "sha256": "bf4f0c6d1e25c8d43d4d78c796295a499d7a886421c10307edd6a91645b4ca41"
+    },
+    "source/camera/__init__.py": {
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "source/camera/calibration/__init__.py": {
+      "bytes": 648,
+      "sha256": "145ef81dd62004f0d7ff607bb8d7a0d221a6a4279bb7ee6bd8eae78dafdecc7c"
+    },
+    "source/camera/calibration/binding.py": {
+      "bytes": 9694,
+      "sha256": "9abe0ce308550aa7a3f9f56d6342105c5e8fc827698d21cf931875f910fb1362"
+    },
+    "source/camera/calibration/store.py": {
+      "bytes": 17987,
+      "sha256": "23dc05c64847a2303fc778c42d3f012cfdfcf1c62ea035cf435211264938f228"
+    },
+    "source/camera/camerad/__init__.py": {
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "source/camera/camerad/__main__.py": {
+      "bytes": 8611,
+      "sha256": "fc25bee012b7877f3e2905702992573d112881e20e05a69f2026db103fc04f73"
+    },
+    "source/camera/camerad/calibration_context.py": {
+      "bytes": 5854,
+      "sha256": "255b523780b84a6e6372966626931d67075ccf79c068f64bcb3ac9ff537cfe45"
+    },
+    "source/camera/camerad/http_client.py": {
+      "bytes": 32696,
+      "sha256": "e0e449c23cec8b5f2f8074a7038a75f855b2dd512a042bd8eb2dcb179420fd16"
+    },
+    "source/camera/camerad/native_backend.py": {
+      "bytes": 8360,
+      "sha256": "4320372629d5cd035947a9f74360c90d7c52ac91635202f80a0a9cb311430f5a"
+    },
+    "source/camera/camerad/native_client.py": {
+      "bytes": 30328,
+      "sha256": "5dc77424d9aa71400c0cf0d476d9d8d3759d56570c4f8de742067bc6bf5fdbca"
+    },
+    "source/camera/camerad/native_service.py": {
+      "bytes": 3348,
+      "sha256": "e31bb085407683f070ef0aad477000cfdcad22a11871a6265fd7ae483a0544f9"
+    },
+    "source/camera/camerad/retained.py": {
+      "bytes": 18973,
+      "sha256": "a1518dc814d4634616917b305ca7a26ca08908263214c43183dcc75f11891d4b"
+    },
+    "source/camera/camerad/server.py": {
+      "bytes": 22923,
+      "sha256": "122bd5fe963edfcae73deec3aa69c44e81f15f2af9f58db5827e453d1235d50a"
+    },
+    "source/camera/camerad/service.py": {
+      "bytes": 46478,
+      "sha256": "c1d90d37d2a913ef255b1cf0481120629e863a404ba70923e01b83dd721e0316"
+    },
+    "source/camera/dng/hf_dng.py": {
+      "bytes": 7912,
+      "sha256": "8969aef7fa59c33791f55cf14271581c10b51a264b57b572873032f93e03d7b5"
+    },
+    "source/camera/dng/inspect.py": {
+      "bytes": 11984,
+      "sha256": "4200ac573d1a0373bc5cacde10d024948fab046af88d065356387d71c7033342"
+    },
+    "source/camera/pipeline/__init__.py": {
+      "bytes": 78,
+      "sha256": "e14baeff3beab5b6f1b8f144fdb98b95158db1178eb49e038dab03b44b56b12d"
+    },
+    "source/camera/pipeline/preview.py": {
+      "bytes": 5617,
+      "sha256": "2f6df30c727173450473386698166ce9dcc0d7cd856499068f9a6fe24e2afbc7"
+    },
+    "source/daos/capability_runtime/__init__.py": {
+      "bytes": 74,
+      "sha256": "a347df9a4513dac86c119fcf581da6ef63a96b0c01117d35b68af46f07406faa"
+    },
+    "source/daos/capability_runtime/__main__.py": {
+      "bytes": 9891,
+      "sha256": "105c4743bfe9d2cb3fc3525e34d0343f483fe8d7a56f5e0e2e558fb66d885e0d"
+    },
+    "source/daos/capability_runtime/bracket.py": {
+      "bytes": 25359,
+      "sha256": "0621a20fa3188da919e647e3fef26c98a8f4cd1e805a6e3ec848fe80983f336a"
+    },
+    "source/daos/capability_runtime/manager.py": {
+      "bytes": 6376,
+      "sha256": "adf916baf8578a2a3b1cdf815ad646d51feec9bd2a7ac776d263f75e1c39f47a"
+    },
+    "source/daos/capability_runtime/recipes.py": {
+      "bytes": 5236,
+      "sha256": "4dd4195005b942bb45671309283b7bb0c056d19044f050fe734b3ecc8e60734e"
+    },
+    "source/simulation/bayer.py": {
+      "bytes": 2084,
+      "sha256": "a1a02e82a13d07962fc05f168d2b89e5fb581981097a5611687a4760e101a810"
+    },
+    "source/tests/test_device_apps.py": {
+      "bytes": 13114,
+      "sha256": "fe73c63622b14eca97e0582e9532d62338b0423049fa0d4cc977eeb7dbda73cb"
+    },
+    "source/tests/test_device_shell_model.py": {
+      "bytes": 16384,
+      "sha256": "f6d7e6d549a2e7b12783894a53efc0051bd314cc278ca5a393694100751a55b5"
+    },
+    "source/tests/test_device_shell_ui.py": {
+      "bytes": 19943,
+      "sha256": "12b1963b6406cb489fd4de2e849ab6c354c4246e488350b04e5389d191e4fab2"
+    },
+    "source/tests/test_device_ui.py": {
+      "bytes": 44940,
+      "sha256": "ef426a6b3768a68d5ffbeabb918865a821b382b0e7dab396637388b4ad77f437"
+    },
+    "source/ui/on-device/AppsWorkspace.qml": {
+      "bytes": 84420,
+      "sha256": "c9f24557e0763201e13f7e3ab71de8b0fee3b5bce9779d954fd4df821ce723b9"
+    },
+    "source/ui/on-device/DaOSDock.qml": {
+      "bytes": 5643,
+      "sha256": "996328e02cd43850ac7f22ffefbf85302cf2385f04332079f3508ef3994403a4"
+    },
+    "source/ui/on-device/DaOSIcon.qml": {
+      "bytes": 2715,
+      "sha256": "2f7ef1d1c0e01ed7a40adbee747cf599a98bb29740c6d953d74bec9874275be8"
+    },
+    "source/ui/on-device/Main.qml": {
+      "bytes": 59032,
+      "sha256": "8749bcc4aecb2688ece43998a6bc560268116f2fd76168b4baa7c39c7b0c15c9"
+    },
+    "source/ui/on-device/apps_controller.py": {
+      "bytes": 20133,
+      "sha256": "49705efbcbc4de271d985fccac2ef897b668a9eb1b9015837f35e14a247cbd50"
+    },
+    "source/ui/on-device/controller.py": {
+      "bytes": 45454,
+      "sha256": "e9121da43b61148e9263867bdf8fc1c896af2c91e93dd230830e0cec46231dab"
+    },
+    "source/ui/on-device/main.py": {
+      "bytes": 5942,
+      "sha256": "d8b9a4a7cd2ba69caee51107edee9a7edd0b51c3ce1608c9b73111d5fdabb57f"
+    },
+    "source/ui/on-device/retail-theme.json": {
+      "bytes": 4446,
+      "sha256": "b3bb1de337f3a9059dcbde813ac12eadc72c6bb66c19d9e99bdf2b75fa2d45a4"
+    },
+    "source/ui/on-device/review_capture.py": {
+      "bytes": 14686,
+      "sha256": "712e1c8c9cd0f8fbb8d223a121393199aecba969462d347e9229f1406119169f"
+    },
+    "source/ui/on-device/review_shell.py": {
+      "bytes": 20709,
+      "sha256": "841c52afb04fbe0db7450a94f629b294d050585c571790a5a0fe899a6d53205d"
+    },
+    "source/ui/on-device/shell_model.py": {
+      "bytes": 20536,
+      "sha256": "e22770bd50026a347837bf5331bd0e4652c2ef1f65f91c040d9582f6ceccc97d"
+    },
+    "standard/closed.json": {
+      "bytes": 552,
+      "sha256": "573bcf3338cdde7e2a762c82745236a26a81406bdb3615970dc77bf7273ddec8"
+    },
+    "standard/launch.json": {
+      "bytes": 2145,
+      "sha256": "2448b3d10099487afc167f7adf7767a4d62eb4b479bce7cc18e032bd78847355"
+    },
+    "standard/ready-sanitized.json": {
+      "bytes": 715,
+      "sha256": "d5b6d822e2195e8b38277e5de8f42f65eddb4c3601a848638f4f6eee3fcf761c"
+    },
+    "standard/serial.log": {
+      "bytes": 10018,
+      "sha256": "932194fff1ed6c713bfb73edec0443cf13cd9296837a97320b7b660e913c3118"
+    },
+    "tests-result.json": {
+      "bytes": 9249,
+      "sha256": "6662c2ef2f984f10ea10d15ffc0ce3131069bd762615d46cd91006b5aa40e21b"
+    },
+    "tests-transport.json": {
+      "bytes": 262,
+      "sha256": "b8267ca5b6492566348a8315d80dcfa0013afc7b97b9c7e0901bd3c7a2f55439"
+    },
+    "tests.log": {
+      "bytes": 11990,
+      "sha256": "abdd9c4cac59f8780ab0143dba4557d67679f44801b25dea6bd1eec5080d7acd"
+    }
+  },
+  "format": "DaOS-r11-arm64-reference-ui-verification-v1",
+  "guest_shutdown_clean": true,
+  "historical_development_console_only": true,
+  "misnamed_screenshot": "13-compact-camera-dark.png is actually light; it is not dark-theme proof",
+  "native_process_closed": true,
+  "native_sha256": "be752fd42c631e763682fa96a34b929a2bd80b5ae9ab3eb1b6f17653bc31bc28",
+  "network": {
+    "hostforward_loopback_only": true,
+    "restricted_boot_ready": false,
+    "standard_boot_ready": true,
+    "standard_guest_egress_enabled": true
+  },
+  "new_installs_or_downloads": false,
+  "no_automatic_capture_retry": true,
+  "no_corrective_ui_actions": true,
+  "no_private_keys_dngs_or_databases_copied": true,
+  "original_base_seed_code_unchanged": true,
+  "physical_display_validated": false,
+  "physical_sensor_validated": false,
+  "preferences": {
+    "preferences": {
+      "grid_enabled": true,
+      "preview_brightness": 100,
+      "theme": "light"
+    },
+    "schema_version": 1
+  },
+  "qml_warnings": [],
+  "qpa": "offscreen",
+  "request_id": "bb435cce-d84b-4d2c-8eed-ef41dc580638",
+  "review_error": "RuntimeError: interface preferences did not survive model recreation",
+  "review_passed": false,
+  "review_shutter_actions": 1,
+  "runtime_machine": "arm64",
+  "runtime_release": "15.1-RELEASE-p6",
+  "runtime_system": "FreeBSD",
+  "screenshots": 13,
+  "source_code_changed_by_audit": false,
+  "test_fixture_captures_separate_from_review": true,
+  "tests": {
+    "failed": 0,
+    "harness_seconds": 90.91149254299998,
+    "passed": 70,
+    "skipped": 0,
+    "unittest_seconds": 86.995
+  },
+  "uid": 1000
+}

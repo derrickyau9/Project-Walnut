@@ -1,0 +1,6 @@
+{
+  "returncode": 1,
+  "seconds": 897.4238044350004,
+  "stderr": "DaOS_RUNTIME_FAILED invalid manifest-relative ELF path\n",
+  "stdout": "{\"event\": \"DaOS-runtime-profile\", \"profile\": \"camera-runtime-v1\", \"statistics\": {\"declared_entries\": 58962, \"declared_bytes\": 3096995945, \"kept_entries\": 35398, \"kept_bytes\": 1383419710, \"omitted_entries\": 23564, \"omitted_bytes\": 1713576235, \"groups\": {\"sdk-alias-to-omitted-target\": {\"entries\": 4, \"bytes\": 0}, \"llvm19-sdk-wrapper\": {\"entries\": 132, \"bytes\": 37620}, \"sdk-headers\": {\"entries\": 13903, \"bytes\": 202789983}, \"sdk-cmake-build-metadata\": {\"entries\": 379, \"bytes\": 2362864}, \"sdk-static-archive\": {\"entries\": 830, \"bytes\": 1029644738}, \"llvm19-sdk-tool\": {\"entries\": 151, \"bytes\": 418950328}, \"sdk-documentation\": {\"entries\": 8165, \"bytes\": 59790702}}}}\n"
+}

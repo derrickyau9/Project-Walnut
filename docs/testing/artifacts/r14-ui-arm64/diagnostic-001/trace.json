@@ -1,0 +1,39 @@
+{
+  "format": "DaOS-taskbar-animation-observation-v1",
+  "camera_shutter_actions": 0,
+  "source_before": {
+    "ui/on-device/Main.qml": "87ca675e806153c4f28f09275b2972e97a1e784507fd08b8efe6d9cf581bfeb4",
+    "ui/on-device/CameraTaskbar.qml": "3cf6838463f947b576e0dd6f58c975c8ab6a7fd6496aebdfa64594d2e2028efe",
+    "tests/test_camera_taskbar_ui.py": "7d7d7fcc725024925278eaa192f10ed44a6d7092976841ce9fe3efa144c516ca",
+    "ui/on-device/controller.py": "e9121da43b61148e9263867bdf8fc1c896af2c91e93dd230830e0cec46231dab",
+    "camera/pipeline/preview.py": "2f6df30c727173450473386698166ce9dcc0d7cd856499068f9a6fe24e2afbc7"
+  },
+  "phases": [],
+  "diagnostic_not_acceptance": true,
+  "qml_clock": "Date.now wall milliseconds; compare relative intervals only",
+  "python_clock": "time.monotonic seconds",
+  "runtime": {
+    "system": "FreeBSD",
+    "machine": "arm64",
+    "qt": "5.15.19",
+    "pyqt": "5.15.11",
+    "python": "3.12.15"
+  },
+  "window": {
+    "visible": true,
+    "exposed": true,
+    "active": true,
+    "qpa": "offscreen"
+  },
+  "complete": false,
+  "error": "RuntimeError: ",
+  "source_after": {
+    "ui/on-device/Main.qml": "87ca675e806153c4f28f09275b2972e97a1e784507fd08b8efe6d9cf581bfeb4",
+    "ui/on-device/CameraTaskbar.qml": "3cf6838463f947b576e0dd6f58c975c8ab6a7fd6496aebdfa64594d2e2028efe",
+    "tests/test_camera_taskbar_ui.py": "7d7d7fcc725024925278eaa192f10ed44a6d7092976841ce9fe3efa144c516ca",
+    "ui/on-device/controller.py": "e9121da43b61148e9263867bdf8fc1c896af2c91e93dd230830e0cec46231dab",
+    "camera/pipeline/preview.py": "2f6df30c727173450473386698166ce9dcc0d7cd856499068f9a6fe24e2afbc7"
+  },
+  "source_unchanged": true,
+  "seconds": 2.3890299039999263
+}

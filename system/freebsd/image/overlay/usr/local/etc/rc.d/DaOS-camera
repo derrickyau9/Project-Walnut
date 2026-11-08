@@ -1,0 +1,16 @@
+#!/bin/sh
+# PROVIDE: DaOS_camera
+# REQUIRE: FILESYSTEMS ldconfig devd
+# BEFORE: LOGIN
+# KEYWORD: shutdown
+
+. /etc/rc.subr
+name="DaOS_camera"
+rcvar="DaOS_camera_enable"
+command="/usr/sbin/daemon"
+procname="/usr/sbin/daemon"
+pidfile="/var/run/DaOS-camera-supervisor.pid"
+command_args="-P ${pidfile} -f -o /var/log/DaOS-camera.log /usr/local/bin/python3.12 -B /usr/local/libexec/DaOS-camera-session.py"
+load_rc_config "$name"
+: ${DaOS_camera_enable:=NO}
+run_rc_command "$1"

@@ -1,0 +1,40 @@
+{
+  "format": "DaOS-Windows-resume-export-validation-v1",
+  "passed": true,
+  "host_system": "Windows",
+  "request_id": "afb981a3-b924-4d55-88be-6402189c2242",
+  "parent_capture_rows": 1,
+  "child_capture_rows": 1,
+  "capture_rows_unchanged": true,
+  "no_additional_capture": true,
+  "retained_UI_request_id": "afb981a3-b924-4d55-88be-6402189c2242",
+  "settings_unchanged": true,
+  "requested_exposure_us": 10100,
+  "actual_exposure_us": 10100,
+  "parent_journal_sha256": "603d608e6931c5a8bad1b560c7d216fa0bba9f965f2e9fbde2e0ba52c57195ba",
+  "child_journal_sha256": "649bc2c2587738df5ed3ed9cb33bab09fffa8a61be5ab43d730f9bdc6e5a27cd",
+  "DNG_sha256": "34526aaace0136e38935822d974fa8d548060d0d5ea8ab8b726894b31f9529e0",
+  "DNG_bytes": 25662,
+  "retained_DNG_byte_identical": true,
+  "export_count": 1,
+  "exports": [
+    {
+      "partition": "DaOS-state",
+      "path": "tmp/ff1-review.dng",
+      "inode": 69,
+      "output": "state/tmp/ff1-review.dng",
+      "bytes": 25662,
+      "sha256": "34526aaace0136e38935822d974fa8d548060d0d5ea8ab8b726894b31f9529e0"
+    }
+  ],
+  "all_exports_byte_identical": true,
+  "parent_independent_validation_sha256": "73943c342724044a70c06a339345049ba0800de2fe71f5b8dab75122dc666c7e",
+  "child_extraction_receipt_sha256": "bde2f23d9d6a46cfc6a5ec967be270f51c874832fd9843d2b1a1908237eb65f9",
+  "source_image_sha256": "69c824a3aa1f992fcb38e285145e4549c76107cab95a2a26e2e391e401b4942a",
+  "child_cow_sha256": "f3e085f7cf1b68926b1a3e63018554d7ac69a23d56bb9483112ac3ec9d539a3e",
+  "readonly_backing_inputs_unchanged": true,
+  "script_sha256": "ed284bff7cfa021df2ea8676e171a939a0768e5e321b19a8c21aa624fb28886c",
+  "new_capture_submitted": false,
+  "source_images_modified": false,
+  "physical_camera_validated": false
+}

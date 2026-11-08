@@ -1,0 +1,30 @@
+{
+  "format": "hf-qemu-guest-dng-independent-validation-v1",
+  "passed": true,
+  "simulated": true,
+  "source": "actual native authority in full ARM64 Linux virtual guest; process restart/query preserved same frame",
+  "artifact_relative_path": "build/qemu-guarded-round6/guest.dng",
+  "sha256": "97472763b7d9b8a97d98027415c4fa94516aa58b92cd634c650551745e89533c",
+  "dimensions": [
+    128,
+    96
+  ],
+  "exact_samples": 12288,
+  "requested_exposure_us": 12500,
+  "actual_exposure_us": 12500,
+  "gain": 1.5,
+  "tifffile_version": "2023.4.12",
+  "rawpy_version": "0.28.0",
+  "LibRaw": [
+    0,
+    22,
+    2
+  ],
+  "rgb_shape": [
+    96,
+    128,
+    3
+  ],
+  "calibration": "synthetic-uncalibrated",
+  "physical_sensor_tested": false
+}

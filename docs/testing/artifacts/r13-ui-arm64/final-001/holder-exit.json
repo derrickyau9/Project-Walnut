@@ -1,0 +1,8 @@
+{
+  "owned_qemu_pid": 403,
+  "holder_pid": 148140,
+  "initial_started_utc": "2026-11-06T00:41:52.5176415Z",
+  "scope": "Observed the owned hidden Windows WSL holder only; no global controls or termination were used.",
+  "holder_running": false,
+  "observed_utc": "2026-11-06T00:53:40.1361046Z"
+}

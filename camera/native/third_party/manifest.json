@@ -1,0 +1,36 @@
+{
+  "sqlite": {
+    "version": "3.54.1",
+    "archive_source": "https://www.sqlite.org/2026/sqlite-amalgamation-3540100.zip",
+    "archive_sha3_256": "92281c86e2957f9b9305890f9ac04204caa7b677cc868dc326d942689df28e30",
+    "rights_source": "https://www.sqlite.org/copyright.html",
+    "notice": "Upstream sqlite3.c/sqlite3.h include their public-domain notice; no upstream source modifications."
+  },
+  "nlohmann_json": {
+    "version": "3.12.0",
+    "release": "https://github.com/nlohmann/json/releases/tag/v3.12.0",
+    "license": "MIT",
+    "license_file": "nlohmann/LICENSE.MIT",
+    "notice": "Unmodified official single header; MIT notice preserved."
+  },
+  "files": [
+    {
+      "path": "sqlite/sqlite3.c",
+      "sha256": "0c657666d819f261cc4007526ad57e1669de9949df7a8ea847aa284a2bf0ee52"
+    },
+    {
+      "path": "sqlite/sqlite3.h",
+      "sha256": "d6c84557261893439b341d2e6c35187ae3ea24fbfd843ad94616f72d89242b8c"
+    },
+    {
+      "path": "nlohmann/json.hpp",
+      "sha256": "aaf127c04cb31c406e5b04a63f1ae89369fccde6d8fa7cdda1ed4f32dfc5de63",
+      "source": "https://raw.githubusercontent.com/nlohmann/json/v3.12.0/single_include/nlohmann/json.hpp"
+    },
+    {
+      "path": "nlohmann/LICENSE.MIT",
+      "sha256": "46a65cffd1ea955132d95a8dd921640714a8d6b537d2e4e482d31145ae95b603",
+      "source": "https://raw.githubusercontent.com/nlohmann/json/v3.12.0/LICENSE.MIT"
+    }
+  ]
+}

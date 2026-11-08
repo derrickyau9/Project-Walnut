@@ -1,0 +1,6 @@
+{
+  "returncode": 0,
+  "stdout": "{\"owned_test_daemon_stopped\": true, \"pid\": 2657, \"time\": 1793945805.0986087}\n",
+  "stderr": "",
+  "seconds": 1.6565573640000366
+}

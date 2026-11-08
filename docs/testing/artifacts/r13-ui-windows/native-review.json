@@ -1,0 +1,153 @@
+{
+  "actual_analogue_gain": 1.25,
+  "actual_exposure_us": 8000,
+  "arm64_image_boot_validated": false,
+  "bsd_image_boot_validated": false,
+  "capture_backend": "C++ hf-camerad / HF-Sim",
+  "capture_id": "3b40df7f-c8f3-4e0d-81fe-7197169ef932",
+  "dng_metadata": {
+    "bits_per_sample": 16,
+    "black_level": 64,
+    "cfa": "RGGB",
+    "compression": 1,
+    "height": 96,
+    "metadata_state": "valid",
+    "request_id": "3b40df7f-c8f3-4e0d-81fe-7197169ef932",
+    "samples_per_pixel": 1,
+    "strip_byte_counts": [
+      24576
+    ],
+    "strip_offsets": [
+      1090
+    ],
+    "white_level": 16383,
+    "width": 128
+  },
+  "dng_sha256": "46d326fc94a15d2eaa07ca565430e53d1185cb14b7cbaf7fd05c749e23500f39",
+  "export_dng_sha256": "46d326fc94a15d2eaa07ca565430e53d1185cb14b7cbaf7fd05c749e23500f39",
+  "format": "DaOS-camera-first-review-v1",
+  "frame_id": "3b40df7f-c8f3-4e0d-81fe-7197169ef932",
+  "initial_settings_format": "hf-device-settings-v1",
+  "initial_settings_persistent": true,
+  "journal_rows": 1,
+  "native_command": "build/native-r11/Release/hf-camerad.exe",
+  "native_process_closed": true,
+  "native_process_exit_code": 0,
+  "native_sha256": "1c7d8bac9427ee71fa8645ba78359add17cc9e813cde76ffe40f2e27bf3a9d8d",
+  "passed": true,
+  "physical_camera_validated": false,
+  "physical_display_validated": false,
+  "preferences": {
+    "grid_enabled": false,
+    "preview_brightness": 100,
+    "theme": "dark"
+  },
+  "preferences_recreated": {
+    "grid_enabled": false,
+    "preview_brightness": 100,
+    "theme": "dark"
+  },
+  "preview_source": "Python synthetic Bayer PreviewStream; separate scene, not sensor readout",
+  "qml_theme_background": "#000000",
+  "qml_warnings": [],
+  "request_id": "3b40df7f-c8f3-4e0d-81fe-7197169ef932",
+  "runtime": {
+    "machine": "AMD64",
+    "pyqt": "5.15.10",
+    "python": "3.12.7",
+    "qpa": "offscreen",
+    "qt": "5.15.2",
+    "release": "11",
+    "system": "Windows",
+    "ui_label": "Windows UI preview / AMD64"
+  },
+  "screenshots": [
+    {
+      "description": "Actual 800 by 600 camera-first live composition; Python HF-Sim synthetic preview.",
+      "file": "01-live-800.png",
+      "height": 600,
+      "sha256": "207ac7196879b1635f9cd5e9618be0bb581fa75e50e7f089960e97a6ce599e08",
+      "width": 800
+    },
+    {
+      "description": "Quick controls over the camera scene; requested exposure and gain confirmed by the native authority.",
+      "file": "02-quick-800.png",
+      "height": 600,
+      "sha256": "052ef69c4a4db078664135d584068d2fae3fe5f70c3d922eb8e9cf5bcd57f117",
+      "width": 800
+    },
+    {
+      "description": "Grouped camera exposure settings; no desktop navigation dock.",
+      "file": "03-menu-exposure-800.png",
+      "height": 600,
+      "sha256": "7aaa96e9ddd3b7bd2b9407c8cf96cc888c5b1ca218b2a9f95585533e186db5f9",
+      "width": 800
+    },
+    {
+      "description": "Camera display preferences inside MENU, separate from captured RAW.",
+      "file": "04-menu-display-800.png",
+      "height": 600,
+      "sha256": "9bf3314f062d0a7f1fb5047b3e1455d45450a1fb8933cabf321777b5c06ab72b",
+      "width": 800
+    },
+    {
+      "description": "Optional local apps are behind MENU rather than on the shooting screen.",
+      "file": "05-menu-tools-800.png",
+      "height": 600,
+      "sha256": "37ac0d20c60bacc7ae5495148443d2103e6739ee05981b2cdcdd82c991add648",
+      "width": 800
+    },
+    {
+      "description": "Exactly one completed native HF-Sim DNG; shooting face remains free of paths and request logs.",
+      "file": "06-saved-800.png",
+      "height": 600,
+      "sha256": "02bb7a31337d1b8829b261aac1a13a75e0a298abd2e9ece900beb84f373d1996",
+      "width": 800
+    },
+    {
+      "description": "Actual single-image playback decoded from the retained DNG, not the independent live preview.",
+      "file": "07-playback-800.png",
+      "height": 600,
+      "sha256": "66b6a4201cf83df67eb584c0ecaa0eaf9b863271547f5f7d69bf2720533cd559",
+      "width": 800
+    },
+    {
+      "description": "Secondary actual 1280 by 800 host preview of the same camera-first layout.",
+      "file": "08-live-1280.png",
+      "height": 800,
+      "sha256": "3822d6ab480919a3d3c1ce2a9e56fbf507e6d8472195e017595a57cafdedc096",
+      "width": 1280
+    }
+  ],
+  "settings": {
+    "output_format": "dng",
+    "requested_analogue_gain": 1.25,
+    "requested_exposure_us": 8000,
+    "sensor_mode": "sim-small",
+    "simulation_scene": "scene"
+  },
+  "shutter_actions": 1,
+  "source_sha256": {
+    "camera/camerad/calibration_context.py": "255b523780b84a6e6372966626931d67075ccf79c068f64bcb3ac9ff537cfe45",
+    "camera/camerad/native_client.py": "5dc77424d9aa71400c0cf0d476d9d8d3759d56570c4f8de742067bc6bf5fdbca",
+    "camera/pipeline/preview.py": "2f6df30c727173450473386698166ce9dcc0d7cd856499068f9a6fe24e2afbc7",
+    "simulation/bayer.py": "a1a02e82a13d07962fc05f168d2b89e5fb581981097a5611687a4760e101a810",
+    "ui/on-device/AppsWorkspace.qml": "2d3c283b0a853d17a3ac1c0d9c7ae37c24e79716ee46426331fed62676bdca1c",
+    "ui/on-device/CameraMenu.qml": "606b59458f681f4d9a32c1965f1ce7c278cfa6e1689d90967dcfbb7ee52bbdfd",
+    "ui/on-device/CameraPlayback.qml": "a7fc10d805f65ec592dc84e5ee674f2430f2e04a926d3cf059389ad829d6825d",
+    "ui/on-device/Console.qml": "248c00137113863064b71b4af9b6b3f920f2ddb016ba8789c3f72dfd915b37f5",
+    "ui/on-device/DaOSDock.qml": "b892683f1123ee5963c6e22c85413d305fd8e5a66a0f393c00a0f1283aa3f2ca",
+    "ui/on-device/DaOSIcon.qml": "43275a49409fd2a5b2029871e5136206ab11a626ae84b5fdc3032ff5152f3565",
+    "ui/on-device/Main.qml": "75d9c18a4e1c2de130663e2ba0baeda90093e785d40a17bbf4d7ac9f2c3844b8",
+    "ui/on-device/apps_controller.py": "49705efbcbc4de271d985fccac2ef897b668a9eb1b9015837f35e14a247cbd50",
+    "ui/on-device/controller.py": "e9121da43b61148e9263867bdf8fc1c896af2c91e93dd230830e0cec46231dab",
+    "ui/on-device/main.py": "6e36f57cd94bbe6a14850ba8a201d4a983c5b8913b41d9026bf25b99655b6f94",
+    "ui/on-device/retail-theme.json": "88ee438bcafff191a4bb6bb38e762e939709693ab99c4fe8669d5e3840a217e2",
+    "ui/on-device/review_camera_first.py": "94f44a0ba32cb9f3389ca1fa9d7c2a4e14272459f56bb402dc3d1c310b392e8d",
+    "ui/on-device/review_capture.py": "29870c1842b55ae9400677a4f710cc345d9eca9a95de6df93e87004ab4d61e8c",
+    "ui/on-device/review_shell.py": "e714cddc68303be3a00b83cfc389fcc90f7802b4a95459805e68512af52100c0",
+    "ui/on-device/shell_model.py": "ce4e64d107c9833cc12cd395945c8c9d6dbeae6142535821eb09af6581948178"
+  },
+  "synthetic": true,
+  "unknown_capture_review": "Not staged into this completed capture; recovery is covered by separate UI tests."
+}

@@ -1,0 +1,14 @@
+{
+  "UI_readiness_claimed": false,
+  "conversion": "RGB pixels unchanged; P6 to PNG format only",
+  "format": "DaOS-virtual-framebuffer-v1",
+  "height": 600,
+  "name": "live-view",
+  "nonblack_pixels": 479946,
+  "png": "/home/dy09/hf-task-freebsd-r10/image-boot-003/screens/live-view.png",
+  "png_sha256": "7b94fa3e56e79f711b4a4574edde54f76a1c442740aacaf1ee8233856744bcf1",
+  "ppm": "/home/dy09/hf-task-freebsd-r10/image-boot-003/screens/live-view.ppm",
+  "ppm_sha256": "6f5b01f1e0061ac4a3c43848752dd745de74746e5a3e74cf575416dfac271127",
+  "rgb_sha256": "1c2fcad3494ccd26527583251df57b6ffcce755ec4b4d1b7358920dd6dad8ef2",
+  "width": 800
+}

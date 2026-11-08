@@ -1,0 +1,81 @@
+test_live_query_fences_context_mismatch_without_rewrite_or_new_capture (tests.test_reference_journal_context.ReferenceJournalContextTests.test_live_query_fences_context_mismatch_without_rewrite_or_new_capture) ... ok
+test_restart_refuses_context_mismatch_before_epoch_recovery_changes_and_releases_lock (tests.test_reference_journal_context.ReferenceJournalContextTests.test_restart_refuses_context_mismatch_before_epoch_recovery_changes_and_releases_lock) ... ok
+test_activation_requires_lease_and_idle_capture_without_fallback (tests.test_calibration_activation.NativeCalibrationActivationTests.test_activation_requires_lease_and_idle_capture_without_fallback) ... ok
+test_bound_capture_pins_original_snapshot_through_selection_restart_and_id_reconciliation (tests.test_calibration_activation.NativeCalibrationActivationTests.test_bound_capture_pins_original_snapshot_through_selection_restart_and_id_reconciliation) ... ok
+test_bound_record_is_explicit_v2_and_does_not_silently_change_v1_schema (tests.test_calibration_activation.NativeCalibrationActivationTests.test_bound_record_is_explicit_v2_and_does_not_silently_change_v1_schema) ... ok
+test_damaged_active_snapshot_cannot_reset_on_restart_and_releases_authority_lock (tests.test_calibration_activation.NativeCalibrationActivationTests.test_damaged_active_snapshot_cannot_reset_on_restart_and_releases_authority_lock) ... ok
+test_activation_requires_lease_and_idle_capture_without_fallback (tests.test_calibration_activation.ReferenceCalibrationActivationTests.test_activation_requires_lease_and_idle_capture_without_fallback) ... ok
+test_bound_capture_pins_original_snapshot_through_selection_restart_and_id_reconciliation (tests.test_calibration_activation.ReferenceCalibrationActivationTests.test_bound_capture_pins_original_snapshot_through_selection_restart_and_id_reconciliation) ... ok
+test_bound_record_is_explicit_v2_and_does_not_silently_change_v1_schema (tests.test_calibration_activation.ReferenceCalibrationActivationTests.test_bound_record_is_explicit_v2_and_does_not_silently_change_v1_schema) ... ok
+test_damaged_active_snapshot_cannot_reset_on_restart_and_releases_authority_lock (tests.test_calibration_activation.ReferenceCalibrationActivationTests.test_damaged_active_snapshot_cannot_reset_on_restart_and_releases_authority_lock) ... ok
+test_controlled_binding_capture_readback_clear_and_persistent_configure (tests.test_calibration_http.CalibrationHttpTests.test_controlled_binding_capture_readback_clear_and_persistent_configure) ... 127.0.0.1 - - [05/Nov/2026 08:40:05] "POST /api/v1/control/acquire HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:40:05] "POST /api/v1/configure HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:40:05] "POST /api/v1/calibration/bind HTTP/1.1" 403 -
+127.0.0.1 - - [05/Nov/2026 08:40:05] "GET /api/v1/state HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:40:05] "POST /api/v1/calibration/bind HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:40:05] "POST /api/v1/captures HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:40:05] "GET /api/v1/captures/5af35d61-6899-4d2b-9fa9-5291b2d5855e HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:40:05] "GET /api/v1/captures/5af35d61-6899-4d2b-9fa9-5291b2d5855e HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:40:05] "GET /api/v1/state HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:40:05] "GET /api/v1/state HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:40:05] "POST /api/v1/calibration/clear HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:40:05] "GET /api/v1/captures/5af35d61-6899-4d2b-9fa9-5291b2d5855e HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:40:05] "GET /api/v1/state HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:40:05] "POST /api/v1/control/release HTTP/1.1" 200 -
+ok
+test_controlled_binding_capture_readback_clear_and_persistent_configure (tests.test_calibration_http.NativeCalibrationHttpTests.test_controlled_binding_capture_readback_clear_and_persistent_configure) ... 127.0.0.1 - - [05/Nov/2026 08:40:05] "POST /api/v1/control/acquire HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:40:05] "POST /api/v1/configure HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:40:05] "POST /api/v1/calibration/bind HTTP/1.1" 403 -
+127.0.0.1 - - [05/Nov/2026 08:40:05] "GET /api/v1/state HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:40:05] "POST /api/v1/calibration/bind HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:40:05] "POST /api/v1/captures HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:40:05] "GET /api/v1/captures/6038bde4-fe53-438d-a0a4-36a41b3de78a HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:40:05] "GET /api/v1/captures/6038bde4-fe53-438d-a0a4-36a41b3de78a HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:40:05] "GET /api/v1/state HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:40:05] "POST /api/v1/calibration/clear HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:40:05] "GET /api/v1/captures/6038bde4-fe53-438d-a0a4-36a41b3de78a HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:40:05] "GET /api/v1/state HTTP/1.1" 200 -
+127.0.0.1 - - [05/Nov/2026 08:40:05] "POST /api/v1/control/release HTTP/1.1" 200 -
+ok
+test_actual_process_lock_and_abrupt_exit_recovery (tests.test_camera_service.CameraServiceTests.test_actual_process_lock_and_abrupt_exit_recovery) ... ok
+test_capture_identity_and_payload_conflict (tests.test_camera_service.CameraServiceTests.test_capture_identity_and_payload_conflict) ... ok
+test_disconnect_persists_until_authorized_reconnect (tests.test_camera_service.CameraServiceTests.test_disconnect_persists_until_authorized_reconnect) ... ok
+test_expiration_does_not_interrupt_capture_or_allow_overlap (tests.test_camera_service.CameraServiceTests.test_expiration_does_not_interrupt_capture_or_allow_overlap) ... ok
+test_failed_admission_commit_rolls_back_and_stops_service (tests.test_camera_service.CameraServiceTests.test_failed_admission_commit_rolls_back_and_stops_service) ... ok
+test_fault_and_cancellation (tests.test_camera_service.CameraServiceTests.test_fault_and_cancellation) ... ok
+test_files_created_after_admission_are_never_overwritten_or_deleted (tests.test_camera_service.CameraServiceTests.test_files_created_after_admission_are_never_overwritten_or_deleted) ... ok
+test_interrupted_record_becomes_unknown_without_reexecution (tests.test_camera_service.CameraServiceTests.test_interrupted_record_becomes_unknown_without_reexecution) ... ok
+test_lease_heartbeat_and_expiry_fence (tests.test_camera_service.CameraServiceTests.test_lease_heartbeat_and_expiry_fence) ... ok
+test_no_completion_before_file_commit (tests.test_camera_service.CameraServiceTests.test_no_completion_before_file_commit) ... ok
+test_one_instance_per_data_dir (tests.test_camera_service.CameraServiceTests.test_one_instance_per_data_dir) ... ok
+test_process_crash_after_rename_is_unknown_and_not_reexecuted (tests.test_camera_service.CameraServiceTests.test_process_crash_after_rename_is_unknown_and_not_reexecuted) ... ok
+test_stale_epoch_and_restart (tests.test_camera_service.CameraServiceTests.test_stale_epoch_and_restart) ... ok
+test_thread_start_failure_releases_slot_and_journals_failure (tests.test_camera_service.CameraServiceTests.test_thread_start_failure_releases_slot_and_journals_failure) ... ok
+test_http_export_rejects_wrong_or_truncated_dng_despite_valid_identity_headers (tests.test_retained_captures.HttpRetainedTests.test_http_export_rejects_wrong_or_truncated_dng_despite_valid_identity_headers) ... ok
+test_native_bridge_uses_same_retained_assets_and_no_second_capture (tests.test_retained_captures.HttpRetainedTests.test_native_bridge_uses_same_retained_assets_and_no_second_capture) ... ok
+test_reference_http_list_asset_thumbnail_and_byte_identical_export_without_lease (tests.test_retained_captures.HttpRetainedTests.test_reference_http_list_asset_thumbnail_and_byte_identical_export_without_lease) ... ok
+test_caller_owned_inspector_stream_and_pinned_file_survive_path_changes (tests.test_retained_captures.ReferenceRetainedTests.test_caller_owned_inspector_stream_and_pinned_file_survive_path_changes) ... ok
+test_changed_cfa_color_mapping_or_layout_cannot_be_displayed_or_exported (tests.test_retained_captures.ReferenceRetainedTests.test_changed_cfa_color_mapping_or_layout_cannot_be_displayed_or_exported) ... ok
+test_corrupt_journal_row_cannot_redirect_a_requested_capture_to_another (tests.test_retained_captures.ReferenceRetainedTests.test_corrupt_journal_row_cannot_redirect_a_requested_capture_to_another) ... FAIL
+test_failed_active_unknown_missing_and_corrupt_sources_are_not_replayed (tests.test_retained_captures.ReferenceRetainedTests.test_failed_active_unknown_missing_and_corrupt_sources_are_not_replayed) ... ok
+test_keyset_pages_are_allowlisted_stable_and_survive_restart (tests.test_retained_captures.ReferenceRetainedTests.test_keyset_pages_are_allowlisted_stable_and_survive_restart) ... ok
+test_limits_and_cursor_require_completed_canonical_identity (tests.test_retained_captures.ReferenceRetainedTests.test_limits_and_cursor_require_completed_canonical_identity) ... ok
+test_open_descriptor_and_export_ignore_recorded_arbitrary_path (tests.test_retained_captures.ReferenceRetainedTests.test_open_descriptor_and_export_ignore_recorded_arbitrary_path) ... ok
+test_thumbnail_changes_when_actual_retained_samples_change (tests.test_retained_captures.ReferenceRetainedTests.test_thumbnail_changes_when_actual_retained_samples_change) ... ok
+test_wrong_dng_identity_and_publish_race_do_not_export (tests.test_retained_captures.ReferenceRetainedTests.test_wrong_dng_identity_and_publish_race_do_not_export) ... ok
+
+======================================================================
+FAIL: test_corrupt_journal_row_cannot_redirect_a_requested_capture_to_another (tests.test_retained_captures.ReferenceRetainedTests.test_corrupt_journal_row_cannot_redirect_a_requested_capture_to_another)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\derri\Documents\Codex\2026-11-05\task\tests\test_retained_captures.py", line 272, in test_corrupt_journal_row_cannot_redirect_a_requested_capture_to_another
+    self.assertEqual(caught.exception.code, 'capture_unavailable')
+AssertionError: 'journal_error' != 'capture_unavailable'
+- journal_error
++ capture_unavailable
+
+
+----------------------------------------------------------------------
+Ran 38 tests in 10.754s
+
+FAILED (failures=1)

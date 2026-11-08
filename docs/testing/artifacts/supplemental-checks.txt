@@ -1,0 +1,21 @@
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
+PASS: 89 native core assertions
+PASS: 82 native authority assertions
+{
+  "verified": [
+    "sqlite/sqlite3.c",
+    "sqlite/sqlite3.h",
+    "nlohmann/json.hpp",
+    "nlohmann/LICENSE.MIT"
+  ],
+  "sqlite_version": "3.54.1",
+  "nlohmann_json_version": "3.12.0"
+}
+ALL SUPPLEMENTAL CHECKS PASSED

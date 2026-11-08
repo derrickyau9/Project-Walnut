@@ -1,0 +1,49 @@
+{
+  "format": "DaOS-bsd-build-profile-v1",
+  "name": "daos-qemu-aarch64",
+  "backend": "netbsd",
+  "source_lock": "../../sources.lock.json",
+  "target": {
+    "machine": "evbarm",
+    "architecture": "aarch64",
+    "board": "qemu-virt"
+  },
+  "kernel": {
+    "name": "DAOS_QEMU",
+    "config": "DAOS_QEMU"
+  },
+  "world": {
+    "mk_conf": "mk.conf"
+  },
+  "packages": ["daos-core", "daos-camera"],
+  "storage": {
+    "root_mib": 1024,
+    "state_mib": 128,
+    "photos_mib": 256,
+    "efi_mib": 128
+  },
+  "boot_logo": {
+    "asset": "../../../../assets/boot-logo/DaOS-logo.png",
+    "kernel_file": "daos-boot-logo.png",
+    "mechanism": "netbsd-genfb-splashscreen",
+    "minimum_framebuffer": {"width": 743, "height": 554}
+  },
+  "emulator": {
+    "machine": "virt",
+    "cpu": "cortex-a72",
+    "memory_mib": 2048,
+    "firmware": "uefi-aarch64",
+    "framebuffer": "ramfb",
+    "network": "virtio-net",
+    "storage": "virtio-blk",
+    "input": "usb-keyboard-tablet"
+  },
+  "validation": {
+    "status": "profile-defined-not-boot-validated",
+    "required": ["source-build", "uefi-boot", "kernel-splash", "usb-keyboard-mouse", "virtio-storage", "virtio-network", "camera-service"]
+  },
+  "notes": [
+    "Generic QEMU virt boot does not validate Raspberry Pi 4 hardware drivers.",
+    "The core profile does not yet include a NetBSD build of the Qt/PyQt UI."
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "returncode": 0,
+  "seconds": 12.765037587999814,
+  "stderr": "",
+  "stdout": "{\"complete\": true, \"seconds\": 11.133244479999803, \"phases\": [{\"name\": \"original_lookup_sampler\", \"python_middle_samples\": 0}, {\"name\": \"cached_item_sampler\", \"python_middle_samples\": 2}], \"qml_events\": 46, \"screenshots\": [{\"callbackProgress\": 0.8765931630353118, \"file\": \"qml-cached-middle.png\", \"requestProgress\": 0.8765931630353118, \"saved\": true, \"wallMs\": 1793929449846.0}], \"error\": null}\n"
+}

@@ -1,0 +1,51 @@
+{
+  "revision": "0.2",
+  "status": "MODELED GEOMETRY CHECKS PASS; ENGINEERING RELEASE BLOCKED",
+  "date": "2026-11-05",
+  "part_groups": 29,
+  "legacy_geometry_checks_passed": 17,
+  "all_pair_count_per_variant": {
+    "E": 351,
+    "EF": 351
+  },
+  "service_paths_passed": [
+    "Battery downward service",
+    "Storage outward service",
+    "Sensor bridge rear service",
+    "Control PCB and rails rear service"
+  ],
+  "step_roundtrip": [
+    {
+      "file": "exports/HassleFree_FF1_E_assembly.step",
+      "valid": true,
+      "solid_count": 39,
+      "volume_mm3": 323798.7627600212
+    },
+    {
+      "file": "exports/HassleFree_FF1_EF_assembly.step",
+      "valid": true,
+      "solid_count": 39,
+      "volume_mm3": 377352.36175240885
+    }
+  ],
+  "glb_mm_to_m_scale": [
+    0.0010000000474974513,
+    0.0010000000474974513,
+    0.0010000000474974513
+  ],
+  "independent_review": "Independent reviewer confirmed zero solid overlaps, PCB mount alignment, seat area and sensor sweep against all retained modeled parts.",
+  "open_p0": [
+    "Actual sensor package and datum/optical stack",
+    "True lens interface and rear-group/optical clearance",
+    "Thermal path: measured 19 mm unbridged gap",
+    "Complete populated electronics, mating connectors and cables",
+    "Actual fastening, locating, clamping and shell-to-frame load path"
+  ],
+  "limits": [
+    "Model intersections are not tolerance-stack proof.",
+    "Real populated PCB, mating connectors, wires and selected sensor package are not provided.",
+    "Service checks omit all unmodeled retaining hardware and cables.",
+    "Thermal gap is an unresolved issue, not a passed cooling design.",
+    "HUMI rings are axial datum references, not functional E/EF interfaces."
+  ]
+}

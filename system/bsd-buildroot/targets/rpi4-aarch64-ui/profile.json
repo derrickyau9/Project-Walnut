@@ -1,0 +1,55 @@
+{
+  "format": "DaOS-bsd-build-profile-v1",
+  "name": "daos-rpi4-aarch64-ui",
+  "backend": "netbsd",
+  "source_lock": "../../sources-ui.lock.json",
+  "target": {
+    "machine": "evbarm",
+    "architecture": "aarch64",
+    "board": "raspberrypi4"
+  },
+  "kernel": {
+    "name": "DAOS_RPI4",
+    "config": "DAOS_RPI4"
+  },
+  "world": {
+    "mk_conf": "mk.conf"
+  },
+  "packages": [
+    "daos-core",
+    "daos-camera",
+    "daos-ui"
+  ],
+  "storage": {
+    "root_mib": 6144,
+    "state_mib": 128,
+    "photos_mib": 256,
+    "efi_mib": 128
+  },
+  "boot_logo": {
+    "asset": "../../../../assets/boot-logo/DaOS-logo.png",
+    "kernel_file": "daos-boot-logo.png",
+    "mechanism": "netbsd-genfb-splashscreen",
+    "minimum_framebuffer": {
+      "width": 743,
+      "height": 554
+    }
+  },
+  "validation": {
+    "status": "profile-defined-not-boot-validated",
+    "required": [
+      "source-build",
+      "kernel-splash",
+      "hdmi",
+      "usb-keyboard-mouse",
+      "sd-storage",
+      "ethernet",
+      "camera-service"
+    ]
+  },
+  "notes": [
+    "NetBSD is the disclosed source-built upstream.",
+    "Base system, X11 and kernel are built from pinned source; Qt/PyQt comes from an explicitly locked NetBSD pkgsrc binary runtime.",
+    "QEMU validates the ARM64 runtime; physical Pi4 USB, HDMI and sensor acceptance is separate."
+  ]
+}

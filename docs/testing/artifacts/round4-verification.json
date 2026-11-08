@@ -1,0 +1,92 @@
+{
+  "format": "hf-sim-round4-verification-v1",
+  "date": "2026-11-05",
+  "scope": "software simulator and logical RTL only; no physical camera validation",
+  "windows_integration": {
+    "run": 226,
+    "passed": 224,
+    "skipped": 2,
+    "seconds": 55.11,
+    "skips": "POSIX-only host tests, passed separately on Linux"
+  },
+  "windows_supplemental_reference_models": {
+    "run": 8,
+    "passed": 8
+  },
+  "native_assertions_per_platform": {
+    "core": 89,
+    "authority": 82
+  },
+  "linux_targeted_groups": {
+    "native_daemon": 17,
+    "native_client": 15,
+    "host": 17,
+    "http_client": 19,
+    "failures": 0,
+    "skipped": 0,
+    "note": "separate invocations, overlapping Windows cases"
+  },
+  "actual_iverilog_configurations": 6,
+  "verified_evidence_source_hashes": 6,
+  "verified_linux_executable_hashes": 4,
+  "remote_ci_run": false,
+  "systemd_service_enabled": false,
+  "artifacts": {
+    "docs/testing/artifacts/latest-suite.txt": {
+      "sha256": "85ab474d350048c34c55282d45a46d4de4db61bfc7d3eef463165406ed3289d9",
+      "bytes": 38665
+    },
+    "docs/testing/artifacts/supplemental-checks.txt": {
+      "sha256": "89d9f19fc86814e7c6893dc3788c3e70d42abfea02c00d90480b6213dcf54f5d",
+      "bytes": 506
+    },
+    "docs/testing/g1-evidence.md": {
+      "sha256": "54c24f5e362c3c53497f51e9e4e85baec427339bbd1f4c623e2d45f23289825c",
+      "bytes": 14122
+    },
+    "docs/testing/native-audit-round4.md": {
+      "sha256": "e2a529e012046cfc919c77bd272b3106cc9064cc76f95df871d6c2a91e05ccd7",
+      "bytes": 8366
+    },
+    "docs/testing/ui-audit-round4.md": {
+      "sha256": "c211d639c16951a5db6dd6a7364f81ed975f78323897ad214ece2cf2ec4c0052",
+      "bytes": 5702
+    },
+    "fpga/testbench/rtl-simulation-evidence.json": {
+      "sha256": "870b3079df64faaba75f06f6220083c27419b342b8e94766d5669f27a8da7c13",
+      "bytes": 30875
+    },
+    "fpga/testbench/toolchain-manifest.json": {
+      "sha256": "208012c8238b99e8d477e46126111ebc4d2ae7c9803b14655b434df084645281",
+      "bytes": 18449
+    },
+    "fpga/testbench/tb_dng_roundtrip.sv": {
+      "sha256": "90e27b9cdd110530e08aa615bdf9cb3b017dcb2dab26c1d97f8c47597836ce62",
+      "bytes": 3856
+    },
+    "tests/test_fpga_dng.py": {
+      "sha256": "a064fdc08c7bc439e01d8745aad0b6185911e18fba9c1ab3b921cfec22444b19",
+      "bytes": 3791
+    },
+    "system/linux/evidence/build-evidence.json": {
+      "sha256": "ed4c00d5be932301c6e8784da606ba54b059de1a22f1c1738aa312101a11c385",
+      "bytes": 8492
+    },
+    "system/linux/evidence/deployment-evidence.json": {
+      "sha256": "54239df19f55e8dd9d4652b6a649614e70af094102459c891804db006660c6ac",
+      "bytes": 1931
+    },
+    "system/linux/evidence/cross-os-lock-evidence.json": {
+      "sha256": "0d435e355b62331ac9dc14ceec684382e476d82a7c6a23964c6c4c85ab836378",
+      "bytes": 1561
+    },
+    "system/linux/evidence/host-safety-evidence.json": {
+      "sha256": "69699beb68fe1aa8b99474c949ce1b7c9f102055aba3d366a9f224ee73214133",
+      "bytes": 1690
+    },
+    "ui/on-device/evidence/validation.json": {
+      "sha256": "9c97e7cb00b3d9a85520d5bdabd61b39f50930d0ea6d8e9270d2d47331647075",
+      "bytes": 3585
+    }
+  }
+}

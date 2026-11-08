@@ -1,0 +1,5 @@
+/dev/gpt/DaOS-root         /                              ufs     ro              1 1
+/dev/gpt/DaOS-state        /var                           ufs     rw,noatime      2 2
+/dev/gpt/DaOS-calibration  /var/DaOS/calibration          ufs     rw,noatime      2 2
+/dev/gpt/DaOS-photos       /var/DaOS/camera/photos        ufs     rw,noatime      2 2
+tmpfs                     /tmp                           tmpfs   rw,mode=1777    0 0

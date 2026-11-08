@@ -1,0 +1,12 @@
+test_boot_verification_rejects_host_fake_wrong_abi_and_lost_persistence (tests.test_target_build.TargetRecipeTests.test_boot_verification_rejects_host_fake_wrong_abi_and_lost_persistence) ... ok
+test_fast_exit_log_overflow_is_rejected_and_descendant_is_stopped (tests.test_target_build.TargetRecipeTests.test_fast_exit_log_overflow_is_rejected_and_descendant_is_stopped) ... ok
+test_new_workspace_cannot_pollute_source_camera_or_release (tests.test_target_build.TargetRecipeTests.test_new_workspace_cannot_pollute_source_camera_or_release) ... ok
+test_plan_expands_home_consistently_without_creating_output (tests.test_target_build.TargetRecipeTests.test_plan_expands_home_consistently_without_creating_output) ... ok
+test_plan_is_argv_only_and_offline_requires_explicit_verified_caches (tests.test_target_build.TargetRecipeTests.test_plan_is_argv_only_and_offline_requires_explicit_verified_caches) ... ok
+test_stage_output_bound_is_not_a_successful_component (tests.test_target_build.TargetRecipeTests.test_stage_output_bound_is_not_a_successful_component) ... ok
+test_stage_timeout_stops_its_own_process_group_and_retains_log (tests.test_target_build.TargetRecipeTests.test_stage_timeout_stops_its_own_process_group_and_retains_log) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.909s
+
+OK

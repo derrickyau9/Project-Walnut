@@ -1,0 +1,188 @@
+{
+  "format": "Project-HassleFree-archived-OpenBSD-development-tools-v1",
+  "scope": "Project-owned build/review scripts only; original contents preserved, fixed development paths may remain. Not a supported installer.",
+  "excluded": "Third-party operating-system extracts, downloaded inputs, private RAM images, SSH/AP credentials and generated logs",
+  "files": [
+    {
+      "path": "tools/experimental/openbsd/prepare_ram_payload.py",
+      "original_working_path": "build/DaOS_OpenBSD_001/prepare_ram_payload.py",
+      "bytes": 6192,
+      "sha256": "51aa87679c4f7b7583e23e63a886ba53154cfcbee118c3ff7f919f59f7c0c0ea"
+    },
+    {
+      "path": "tools/experimental/openbsd/prepare_physical_ram_payload.py",
+      "original_working_path": "build/DaOS_OpenBSD_001/prepare_physical_ram_payload.py",
+      "bytes": 7070,
+      "sha256": "fa1a1813486efc56922f2b74f8cf4147dea69b9cce61a51a0e8113085fefa9f4"
+    },
+    {
+      "path": "tools/experimental/openbsd/qa_stock_ram_qemu.py",
+      "original_working_path": "build/DaOS_OpenBSD_001/qa_stock_ram_qemu.py",
+      "bytes": 5182,
+      "sha256": "fb10cc2a532b2c8432fc10f020c9f0a24ba305a5914ca4f5f7614b63c3b6f77e"
+    },
+    {
+      "path": "tools/experimental/openbsd/chain-review/prepare_chain_fixture.py",
+      "original_working_path": "build/DaOS_OpenBSD_001/chain-review/prepare_chain_fixture.py",
+      "bytes": 4637,
+      "sha256": "8e02c53aa0e909b7d5d38888dbcbd8ce7df4febe787d47bc3121390570b62f03"
+    },
+    {
+      "path": "tools/experimental/openbsd/chain-review/build_fixture_native.py",
+      "original_working_path": "build/DaOS_OpenBSD_001/chain-review/build_fixture_native.py",
+      "bytes": 2779,
+      "sha256": "51398a03fc20e4f7565adf24e24de6544bd93fe00a6711eafb6a1265db399952"
+    },
+    {
+      "path": "tools/experimental/openbsd/chain-review/build_fixture_host.py",
+      "original_working_path": "build/DaOS_OpenBSD_001/chain-review/build_fixture_host.py",
+      "bytes": 1287,
+      "sha256": "d3ae80c09b7d4f79ef17b7f866ff8d85a626e05b78a2332d03c8f87f4f18a176"
+    },
+    {
+      "path": "tools/experimental/openbsd/chain-review/build_qemu_uboot.py",
+      "original_working_path": "build/DaOS_OpenBSD_001/chain-review/build_qemu_uboot.py",
+      "bytes": 2883,
+      "sha256": "c8e420b87c364e77216c977235f5e882104307321fda0c36f016ea7a68ca7438"
+    },
+    {
+      "path": "tools/experimental/openbsd/chain-review/seed_fixture_efi_variables.py",
+      "original_working_path": "build/DaOS_OpenBSD_001/chain-review/seed_fixture_efi_variables.py",
+      "bytes": 2096,
+      "sha256": "226287757c42644c17fbfcf1c31c31f2e5a32749da192cbf14f656bf40e37d91"
+    },
+    {
+      "path": "tools/experimental/openbsd/chain-review/qa_chain_qemu.py",
+      "original_working_path": "build/DaOS_OpenBSD_001/chain-review/qa_chain_qemu.py",
+      "bytes": 9428,
+      "sha256": "0e8c3fbc576215393805e1a7d2d477bd0deefc2f579fe53b01da68568d461639"
+    },
+    {
+      "path": "tools/experimental/openbsd/chain-review/verify_openbsd_sources.py",
+      "original_working_path": "build/DaOS_OpenBSD_001/chain-review/verify_openbsd_sources.py",
+      "bytes": 2661,
+      "sha256": "6d02904d8c38ad671e3a0b3171d06fab9ec8b7138c10730d13be1e285653abf7"
+    },
+    {
+      "path": "tools/experimental/openbsd/chain-review/once-review.lua",
+      "original_working_path": "build/DaOS_OpenBSD_001/chain-review/once-review.lua",
+      "bytes": 2762,
+      "sha256": "ea231cbebdec2207c2841fe29bb8486c28a2d3ebb7c6392392caebd9b9221be1"
+    },
+    {
+      "path": "tools/experimental/openbsd/chain-review/test_sequence.lua",
+      "original_working_path": "build/DaOS_OpenBSD_001/chain-review/test_sequence.lua",
+      "bytes": 9229,
+      "sha256": "79b5ca418fcef6bfa846d1d6dd32f28ce72fdc81d938d5c17dd6e541338d74e4"
+    },
+    {
+      "path": "tools/experimental/openbsd/fdt-review/build_candidate.py",
+      "original_working_path": "build/DaOS_OpenBSD_001/fdt-review/build_candidate.py",
+      "bytes": 6431,
+      "sha256": "f96091476634b82986683181a5af4f9f45d0204dc2b6e404c8c93ba96fab79bf"
+    },
+    {
+      "path": "tools/experimental/openbsd/fdt-review/inspect_runtime.py",
+      "original_working_path": "build/DaOS_OpenBSD_001/fdt-review/inspect_runtime.py",
+      "bytes": 3800,
+      "sha256": "538d31844cada384561cfcd5c083239b581b8fb6f395df056ad9f4a486d676fc"
+    },
+    {
+      "path": "tools/experimental/openbsd/fdt-review/prepare_dtb_fixture.py",
+      "original_working_path": "build/DaOS_OpenBSD_001/fdt-review/prepare_dtb_fixture.py",
+      "bytes": 4055,
+      "sha256": "87d4bdb30c2649b6f583f888af39efe97e12c9d3c4c43bd33e1893c4f829c06c"
+    },
+    {
+      "path": "tools/experimental/openbsd/fdt-review/qa_dtb_qemu.py",
+      "original_working_path": "build/DaOS_OpenBSD_001/fdt-review/qa_dtb_qemu.py",
+      "bytes": 10104,
+      "sha256": "82563869fdc269273dffe0f5e2b036a58721d6bc4e92236e2a09777719373036"
+    },
+    {
+      "path": "tools/experimental/openbsd/usb-postmortem-review/map_ufs.c",
+      "original_working_path": "build/DaOS_OpenBSD_001/usb-postmortem-review/map_ufs.c",
+      "bytes": 1588,
+      "sha256": "fc4ad2f0584a3507f94c79872929ee1eb0cf609879703c3ea5ac9023653acfba"
+    },
+    {
+      "path": "tools/experimental/openbsd/usb-postmortem-review/native_ufs_fixture.py",
+      "original_working_path": "build/DaOS_OpenBSD_001/usb-postmortem-review/native_ufs_fixture.py",
+      "bytes": 8910,
+      "sha256": "4a3bee0d4978af391a269ad9d3389934c3691c2379305bbc08533363d7e80f03"
+    },
+    {
+      "path": "tools/experimental/openbsd/usb-postmortem-review/run_native_ufs.py",
+      "original_working_path": "build/DaOS_OpenBSD_001/usb-postmortem-review/run_native_ufs.py",
+      "bytes": 1675,
+      "sha256": "167fc1714bd07bfc14a1843ed6fb3c9d554e6725904b208faa94f1e124d82124"
+    },
+    {
+      "path": "tools/experimental/openbsd/watchdog-kernel-cross-001/build_full_kernel.py",
+      "original_working_path": "build/DaOS_OpenBSD_001/watchdog-kernel-cross-001/build_full_kernel.py",
+      "bytes": 5276,
+      "sha256": "bcab663c710ef373e5e85c381e1fd72ba5cb3b2838d50610142c589d3e7bd918"
+    },
+    {
+      "path": "tools/experimental/openbsd/watchdog-kernel-cross-001/compare_apm_objects.py",
+      "original_working_path": "build/DaOS_OpenBSD_001/watchdog-kernel-cross-001/compare_apm_objects.py",
+      "bytes": 789,
+      "sha256": "2bb1cb12e720cec962a0b46b529c0bcfdff374f70a7636bc074f5ab31ce224ee"
+    },
+    {
+      "path": "tools/experimental/openbsd/watchdog-kernel-cross-001/compare_objects.py",
+      "original_working_path": "build/DaOS_OpenBSD_001/watchdog-kernel-cross-001/compare_objects.py",
+      "bytes": 2668,
+      "sha256": "f996bee441fb815775220d6e65c27c44b4467196b831df79cedf3a51b9a12338"
+    },
+    {
+      "path": "tools/experimental/openbsd/watchdog-kernel-cross-001/finalize_probe_index.py",
+      "original_working_path": "build/DaOS_OpenBSD_001/watchdog-kernel-cross-001/finalize_probe_index.py",
+      "bytes": 4019,
+      "sha256": "4c6a20eeca29aac6cb864ddbe951a94551d00e1ec246f825aa6387c158b827af"
+    },
+    {
+      "path": "tools/experimental/openbsd/watchdog-kernel-cross-001/link_full_kernel.py",
+      "original_working_path": "build/DaOS_OpenBSD_001/watchdog-kernel-cross-001/link_full_kernel.py",
+      "bytes": 3899,
+      "sha256": "ba9b2903f8d8edb3a5b3429cd610f2ab572cedd8a265cd3077d4b0943b060612"
+    },
+    {
+      "path": "tools/experimental/openbsd/watchdog-kernel-cross-001/prepare_apm_reference.py",
+      "original_working_path": "build/DaOS_OpenBSD_001/watchdog-kernel-cross-001/prepare_apm_reference.py",
+      "bytes": 1752,
+      "sha256": "7b6a03b1efd0adc900b1689a540f35bc972824180ee2f5ed50ebad1c0732fed4"
+    },
+    {
+      "path": "tools/experimental/openbsd/watchdog-kernel-cross-001/prepare_native_tail.py",
+      "original_working_path": "build/DaOS_OpenBSD_001/watchdog-kernel-cross-001/prepare_native_tail.py",
+      "bytes": 2705,
+      "sha256": "e1c5bef207741f4625f6453ec374c7d78ac32729ae0782fa6acbabde7d9e4867"
+    },
+    {
+      "path": "tools/experimental/openbsd/watchdog-kernel-cross-001/prepare_toolchain.py",
+      "original_working_path": "build/DaOS_OpenBSD_001/watchdog-kernel-cross-001/prepare_toolchain.py",
+      "bytes": 4477,
+      "sha256": "1e7e9dda6739a05adb30ba7e47e545f71a28988246d40fa3f48b249366f20762"
+    },
+    {
+      "path": "tools/experimental/openbsd/watchdog-kernel-cross-001/probe_objects.py",
+      "original_working_path": "build/DaOS_OpenBSD_001/watchdog-kernel-cross-001/probe_objects.py",
+      "bytes": 6160,
+      "sha256": "f61b6896c58cdaaaa3034f9c82f4e1ae047d549efab6af438b59d114e915e6f6"
+    },
+    {
+      "path": "tools/experimental/openbsd/watchdog-kernel-cross-001/validate_bare_kernel.py",
+      "original_working_path": "build/DaOS_OpenBSD_001/watchdog-kernel-cross-001/validate_bare_kernel.py",
+      "bytes": 2837,
+      "sha256": "2ba5e87d620fadbc78748c1b0a9c1347bafca51f396d75bbdd82272bd4ad507d"
+    },
+    {
+      "path": "tools/experimental/openbsd/watchdog-kernel-cross-001/verify_source_inputs.py",
+      "original_working_path": "build/DaOS_OpenBSD_001/watchdog-kernel-cross-001/verify_source_inputs.py",
+      "bytes": 2106,
+      "sha256": "d210398b5500cee01c12a6fc53fe27cd2747dbd14e3908e9b6da107770eca8be"
+    }
+  ],
+  "requested_paths_absent": []
+}

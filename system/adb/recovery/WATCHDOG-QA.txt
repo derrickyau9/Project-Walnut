@@ -1,0 +1,64 @@
+RAM-only watchdog QA controller (explicit actions; never starts at boot)
+
+This controller has not been executed on the Pi by its author. plan inspects;
+disarm arms hardware briefly; fault deliberately causes a hardware reset.
+Production kernel_watchdog.c and its binary remain unchanged. The controller
+issues only read-only GETTIMEOUT ioctl 0x40085736; the bound binary owns all
+arming/feeding/disarming calls. Official pinned-header proof is in the build
+watchdog-qa-controller/ioctl-proof.json artifact.
+
+Prerequisites before any launch
+- Successfully booted and authenticated current independent FAT RAM rescue.
+- Verified armed FAT selector, normal.running=1, and clean normal-return proof.
+- Normal SD watchdog enable policy remains absent; never create it in normal OS.
+- Current / is resident /dev/md0 UFS rw; dedicated tmpfs is mode0700; swap0.
+- ALL physical filesystems and nullfs aliases are unmounted, including EFI,
+  photos and calibration. The controller rejects read-only physical mounts too.
+- Actual BCM watchdog driver must be attached, and no watchdog already armed.
+
+Upload only to the private RAM directory, with root ownership:
+/DaOS-recovery-ram/watchdog-qa/                         mode0700
+/DaOS-recovery-ram/watchdog-qa/qa_watchdog_ram.py       mode0644
+/DaOS-recovery-ram/watchdog-qa/kernel-watchdog           mode0755
+The binary must SHA256-match:
+b06cdf2b16b375c6d287a48e3c7b7d8196b0a9cc9bcc6b12f1a3dd2db1fdcdac
+Do not copy it to the canonical auto-start path during this test.
+
+Commands (authenticated RAM rescue root only)
+python3.12 -I -B /DaOS-recovery-ram/watchdog-qa/qa_watchdog_ram.py plan --selector-sha256 EXPECTED_FAT_BOOT_SCR_SHA256
+python3.12 -I -B /DaOS-recovery-ram/watchdog-qa/qa_watchdog_ram.py disarm --selector-sha256 EXPECTED_FAT_BOOT_SCR_SHA256
+Save the complete printed JSON and pull the returned disarm-UUID.json receipt
+to the host. The test must report disarm-observation-passed after twelve full
+seconds with unchanged boot identity and GETTIMEOUT=0.
+
+The next action requires that same-boot successful receipt, no older than900s:
+python3.12 -I -B /DaOS-recovery-ram/watchdog-qa/qa_watchdog_ram.py fault --selector-sha256 EXPECTED_FAT_BOOT_SCR_SHA256 --disarm-receipt /DaOS-recovery-ram/watchdog-qa/disarm-UUID.json
+
+The controller holds the normal RAM flash-writer lock. It reads the exact bound
+EFI provider read-only, checks selector SHA and one-byte marker1, unmounts it,
+then rechecks isolation before hardware is armed. Only after proof does it
+temporarily create0444 policy inside RAM /etc, unset daos_recovery for this
+single launch, and wait for an ARMED line matching its owned detached PID.
+It immediately restores daos_recovery=YES and removes the RAM policy. The
+running binary checks its enable guard only at startup; no production guard or
+production policy is changed.
+
+Fault proof
+Capture stdout incrementally on the host. BEFORE SIGSTOP it prints a complete
+receipt containing a fresh nonce-file path/value, boot tuple and expected8s
+reset. SIGSTOP targets only the live Popen child. A reset ends the controller;
+there can be no ordinary success exit. Require new USB transport/authentication,
+fresh RAM rescue identity, and absence of that prior nonce path after reconnect.
+Compare full boot tuple too, but do not rely solely on it: a Pi without RTC can
+reuse the RAM filesystem creation time. RAM receipts disappear on reset, so the
+host must preserve the pre-stop receipt. ADB disconnect alone is not proof.
+
+If no reset occurs by15s, the controller resumes and TERM-disarms its owned
+child, observes another12s, and returns fault-no-reset-failed. Any unexpected
+pre-existing policy, mounted media, swap, identity/hash change, active watchdog,
+missing ARM acknowledgement or stale disarm receipt refuses the test. A partial
+hardware arm failure can still lead to reset; keep media protected and inspect
+the reported cleanup error rather than assuming the watchdog is off.
+
+This proves feeder-stop watchdog reset and boot failover. It does not simulate
+every possible kernel/hardware hang, and does not enable production feeding.

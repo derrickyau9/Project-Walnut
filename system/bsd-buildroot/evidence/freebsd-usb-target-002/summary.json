@@ -1,0 +1,66 @@
+{
+  "format": "DaOS-FreeBSD-USB-buildroot-host-validation-v2",
+  "status": "configure-and-base-reuse-success-image-not-executed",
+  "input_hash": "34167c704a21b1aaa1da64be3ab7526f8282e01fb1066c14555a01cf77b7326b",
+  "workspace": "/home/dy09/daos-bsd-buildroot-usb-scratchguard-002",
+  "default_workspace": true,
+  "stages_actually_verified": [
+    "Windows-plan",
+    "configure",
+    "base-reuse",
+    "scratch-insufficient-space-rejection"
+  ],
+  "source_compilation_executed": false,
+  "USB_build_executed_via_new_backend": false,
+  "package_or_image_build_executed_via_new_backend": false,
+  "VM_started": false,
+  "physical_usb_validated": false,
+  "base_reused": true,
+  "world_recompiled": false,
+  "kernel_recompiled": false,
+  "image_scratch_observation": {
+    "status": "refused-insufficient-free-space",
+    "actual_native_preflight": true,
+    "available_bytes": 4674363392,
+    "required_bytes": 12616466432,
+    "actual_successful_image_assembly_tested": false,
+    "mock_available_case_passed": true,
+    "no_cleanup_or_image_mutation": true
+  },
+  "tests_already_completed": {
+    "full_host_suite": {
+      "passed": 60,
+      "exit_status": 0,
+      "duration_seconds": 6.535
+    },
+    "final_default_cli_regression": {
+      "passed": 31,
+      "exit_status": 0,
+      "duration_seconds": 6.27
+    },
+    "Windows_host_client": {
+      "passed": 7,
+      "exit_status": 0,
+      "duration_seconds": 0.012
+    }
+  },
+  "evidence_sha256": {
+    "configure.json": "1303b812945672e838dcfde4a407ef6db97d6d04ccd64fa58cea3be4348044dd",
+    "base-reuse.json": "22f4c3ed9c7da04fdfe0c8d00d0c3d103d5f2068d189e923adc274882196a8fb",
+    "workspace.json": "430706eef42c54f7a0260f265b70d6a7606be6afd5659759733a46d60cbb80f8",
+    "configure-verification.log": "7c60ed4ab3a569ce268a1f1f7de49cc4684d280506244ccce075070019bec418",
+    "base-reuse-verification.log": "edb764fcdd2f851991d3329a98cadfdc4b68642868f21226a35f26e93ba1dbaf",
+    "scratch-preflight-blocked.log": "1d8087b9fca1f147d3b3e4d1947d3a0fc33a21a761576dd0c15b3a6f1df86528",
+    "windows-cli-plan.json": "58b717806ac9f99748e3e2aab1b2857470c1f9285961f36e1f1a26304a311988"
+  },
+  "source_sha256": {
+    "system/bsd-buildroot/daos.py": "f0bb112fa0c777e8f5d75a4bcfe4479faa85b9c532100f4e69b5cfb9b5ef845f",
+    "system/bsd-buildroot/backends/freebsd_usb.py": "f0029eee8292a0c733081eb9eca92bb4773625fca06d10695991696bf79f8c3d",
+    "system/bsd-buildroot/backends/freebsd_usb_guest.py": "65a3460f8b9c08e870698baf6812cf2dd39a134a43662fd1e2a5244b3f9674b5",
+    "system/bsd-buildroot/targets/rpi4-aarch64-usb/profile.json": "46121a11d62c85dca09a8b4006d3417487aad3a1a441cd80afdab58a76f049e9"
+  },
+  "previous_evidence": "../freebsd-usb-target-001/summary.json",
+  "delivered_image_directory": "F:/Project HasselFree/build/DaOS_BSD_RPi4_USB_ADB_ARM64",
+  "documentation": "system/adb/README.md",
+  "new_validation_stopped": true
+}

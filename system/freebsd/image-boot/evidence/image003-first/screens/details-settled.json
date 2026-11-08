@@ -1,0 +1,14 @@
+{
+  "UI_readiness_claimed": false,
+  "conversion": "RGB pixels unchanged; P6 to PNG format only",
+  "format": "DaOS-virtual-framebuffer-v1",
+  "height": 600,
+  "name": "details-settled",
+  "nonblack_pixels": 479946,
+  "png": "/home/dy09/hf-task-freebsd-r10/image-boot-003/screens/details-settled.png",
+  "png_sha256": "088f4c193c5a5ce1716eaca2ae805c5e0ff4c1ef6ce1c8dcacf555f49aa2f51a",
+  "ppm": "/home/dy09/hf-task-freebsd-r10/image-boot-003/screens/details-settled.ppm",
+  "ppm_sha256": "73bc39559556317dfc89b6dd565c1f66c36bedf7bc9d31b3b03b287d6d400a90",
+  "rgb_sha256": "3b02a794d66aad857dea1850f7c8cab92a3a00f0aca45e39c91262b59ff9f345",
+  "width": 800
+}

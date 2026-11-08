@@ -1,0 +1,968 @@
+{
+  "format": "DaOS-freebsd-arm64-target-validation-v1",
+  "status": "completed",
+  "passed": true,
+  "execution_kind": "actual_target",
+  "build_kind": "cross",
+  "target": {
+    "architecture": "arm64",
+    "elf_machine": 183,
+    "osabi": 9
+  },
+  "machine": "arm64",
+  "sys_platform": "freebsd15",
+  "uid": 1000,
+  "uname": {
+    "sysname": "FreeBSD",
+    "nodename": "daos-arm64-dev",
+    "release": "15.1-RELEASE-p6",
+    "version": "FreeBSD 15.1-RELEASE-p6 releng/15.1-n283643-95719d8a895b GENERIC",
+    "machine": "arm64"
+  },
+  "python": "3.12.15 (main, Oct 29 2026, 02:27:54) [Clang 19.1.7 (https://github.com/llvm/llvm-project.git llvmorg-19.1.7-0-gcd7080",
+  "simulated": true,
+  "target_runtime_validated": true,
+  "physical_camera_validated": false,
+  "tools": {
+    "ctest": {
+      "invoked_path": "/usr/local/bin/ctest",
+      "resolved_path": "/usr/local/bin/ctest",
+      "sha256": "905731a08aca9262ebd94034dc73d39cbde0c88fcbac42b897e63adba8cb20bb",
+      "version_output": "ctest version 3.31.12\n\nCMake suite maintained and supported by Kitware (kitware.com/cmake).\n"
+    },
+    "python": {
+      "invoked_path": "/usr/local/bin/python3.12",
+      "resolved_path": "/usr/local/bin/python3.12",
+      "sha256": "520bb03c617e54592ba3ab596663abba5f554f606e29010609d8e97909f9d378",
+      "version_output": "Python 3.12.15\n"
+    },
+    "freebsd_version": {
+      "invoked_path": "/bin/freebsd-version",
+      "resolved_path": "/bin/freebsd-version",
+      "sha256": "534648ed988fc2860e1e7ed43ab2da1b08cf5b4396b80d12460ea52639fe166e"
+    }
+  },
+  "commands": [
+    {
+      "command": [
+        "/usr/local/bin/ctest",
+        "--version"
+      ],
+      "returncode": 0,
+      "seconds": 0.377,
+      "log": "ctest-version.log",
+      "log_bytes": 92,
+      "log_sha256": "b73dd7d80f5b82259cc0e7ffe8054f7620406672fe76f97afc5e0902e66b6b55"
+    },
+    {
+      "command": [
+        "/usr/local/bin/python3.12",
+        "--version"
+      ],
+      "returncode": 0,
+      "seconds": 0.112,
+      "log": "python-version.log",
+      "log_bytes": 15,
+      "log_sha256": "9bdce2f3bc127762fcb79db8faf0385c42e81e916436db64486d7162bc1d04e0"
+    },
+    {
+      "command": [
+        "/bin/freebsd-version",
+        "-ku"
+      ],
+      "returncode": 0,
+      "seconds": 0.24,
+      "log": "freebsd-version.log",
+      "log_bytes": 32,
+      "log_sha256": "4d73701843c061ced3da719996df47a5f0b2e1bb4b35a9b6844368fb9ffaa355"
+    },
+    {
+      "command": [
+        "/usr/local/bin/ctest",
+        "--test-dir",
+        "/opt/hasslefree/build/freebsd-arm64-native-001",
+        "--show-only=json-v1"
+      ],
+      "returncode": 0,
+      "seconds": 0.135,
+      "log": "ctest-list.log",
+      "log_bytes": 2292,
+      "log_sha256": "6f7883a2bc46201e19249849de362d697c7eaeb64e117676b25a9f6f5e22b8ef"
+    },
+    {
+      "command": [
+        "/usr/local/bin/ctest",
+        "--test-dir",
+        "/opt/hasslefree/build/freebsd-arm64-native-001",
+        "--output-on-failure",
+        "--timeout",
+        "180",
+        "--parallel",
+        "1",
+        "--output-junit",
+        "/opt/hasslefree/build/arm64-validation-002/ctest-results.xml"
+      ],
+      "returncode": 0,
+      "seconds": 3.06,
+      "log": "ctest.log",
+      "log_bytes": 618,
+      "log_sha256": "a958cbd8338e2e3abd27a41d19924fd8d1ab26ec2e6ead4833e1a8527b885fc3"
+    },
+    {
+      "command": [
+        "/usr/local/bin/python3.12",
+        "-B",
+        "-c",
+        "\nimport json,sys,unittest\nfrom pathlib import Path\nclass CapturingResult(unittest.TextTestResult):\n    def __init__(self,*args,**kwargs):\n        super().__init__(*args,**kwargs); self.successes=[]\n    def addSuccess(self,test):\n        super().addSuccess(test);self.successes.append(test.id())\nsuite=unittest.defaultTestLoader.loadTestsFromNames(sys.argv[2:])\nresult=unittest.TextTestRunner(verbosity=2,resultclass=CapturingResult).run(suite)\nrecord={'format':'hf-freebsd-native-python-tests-v1','passed':result.wasSuccessful(),\n        'ran':result.testsRun,'passed_count':len(result.successes),'successful_tests':result.successes,\n        'failures':[test.id() for test,_ in result.failures],\n        'errors':[test.id() for test,_ in result.errors],\n        'skipped':[{'test':test.id(),'reason':reason} for test,reason in result.skipped]}\nwith Path(sys.argv[1]).open('x',encoding='utf-8') as stream:json.dump(record,stream,indent=2)\nraise SystemExit(0 if result.wasSuccessful() else 1)\n",
+        "/opt/hasslefree/build/arm64-validation-002/python-tests.json",
+        "tests.test_native_daemon",
+        "tests.test_native_client",
+        "tests.test_native_settings",
+        "tests.test_native_calibration_binding",
+        "tests.test_calibration_activation",
+        "tests.test_persistent_settings",
+        "tests.test_client_calibration_context",
+        "tests.test_camera_cli",
+        "tests.test_camera_offline",
+        "tests.test_reference_journal_context",
+        "tests.test_calibration_http",
+        "tests.test_native_staging_integrity"
+      ],
+      "returncode": 0,
+      "seconds": 96.911,
+      "log": "python-tests.log",
+      "log_bytes": 21104,
+      "log_sha256": "0902662107fbbe2b5cc30079795b8670652525d9517a5890bf33efc8432f1dfd"
+    }
+  ],
+  "validator_source_sha256": {
+    "tools/freebsd_target_validate.py": "533f902a71b56c398f11ba865365c449e120fb254ea4b90d70d461a83e62d3b0",
+    "tests/test_freebsd_target_validate.py": "1e6562dac489dd5caa435630ae5c2a2ddc41160c71d4a703864f28c1bcaf497a"
+  },
+  "cross_build": {
+    "format": "DaOS-freebsd-arm64-cross-build-v1",
+    "status": "completed",
+    "passed": true,
+    "build_kind": "cross",
+    "target": {
+      "architecture": "arm64",
+      "triple": "aarch64-unknown-freebsd15.1",
+      "elf_machine": 183,
+      "osabi": 9
+    },
+    "host": {
+      "system": "FreeBSD",
+      "machine": "amd64",
+      "release": "15.1-RELEASE-p6",
+      "uid": 1000
+    },
+    "sysroot": {
+      "sysroot": "/var/daos-builds/daos-base-arm64-p6-001/stage",
+      "base_evidence": "/var/daos-builds/daos-base-arm64-p6-001/build-state.json",
+      "base_evidence_sha256": "49eccaf40d4754857d2b07b4e3f31d524516462befff0ac3dbbe6651ffefa71b",
+      "base_source_commit": "95719d8a895bf8170851e9844d9b4092b1d2b6fe",
+      "base_release": "15.1-RELEASE-p6",
+      "target": {
+        "architecture": "arm64",
+        "make_target": "arm64",
+        "make_target_arch": "aarch64",
+        "kernel_ident": "DaOS",
+        "elf_machine": 183
+      },
+      "anchors": {
+        "bin/sh": {
+          "sha256": "a60e9e757429a512c1551913a79a044e3b72bb0e4ac4ba68b49f1067e4cb2a4a",
+          "bytes": 167272,
+          "resolved_relative_path": "bin/sh",
+          "elf_class": 64,
+          "endianness": "little",
+          "osabi": 9,
+          "machine": 183
+        },
+        "lib/libc.so.7": {
+          "sha256": "dde4d8989c4a2425a2a65bbf873917e091db1b351d6bc95a3eff85f47daaabb6",
+          "bytes": 1997728,
+          "resolved_relative_path": "lib/libc.so.7",
+          "elf_class": 64,
+          "endianness": "little",
+          "osabi": 9,
+          "machine": 183
+        },
+        "boot/kernel/kernel": {
+          "sha256": "a4e6121c99aae567340b478bfdc2d4ff309bec7ff29541785e7602887968e82d",
+          "bytes": 18945576,
+          "resolved_relative_path": "boot/kernel/kernel",
+          "elf_class": 64,
+          "endianness": "little",
+          "osabi": 0,
+          "machine": 183
+        },
+        "etc/rc": {
+          "sha256": "243891789c003e6d8ab56454b70176a770cbed6ac86f261250285d83caaca753",
+          "bytes": 5126,
+          "resolved_relative_path": "etc/rc"
+        },
+        "etc/master.passwd": {
+          "sha256": "55dfb5a41ebad44523b26cba443d94c3d55e0b39a32558f81a1d50fed964ec34",
+          "bytes": 1782,
+          "resolved_relative_path": "etc/master.passwd"
+        },
+        "METALOG": {
+          "sha256": "4ed64dff1037ead9cbbc6c56bde05573cc257c255fbebef9ab25201c864e4d91",
+          "bytes": 1360842,
+          "resolved_relative_path": "METALOG"
+        },
+        "libexec/ld-elf.so.1": {
+          "sha256": "03ba3df3d45bce45231caa2cf21add70b10f73f4ba1ee9b50de35ee4639471b6",
+          "bytes": 116808,
+          "resolved_relative_path": "libexec/ld-elf.so.1",
+          "elf_class": 64,
+          "endianness": "little",
+          "osabi": 9,
+          "machine": 183
+        },
+        "usr/lib/crt1.o": {
+          "sha256": "5ea7fbb8c0e62d6df56240f80eb6bfb1bdd09d80a8e6e3997eb3de0a8d75ad78",
+          "bytes": 2528,
+          "resolved_relative_path": "usr/lib/crt1.o"
+        },
+        "usr/lib/crti.o": {
+          "sha256": "0b94a5a1a9836a0969de6774b25c15666547f1d161327cc9f1f3a1f4f1668a8f",
+          "bytes": 1168,
+          "resolved_relative_path": "usr/lib/crti.o"
+        },
+        "usr/lib/crtn.o": {
+          "sha256": "a6a0b94f1f82003fbfe31fe07c173856462408cc27ac3dd009d646de8166d4d5",
+          "bytes": 656,
+          "resolved_relative_path": "usr/lib/crtn.o"
+        },
+        "lib/libc++.so.1": {
+          "sha256": "f9827d9140befa95c6ce292016851a1d04c9d962ee209cef8a54607c8c8b6d5d",
+          "bytes": 995552,
+          "resolved_relative_path": "lib/libc++.so.1",
+          "elf_class": 64,
+          "endianness": "little",
+          "osabi": 9,
+          "machine": 183
+        },
+        "lib/libcxxrt.so.1": {
+          "sha256": "368977f2f6535d1df29fc1c9a79240622266a545edafc79e57b565776c096b8c",
+          "bytes": 100384,
+          "resolved_relative_path": "lib/libcxxrt.so.1",
+          "elf_class": 64,
+          "endianness": "little",
+          "osabi": 9,
+          "machine": 183
+        },
+        "usr/lib/libc++.so": {
+          "sha256": "d2cc434f17e34d7da17cae62874e80b71a65cea1b21996c3559dbfbdeb61c3ed",
+          "bytes": 48,
+          "resolved_relative_path": "usr/lib/libc++.so",
+          "linker_script": {
+            "kind": "GNU_GROUP",
+            "resolution": "explicit_target_sysroot",
+            "targets": {
+              "/lib/libc++.so.1": {
+                "resolved_relative_path": "lib/libc++.so.1",
+                "sha256": "f9827d9140befa95c6ce292016851a1d04c9d962ee209cef8a54607c8c8b6d5d",
+                "machine": 183
+              },
+              "/usr/lib/libcxxrt.so": {
+                "resolved_relative_path": "lib/libcxxrt.so.1",
+                "sha256": "368977f2f6535d1df29fc1c9a79240622266a545edafc79e57b565776c096b8c",
+                "machine": 183
+              }
+            }
+          }
+        },
+        "usr/lib/libcxxrt.so": {
+          "sha256": "368977f2f6535d1df29fc1c9a79240622266a545edafc79e57b565776c096b8c",
+          "bytes": 100384,
+          "resolved_relative_path": "lib/libcxxrt.so.1",
+          "elf_class": 64,
+          "endianness": "little",
+          "osabi": 9,
+          "machine": 183
+        },
+        "usr/include/stdio.h": {
+          "sha256": "92e8717ef82c97b77257e41c9008cc5ff72fe0cb850af0a177933ad5c5ee06cf",
+          "bytes": 17528,
+          "resolved_relative_path": "usr/include/stdio.h"
+        },
+        "usr/include/c++/v1/__config": {
+          "sha256": "f9bae1f1a3dd0f0ca14fd85829145dcaf4ce69ed1a9cf0c685892fcede7337b8",
+          "bytes": 54784,
+          "resolved_relative_path": "usr/include/c++/v1/__config"
+        },
+        "usr/include/c++/v1/filesystem": {
+          "sha256": "b985ee5838e8fcefe776727e28a44636e3a9a1e7afff6fbca7db02fbb6b0696b",
+          "bytes": 22495,
+          "resolved_relative_path": "usr/include/c++/v1/filesystem"
+        }
+      },
+      "target_execution_validated": false
+    },
+    "tools": {
+      "cc": {
+        "invoked_path": "/usr/bin/cc",
+        "resolved_path": "/usr/bin/cc",
+        "sha256": "f409cf3a9253d302818bc1283320f5426df92c2c660711012fb25a054511fb62",
+        "version_output": "FreeBSD clang version 19.1.7 (https://github.com/llvm/llvm-project.git llvmorg-19.1.7-0-gcd708029e0b2)\nTarget: x86_64-unknown-freebsd15.1\nThread model: posix\nInstalledDir: /usr/bin\n"
+      },
+      "cxx": {
+        "invoked_path": "/usr/bin/c++",
+        "resolved_path": "/usr/bin/c++",
+        "sha256": "f409cf3a9253d302818bc1283320f5426df92c2c660711012fb25a054511fb62",
+        "version_output": "FreeBSD clang version 19.1.7 (https://github.com/llvm/llvm-project.git llvmorg-19.1.7-0-gcd708029e0b2)\nTarget: x86_64-unknown-freebsd15.1\nThread model: posix\nInstalledDir: /usr/bin\n"
+      },
+      "lld": {
+        "invoked_path": "/usr/bin/ld.lld",
+        "resolved_path": "/usr/bin/ld.lld",
+        "sha256": "b22b8499156b4dfa70ce9ae46154ed5d4d451a2830db5122e0df2d6383bec2e0",
+        "version_output": "LLD 19.1.7 (FreeBSD llvmorg-19.1.7-0-gcd708029e0b2-1500001) (https://github.com/llvm/llvm-project.git llvmorg-19.1.7-0-gcd708029e0b2) (compatible with GNU linkers)\n"
+      },
+      "cmake": {
+        "invoked_path": "/usr/local/bin/cmake",
+        "resolved_path": "/usr/local/bin/cmake",
+        "sha256": "a486062937c95cf98010d016ef3e073dd6b5c0bf50316ee17684bce1e894db63",
+        "version_output": "cmake version 3.31.12\n\nCMake suite maintained and supported by Kitware (kitware.com/cmake).\n"
+      },
+      "make": {
+        "invoked_path": "/usr/bin/make",
+        "resolved_path": "/usr/bin/make",
+        "sha256": "91a46908c4225686ccbe18d3cfcbbbe9e1f48d6d181b99ff83dd4b2c4eb7f1d0",
+        "version_output": "20251111\n"
+      },
+      "ar": {
+        "invoked_path": "/usr/bin/ar",
+        "resolved_path": "/usr/bin/ar",
+        "sha256": "95179eb3b78f94ee921eb9cf9beff23e12d7737df5faea6cad87018159e6b3ab"
+      },
+      "ranlib": {
+        "invoked_path": "/usr/bin/ranlib",
+        "resolved_path": "/usr/bin/ranlib",
+        "sha256": "95179eb3b78f94ee921eb9cf9beff23e12d7737df5faea6cad87018159e6b3ab"
+      }
+    },
+    "source_input_sha256": {
+      "camera/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "camera/calibration/__init__.py": "145ef81dd62004f0d7ff607bb8d7a0d221a6a4279bb7ee6bd8eae78dafdecc7c",
+      "camera/calibration/binding.py": "9abe0ce308550aa7a3f9f56d6342105c5e8fc827698d21cf931875f910fb1362",
+      "camera/calibration/fixtures/binding-synthetic.json": "818b7205db8d56b7f1e391e0cc767e94e693a9dce14295b76610683ad7c75e40",
+      "camera/calibration/fixtures/binding-uncalibrated.json": "5f2ef8f7c9fc5b8174a23b564b5616bfa1602d80c0f79b508a48b34d9dd55840",
+      "camera/calibration/fixtures/binding-unicode.json": "6bc62c274cf7b975e336fdb9fbc5eec0c837f5f8e421ca51285cc7eb79e49373",
+      "camera/calibration/store.py": "23dc05c64847a2303fc778c42d3f012cfdfcf1c62ea035cf435211264938f228",
+      "camera/camerad/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "camera/camerad/__main__.py": "fc25bee012b7877f3e2905702992573d112881e20e05a69f2026db103fc04f73",
+      "camera/camerad/calibration_context.py": "255b523780b84a6e6372966626931d67075ccf79c068f64bcb3ac9ff537cfe45",
+      "camera/camerad/http_client.py": "e0e449c23cec8b5f2f8074a7038a75f855b2dd512a042bd8eb2dcb179420fd16",
+      "camera/camerad/native_backend.py": "4320372629d5cd035947a9f74360c90d7c52ac91635202f80a0a9cb311430f5a",
+      "camera/camerad/native_client.py": "5dc77424d9aa71400c0cf0d476d9d8d3759d56570c4f8de742067bc6bf5fdbca",
+      "camera/camerad/native_service.py": "e31bb085407683f070ef0aad477000cfdcad22a11871a6265fd7ae483a0544f9",
+      "camera/camerad/retained.py": "a1518dc814d4634616917b305ca7a26ca08908263214c43183dcc75f11891d4b",
+      "camera/camerad/server.py": "122bd5fe963edfcae73deec3aa69c44e81f15f2af9f58db5827e453d1235d50a",
+      "camera/camerad/service.py": "c1d90d37d2a913ef255b1cf0481120629e863a404ba70923e01b83dd721e0316",
+      "camera/dng/hf_dng.py": "8969aef7fa59c33791f55cf14271581c10b51a264b57b572873032f93e03d7b5",
+      "camera/dng/inspect.py": "4200ac573d1a0373bc5cacde10d024948fab046af88d065356387d71c7033342",
+      "camera/native/CMakeLists.txt": "f1b226e185ed0bca78fd99612fcd7f3e07d17ebf5c863798aa27cdfe2f2d53d8",
+      "camera/native/include/hf/calibration.hpp": "89c43fdb1e1fb7af5a74e3d7d4798fa01bd35351eb23de4298daf319c6cb9cfc",
+      "camera/native/include/hf/core.hpp": "103a67b58d51956d0fc3f631ff3892ec317e976ca1c4dfc359ecadc236c6c6ba",
+      "camera/native/include/hf/daemon.hpp": "3d1e7e25a5808083f0b9b281fd30bc915430a5eb8123998cb581fd3566e1dc99",
+      "camera/native/include/hf/dng.hpp": "68ff5d64592a812141071a4d55ac997c321ecc049a69709a76042b1da3898bb8",
+      "camera/native/include/hf/sha256.hpp": "f0337d079b6737c34ec404d976a886a16f39c5bd865a483b39ddf2b7544010fa",
+      "camera/native/src/calibration.cpp": "53a29d96fc083d7e0e0ed14febbd3d8e22257c07b50853b2b5ccdb83c0381fad",
+      "camera/native/src/camerad.cpp": "0914b5bc333555abb1732d4daa306938d4d6e145779c1a246f514561b3718dda",
+      "camera/native/src/core.cpp": "f59bd9609ad19aed9fa5089637a78e6330f5e7455ebc3facfa887350f1268d3f",
+      "camera/native/src/daemon.cpp": "28a337e9fc923048a6ab3cca06071dc1900d5e57c03b8243ea232155dc355208",
+      "camera/native/src/dng.cpp": "179025e008a7247669b9ebc091ae3f6f8544c52c9728ab3b945eca7be5bb2b13",
+      "camera/native/src/sha256.cpp": "0a1e3c17c4a2ed521df0627348ccd986a415880f678d3e38d82e5367378e9312",
+      "camera/native/src/worker.cpp": "266a6a6345d51b221eeec27eee0e99dab083ec6840e5b630ac636d53e14cf821",
+      "camera/native/tests/test_calibration.cpp": "7a1774760dce21506e4904132134ab28e04404cc51b12e35137219344dfeb90c",
+      "camera/native/tests/test_core.cpp": "ac1b2c05d6005c68cd0d2ba6961b91967ab10c9f96b4eb9be6ecc7d75729323b",
+      "camera/native/tests/test_daemon.cpp": "aac493936329fa03e8fc90956378823f61560c706d634fd79722b35c2c77eb7e",
+      "camera/native/tests/test_sha256.cpp": "ad10da4e7e9963572bec4c21270f80296f3324e1bccc5ac73a74d58d89f3fcdf",
+      "camera/native/third_party/manifest.json": "178f5be5bdceb1930fe4f83c96474db359dd414199ead21194d57c2326398ea7",
+      "camera/native/third_party/nlohmann/LICENSE.MIT": "46a65cffd1ea955132d95a8dd921640714a8d6b537d2e4e482d31145ae95b603",
+      "camera/native/third_party/nlohmann/json.hpp": "aaf127c04cb31c406e5b04a63f1ae89369fccde6d8fa7cdda1ed4f32dfc5de63",
+      "camera/native/third_party/sqlite/sqlite3.c": "0c657666d819f261cc4007526ad57e1669de9949df7a8ea847aa284a2bf0ee52",
+      "camera/native/third_party/sqlite/sqlite3.h": "d6c84557261893439b341d2e6c35187ae3ea24fbfd843ad94616f72d89242b8c",
+      "camera/pipeline/__init__.py": "e14baeff3beab5b6f1b8f144fdb98b95158db1178eb49e038dab03b44b56b12d",
+      "camera/pipeline/preview.py": "2f6df30c727173450473386698166ce9dcc0d7cd856499068f9a6fe24e2afbc7",
+      "daos/camera-contracts/v1/capture-asset.schema.json": "f5663535ca6f780c2c95aeac6d422ebc76d8fea27ce1d14f505267984e9e3b8e",
+      "daos/camera-contracts/v1/capture-list.schema.json": "6f2bd0f8abe68371191c5dcadd3daf777ea54cc63c4f228a8393e1a4eabb2ee9",
+      "daos/camera-contracts/v1/capture-record.schema.json": "7742a8becdec8c67eaab5ba2921370287ea2574ef0375a3f2059388ecf56e7b7",
+      "daos/camera-contracts/v1/capture-request.schema.json": "b8a2ad7ced1fc6eaf87d43463b4282f27cc1854ac7828388ff72f951468a13ce",
+      "daos/camera-contracts/v2/calibration-binding.schema.json": "a410ae6a7eaf0d107f00de44c3521a7548f93d4cf52802826aaa6c141b76158b",
+      "daos/camera-contracts/v2/capture-record.schema.json": "571749e472b14d9b66c273cfdc8919775385b2bdb07ab0d1f28a939f51b87b42",
+      "daos/capability_runtime/__init__.py": "a347df9a4513dac86c119fcf581da6ef63a96b0c01117d35b68af46f07406faa",
+      "daos/capability_runtime/__main__.py": "105c4743bfe9d2cb3fc3525e34d0343f483fe8d7a56f5e0e2e558fb66d885e0d",
+      "daos/capability_runtime/bracket.py": "0621a20fa3188da919e647e3fef26c98a8f4cd1e805a6e3ec848fe80983f336a",
+      "daos/capability_runtime/manager.py": "adf916baf8578a2a3b1cdf815ad646d51feec9bd2a7ac776d263f75e1c39f47a",
+      "daos/capability_runtime/recipes.py": "4dd4195005b942bb45671309283b7bb0c056d19044f050fe734b3ecc8e60734e",
+      "docs/design-provenance.md": "8ae5c4b6b096b69568e25c26624f40588633776eedaa95648a8f791d7bc8c8dc",
+      "docs/testing/freebsd-arm64-cross-build.md": "6f40406cf453568383b4cd6c37a9d6d98ceed7a476e368f65014d00d35141077",
+      "licenses/INVENTORY.json": "fe78da2a0b38eef3af8228ede13f508a37f0159343cf5d72f56a6f58651b1433",
+      "simulation/bayer.py": "a1a02e82a13d07962fc05f168d2b89e5fb581981097a5611687a4760e101a810",
+      "tests/test_calibration_activation.py": "fa14d1d5679f7c6f587f58849bfc78da1ad2fdfaee9f86f50b47311c55ab8d1c",
+      "tests/test_calibration_http.py": "1284ade194df899f36ed257867f49b27a4854390b673dd440e9779a7796b312c",
+      "tests/test_camera_cli.py": "8e2ee9935e3783b09bca2954b36b3d3d4272a8f5b7da8ab28a0c7e3018c492cd",
+      "tests/test_camera_offline.py": "f6123e2edeffab19ba23a12ad2fc6bec2d72faeb692c25226b0ac8d140cd03da",
+      "tests/test_client_calibration_context.py": "02c9945512662718ab95b088eeee42389f7354fd614b3c6f3b66592b1a0eb59d",
+      "tests/test_freebsd_build.py": "7a253dc8fd87d17352360fef1c16603db8a1fb6ea362516c7b728a1f93f976b5",
+      "tests/test_freebsd_cross_build.py": "4a68e8ddde458b4e59a38a1332b230ecc4e33903827e87bd4c6c5e0f6c7c9098",
+      "tests/test_native_calibration_binding.py": "1ee31123dbe0326d247611677875cc7b98154180826e64c80ecb1ce1a1aa6621",
+      "tests/test_native_client.py": "7537c9723fc47a0cc4f3b1a5cc0ede75b94d7a71124ff1d0c21d1371966e9ac0",
+      "tests/test_native_daemon.py": "9eaa9683d9e660ab71cc72de4c1c5fc8e9c3f85cfeeae7bd033cf0649004795e",
+      "tests/test_native_settings.py": "8b32931374157dcc109cf27e81446409515aa22dca2c6d3e28c386ed8057e211",
+      "tests/test_native_staging_integrity.py": "2e105a92b69bebbbd910fe82df873a4c4498ded7e61c4ae14e640128f06133b4",
+      "tests/test_persistent_settings.py": "3bee16ef88b2f033d941057d4527a744e8cf3527402dcdc7fe76778abca3ecb7",
+      "tests/test_reference_journal_context.py": "7ce61b20daebd0f1fd7430d65b07403924efd5a5b464bb525026d04a70c0aa31",
+      "tools/freebsd_build.py": "ab0870aefe6b3e51f1c949f2926017bf0cfc787c6f32f686a38d63a84ecbb446",
+      "tools/freebsd_cross_build.py": "89765d26af9610546ddede3de476272c16ced73f4fb4afdb16ca421ee43eb7c4",
+      "tools/linux_build.py": "b60fc725e472a88f1610f410e332400130e75e8541516dcc76bb02beb98942dc"
+    },
+    "commands": [
+      {
+        "command": [
+          "/usr/bin/cc",
+          "--version"
+        ],
+        "returncode": 0,
+        "seconds": 0.013,
+        "log": "cc-version.log",
+        "log_bytes": 181,
+        "log_sha256": "2ad8e91967ee9415be8d9db7f9cf04ae2580afdf0897736ca2f7889ca9ae7f18"
+      },
+      {
+        "command": [
+          "/usr/bin/c++",
+          "--version"
+        ],
+        "returncode": 0,
+        "seconds": 0.01,
+        "log": "cxx-version.log",
+        "log_bytes": 181,
+        "log_sha256": "2ad8e91967ee9415be8d9db7f9cf04ae2580afdf0897736ca2f7889ca9ae7f18"
+      },
+      {
+        "command": [
+          "/usr/bin/ld.lld",
+          "--version"
+        ],
+        "returncode": 0,
+        "seconds": 0.007,
+        "log": "lld-version.log",
+        "log_bytes": 164,
+        "log_sha256": "b60be23b3b1f46404b2b8ccd269c3c9d6fdd998ad1019a1a5988e9da3454b263"
+      },
+      {
+        "command": [
+          "/usr/local/bin/cmake",
+          "--version"
+        ],
+        "returncode": 0,
+        "seconds": 0.007,
+        "log": "cmake-version.log",
+        "log_bytes": 92,
+        "log_sha256": "99a8e934d772d7a7ebc118879ef093a381a595488a499ba297e27b6e6729a21e"
+      },
+      {
+        "command": [
+          "/usr/bin/make",
+          "-V",
+          "MAKE_VERSION"
+        ],
+        "returncode": 0,
+        "seconds": 0.003,
+        "log": "make-version.log",
+        "log_bytes": 9,
+        "log_sha256": "c3ec40dac9fd047b2cc6d29eea8214cd176e9649db753cc28a2c5ffb472b8135"
+      },
+      {
+        "command": [
+          "/usr/local/bin/cmake",
+          "-S",
+          "/opt/hasslefree/camera/native",
+          "-B",
+          "/opt/hasslefree/build/freebsd-arm64-native-001",
+          "-G",
+          "Unix Makefiles",
+          "-DCMAKE_TOOLCHAIN_FILE=/opt/hasslefree/build/freebsd-arm64-native-001/DaOS-arm64-toolchain.cmake",
+          "-DCMAKE_BUILD_TYPE=Release",
+          "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON",
+          "-DCMAKE_MAKE_PROGRAM=/usr/bin/make",
+          "-DCMAKE_AR=/usr/bin/ar",
+          "-DCMAKE_RANLIB=/usr/bin/ranlib",
+          "-DHF_BUILD_DAEMON=ON",
+          "-DHF_BUILD_WORKER=ON"
+        ],
+        "returncode": 0,
+        "seconds": 0.376,
+        "log": "configure.log",
+        "log_bytes": 950,
+        "log_sha256": "5c05111cc605306fbf4def4d9da8d899dc2293ebde8f3a84064dfadb49701adc"
+      },
+      {
+        "command": [
+          "/usr/local/bin/cmake",
+          "--build",
+          "/opt/hasslefree/build/freebsd-arm64-native-001",
+          "--parallel",
+          "8"
+        ],
+        "returncode": 0,
+        "seconds": 20.789,
+        "log": "compile.log",
+        "log_bytes": 2981,
+        "log_sha256": "ed124fd56849979c74446a2beecb454b993539212436184cf21d51d5eb052b73"
+      }
+    ],
+    "artifacts": {
+      "hf-core-tests": {
+        "bytes": 79296,
+        "sha256": "e1197ad6fd6fa3f67a90a3c3f018fb8cbf67377e98a43fa77c16938c1b51a1c6",
+        "elf_class": 64,
+        "endianness": "little",
+        "osabi": 9,
+        "osabi_name": "FreeBSD",
+        "machine": 183,
+        "machine_name": "EM_AARCH64",
+        "elf_type": 2,
+        "entry": 2181536,
+        "interpreter": "/libexec/ld-elf.so.1"
+      },
+      "hf-daemon-tests": {
+        "bytes": 1979688,
+        "sha256": "20e46c1a42ce629fd4a584fb7a35ce15e4a76fcdf4c642709bb1cf73a18e4227",
+        "elf_class": 64,
+        "endianness": "little",
+        "osabi": 9,
+        "osabi_name": "FreeBSD",
+        "machine": 183,
+        "machine_name": "EM_AARCH64",
+        "elf_type": 2,
+        "entry": 2451440,
+        "interpreter": "/libexec/ld-elf.so.1"
+      },
+      "hf-sha256-tests": {
+        "bytes": 23112,
+        "sha256": "914e6b6a742fbd90582e3702c0762e53b718f00c7d7c88e3e608383afb7b03ab",
+        "elf_class": 64,
+        "endianness": "little",
+        "osabi": 9,
+        "osabi_name": "FreeBSD",
+        "machine": 183,
+        "machine_name": "EM_AARCH64",
+        "elf_type": 2,
+        "entry": 2171096,
+        "interpreter": "/libexec/ld-elf.so.1"
+      },
+      "hf-calibration-tests": {
+        "bytes": 2027592,
+        "sha256": "cc8edcafa6d7ee517a7004d5009cfebadfe0a874c3376b3665a54caa817cbc16",
+        "elf_class": 64,
+        "endianness": "little",
+        "osabi": 9,
+        "osabi_name": "FreeBSD",
+        "machine": 183,
+        "machine_name": "EM_AARCH64",
+        "elf_type": 2,
+        "entry": 2452016,
+        "interpreter": "/libexec/ld-elf.so.1"
+      },
+      "hf-native-worker": {
+        "bytes": 96576,
+        "sha256": "7dc07699a2ea8b7fd42eb0f47afedf85485c47aa687f6cdf1af45b9030d28d6c",
+        "elf_class": 64,
+        "endianness": "little",
+        "osabi": 9,
+        "osabi_name": "FreeBSD",
+        "machine": 183,
+        "machine_name": "EM_AARCH64",
+        "elf_type": 2,
+        "entry": 2184592,
+        "interpreter": "/libexec/ld-elf.so.1"
+      },
+      "hf-camerad": {
+        "bytes": 1931240,
+        "sha256": "be752fd42c631e763682fa96a34b929a2bd80b5ae9ab3eb1b6f17653bc31bc28",
+        "elf_class": 64,
+        "endianness": "little",
+        "osabi": 9,
+        "osabi_name": "FreeBSD",
+        "machine": 183,
+        "machine_name": "EM_AARCH64",
+        "elf_type": 2,
+        "entry": 2441200,
+        "interpreter": "/libexec/ld-elf.so.1"
+      }
+    },
+    "simulated_camera": true,
+    "target_runtime_validated": false,
+    "physical_camera_validated": false,
+    "target_tests": {
+      "status": "not_run",
+      "ctest_executed": false,
+      "python_native_tests_executed": false,
+      "reason": "ARM64 binaries must be executed in a separate actual ARM64 FreeBSD guest, never on the amd64 build host.",
+      "expected_ctest_targets": [
+        "native-authority",
+        "native-calibration",
+        "native-core",
+        "native-sha256"
+      ]
+    },
+    "active_stage": null,
+    "notices": {
+      "licenses/INVENTORY.json": {
+        "file": "notices/licenses__INVENTORY.json",
+        "sha256": "fe78da2a0b38eef3af8228ede13f508a37f0159343cf5d72f56a6f58651b1433"
+      },
+      "docs/design-provenance.md": {
+        "file": "notices/docs__design-provenance.md",
+        "sha256": "8ae5c4b6b096b69568e25c26624f40588633776eedaa95648a8f791d7bc8c8dc"
+      },
+      "camera/native/third_party/manifest.json": {
+        "file": "notices/camera__native__third_party__manifest.json",
+        "sha256": "178f5be5bdceb1930fe4f83c96474db359dd414199ead21194d57c2326398ea7"
+      },
+      "camera/native/third_party/nlohmann/LICENSE.MIT": {
+        "file": "notices/camera__native__third_party__nlohmann__LICENSE.MIT",
+        "sha256": "46a65cffd1ea955132d95a8dd921640714a8d6b537d2e4e482d31145ae95b603"
+      },
+      "camera/native/third_party/sqlite/sqlite3.h": {
+        "file": "notices/camera__native__third_party__sqlite__sqlite3.h",
+        "sha256": "d6c84557261893439b341d2e6c35187ae3ea24fbfd843ad94616f72d89242b8c"
+      }
+    },
+    "toolchain_file_sha256": "9541bb6791263bdd23cba4f60a5952183eadb8a4b6800d202fb4b6309d6c2ce5",
+    "compile_commands_sha256": "4b9112b279f31491b6f22cbdae0d968cf815e9601fca768e7d91b5ff286d3c15",
+    "scope": "DaOS ARM64 native application cross-compilation only; target CTest/Python/UI execution and ARM64 boot remain separately unvalidated"
+  },
+  "cross_evidence_sha256": "49df9748c8dea15005e9721b3e33426b932ef343603837336c63b4f2560eb69c",
+  "source_input_sha256": {
+    "camera/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "camera/calibration/__init__.py": "145ef81dd62004f0d7ff607bb8d7a0d221a6a4279bb7ee6bd8eae78dafdecc7c",
+    "camera/calibration/binding.py": "9abe0ce308550aa7a3f9f56d6342105c5e8fc827698d21cf931875f910fb1362",
+    "camera/calibration/fixtures/binding-synthetic.json": "818b7205db8d56b7f1e391e0cc767e94e693a9dce14295b76610683ad7c75e40",
+    "camera/calibration/fixtures/binding-uncalibrated.json": "5f2ef8f7c9fc5b8174a23b564b5616bfa1602d80c0f79b508a48b34d9dd55840",
+    "camera/calibration/fixtures/binding-unicode.json": "6bc62c274cf7b975e336fdb9fbc5eec0c837f5f8e421ca51285cc7eb79e49373",
+    "camera/calibration/store.py": "23dc05c64847a2303fc778c42d3f012cfdfcf1c62ea035cf435211264938f228",
+    "camera/camerad/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "camera/camerad/__main__.py": "fc25bee012b7877f3e2905702992573d112881e20e05a69f2026db103fc04f73",
+    "camera/camerad/calibration_context.py": "255b523780b84a6e6372966626931d67075ccf79c068f64bcb3ac9ff537cfe45",
+    "camera/camerad/http_client.py": "e0e449c23cec8b5f2f8074a7038a75f855b2dd512a042bd8eb2dcb179420fd16",
+    "camera/camerad/native_backend.py": "4320372629d5cd035947a9f74360c90d7c52ac91635202f80a0a9cb311430f5a",
+    "camera/camerad/native_client.py": "5dc77424d9aa71400c0cf0d476d9d8d3759d56570c4f8de742067bc6bf5fdbca",
+    "camera/camerad/native_service.py": "e31bb085407683f070ef0aad477000cfdcad22a11871a6265fd7ae483a0544f9",
+    "camera/camerad/retained.py": "a1518dc814d4634616917b305ca7a26ca08908263214c43183dcc75f11891d4b",
+    "camera/camerad/server.py": "122bd5fe963edfcae73deec3aa69c44e81f15f2af9f58db5827e453d1235d50a",
+    "camera/camerad/service.py": "c1d90d37d2a913ef255b1cf0481120629e863a404ba70923e01b83dd721e0316",
+    "camera/dng/hf_dng.py": "8969aef7fa59c33791f55cf14271581c10b51a264b57b572873032f93e03d7b5",
+    "camera/dng/inspect.py": "4200ac573d1a0373bc5cacde10d024948fab046af88d065356387d71c7033342",
+    "camera/native/CMakeLists.txt": "f1b226e185ed0bca78fd99612fcd7f3e07d17ebf5c863798aa27cdfe2f2d53d8",
+    "camera/native/include/hf/calibration.hpp": "89c43fdb1e1fb7af5a74e3d7d4798fa01bd35351eb23de4298daf319c6cb9cfc",
+    "camera/native/include/hf/core.hpp": "103a67b58d51956d0fc3f631ff3892ec317e976ca1c4dfc359ecadc236c6c6ba",
+    "camera/native/include/hf/daemon.hpp": "3d1e7e25a5808083f0b9b281fd30bc915430a5eb8123998cb581fd3566e1dc99",
+    "camera/native/include/hf/dng.hpp": "68ff5d64592a812141071a4d55ac997c321ecc049a69709a76042b1da3898bb8",
+    "camera/native/include/hf/sha256.hpp": "f0337d079b6737c34ec404d976a886a16f39c5bd865a483b39ddf2b7544010fa",
+    "camera/native/src/calibration.cpp": "53a29d96fc083d7e0e0ed14febbd3d8e22257c07b50853b2b5ccdb83c0381fad",
+    "camera/native/src/camerad.cpp": "0914b5bc333555abb1732d4daa306938d4d6e145779c1a246f514561b3718dda",
+    "camera/native/src/core.cpp": "f59bd9609ad19aed9fa5089637a78e6330f5e7455ebc3facfa887350f1268d3f",
+    "camera/native/src/daemon.cpp": "28a337e9fc923048a6ab3cca06071dc1900d5e57c03b8243ea232155dc355208",
+    "camera/native/src/dng.cpp": "179025e008a7247669b9ebc091ae3f6f8544c52c9728ab3b945eca7be5bb2b13",
+    "camera/native/src/sha256.cpp": "0a1e3c17c4a2ed521df0627348ccd986a415880f678d3e38d82e5367378e9312",
+    "camera/native/src/worker.cpp": "266a6a6345d51b221eeec27eee0e99dab083ec6840e5b630ac636d53e14cf821",
+    "camera/native/tests/test_calibration.cpp": "7a1774760dce21506e4904132134ab28e04404cc51b12e35137219344dfeb90c",
+    "camera/native/tests/test_core.cpp": "ac1b2c05d6005c68cd0d2ba6961b91967ab10c9f96b4eb9be6ecc7d75729323b",
+    "camera/native/tests/test_daemon.cpp": "aac493936329fa03e8fc90956378823f61560c706d634fd79722b35c2c77eb7e",
+    "camera/native/tests/test_sha256.cpp": "ad10da4e7e9963572bec4c21270f80296f3324e1bccc5ac73a74d58d89f3fcdf",
+    "camera/native/third_party/manifest.json": "178f5be5bdceb1930fe4f83c96474db359dd414199ead21194d57c2326398ea7",
+    "camera/native/third_party/nlohmann/LICENSE.MIT": "46a65cffd1ea955132d95a8dd921640714a8d6b537d2e4e482d31145ae95b603",
+    "camera/native/third_party/nlohmann/json.hpp": "aaf127c04cb31c406e5b04a63f1ae89369fccde6d8fa7cdda1ed4f32dfc5de63",
+    "camera/native/third_party/sqlite/sqlite3.c": "0c657666d819f261cc4007526ad57e1669de9949df7a8ea847aa284a2bf0ee52",
+    "camera/native/third_party/sqlite/sqlite3.h": "d6c84557261893439b341d2e6c35187ae3ea24fbfd843ad94616f72d89242b8c",
+    "camera/pipeline/__init__.py": "e14baeff3beab5b6f1b8f144fdb98b95158db1178eb49e038dab03b44b56b12d",
+    "camera/pipeline/preview.py": "2f6df30c727173450473386698166ce9dcc0d7cd856499068f9a6fe24e2afbc7",
+    "daos/camera-contracts/v1/capture-asset.schema.json": "f5663535ca6f780c2c95aeac6d422ebc76d8fea27ce1d14f505267984e9e3b8e",
+    "daos/camera-contracts/v1/capture-list.schema.json": "6f2bd0f8abe68371191c5dcadd3daf777ea54cc63c4f228a8393e1a4eabb2ee9",
+    "daos/camera-contracts/v1/capture-record.schema.json": "7742a8becdec8c67eaab5ba2921370287ea2574ef0375a3f2059388ecf56e7b7",
+    "daos/camera-contracts/v1/capture-request.schema.json": "b8a2ad7ced1fc6eaf87d43463b4282f27cc1854ac7828388ff72f951468a13ce",
+    "daos/camera-contracts/v2/calibration-binding.schema.json": "a410ae6a7eaf0d107f00de44c3521a7548f93d4cf52802826aaa6c141b76158b",
+    "daos/camera-contracts/v2/capture-record.schema.json": "571749e472b14d9b66c273cfdc8919775385b2bdb07ab0d1f28a939f51b87b42",
+    "daos/capability_runtime/__init__.py": "a347df9a4513dac86c119fcf581da6ef63a96b0c01117d35b68af46f07406faa",
+    "daos/capability_runtime/__main__.py": "105c4743bfe9d2cb3fc3525e34d0343f483fe8d7a56f5e0e2e558fb66d885e0d",
+    "daos/capability_runtime/bracket.py": "0621a20fa3188da919e647e3fef26c98a8f4cd1e805a6e3ec848fe80983f336a",
+    "daos/capability_runtime/manager.py": "adf916baf8578a2a3b1cdf815ad646d51feec9bd2a7ac776d263f75e1c39f47a",
+    "daos/capability_runtime/recipes.py": "4dd4195005b942bb45671309283b7bb0c056d19044f050fe734b3ecc8e60734e",
+    "docs/design-provenance.md": "8ae5c4b6b096b69568e25c26624f40588633776eedaa95648a8f791d7bc8c8dc",
+    "docs/testing/freebsd-arm64-cross-build.md": "6f40406cf453568383b4cd6c37a9d6d98ceed7a476e368f65014d00d35141077",
+    "licenses/INVENTORY.json": "fe78da2a0b38eef3af8228ede13f508a37f0159343cf5d72f56a6f58651b1433",
+    "simulation/bayer.py": "a1a02e82a13d07962fc05f168d2b89e5fb581981097a5611687a4760e101a810",
+    "tests/test_calibration_activation.py": "fa14d1d5679f7c6f587f58849bfc78da1ad2fdfaee9f86f50b47311c55ab8d1c",
+    "tests/test_calibration_http.py": "1284ade194df899f36ed257867f49b27a4854390b673dd440e9779a7796b312c",
+    "tests/test_camera_cli.py": "8e2ee9935e3783b09bca2954b36b3d3d4272a8f5b7da8ab28a0c7e3018c492cd",
+    "tests/test_camera_offline.py": "f6123e2edeffab19ba23a12ad2fc6bec2d72faeb692c25226b0ac8d140cd03da",
+    "tests/test_client_calibration_context.py": "02c9945512662718ab95b088eeee42389f7354fd614b3c6f3b66592b1a0eb59d",
+    "tests/test_freebsd_build.py": "7a253dc8fd87d17352360fef1c16603db8a1fb6ea362516c7b728a1f93f976b5",
+    "tests/test_freebsd_cross_build.py": "4a68e8ddde458b4e59a38a1332b230ecc4e33903827e87bd4c6c5e0f6c7c9098",
+    "tests/test_native_calibration_binding.py": "1ee31123dbe0326d247611677875cc7b98154180826e64c80ecb1ce1a1aa6621",
+    "tests/test_native_client.py": "7537c9723fc47a0cc4f3b1a5cc0ede75b94d7a71124ff1d0c21d1371966e9ac0",
+    "tests/test_native_daemon.py": "9eaa9683d9e660ab71cc72de4c1c5fc8e9c3f85cfeeae7bd033cf0649004795e",
+    "tests/test_native_settings.py": "8b32931374157dcc109cf27e81446409515aa22dca2c6d3e28c386ed8057e211",
+    "tests/test_native_staging_integrity.py": "2e105a92b69bebbbd910fe82df873a4c4498ded7e61c4ae14e640128f06133b4",
+    "tests/test_persistent_settings.py": "3bee16ef88b2f033d941057d4527a744e8cf3527402dcdc7fe76778abca3ecb7",
+    "tests/test_reference_journal_context.py": "7ce61b20daebd0f1fd7430d65b07403924efd5a5b464bb525026d04a70c0aa31",
+    "tools/freebsd_build.py": "ab0870aefe6b3e51f1c949f2926017bf0cfc787c6f32f686a38d63a84ecbb446",
+    "tools/freebsd_cross_build.py": "89765d26af9610546ddede3de476272c16ced73f4fb4afdb16ca421ee43eb7c4",
+    "tools/linux_build.py": "b60fc725e472a88f1610f410e332400130e75e8541516dcc76bb02beb98942dc"
+  },
+  "artifacts": {
+    "hf-core-tests": {
+      "bytes": 79296,
+      "sha256": "e1197ad6fd6fa3f67a90a3c3f018fb8cbf67377e98a43fa77c16938c1b51a1c6",
+      "elf_class": 64,
+      "endianness": "little",
+      "osabi": 9,
+      "osabi_name": "FreeBSD",
+      "machine": 183,
+      "machine_name": "EM_AARCH64",
+      "elf_type": 2,
+      "entry": 2181536,
+      "interpreter": "/libexec/ld-elf.so.1"
+    },
+    "hf-daemon-tests": {
+      "bytes": 1979688,
+      "sha256": "20e46c1a42ce629fd4a584fb7a35ce15e4a76fcdf4c642709bb1cf73a18e4227",
+      "elf_class": 64,
+      "endianness": "little",
+      "osabi": 9,
+      "osabi_name": "FreeBSD",
+      "machine": 183,
+      "machine_name": "EM_AARCH64",
+      "elf_type": 2,
+      "entry": 2451440,
+      "interpreter": "/libexec/ld-elf.so.1"
+    },
+    "hf-sha256-tests": {
+      "bytes": 23112,
+      "sha256": "914e6b6a742fbd90582e3702c0762e53b718f00c7d7c88e3e608383afb7b03ab",
+      "elf_class": 64,
+      "endianness": "little",
+      "osabi": 9,
+      "osabi_name": "FreeBSD",
+      "machine": 183,
+      "machine_name": "EM_AARCH64",
+      "elf_type": 2,
+      "entry": 2171096,
+      "interpreter": "/libexec/ld-elf.so.1"
+    },
+    "hf-calibration-tests": {
+      "bytes": 2027592,
+      "sha256": "cc8edcafa6d7ee517a7004d5009cfebadfe0a874c3376b3665a54caa817cbc16",
+      "elf_class": 64,
+      "endianness": "little",
+      "osabi": 9,
+      "osabi_name": "FreeBSD",
+      "machine": 183,
+      "machine_name": "EM_AARCH64",
+      "elf_type": 2,
+      "entry": 2452016,
+      "interpreter": "/libexec/ld-elf.so.1"
+    },
+    "hf-native-worker": {
+      "bytes": 96576,
+      "sha256": "7dc07699a2ea8b7fd42eb0f47afedf85485c47aa687f6cdf1af45b9030d28d6c",
+      "elf_class": 64,
+      "endianness": "little",
+      "osabi": 9,
+      "osabi_name": "FreeBSD",
+      "machine": 183,
+      "machine_name": "EM_AARCH64",
+      "elf_type": 2,
+      "entry": 2184592,
+      "interpreter": "/libexec/ld-elf.so.1"
+    },
+    "hf-camerad": {
+      "bytes": 1931240,
+      "sha256": "be752fd42c631e763682fa96a34b929a2bd80b5ae9ab3eb1b6f17653bc31bc28",
+      "elf_class": 64,
+      "endianness": "little",
+      "osabi": 9,
+      "osabi_name": "FreeBSD",
+      "machine": 183,
+      "machine_name": "EM_AARCH64",
+      "elf_type": 2,
+      "entry": 2441200,
+      "interpreter": "/libexec/ld-elf.so.1"
+    }
+  },
+  "ctest_testfile_sha256": "765aa65f629df59d334d2259e2f6fdc02a9307e8c681bfef8f2932761a1dd3b9",
+  "binary_directory": "/opt/hasslefree/build/freebsd-arm64-native-001",
+  "active_stage": null,
+  "freebsd_version_kernel_userland": [
+    "15.1-RELEASE-p6",
+    "15.1-RELEASE-p6"
+  ],
+  "ctest": {
+    "passed": true,
+    "ran": 4,
+    "targets": [
+      "native-authority",
+      "native-calibration",
+      "native-core",
+      "native-sha256"
+    ],
+    "result_sha256": "5b9791911676b39c3f8f10e97a0220bab2aa25f46cd4ef96c9c59b2ed408a32e"
+  },
+  "python_tests": {
+    "format": "hf-freebsd-native-python-tests-v1",
+    "passed": true,
+    "ran": 98,
+    "passed_count": 90,
+    "successful_tests": [
+      "tests.test_native_daemon.NativeDaemonTests.test_accepted_request_survives_process_kill_as_unknown",
+      "tests.test_native_daemon.NativeDaemonTests.test_capture_identity_metadata_and_no_duplicate_execution",
+      "tests.test_native_daemon.NativeDaemonTests.test_capture_slot_cancel_deadline_and_close_busy",
+      "tests.test_native_daemon.NativeDaemonTests.test_context_exit_does_not_leave_native_process_or_directory_lock",
+      "tests.test_native_daemon.NativeDaemonTests.test_corrupt_persisted_rows_fence_queries_and_admission_without_rewriting",
+      "tests.test_native_daemon.NativeDaemonTests.test_crash_after_admission_is_unknown_and_never_reexecuted",
+      "tests.test_native_daemon.NativeDaemonTests.test_crash_after_rename_is_unknown_with_exactly_one_existing_dng",
+      "tests.test_native_daemon.NativeDaemonTests.test_dangerous_faults_require_explicit_cli_flag",
+      "tests.test_native_daemon.NativeDaemonTests.test_delayed_capture_rejects_late_photo_symlink_without_external_write",
+      "tests.test_native_daemon.NativeDaemonTests.test_disconnect_and_authorized_reconnect",
+      "tests.test_native_daemon.NativeDaemonTests.test_failed_admission_commit_fences_authority_without_execution",
+      "tests.test_native_daemon.NativeDaemonTests.test_failed_completion_commit_is_unknown_after_rename",
+      "tests.test_native_daemon.NativeDaemonTests.test_invalid_native_metadata_does_not_truncate_or_wrap",
+      "tests.test_native_daemon.NativeDaemonTests.test_late_output_conflicts_are_never_overwritten_or_removed",
+      "tests.test_native_daemon.NativeDaemonTests.test_real_lease_renewal_expiry_and_new_owner",
+      "tests.test_native_daemon.NativeDaemonTests.test_real_process_exclusivity_and_epoch_fencing",
+      "tests.test_native_daemon.NativeDaemonTests.test_replaced_photo_directory_fences_admission_and_delayed_worker",
+      "tests.test_native_daemon.NativeDaemonTests.test_retained_asset_descriptors_require_committed_regular_expected_files",
+      "tests.test_native_daemon.NativeDaemonTests.test_retained_pages_are_durable_bounded_complete_only_and_do_not_replay",
+      "tests.test_native_daemon.NativeDaemonTests.test_rpc_input_limit_is_bounded_and_closes_process",
+      "tests.test_native_daemon.NativeDaemonTests.test_rpc_malformed_duplicate_depth_types_and_recovery",
+      "tests.test_native_daemon.NativeDaemonTests.test_startup_rejects_redirected_photos_and_releases_ownership",
+      "tests.test_native_daemon.NativeDaemonTests.test_worker_start_failure_is_journaled_and_releases_slot",
+      "tests.test_native_client.NativeClientTests.test_capture_and_query_validate_record_identity_status_and_actuals",
+      "tests.test_native_client.NativeClientTests.test_capture_eof_is_unknown_with_request_identity",
+      "tests.test_native_client.NativeClientTests.test_capture_server_errors_keep_codes_and_mark_uncertainty",
+      "tests.test_native_client.NativeClientTests.test_capture_timeout_is_unknown_and_never_retried",
+      "tests.test_native_client.NativeClientTests.test_close_busy_preserves_process_until_explicit_abort",
+      "tests.test_native_client.NativeClientTests.test_concurrent_calls_are_serialized",
+      "tests.test_native_client.NativeClientTests.test_context_exit_aborts_when_graceful_close_is_busy",
+      "tests.test_native_client.NativeClientTests.test_context_manager_closes_or_aborts_owned_process",
+      "tests.test_native_client.NativeClientTests.test_invalid_local_payload_does_not_send_or_close",
+      "tests.test_native_client.NativeClientTests.test_invalid_unicode_payload_is_known_not_sent_and_keeps_authority_alive",
+      "tests.test_native_client.NativeClientTests.test_malformed_envelopes_close_process",
+      "tests.test_native_client.NativeClientTests.test_methods_keep_service_parameter_names",
+      "tests.test_native_client.NativeClientTests.test_startup_error_preserves_authority_error_code",
+      "tests.test_native_client.NativeClientTests.test_stderr_is_drained_and_memory_bounded",
+      "tests.test_native_client.NativeClientTests.test_unsupported_timeout_is_rejected_before_process_launch",
+      "tests.test_native_client.NativeClientTests.test_writer_start_failure_is_known_not_sent",
+      "tests.test_native_settings.NativeSettingsTests.test_commit_before_memory_crash_recovers_committed_settings",
+      "tests.test_native_settings.NativeSettingsTests.test_explicit_capture_success_failure_and_duplicate_do_not_change_baseline",
+      "tests.test_native_settings.NativeSettingsTests.test_failed_transaction_keeps_confirmed_memory_and_row_then_fences",
+      "tests.test_native_settings.NativeSettingsTests.test_invalid_or_partial_persisted_state_refuses_without_reset_or_epoch_write",
+      "tests.test_native_settings.NativeSettingsTests.test_legacy_migration_requires_both_rows_absent",
+      "tests.test_native_settings.NativeSettingsTests.test_real_sqlite_write_failure_does_not_claim_success",
+      "tests.test_native_settings.NativeSettingsTests.test_restart_and_abrupt_process_death_keep_last_configured_baseline",
+      "tests.test_native_settings.NativeSettingsTests.test_test_faults_are_disabled_without_explicit_flag",
+      "tests.test_native_calibration_binding.NativeCalibrationBindingTests.test_bad_binding_is_refused_before_any_state_or_settings_change",
+      "tests.test_native_calibration_binding.NativeCalibrationBindingTests.test_binding_and_clear_transaction_failures_roll_back_then_fence",
+      "tests.test_native_calibration_binding.NativeCalibrationBindingTests.test_bound_capture_snapshots_v2_trace_without_changing_pixels_or_legacy_shape",
+      "tests.test_native_calibration_binding.NativeCalibrationBindingTests.test_busy_and_stale_control_cannot_bind_or_clear",
+      "tests.test_native_calibration_binding.NativeCalibrationBindingTests.test_calibration_crash_and_rollback_faults_require_explicit_test_flag",
+      "tests.test_native_calibration_binding.NativeCalibrationBindingTests.test_commit_before_memory_crash_recovers_binding_and_clear",
+      "tests.test_native_calibration_binding.NativeCalibrationBindingTests.test_corrupt_committed_capture_snapshot_fences_instead_of_substituting_active_binding",
+      "tests.test_native_calibration_binding.NativeCalibrationBindingTests.test_duplicate_request_retains_original_binding_after_selection_changes_and_restart",
+      "tests.test_native_calibration_binding.NativeCalibrationBindingTests.test_shared_fixtures_and_noncanonical_spelling_survive_restart_then_clear",
+      "tests.test_native_calibration_binding.NativeCalibrationBindingTests.test_tampered_or_partial_persisted_binding_refuses_startup_before_epoch_write",
+      "tests.test_calibration_activation.NativeCalibrationActivationTests.test_activation_requires_lease_and_idle_capture_without_fallback",
+      "tests.test_calibration_activation.NativeCalibrationActivationTests.test_bound_capture_pins_original_snapshot_through_selection_restart_and_id_reconciliation",
+      "tests.test_calibration_activation.NativeCalibrationActivationTests.test_damaged_active_snapshot_cannot_reset_on_restart_and_releases_authority_lock",
+      "tests.test_calibration_activation.ReferenceCalibrationActivationTests.test_activation_requires_lease_and_idle_capture_without_fallback",
+      "tests.test_calibration_activation.ReferenceCalibrationActivationTests.test_bound_capture_pins_original_snapshot_through_selection_restart_and_id_reconciliation",
+      "tests.test_calibration_activation.ReferenceCalibrationActivationTests.test_damaged_active_snapshot_cannot_reset_on_restart_and_releases_authority_lock",
+      "tests.test_persistent_settings.PersistentReferenceSettingsTests.test_failed_or_ambiguous_commit_fences_capture_without_claiming_new_memory",
+      "tests.test_persistent_settings.PersistentReferenceSettingsTests.test_invalid_or_partially_missing_persisted_settings_are_preserved_and_release_lock",
+      "tests.test_persistent_settings.PersistentReferenceSettingsTests.test_old_journal_without_either_setting_key_migrates_once",
+      "tests.test_persistent_settings.PersistentReferenceSettingsTests.test_settings_survive_abrupt_process_exit_and_explicit_capture_does_not_replace_them",
+      "tests.test_client_calibration_context.BoundCaptureClientTests.test_bound_flags_cannot_claim_correction_or_hardware_calibration",
+      "tests.test_client_calibration_context.BoundCaptureClientTests.test_last_capture_state_readback_checks_nested_binding_context",
+      "tests.test_client_calibration_context.BoundCaptureClientTests.test_legacy_worker_may_omit_nested_capture_id_but_cannot_contradict_it",
+      "tests.test_client_calibration_context.BoundCaptureClientTests.test_native_evidence_must_agree_with_bound_record",
+      "tests.test_client_calibration_context.BoundCaptureClientTests.test_nested_numeric_bools_do_not_masquerade_as_settings",
+      "tests.test_client_calibration_context.BoundCaptureClientTests.test_partial_or_false_claiming_native_evidence_is_rejected",
+      "tests.test_client_calibration_context.BoundCaptureClientTests.test_unknown_preserves_evidence_without_inventing_confirmed_outcomes",
+      "tests.test_client_calibration_context.BoundCaptureClientTests.test_valid_v2_accepts_optional_native_evidence",
+      "tests.test_client_calibration_context.CalibrationStateClientTests.test_http_get_state_rejects_false_calibration_claim",
+      "tests.test_client_calibration_context.CalibrationStateClientTests.test_present_malformed_summary_fails_closed_in_both_clients",
+      "tests.test_client_calibration_context.CalibrationStateClientTests.test_present_valid_summaries_and_legacy_absence",
+      "tests.test_client_calibration_context.HttpMissingCaptureTests.test_true_404_not_found_is_none_but_500_not_found_is_error",
+      "tests.test_camera_cli.BasicCaptureCliTests.test_fault_and_invalid_input",
+      "tests.test_camera_cli.BasicCaptureCliTests.test_independent_capture_query_and_same_id_does_not_retake",
+      "tests.test_camera_offline.BasicCameraBackendSelectionTests.test_invalid_backend_selection_cannot_silently_fall_back_or_create_data",
+      "tests.test_camera_offline.NativeOfflineCameraCliTests.test_capture_review_and_export_survive_cli_restarts_without_workflows_or_replay",
+      "tests.test_camera_offline.NativeOfflineCameraCliTests.test_existing_export_and_missing_or_corrupt_source_are_never_replaced",
+      "tests.test_camera_offline.OfflineCameraCliTests.test_capture_review_and_export_survive_cli_restarts_without_workflows_or_replay",
+      "tests.test_camera_offline.OfflineCameraCliTests.test_existing_export_and_missing_or_corrupt_source_are_never_replaced",
+      "tests.test_reference_journal_context.ReferenceJournalContextTests.test_live_query_fences_context_mismatch_without_rewrite_or_new_capture",
+      "tests.test_reference_journal_context.ReferenceJournalContextTests.test_restart_refuses_context_mismatch_before_epoch_recovery_changes_and_releases_lock",
+      "tests.test_calibration_http.CalibrationHttpTests.test_controlled_binding_capture_readback_clear_and_persistent_configure",
+      "tests.test_calibration_http.NativeCalibrationHttpTests.test_controlled_binding_capture_readback_clear_and_persistent_configure"
+    ],
+    "failures": [],
+    "errors": [],
+    "skipped": [
+      {
+        "test": "tests.test_calibration_activation.NativeCalibrationActivationTests.test_bound_record_is_explicit_v2_and_does_not_silently_change_v1_schema",
+        "reason": "optional jsonschema validator"
+      },
+      {
+        "test": "tests.test_calibration_activation.ReferenceCalibrationActivationTests.test_bound_record_is_explicit_v2_and_does_not_silently_change_v1_schema",
+        "reason": "optional jsonschema validator"
+      },
+      {
+        "test": "tests.test_native_staging_integrity.NativeStagingIntegrityTests.test_concurrent_final_is_preserved_without_overwrite",
+        "reason": "requires Linux /proc, a C compiler and LD_PRELOAD"
+      },
+      {
+        "test": "tests.test_native_staging_integrity.NativeStagingIntegrityTests.test_fifo_replacement_is_bounded_preserved_and_not_published",
+        "reason": "requires Linux /proc, a C compiler and LD_PRELOAD"
+      },
+      {
+        "test": "tests.test_native_staging_integrity.NativeStagingIntegrityTests.test_in_place_modified_contents_are_not_published_or_removed",
+        "reason": "requires Linux /proc, a C compiler and LD_PRELOAD"
+      },
+      {
+        "test": "tests.test_native_staging_integrity.NativeStagingIntegrityTests.test_same_size_replacement_is_preserved_and_not_published",
+        "reason": "requires Linux /proc, a C compiler and LD_PRELOAD"
+      },
+      {
+        "test": "tests.test_native_staging_integrity.NativeStagingIntegrityTests.test_symlink_replacement_preserves_target_and_is_not_published",
+        "reason": "requires Linux /proc, a C compiler and LD_PRELOAD"
+      },
+      {
+        "test": "tests.test_native_staging_integrity.NativeStagingIntegrityTests.test_untampered_closed_staging_completes",
+        "reason": "requires Linux /proc, a C compiler and LD_PRELOAD"
+      }
+    ],
+    "modules": [
+      "tests.test_native_daemon",
+      "tests.test_native_client",
+      "tests.test_native_settings",
+      "tests.test_native_calibration_binding",
+      "tests.test_calibration_activation",
+      "tests.test_persistent_settings",
+      "tests.test_client_calibration_context",
+      "tests.test_camera_cli",
+      "tests.test_camera_offline",
+      "tests.test_reference_journal_context",
+      "tests.test_calibration_http",
+      "tests.test_native_staging_integrity"
+    ],
+    "report_sha256": "53ba463a477686bba9fb8774fa453bd4bade6602657076cf82e263db64550778"
+  },
+  "scope": "actual ARM64 FreeBSD execution of cross-built synthetic-camera native and Python tests; no target recompilation, UI, physical hardware or power-loss validation"
+}

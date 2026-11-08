@@ -1,0 +1,57 @@
+{
+  "FreeBSD_execution_validated": false,
+  "default_transport": "binary-stdio",
+  "entry_point": "daos_adbd.py",
+  "files": {
+    "__init__.py": {
+      "bytes": 76,
+      "sha256": "bb451f3fb0c5fa4bd7bc4bbb9d657782195bfeeb9d147fe62f9b6c48e9aabd0f"
+    },
+    "auth.py": {
+      "bytes": 2841,
+      "sha256": "74f02ff881ba001db865141729e09f608c318b5da2d626e100ab5f174573556a"
+    },
+    "daos_adbd.py": {
+      "bytes": 792,
+      "sha256": "4c88c8b190a20002db3e8a8b4cf7a1af911d261a391eb2171529be927cad86cd"
+    },
+    "protocol.py": {
+      "bytes": 3655,
+      "sha256": "c81e8de010065c0914c05bdc5fd29d7748628141fcac95b02177515ef3afde5d"
+    },
+    "pty_child.py": {
+      "bytes": 522,
+      "sha256": "5316ccc13bbbb7247b5132c566c9fd71c22397ac832d79b1ee64ed9db4499c82"
+    },
+    "server.py": {
+      "bytes": 13326,
+      "sha256": "9347db4e1f4b20841533f31c5f7e2e0ae7ecba9e2159bba71f85672e45e5d12e"
+    },
+    "shell_service.py": {
+      "bytes": 9291,
+      "sha256": "771dfd17c2ffa3bd6081309b8c56e406ae6d9f7079d9552f5dfd8f4ce07e1489"
+    },
+    "sync_service.py": {
+      "bytes": 5702,
+      "sha256": "3885d34b65bce179c824d2cb817494a99a2c5fe62ec3a4cdd152004854553b5b"
+    }
+  },
+  "format": "DaOS-ADB-device-runtime-manifest-v1",
+  "network_listener_default": false,
+  "official_test_client": {
+    "adb_sha256": "a902be8f45c6c62e76c9efaf6947a0fa747c9cabd89a2ac8e0d16ecb30b3ed01",
+    "archive_sha256": "d230f13842f60f782a8645f9c813f8f845bf36089ea7289f28c48f17979313f1",
+    "url": "https://dl.google.com/android/repository/platform-tools-latest-linux.zip",
+    "version": "Android Debug Bridge version 1.0.41\nVersion 37.0.1-15733141\nInstalled as /home/dy09/daos-adb-development/tools/platform-tools/adb\nRunning on Linux 6.18.54.1-microsoft-standard-WSL2 (x86_64)\n"
+  },
+  "preauthorized_RSA2048_required": true,
+  "private_keys_in_source_tree": false,
+  "public_development_key": {
+    "android_structure_sha256": "8c01edc4c8ef74efa01bd49592df237bb78348f4bc68234ce2918d3698dbb9fd",
+    "path": "keys/daos-development-adbkey.pub",
+    "sha256": "3840399e3d2134b3cc5019ec71fb3d96c2fd7ce6f7ad519db767d1771702332f"
+  },
+  "python_minimum": "3.12",
+  "runtime_dependencies": "Python standard library and POSIX APIs only",
+  "usb_hardware_validated": false
+}

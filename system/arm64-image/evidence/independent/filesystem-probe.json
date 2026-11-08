@@ -1,0 +1,145 @@
+{
+  "uid": 1000,
+  "module_info": [
+    {
+      "path": "kernel/fs/mbcache.ko.xz",
+      "fields": [
+        "depends=",
+        "name=mbcache",
+        "vermagic=6.12.107+deb13-arm64 SMP mod_unload modversions aarch64"
+      ]
+    },
+    {
+      "path": "kernel/lib/crc16.ko.xz",
+      "fields": [
+        "depends=",
+        "name=crc16",
+        "vermagic=6.12.107+deb13-arm64 SMP mod_unload modversions aarch64"
+      ]
+    },
+    {
+      "path": "kernel/fs/jbd2/jbd2.ko.xz",
+      "fields": [
+        "depends=",
+        "name=jbd2",
+        "vermagic=6.12.107+deb13-arm64 SMP mod_unload modversions aarch64"
+      ]
+    },
+    {
+      "path": "kernel/fs/ext4/ext4.ko.xz",
+      "fields": [
+        "depends=jbd2,mbcache,crc16",
+        "name=ext4",
+        "vermagic=6.12.107+deb13-arm64 SMP mod_unload modversions aarch64"
+      ]
+    },
+    {
+      "path": "kernel/drivers/block/virtio_blk.ko.xz",
+      "fields": [
+        "depends=",
+        "name=virtio_blk",
+        "vermagic=6.12.107+deb13-arm64 SMP mod_unload modversions aarch64"
+      ]
+    },
+    {
+      "path": "kernel/drivers/virtio/virtio_mmio.ko.xz",
+      "fields": [
+        "depends=",
+        "name=virtio_mmio",
+        "vermagic=6.12.107+deb13-arm64 SMP mod_unload modversions aarch64"
+      ]
+    },
+    {
+      "path": "kernel/drivers/gpu/drm/virtio/virtio-gpu.ko.xz",
+      "fields": [
+        "depends=drm_kms_helper,drm,drm_shmem_helper,virtio_dma_buf",
+        "name=virtio_gpu",
+        "vermagic=6.12.107+deb13-arm64 SMP mod_unload modversions aarch64"
+      ]
+    }
+  ],
+  "image_probe": {
+    "commands": [
+      {
+        "argv": [
+          "/usr/sbin/mke2fs",
+          "-q",
+          "-F",
+          "-t",
+          "ext4",
+          "-b",
+          "4096",
+          "-I",
+          "256",
+          "-m",
+          "0",
+          "-U",
+          "26110500-0000-4000-8000-000000000007",
+          "-L",
+          "hf-image-probe",
+          "-E",
+          "root_owner=0:0,hash_seed=26110500-0000-4000-8000-000000000007,lazy_itable_init=0,lazy_journal_init=0",
+          "-d",
+          "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/image-tool-probe-r7/rootfs.tar",
+          "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/image-tool-probe-r7/probe-1.ext4"
+        ],
+        "returncode": 0,
+        "stderr": "\nWarning: the fs_type small is not defined in mke2fs.conf\n\n"
+      },
+      {
+        "argv": [
+          "/usr/sbin/mke2fs",
+          "-q",
+          "-F",
+          "-t",
+          "ext4",
+          "-b",
+          "4096",
+          "-I",
+          "256",
+          "-m",
+          "0",
+          "-U",
+          "26110500-0000-4000-8000-000000000007",
+          "-L",
+          "hf-image-probe",
+          "-E",
+          "root_owner=0:0,hash_seed=26110500-0000-4000-8000-000000000007,lazy_itable_init=0,lazy_journal_init=0",
+          "-d",
+          "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/image-tool-probe-r7/rootfs.tar",
+          "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/image-tool-probe-r7/probe-2.ext4"
+        ],
+        "returncode": 0,
+        "stderr": "\nWarning: the fs_type small is not defined in mke2fs.conf\n\n"
+      }
+    ],
+    "images": [
+      {
+        "path": "build/image-tool-probe-r7/probe-1.ext4",
+        "bytes": 33554432,
+        "sha256": "a61e82984dec13f55da36b948c3f893787a1da81611605ee2c53fc8315038502"
+      },
+      {
+        "path": "build/image-tool-probe-r7/probe-2.ext4",
+        "bytes": 33554432,
+        "sha256": "a61e82984dec13f55da36b948c3f893787a1da81611605ee2c53fc8315038502"
+      }
+    ],
+    "byte_identical": true,
+    "e2fsck": {
+      "returncode": 0,
+      "stdout": "Pass 1: Checking inodes, blocks, and sizes\nPass 2: Checking directory structure\nPass 3: Checking directory connectivity\nPass 4: Checking reference counts\nPass 5: Checking group summary information\nhf-image-probe: 16/2048 files (6.3% non-contiguous), 1170/8192 blocks\n",
+      "stderr": "e2fsck 1.47.2 (1-Jan-2025)\n"
+    },
+    "debugfs_cat": {
+      "returncode": 0,
+      "stdout": "image-probe-r7\n",
+      "stderr": "debugfs 1.47.2 (1-Jan-2025)\n"
+    },
+    "debugfs_stat": {
+      "returncode": 0,
+      "stdout": "Inode: 13   Type: regular    Mode:  0644   Flags: 0x80000\nGeneration: 0    Version: 0x00000000:00000000\nUser:     0   Group:     0   Project:     0   Size: 15\nFile ACL: 0\nLinks: 1   Blockcount: 8\nFragment:  Address: 0    Number: 0    Size: 0\n ctime: 0x00000000:00000000 -- Wed Dec 31 16:00:00 1969\n atime: 0x00000000:00000000 -- Wed Dec 31 16:00:00 1969\n mtime: 0x6553f100:00000000 -- Tue Nov 14 14:13:20 2023\ncrtime: 0x6553f100:00000000 -- Tue Nov 14 14:13:20 2023\nSize of extra inode fields: 32\nInode checksum: 0x2adf2e5c\nEXTENTS:\n(0):1166\n",
+      "stderr": "debugfs 1.47.2 (1-Jan-2025)\n"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+HF_UI_FIXTURE_ACQUIRE_ORDER {"qml_loaded_at": 547283.046, "factory_released_at": 547283.14, "acquired_at": 547283.14, "lease_seconds": 0.6}
+test_retained_page_replaces_model_and_slow_export_does_not_starve_lease (tests.test_device_ui.QtDeviceTests.test_retained_page_replaces_model_and_slow_export_does_not_starve_lease) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 2.306s
+
+OK

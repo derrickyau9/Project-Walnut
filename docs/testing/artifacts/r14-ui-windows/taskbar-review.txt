@@ -1,0 +1,63 @@
+DaOS_TASKBAR_REVIEW_STAGE fixture condition
+DaOS_TASKBAR_REVIEW_STAGE Taskbar settled True
+DaOS_TASKBAR_REVIEW_STAGE actual synthetic image ready
+DaOS_TASKBAR_REVIEW_STAGE fixture condition
+DaOS_TASKBAR_REVIEW_STAGE fixture condition
+DaOS_TASKBAR_REVIEW_STAGE fixture condition
+DaOS_TASKBAR_REVIEW_STAGE fixture condition
+DaOS_TASKBAR_REVIEW_STAGE fixture condition
+DaOS_TASKBAR_REVIEW_STAGE fixture condition
+DaOS_TASKBAR_REVIEW_STAGE fixture condition
+DaOS_TASKBAR_REVIEW_STAGE fixture condition
+DaOS_TASKBAR_REVIEW_STAGE fixture condition
+DaOS_TASKBAR_REVIEW_STAGE fixture condition
+DaOS_TASKBAR_REVIEW_STAGE fixture condition
+DaOS_TASKBAR_REVIEW_STAGE fixture condition
+DaOS_TASKBAR_REVIEW_STAGE fixture condition
+DaOS_TASKBAR_REVIEW_STAGE fixture condition
+DaOS_TASKBAR_REVIEW_STAGE fixture condition
+DaOS_TASKBAR_REVIEW_STAGE fixture condition
+DaOS_TASKBAR_REVIEW_STAGE actual Qt grab 01-expanded.png
+DaOS_TASKBAR_REVIEW_STAGE fixture condition
+DaOS_TASKBAR_REVIEW_STAGE fixture condition
+DaOS_TASKBAR_REVIEW_STAGE collapse observation 0ms
+DaOS_TASKBAR_REVIEW_STAGE actual Qt grab collapse-00.png
+DaOS_TASKBAR_REVIEW_STAGE collapse observation 16ms
+DaOS_TASKBAR_REVIEW_STAGE actual Qt grab collapse-01.png
+DaOS_TASKBAR_REVIEW_STAGE collapse observation 40ms
+DaOS_TASKBAR_REVIEW_STAGE actual Qt grab collapse-02.png
+DaOS_TASKBAR_REVIEW_STAGE collapse observation 80ms
+DaOS_TASKBAR_REVIEW_STAGE actual Qt grab collapse-03.png
+DaOS_TASKBAR_REVIEW_STAGE collapse observation 120ms
+DaOS_TASKBAR_REVIEW_STAGE actual Qt grab collapse-04.png
+DaOS_TASKBAR_REVIEW_STAGE collapse observation 180ms
+DaOS_TASKBAR_REVIEW_STAGE actual Qt grab collapse-05.png
+DaOS_TASKBAR_REVIEW_STAGE collapse observation 240ms
+DaOS_TASKBAR_REVIEW_STAGE actual Qt grab collapse-06.png
+DaOS_TASKBAR_REVIEW_STAGE Taskbar settled False
+DaOS_TASKBAR_REVIEW_STAGE actual Qt grab 02-collapsed.png
+DaOS_TASKBAR_REVIEW_STAGE fixture condition
+DaOS_TASKBAR_REVIEW_STAGE fixture condition
+DaOS_TASKBAR_REVIEW_STAGE expand observation 0ms
+DaOS_TASKBAR_REVIEW_STAGE actual Qt grab expand-00.png
+DaOS_TASKBAR_REVIEW_STAGE expand observation 16ms
+DaOS_TASKBAR_REVIEW_STAGE actual Qt grab expand-01.png
+DaOS_TASKBAR_REVIEW_STAGE expand observation 40ms
+DaOS_TASKBAR_REVIEW_STAGE actual Qt grab expand-02.png
+DaOS_TASKBAR_REVIEW_STAGE expand observation 80ms
+DaOS_TASKBAR_REVIEW_STAGE actual Qt grab expand-03.png
+DaOS_TASKBAR_REVIEW_STAGE expand observation 120ms
+DaOS_TASKBAR_REVIEW_STAGE actual Qt grab expand-04.png
+DaOS_TASKBAR_REVIEW_STAGE expand observation 180ms
+DaOS_TASKBAR_REVIEW_STAGE actual Qt grab expand-05.png
+DaOS_TASKBAR_REVIEW_STAGE expand observation 240ms
+DaOS_TASKBAR_REVIEW_STAGE actual Qt grab expand-06.png
+DaOS_TASKBAR_REVIEW_STAGE Taskbar settled True
+DaOS_TASKBAR_REVIEW_STAGE actual Qt grab 03-reopened.png
+DaOS_TASKBAR_REVIEW_STAGE fixture condition
+DaOS_TASKBAR_REVIEW_STAGE icon opens MENU
+DaOS_TASKBAR_REVIEW_STAGE actual Qt grab 04-menu.png
+DaOS_TASKBAR_REVIEW_STAGE fixture condition
+DaOS_TASKBAR_REVIEW_STAGE icon opens diagnostics tool
+DaOS_TASKBAR_REVIEW_STAGE actual Qt grab 05-tools.png
+DaOS_TASKBAR_REVIEW_SUCCESS {"screenshots": 5, "animation_frames": 14, "intermediate_intervals": {"collapse": 3, "expand": 3}, "report_sha256": "e473c0279e0d1f6db7e023a102c9ec7879d8e5d9abefa2dd11d074d4473975a2"}

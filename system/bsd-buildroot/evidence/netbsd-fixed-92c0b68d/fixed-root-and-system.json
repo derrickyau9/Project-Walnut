@@ -1,0 +1,28 @@
+{
+  "format": "DaOS-NetBSD-fixed-root-live-v1",
+  "raw_image_sha256": "d5a857db096555f2523b801e54a723ff3278610aaf0ed64897b12f8885ad709b",
+  "vm_uuid": "92c0b68d-7175-417e-ac77-7a263f2f2d60",
+  "root_owner_correct": true,
+  "architecture_aarch64": true,
+  "relative_mouse_default": true,
+  "results": [
+    {
+      "name": "terminal",
+      "output": "set +o emacs; set +o vi; stty sane -echo; _r=$?; printf '\\ \bnFIXED_0_RC=%s\\n' \"$_r\"\r\n\r\nFIXED_0_RC=0"
+    },
+    {
+      "name": "root-mount-ownership",
+      "output": "\r\ndaos-rpi4-aarch64-ui# 0:0:755:43009:/\r\n0:0:755:43010:/var\r\n1000:1000:700:43011:/var/DaOS/camera/photos\r\n\r\nFIXED_1_RC=0"
+    },
+    {
+      "name": "architecture",
+      "output": "\r\ndaos-rpi4-aarch64-ui# hw.machine = evbarm\r\nhw.machine_arch = aarch64\r\n\r\nFIXED_2_RC=0"
+    },
+    {
+      "name": "mounts",
+      "output": "\r\ndaos-rpi4-aarch64-ui# /dev/dk1 on / type ffs (noatime, local)\r\n/dev/dk2 on /var type ffs (noatime, local)\r\n/dev/dk0 on /boot type msdos (local)\r\ntmpfs on /tmp type tmpfs (local)\r\nptyfs on /dev/pts type ptyfs (local)\r\ntmpfs on /var/shm type tmpfs (local)\r\n/dev/dk3 on /var/DaOS/camera/photos type ffs (noatime, local)\r\n\r\nFIXED_3_RC=0"
+    }
+  ],
+  "physical_Pi4_validation": false,
+  "USB_ADB_supported": false
+}

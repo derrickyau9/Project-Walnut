@@ -1,0 +1,13 @@
+{
+  "created_at": "2026-11-06T07:04:32.216935+00:00",
+  "format": "DaOS-FreeBSD-USB-buildroot-v1",
+  "input_hash": "34167c704a21b1aaa1da64be3ab7526f8282e01fb1066c14555a01cf77b7326b",
+  "paths": {
+    "base_work": "/var/daos-builds/daos-base-buildroot-e6ccfe48ce68f4",
+    "bundle": "/var/daos-builds/daos-buildroot-usb-e6ccfe48ce68f4/adb-bundle",
+    "guest_root": "/var/daos-builds/daos-buildroot-usb-e6ccfe48ce68f4",
+    "image_work": "/var/DaOS-pi4-usb-build-memory/DaOS-image-buildroot-usb-e6ccfe48ce68f4",
+    "usb_source_archive": "/var/daos-builds/daos-buildroot-usb-e6ccfe48ce68f4/usb-source.tar",
+    "usb_work": "/var/daos-builds/daos-build-usb-adb-e6ccfe48ce68f4"
+  }
+}

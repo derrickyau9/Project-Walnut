@@ -1,0 +1,20 @@
+{
+  "format": "DaOS-NetBSD-fixed-GUI-startup-v1",
+  "raw_image_sha256": "d5a857db096555f2523b801e54a723ff3278610aaf0ed64897b12f8885ad709b",
+  "vm_uuid": "92c0b68d-7175-417e-ac77-7a263f2f2d60",
+  "camera_started_event_observed": true,
+  "native_finalization_complete_event_observed": true,
+  "relative_mouse_default": true,
+  "mice": [
+    {
+      "index": 2,
+      "name": "QEMU HID Mouse",
+      "current": true,
+      "absolute": false
+    }
+  ],
+  "rcorder_warning_present": false,
+  "screenshot": "/mnt/f/Project HasselFree/system/bsd-buildroot/evidence/netbsd-fixed-92c0b68d/fixed-gui-startup.png",
+  "physical_Pi4_validation": false,
+  "USB_ADB_supported": false
+}

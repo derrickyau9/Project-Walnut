@@ -1,0 +1,43 @@
+{
+  "format": "DaOS-NetBSD-GUI-capture-playback-export-v1",
+  "raw_image_sha256": "01f86dfbb57cb15cc87c9ded17ad5380e250643d693f0cca4d7585e9ea8e2d35",
+  "vm_uuid": "0236b38b-7047-4219-a928-f775f713402b",
+  "source_built_base": "NetBSD 11.1",
+  "gui_revision": "R14",
+  "GUI_actual_display": true,
+  "menu_navigation_observed": true,
+  "retained_photo_information_observed": true,
+  "export_confirmation_observed": true,
+  "files": [
+    {
+      "path": "/var/DaOS/camera/photos/b9477438-0932-4f3b-b66c-a3de7759a5a4.dng",
+      "bytes": 25662,
+      "uid": 1000,
+      "sha256": "577936b3f49479a4401d6f53f4d1fc5842edfdbdd7a473f8f7fd55355b829403",
+      "header": "49492a00"
+    },
+    {
+      "path": "/var/DaOS/camera/photos/2e27be18-41c9-4b22-8334-a59dcb9c98bd.dng",
+      "bytes": 25662,
+      "uid": 1000,
+      "sha256": "177bde1339fae9c3871994afc4544b1480e0846dbb30130019e272d3ad36c50f",
+      "header": "49492a00"
+    },
+    {
+      "path": "/var/DaOS/ui/apps/exports/photo-2e27be18-41c9-4b22-8334-a59dcb9c98bd-1793945696989.dng",
+      "bytes": 25662,
+      "uid": 1000,
+      "sha256": "177bde1339fae9c3871994afc4544b1480e0846dbb30130019e272d3ad36c50f",
+      "header": "49492a00"
+    }
+  ],
+  "originals_count": 2,
+  "exports_count": 1,
+  "export_matches_retained_original": true,
+  "input": "QEMU standard relative USB mouse; factory /dev/wsmouse config restored; USB tablet absolute mapping is incompatible",
+  "keyboard_escape_tested": true,
+  "physical_camera": false,
+  "physical_Pi4_validation": false,
+  "USB_ADB_supported": false,
+  "known_image_issue": "Factory root inode uid/gid1000, correction pending new image attempt"
+}

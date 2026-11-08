@@ -1,0 +1,3 @@
+# Optional desktop Qt/QML simulation UI. Qt runtime and platform packaging
+# must be reviewed separately for a device image or distribution.
+-r ui/on-device/requirements.txt

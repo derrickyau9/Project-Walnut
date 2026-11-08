@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hasslefree.example/contracts/v1/capture-record.schema.json",
+  "title": "HF-Sim capture record v1",
+  "type": "object",
+  "required": ["request_id", "capture_id", "status", "sensor_mode", "requested_exposure_us", "requested_analogue_gain", "output_format", "actual_exposure_us", "actual_analogue_gain", "frame_id", "timestamp", "sensor_id", "calibration_id", "file_path", "error"],
+  "properties": {
+    "request_id": {"type": "string", "format": "uuid"},
+    "capture_id": {"type": "string", "format": "uuid"},
+    "status": {"enum": ["accepted", "capturing", "complete", "failed", "cancelled", "unknown"]},
+    "backend": {"enum": ["python", "native"], "description": "Synthetic generator selected by the authority; not a hardware support claim."},
+    "sensor_mode": {"type": "string"},
+    "requested_exposure_us": {"type": "integer"},
+    "requested_analogue_gain": {"type": "number"},
+    "output_format": {"const": "dng"},
+    "simulation_scene": {"enum": ["scene", "dark", "flat"]},
+    "actual_exposure_us": {"type": ["integer", "null"]},
+    "actual_analogue_gain": {"type": ["number", "null"]},
+    "frame_id": {"type": ["string", "null"]},
+    "timestamp": {"type": ["number", "null"], "description": "Unix seconds; simulated completion time, not measured exposure time."},
+    "sensor_id": {"const": "HF-Sim"},
+    "calibration_id": {"const": "synthetic-uncalibrated"},
+    "file_path": {"type": ["string", "null"]},
+    "error": {"type": ["string", "null"]},
+    "fault": {"type": ["string", "null"]},
+    "deadline_unix_ms": {"type": ["integer", "null"]}
+  }
+}

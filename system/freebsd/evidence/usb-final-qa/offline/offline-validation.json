@@ -1,0 +1,239 @@
+{
+  "format": "DaOS-USB-final-offline-QA-v1",
+  "status": "passed",
+  "raw_sha256": "ed84cce5eb14da514732f88909d0baee8f22266a3f837569185b30f855e1394e",
+  "assembly_receipt_sha256": "59273b8c19f896e5e42745265e998ac587dc2105a6bb38ab4158ea11580cd516",
+  "embedded_usb_manifest_sha256": "6ae7cc35a566d201f9aa470569dd95e9b37c6f06f1ba64dcefef61769f9d2391",
+  "checked_payload_files": [
+    {
+      "partition": "DaOS-root",
+      "path": "usr/local/libexec/daos-usb-adb",
+      "inode": "24918",
+      "bytes": 18968,
+      "sha256": "fab7cc1ffbbfd0875ef740df655771368d3da4b2d7cd5a4178903caa01bdfafd"
+    },
+    {
+      "partition": "DaOS-root",
+      "path": "boot/modules/daos_adb_template.ko",
+      "inode": "220",
+      "bytes": 10184,
+      "sha256": "dfbfa4346cad57d2dc581f1b2b28f5389f221d386b6f58ca36a3364b76e19e67"
+    },
+    {
+      "partition": "DaOS-root",
+      "path": "usr/local/libexec/daos-adb/__init__.py",
+      "inode": "24965",
+      "bytes": 76,
+      "sha256": "bb451f3fb0c5fa4bd7bc4bbb9d657782195bfeeb9d147fe62f9b6c48e9aabd0f"
+    },
+    {
+      "partition": "DaOS-root",
+      "path": "usr/local/libexec/daos-adb/auth.py",
+      "inode": "24966",
+      "bytes": 2841,
+      "sha256": "74f02ff881ba001db865141729e09f608c318b5da2d626e100ab5f174573556a"
+    },
+    {
+      "partition": "DaOS-root",
+      "path": "usr/local/libexec/daos-adb/daos_adbd.py",
+      "inode": "24967",
+      "bytes": 792,
+      "sha256": "4c88c8b190a20002db3e8a8b4cf7a1af911d261a391eb2171529be927cad86cd"
+    },
+    {
+      "partition": "DaOS-root",
+      "path": "usr/local/libexec/daos-adb/protocol.py",
+      "inode": "24968",
+      "bytes": 3655,
+      "sha256": "c81e8de010065c0914c05bdc5fd29d7748628141fcac95b02177515ef3afde5d"
+    },
+    {
+      "partition": "DaOS-root",
+      "path": "usr/local/libexec/daos-adb/pty_child.py",
+      "inode": "24969",
+      "bytes": 522,
+      "sha256": "5316ccc13bbbb7247b5132c566c9fd71c22397ac832d79b1ee64ed9db4499c82"
+    },
+    {
+      "partition": "DaOS-root",
+      "path": "usr/local/libexec/daos-adb/server.py",
+      "inode": "24970",
+      "bytes": 13326,
+      "sha256": "9347db4e1f4b20841533f31c5f7e2e0ae7ecba9e2159bba71f85672e45e5d12e"
+    },
+    {
+      "partition": "DaOS-root",
+      "path": "usr/local/libexec/daos-adb/shell_service.py",
+      "inode": "24971",
+      "bytes": 9291,
+      "sha256": "771dfd17c2ffa3bd6081309b8c56e406ae6d9f7079d9552f5dfd8f4ce07e1489"
+    },
+    {
+      "partition": "DaOS-root",
+      "path": "usr/local/libexec/daos-adb/sync_service.py",
+      "inode": "24972",
+      "bytes": 5702,
+      "sha256": "3885d34b65bce179c824d2cb817494a99a2c5fe62ec3a4cdd152004854553b5b"
+    },
+    {
+      "partition": "DaOS-root",
+      "path": "etc/rc.conf.d/DaOS_usb_adb",
+      "inode": "1181",
+      "bytes": 26,
+      "sha256": "1c4c36f3fc6a861dc316a448b0d80e33332cd7cff44c7ec6985ec893edd42507"
+    },
+    {
+      "partition": "DaOS-root",
+      "path": "usr/local/etc/rc.d/DaOS-usb-adb",
+      "inode": "6921",
+      "bytes": 625,
+      "sha256": "afbdacd5f8e83dd8608d7e136d371d9a362d301dadc38e4c7fc3304e706344b7"
+    },
+    {
+      "partition": "DaOS-root",
+      "path": "usr/local/libexec/DaOS-usb-adb-session.py",
+      "inode": "24909",
+      "bytes": 5236,
+      "sha256": "9fc399376753d3792746de800f9267d867ee49618e038b8e75a33df324fab92e"
+    },
+    {
+      "partition": "DaOS-root",
+      "path": "etc/daos/adb_keys",
+      "inode": "1056",
+      "bytes": 1432,
+      "sha256": "8f3697da79eca3449c03a1053468a4a42a181c9b27ae5938f77722d2bbe79b77"
+    },
+    {
+      "partition": "DaOS-root",
+      "path": "usr/local/etc/daos/usb-adb.json",
+      "inode": "6804",
+      "bytes": 165,
+      "sha256": "b8a0ad934f684129ef95e75c16b83ec281b091c3ea8f52063617ab63cb350b69"
+    },
+    {
+      "partition": "DaOS-root",
+      "path": "boot/loader.conf.local",
+      "inode": "82",
+      "bytes": 305,
+      "sha256": "8f89abca33d25e8ca809796bf17ceb0daafc482cf55c36d58ec57b2b0c7f3bd3"
+    },
+    {
+      "partition": "DaOS-root",
+      "path": "boot/dtb/daos-rpi4-usb-device.dtb",
+      "inode": "110",
+      "bytes": 56511,
+      "sha256": "7dd716ef16f317ec4db9f0bb40cdc4e4832264ce16714730dc286c978c6674c2"
+    },
+    {
+      "partition": "DaOS-root",
+      "path": "usr/share/DaOS/usb-dtb-derivation.json",
+      "inode": "44428",
+      "bytes": 1420,
+      "sha256": "e749ee02cc5b76346ca9cdc79e6ad66e6072942a8caf2f19e5369c69112c0aab"
+    },
+    {
+      "partition": "DaOS-root",
+      "path": "usr/share/DaOS/usb-adb-build.json",
+      "inode": "44425",
+      "bytes": 3170,
+      "sha256": "655260d9199e08062b27c5d453e4f7c1e70a497a5c49ac8ad7b5ec3dbf526972"
+    },
+    {
+      "partition": "DaOS-root",
+      "path": "usr/share/DaOS/usb-adb-runtime.json",
+      "inode": "44427",
+      "bytes": 2268,
+      "sha256": "aabddb0681593f16e13782da0a66f8dcbcdb4bd55280a38c969da8516a871b41"
+    },
+    {
+      "partition": "DaOS-efi",
+      "path": "bcm2711-rpi-4-b.dtb",
+      "inode": "28993",
+      "bytes": 56511,
+      "sha256": "7dd716ef16f317ec4db9f0bb40cdc4e4832264ce16714730dc286c978c6674c2"
+    },
+    {
+      "partition": "DaOS-efi",
+      "path": "daos-rpi4-usb-device.dtb",
+      "inode": "41588",
+      "bytes": 56511,
+      "sha256": "7dd716ef16f317ec4db9f0bb40cdc4e4832264ce16714730dc286c978c6674c2"
+    },
+    {
+      "partition": "DaOS-root",
+      "path": "boot/kernel/usb_template.ko",
+      "inode": "904",
+      "bytes": 76856,
+      "sha256": "c385973ab0fd4483ad8238bfc760f4cdffc5a1b41213a7dca6ad4ce6be6f4fbc"
+    },
+    {
+      "partition": "DaOS-root",
+      "path": "lib/libc.so.7",
+      "inode": "1554",
+      "bytes": 1997728,
+      "sha256": "dde4d8989c4a2425a2a65bbf873917e091db1b351d6bc95a3eff85f47daaabb6"
+    },
+    {
+      "partition": "DaOS-root",
+      "path": "lib/libsys.so.7",
+      "inode": "1598",
+      "bytes": 97472,
+      "sha256": "3080409faad4e5ab48826a41a5cad8e138c0e5a09016ba0ed028c0bebbb6fb3a"
+    },
+    {
+      "partition": "DaOS-root",
+      "path": "lib/libthr.so.3",
+      "inode": "1599",
+      "bytes": 135960,
+      "sha256": "d2e921e9b7fc9cd872528dda6eea25fccc565dbf563ff0eac4018610956346e6"
+    },
+    {
+      "partition": "DaOS-root",
+      "path": "usr/lib/libusb.so.3",
+      "inode": "5859",
+      "bytes": 94504,
+      "sha256": "c92c5c5fe29e96e7c2ddde037592ad4a06d71fd1593acc6282328d339c598669"
+    }
+  ],
+  "authorized_public_keys": {
+    "fingerprints": [
+      "8c01edc4c8ef74efa01bd49592df237bb78348f4bc68234ce2918d3698dbb9fd",
+      "77692ef6437a69c159767aea568f8cf2004ad982b9913a80c2ee031e15445dc5"
+    ],
+    "root_owned_mode_0600": true,
+    "private_key_material_staged": false
+  },
+  "derived_dtb_sha256": "7dd716ef16f317ec4db9f0bb40cdc4e4832264ce16714730dc286c978c6674c2",
+  "derived_dtb_all_three_paths_match": true,
+  "dng_original": {
+    "path": "DaOS-photos/361f0ccb-1882-4bdf-a557-b206f4161dad.dng",
+    "bytes": 25662,
+    "sha256": "2ecab9bcbb66ebe3d5ee9257a2c4fed90e1838784bf56bf61c054c5746470cd5"
+  },
+  "dng_export": {
+    "path": "DaOS-state/DaOS/ui/apps/exports/photo-361f0ccb-1882-4bdf-a557-b206f4161dad-1793948151794.dng",
+    "bytes": 25662,
+    "sha256": "2ecab9bcbb66ebe3d5ee9257a2c4fed90e1838784bf56bf61c054c5746470cd5"
+  },
+  "export_exact_bytes_match": true,
+  "usb_rc_started_and_waited_for_host": true,
+  "usb_helper_clean_exit": true,
+  "guest_identity": {
+    "architecture": "arm64",
+    "event": "base-identity",
+    "kernel_ident": "DaOS",
+    "kernel_sha256": "5ac681d051cb623b23a724f91e6ecb818a883f034c8aa88eab678162221f2dec",
+    "release": "15.1-RELEASE-p6",
+    "shell_sha256": "a60e9e757429a512c1551913a79a044e3b72bb0e4ac4ba68b49f1067e4cb2a4a",
+    "system": "FreeBSD"
+  },
+  "gui_clean_stop": {
+    "application_returncode": 0,
+    "event": "session-stopped",
+    "forced_application_stop": false,
+    "server_returncode": 0
+  },
+  "physical_usb_enumeration_verified": false,
+  "windows_usb_binding_verified": false,
+  "scope": "Stopped QEMU private COW snapshot; no physical USB controller or camera."
+}

@@ -1,0 +1,351 @@
+{
+  "application_input_sha256": {
+    "camera/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "camera/calibration/__init__.py": "145ef81dd62004f0d7ff607bb8d7a0d221a6a4279bb7ee6bd8eae78dafdecc7c",
+    "camera/calibration/binding.py": "9abe0ce308550aa7a3f9f56d6342105c5e8fc827698d21cf931875f910fb1362",
+    "camera/calibration/store.py": "23dc05c64847a2303fc778c42d3f012cfdfcf1c62ea035cf435211264938f228",
+    "camera/camerad/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "camera/camerad/__main__.py": "fc25bee012b7877f3e2905702992573d112881e20e05a69f2026db103fc04f73",
+    "camera/camerad/calibration_context.py": "255b523780b84a6e6372966626931d67075ccf79c068f64bcb3ac9ff537cfe45",
+    "camera/camerad/http_client.py": "e0e449c23cec8b5f2f8074a7038a75f855b2dd512a042bd8eb2dcb179420fd16",
+    "camera/camerad/native_backend.py": "4320372629d5cd035947a9f74360c90d7c52ac91635202f80a0a9cb311430f5a",
+    "camera/camerad/native_client.py": "5dc77424d9aa71400c0cf0d476d9d8d3759d56570c4f8de742067bc6bf5fdbca",
+    "camera/camerad/native_service.py": "e31bb085407683f070ef0aad477000cfdcad22a11871a6265fd7ae483a0544f9",
+    "camera/camerad/retained.py": "a1518dc814d4634616917b305ca7a26ca08908263214c43183dcc75f11891d4b",
+    "camera/camerad/server.py": "122bd5fe963edfcae73deec3aa69c44e81f15f2af9f58db5827e453d1235d50a",
+    "camera/camerad/service.py": "c1d90d37d2a913ef255b1cf0481120629e863a404ba70923e01b83dd721e0316",
+    "camera/dng/hf_dng.py": "8969aef7fa59c33791f55cf14271581c10b51a264b57b572873032f93e03d7b5",
+    "camera/dng/inspect.py": "4200ac573d1a0373bc5cacde10d024948fab046af88d065356387d71c7033342",
+    "camera/pipeline/__init__.py": "e14baeff3beab5b6f1b8f144fdb98b95158db1178eb49e038dab03b44b56b12d",
+    "camera/pipeline/preview.py": "2f6df30c727173450473386698166ce9dcc0d7cd856499068f9a6fe24e2afbc7",
+    "daos/camera-contracts/v1/README.md": "15c28377368b64f1b4e47147a8693d8959c0d1783f39b80bd83934dd7d45c2b9",
+    "daos/camera-contracts/v1/capture-asset.schema.json": "f5663535ca6f780c2c95aeac6d422ebc76d8fea27ce1d14f505267984e9e3b8e",
+    "daos/camera-contracts/v1/capture-list.schema.json": "6f2bd0f8abe68371191c5dcadd3daf777ea54cc63c4f228a8393e1a4eabb2ee9",
+    "daos/camera-contracts/v1/capture-record.schema.json": "7742a8becdec8c67eaab5ba2921370287ea2574ef0375a3f2059388ecf56e7b7",
+    "daos/camera-contracts/v1/capture-request.schema.json": "b8a2ad7ced1fc6eaf87d43463b4282f27cc1854ac7828388ff72f951468a13ce",
+    "daos/camera-contracts/v2/README.md": "6e2a3da76acfec4187d1267ad2289db900f463af24fe80f2cc9328b1a0a0992d",
+    "daos/camera-contracts/v2/calibration-binding.schema.json": "a410ae6a7eaf0d107f00de44c3521a7548f93d4cf52802826aaa6c141b76158b",
+    "daos/camera-contracts/v2/capture-record.schema.json": "571749e472b14d9b66c273cfdc8919775385b2bdb07ab0d1f28a939f51b87b42",
+    "daos/capability_runtime/__init__.py": "a347df9a4513dac86c119fcf581da6ef63a96b0c01117d35b68af46f07406faa",
+    "daos/capability_runtime/__main__.py": "105c4743bfe9d2cb3fc3525e34d0343f483fe8d7a56f5e0e2e558fb66d885e0d",
+    "daos/capability_runtime/bracket.py": "0621a20fa3188da919e647e3fef26c98a8f4cd1e805a6e3ec848fe80983f336a",
+    "daos/capability_runtime/manager.py": "adf916baf8578a2a3b1cdf815ad646d51feec9bd2a7ac776d263f75e1c39f47a",
+    "daos/capability_runtime/recipes.py": "4dd4195005b942bb45671309283b7bb0c056d19044f050fe734b3ecc8e60734e",
+    "daos/console/README.md": "c0fa6dbaf284734850b3ce1160e6563fef4a30472cdf1c45937a3049e1b4c5e8",
+    "daos/console/app.js": "a8a669b157ad476d7e29a7feb2658c7300b7b79d86c8542c366a38b1d4fbc5dc",
+    "daos/console/extras.css": "5dd7af80592c128791cc6410a10e7252bf086352df1a4d109f582b32582e18b8",
+    "daos/console/index.html": "f24e3cb823fa1a2beaf80e754be565c867b29fa97f9275bd2dcd7094e24c9e91",
+    "daos/console/recipes.js": "154e362fa238fa42ee27812ecffc37f0576a4c6e877c08d4acca465fdb7211e3",
+    "daos/console/retained.js": "49d52c6e8f7de328a9dabb2ea5243c60c60be9db56da38a5b2aba8d7b33c956d",
+    "daos/console/styles.css": "0487ad96bf7952bbf550dc113611ab63c62cccab731a543ae0e3346b8633d91a",
+    "native/hf-camerad": "13b0d4db807c6df5fd19ee33803c6ea15fd89f3d89450c339c7daf88eb514fcd",
+    "native/hf-core-tests": "ef47d03e3631fe4116948a1dc5686d64c4e1cb37e3f3fc7b58151c873ff4a218",
+    "native/hf-daemon-tests": "d9b6299758471573d26f98512268cd56ebbddff3c94932eddfc51bede5c70f18",
+    "native/hf-native-worker": "0d98e77aa32082bc7a699c079d949911e871ba97439ab78a9b548ffdecc869b3",
+    "simulation/bayer.py": "a1a02e82a13d07962fc05f168d2b89e5fb581981097a5611687a4760e101a810",
+    "tests/ui/arm64_smoke.py": "681f9ea42230b487d590c7f7e168a34633c8c43d2158b3cb6fd2280a9780d489",
+    "tests/ui/offline_smoke.py": "49284c8f0e8ebff2974b44641981860dd854961093f54f274c6d6b2676ccafc7",
+    "ui/on-device/Main.qml": "21c342792baa5e8ecdc4c92710e10140d210437c39124040c580dd97f4831be5",
+    "ui/on-device/controller.py": "e9121da43b61148e9263867bdf8fc1c896af2c91e93dd230830e0cec46231dab",
+    "ui/on-device/main.py": "f1494d77b282a18965168312b6d4bf7bbb4ba07389a1f2c071d603d711b6e292"
+  },
+  "authentication": {
+    "index_bytes": 9614192,
+    "index_sha256": "be16b37b2f740f066ea93d35d56f04f94d63693e5a3eb421b052bf86fae75bcd",
+    "index_url": "https://deb.debian.org/debian/dists/trixie/main/binary-arm64/by-hash/SHA256/be16b37b2f740f066ea93d35d56f04f94d63693e5a3eb421b052bf86fae75bcd",
+    "keyring_sha256": "506b815cbb32d9b6066b4a2aa524071e071761e7e7f68c3ac74f3061ba852017",
+    "release_metadata": {
+      "codename": "trixie",
+      "date": "Sat, 12 Sep 2026 07:55:41 UTC",
+      "valid_until": null
+    },
+    "release_sha256": "0584fba32e13e0ab8285fb16c27adea1ec03a73669c18702821094fd6ca86675",
+    "release_url": "https://deb.debian.org/debian/dists/trixie/InRelease",
+    "signature_verified": true,
+    "signing_fingerprints": [
+      "41587F7DB8C774BCCF131416762F67A0B2C39DE4",
+      "4CB50190207B4758A3F73A796ED0E7B82643E131",
+      "B8E5F13176D2A7A75220028078DBA3BC47EF2265"
+    ]
+  },
+  "bootstrap_sha256": "0914cdc88fb4c149ea27183797ccb9b7436689663ef7bc1c959c32c62a5db921",
+  "compile_command": [
+    "/usr/bin/aarch64-linux-gnu-gcc",
+    "-std=c11",
+    "-O2",
+    "-static",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/system/arm64-image/init.c",
+    "-o",
+    "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/target-e6ac70179d285645aab4226b/init"
+  ],
+  "data_image": {
+    "command": [
+      "/usr/sbin/mke2fs",
+      "-q",
+      "-F",
+      "-t",
+      "ext4",
+      "-b",
+      "4096",
+      "-I",
+      "256",
+      "-m",
+      "0",
+      "-U",
+      "a7c41d22-6607-4cd6-9000-000000000002",
+      "-L",
+      "HF_R7_DATA",
+      "-E",
+      "root_owner=0:0,hash_seed=a7c41d22-6607-4cd6-9000-000000000002,lazy_itable_init=0,lazy_journal_init=0",
+      "-d",
+      "/proc/self/fd/3",
+      "/proc/self/fd/6"
+    ],
+    "config_sha256": "f5626f6dac73256c3131e87419251521c6c5ad9bdeefc70b36c6668654fdc4d8",
+    "configuration": "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/target-e6ac70179d285645aab4226b/data.ext4.mke2fs.conf",
+    "destination": "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/target-e6ac70179d285645aab4226b/data.ext4",
+    "e2fsck": {
+      "command": [
+        "/usr/sbin/e2fsck",
+        "-f",
+        "-n",
+        "/proc/self/fd/6"
+      ],
+      "returncode": 0,
+      "stderr": "e2fsck 1.47.2 (1-Jan-2025)\n",
+      "stdout": "Pass 1: Checking inodes, blocks, and sizes\nPass 2: Checking directory structure\nPass 3: Checking directory connectivity\nPass 4: Checking reference counts\nPass 5: Checking group summary information\nHF_R7_DATA: 11/16384 files (0.0% non-contiguous), 5196/65536 blocks\n"
+    },
+    "epoch": 1700000000,
+    "format": "hf-ext4-image-v1",
+    "label": "HF_R7_DATA",
+    "mke2fs": {
+      "command": [
+        "/usr/sbin/mke2fs",
+        "-q",
+        "-F",
+        "-t",
+        "ext4",
+        "-b",
+        "4096",
+        "-I",
+        "256",
+        "-m",
+        "0",
+        "-U",
+        "a7c41d22-6607-4cd6-9000-000000000002",
+        "-L",
+        "HF_R7_DATA",
+        "-E",
+        "root_owner=0:0,hash_seed=a7c41d22-6607-4cd6-9000-000000000002,lazy_itable_init=0,lazy_journal_init=0",
+        "-d",
+        "/proc/self/fd/3",
+        "/proc/self/fd/6"
+      ],
+      "returncode": 0,
+      "stderr": "\nWarning: the fs_type small is not defined in mke2fs.conf\n\n",
+      "stdout": ""
+    },
+    "mounted": false,
+    "non_root_uid": 1000,
+    "sha256": "12078f5edd62b70a76fea72e0514f6e213eb4d932a6ae0d84998b53a12539943",
+    "size_bytes": 268435456,
+    "tar_entries": 0,
+    "tar_sha256": "84ff92691f909a05b224e1c56abb4864f01b4f8e3c854e4bb4c7baf1d3f6d652",
+    "tool_versions": {
+      "e2fsck": {
+        "command": [
+          "/usr/sbin/e2fsck",
+          "-V"
+        ],
+        "returncode": 0,
+        "stderr": "e2fsck 1.47.2 (1-Jan-2025)\n\tUsing EXT2FS Library version 1.47.2, 1-Jan-2025\n",
+        "stdout": ""
+      },
+      "mke2fs": {
+        "command": [
+          "/usr/sbin/mke2fs",
+          "-V"
+        ],
+        "returncode": 0,
+        "stderr": "mke2fs 1.47.2 (1-Jan-2025)\n\tUsing EXT2FS Library version 1.47.2\n",
+        "stdout": ""
+      }
+    },
+    "uuid": "a7c41d22-6607-4cd6-9000-000000000002"
+  },
+  "epoch": 1700000000,
+  "format": "hf-arm64-image-build-v1",
+  "image_input_sha256": {
+    "system/arm64-image/init.c": "fb6a107afb991d8a9be0ade86acdf2460796973d83bada1470d65c94be918d29",
+    "tools/image_build.py": "fbac226464e869afa6cc95d9818313eada1cab46a20df4130fd10ad856cf1e28",
+    "tools/image_fs.py": "1650f7d627f95a3db56d2444fcd51e2e7080db583c036b60ce15e2e47edd40d0"
+  },
+  "init_sha256": "b4a4c7912d1af9bc5ad9bb033463ca5371217551c0e8b4d4406e76ba77ec483c",
+  "kernel": {
+    "bytes": 92902468,
+    "index_sha256": "be16b37b2f740f066ea93d35d56f04f94d63693e5a3eb421b052bf86fae75bcd",
+    "kernel_relative_path": "extracted/boot/vmlinuz-6.12.107+deb13-arm64",
+    "kernel_sha256": "9c37ace54ef7e1919411fd912e9f34d6982ddd7f4c8ef3c8aee56f4c4d70db67",
+    "package": "linux-image-6.12.107+deb13-arm64",
+    "release_sha256": "0584fba32e13e0ab8285fb16c27adea1ec03a73669c18702821094fd6ca86675",
+    "release_signature_verified": true,
+    "release_url": "https://deb.debian.org/debian/dists/trixie/InRelease",
+    "scope": "Debian ARM64 generic kernel for QEMU virt only; no camera BSP",
+    "sha256": "20c92f3f97dd466e0400a6fcb792bde85af842fbb5e8b471370065e3de9d9fc9",
+    "url": "https://deb.debian.org/debian/pool/main/l/linux-signed-arm64/linux-image-6.12.107+deb13-arm64_6.12.107-1_arm64.deb",
+    "version": "6.12.107-1"
+  },
+  "kernel_sha256": "9c37ace54ef7e1919411fd912e9f34d6982ddd7f4c8ef3c8aee56f4c4d70db67",
+  "modules": {
+    "crc16": {
+      "archive_path": "./usr/lib/modules/6.12.107+deb13-arm64/kernel/lib/crc16.ko.xz",
+      "compressed_sha256": "c5f405e4fcace674666963197a05d8a47d7cb6137e78f48240e9ec789d196bad",
+      "sha256": "845f60b94052cbfa534c92e23944741d7bd8e78c66f346fded17aa583122d86e"
+    },
+    "crc32c_generic": {
+      "archive_path": "./usr/lib/modules/6.12.107+deb13-arm64/kernel/crypto/crc32c_generic.ko.xz",
+      "compressed_sha256": "af8b29c2b377afb6fc85b4706124ccc7490046d04fa519d06bfa6cfd49cdbeb7",
+      "sha256": "413e44e7566d5d49bddde454f31fd5f9b17ba4602482a8a5f3ca4eef78689e73"
+    },
+    "ext4": {
+      "archive_path": "./usr/lib/modules/6.12.107+deb13-arm64/kernel/fs/ext4/ext4.ko.xz",
+      "compressed_sha256": "7181359ae028a8d41d47673ea93ba94212118ded9294c66ade273dc0a96f0153",
+      "sha256": "bbc5a04c06a86ce8a1a13305a52b34e329d1fc0af5af66317fd3ba1eedda1b9d"
+    },
+    "jbd2": {
+      "archive_path": "./usr/lib/modules/6.12.107+deb13-arm64/kernel/fs/jbd2/jbd2.ko.xz",
+      "compressed_sha256": "f53d32c533bb4a8f9610f994b8d052a34f8bd31bcfb539320ead871bdd6c670a",
+      "sha256": "9fc7f1be231a7655788949079e4b3f4d82c7fd43083d20545651dfb671b2729c"
+    },
+    "mbcache": {
+      "archive_path": "./usr/lib/modules/6.12.107+deb13-arm64/kernel/fs/mbcache.ko.xz",
+      "compressed_sha256": "d0fd0258f258ee7a10f641fa6fc39eef81be1a6ff736445da623c8382d80285c",
+      "sha256": "e5eadc3e426f64fdc742dc51330875268c531cc8f0a539bb1dd573aca23a4e08"
+    },
+    "virtio_blk": {
+      "archive_path": "./usr/lib/modules/6.12.107+deb13-arm64/kernel/drivers/block/virtio_blk.ko.xz",
+      "compressed_sha256": "ccf68e4f3ebb20b2affbbce048d44a142c64a87fcc59e44b3094de2cc4846c67",
+      "sha256": "e20a5d9facf58c81ad3d45fd89e3248b9a5083c26a20ddaddd88d443066012bb"
+    }
+  },
+  "native_build_evidence_sha256": "b5b88591001feca600fc08b734bcf6c8a514df3e1349693ba9d04dae1a9dfe94",
+  "package_lock_sha256": "63ea9d9f62faf2e22b5e68e5977b9d72eee367ddc71246458dae58cd4efac0ef",
+  "phase_commands": {
+    "first": "python3 -B /opt/hasslefree/tests/ui/arm64_smoke.py --phase first",
+    "resume": "same command with --phase resume and the same /data image"
+  },
+  "rootfs_image": {
+    "command": [
+      "/usr/sbin/mke2fs",
+      "-q",
+      "-F",
+      "-t",
+      "ext4",
+      "-b",
+      "4096",
+      "-I",
+      "256",
+      "-m",
+      "0",
+      "-U",
+      "a7c41d22-6607-4cd6-9000-000000000001",
+      "-L",
+      "HF_R7_ROOT",
+      "-E",
+      "root_owner=0:0,hash_seed=a7c41d22-6607-4cd6-9000-000000000001,lazy_itable_init=0,lazy_journal_init=0",
+      "-d",
+      "/proc/self/fd/3",
+      "/proc/self/fd/6"
+    ],
+    "config_sha256": "f5626f6dac73256c3131e87419251521c6c5ad9bdeefc70b36c6668654fdc4d8",
+    "configuration": "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/target-e6ac70179d285645aab4226b/rootfs.ext4.mke2fs.conf",
+    "destination": "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/target-e6ac70179d285645aab4226b/rootfs.ext4",
+    "e2fsck": {
+      "command": [
+        "/usr/sbin/e2fsck",
+        "-f",
+        "-n",
+        "/proc/self/fd/6"
+      ],
+      "returncode": 0,
+      "stderr": "e2fsck 1.47.2 (1-Jan-2025)\n",
+      "stdout": "Pass 1: Checking inodes, blocks, and sizes\nPass 2: Checking directory structure\nPass 3: Checking directory connectivity\nPass 4: Checking reference counts\nPass 5: Checking group summary information\nHF_R7_ROOT: 5849/40960 files (0.2% non-contiguous), 119686/163840 blocks\n"
+    },
+    "epoch": 1700000000,
+    "format": "hf-ext4-image-v1",
+    "label": "HF_R7_ROOT",
+    "mke2fs": {
+      "command": [
+        "/usr/sbin/mke2fs",
+        "-q",
+        "-F",
+        "-t",
+        "ext4",
+        "-b",
+        "4096",
+        "-I",
+        "256",
+        "-m",
+        "0",
+        "-U",
+        "a7c41d22-6607-4cd6-9000-000000000001",
+        "-L",
+        "HF_R7_ROOT",
+        "-E",
+        "root_owner=0:0,hash_seed=a7c41d22-6607-4cd6-9000-000000000001,lazy_itable_init=0,lazy_journal_init=0",
+        "-d",
+        "/proc/self/fd/3",
+        "/proc/self/fd/6"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": ""
+    },
+    "mounted": false,
+    "non_root_uid": 1000,
+    "sha256": "3358206b5f5ed7eaeaccc16ee7fa97a2bb607ee036e8b91e3983ed2b001f282a",
+    "size_bytes": 671088640,
+    "tar_entries": 5838,
+    "tar_sha256": "22c0de39cadac8142d47e63fb790c91612cac08c0747bce51df50faaa34eb535",
+    "tool_versions": {
+      "e2fsck": {
+        "command": [
+          "/usr/sbin/e2fsck",
+          "-V"
+        ],
+        "returncode": 0,
+        "stderr": "e2fsck 1.47.2 (1-Jan-2025)\n\tUsing EXT2FS Library version 1.47.2, 1-Jan-2025\n",
+        "stdout": ""
+      },
+      "mke2fs": {
+        "command": [
+          "/usr/sbin/mke2fs",
+          "-V"
+        ],
+        "returncode": 0,
+        "stderr": "mke2fs 1.47.2 (1-Jan-2025)\n\tUsing EXT2FS Library version 1.47.2\n",
+        "stdout": ""
+      }
+    },
+    "uuid": "a7c41d22-6607-4cd6-9000-000000000001"
+  },
+  "rootfs_manifest_sha256": "40616c60ac6ec51171f0a684ee7023ec32889b2f3944311a6268bb077fadf30d",
+  "rootfs_tar": {
+    "file_bytes": 472357349,
+    "members": 5838,
+    "sha256": "22c0de39cadac8142d47e63fb790c91612cac08c0747bce51df50faaa34eb535"
+  },
+  "rootfs_tree_sha256": "c7e360551ef0f39fa453fd4c7c4cf99854656dc517744545ca61dc5631823295",
+  "scope": "generic virtual ARM64, synthetic camera only",
+  "storage": {
+    "data": "data.ext4 read-write, mounted /data",
+    "host_filesystem_sharing": false,
+    "host_mounts": false,
+    "network": false,
+    "root": "rootfs.ext4 read-only"
+  },
+  "uid": 1000
+}

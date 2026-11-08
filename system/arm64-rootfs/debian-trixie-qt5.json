@@ -1,0 +1,23 @@
+{
+  "format": "hf-arm64-qt-rootfs-profile-v1",
+  "id": "debian-trixie-arm64-qt5",
+  "architecture": "arm64",
+  "suite": "trixie",
+  "component": "main",
+  "base_url": "https://deb.debian.org/debian/",
+  "index": "main/binary-arm64/Packages.xz",
+  "seeds": [
+    "python3",
+    "python3-pyqt5",
+    "python3-pyqt5.qtquick",
+    "qml-module-qtquick2",
+    "qml-module-qtquick-controls2",
+    "qml-module-qtquick-layouts",
+    "qml-module-qtquick-window2",
+    "fonts-dejavu-core",
+    "fontconfig-config"
+  ],
+  "include_recommends": false,
+  "execute_maintainer_scripts": false,
+  "scope": "Generic ARM64 Linux Python/Qt5 software userland; no board BSP, hardware driver or physical-display claim."
+}

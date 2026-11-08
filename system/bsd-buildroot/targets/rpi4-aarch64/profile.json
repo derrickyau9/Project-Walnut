@@ -1,0 +1,40 @@
+{
+  "format": "DaOS-bsd-build-profile-v1",
+  "name": "daos-rpi4-aarch64",
+  "backend": "netbsd",
+  "source_lock": "../../sources.lock.json",
+  "target": {
+    "machine": "evbarm",
+    "architecture": "aarch64",
+    "board": "raspberrypi4"
+  },
+  "kernel": {
+    "name": "DAOS_RPI4",
+    "config": "DAOS_RPI4"
+  },
+  "world": {
+    "mk_conf": "mk.conf"
+  },
+  "packages": ["daos-core", "daos-camera"],
+  "storage": {
+    "root_mib": 1024,
+    "state_mib": 128,
+    "photos_mib": 256,
+    "efi_mib": 128
+  },
+  "boot_logo": {
+    "asset": "../../../../assets/boot-logo/DaOS-logo.png",
+    "kernel_file": "daos-boot-logo.png",
+    "mechanism": "netbsd-genfb-splashscreen",
+    "minimum_framebuffer": {"width": 743, "height": 554}
+  },
+  "validation": {
+    "status": "profile-defined-not-boot-validated",
+    "required": ["source-build", "kernel-splash", "hdmi", "usb-keyboard-mouse", "sd-storage", "ethernet", "camera-service"]
+  },
+  "notes": [
+    "NetBSD is the disclosed upstream, not an independent DaOS kernel.",
+    "The current core profile does not claim that the FreeBSD Qt/PyQt UI has been ported.",
+    "Use the source-pinned Pi firmware and board DTB; verify the Pi4 PCIe/USB path on physical hardware."
+  ]
+}

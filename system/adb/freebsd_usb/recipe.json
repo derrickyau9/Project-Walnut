@@ -1,0 +1,13 @@
+{
+  "format": "DaOS-native-usb-adb-source-v1",
+  "target": {"system": "FreeBSD", "release": "15.1-RELEASE-p6", "architecture": "aarch64", "board": "raspberrypi4"},
+  "upstream_source_commit": "95719d8a895bf8170851e9844d9b4092b1d2b6fe",
+  "template": {"module": "daos_adb_template.ko", "index": 55813, "class": 255, "subclass": 66, "protocol": 1, "bulk_in": 129, "bulk_out": 1},
+  "development_usb_identity": {"vid": "0xffff", "pid": "0xda05", "assigned": false, "tunables": ["hw.usb.daos_adb.vendor_id", "hw.usb.daos_adb.product_id", "hw.usb.daos_adb.serial"]},
+  "windows": {"os_string_index": 238, "vendor_request": 218, "compatible_id": "WINUSB", "device_interface_guid": "{F72FE0D4-CBCB-407D-8814-9ED673D0DD6B}", "enumeration_verified": false},
+  "build": {"entry": "build-in-env.sh", "environment": ["DAOS_USB_SOURCE", "DAOS_USB_OUTPUT", "DAOS_KERNEL_OBJECT", "DAOS_FREEBSD_SOURCE"], "context": "Run via matching FreeBSD source make TARGET=arm64 TARGET_ARCH=aarch64 buildenv with the original MAKEOBJDIRPREFIX and src.conf; BUILDENV_SHELL=/bin/sh <absolute build-in-env.sh>"},
+  "outputs": ["helper/daos-usb-adb", "kmod/daos_adb_template.ko"],
+  "daemon_interface": {"stdin": "arbitrary fragments of USB OUT byte stream", "stdout": "ADB 24-byte header plus data_length bytes, no logs", "stderr": "logs", "maximum_payload_bytes": 1048576, "physical_transfer_window_maximum_bytes": 65536, "intermediate_payload_windows": "full maximum-packet multiples; no forced short packet or ZLP"},
+  "run_argv": ["/usr/local/libexec/daos-usb-adb", "--vid", "0xffff", "--pid", "0xda05", "--wait", "--", "/usr/local/bin/python3.12", "/usr/local/libexec/daos-adb/daos_adbd.py", "--stdio", "--authorized-keys", "/etc/daos/adb_keys", "--shell", "/bin/sh", "--cwd", "/", "--sync-root", "/"],
+  "validation_status": {"freebsd_compile": "pending", "physical_pi4_usb": "pending", "windows_winusb_binding": "pending", "official_adb_over_native_usb": "pending"}
+}

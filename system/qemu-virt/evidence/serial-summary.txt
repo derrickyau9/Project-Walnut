@@ -1,0 +1,9 @@
+Selected lifecycle markers from actual final guest serial; DNG hex omitted.
+HF_QEMU_INIT pid=1 machine=aarch64 release=6.12.107+deb13-arm64 synthetic-only
+PASS: 89 native core assertions
+PASS: 82 native authority assertions
+HF_QEMU_NATIVE_TESTS_OK
+HF_QEMU_NOREPLACE_OK
+HF_QEMU_REQUEST 26110500-0000-4000-8000-000000000002
+HF_QEMU_RPC_RESTART_OK same-request same-frame synthetic-only
+HF_QEMU_RESULT PASS synthetic-only

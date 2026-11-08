@@ -1,0 +1,18 @@
+{
+  "format": "daos-freebsd-base-source-v1",
+  "release": "15.1-RELEASE-p6",
+  "architecture": "amd64",
+  "git_url": "https://git.FreeBSD.org/src.git",
+  "commit": "95719d8a895bf8170851e9844d9b4092b1d2b6fe",
+  "archive_url": null,
+  "archive_bytes": 285589524,
+  "archive_sha256": "62616e1381734098f3351a0dc97dd153fe78d5cdd74cea41c771c1c6e2e3c9b6",
+  "release_revision": "95719d8a895b",
+  "release_gitbranch": "releng/15.1",
+  "verified_at": "2026-11-05",
+  "verification": "Official FreeBSD git HTTPS clone; commit object and git archive PAX commit marker verified; XZ integrity checked. No PGP signature claim.",
+  "security_scope": "Pinned releng/15.1 p6 source matching the actual bootstrapped VM; not a promise of future security currency.",
+  "source_prefix": "usr/src",
+  "archive_git_commit_comment_required": true,
+  "archive_source_command": "git archive --format=tar --prefix=usr/src/ 95719d8a895bf8170851e9844d9b4092b1d2b6fe | xz -T8 -3"
+}

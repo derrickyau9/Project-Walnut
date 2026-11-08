@@ -1,0 +1,14 @@
+{
+  "UI_readiness_claimed": false,
+  "conversion": "RGB pixels unchanged; P6 to PNG format only",
+  "format": "DaOS-virtual-framebuffer-v1",
+  "height": 600,
+  "name": "restored-ui",
+  "nonblack_pixels": 480000,
+  "png": "/home/dy09/hf-task-freebsd-r10/image-boot-004/screens/restored-ui.png",
+  "png_sha256": "bff3b8f82972cf2d1b7aab080cce2d33cb285738cd017e71e75f2a771e5bd425",
+  "ppm": "/home/dy09/hf-task-freebsd-r10/image-boot-004/screens/restored-ui.ppm",
+  "ppm_sha256": "71f6dfb3c8ddd18854c58f5aa50bfa00a63f0d52f7abb30141a120ac45931b2c",
+  "rgb_sha256": "7dba7986aa7f76b0e01b9ae9c75d4341771e36e7bf627bb9b142daceed718287",
+  "width": 800
+}

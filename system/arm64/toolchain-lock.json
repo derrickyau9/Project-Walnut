@@ -1,0 +1,14 @@
+{
+  "format": "hf-arm64-extra-toolchain-v1",
+  "packages": [
+    {
+      "name": "libstdc++-14-dev-arm64-cross",
+      "version": "14.2.0-19cross1",
+      "architecture": "all",
+      "source": "https://deb.debian.org/debian/pool/main/g/gcc-14-cross/libstdc++-14-dev-arm64-cross_14.2.0-19cross1_all.deb",
+      "sha256": "dc2d2e1e59f2687a6cb30f3f5ed25e795f2769482ee8f7c5835f00481bf5ad65",
+      "bytes": 2551912,
+      "metadata": "Debian trixie apt package metadata; source package gcc-14-cross, built using gcc-14 14.2.0-19"
+    }
+  ]
+}

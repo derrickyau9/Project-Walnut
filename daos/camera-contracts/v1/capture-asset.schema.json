@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hasslefree.local/contracts/v1/capture-asset.schema.json",
+  "title": "Retained DNG asset descriptor (metadata only)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["request_id", "filename", "byte_count", "media_type"],
+  "properties": {
+    "request_id": {"type": "string", "format": "uuid", "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"},
+    "filename": {"type": "string", "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\\.dng$"},
+    "byte_count": {"type": "integer", "minimum": 9, "maximum": 49062656},
+    "media_type": {"const": "image/x-adobe-dng"}
+  }
+}

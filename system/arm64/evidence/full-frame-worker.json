@@ -1,0 +1,21 @@
+{
+  "format": "hf-arm64-full-frame-worker-check-v1",
+  "passed": true,
+  "simulated": true,
+  "test": "test_full_frame_native_output",
+  "run": 1,
+  "skipped": 0,
+  "dimensions": [
+    6064,
+    4040
+  ],
+  "pixel_count": 24498560,
+  "container_bits": 16,
+  "synthetic_sample_bits": 14,
+  "scene": "dark",
+  "execution": "static AArch64 worker under QEMU user mode; host Linux syscalls",
+  "native_worker_sha256": "aebb779b523be6b3c520b2e1c04be624904d2726d4180cb6c596feb01fd1156c",
+  "test_source_sha256": "737cbf35a1d23dde946a2761885415fb8d553950621302573d20077d4a9807f8",
+  "log_sha256": "8cd6ae61e4c99a30aea91a57f616510ec8a66e1d6f7cdc7ad66c945939a70aab",
+  "scope": "synthetic file size/metadata/edge samples; no sensor, physical storage, throughput or independent full-frame decoder claim"
+}

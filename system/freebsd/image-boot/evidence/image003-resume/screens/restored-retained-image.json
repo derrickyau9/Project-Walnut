@@ -1,0 +1,14 @@
+{
+  "UI_readiness_claimed": false,
+  "conversion": "RGB pixels unchanged; P6 to PNG format only",
+  "format": "DaOS-virtual-framebuffer-v1",
+  "height": 600,
+  "name": "restored-retained-image",
+  "nonblack_pixels": 479946,
+  "png": "/home/dy09/hf-task-freebsd-r10/image-boot-004/screens/restored-retained-image.png",
+  "png_sha256": "b9b7747616ebf6b2b178ba94c20317ff54d1bd61290484cd4528a4478b0bc9b5",
+  "ppm": "/home/dy09/hf-task-freebsd-r10/image-boot-004/screens/restored-retained-image.ppm",
+  "ppm_sha256": "8a48aa38016d6a49639a2814fc71c67be089c27be24fbfaffe8b70f9ba24f1d0",
+  "rgb_sha256": "95a2682ed78531516289a5a28f3523de7da78df2ae5eb78e33d6778fc86b2f92",
+  "width": 800
+}

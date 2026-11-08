@@ -1,0 +1,102 @@
+{
+  "archive_bytes": 106458804,
+  "authentication": {
+    "index_bytes": 9614192,
+    "index_sha256": "be16b37b2f740f066ea93d35d56f04f94d63693e5a3eb421b052bf86fae75bcd",
+    "index_url": "https://deb.debian.org/debian/dists/trixie/main/binary-arm64/by-hash/SHA256/be16b37b2f740f066ea93d35d56f04f94d63693e5a3eb421b052bf86fae75bcd",
+    "keyring_sha256": "506b815cbb32d9b6066b4a2aa524071e071761e7e7f68c3ac74f3061ba852017",
+    "release_metadata": {
+      "codename": "trixie",
+      "date": "Sat, 12 Sep 2026 07:55:41 UTC",
+      "valid_until": null
+    },
+    "release_sha256": "0584fba32e13e0ab8285fb16c27adea1ec03a73669c18702821094fd6ca86675",
+    "release_url": "https://deb.debian.org/debian/dists/trixie/InRelease",
+    "signature_verified": true,
+    "signing_fingerprints": [
+      "41587F7DB8C774BCCF131416762F67A0B2C39DE4",
+      "4CB50190207B4758A3F73A796ED0E7B82643E131",
+      "B8E5F13176D2A7A75220028078DBA3BC47EF2265"
+    ]
+  },
+  "declared_installed_kib": 457305,
+  "edges": 618,
+  "format": "hf-arm64-rootfs-build-evidence-v1",
+  "host": {
+    "boot_id": "2c54ada2-0464-4eca-b400-88cc4cf03c4b",
+    "machine": "x86_64",
+    "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+    "system": "Linux"
+  },
+  "host_packages_installed": false,
+  "maintainer_scripts_executed": false,
+  "observed_temporary_storage": {
+    "cause_proven": false,
+    "earlier_tree_disappeared_between_calls": true,
+    "filesystem": "tmpfs",
+    "mount": "/tmp",
+    "persistent_stages_used": true
+  },
+  "package_lock_sha256": "63ea9d9f62faf2e22b5e68e5977b9d72eee367ddc71246458dae58cd4efac0ef",
+  "packages": 170,
+  "passed": true,
+  "physical_board_tested": false,
+  "regular_file_bytes": 456784044,
+  "reproducibility": {
+    "fresh_stages": 2,
+    "identical_manifests": true,
+    "identical_tree_including_modes_and_symlinks": true,
+    "ownership_and_timestamps_in_tree_contract": false
+  },
+  "runtime_probe": {
+    "path": "system/arm64-rootfs/evidence/arm64-python-qt-probe.json",
+    "sha256": "660511a56a4715366060d966e4f6199d0ae27694b6601eea05b643f24436771d"
+  },
+  "source_input_sha256": {
+    "system/arm64-rootfs/debian-trixie-qt5.json": "d288d4ebabe8850105aa0c4145b43284f5cf6dbb5aea0ee70e4a91bd8973cb6d",
+    "system/arm64-rootfs/metadata/InRelease": "0584fba32e13e0ab8285fb16c27adea1ec03a73669c18702821094fd6ca86675",
+    "system/arm64-rootfs/metadata/Packages.xz": "be16b37b2f740f066ea93d35d56f04f94d63693e5a3eb421b052bf86fae75bcd",
+    "system/arm64-rootfs/package-lock.json": "63ea9d9f62faf2e22b5e68e5977b9d72eee367ddc71246458dae58cd4efac0ef",
+    "tests/test_rootfs_build.py": "7c63793cdfdbb4cfd1e580b35aeed1c3ecde312741a4da65a96d74a90635959a",
+    "tests/test_rootfs_deps.py": "da5f7c95ee6b6c8d4c3e143ba6248c298521d72869b342cd5d70f0dc3605dde1",
+    "tools/rootfs_build.py": "6276fc01852db34e10b9aabbb023dde998d7a3f3f598f8b113eff081c0e0216a",
+    "tools/rootfs_deps.py": "5ee32329e0beabcc524b5d09242fdea9580e64b4f4b0a897867c09cc5b757640",
+    "tools/rootfs_probe.py": "3a0408917dcb1d750f530c1a5d022edf9a7b44555d625357966558d9550ad4a5"
+  },
+  "stages": [
+    {
+      "manifest_sha256": "40616c60ac6ec51171f0a684ee7023ec32889b2f3944311a6268bb077fadf30d",
+      "path": "/home/dy09/hf-task-rootfs-r7-final"
+    },
+    {
+      "manifest_sha256": "40616c60ac6ec51171f0a684ee7023ec32889b2f3944311a6268bb077fadf30d",
+      "path": "/home/dy09/hf-task-rootfs-r7-final-replay"
+    }
+  ],
+  "tests": {
+    "linux": {
+      "passed": 24,
+      "run": 24,
+      "skipped": 0
+    },
+    "windows": {
+      "passed": 21,
+      "run": 24,
+      "skipped": 3
+    }
+  },
+  "tool_versions": {
+    "dpkg": "Debian 'dpkg' package management program version 1.22.22 (amd64).",
+    "dpkg-deb": "Debian 'dpkg-deb' package archive backend version 1.22.22 (amd64).",
+    "gpgv": "gpgv (GnuPG) 2.4.7"
+  },
+  "tree": {
+    "aarch64_elf_files": 562,
+    "entries": 5765,
+    "format": "hf-arm64-qt-rootfs-v1",
+    "package_lock_sha256": "63ea9d9f62faf2e22b5e68e5977b9d72eee367ddc71246458dae58cd4efac0ef",
+    "python_sources_compiled_without_execution": 627,
+    "tree_sha256": "c7e360551ef0f39fa453fd4c7c4cf99854656dc517744545ca61dc5631823295",
+    "verified": true
+  }
+}

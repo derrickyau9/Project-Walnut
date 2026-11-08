@@ -1,0 +1,14 @@
+[
+  {
+    "file": "exports/HassleFree_FF1_E_assembly.step",
+    "valid": true,
+    "solid_count": 42,
+    "volume_mm3": 326417.65193033306
+  },
+  {
+    "file": "exports/HassleFree_FF1_EF_assembly.step",
+    "valid": true,
+    "solid_count": 42,
+    "volume_mm3": 379971.2509227205
+  }
+]

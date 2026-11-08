@@ -1,0 +1,29 @@
+test_actual_package_data_only_and_special_bits_stripped (tests.test_rootfs_build.RootfsBuildTests.test_actual_package_data_only_and_special_bits_stripped) ... ok
+test_foreign_elf_and_invalid_python_refused (tests.test_rootfs_build.RootfsBuildTests.test_foreign_elf_and_invalid_python_refused) ... ok
+test_guest_paths_and_symlinks (tests.test_rootfs_build.RootfsBuildTests.test_guest_paths_and_symlinks) ... ok
+test_package_declaration_validation (tests.test_rootfs_build.RootfsBuildTests.test_package_declaration_validation) ... ok
+test_pinned_metadata_replays_offline_into_empty_cache (tests.test_rootfs_build.RootfsBuildTests.test_pinned_metadata_replays_offline_into_empty_cache) ... ok
+test_profile_refuses_installation_and_foreign_architecture (tests.test_rootfs_build.RootfsBuildTests.test_profile_refuses_installation_and_foreign_architecture) ... ok
+test_release_identity_and_freshness (tests.test_rootfs_build.RootfsBuildTests.test_release_identity_and_freshness) ... ok
+test_stage_validation_rejects_missing_or_modified_entries (tests.test_rootfs_build.RootfsBuildTests.test_stage_validation_rejects_missing_or_modified_entries) ... ok
+test_ambiguous_duplicate_or_malformed_control_is_refused (tests.test_rootfs_deps.RootfsDependencyTests.test_ambiguous_duplicate_or_malformed_control_is_refused) ... ok
+test_control_folding_and_provenance_fields (tests.test_rootfs_deps.RootfsDependencyTests.test_control_folding_and_provenance_fields) ... ok
+test_equal_version_target_candidate_wins_all_and_foreign_is_not_selected (tests.test_rootfs_deps.RootfsDependencyTests.test_equal_version_target_candidate_wins_all_and_foreign_is_not_selected) ... ok
+test_existing_provider_is_reused_deterministically (tests.test_rootfs_deps.RootfsDependencyTests.test_existing_provider_is_reused_deterministically) ... ok
+test_later_conflict_backtracks_across_prior_alternative (tests.test_rootfs_deps.RootfsDependencyTests.test_later_conflict_backtracks_across_prior_alternative) ... ok
+test_missing_unsupported_or_over_budget_closure_is_refused (tests.test_rootfs_deps.RootfsDependencyTests.test_missing_unsupported_or_over_budget_closure_is_refused) ... ok
+test_multiple_versions_select_newest_independent_of_index_order (tests.test_rootfs_deps.RootfsDependencyTests.test_multiple_versions_select_newest_independent_of_index_order) ... ok
+test_one_package_can_provide_multiple_compatibility_versions (tests.test_rootfs_deps.RootfsDependencyTests.test_one_package_can_provide_multiple_compatibility_versions) ... ok
+test_over_budget_branch_backtracks_to_smaller_alternative (tests.test_rootfs_deps.RootfsDependencyTests.test_over_budget_branch_backtracks_to_smaller_alternative) ... ok
+test_predepends_cycles_and_all_architecture_are_complete (tests.test_rootfs_deps.RootfsDependencyTests.test_predepends_cycles_and_all_architecture_are_complete) ... ok
+test_real_dpkg_epoch_revision_and_tilde_ordering (tests.test_rootfs_deps.RootfsDependencyTests.test_real_dpkg_epoch_revision_and_tilde_ordering) ... ok
+test_target_qualifiers_do_not_satisfy_from_host_packages (tests.test_rootfs_deps.RootfsDependencyTests.test_target_qualifiers_do_not_satisfy_from_host_packages) ... ok
+test_transitional_provider_does_not_conflict_with_itself (tests.test_rootfs_deps.RootfsDependencyTests.test_transitional_provider_does_not_conflict_with_itself) ... ok
+test_unsatisfied_first_alternative_backtracks_to_complete_branch (tests.test_rootfs_deps.RootfsDependencyTests.test_unsatisfied_first_alternative_backtracks_to_complete_branch) ... ok
+test_unversioned_provider_cannot_satisfy_versioned_dependency (tests.test_rootfs_deps.RootfsDependencyTests.test_unversioned_provider_cannot_satisfy_versioned_dependency) ... ok
+test_versioned_virtual_provider_and_constraints (tests.test_rootfs_deps.RootfsDependencyTests.test_versioned_virtual_provider_and_constraints) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.552s
+
+OK

@@ -1,0 +1,180 @@
+{
+  "arm64_image_boot_validated": false,
+  "bsd_image_boot_validated": false,
+  "capture_state": "complete",
+  "error": "RuntimeError: interface preferences did not survive model recreation",
+  "format": "DaOS-camera-app-shell-review-v1",
+  "initial_settings_format": "hf-device-settings-v1",
+  "initial_settings_persistent": true,
+  "native_backend": "C++ hf-camerad / HF-Sim",
+  "native_command": "hf-camerad",
+  "native_process_closed": true,
+  "native_process_exit_code": 0,
+  "native_sha256": "be752fd42c631e763682fa96a34b929a2bd80b5ae9ab3eb1b6f17653bc31bc28",
+  "passed": false,
+  "physical_camera_validated": false,
+  "physical_display_validated": false,
+  "qml_warnings": [],
+  "request_id": "bb435cce-d84b-4d2c-8eed-ef41dc580638",
+  "retail_source": {
+    "businessModulesImported": false,
+    "documentation": "docs/architecture/retail-camera-ui-adapter.md",
+    "files": [
+      {
+        "computedGitBlobSha1": "0ce51b683107300b1d3667c2fe16666f03881926",
+        "gitBlobSha1": "0ce51b683107300b1d3667c2fe16666f03881926",
+        "path": "public/daos-design.css",
+        "selectedLines": "1936-1953, 3080-3114, 3168-3238, 3322-3429",
+        "sha256": "4bfb8d71909081b281ac9dd4649e5aae201eb884289a1804eb1dd7723c347a93"
+      },
+      {
+        "computedGitBlobSha1": "3b9dd710719f3c99cf02c1765789f2f5a2e252f5",
+        "gitBlobSha1": "3b9dd710719f3c99cf02c1765789f2f5a2e252f5",
+        "path": "src/daos-design-components.js",
+        "selectedLines": "196-409",
+        "sha256": "999f7d37573684b5750a4d71b82cc86c615428207620c4785f0d6dc4fa93b282"
+      },
+      {
+        "computedGitBlobSha1": "d6f4e3d2c99f2f7d88d55909175fedf94803816b",
+        "gitBlobSha1": "d6f4e3d2c99f2f7d88d55909175fedf94803816b",
+        "path": "public/daos-activity-glass.css",
+        "selectedLines": "2-17, 73-87, 118-170",
+        "sha256": "3179b518e7ab04d3b6f31808d5766525e0a8acdbdab5bbfee7ba630a54e68209"
+      },
+      {
+        "computedGitBlobSha1": "0fb6fbabe6da4d61599d887da04ef4c6667b0e59",
+        "gitBlobSha1": "0fb6fbabe6da4d61599d887da04ef4c6667b0e59",
+        "path": "public/taskbar-swipe.js",
+        "selectedLines": "1-49",
+        "sha256": "7345dd415651f75a911a9df3dde435f6624d199a707a41c3e24e00aeae960527"
+      }
+    ],
+    "fontOrIconAssetsImported": false,
+    "glassRendererImported": false,
+    "rawSourceModulesImported": false,
+    "repository": "derrickyau9/DaOS-iHOMI",
+    "revision": "10d233e316e1c258e8aa365f6a6de4d82d10c7f5",
+    "rightsBoundary": "User requested adaptation of DaOS Retail UI conventions. README and ownership notice retain separate DaOS Core, IHOMI-specific and third-party scopes; no blanket open-source license or transfer is asserted.",
+    "scope": "Selected appearance tokens and interaction conventions from the inspected Retail UI; independent native Qt adaptation, not an imported Retail application or framework runtime"
+  },
+  "runtime": {
+    "machine": "arm64",
+    "pyqt": "5.15.11",
+    "python": "3.12.15",
+    "qpa": "offscreen",
+    "qt": "5.15.19",
+    "release": "15.1-RELEASE-p6",
+    "system": "FreeBSD",
+    "ui_label": "FreeBSD UI preview / arm64"
+  },
+  "screenshots": [
+    {
+      "description": "DaOS camera and real native HF-Sim preview on the current host; no sensor connected.",
+      "file": "01-camera-live.png",
+      "height": 800,
+      "sha256": "48442cd54627fbbb246e0eeb78874d04eab66beef9f7137bee86bdc9b66381e8",
+      "width": 1280
+    },
+    {
+      "description": "Original single capture confirmed; requested settings remain distinct from per-frame evidence.",
+      "file": "02-camera-saved.png",
+      "height": 800,
+      "sha256": "1d650cb465e616d2461584e79d279634dee466de7ad682beb13d239ba2687047",
+      "width": 1280
+    },
+    {
+      "description": "Original saved synthetic DNG loaded through the photo app, separate from live preview.",
+      "file": "03-photos.png",
+      "height": 800,
+      "sha256": "f4419095152dae3c7242dff8ffbaf63b4858296228d02801b3b3241dd37bfda8",
+      "width": 1280
+    },
+    {
+      "description": "Working requested exposure and gain controls; no additional capture.",
+      "file": "04-settings-exposure.png",
+      "height": 800,
+      "sha256": "7838b57427ac9b47cdf8772e76441d88f12f359f27ed5b7557b3be8477fd8da0",
+      "width": 1280
+    },
+    {
+      "description": "Persisted UI preferences: theme, framing grid and synthetic preview brightness.",
+      "file": "05-settings-display.png",
+      "height": 800,
+      "sha256": "09bd4044f6f299065208c0d3c3c2bd36f6151f4ac0aac40b93897a58aeea4f85",
+      "width": 1280
+    },
+    {
+      "description": "Validated bracket recipe editor and portable export; workflow execution remains separate.",
+      "file": "06-recipes.png",
+      "height": 800,
+      "sha256": "a206fe1471ed7f7cdbba2e3305089cab6beee24ff3cebe4cb125b8ddb83e190a",
+      "width": 1280
+    },
+    {
+      "description": "Read-only original request, runtime and filesystem facts; no measured hardware telemetry.",
+      "file": "07-diagnostics.png",
+      "height": 800,
+      "sha256": "2687916200a6f46325fcb30914295c8d20beb3d2e4154a3638ceced3de6a67e4",
+      "width": 1280
+    },
+    {
+      "description": "Explicit HF-Sim capabilities and unvalidated physical camera boundaries.",
+      "file": "08-devices.png",
+      "height": 800,
+      "sha256": "d2f7766e2439e26460c6117216626725d91c7cb2fa6a3f13ee78dc90a0f5d2b1",
+      "width": 1280
+    },
+    {
+      "description": "Actual host process and runtime identity; this is not an ARM64/FreeBSD boot.",
+      "file": "09-system.png",
+      "height": 800,
+      "sha256": "c310f0cf6e1d41b1d37b045cb3987275f455495c5857c2dd8ec702e2478eb54d",
+      "width": 1280
+    },
+    {
+      "description": "DaOS launcher routes to implemented local apps; no privileged system commands.",
+      "file": "10-launcher.png",
+      "height": 800,
+      "sha256": "1cc8d5663024c218deebe397171f5fe0740b9da7dcb72a70857ab771f0fd5110",
+      "width": 1280
+    },
+    {
+      "description": "Keyboard command search contains only allowed app routes.",
+      "file": "11-command-palette.png",
+      "height": 800,
+      "sha256": "ac8ddc9e2db8449b508b4e51a98d99db6bcfadc4399d093fbe2df41cf9fdc6d0",
+      "width": 1280
+    },
+    {
+      "description": "Actual 800 by 600 display settings layout, not a resized screenshot.",
+      "file": "12-compact-settings.png",
+      "height": 600,
+      "sha256": "0e3bb142ff4f5e9bc079ff546f6b6b3637a5e5798a86b021ca74d762cf175488",
+      "width": 800
+    },
+    {
+      "description": "Actual compact dark DaOS camera with persisted framing-grid preference.",
+      "file": "13-compact-camera-dark.png",
+      "height": 600,
+      "sha256": "529f3ce4228e248b498efe6b948a71d928debfaa916d7743d2d40e36edffc8a0",
+      "width": 800
+    }
+  ],
+  "shutter_actions": 1,
+  "source_sha256": {
+    "camera/camerad/calibration_context.py": "255b523780b84a6e6372966626931d67075ccf79c068f64bcb3ac9ff537cfe45",
+    "camera/camerad/native_client.py": "5dc77424d9aa71400c0cf0d476d9d8d3759d56570c4f8de742067bc6bf5fdbca",
+    "ui/on-device/AppsWorkspace.qml": "c9f24557e0763201e13f7e3ab71de8b0fee3b5bce9779d954fd4df821ce723b9",
+    "ui/on-device/DaOSDock.qml": "996328e02cd43850ac7f22ffefbf85302cf2385f04332079f3508ef3994403a4",
+    "ui/on-device/DaOSIcon.qml": "2f7ef1d1c0e01ed7a40adbee747cf599a98bb29740c6d953d74bec9874275be8",
+    "ui/on-device/Main.qml": "8749bcc4aecb2688ece43998a6bc560268116f2fd76168b4baa7c39c7b0c15c9",
+    "ui/on-device/apps_controller.py": "49705efbcbc4de271d985fccac2ef897b668a9eb1b9015837f35e14a247cbd50",
+    "ui/on-device/controller.py": "e9121da43b61148e9263867bdf8fc1c896af2c91e93dd230830e0cec46231dab",
+    "ui/on-device/main.py": "d8b9a4a7cd2ba69caee51107edee9a7edd0b51c3ce1608c9b73111d5fdabb57f",
+    "ui/on-device/retail-theme.json": "b3bb1de337f3a9059dcbde813ac12eadc72c6bb66c19d9e99bdf2b75fa2d45a4",
+    "ui/on-device/review_capture.py": "712e1c8c9cd0f8fbb8d223a121393199aecba969462d347e9229f1406119169f",
+    "ui/on-device/review_shell.py": "841c52afb04fbe0db7450a94f629b294d050585c571790a5a0fe899a6d53205d",
+    "ui/on-device/shell_model.py": "e22770bd50026a347837bf5331bd0e4652c2ef1f65f91c040d9582f6ceccc97d"
+  },
+  "synthetic": true
+}

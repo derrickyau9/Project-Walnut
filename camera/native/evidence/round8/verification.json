@@ -1,0 +1,87 @@
+{
+  "format": "hf-native-dng-round8-audit-v1",
+  "scope": "Synthetic uncalibrated images; software integrity only",
+  "copies": [
+    {
+      "source": "build/native-audit-r8/native-windows-final-build.txt",
+      "copy": "native-windows-final-build.txt",
+      "bytes": 2340,
+      "sha256": "b0835fb60d80805166671d52c5bde029f2443f1d94b8bc8f2a9e667fec27fe68"
+    },
+    {
+      "source": "build/native-audit-r8/native-linux-receipt-build.txt",
+      "copy": "native-linux-receipt-build.txt",
+      "bytes": 6310,
+      "sha256": "62767af425a6667b20e4fa8ece31ebc28ead4713cf04e1af2da0e17e338007d4"
+    },
+    {
+      "source": "build/native-audit-r8/inspector-retained-tests-final.txt",
+      "copy": "inspector-retained-tests-final.txt",
+      "bytes": 2582,
+      "sha256": "ce70d98e554e2cc403852b144f904e5aa09950adbffc201ae582901880eb57d2"
+    },
+    {
+      "source": "build/native-audit-r8/native-windows-boundaries-final.txt",
+      "copy": "native-windows-boundaries-final.txt",
+      "bytes": 819,
+      "sha256": "a2bdb7524c78048c9eb91ca0238e0337ca70003ee49211cbb3e52c149e0511fe"
+    },
+    {
+      "source": "build/native-audit-r8/native-linux-boundaries-final.txt",
+      "copy": "native-linux-boundaries-final.txt",
+      "bytes": 833,
+      "sha256": "4a469cea8b96758ed4ba498488d3926dadd75cb2b86384d0e867f087c4a2afc4"
+    },
+    {
+      "source": "build/native-audit-r8/native-staging-tests.txt",
+      "copy": "native-staging-tests.txt",
+      "bytes": 1221,
+      "sha256": "3406e20c6b86a7fea303aa26bddd58f2b689c45a9fb69748f816f51c9be65060"
+    },
+    {
+      "source": "build/native-audit-r8/native-tiff-tests-final.txt",
+      "copy": "native-tiff-tests-final.txt",
+      "bytes": 393,
+      "sha256": "8336f861255701bbe81739585a86d5195166b293093d465221337c94b63bf2e2"
+    },
+    {
+      "source": "build/native-audit-r8/native-libraw-tests-final.txt",
+      "copy": "native-libraw-tests-final.txt",
+      "bytes": 417,
+      "sha256": "5ab7ad56d6bb23d31a542982ffb7bf35236dff37a5c3c3249e6bdcaab074fda5"
+    },
+    {
+      "source": "build/native-audit-r8/native-path-probe.txt",
+      "copy": "native-path-probe.txt",
+      "bytes": 127,
+      "sha256": "532dbed25262f6a4d37a9f03de3d00d2734ec6078a210c93701a245161d70882"
+    }
+  ],
+  "source_sha256": {
+    "camera/native/src/daemon.cpp": "4cf03dd8337b24454cd3f22e801d9515446bf0f2d1e34618ac20820983cb9ecd",
+    "camera/native/src/dng.cpp": "179025e008a7247669b9ebc091ae3f6f8544c52c9728ab3b945eca7be5bb2b13",
+    "camera/native/include/hf/dng.hpp": "68ff5d64592a812141071a4d55ac997c321ecc049a69709a76042b1da3898bb8",
+    "camera/native/tests/test_daemon.cpp": "3db32109316929a1c0c2859f8b9e93bf373994f23d856bf35415152ad7e08ca1",
+    "camera/dng/inspect.py": "4200ac573d1a0373bc5cacde10d024948fab046af88d065356387d71c7033342",
+    "tests/test_dng_inspect.py": "02f33a515cf8c086c328058b24649e385d5d7cac0166c8527dfb41210fe0adc8",
+    "tests/test_native_daemon.py": "9eaa9683d9e660ab71cc72de4c1c5fc8e9c3f85cfeeae7bd033cf0649004795e",
+    "tests/test_native_worker.py": "1b4496e1abc0a8e719e682711177a41f9d5ea43c70fa3c3909486717e21dafa8",
+    "tests/test_native_staging_integrity.py": "2e105a92b69bebbbd910fe82df873a4c4498ded7e61c4ae14e640128f06133b4",
+    "tests/test_capture_junctions.py": "ca02c0873f7bc4f5d0d9479ceb4494a6f2b081e0bcf1d8d2747eeaaf140925ac",
+    "tests/test_retained_captures.py": "ea7b138237d7bbe5bbdb5829eca58dba58a8e4ca3258dbaa788f148b3bd24dee"
+  },
+  "targeted_python_runs_passed": [
+    15,
+    4,
+    4,
+    6,
+    2,
+    2
+  ],
+  "native_assertions_per_platform": {
+    "core": 89,
+    "authority": 90
+  },
+  "broad_and_arm_runs": "separate parent-owned evidence",
+  "baseline_photo_redirect": "native-path-probe.txt records the observed pre-fix complete/outside-write/unavailable-asset mismatch"
+}

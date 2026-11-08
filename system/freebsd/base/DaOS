@@ -1,0 +1,6 @@
+# DaOS kernel profile layered over the selected pinned upstream GENERIC.
+# The build recipe copies the upstream conf directory into owned work space.
+# This identifier establishes a rebuilt profile, not new hardware drivers.
+include GENERIC
+ident DaOS
+makeoptions DEBUG=""

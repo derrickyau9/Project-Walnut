@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "scope": "actual ARM64 FreeBSD synthetic DNG exported before controlled OS reboot",
+  "samples": 12288,
+  "tifffile": "2023.4.12",
+  "rawpy": "0.28.0",
+  "libraw": [
+    0,
+    22,
+    2
+  ],
+  "all_samples_equal_oracle": true,
+  "rgb_shape": [
+    96,
+    128,
+    3
+  ],
+  "dng_sha256": "e4149164bccb5d271b75c7f8507b592ea20392ad0c77fabfd98fe47a169b8831"
+}

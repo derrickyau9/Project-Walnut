@@ -1,0 +1,51 @@
+{
+  "FreeBSD_ARM64_execution_validated": true,
+  "format": "DaOS-FreeBSD-ARM64-ADB-target-summary-v1",
+  "identity": {
+    "architecture": "aarch64",
+    "bin_sh": {
+      "OSABI": 9,
+      "bytes": 167384,
+      "machine": 183,
+      "sha256": "a926cb397e68f278891af35853fa46b2e85854a0a6e7f7538b2f2c446ba032e8",
+      "type": 3
+    },
+    "machine": "arm64",
+    "python": "3.12.15 (main, Oct 29 2026, 02:27:54) [Clang 19.1.7 (https://github.com/llvm/llvm-project.git llvmorg-19.1.7-0-gcd7080",
+    "release": "15.1-RELEASE-p6",
+    "system": "FreeBSD",
+    "uid": 0,
+    "uname": "FreeBSD daos-arm64-dev 15.1-RELEASE-p6 FreeBSD 15.1-RELEASE-p6 releng/15.1-n283643-95719d8a895b GENERIC arm64"
+  },
+  "kernel_module_loaded": true,
+  "native_artifacts": {
+    "kernel_module": {
+      "OSABI": 0,
+      "bytes": 10184,
+      "machine": 183,
+      "sha256": "dfbfa4346cad57d2dc581f1b2b28f5389f221d386b6f58ca36a3364b76e19e67",
+      "type": 3
+    },
+    "transport": {
+      "OSABI": 9,
+      "bytes": 18968,
+      "machine": 183,
+      "sha256": "fab7cc1ffbbfd0875ef740df655771368d3da4b2d7cd5a4178903caa01bdfafd",
+      "type": 3
+    }
+  },
+  "official_adb_calls": 19,
+  "owned_test_daemon_stopped": true,
+  "physical_usb_c_validated": false,
+  "private_keys_transferred_to_guest": false,
+  "protocol_transport": "SSH forwarded target loopback TCP",
+  "receipts": {
+    "daemon-stop.json": "945636cf52ecd83982f0588b25eb801d3ef2692dec220099837a05642eabe31b",
+    "integration-receipt.json": "c0bc2ad8b04c78125e184954fbcac36e3dafcfef4372901b91bcb1ebbbe148d5",
+    "target-module-evidence.json": "a4b9159de5de41ae9c746b87a868d69b5778be7ea43399af0da97cf4ab773a7c"
+  },
+  "reference_VM_stopped": false,
+  "selected_template": 55813,
+  "status": "success",
+  "unauthorized_key_rejected": true
+}

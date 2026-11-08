@@ -1,0 +1,39 @@
+DaOS_CAMERA_REVIEW_STAGE actual window active
+DaOS_CAMERA_REVIEW_STAGE native authority ready
+DaOS_CAMERA_REVIEW_STAGE initial native queue complete
+DaOS_CAMERA_REVIEW_STAGE automatic Python HF-Sim preview
+DaOS_CAMERA_REVIEW_STAGE render 01-live-800.png
+DaOS_CAMERA_REVIEW_STAGE control quickButton
+DaOS_CAMERA_REVIEW_STAGE control qExposureCombo
+DaOS_CAMERA_REVIEW_STAGE Q exposure confirmed
+DaOS_CAMERA_REVIEW_STAGE control qGainInput
+DaOS_CAMERA_REVIEW_STAGE Q gain confirmed
+DaOS_CAMERA_REVIEW_STAGE render 02-quick-800.png
+DaOS_CAMERA_REVIEW_STAGE control qCloseButton
+DaOS_CAMERA_REVIEW_STAGE quick controls closed
+DaOS_CAMERA_REVIEW_STAGE control menuButton
+DaOS_CAMERA_REVIEW_STAGE camera MENU
+DaOS_CAMERA_REVIEW_STAGE control menuCategory-exposure
+DaOS_CAMERA_REVIEW_STAGE render 03-menu-exposure-800.png
+DaOS_CAMERA_REVIEW_STAGE control menuCategory-display
+DaOS_CAMERA_REVIEW_STAGE render 04-menu-display-800.png
+DaOS_CAMERA_REVIEW_STAGE control menuCategory-tools
+DaOS_CAMERA_REVIEW_STAGE render 05-menu-tools-800.png
+DaOS_CAMERA_REVIEW_STAGE shooting restored after MENU
+DaOS_CAMERA_REVIEW_STAGE capture settings queue complete
+DaOS_CAMERA_REVIEW_STAGE control shootButton
+DaOS_CAMERA_REVIEW_STAGE original capture terminal state
+DaOS_CAMERA_REVIEW_STAGE render 06-saved-800.png
+DaOS_CAMERA_REVIEW_STAGE control playbackButton
+DaOS_CAMERA_REVIEW_STAGE single-image playback
+DaOS_CAMERA_REVIEW_STAGE original retained capture listed
+DaOS_CAMERA_REVIEW_STAGE original retained DNG display conversion
+DaOS_CAMERA_REVIEW_STAGE render 07-playback-800.png
+DaOS_CAMERA_REVIEW_STAGE control playbackExportButton
+DaOS_CAMERA_REVIEW_STAGE control playbackExportPathInput
+DaOS_CAMERA_REVIEW_STAGE control playbackExportConfirmButton
+DaOS_CAMERA_REVIEW_STAGE original retained DNG export
+DaOS_CAMERA_REVIEW_STAGE secondary development preview
+DaOS_CAMERA_REVIEW_STAGE render 08-live-1280.png
+DaOS_CAMERA_REVIEW_STAGE native queue drained
+DaOS_CAMERA_FIRST_REVIEW_SUCCESS {"request_id": "3b40df7f-c8f3-4e0d-81fe-7197169ef932", "screenshots": 8, "report_sha256": "5591bb78b4ef11bd01d90ae70cd3d27d9fa77cf776def53866b115abf23a3244"}

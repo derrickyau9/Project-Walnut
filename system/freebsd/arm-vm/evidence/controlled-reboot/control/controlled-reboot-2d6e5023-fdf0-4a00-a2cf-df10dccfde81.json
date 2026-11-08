@@ -1,0 +1,15 @@
+{
+  "format": "DaOS-arm-controlled-reboot-request-v1",
+  "immutable_sha256_before": {
+    "arm-seed.iso": "55bd97338cef7a40e4781246c84bc928ee90a1bbfd24ed1a5d241fe76b7ec75a",
+    "base.qcow2": "ae13edc018ad2d862020de3fdccc24581fae12b3323bfd800db73cb2b7fce23c",
+    "uefi-code.fd": "5d3147294c56ce8cb636c57c181776a89bc7ba254274c35698dc5795758052d3"
+  },
+  "original_capture_id": "e80344a4-718e-436e-b146-6efee5443d23",
+  "qmp_status_before": {
+    "running": true,
+    "status": "running"
+  },
+  "reason": "parent-requested persisted UI verification across actual kernel boot",
+  "shutter_actions_requested": 0
+}

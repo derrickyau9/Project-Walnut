@@ -1,0 +1,109 @@
+{
+  "actual_persistent_settings_and_binding_verified": true,
+  "authentication": false,
+  "binding_id": "cb1-a4d0d90ce30689a7202a88b28945bb6bca37fba91745b99323687213d2d5be17",
+  "boot_sequence": [
+    {
+      "attempt_id": "b14cb8a5-86f5-4148-9007-44db05368ffb",
+      "attempts_remaining": 0,
+      "healthy": true,
+      "is_trial": false,
+      "slot": "A",
+      "version": 1
+    },
+    {
+      "attempt_id": "9dd38510-b634-4038-89fc-9feead9dd5de",
+      "attempts_remaining": 0,
+      "healthy": false,
+      "is_trial": true,
+      "slot": "B",
+      "version": 2
+    },
+    {
+      "attempt_id": "941ed79e-870f-4d00-a998-3354f785b6c0",
+      "attempts_remaining": 0,
+      "healthy": true,
+      "is_trial": false,
+      "slot": "A",
+      "version": 1
+    }
+  ],
+  "capture_root": "ui-r7/offline/basic",
+  "data_abi": 2,
+  "data_profile": "bound-v2",
+  "format": "hf-arm64-bound-update-demo-v1",
+  "hardware_calibrated": false,
+  "initialized": {
+    "baseline": "clone of verified base image plus model version marker",
+    "capture_id": "374ff3b0-e4ed-47bf-92b3-a81c90f5c344",
+    "confirmed_slot": "A",
+    "state_dir": "/mnt/c/Users/derri/Documents/Codex/2026-11-05/task/build/update-model-bound-r9-final-001",
+    "upstream_unchanged": true
+  },
+  "passed": true,
+  "pixel_corrections_applied": false,
+  "scope": "same R9 application code, artificial release versions, real virtual ARM64 selection/fallback",
+  "status": {
+    "attempts": [
+      {
+        "after_sha": "946e85cd8858ee67802980c85eeb66db24735172829023bf590b6ab3f41cdad5",
+        "before_sha": "ec8a14cb0fcb0db04ad1d17adbdea91d237e2da52016d9d6e4c6f24f3b4381e8",
+        "id": "b14cb8a5-86f5-4148-9007-44db05368ffb",
+        "is_trial": 0,
+        "remaining": 0,
+        "slot": "A",
+        "status": "confirmed",
+        "version": 1
+      },
+      {
+        "after_sha": "712799910ae91348675094896837b0ad066ab3b21764df622b468ca6c867e2a6",
+        "before_sha": "946e85cd8858ee67802980c85eeb66db24735172829023bf590b6ab3f41cdad5",
+        "id": "9dd38510-b634-4038-89fc-9feead9dd5de",
+        "is_trial": 1,
+        "remaining": 0,
+        "slot": "B",
+        "status": "unhealthy",
+        "version": 2
+      },
+      {
+        "after_sha": "b575e5b1d4d066fe44fc81f5ce77dcb62e1c65a4a07cbb40a58603cf14dc7d9d",
+        "before_sha": "712799910ae91348675094896837b0ad066ab3b21764df622b468ca6c867e2a6",
+        "id": "941ed79e-870f-4d00-a998-3354f785b6c0",
+        "is_trial": 0,
+        "remaining": 0,
+        "slot": "A",
+        "status": "confirmed",
+        "version": 1
+      }
+    ],
+    "confirmed": "A",
+    "data_sha": "b575e5b1d4d066fe44fc81f5ce77dcb62e1c65a4a07cbb40a58603cf14dc7d9d",
+    "id": 1,
+    "pending": null,
+    "protected": {
+      "calibration": "30b67dadec386cf491300e0ce9074365fa1837f68eb2f42d004210fbb6266597",
+      "calibration_binding": "ab6e8af80afa06f380d2f2fe5accd59dcc756a3d563945068ec35e3a221d121a",
+      "configuration": "1ba02356fcd6777d19530d571b98667dee126f32c011181e49050d3869f87a08",
+      "device_settings": "23ac102b0dcf22df13f90780992b241c4ee8860ebee3d973d4c9b66ea227e06b",
+      "journal_capture_rows": "d0049bb6388f31890c6d3b9fc3bcb143fd365376145dc1a19595e3f2a6df5185",
+      "original_dng": "993b7048080266f9e76c0d0c9612dca9eb14ade355ae29240df4094cb4b27b82"
+    },
+    "remaining": 0,
+    "slots": [
+      {
+        "bundle": "bundles/214c3aa0-5963-469f-b043-3e89c35650b9",
+        "manifest_sha": "d01579bf6d14dc12df2fd1c59a9b6461fc9096b4084f3889377f60314ba002cc",
+        "slot": "A",
+        "version": 1
+      },
+      {
+        "bundle": "bundles/6f9c8dcd-afd9-41aa-ba7e-bb3d044c8bb6",
+        "manifest_sha": "f8b0a46c1eac835c7bf3612f69b2d254f4befabbe875552d3dfedc76d112c6fb",
+        "slot": "B",
+        "version": 2
+      }
+    ],
+    "trial": null
+  },
+  "upstream_unchanged": true
+}

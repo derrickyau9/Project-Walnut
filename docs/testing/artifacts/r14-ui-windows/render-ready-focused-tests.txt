@@ -1,0 +1,13 @@
+test_animation_resizes_preview_proportionally_and_holds_shutter_during_transition (tests.test_camera_taskbar_ui.CameraTaskbarUITests.test_animation_resizes_preview_proportionally_and_holds_shutter_during_transition) ... ok
+test_default_taskbar_has_seven_visible_icons_without_rendered_labels (tests.test_camera_taskbar_ui.CameraTaskbarUITests.test_default_taskbar_has_seven_visible_icons_without_rendered_labels) ... ok
+test_icon_navigation_and_keyboard_activation_never_become_a_global_shutter (tests.test_camera_taskbar_ui.CameraTaskbarUITests.test_icon_navigation_and_keyboard_activation_never_become_a_global_shutter) ... ok
+test_left_swipe_hides_and_right_edge_swipe_reveals_without_camera_actions (tests.test_camera_taskbar_ui.CameraTaskbarUITests.test_left_swipe_hides_and_right_edge_swipe_reveals_without_camera_actions) ... ok
+test_repeated_close_reveal_and_window_resize_settle_without_stale_geometry (tests.test_camera_taskbar_ui.CameraTaskbarUITests.test_repeated_close_reveal_and_window_resize_settle_without_stale_geometry) ... ok
+test_swiping_an_icon_does_not_also_navigate_to_that_application (tests.test_camera_taskbar_ui.CameraTaskbarUITests.test_swiping_an_icon_does_not_also_navigate_to_that_application) ... ok
+test_unknown_request_stays_held_across_taskbar_gestures_and_app_switching (tests.test_camera_taskbar_ui.CameraTaskbarUITests.test_unknown_request_stays_held_across_taskbar_gestures_and_app_switching) ... ok
+test_vertical_drag_short_jitter_and_returned_drag_do_not_become_navigation (tests.test_camera_taskbar_ui.CameraTaskbarUITests.test_vertical_drag_short_jitter_and_returned_drag_do_not_become_navigation) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 9.720s
+
+OK

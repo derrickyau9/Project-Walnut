@@ -1,0 +1,119 @@
+{
+  "format": "hf-round7-verification-v1",
+  "scope": "generic virtual ARM64 and synthetic camera only",
+  "fresh_recipe_completed": true,
+  "offline_recipe_completed": true,
+  "linux_tests": {
+    "ran": 57,
+    "passed": 57,
+    "skipped": 0
+  },
+  "image_repeatability": {
+    "independent_builds": 4,
+    "sha256": "40acc21e909b4ab326ec0f8c1390b2662d5e8e7b2c372c9b0aac967fba04a777",
+    "boundary": "same recorded inputs and host toolchain; not hermetic cross-host proof"
+  },
+  "r6_snapshot_unchanged": true,
+  "evidence_copies": [
+    {
+      "path": "system/targets/evidence/fresh/run-state.json",
+      "bytes": 13232,
+      "source_sha256": "5f9953241e60b301faf76ab50de56e57de0313515f6d750d8cd991070fdd8d78"
+    },
+    {
+      "path": "system/targets/evidence/fresh/image-build.json",
+      "bytes": 15749,
+      "source_sha256": "bd21f2e83ed6858b7f81251382a62d719106dc7dda1b7e6bbb25cf33c7011000"
+    },
+    {
+      "path": "system/targets/evidence/fresh/first-boot.json",
+      "bytes": 10877,
+      "source_sha256": "b725555dad9f6cedbed7c7f068482b96416cddd7558702849330536fcea76b0f"
+    },
+    {
+      "path": "system/targets/evidence/fresh/resume-boot.json",
+      "bytes": 10908,
+      "source_sha256": "0aaf148030fee37961d7d7947084d9c3427658cf73187f0db2da2ccf3465627d"
+    },
+    {
+      "path": "system/targets/evidence/fresh/native-build.json",
+      "bytes": 26386,
+      "source_sha256": "c2f93036fad3764a63a627916f74d4951272f21d954dffef6d6b0e19e9bf1d3e"
+    },
+    {
+      "path": "system/targets/evidence/offline/run-state.json",
+      "bytes": 12321,
+      "source_sha256": "2e0eacd2807c964b6d223d0926ac945ec9e76181ffc5c160c700704a948116a4"
+    },
+    {
+      "path": "system/targets/evidence/offline/image-build.json",
+      "bytes": 15640,
+      "source_sha256": "786dc74892a8234117433232dd784c1a8af89cb2726bb31440369d81961d37fe"
+    },
+    {
+      "path": "system/targets/evidence/offline/first-boot.json",
+      "bytes": 10877,
+      "source_sha256": "18abfa887335739de5394fb651add098168d7fe882914d0eeb6b0da9bc786738"
+    },
+    {
+      "path": "system/targets/evidence/offline/resume-boot.json",
+      "bytes": 10908,
+      "source_sha256": "4026d0cdf6fd51d8d864b59144bce76657dca4044cd3f4360730545553e2f8cc"
+    },
+    {
+      "path": "system/targets/evidence/historical-failures/001-state.json",
+      "bytes": 8526,
+      "source_sha256": "82c8acf10ae47f503906c93e4a30ecfc37d278cf6e383685904cee2a56313b81"
+    },
+    {
+      "path": "system/targets/evidence/historical-failures/002-state.json",
+      "bytes": 8676,
+      "source_sha256": "8d1f604182afc86aaddce02501841999f92a039f72cf46c6f552da954909d9e7"
+    },
+    {
+      "path": "system/targets/evidence/historical-failures/001-traceback.txt",
+      "bytes": 1206,
+      "source_sha256": "11f1d41e0d510e2a726d2cd7c12768ee84d3dbfc9bbe70715da16bd0dc5bf3dd"
+    },
+    {
+      "path": "system/targets/evidence/historical-failures/002-traceback.txt",
+      "bytes": 1559,
+      "source_sha256": "a0e8c73bc566caf6118c0e9469e9874fee72f793a2f90f1ab9e823639b078389"
+    },
+    {
+      "path": "system/targets/evidence/linux-tests.txt",
+      "bytes": 9998,
+      "source_sha256": "efa79f0b5d0684b31f478040a4755766d6e9005c82c9966d2c9541c3c094c0cf"
+    },
+    {
+      "path": "system/targets/evidence/target-tests.txt",
+      "bytes": 1341,
+      "source_sha256": "b85b1656707978853f15f63d5b7e8441f082d1fc772964b9ae4bbc44fc3f6ba3"
+    },
+    {
+      "path": "system/targets/evidence/fresh/dng-tifffile.json",
+      "bytes": 334,
+      "source_sha256": "d848f82c66b30a31c510ab58a4aa977b506599d21baefcaa0b0046dfdaed21cc"
+    },
+    {
+      "path": "system/targets/evidence/fresh/dng-libraw.json",
+      "bytes": 431,
+      "source_sha256": "9771f77a9831782a42cf1ec42f150da55e60b4484af60f951d5720db3e50fe4f"
+    },
+    {
+      "path": "system/targets/evidence/source-bundle-tests.txt",
+      "bytes": 5184,
+      "source_sha256": "2844be8598e1f873dea992760cd11e0c8000e6fc47cc646253d77ff42ba93ea2"
+    }
+  ],
+  "note": "Copies preserve original bytes locally. The source handoff may redact private evidence path prefixes with original source_sha256 recorded in its own manifest; images, package caches and screenshots are excluded.",
+  "source_bundle_tests": {
+    "ran": 15,
+    "passed": 15,
+    "skipped": 0,
+    "platforms": [
+      "Windows",
+      "Debian Linux"
+    ]
+  }
+}
