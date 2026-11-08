@@ -5,6 +5,7 @@ This tests init and volatile identity integration. It has no NIC, USB gadget,
 physical card, camera, or DSI hardware and makes no claim to test those devices.
 """
 import argparse
+import ast
 import gzip
 import hashlib
 import json
@@ -86,7 +87,8 @@ if application:
  release=pathlib.Path('/opt/hasslefree/releases')/application['version']
  r['app_manifest_matches']=hashlib.sha256(manifest_path.read_bytes()).hexdigest()==application['manifest_file_sha256']
  r['app_files_match']=all(hashlib.sha256((release/(e['path'][len('opt/hasslefree/'):] if e['path'].startswith('opt/hasslefree/') else 'support/camera-app-installer.py')).read_bytes()).hexdigest()==e['sha256'] for e in manifest['files'])
- from PyQt5.QtCore import QCoreApplication,QTranslator
+ from PyQt5.QtCore import QCoreApplication,QTranslator,QUrl
+ from PyQt5.QtQml import QQmlComponent,QQmlEngine
  qt=QCoreApplication([])
  expected_translations=TRANSLATIONS
  r['native_qt_translations']={}
@@ -94,9 +96,17 @@ if application:
  for code,values in expected_translations.items():
   translator=QTranslator(qt)
   loaded=translator.load(str(release/'ui/on-device/locales'/(code+'.qm')))
-  translated=[translator.translate('ImageTools',key) for key in TRANSLATION_KEYS]
+  qt.installTranslator(translator)
+  engine=QQmlEngine(qt)
+  component=QQmlComponent(engine)
+  keys=TRANSLATION_KEYS
+  qml_source='import QtQml 2.15'+chr(10)+'QtObject { property string first: qsTranslate("ImageTools", '+json.dumps(keys[0])+'); property string second: qsTranslate("ImageTools", '+json.dumps(keys[1])+') }'
+  component.setData(qml_source.encode('ascii'),QUrl())
+  obj=component.create()
+  translated=[obj.property('first'),obj.property('second')] if obj is not None else []
   r['native_qt_translations'][code]=loaded and translated==values
-  r['native_qt_details'][code]={'loaded':loaded,'values':translated}
+  r['native_qt_details'][code]={'loaded':loaded,'values':translated,'errors':[e.toString() for e in component.errors()]}
+  qt.removeTranslator(translator)
  worker=run([str(release/'bin/hf-imager'),'--capabilities'])
  r['native_image_worker']=worker['returncode']==0 and json.loads(worker['stdout'])['opencv']=='4.12.0'
  data=pathlib.Path('/DaOS-recovery-ram/factory-qa-native');data.mkdir(mode=0o700)
@@ -106,6 +116,7 @@ if application:
  r['native_camera_authority']=authority.returncode==0 and len(replies)==2 and replies[0].get('result',{}).get('api_version')=='1.1' and replies[0]['result'].get('simulated') is True
 print('QA_FACTORY_JSON '+json.dumps(r,sort_keys=True),flush=True)
 '''.replace('EXPECTED',json.dumps(expected,indent=1)).replace('APPLICATION',repr(record.get('application'))).replace('TRANSLATIONS',ascii({'en_US':['Method','WB temp.'],'zh_CN':['处理方式','白平衡色温']})).replace('TRANSLATION_KEYS',ascii(['处理方式','白平衡色温']))
+    ast.parse(script)
     payload=("env LD_LIBRARY_PATH=/lib:/usr/lib:/usr/local/lib:/usr/local/lib/qt5 /usr/local/bin/python3.12 -I -B <<'DAOS_QA_PY'\n"+script+"\nDAOS_QA_PY\n").encode()
     if not payload.isascii():raise ValueError('Serial QA code must use ASCII Unicode escapes')
     received=bytearray();started=time.monotonic();sent=False;entered=False;answer=None;process=None;connection=None

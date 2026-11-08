@@ -698,6 +698,9 @@ class QtDeviceTests(unittest.TestCase):
                 c.refreshLibrary()
                 c.selectCapture(c.selectedCaptureId)
                 c.exportSelected(str(self.root / 'duplicate-export.dng'))
+                # Model separate UI events while only the export worker is
+                # blocked; the authority heartbeat needs the Qt event loop.
+                QCoreApplication.processEvents()
             QTest.qWait(1300)
             self.assertEqual('ready', c.connectionState)
             self.assertIsNotNone(service.get_state()['control'])

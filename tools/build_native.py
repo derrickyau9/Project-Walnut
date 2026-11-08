@@ -71,9 +71,9 @@ def main():
                  "-DHF_BUILD_DAEMON=" + ("OFF" if args.no_worker else "ON")]
     if os.name != "nt":
         configure.append("-DCMAKE_BUILD_TYPE=" + args.config)
-    if (os.name == "nt" and not (build / "CMakeCache.txt").exists()
-            and not os.environ.get("CMAKE_GENERATOR")):
-        configure.extend(["-G", "Visual Studio 17 2022", "-A", "x64"])
+    # CMake selects the installed toolchain, including newer Visual Studio
+    # releases, and honors CMAKE_GENERATOR or an existing build cache. Forcing
+    # one Visual Studio release breaks hosts that only have a newer version.
     run(configure)
     ensure_build_type(configure, build, args.config)
     run([cmake, "--build", build, "--config", args.config, "--parallel"])
