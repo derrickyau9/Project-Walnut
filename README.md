@@ -1,22 +1,22 @@
-# Project HassleFree · 无扰计划
+# Project Walnut
 
-**THE CAMERA BUILT BY THE PEOPLE, FOR THE PEOPLE.**
+**They made the leaf. We cracked the nut.**
 
 **OPEN HARDWARE. · OPEN FIRMWARE. · OPEN PHOTOGRAPHY.**
 
-Project HassleFree is an effort to build a professional camera ecosystem that belongs to its users. Photographers and developers should be able to understand, manufacture, repair, modify and extend their equipment, and keep maintaining it after its original maker moves on.
+Project Walnut is an effort to build a professional camera ecosystem that belongs to its users. Photographers and developers should be able to understand, manufacture, repair, modify and extend their equipment, and keep maintaining it after its original maker moves on.
 
-无扰计划希望建立真正属于用户、由社区共同发展的专业数码相机生态。摄影师不应只能使用被允许的功能；开发者不应只能面对无法理解的黑箱；设备的寿命也不应完全取决于制造者是否继续支持它。
+Project Walnut 希望建立真正属于用户、由社区共同发展的专业数码相机生态。摄影师不应只能使用被允许的功能；开发者不应只能面对无法理解的黑箱；设备的寿命也不应完全取决于制造者是否继续支持它。
 
-**Hassle** /ˈhæsəl/：滋扰、麻烦、阻碍。**Free** /friː/：自由、不受束缚。无扰，是重新获得对设备的自主权，也是在研究、修改和发布成果时保持独立。
+Walnut，核桃。我们希望打开设备的外壳与黑箱，让硬件、固件和摄影工作流都成为用户可以理解、维修、修改和持续创造的工具。
 
-[镜像下载 / Releases](https://github.com/derrickyau9/Project-HassleFree/releases) · [产品规划](docs/product/ff1-prd.md) · [相机功能说明](docs/product/camera-apps.md) · [硬件工程](hardware/README.md) · [构建系统](system/bsd-buildroot/README.md)
+[镜像下载 / Releases](https://github.com/derrickyau9/Project-Walnut/releases) · [项目命名](docs/product/naming.md) · [产品规划](docs/product/ff1-prd.md) · [相机功能说明](docs/product/camera-apps.md) · [硬件工程](hardware/README.md) · [构建系统](system/bsd-buildroot/README.md)
 
 ## 为什么做这件事 / Why it exists
 
 我们希望让功能的边界取决于硬件能力与社区的创造力，让更新、维修、适配和长期维护成为用户可以参与的事情。摄影始终是第一功能；开放接口和可编程工作流服务于拍摄，而不是让相机成为一个通用管理后台。
 
-不被厂商定义，不被封闭生态束缚，不受不必要的滋扰；保有独立研究和发布成果的空间。
+保有独立研究、修改和发布成果的空间，让设备的控制权与长期维护能力属于用户。
 
 The goal is an open platform whose limits are determined by hardware and engineering, with documented interfaces and a community that can sustain it. Photography comes first. Programmability should make the camera more useful to its owner.
 
@@ -26,9 +26,9 @@ The goal is an open platform whose limits are determined by hardware and enginee
 
 | 层次 / Layer | 定位 / Purpose |
 | --- | --- |
-| **Project HassleFree · 无扰计划** | 开放摄影生态、工程资料与社区协作的整体计划。The wider ecosystem and engineering effort. |
+| **Project Walnut** | 开放摄影生态、工程资料与社区协作的整体计划。The wider ecosystem and engineering effort. |
 | **DaOS Camera** | 面向摄影的操作系统集成、硬件抽象、原生相机服务、界面与工作流。The camera software platform. |
-| **HassleFree FF-1** | 计划中的第一款整机，以可用的专业全画幅无反相机为目标。The first planned camera body and architecture proving ground. |
+| **Walnut FF-1** | 计划中的第一款整机，以可用的专业全画幅无反相机为目标。The first planned camera body and architecture proving ground. |
 
 ### 开放的方向 / What we are building toward
 
@@ -53,6 +53,7 @@ The running prototype uses **HF-Sim**, a synthetic image source. Screenshots and
 | 树莓派显示、触摸、USB | 研发设备有实机记录；每份 Release 镜像仍以自己的验证说明为准。Development-board evidence is separate from image acceptance. |
 | USB 急救与异常回退 | 已在固定研发设备验证独立 RAM 急救、USB 回连和正常系统恢复；绑定设备的恢复镜像不能当作通用整卡镜像。 |
 | 板载 Wi-Fi | 实机连接尚未验证成功。Physical connectivity remains unfinished. |
+| 双轴水平仪 | 提供姿态显示与数据输入接口；当前没有已验证的实机 IMU 数据或校准，演示数据独立标示。 |
 | OpenBSD 迁移 | 候选完成 ARM 虚拟机启动、认证 SSH 和传输测试；尚未替换实机主系统。Experimental migration, not the released main OS. |
 | FF-1 整机与真实图像链 | 硬件设计、接口和验证工作仍在推进。Hardware and acquisition work remains in progress. |
 
@@ -61,6 +62,7 @@ The running prototype uses **HF-Sim**, a synthetic image source. Screenshots and
 ### 拍摄与工作区 / Capture and workspaces
 
 - 摄影优先的取景界面、曝光与增益设置、网格、明暗主题和可隐藏任务栏。
+- 可开关的双轴电子水平仪，显示横滚、俯仰及调平状态；缺失或过期的姿态数据会失效，演示角度明确标记 DEMO。真实 IMU 接入与校准仍需实机验证。
 - 十二格 Q 菜单、My Menu、C1–C3 工作区、六种布局、工作区导入导出及 Fn 输入边界。
 - 原生相机控制、独占控制租约、参数确认和原请求 ID 恢复；未知结果不会自动重拍。
 - 独立的合成实时预览及 Bayer/DNG 保存。预览配置不等于实测帧率或真实传感器能力。
@@ -82,109 +84,115 @@ The running prototype uses **HF-Sim**, a synthetic image source. Screenshots and
 
 ## 界面截图 / UI screenshots
 
-中英文截图按相同功能对应展示。桌面软件预览使用隔离的 HF-Sim 测试数据；实机截图会单独标注，不混作传感器或硬件性能证明。
+中英文截图按相同功能对应展示。取景示例与回放、比较、评分和编辑演示使用项目对话提供的三张 JPEG 照片，通过实际 Qt 界面渲染。底层拍摄控制与合成 RAW 仍由 HF-Sim 提供；样片不作为传感器或硬件性能证明。
 
-The English and Simplified Chinese galleries cover the same interface states. Desktop previews use isolated synthetic data. Hardware screenshots are identified separately.
+The English and Simplified Chinese galleries cover the same interface states. User-provided JPEG samples demonstrate the viewfinder, playback and editing through the actual Qt UI. Capture control and synthetic RAW remain HF-Sim; the sample photographs are not sensor or hardware validation.
 
 <!-- UI_GALLERY_START -->
-**47 个对应功能界面 × 2 种语言，共 94 张截图。** [完整图库和源码对应清单 / Gallery and source manifest](docs/screenshots/README.md)
+**50 个对应功能界面 × 2 种语言，共 100 张截图。** [完整图库和源码对应清单 / Gallery and source manifest](docs/screenshots/README.md)
 
 | English | 简体中文 |
 | --- | --- |
-| **Capture and live preview** | **拍摄与实时预览** |
-| ![Capture and live preview — English desktop HF-Sim preview](docs/screenshots/en_US/01-capture.png) | ![拍摄与实时预览 — 中文桌面 HF-Sim 预览](docs/screenshots/zh_CN/01-capture.png) |
+| **Capture and sample preview** | **拍摄与示例预览** |
+| ![Capture and sample preview — English desktop preview](docs/screenshots/en_US/01-capture.png) | ![拍摄与示例预览 — 中文桌面预览](docs/screenshots/zh_CN/01-capture.png) |
+| **Level unavailable** | **水平仪未连接** |
+| ![Level unavailable — English desktop preview](docs/screenshots/en_US/01b-level-unavailable.png) | ![水平仪未连接 — 中文桌面预览](docs/screenshots/zh_CN/01b-level-unavailable.png) |
+| **Level aligned demo** | **水平仪水平示例** |
+| ![Level aligned demo — English desktop preview](docs/screenshots/en_US/01c-level-demo-aligned.png) | ![水平仪水平示例 — 中文桌面预览](docs/screenshots/zh_CN/01c-level-demo-aligned.png) |
+| **Level tilted demo** | **水平仪倾斜示例** |
+| ![Level tilted demo — English desktop preview](docs/screenshots/en_US/01d-level-demo-tilted.png) | ![水平仪倾斜示例 — 中文桌面预览](docs/screenshots/zh_CN/01d-level-demo-tilted.png) |
 | **Application taskbar** | **应用任务栏** |
-| ![Application taskbar — English desktop HF-Sim preview](docs/screenshots/en_US/02-taskbar.png) | ![应用任务栏 — 中文桌面 HF-Sim 预览](docs/screenshots/zh_CN/02-taskbar.png) |
+| ![Application taskbar — English desktop preview](docs/screenshots/en_US/02-taskbar.png) | ![应用任务栏 — 中文桌面预览](docs/screenshots/zh_CN/02-taskbar.png) |
 | **Exposure and analogue gain** | **曝光与增益** |
-| ![Exposure and analogue gain — English desktop HF-Sim preview](docs/screenshots/en_US/03-exposure-editor.png) | ![曝光与增益 — 中文桌面 HF-Sim 预览](docs/screenshots/zh_CN/03-exposure-editor.png) |
+| ![Exposure and analogue gain — English desktop preview](docs/screenshots/en_US/03-exposure-editor.png) | ![曝光与增益 — 中文桌面预览](docs/screenshots/zh_CN/03-exposure-editor.png) |
 | **Photo quick controls** | **照片十二格快捷面板** |
-| ![Photo quick controls — English desktop HF-Sim preview](docs/screenshots/en_US/04-quick-photo.png) | ![照片十二格快捷面板 — 中文桌面 HF-Sim 预览](docs/screenshots/zh_CN/04-quick-photo.png) |
+| ![Photo quick controls — English desktop preview](docs/screenshots/en_US/04-quick-photo.png) | ![照片十二格快捷面板 — 中文桌面预览](docs/screenshots/zh_CN/04-quick-photo.png) |
 | **Video layout and capability limits** | **视频布局与能力边界** |
-| ![Video layout and capability limits — English desktop HF-Sim preview](docs/screenshots/en_US/05-quick-video.png) | ![视频布局与能力边界 — 中文桌面 HF-Sim 预览](docs/screenshots/zh_CN/05-quick-video.png) |
+| ![Video layout and capability limits — English desktop preview](docs/screenshots/en_US/05-quick-video.png) | ![视频布局与能力边界 — 中文桌面预览](docs/screenshots/zh_CN/05-quick-video.png) |
 | **Quick-control assignment** | **快捷功能分配** |
-| ![Quick-control assignment — English desktop HF-Sim preview](docs/screenshots/en_US/06-quick-assignment.png) | ![快捷功能分配 — 中文桌面 HF-Sim 预览](docs/screenshots/zh_CN/06-quick-assignment.png) |
+| ![Quick-control assignment — English desktop preview](docs/screenshots/en_US/06-quick-assignment.png) | ![快捷功能分配 — 中文桌面预览](docs/screenshots/zh_CN/06-quick-assignment.png) |
 | **My Menu** | **我的菜单** |
-| ![My Menu — English desktop HF-Sim preview](docs/screenshots/en_US/07-my-menu.png) | ![我的菜单 — 中文桌面 HF-Sim 预览](docs/screenshots/zh_CN/07-my-menu.png) |
+| ![My Menu — English desktop preview](docs/screenshots/en_US/07-my-menu.png) | ![我的菜单 — 中文桌面预览](docs/screenshots/zh_CN/07-my-menu.png) |
 | **C1–C3 custom profiles** | **C1–C3 记忆** |
-| ![C1–C3 custom profiles — English desktop HF-Sim preview](docs/screenshots/en_US/08-custom-profiles.png) | ![C1–C3 记忆 — 中文桌面 HF-Sim 预览](docs/screenshots/zh_CN/08-custom-profiles.png) |
+| ![C1–C3 custom profiles — English desktop preview](docs/screenshots/en_US/08-custom-profiles.png) | ![C1–C3 记忆 — 中文桌面预览](docs/screenshots/zh_CN/08-custom-profiles.png) |
 | **Fn and dial mappings** | **Fn 与拨轮映射** |
-| ![Fn and dial mappings — English desktop HF-Sim preview](docs/screenshots/en_US/09-input-mappings.png) | ![Fn 与拨轮映射 — 中文桌面 HF-Sim 预览](docs/screenshots/zh_CN/09-input-mappings.png) |
+| ![Fn and dial mappings — English desktop preview](docs/screenshots/en_US/09-input-mappings.png) | ![Fn 与拨轮映射 — 中文桌面预览](docs/screenshots/zh_CN/09-input-mappings.png) |
 | **Workspace configuration sharing** | **工作台配置分享** |
-| ![Workspace configuration sharing — English desktop HF-Sim preview](docs/screenshots/en_US/10-layout-import.png) | ![工作台配置分享 — 中文桌面 HF-Sim 预览](docs/screenshots/zh_CN/10-layout-import.png) |
+| ![Workspace configuration sharing — English desktop preview](docs/screenshots/en_US/10-layout-import.png) | ![工作台配置分享 — 中文桌面预览](docs/screenshots/zh_CN/10-layout-import.png) |
 | **Exposure settings** | **曝光菜单** |
-| ![Exposure settings — English desktop HF-Sim preview](docs/screenshots/en_US/11-exposure-menu.png) | ![曝光菜单 — 中文桌面 HF-Sim 预览](docs/screenshots/zh_CN/11-exposure-menu.png) |
+| ![Exposure settings — English desktop preview](docs/screenshots/en_US/11-exposure-menu.png) | ![曝光菜单 — 中文桌面预览](docs/screenshots/zh_CN/11-exposure-menu.png) |
 | **Image and RAW** | **图像与 RAW** |
-| ![Image and RAW — English desktop HF-Sim preview](docs/screenshots/en_US/12-image-raw.png) | ![图像与 RAW — 中文桌面 HF-Sim 预览](docs/screenshots/zh_CN/12-image-raw.png) |
+| ![Image and RAW — English desktop preview](docs/screenshots/en_US/12-image-raw.png) | ![图像与 RAW — 中文桌面预览](docs/screenshots/zh_CN/12-image-raw.png) |
 | **Display and framing** | **显示与构图** |
-| ![Display and framing — English desktop HF-Sim preview](docs/screenshots/en_US/13-display.png) | ![显示与构图 — 中文桌面 HF-Sim 预览](docs/screenshots/zh_CN/13-display.png) |
+| ![Display and framing — English desktop preview](docs/screenshots/en_US/13-display.png) | ![显示与构图 — 中文桌面预览](docs/screenshots/zh_CN/13-display.png) |
 | **Storage information** | **存储信息** |
-| ![Storage information — English desktop HF-Sim preview](docs/screenshots/en_US/14-storage.png) | ![存储信息 — 中文桌面 HF-Sim 预览](docs/screenshots/zh_CN/14-storage.png) |
+| ![Storage information — English desktop preview](docs/screenshots/en_US/14-storage.png) | ![存储信息 — 中文桌面预览](docs/screenshots/zh_CN/14-storage.png) |
 | **Wireless network** | **无线网络** |
-| ![Wireless network — English desktop HF-Sim preview](docs/screenshots/en_US/15-wifi.png) | ![无线网络 — 中文桌面 HF-Sim 预览](docs/screenshots/zh_CN/15-wifi.png) |
+| ![Wireless network — English desktop preview](docs/screenshots/en_US/15-wifi.png) | ![无线网络 — 中文桌面预览](docs/screenshots/zh_CN/15-wifi.png) |
 | **System preferences** | **系统偏好** |
-| ![System preferences — English desktop HF-Sim preview](docs/screenshots/en_US/16-system.png) | ![系统偏好 — 中文桌面 HF-Sim 预览](docs/screenshots/zh_CN/16-system.png) |
+| ![System preferences — English desktop preview](docs/screenshots/en_US/16-system.png) | ![系统偏好 — 中文桌面预览](docs/screenshots/zh_CN/16-system.png) |
 | **Configuration backup and restore** | **配置备份与恢复** |
-| ![Configuration backup and restore — English desktop HF-Sim preview](docs/screenshots/en_US/17-backup.png) | ![配置备份与恢复 — 中文桌面 HF-Sim 预览](docs/screenshots/zh_CN/17-backup.png) |
+| ![Configuration backup and restore — English desktop preview](docs/screenshots/en_US/17-backup.png) | ![配置备份与恢复 — 中文桌面预览](docs/screenshots/zh_CN/17-backup.png) |
 | **Application update and rollback** | **应用更新与回退** |
-| ![Application update and rollback — English desktop HF-Sim preview](docs/screenshots/en_US/18-updates.png) | ![应用更新与回退 — 中文桌面 HF-Sim 预览](docs/screenshots/zh_CN/18-updates.png) |
+| ![Application update and rollback — English desktop preview](docs/screenshots/en_US/18-updates.png) | ![应用更新与回退 — 中文桌面预览](docs/screenshots/zh_CN/18-updates.png) |
 | **Developer and diagnostics** | **开发与诊断** |
-| ![Developer and diagnostics — English desktop HF-Sim preview](docs/screenshots/en_US/19-developer.png) | ![开发与诊断 — 中文桌面 HF-Sim 预览](docs/screenshots/zh_CN/19-developer.png) |
+| ![Developer and diagnostics — English desktop preview](docs/screenshots/en_US/19-developer.png) | ![开发与诊断 — 中文桌面预览](docs/screenshots/zh_CN/19-developer.png) |
 | **Controlled tethering** | **受控联机** |
-| ![Controlled tethering — English desktop HF-Sim preview](docs/screenshots/en_US/20-link.png) | ![受控联机 — 中文桌面 HF-Sim 预览](docs/screenshots/zh_CN/20-link.png) |
+| ![Controlled tethering — English desktop preview](docs/screenshots/en_US/20-link.png) | ![受控联机 — 中文桌面预览](docs/screenshots/zh_CN/20-link.png) |
 | **Terminal entry** | **终端入口** |
-| ![Terminal entry — English desktop HF-Sim preview](docs/screenshots/en_US/21-terminal.png) | ![终端入口 — 中文桌面 HF-Sim 预览](docs/screenshots/zh_CN/21-terminal.png) |
+| ![Terminal entry — English desktop preview](docs/screenshots/en_US/21-terminal.png) | ![终端入口 — 中文桌面预览](docs/screenshots/zh_CN/21-terminal.png) |
 | **Touch keyboard** | **触摸键盘** |
-| ![Touch keyboard — English desktop HF-Sim preview](docs/screenshots/en_US/22-touch-keyboard.png) | ![触摸键盘 — 中文桌面 HF-Sim 预览](docs/screenshots/zh_CN/22-touch-keyboard.png) |
+| ![Touch keyboard — English desktop preview](docs/screenshots/en_US/22-touch-keyboard.png) | ![触摸键盘 — 中文桌面预览](docs/screenshots/zh_CN/22-touch-keyboard.png) |
 | **Capabilities and performance** | **能力与性能** |
-| ![Capabilities and performance — English desktop HF-Sim preview](docs/screenshots/en_US/23-capabilities.png) | ![能力与性能 — 中文桌面 HF-Sim 预览](docs/screenshots/zh_CN/23-capabilities.png) |
+| ![Capabilities and performance — English desktop preview](docs/screenshots/en_US/23-capabilities.png) | ![能力与性能 — 中文桌面预览](docs/screenshots/zh_CN/23-capabilities.png) |
 | **Runtime diagnostics** | **运行诊断** |
-| ![Runtime diagnostics — English desktop HF-Sim preview](docs/screenshots/en_US/24-diagnostics.png) | ![运行诊断 — 中文桌面 HF-Sim 预览](docs/screenshots/zh_CN/24-diagnostics.png) |
+| ![Runtime diagnostics — English desktop preview](docs/screenshots/en_US/24-diagnostics.png) | ![运行诊断 — 中文桌面预览](docs/screenshots/zh_CN/24-diagnostics.png) |
 | **Capture plans** | **拍摄计划** |
-| ![Capture plans — English desktop HF-Sim preview](docs/screenshots/en_US/25-recipes.png) | ![拍摄计划 — 中文桌面 HF-Sim 预览](docs/screenshots/zh_CN/25-recipes.png) |
+| ![Capture plans — English desktop preview](docs/screenshots/en_US/25-recipes.png) | ![拍摄计划 — 中文桌面预览](docs/screenshots/zh_CN/25-recipes.png) |
 | **Exposure-bracket plan** | **曝光包围计划** |
-| ![Exposure-bracket plan — English desktop HF-Sim preview](docs/screenshots/en_US/26-bracketing.png) | ![曝光包围计划 — 中文桌面 HF-Sim 预览](docs/screenshots/zh_CN/26-bracketing.png) |
+| ![Exposure-bracket plan — English desktop preview](docs/screenshots/en_US/26-bracketing.png) | ![曝光包围计划 — 中文桌面预览](docs/screenshots/zh_CN/26-bracketing.png) |
 | **Interval and calibration sequences** | **间隔与校准序列** |
-| ![Interval and calibration sequences — English desktop HF-Sim preview](docs/screenshots/en_US/27-interval.png) | ![间隔与校准序列 — 中文桌面 HF-Sim 预览](docs/screenshots/zh_CN/27-interval.png) |
+| ![Interval and calibration sequences — English desktop preview](docs/screenshots/en_US/27-interval.png) | ![间隔与校准序列 — 中文桌面预览](docs/screenshots/zh_CN/27-interval.png) |
 | **Photo rendering looks** | **照片显示风格** |
-| ![Photo rendering looks — English desktop HF-Sim preview](docs/screenshots/en_US/28-photo-looks.png) | ![照片显示风格 — 中文桌面 HF-Sim 预览](docs/screenshots/zh_CN/28-photo-looks.png) |
+| ![Photo rendering looks — English desktop preview](docs/screenshots/en_US/28-photo-looks.png) | ![照片显示风格 — 中文桌面预览](docs/screenshots/zh_CN/28-photo-looks.png) |
 | **Background task center** | **后台任务中心** |
-| ![Background task center — English desktop HF-Sim preview](docs/screenshots/en_US/29-tasks.png) | ![后台任务中心 — 中文桌面 HF-Sim 预览](docs/screenshots/zh_CN/29-tasks.png) |
+| ![Background task center — English desktop preview](docs/screenshots/en_US/29-tasks.png) | ![后台任务中心 — 中文桌面预览](docs/screenshots/zh_CN/29-tasks.png) |
 | **Image processing workspace** | **图像计算工作台** |
-| ![Image processing workspace — English desktop HF-Sim preview](docs/screenshots/en_US/30-image-tools.png) | ![图像计算工作台 — 中文桌面 HF-Sim 预览](docs/screenshots/zh_CN/30-image-tools.png) |
+| ![Image processing workspace — English desktop preview](docs/screenshots/en_US/30-image-tools.png) | ![图像计算工作台 — 中文桌面预览](docs/screenshots/zh_CN/30-image-tools.png) |
 | **Image processing operations** | **图像处理功能** |
-| ![Image processing operations — English desktop HF-Sim preview](docs/screenshots/en_US/31-processing-operations.png) | ![图像处理功能 — 中文桌面 HF-Sim 预览](docs/screenshots/zh_CN/31-processing-operations.png) |
+| ![Image processing operations — English desktop preview](docs/screenshots/en_US/31-processing-operations.png) | ![图像处理功能 — 中文桌面预览](docs/screenshots/zh_CN/31-processing-operations.png) |
 | **Photo library** | **照片库** |
-| ![Photo library — English desktop HF-Sim preview](docs/screenshots/en_US/32-photo-library.png) | ![照片库 — 中文桌面 HF-Sim 预览](docs/screenshots/zh_CN/32-photo-library.png) |
+| ![Photo library — English desktop preview](docs/screenshots/en_US/32-photo-library.png) | ![照片库 — 中文桌面预览](docs/screenshots/zh_CN/32-photo-library.png) |
 | **Multi-selection and batch management** | **多选与批量管理** |
-| ![Multi-selection and batch management — English desktop HF-Sim preview](docs/screenshots/en_US/33-multi-select.png) | ![多选与批量管理 — 中文桌面 HF-Sim 预览](docs/screenshots/zh_CN/33-multi-select.png) |
+| ![Multi-selection and batch management — English desktop preview](docs/screenshots/en_US/33-multi-select.png) | ![多选与批量管理 — 中文桌面预览](docs/screenshots/zh_CN/33-multi-select.png) |
 | **Photo playback** | **照片回放** |
-| ![Photo playback — English desktop HF-Sim preview](docs/screenshots/en_US/34-viewer.png) | ![照片回放 — 中文桌面 HF-Sim 预览](docs/screenshots/zh_CN/34-viewer.png) |
+| ![Photo playback — English desktop preview](docs/screenshots/en_US/34-viewer.png) | ![照片回放 — 中文桌面预览](docs/screenshots/zh_CN/34-viewer.png) |
 | **Side-by-side and pixel inspection** | **并排与像素查看** |
-| ![Side-by-side and pixel inspection — English desktop HF-Sim preview](docs/screenshots/en_US/35-compare-zoom.png) | ![并排与像素查看 — 中文桌面 HF-Sim 预览](docs/screenshots/zh_CN/35-compare-zoom.png) |
+| ![Side-by-side and pixel inspection — English desktop preview](docs/screenshots/en_US/35-compare-zoom.png) | ![并排与像素查看 — 中文桌面预览](docs/screenshots/zh_CN/35-compare-zoom.png) |
 | **Non-destructive tone editing** | **非破坏明暗编辑** |
-| ![Non-destructive tone editing — English desktop HF-Sim preview](docs/screenshots/en_US/36-tone-crop.png) | ![非破坏明暗编辑 — 中文桌面 HF-Sim 预览](docs/screenshots/zh_CN/36-tone-crop.png) |
+| ![Non-destructive tone editing — English desktop preview](docs/screenshots/en_US/36-tone-crop.png) | ![非破坏明暗编辑 — 中文桌面预览](docs/screenshots/zh_CN/36-tone-crop.png) |
 | **Rotation and crop** | **旋转与裁切** |
-| ![Rotation and crop — English desktop HF-Sim preview](docs/screenshots/en_US/36b-rotation-crop.png) | ![旋转与裁切 — 中文桌面 HF-Sim 预览](docs/screenshots/zh_CN/36b-rotation-crop.png) |
+| ![Rotation and crop — English desktop preview](docs/screenshots/en_US/36b-rotation-crop.png) | ![旋转与裁切 — 中文桌面预览](docs/screenshots/zh_CN/36b-rotation-crop.png) |
 | **White balance and RGB** | **白平衡与 RGB** |
-| ![White balance and RGB — English desktop HF-Sim preview](docs/screenshots/en_US/37-white-balance.png) | ![白平衡与 RGB — 中文桌面 HF-Sim 预览](docs/screenshots/zh_CN/37-white-balance.png) |
+| ![White balance and RGB — English desktop preview](docs/screenshots/en_US/37-white-balance.png) | ![白平衡与 RGB — 中文桌面预览](docs/screenshots/zh_CN/37-white-balance.png) |
 | **Tone curve** | **色调曲线** |
-| ![Tone curve — English desktop HF-Sim preview](docs/screenshots/en_US/38-tone-curve.png) | ![色调曲线 — 中文桌面 HF-Sim 预览](docs/screenshots/zh_CN/38-tone-curve.png) |
+| ![Tone curve — English desktop preview](docs/screenshots/en_US/38-tone-curve.png) | ![色调曲线 — 中文桌面预览](docs/screenshots/zh_CN/38-tone-curve.png) |
 | **Custom styles** | **自定义风格** |
-| ![Custom styles — English desktop HF-Sim preview](docs/screenshots/en_US/39-custom-styles.png) | ![自定义风格 — 中文桌面 HF-Sim 预览](docs/screenshots/zh_CN/39-custom-styles.png) |
+| ![Custom styles — English desktop preview](docs/screenshots/en_US/39-custom-styles.png) | ![自定义风格 — 中文桌面预览](docs/screenshots/zh_CN/39-custom-styles.png) |
 | **Edit history** | **编辑历史** |
-| ![Edit history — English desktop HF-Sim preview](docs/screenshots/en_US/40-edit-history.png) | ![编辑历史 — 中文桌面 HF-Sim 预览](docs/screenshots/zh_CN/40-edit-history.png) |
+| ![Edit history — English desktop preview](docs/screenshots/en_US/40-edit-history.png) | ![编辑历史 — 中文桌面预览](docs/screenshots/zh_CN/40-edit-history.png) |
 | **Batch export** | **批量导出** |
-| ![Batch export — English desktop HF-Sim preview](docs/screenshots/en_US/41-export.png) | ![批量导出 — 中文桌面 HF-Sim 预览](docs/screenshots/zh_CN/41-export.png) |
+| ![Batch export — English desktop preview](docs/screenshots/en_US/41-export.png) | ![批量导出 — 中文桌面预览](docs/screenshots/zh_CN/41-export.png) |
 | **File browser and copy import** | **文件浏览与复制导入** |
-| ![File browser and copy import — English desktop HF-Sim preview](docs/screenshots/en_US/42-import.png) | ![文件浏览与复制导入 — 中文桌面 HF-Sim 预览](docs/screenshots/zh_CN/42-import.png) |
+| ![File browser and copy import — English desktop preview](docs/screenshots/en_US/42-import.png) | ![文件浏览与复制导入 — 中文桌面预览](docs/screenshots/zh_CN/42-import.png) |
 | **Photo library actions** | **照片库工具** |
-| ![Photo library actions — English desktop HF-Sim preview](docs/screenshots/en_US/43-library-actions.png) | ![照片库工具 — 中文桌面 HF-Sim 预览](docs/screenshots/zh_CN/43-library-actions.png) |
+| ![Photo library actions — English desktop preview](docs/screenshots/en_US/43-library-actions.png) | ![照片库工具 — 中文桌面预览](docs/screenshots/zh_CN/43-library-actions.png) |
 | **Photo ratings** | **照片评分** |
-| ![Photo ratings — English desktop HF-Sim preview](docs/screenshots/en_US/44-rating.png) | ![照片评分 — 中文桌面 HF-Sim 预览](docs/screenshots/zh_CN/44-rating.png) |
+| ![Photo ratings — English desktop preview](docs/screenshots/en_US/44-rating.png) | ![照片评分 — 中文桌面预览](docs/screenshots/zh_CN/44-rating.png) |
 | **Photo metadata** | **照片元数据** |
-| ![Photo metadata — English desktop HF-Sim preview](docs/screenshots/en_US/45-photo-info.png) | ![照片元数据 — 中文桌面 HF-Sim 预览](docs/screenshots/zh_CN/45-photo-info.png) |
+| ![Photo metadata — English desktop preview](docs/screenshots/en_US/45-photo-info.png) | ![照片元数据 — 中文桌面预览](docs/screenshots/zh_CN/45-photo-info.png) |
 | **Permanent-delete confirmation** | **永久清空确认** |
-| ![Permanent-delete confirmation — English desktop HF-Sim preview](docs/screenshots/en_US/46-trash-confirmation.png) | ![永久清空确认 — 中文桌面 HF-Sim 预览](docs/screenshots/zh_CN/46-trash-confirmation.png) |
+| ![Permanent-delete confirmation — English desktop preview](docs/screenshots/en_US/46-trash-confirmation.png) | ![永久清空确认 — 中文桌面预览](docs/screenshots/zh_CN/46-trash-confirmation.png) |
 <!-- UI_GALLERY_END -->
 
 ## 运行源码 / Run from source
@@ -204,17 +212,19 @@ python ui/on-device/main.py --native-command build/native/Release/hf-camerad.exe
 
 可使用 `--language en_US` 或 `--language zh_CN` 选择界面语言，也可在系统偏好中切换。语言设置不会改写文件名、命令、路由或用户输入。
 
+样片取景演示可加 `--demo-image ui/on-device/demo-images/coast.jpg`。水平仪演示可加 `--demo-attitude 0 0`，会明确标记 DEMO；实际姿态输入使用 `--attitude-file PATH`，两种姿态输入方式互斥。照片库可复制导入 [三张示例照片](ui/on-device/demo-images/README.md)，用于回放、比较、评分和非破坏编辑；示例预览会明确标示其来源。
+
 Unix 构建通常输出 `build/native/hf-camerad`；将 `--native-command` 指向该文件。每个并行实例使用独立数据目录。详见 [界面说明](ui/on-device/README.md) 与 [原生相机说明](camera/native/README.md)。
 
 ## 固件镜像 / Firmware images
 
-**镜像放在 [GitHub Releases](https://github.com/derrickyau9/Project-HassleFree/releases)，不进入 Git 源码历史。** 每个镜像附带 SHA-256、适用硬件、构建来源、包含功能及验证限制。
+**镜像放在 [GitHub Releases](https://github.com/derrickyau9/Project-Walnut/releases)，不进入 Git 源码历史。** 每个镜像附带 SHA-256、适用硬件、构建来源、包含功能及验证限制。
 
 Full-card images and partition-repair images are different artifacts. Follow the individual release instructions and checksums. Experimental OpenBSD payloads and device-bound recovery backups are not general-purpose firmware releases.
 
 当前整卡镜像面向树莓派 4 ARM64 开发平台及其指定显示配置。FF-1 整机固件、板载 Wi-Fi 和真实传感器能力不因发布镜像而自动成为已完成项目。
 
-首份预览镜像的固定输入、构建流程、授权公钥和实机验证边界见 [镜像构建与使用说明 / Factory preview guide](docs/releases/factory-preview-001.md)。
+Project Walnut 新预览的样片演示、水平仪接口、固定构建输入、授权公钥和实机验证边界见 [镜像构建与使用说明 / Preview guide](docs/releases/walnut-preview-002.md)。
 
 ## 目录 / Repository map
 
@@ -241,4 +251,4 @@ Full-card images and partition-repair images are different artifacts. Follow the
 
 **让相机成为用户可以理解、控制、修改和创造的工具。**
 
-**The camera built by the people, for the people.**
+**They made the leaf. We cracked the nut.**

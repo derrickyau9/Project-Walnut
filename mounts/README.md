@@ -1,4 +1,9 @@
-# HUMI interface — research and validation plan
+# HUMI interface — Walnut FF-1 research and validation plan
+
+HUMI means **Hardware Universal Mount Interface**, the stable interface name
+within Project Walnut. The planned Walnut FF-1 uses this interchangeable-mount
+research; the name does not establish universal lens compatibility.
+See the [project naming](../docs/product/naming.md).
 
 No mount geometry, tolerances, CAD or lens compatibility has been validated.
 This is not a manufacturing specification. Sony E and Canon EF are initial

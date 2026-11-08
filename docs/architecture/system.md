@@ -1,4 +1,4 @@
-# Architecture and invariants
+# Project Walnut architecture and invariants
 
 Status: intended architecture. Only running code and recorded tests establish implementation status. The native synthetic authority and generic ARM64 Linux/Qt virtual image are exercised. No real sensor, PCB, FPGA receive path, DMA driver, mechanical system, MCU or physical board image has been verified here.
 

@@ -69,6 +69,8 @@ MonochromeWindow {
     property string toastRequest: ""
     property bool savedToast: false
     property bool liveViewDesired: true
+    readonly property url samplePreviewUrl: typeof samplePreviewSource !== "undefined" ? samplePreviewSource : ""
+    readonly property bool samplePreviewActive: samplePreviewUrl.toString().length > 0
     property bool taskbarExpanded: false
     property bool taskbarDragging: false
     readonly property real taskbarWidth: 72
@@ -112,7 +114,10 @@ MonochromeWindow {
         else if(action === "grid") cameraShell.setPreference("grid_enabled",!cameraShell.gridEnabled)
         else if(action === "theme") cameraShell.setPreference("theme",cameraShell.theme === "dark" ? "light" : "dark")
         else if(action === "clean_view") taskbarExpanded=false
-        else if(action === "preview") { liveViewDesired=!camera.previewActive; camera.togglePreview() }
+        else if(action === "preview") {
+            if(samplePreviewActive) liveViewDesired=!liveViewDesired
+            else { liveViewDesired=!camera.previewActive; camera.togglePreview() }
+        }
         else if(["wifi","terminal","tasks","image_tools","system_control"].indexOf(action)>=0) { cameraShell.selectGroup(action); cameraShell.navigate("settings") }
         else if(action === "system") { cameraShell.selectGroup("system"); cameraShell.navigate("settings") }
         else if(["photos","recipes","diagnostics"].indexOf(action) >= 0) cameraShell.navigate(action)
@@ -217,7 +222,7 @@ MonochromeWindow {
         objectName: "autoPreviewTimer"
         interval: 250
         repeat: true
-        running: body.currentScreen === "capture" && body.liveViewDesired && !body.screenAsleep
+        running: body.currentScreen === "capture" && body.liveViewDesired && !body.screenAsleep && !body.samplePreviewActive
         onTriggered: {
             if(camera.connectionState === "ready" && camera.canCapture && !camera.previewActive && !body.uncertain)
                 camera.togglePreview()
@@ -247,7 +252,7 @@ MonochromeWindow {
             if(body.workspace) body.workspace.setDeveloperMode(systemControl.preferences.developer_mode)
             if(!systemControl.preferences.developer_mode && cameraShell.currentGroup === "terminal") menu.chooseCategory("system_control")
             if(body.screenAsleep && camera.previewActive) camera.togglePreview()
-            else if(!body.screenAsleep && body.currentScreen === "capture" && body.liveViewDesired && camera.canCapture && !camera.previewActive) camera.togglePreview()
+            else if(!body.samplePreviewActive && !body.screenAsleep && body.currentScreen === "capture" && body.liveViewDesired && camera.canCapture && !camera.previewActive) camera.togglePreview()
         }
     }
     Connections {
@@ -316,13 +321,15 @@ MonochromeWindow {
                     id: liveImage
                     objectName: "viewfinderImage"
                     anchors.fill: parent
-                    source: camera.previewUrl
+                    source: body.samplePreviewActive ? body.samplePreviewUrl : camera.previewUrl
                     fillMode: Image.PreserveAspectFit
                     smooth: true
-                    cache: false
+                    cache: body.samplePreviewActive
+                    asynchronous: body.samplePreviewActive
+                    sourceSize: body.samplePreviewActive ? Qt.size(Math.ceil(width),Math.ceil(height)) : Qt.size(-1,-1)
                     opacity: cameraShell.previewBrightness/100.0
-                    visible: camera.previewActive && source.toString().length > 0 && status !== Image.Error
-                    Accessible.name: qsTr("HF-Sim live view, independently synthesized preview")
+                    visible: (body.samplePreviewActive ? body.liveViewDesired && status === Image.Ready : camera.previewActive) && source.toString().length > 0 && status !== Image.Error
+                    Accessible.name: body.samplePreviewActive ? qsTr("示例照片预览；拍摄 RAW 仍由 HF-Sim 合成") : qsTr("HF-Sim live view, independently synthesized preview")
                 }
                 Item {
                     anchors.centerIn: parent
@@ -335,7 +342,7 @@ MonochromeWindow {
                 Text {
                     anchors.centerIn: parent
                     visible: !liveImage.visible && !body.uncertain
-                    text: body.capturing ? qsTr("正在保存 RAW…") : camera.connectionState === "connecting" ? qsTr("正在连接相机…") : camera.connectionState === "ready" ? qsTr("实时取景已暂停") : qsTr("相机暂不可用")
+                    text: body.samplePreviewActive ? (liveImage.status === Image.Error ? qsTr("示例照片无法读取") : !body.liveViewDesired ? qsTr("示例画面已暂停") : "") : body.capturing ? qsTr("正在保存 RAW…") : camera.connectionState === "connecting" ? qsTr("正在连接相机…") : camera.connectionState === "ready" ? qsTr("实时取景已暂停") : qsTr("相机暂不可用")
                     color: "#dddddd"
                     font.family: body.font.family
                     font.pixelSize: 20
@@ -354,11 +361,15 @@ MonochromeWindow {
                     anchors.right: parent.right
                     anchors.top: parent.top
                     anchors.margins: 12
-                    width: 72
-                    height: 28
+                    width: body.samplePreviewActive ? Math.max(previewKindLabel.implicitWidth,sampleRawLabel.visible ? sampleRawLabel.implicitWidth : 0)+20 : 72
+                    height: body.samplePreviewActive ? 48 : 28
                     color: "#000000"
                     radius: 3
-                    Text { anchors.centerIn:parent; text:qsTr("HF-Sim"); color:"#dddddd"; font.family:typography.uiFamily; font.pixelSize:typography.captionSize }
+                    Column {
+                        anchors.centerIn:parent;spacing:2
+                        Text { id:previewKindLabel;objectName:"previewSourceLabel";text:body.samplePreviewActive ? qsTr("示例画面") : qsTr("HF-Sim");color:"#dddddd";font.family:typography.uiFamily;font.pixelSize:typography.captionSize }
+                        Text { id:sampleRawLabel;objectName:"samplePreviewRawNotice";visible:body.samplePreviewActive;text:qsTr("RAW：HF-Sim 合成数据");color:"#bbbbbb";font.family:typography.uiFamily;font.pixelSize:11 }
+                    }
                 }
                 Rectangle {
                     anchors.horizontalCenter:parent.horizontalCenter;anchors.top:parent.top;anchors.topMargin:12
@@ -368,6 +379,11 @@ MonochromeWindow {
                         anchors.centerIn:parent;color:"#eeeeee";font.family:typography.uiFamily;font.pixelSize:14
                         text:camera.settingsView.temporaryState === "restoring" ? qsTr("正在恢复原参数") : camera.settingsView.isTemporary ? qsTr("Fn 临时参数 · 松开恢复") : body.capturing ? qsTr("下一张参数 · 等待本张完成") : qsTr("参数确认中 · 请稍后按快门")
                     }
+                }
+                LevelOverlay {
+                    controller:typeof levelControl !== "undefined" ? levelControl : null
+                    anchors.centerIn:parent
+                    width:Math.min(340,parent.width-24)
                 }
                 Button {
                     anchors.horizontalCenter: parent.horizontalCenter

@@ -383,7 +383,7 @@ def render_gallery(report, runtime, images, report_sha256):
 <nav class="jump" aria-label="Screenshot navigation">{''.join(navigation)}</nav><p class="instructions">放大后使用 ← / → 翻页，Esc 关闭；“原始尺寸”显示像素尺寸，“下载 PNG”保存未经修改的源图。无网络依赖。<br>Click a screenshot to enlarge; use arrow keys to browse and Escape to close. All images are embedded locally.</p>
 <section class="gallery" aria-label="Actual UI screenshots">{''.join(cards)}</section>
 <section class="provenance"><h2>来源与验证 / Provenance</h2>{source_reference}<p>源 review.json SHA-256：<code>{e(report_sha256)}</code></p><p>{'DNG 与导出文件的 SHA-256 在源报告中相同：<code>'+e(dng_hash)+'</code>。本工具仅校验报告与 PNG，不重新读取 DNG 或执行拍摄。' if export_match else '此报告未给出可确认的 DNG / 导出哈希一致性。'}</p><p>{e(scope_note)}</p></section>
-</main><footer>DaOS · HassleFree FF-1 · Synthetic camera UI review<br>此 HTML 自包含全部原始截图。运行环境和限制取自源报告；本机私有路径、原始报告对象及业务数据未嵌入页面元数据。</footer>
+</main><footer>Project Walnut · DaOS FF-1 · Synthetic camera UI review<br>此 HTML 自包含全部原始截图。运行环境和限制取自源报告；本机私有路径、原始报告对象及业务数据未嵌入页面元数据。</footer>
 <dialog id="viewer" aria-labelledby="viewer-title"><div class="viewer-bar"><button id="viewer-prev" type="button" aria-label="上一张 / Previous">←</button><div id="viewer-title" class="viewer-title"></div><button id="viewer-next" type="button" aria-label="下一张 / Next">→</button><button id="viewer-size" type="button" aria-pressed="false">原始尺寸</button><a id="viewer-download" download>下载 PNG</a><button id="viewer-close" type="button">关闭 / Close</button></div><div class="viewer-image"><img id="viewer-image" alt=""></div></dialog>
 <script>{SCRIPT}</script></body></html>'''
     return html_text.encode('utf-8')

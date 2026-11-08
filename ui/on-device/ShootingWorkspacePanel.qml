@@ -240,9 +240,9 @@ Item {
         parent:Overlay.overlay
         modal:true
         focus:true
-        width:Math.min(720,parent.width-24)
+        width:Math.min(720,(parent ? parent.width : panel.width)-24)
         height:216
-        x:(parent.width-width)/2
+        x:parent ? (parent.width-width)/2 : 0
         y:8
         padding:10
         closePolicy:Popup.CloseOnEscape
@@ -267,10 +267,10 @@ Item {
         parent: Overlay.overlay
         modal: true
         focus: true
-        width: Math.min(680, parent.width-32)
-        height: Math.min(440, parent.height-24)
-        x: (parent.width-width)/2
-        y: (parent.height-height)/2
+        width: Math.min(680, (parent ? parent.width : panel.width)-32)
+        height: Math.min(440, (parent ? parent.height : panel.height)-24)
+        x: parent ? (parent.width-width)/2 : 0
+        y: parent ? (parent.height-height)/2 : 0
         padding: 14
         closePolicy: Popup.CloseOnEscape | Popup.CloseOnPressOutside
         background: Rectangle { color:panel.colors.surface; radius:8; border.color:panel.colors.line }

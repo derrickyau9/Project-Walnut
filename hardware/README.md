@@ -1,4 +1,7 @@
-# Hardware
+# Walnut FF-1 hardware
+
+These materials belong to Project Walnut's planned first camera body,
+[Walnut FF-1](../docs/product/ff1-prd.md).
 
 This directory now includes preserved, editable mechanical and control-board prototype sources, plus a sensor-interface study. Read the [integration review](interface-review.md) and [provenance manifest](imports/provenance.json). These sources have not established a manufacturable or electrically/optically validated camera. Do not manufacture from the imported concepts as a released system.
 

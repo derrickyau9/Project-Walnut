@@ -303,6 +303,21 @@ Rectangle {
                 Rectangle { anchors.bottom: parent.bottom; width: parent.width; height: 1; color: menu.colors.line }
             }
             Item {
+                width:parent.width;height:88
+                Text {x:16;y:12;text:qsTr("电子水平仪");color:menu.colors.text;font.family:menu.uiFont;font.pixelSize:18}
+                Text {x:16;y:40;width:parent.width-112;text:typeof levelControl !== "undefined" && levelControl.settingsError ? qsTr("水平仪设置无法保存") : qsTr("没有新鲜姿态数据时显示不可用；演示角度始终标注 DEMO。");color:menu.colors.muted;font.family:menu.uiFont;font.pixelSize:12;wrapMode:Text.WordWrap}
+                Switch {
+                    id:levelSwitch;objectName:"menuLevelSwitch"
+                    anchors.right:parent.right;anchors.rightMargin:14;anchors.verticalCenter:parent.verticalCenter
+                    width:64;height:64
+                    enabled:typeof levelControl !== "undefined" && levelControl !== null
+                    checked:typeof levelControl !== "undefined" && levelControl.enabled
+                    onToggled:if(typeof levelControl !== "undefined")levelControl.setEnabled(checked)
+                    indicator:Rectangle {width:48;height:26;x:(levelSwitch.width-width)/2;y:(levelSwitch.height-height)/2;radius:13;color:levelSwitch.checked ? menu.colors.accent : menu.colors.line;Rectangle {x:levelSwitch.checked ? parent.width-width-3 : 3;anchors.verticalCenter:parent.verticalCenter;width:20;height:20;radius:10;color:"#ffffff"}}
+                }
+                Rectangle {anchors.bottom:parent.bottom;width:parent.width;height:1;color:menu.colors.line}
+            }
+            Item {
                 width: parent.width; height: 64
                 Text { anchors.left: parent.left; anchors.leftMargin: 16; anchors.verticalCenter: parent.verticalCenter; text: qsTr("显示主题"); color: menu.colors.text; font.family: menu.uiFont; font.pixelSize: 18 }
                 LocalizedComboBox {

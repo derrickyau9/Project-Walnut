@@ -1,4 +1,4 @@
-# Relationship to the existing DaOS architecture
+# Project Walnut and the existing DaOS architecture
 
 R14 update: the working tree retains a source-traceable native Qt adaptation
 of **DaOS Retail's menu/design conventions**, with an explicit user override

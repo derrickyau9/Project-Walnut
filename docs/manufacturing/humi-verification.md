@@ -1,4 +1,7 @@
-# HUMI mechanical development and test plan
+# Walnut FF-1 HUMI mechanical development and test plan
+
+HUMI is Project Walnut's **Hardware Universal Mount Interface**. This plan
+retains its [interface research scope](../../mounts/README.md).
 
 Status: design inputs only; no dimensions, CAD, hardware or lens compatibility are approved. No manufacturing order should use this as a drawing.
 

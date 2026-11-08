@@ -257,10 +257,14 @@ class NeutralRenderedBackgroundTests(unittest.TestCase):
         self.assert_flat_regions_are_neutral(bar, minimum=150)
         area = self.case.item('viewfinderArea')
         found = set()
+        def descendants(parent):
+            for child in parent.childItems():
+                yield child
+                yield from descendants(child)
         for background in area.childItems():
             if background.property('color') is None:
                 continue
-            for child in background.childItems():
+            for child in descendants(background):
                 text = child.property('text')
                 if isinstance(text, str) and text.replace(' ', '') in ('MRAW14', 'HF-Sim'):
                     point = background.mapToScene(QPointF(3, background.height()/2))

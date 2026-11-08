@@ -10,7 +10,7 @@ MonochromeWindow {
     height: 800
     minimumWidth: 800
     minimumHeight: 600
-    title: qsTranslate("Console", "DaOS Camera · HassleFree FF-1")
+    title: qsTranslate("Console", "Project Walnut · DaOS Camera / FF-1")
     color: window.theme.background
     font.family: Qt.platform.os === "windows" ? "Segoe UI" : "Sans Serif"
     font.pixelSize: 14

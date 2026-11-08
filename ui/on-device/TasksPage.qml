@@ -10,8 +10,9 @@ Rectangle {
     signal closeRequested()
     function closeOverlays() { if (detailPopup.visible) { detailPopup.close(); return true } return false }
     onVisibleChanged: if (!visible) closeOverlays()
-    function statusName(value) { return ({queued:"已排队",running:"运行中",pausing:"正在停止",paused:"已暂停",complete:"已完成",failed:"失败",cancelled:"已取消",unknown:"待核实原请求",awaiting_commit:"待接收端校验"})[value] || value }
-    function kindName(value) { return ({workflow:"拍摄流程",transfer:"USB / 网络传输",export_original:"原件导出",export_dng:"DNG 导出",export_jpeg:"JPEG 显影",export_tiff:"16 位 TIFF",metadata:"批量选片",import:"复制导入",purge:"永久清空",develop_jpeg:"JPEG 显影",develop_tiff16:"16 位 TIFF",analyze:"图像分析",hdr:"HDR 合成",exposure_fusion:"曝光融合",focus_stack:"焦点堆栈",denoise_stack:"多帧降噪",panorama:"全景拼接",astro_stack:"星空堆栈",darkflat:"暗场/平场",negative:"负片反转"})[value] || value }
+    function statusName(value) { var label=({queued:"已排队",running:"运行中",pausing:"正在停止",paused:"已暂停",complete:"已完成",failed:"失败",cancelled:"已取消",unknown:"待核实原请求",awaiting_commit:"待接收端校验"})[value];return label ? qsTr(label) : value }
+    function kindName(value) { var label=({workflow:"拍摄流程",transfer:"USB / 网络传输",export_original:"原件导出",export_dng:"DNG 导出",export_jpeg:"JPEG 显影",export_tiff:"16 位 TIFF",metadata:"批量选片",import:"复制导入",purge:"永久清空",develop_jpeg:"JPEG 显影",develop_tiff16:"16 位 TIFF",analyze:"图像分析",hdr:"HDR 合成",exposure_fusion:"曝光融合",focus_stack:"焦点堆栈",denoise_stack:"多帧降噪",panorama:"全景拼接",astro_stack:"星空堆栈",darkflat:"暗场/平场",negative:"负片反转"})[value];return label ? qsTr(label) : value }
+    function stageText(value) { return typeof i18n !== "undefined" ? i18n.t(value || "",i18n.revision) : (value || "") }
     ColumnLayout {
         anchors.fill: parent; anchors.margins: 8; spacing: 8
         RowLayout {
@@ -36,7 +37,7 @@ Rectangle {
                         ColumnLayout {
                             Layout.fillWidth: true; spacing: 3
                             Text { text: page.kindName(modelData.kind) + " · " + page.statusName(modelData.status); color: "#eeeeee"; font.pixelSize: 17 }
-                            Text { Layout.fillWidth: true; text: modelData.error || modelData.stage || (modelData.done + " / " + modelData.total); color: "#bcbcbc"; font.pixelSize: 13; elide: Text.ElideRight }
+                            Text { Layout.fillWidth: true; text: modelData.error || page.stageText(modelData.stage) || (modelData.done + " / " + modelData.total); color: "#bcbcbc"; font.pixelSize: 13; elide: Text.ElideRight }
                         }
                         MediaButton { implicitWidth: 70; text: qsTr("详情"); onClicked: { page.taskService.inspectJob(modelData.job_id); detailPopup.open() } }
                         MediaButton { implicitWidth: 70; text: modelData.status === "running" || modelData.status === "queued" ? qsTr("暂停") : qsTr("继续"); enabled: ["running","queued","paused","unknown","failed","cancelled"].indexOf(modelData.status) >= 0; onClicked: { if (modelData.status === "running" || modelData.status === "queued") page.taskService.pause(modelData.job_id); else page.taskService.resume(modelData.job_id) } }

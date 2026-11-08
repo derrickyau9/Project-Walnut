@@ -19,6 +19,7 @@ import stat
 import subprocess
 import sys
 import tarfile
+import uuid
 
 SOURCE_SHA='9ab7335f1752331270fe9cf451e31085f89063e58460adb5627d88f2f6f3a859'
 RAW_SHA='1788ed68190e78bfe76b1f2ca56d6904883dfada800064312101dae386e160db'
@@ -34,6 +35,97 @@ OLD_INIT='70621ffd991e433ca1cbc177c4d7355f5ab16253e2f28a9da1307f22b8d5feae'
 HELPER='d6ca440605b3c1718f1144dd8eda6ae2e34f8fd53893c712a7c2dfcdf33fb2aa'
 OLD_HELPER='fab7cc1ffbbfd0875ef740df655771368d3da4b2d7cd5a4178903caa01bdfafd'
 KERNEL='5ac681d051cb623b23a724f91e6ecb818a883f034c8aa88eab678162221f2dec'
+LEGACY_PROFILE={'format':'DaOS-factory-input-profile-v1','source_xz_sha256':SOURCE_SHA,
+    'source_raw_sha256':RAW_SHA,'raw_bytes':RAW_BYTES,'source_core_preinstalled':False,
+    'application_version':'camera-experience-005','image_basename':'DaOS-Factory-Preview-001.img',
+    'export_basename':'DaOS-Factory-Preview-001-arm64.img.xz','project_name':'DaOS Camera','tagline':''}
+WALNUT_PROFILE={'format':'DaOS-factory-input-profile-v1',
+    'source_xz_sha256':'d3f9272d04c37993eaf2e53a54dd09ce2c4e0b8f8b5bb10174106bd12e249ee6',
+    'source_raw_sha256':'3d094085f22e119586e46f80cff9b992f0c02c6296fa39b99155efc3282e2dd4',
+    'raw_bytes':RAW_BYTES,'source_core_preinstalled':True,'application_version':'camera-experience-006',
+    'image_basename':'Project-Walnut-v0.1.0-preview.2-arm64.img',
+    'export_basename':'Project-Walnut-v0.1.0-preview.2-arm64.img.xz',
+    'project_name':'Project Walnut','tagline':'They made the leaf. We cracked the nut.'}
+
+def input_profile(args):
+    path=getattr(args,'input_profile',None);expected=getattr(args,'input_profile_sha256',None)
+    if path is None:
+        if expected is not None:raise ValueError('Input profile file and SHA256 must be supplied together')
+        return dict(LEGACY_PROFILE)
+    if path.is_symlink() or not path.is_file() or path.stat().st_size>8192 or not re.fullmatch('[0-9a-f]{64}',expected or ''):
+        raise ValueError('Bound input profile required')
+    raw=path.read_bytes()
+    if hashlib.sha256(raw).hexdigest()!=expected:raise ValueError('Input profile SHA256 changed')
+    def unique(pairs):
+        result={}
+        for key,value in pairs:
+            if key in result:raise ValueError('Duplicate input profile field')
+            result[key]=value
+        return result
+    profile=json.loads(raw,object_pairs_hook=unique)
+    if (profile!=WALNUT_PROFILE or type(profile.get('source_core_preinstalled')) is not bool
+            or type(profile.get('raw_bytes')) is not int):
+        raise ValueError('Only the approved hash-bound Walnut preview derivation is supported')
+    return profile
+
+def profile_sha(profile):
+    return hashlib.sha256(json.dumps(profile,sort_keys=True,separators=(',',':')).encode()).hexdigest()
+
+def sync_directory(path):
+    fd=os.open(path,os.O_RDONLY)
+    try:os.fsync(fd)
+    finally:os.close(fd)
+
+def publish_metadata(path,value,history,expected_before):
+    """Keep predecessor bytes before publishing one current metadata file."""
+    if path.is_symlink() or path.exists() and not path.is_file():raise ValueError('Ordinary metadata file required')
+    before=path.read_bytes() if path.exists() else None
+    if before!=expected_before:raise ValueError('Predecessor metadata changed')
+    if before is not None:
+        if history.is_symlink() or history.exists() and not history.is_dir():raise ValueError('Ordinary metadata history directory required')
+        history.mkdir(exist_ok=True)
+        backup=history/(path.stem+'-'+hashlib.sha256(before).hexdigest()+'.json')
+        if backup.exists() or backup.is_symlink():
+            if backup.is_symlink() or not backup.is_file() or backup.read_bytes()!=before:raise ValueError('Metadata history changed')
+        else:
+            with backup.open('xb') as output:output.write(before);output.flush();os.fsync(output.fileno())
+        sync_directory(history)
+    raw=(json.dumps(value,indent=2)+'\n').encode()
+    candidate=path.with_name(path.name+'.'+uuid.uuid4().hex+'.tmp')
+    try:
+        with candidate.open('xb') as output:output.write(raw);output.flush();os.fsync(output.fileno())
+        os.chmod(candidate,0o644)
+        if (path.read_bytes() if path.exists() else None)!=before:raise ValueError('Metadata changed before publication')
+        os.replace(candidate,path);sync_directory(path.parent)
+        if path.read_bytes()!=raw:raise ValueError('Published metadata readback failed')
+    finally:candidate.unlink(missing_ok=True)
+    return {'previous_sha256':None if before is None else hashlib.sha256(before).hexdigest(),
+            'current_sha256':hashlib.sha256(raw).hexdigest(),
+            'history_file':None if before is None else backup.name}
+
+def inherited_core(root,profile):
+    """Read only: exact full-source pins are checked before this mounted view."""
+    if not profile['source_core_preinstalled']:return None
+    names=('factory-preview.json','factory-preview-app-manifest.json');history={}
+    for name in names:
+        path=root/'usr/share/DaOS'/name
+        if path.is_symlink() or not path.is_file():raise ValueError('Validated predecessor metadata required')
+        history[name]={'sha256':sha(path),'document':json.loads(path.read_text())}
+    metadata=history[names[0]]['document'];manifest=history[names[1]]['document']
+    if metadata.get('format')!='DaOS-factory-preview-profile-v1' or metadata.get('application_version')!='camera-experience-005' or manifest.get('version')!='camera-experience-005':
+        raise ValueError('Validated predecessor application identity changed')
+    expected=metadata.get('core_files',{})
+    if set(expected)!=CORE_PATHS|{'usr/local/libexec/daos-usb-adb','boot/kernel/kernel','etc/fstab'}:
+        raise ValueError('Inherited core inventory changed')
+    actual={name:sha(root/name) for name in expected}
+    if actual!=expected or actual['sbin/init']!=CORE_INIT or actual['usr/local/libexec/daos-usb-adb']!=HELPER or actual['boot/kernel/kernel']!=KERNEL:
+        raise ValueError('Inherited core verification failed')
+    for name in ('etc/daos/recovery-identity.json','etc/daos/recovery-watchdog.enabled','usr/local/libexec/DaOS-recovery/flash.py'):
+        if (root/name).exists() or (root/name).is_symlink():raise ValueError('Card-bound recovery artifact in inherited core')
+    if not (root/'sbin/init').stat().st_flags&stat.SF_IMMUTABLE:raise ValueError('Inherited immutable init flag changed')
+    if any(not (root/'etc'/name).is_symlink() or os.readlink(root/'etc'/name)!='/DaOS-identity/'+name for name in ('hostid','machine-id')):
+        raise ValueError('Inherited volatile identity links changed')
+    return {'core_files':actual,'predecessor_metadata':history}
 
 def sha(path):
     h=hashlib.sha256()
@@ -166,14 +258,20 @@ def outside_root(image):
     return result
 
 def owned_work(args):
+    profile=input_profile(args)
     work=args.work
     if work.parent!=WORK_PARENT or WORK_PARENT.resolve(strict=True)!=WORK_PARENT or work.is_symlink() or work.resolve(strict=True)!=work:
         raise ValueError('Existing owned work directory required')
-    image=work/'DaOS-Factory-Preview-001.img'
+    bound=work/'input-profile.json'
+    if bound.exists():
+        if bound.is_symlink() or json.loads(bound.read_text())!=profile:raise ValueError('Work input profile changed')
+    elif profile!=LEGACY_PROFILE:raise ValueError('Prepared input profile required')
+    image=work/profile['image_basename']
     if image.is_symlink() or not image.is_file() or image.stat().st_size!=RAW_BYTES:raise ValueError('Unexpected full image')
     return work,image
 
 def update_core(args):
+    if input_profile(args)['source_core_preinstalled']:raise ValueError('Validated source core is inherited during prepare; do not reinstall it')
     work,image=owned_work(args)
     if sha(image)!=RAW_SHA:raise ValueError('Core installation requires exact original factory copy')
     if not args.core_inputs or not re.fullmatch('[0-9a-f]{64}',args.core_sha or ''):raise ValueError('Bound generic core inputs required')
@@ -252,18 +350,21 @@ def update_core(args):
     print(json.dumps(record),flush=True)
 
 def qa_export(args):
+    profile=input_profile(args)
     work,image=owned_work(args)
     final=args.action=='qa-final'
     core=json.loads((work/('application.json' if final else 'generic-core.json')).read_text())
     if sha(image)!=core['image_sha256']:raise ValueError('QA input changed')
     prefix='final' if final else 'core'
-    target=work/(prefix+'-boot-qa.img')
+    qa_name=prefix+'-boot-qa.img' if profile==LEGACY_PROFILE else profile['image_basename'][:-4]+'-'+prefix+'-boot-qa.img'
+    target=work/qa_name
     if target.exists() or target.is_symlink():raise ValueError('New QA copy required')
     with image.open('rb') as original,target.open('xb') as copied:
         shutil.copyfileobj(original,copied,1024**2);copied.flush();os.fsync(copied.fileno())
     md=None;mounted=False;root=work/'root';empty_mountpoint(root)
     record={'format':'DaOS-factory-core-boot-QA-image-v1','candidate_sha256':core['image_sha256'],
-        'console_changes_are_qa_copy_only':True,'physical_hardware_tested':False,'core_files':{}}
+        'console_changes_are_qa_copy_only':True,'physical_hardware_tested':False,'core_files':{},
+        'input_profile':profile,'input_profile_sha256':profile_sha(profile)}
     try:
         md=run(['/sbin/mdconfig','-a','-t','vnode','-f',str(target)])['stdout'].strip()
         if not re.fullmatch(r'md[0-9]+',md):raise ValueError('Unexpected autoallocated vnode name')
@@ -325,6 +426,7 @@ def elf_closure(root,inspector):
     return result
 
 def update_app(args):
+    profile=input_profile(args)
     work,image=owned_work(args)
     core=json.loads((work/'generic-core.json').read_text())
     if sha(image)!=core['image_sha256']:raise ValueError('App installation requires verified generic core')
@@ -335,11 +437,12 @@ def update_app(args):
         raise ValueError('Bound bilingual application archive required')
     transaction=work/'app-transaction';transaction.mkdir(mode=0o700)
     incoming,manifest=installer.unpack(archive,args.app_sha,transaction)
-    if manifest['version']!='camera-experience-005':raise ValueError('This preview requires the frozen bilingual 005 application')
+    if manifest['version']!=profile['application_version']:raise ValueError('This preview requires its bound bilingual application version')
     locales={entry['path'] for entry in manifest['files'] if '/locales/' in entry['path']}
     if not any(name.endswith('/en_US.qm') for name in locales) or not any(name.endswith('/zh_CN.qm') for name in locales):
         raise ValueError('Both native Qt translation catalogs are required')
     record={'format':'DaOS-factory-preview-application-v1','status':'preparing','version':manifest['version'],
+        'input_profile':profile,'input_profile_sha256':profile_sha(profile),
         'source_core_sha256':core['image_sha256'],'application_archive_sha256':args.app_sha,
         'installer_sha256':args.app_installer_sha,'elf_inspector_sha256':args.elf_inspector_sha,
         'physical_card_accessed':False,'physical_board_boot_validated':False,'generic_auto_recovery_enrolled':False,
@@ -349,6 +452,10 @@ def update_app(args):
         md=run(['/sbin/mdconfig','-a','-t','vnode','-f',str(image)])['stdout'].strip()
         if not re.fullmatch(r'md[0-9]+',md):raise ValueError('Unexpected autoallocated vnode name')
         run(['/sbin/mount','-t','ufs','/dev/'+md+'p2',str(root)]);mounted=True
+        previous_metadata={name:(root/'usr/share/DaOS'/name).read_bytes() if (root/'usr/share/DaOS'/name).is_file() else None
+                           for name in ('factory-preview.json','factory-preview-app-manifest.json')}
+        if profile['source_core_preinstalled']:
+            inherited_core(root,profile)
         before_core={name:sha(root/name) for name in CORE_PATHS|{'usr/local/libexec/daos-usb-adb','boot/kernel/kernel','etc/fstab'}}
         record['installation']=installer.install_files(root,incoming,manifest,transaction)
         release=root/'opt/hasslefree/releases'/manifest['version']
@@ -364,7 +471,9 @@ def update_app(args):
         if any((root/name).exists() for name in ('etc/daos/recovery-identity.json','etc/daos/recovery-watchdog.enabled','usr/local/libexec/DaOS-recovery/flash.py')):
             raise ValueError('Card-bound recovery must not enter generic preview')
         metadata={'format':'DaOS-factory-preview-profile-v1','profile':'private-bilingual-preview-normal-usb',
-            'source_factory_xz_sha256':SOURCE_SHA,'source_factory_raw_sha256':RAW_SHA,
+            'source_factory_xz_sha256':profile['source_xz_sha256'],'source_factory_raw_sha256':profile['source_raw_sha256'],
+            'input_profile':profile,'input_profile_sha256':profile_sha(profile),
+            'project_name':profile['project_name'],'tagline':profile['tagline'],
             'application_archive_sha256':args.app_sha,'application_version':manifest['version'],
             'application_manifest_canonical_sha256':hashlib.sha256(json.dumps(manifest,sort_keys=True,separators=(',',':')).encode()).hexdigest(),
             'core_files':after_core,'generic_auto_recovery_enrolled':False,'hardware_watchdog_policy_installed':False,
@@ -372,8 +481,10 @@ def update_app(args):
             'data_partitions':'Pristine factory state/calibration/photos; no physical card data copied.',
             'hardware':'Raspberry Pi4,800x480DSI; camera backend HF-Sim; Wi-Fi unavailable.',
             'validation':'Derived image native filesystem/static-ELF validation; virtual init QA is separate; not freshly flashed on a physical board.'}
-        save(root/'usr/share/DaOS/factory-preview.json',metadata)
-        save(root/'usr/share/DaOS/factory-preview-app-manifest.json',manifest)
+        record['metadata_publications']={}
+        for name,value in (('factory-preview.json',metadata),('factory-preview-app-manifest.json',manifest)):
+            record['metadata_publications'][name]=publish_metadata(root/'usr/share/DaOS'/name,value,
+                root/'usr/share/DaOS/factory-preview-history',previous_metadata[name])
         record['root_after']=inspect(root)
         record['privacy_after']=privacy_scan(root)
         run(['/sbin/umount',str(root)]);mounted=False
@@ -388,6 +499,7 @@ def update_app(args):
     print(json.dumps(record),flush=True)
 
 def finalize(args):
+    profile=input_profile(args)
     work,image=owned_work(args)
     application=json.loads((work/'application.json').read_text())
     if application['status']!='prepared-not-physically-booted' or sha(image)!=application['image_sha256']:
@@ -395,8 +507,8 @@ def finalize(args):
     if outside_root(image)!=application['outside_root_after'] or not application['elf_closure']['passed'] or any(item['returncode'] for item in application['filesystem_checks']):
         raise ValueError('Preview verification is incomplete')
     source=args.source
-    if source.is_symlink() or not source.is_file() or sha(source)!=SOURCE_SHA:raise ValueError('Original input archive changed')
-    output=work/'DaOS-Factory-Preview-001-arm64.img.xz'
+    if source.is_symlink() or not source.is_file() or sha(source)!=profile['source_xz_sha256']:raise ValueError('Original input archive changed')
+    output=work/profile['export_basename']
     with output.open('xb') as compressed:
         subprocess.run(['/usr/bin/xz','-T4','-6','-c',str(image)],stdout=compressed,check=True,timeout=480)
         compressed.flush();os.fsync(compressed.fileno())
@@ -409,9 +521,11 @@ def finalize(args):
     if length!=RAW_BYTES or h.hexdigest()!=application['image_sha256'] or sha(image)!=application['image_sha256']:
         raise ValueError('Final compressed image roundtrip failed')
     record={'format':'DaOS-factory-preview-export-v1','status':'private-preview-not-physically-flashed',
+        'input_profile':profile,'input_profile_sha256':profile_sha(profile),
+        'project_name':profile['project_name'],'tagline':profile['tagline'],
         'image':str(output),'compressed_bytes':output.stat().st_size,'compressed_sha256':sha(output),
         'raw_bytes':length,'raw_sha256':h.hexdigest(),'full_decompression_crc_and_sha_verified':True,
-        'original_factory_archive_sha256':SOURCE_SHA,'original_factory_archive_unchanged':sha(source)==SOURCE_SHA,
+        'original_factory_archive_sha256':profile['source_xz_sha256'],'original_factory_archive_unchanged':sha(source)==profile['source_xz_sha256'],
         'application_archive_sha256':application['application_archive_sha256'],'application_version':application['version'],
         'native_elf_closure_passed':True,'filesystem_checks':[item['returncode'] for item in application['filesystem_checks']],
         'FAT_GPT_state_calibration_photos_bytes_unchanged':True,'physical_card_accessed':False,
@@ -422,11 +536,12 @@ def finalize(args):
     print(json.dumps(record),flush=True)
 
 def prepare(args):
+    profile=input_profile(args)
     source=args.source.resolve(strict=True)
-    if args.source.is_symlink() or not source.is_file() or sha(source)!=SOURCE_SHA:raise ValueError('Original factory archive identity mismatch')
+    if args.source.is_symlink() or not source.is_file() or sha(source)!=profile['source_xz_sha256']:raise ValueError('Original factory archive identity mismatch')
     work=args.work
     if work.parent!=WORK_PARENT or WORK_PARENT.resolve(strict=True)!=WORK_PARENT or work.is_symlink():raise ValueError('Owned work directory required')
-    image=work/'DaOS-Factory-Preview-001.img'
+    image=work/profile['image_basename']
     if args.action=='prepare':
         if work.exists():raise ValueError('New owned work directory required')
         work.mkdir(mode=0o700)
@@ -437,13 +552,17 @@ def prepare(args):
                 if length>RAW_BYTES:raise ValueError('Factory decompression size exceeded')
                 h.update(chunk);raw.write(chunk)
             raw.flush();os.fsync(raw.fileno())
-        if length!=RAW_BYTES or h.hexdigest()!=RAW_SHA:raise ValueError('Original raw factory identity mismatch')
-    elif work.resolve(strict=True)!=work or image.is_symlink() or image.stat().st_size!=RAW_BYTES or sha(image)!=RAW_SHA:
+        if length!=RAW_BYTES or h.hexdigest()!=profile['source_raw_sha256']:raise ValueError('Original raw factory identity mismatch')
+        save(work/'input-profile.json',profile)
+    elif work.resolve(strict=True)!=work or image.is_symlink() or image.stat().st_size!=RAW_BYTES or sha(image)!=profile['source_raw_sha256']:
         raise ValueError('Retained original raw factory identity mismatch')
-    record={'format':'DaOS-factory-preview-prepare-v1','source':str(source),'source_sha256':SOURCE_SHA,
-        'raw_source_sha256':RAW_SHA,'image':str(image),'raw_bytes':RAW_BYTES,'original_archive_unchanged':sha(source)==SOURCE_SHA,
+    if profile!=LEGACY_PROFILE and (not (work/'input-profile.json').is_file() or json.loads((work/'input-profile.json').read_text())!=profile):
+        raise ValueError('Prepared input profile changed')
+    record={'format':'DaOS-factory-preview-prepare-v1','source':str(source),'source_sha256':profile['source_xz_sha256'],
+        'input_profile':profile,'input_profile_sha256':profile_sha(profile),
+        'raw_source_sha256':profile['source_raw_sha256'],'image':str(image),'raw_bytes':RAW_BYTES,'original_archive_unchanged':sha(source)==profile['source_xz_sha256'],
         'physical_card_accessed':False,'card_bound_recovery_imported':False,'watchdog_policy_imported':False}
-    md=None;mounted=[]
+    md=None;mounted=[];inherited=None
     try:
         md=run(['/sbin/mdconfig','-a','-t','vnode','-o','readonly','-f',str(image)])['stdout'].strip()
         if not re.fullmatch(r'md[0-9]+',md):raise ValueError('Unexpected autoallocated vnode name')
@@ -457,6 +576,7 @@ def prepare(args):
         root=work/'root';empty_mountpoint(root)
         run(['/sbin/mount','-t','ufs','-o','ro','/dev/'+md+'p2',str(root)]);mounted.append(root)
         record['root']=inspect(root)
+        inherited=inherited_core(root,profile)
         if args.action=='audit':
             record['public_boot_sources']={path.relative_to(root).as_posix():path.read_text() for path in sorted((root/'etc/rc.d').glob('hostid*')) if path.is_file()}
             record['public_boot_sources']['etc/defaults/rc.conf-hostid-settings']='\n'.join(line for line in (root/'etc/defaults/rc.conf').read_text().splitlines() if re.search(r'hostid|machine_id',line))
@@ -472,7 +592,15 @@ def prepare(args):
                 record[label+'_privacy_scan']=privacy_scan(target)
     finally:
         release_owned(md,[('/dev/'+str(md)+'p'+str(index),work/name) for index,name in ((2,'root'),(3,'state'),(4,'calibration'),(5,'photos'))],work,args.action)
-    record['image_unchanged_during_inspection']=sha(image)==RAW_SHA
+    record['image_unchanged_during_inspection']=sha(image)==profile['source_raw_sha256']
+    if not record['image_unchanged_during_inspection']:raise ValueError('Source image changed during inspection')
+    if args.action=='prepare' and inherited is not None:
+        ranges=outside_root(image)
+        save(work/'generic-core.json',{'format':'DaOS-factory-preview-generic-core-v1','status':'inherited-validated-core-app-pending',
+            'input_profile':profile,'input_profile_sha256':profile_sha(profile),'image_sha256':profile['source_raw_sha256'],
+            'outside_root_before':ranges,'outside_root_after':ranges,'core_inherited_without_writes':True,
+            'physical_card_accessed':False,'automatic_recovery_enrolled':False,'watchdog_policy_included':False,
+            'disk_identity_included':False,**inherited})
     report=work/('audit.json' if args.action=='audit' else 'prepare.json')
     if report.exists():
         for number in range(2,100):
@@ -489,6 +617,8 @@ def main():
     parser.add_argument('action',choices=('prepare','inspect','audit','core','qa-export','qa-final','app','finalize'))
     parser.add_argument('--source',type=Path,required=True)
     parser.add_argument('--work',type=Path,required=True)
+    parser.add_argument('--input-profile',type=Path)
+    parser.add_argument('--input-profile-sha256')
     parser.add_argument('--core-inputs',type=Path)
     parser.add_argument('--core-sha')
     parser.add_argument('--app-archive',type=Path)

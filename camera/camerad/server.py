@@ -410,7 +410,7 @@ def handler_for(service):
 
 
 def main():
-    parser = argparse.ArgumentParser(description='HassleFree simulated camera local server')
+    parser = argparse.ArgumentParser(description='Project Walnut simulated camera local server')
     parser.add_argument('--data-dir', default='var/hf-sim')
     parser.add_argument('--port', type=int, default=8787)
     parser.add_argument('--backend', choices=['python', 'native'], default='python')

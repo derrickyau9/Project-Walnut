@@ -1,4 +1,4 @@
-# FPGA logical capture simulation and hardware work package
+# Walnut FF-1 FPGA logical capture simulation and hardware work package
 
 The [decoded-pixel RTL](rtl/README.md) and self-checking testbenches execute with
 actual Icarus Verilog. They implement a bounded FIFO, valid/ready backpressure,

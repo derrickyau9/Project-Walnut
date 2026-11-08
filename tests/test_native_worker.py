@@ -128,6 +128,9 @@ class NativeWorkerTests(unittest.TestCase):
             self.assertEqual(metadata['requested_analogue_gain'], 1.25)
             self.assertEqual(metadata['actual_analogue_gain'], 1.25)
             self.assertGreater(metadata['captured_at_unix_ns'], 0)
+            make_kind, make_length, make_offset = entries[271]
+            self.assertEqual(make_kind, 2)
+            self.assertEqual(contents[make_offset:make_offset + make_length], b'Project Walnut\0')
             self.assertEqual(description['namespace'], 'org.hasslefree.hf-sim.capture.v1')
             self.assertTrue(description['simulated'])
             for key, value in description['capture'].items():

@@ -21,6 +21,8 @@ def source_files():
                 continue
             if not path.is_file() or path.is_symlink(): continue
             allowed = path.suffix in {'.py','.qml','.qm','.json','.sqlite3','.db','.txt','.md','.tsv','.html'}
+            if relative == 'ui/on-device' and local.parts[0] == 'demo-images':
+                allowed = path.suffix.lower() in {'.jpg','.jpeg','.png','.json','.md'}
             if relative == 'ui/on-device' and any(part in ('ime_data','vendor','fonts') for part in local.parts):
                 allowed = not path.name.endswith(('.tmp','.new','.pyc'))
             if relative != 'ui/on-device': allowed = path.suffix == '.py'

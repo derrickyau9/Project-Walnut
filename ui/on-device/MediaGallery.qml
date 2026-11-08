@@ -168,7 +168,7 @@ Rectangle {
                     }
                 }
                 Rectangle { anchors { left: parent.left; right: parent.right; top: parent.top } height: 46; visible: page.whiteBalancePicker; color: "#111111"; Text { anchors.centerIn: parent; text: qsTr("轻触画面中的中性灰 / 白区域取样 · 返回键取消"); color: "white"; font.pixelSize: 18 } }
-                Text { anchors { left: parent.left; top: parent.top; margins: 8 } visible: !page.whiteBalancePicker; text: page.nativeZoom ? qsTr("原始像素 · 拖动联动位置") : qsTr("未标定显示预览 · RAW 保留"); color: "#dddddd"; font.pixelSize: 13; style: Text.Outline; styleColor: "black" }
+                Text { anchors { left: parent.left; top: parent.top; margins: 8 } visible: !page.whiteBalancePicker; text: page.nativeZoom ? qsTr("原始像素 · 拖动联动位置") : qsTr("未标定显示预览 · 原片保留"); color: "#dddddd"; font.pixelSize: 13; style: Text.Outline; styleColor: "black" }
             }
         }
         RowLayout {

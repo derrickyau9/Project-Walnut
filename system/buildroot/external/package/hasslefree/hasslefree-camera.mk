@@ -1,6 +1,6 @@
 ################################################################################
 #
-# HassleFree camera-domain application (local engineering sources)
+# Project Walnut camera-domain application (local engineering sources)
 #
 ################################################################################
 

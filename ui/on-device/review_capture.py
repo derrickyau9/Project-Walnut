@@ -100,8 +100,8 @@ def main(argv=None):
     module = importlib.util.module_from_spec(spec); spec.loader.exec_module(module)
     app = QtGui.QGuiApplication.instance() or QtGui.QGuiApplication([])
     app.setFont(QtGui.QFont('Segoe UI' if os.name == 'nt' else 'Sans Serif', 10))
-    app.setApplicationName('HassleFree camera review')
-    app.setOrganizationName('HassleFree')
+    app.setApplicationName('Project Walnut camera review')
+    app.setOrganizationName('Project Walnut')
     controller = module.CameraController(lambda: NativeClient(output/'session', command=[str(native)]),
                     backend='native', state_path=output/'device-ui.json', poll_ms=150)
     if str(UI) not in sys.path:

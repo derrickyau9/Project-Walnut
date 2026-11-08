@@ -1,4 +1,4 @@
-# Hardware prototype integration review
+# Walnut FF-1 hardware prototype integration review
 
 Reviewed 2026-11-05. **Concept/prototype evidence only. No fabrication release, validated lens fit, sensor acquisition, or electrical host compatibility is established.**
 

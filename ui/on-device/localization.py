@@ -104,6 +104,9 @@ class Localization(QObject):
         match = re.fullmatch(r'资料库已同步 · ([0-9]+) 张', source)
         if match:
             return self.catalog.get('资料库已同步 · {count} 张', '资料库已同步 · {count} 张').format(count=match[1])
+        match = re.fullmatch(r'完成 · 跳过 ([0-9]+) 项', source)
+        if match:
+            return self.catalog.get('完成 · 跳过 {count} 项', '完成 · 跳过 {count} 项').format(count=match[1])
         return source
 
     def bindEngine(self, engine):

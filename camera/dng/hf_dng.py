@@ -56,7 +56,7 @@ def _metadata(values):
         if key in values and (isinstance(value, bool) or not isinstance(value, (int, float)) or not math.isfinite(value) or value <= 0):
             raise ValueError(f'{key} must be positive and finite')
     try:
-        make = _ascii(values.get('make', 'HassleFree'))
+        make = _ascii(values.get('make', 'Project Walnut'))
         model = _ascii(values.get('model', 'HF-Sim'))
     except UnicodeEncodeError as exc:
         raise ValueError('make and model must be ASCII') from exc

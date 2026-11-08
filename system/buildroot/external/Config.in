@@ -1,4 +1,4 @@
-menu "DaOS Camera / HassleFree"
+menu "DaOS Camera / Project Walnut"
 
 source "$BR2_EXTERNAL_DAOS_CAMERA_PATH/package/hasslefree/Config.in"
 

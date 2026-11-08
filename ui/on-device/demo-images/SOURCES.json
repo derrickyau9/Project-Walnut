@@ -1,0 +1,35 @@
+{
+  "format": "Project-Walnut-demo-photographs-v1",
+  "source": "Three JPEG photographs explicitly supplied in this project conversation for UI demonstrations.",
+  "purpose": "Sample viewfinder, imported photo library, comparison and nondestructive editing demonstrations; not captured by the prototype sensor.",
+  "rights_status": "Supplied for the requested project use; no separate public redistribution license is asserted here.",
+  "files": [
+    {
+      "file": "campus-building.jpg",
+      "bytes": 404400,
+      "width": 2284,
+      "height": 1279,
+      "sha256": "0bf3283b52a0bc9ab5a4f64dbf1ff16eea844ef50bee695972561ea27064690c",
+      "unchanged_user_supplied_JPEG": true,
+      "embedded_EXIF_fields": 0
+    },
+    {
+      "file": "campus-trees.jpg",
+      "bytes": 418108,
+      "width": 1707,
+      "height": 1279,
+      "sha256": "e20f2e275db92a951c7bb2c33cd1355813d869af65303259d384591c861d1c6d",
+      "unchanged_user_supplied_JPEG": true,
+      "embedded_EXIF_fields": 0
+    },
+    {
+      "file": "coast.jpg",
+      "bytes": 430707,
+      "width": 2285,
+      "height": 1279,
+      "sha256": "9d27055e982870d84a4bbefef860ac333868f3e4556dd6636bd932538dbf09c5",
+      "unchanged_user_supplied_JPEG": true,
+      "embedded_EXIF_fields": 0
+    }
+  ]
+}

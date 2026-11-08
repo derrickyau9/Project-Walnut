@@ -1,0 +1,12 @@
+{
+  "format": "DaOS-factory-input-profile-v1",
+  "source_xz_sha256": "d3f9272d04c37993eaf2e53a54dd09ce2c4e0b8f8b5bb10174106bd12e249ee6",
+  "source_raw_sha256": "3d094085f22e119586e46f80cff9b992f0c02c6296fa39b99155efc3282e2dd4",
+  "raw_bytes": 3254820864,
+  "source_core_preinstalled": true,
+  "application_version": "camera-experience-006",
+  "image_basename": "Project-Walnut-v0.1.0-preview.2-arm64.img",
+  "export_basename": "Project-Walnut-v0.1.0-preview.2-arm64.img.xz",
+  "project_name": "Project Walnut",
+  "tagline": "They made the leaf. We cracked the nut."
+}

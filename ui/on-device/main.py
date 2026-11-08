@@ -22,6 +22,10 @@ def main(argv=None):
     parser.add_argument('--ui-state-dir', help='local request-ID state directory; HTTP default: var/hf-device-ui')
     parser.add_argument('--native-command', help='explicit hf-camerad executable path')
     parser.add_argument('--language', choices=('en_US','zh_CN'), help='interface language; saved as a local system preference')
+    parser.add_argument('--demo-image', type=Path, help='display a local JPEG sample in the viewfinder; captured RAW still comes from the camera authority')
+    attitude=parser.add_mutually_exclusive_group()
+    attitude.add_argument('--attitude-file',type=Path,help='optional local fresh attitude JSON; enable the level in Display settings')
+    attitude.add_argument('--demo-attitude',nargs=2,type=float,metavar=('ROLL','PITCH'),help='show explicitly labeled DEMO level angles; never IMU measurements')
     parser.add_argument('--screenshot', help='save one rendered PNG and exit (software desktop QA only)')
     parser.add_argument('--offscreen', action='store_true', help='use the Qt offscreen platform and software renderer')
     parser.add_argument('--kiosk', action='store_true', help='show the camera UI full screen on the selected Qt display')
@@ -38,6 +42,8 @@ def main(argv=None):
         parser.error('--backend http requires --endpoint')
     if args.endpoint and args.backend != 'http':
         parser.error('--endpoint is only used with --backend http')
+    if args.demo_image and args.interface != 'camera':
+        parser.error('--demo-image requires --interface camera')
     state_dir = Path(args.ui_state_dir or ('var/hf-device-ui' if args.backend == 'http' else args.data_dir))
     cache_dir = state_dir / 'cache'
     cache_dir.mkdir(parents=True, exist_ok=True)
@@ -58,6 +64,16 @@ def main(argv=None):
     from PyQt5.QtQuick import QQuickWindow, QQuickView
     from boot_status import BootStatus, marker
     app = QGuiApplication(sys.argv[:1])
+    from sample_preview import image_url
+    try:
+        sample_source=image_url(args.demo_image)
+    except ValueError as error:
+        parser.error(str(error))
+    from level_controller import LevelController
+    try:
+        level=LevelController(state_dir,args.attitude_file,args.demo_attitude,parent=app)
+        if args.demo_attitude is not None:level.setEnabled(True,persist=False)
+    except ValueError as error:parser.error(str(error))
     from localization import install_localization, saved_language
     localization=install_localization(app,args.language or saved_language(state_dir))
     ui_font = 'Segoe UI' if os.name == 'nt' else 'Sans Serif'
@@ -72,7 +88,7 @@ def main(argv=None):
     from ui_palette import apply_monochrome_palette
     apply_monochrome_palette(app)
     app.setApplicationName('DaOS Camera')
-    app.setOrganizationName('HassleFree')
+    app.setOrganizationName('Project Walnut')
     boot = BootStatus(app)
     splash = None
     if args.kiosk:
@@ -166,6 +182,8 @@ def main(argv=None):
     engine.addImageProvider('daosframes', FrameImageProvider(frames))
     if apps.media.imageProvider is not None:engine.addImageProvider('daosmedia',apps.media.imageProvider)
     engine.rootContext().setContextProperty('camera', controller)
+    engine.rootContext().setContextProperty('samplePreviewSource', sample_source)
+    engine.rootContext().setContextProperty('levelControl',level)
     engine.rootContext().setContextProperty('cameraShell', shell)
     engine.rootContext().setContextProperty('cameraApps', apps)
     engine.rootContext().setContextProperty('shootingWorkspace', workspace)
@@ -233,6 +251,7 @@ def main(argv=None):
             window.setGeometry(screen.geometry())
         window.showFullScreen()
     def close_camera():
+        level.close()
         health_pool.shutdown(wait=True,cancel_futures=True)
         task_hub.close();link.close();system_control.close()
         if hasattr(apps, 'close'): apps.close()

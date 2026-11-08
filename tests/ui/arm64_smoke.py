@@ -111,8 +111,8 @@ def main(argv=None):
     controller_module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(controller_module)
     app = QtGui.QGuiApplication.instance() or QtGui.QGuiApplication([])
-    app.setApplicationName('HassleFree ARM64 UI software smoke')
-    app.setOrganizationName('HassleFree')
+    app.setApplicationName('Project Walnut ARM64 UI software smoke')
+    app.setOrganizationName('Project Walnut')
     if app.platformName() != 'offscreen':
         raise RuntimeError('offscreen Qt platform was not selected')
     command = [*args.native_launcher, str(native)]

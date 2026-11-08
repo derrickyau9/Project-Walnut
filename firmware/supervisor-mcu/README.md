@@ -1,4 +1,4 @@
-# Supervisor input reference
+# Walnut FF-1 supervisor input reference
 
 This is portable, host-tested Python reference logic for the already-digital signals exposed by FF1_Control_A0. It is not target MCU firmware. The imported control PCB contains buttons and a supply supervisor; it contains no MCU. No GPIO assignment, peripheral, interrupt, hardware timer, output driver, host adapter or power sequencer is implemented here.
 

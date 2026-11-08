@@ -1,8 +1,11 @@
-# FF-1 product scope and acceptance gates
+# Walnut FF-1 product scope and acceptance gates
 
 Status: product requirements and targets, not an assertion that a camera exists. Updated 2026-11-05.
 
 ## Product intent
+
+Walnut FF-1 is the planned first camera body of Project Walnut. DaOS Camera
+remains the camera software platform; see the [current naming](naming.md).
 
 An independently operable, repairable, extensible full-frame still camera with a native capture path and offline reproducible workflows. DaOS Camera organizes work; camera control and pixels remain in the native capture subsystem. HF-Sim tests the software contract and does not emulate a particular sensor's electrical behavior.
 

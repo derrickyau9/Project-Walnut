@@ -1,5 +1,8 @@
 # DaOS Camera controls, menus and apps
 
+DaOS Camera is the camera software platform of Project Walnut. Its first
+planned camera body is Walnut FF-1; [technical identifiers remain stable](naming.md).
+
 R14 adds a **left icon-only Taskbar, open by default**, to the 800x600 camera
 interface. It opens Camera, Photos, Recipes, Settings, Devices, Diagnostics and
 System directly, without permanent text labels. Accessible names and hover

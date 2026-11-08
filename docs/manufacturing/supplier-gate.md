@@ -1,4 +1,4 @@
-# Supplier and integration verification register
+# Walnut FF-1 supplier and integration verification register
 
 All fields below are **unverified / unanswered** until evidence is entered. This document does not constitute an order or a quotation. No sensor, development board, rights, or reference implementation has been procured or validated.
 

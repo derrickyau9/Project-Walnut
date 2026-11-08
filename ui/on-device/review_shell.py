@@ -66,7 +66,7 @@ def main(argv=None):
     app = QtGui.QGuiApplication.instance() or QtGui.QGuiApplication([])
     app.setFont(QtGui.QFont('Segoe UI' if os.name == 'nt' else 'Sans Serif'))
     app.setApplicationName('DaOS Camera shell review')
-    app.setOrganizationName('HassleFree')
+    app.setOrganizationName('Project Walnut')
     controller = None
     engine = None
     screenshots = []

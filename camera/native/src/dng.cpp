@@ -217,7 +217,7 @@ std::uint64_t write_dng(const std::filesystem::path& path, const Frame& frame,
         capture_metadata_json(frame, identity) + ",\"native\":{\"source\":\"synthetic-native\",\"frame_sequence\":" +
         std::to_string(metadata.frame_id) + ",\"captured_at_unix_ns\":" +
         std::to_string(metadata.captured_at_unix_ns) + "}}");
-    const auto make = ascii("HassleFree");
+    const auto make = ascii("Project Walnut");
     const auto model = ascii("HF-Sim");
     Bytes matrix;
     for (unsigned int i = 0; i < 9; ++i) { put32(matrix, i % 4 == 0 ? 1 : 0); put32(matrix, 1); }

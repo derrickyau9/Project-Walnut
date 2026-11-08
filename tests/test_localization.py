@@ -12,9 +12,11 @@ os.environ.setdefault('QT_QPA_PLATFORM','offscreen')
 os.environ.setdefault('QT_QUICK_BACKEND','software')
 UI=Path(__file__).resolve().parents[1]/'ui/on-device'
 sys.path.insert(0,str(UI))
-from PyQt5.QtCore import QUrl
+from PyQt5.QtCore import QObject,QUrl,pyqtProperty
 from PyQt5.QtGui import QGuiApplication
 from PyQt5.QtQml import QQmlApplicationEngine
+from PyQt5.QtQuick import QQuickItem
+from PyQt5.QtTest import QTest
 from localization import install_localization, saved_language, validate_language
 from system_archive import validate_preferences
 from system_control import PREFERENCES, SystemController
@@ -76,6 +78,48 @@ property string path:"/photos/系统.dng"
             self.assertEqual(self.local.t(value),value)
         self.local.setLanguage('zh_CN')
         self.assertEqual(self.local.t('配置已导出：'+path),'配置已导出：'+path)
+
+    def test_task_skip_template_accepts_only_the_complete_integer_status(self):
+        self.local.setLanguage('en_US')
+        for count in (0,1,12,1000):
+            self.assertEqual(self.local.t('完成 · 跳过 '+str(count)+' 项'),'Completed · '+str(count)+' skipped')
+        for text in ('完成 · 跳过 -1 项','完成 · 跳过 1.5 项','完成 · 跳过 用户 项','/photos/完成 · 跳过 2 项.jpg'):
+            self.assertEqual(self.local.t(text),text)
+        self.local.setLanguage('zh_CN')
+        self.assertEqual(self.local.t('完成 · 跳过 2 项'),'完成 · 跳过 2 项')
+
+    def test_task_page_translates_import_status_without_mutating_jobs(self):
+        record={'kind':'import','status':'complete','stage':'完成 · 跳过 0 项','error':'','done':3,'total':3,'progress':1,
+                'job_id':'job-复制导入','destination':'/photos/复制导入.jpg'}
+        before=json.dumps(record,ensure_ascii=False,sort_keys=True)
+        class Tasks(QObject):
+            @pyqtProperty('QVariantList',constant=True)
+            def jobs(self):return [record]
+            @pyqtProperty(int,constant=True)
+            def pendingCount(self):return 0
+            @pyqtProperty(str,constant=True)
+            def message(self):return ''
+            @pyqtProperty(str,constant=True)
+            def detailText(self):return ''
+        tasks=Tasks();engine=QQmlApplicationEngine();self.local.bindEngine(engine)
+        engine.rootContext().setContextProperty('taskFixture',tasks)
+        engine.loadData(b'import QtQuick 2.15\nimport QtQuick.Window 2.15\nimport "."\nWindow {visible:true;width:800;height:480;TasksPage {anchors.fill:parent;taskService:taskFixture}}',QUrl.fromLocalFile(str(UI/'task-localization-test.qml')))
+        self.assertTrue(engine.rootObjects());root=engine.rootObjects()[0]
+        def visual_texts(item):
+            result=[]
+            for child in item.childItems():
+                text=child.property('text')
+                if isinstance(text,str):result.append(text)
+                result.extend(visual_texts(child))
+            return result
+        try:
+            for language,title,stage in [('en_US','Copy and import · Completed','Completed · 0 skipped'),('zh_CN','复制导入 · 已完成','完成 · 跳过 0 项')]:
+                self.local.setLanguage(language);QTest.qWait(20)
+                texts=visual_texts(root.contentItem())
+                self.assertIn(title,texts);self.assertIn(stage,texts)
+                self.assertEqual(json.dumps(record,ensure_ascii=False,sort_keys=True),before)
+        finally:
+            root.close();self.local._engines.remove(engine)
 
     def test_combo_translates_display_without_rewriting_model_or_current_text(self):
         engine=QQmlApplicationEngine();self.local.bindEngine(engine)
