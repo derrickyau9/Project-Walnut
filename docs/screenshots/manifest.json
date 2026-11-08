@@ -74,7 +74,7 @@
   "source_sha256": {
     "ui/on-device/AnimatedPageLoader.qml": "b453b7658b1e661c30c008b86f6bca9320b669d005d131675b2d29c0e927803e",
     "ui/on-device/AppsWorkspace.qml": "b7de5a01c5e6c981fcf64cf9fcb3507b077363bb73bd5584f8ef147b061c68f2",
-    "ui/on-device/apps_controller.py": "54ec3d9d69612761262290e8706560fc36ca2a40dcc01594d12f4a1bf985b9d8",
+    "ui/on-device/apps_controller.py": "d4d7900c391e2a7630523ee13cdf19da97f953bef063c93c97f017817ee3383d",
     "ui/on-device/BootSplash.qml": "2dbe3fc54f2052b8a5a46de76c3df91a786f464eaad7c4f9007e582fd382a8e7",
     "ui/on-device/boot_status.py": "a095ad0ac84a1589cab3294ba9657e964335131ffca1be6b99da3e980ca4983f",
     "ui/on-device/CameraMenu.qml": "4a5601fa73e75a1d1be1922b28bad8d0b7625d095d4756d15b87d6ce0cca9365",
@@ -313,11 +313,11 @@
       ],
       "en_US": {
         "file": "en_US/04-quick-photo.png",
-        "sha256": "b9a2c4940545a6d09944bfa899ece0777fc0075a1499144a757e322d9d779c0c"
+        "sha256": "f0e1b5f7ef8af269b43547cb6d48870308823b976eee9544dba19b90f04a5f39"
       },
       "zh_CN": {
         "file": "zh_CN/04-quick-photo.png",
-        "sha256": "35749ed455a5ba99fc88b504836f395a6400f65903ff00d3c340d968d2730d54"
+        "sha256": "9100d153009d3e35fefbc6d8780893af0bfe65d80a762eab621ab313a54c00fd"
       },
       "width": 960,
       "height": 600
@@ -519,11 +519,11 @@
       ],
       "en_US": {
         "file": "en_US/14-storage.png",
-        "sha256": "c1e28e4adb8f5819c399e652e7454c6ae54806bad2ff443162d900b6187c1bf0"
+        "sha256": "2e21f26e802c1e3f552eaf45f91b8bd4a3ff94326ee0c69b17f96b2d03b3c709"
       },
       "zh_CN": {
         "file": "zh_CN/14-storage.png",
-        "sha256": "f6e1e7786ea8761ed36647a2c34346e41dff0d546cf31f7e520b6cca2a4594c8"
+        "sha256": "fbe10624631bc4bcc00c64eb9bd9b7882399b8d6478cc49ced3c2b2ad6dcd699"
       },
       "width": 960,
       "height": 600
@@ -560,11 +560,11 @@
       ],
       "en_US": {
         "file": "en_US/16-system.png",
-        "sha256": "772e4849b6a2c0f5c2a932be37a3a495d060eaa9428a04ff0cf52ed58ef9a275"
+        "sha256": "34c2fb7396ab933900e4f6ce2094c1a1904b23115f660aa50b027c444808b67b"
       },
       "zh_CN": {
         "file": "zh_CN/16-system.png",
-        "sha256": "49962f497e84f531242ace0f250ce054ab22c6121296e9281daf7311ca573a51"
+        "sha256": "bf4c29b3bb34fa1a52f19e203ec6238be80f02ca1a9a8d39efefd080e8f619ab"
       },
       "width": 960,
       "height": 600
@@ -892,11 +892,11 @@
       ],
       "en_US": {
         "file": "en_US/32-photo-library.png",
-        "sha256": "5bf7e592c69c14a03982e17a494acfe90ad16b5ccbdd375cef84a866594c0495"
+        "sha256": "541fef6013cbc7a8bf515ac65f228b5fdb060a8f018917ae6f44aa07e22993e6"
       },
       "zh_CN": {
         "file": "zh_CN/32-photo-library.png",
-        "sha256": "238f5b7e744bfc9a4bb94ae8c792908f20c8929f250f808da68beed2829d963a"
+        "sha256": "461004f5c4fe4681cfc276f675b6da191808f2401eea3dd3dfdc268146e2ce3e"
       },
       "width": 960,
       "height": 600
@@ -912,11 +912,11 @@
       ],
       "en_US": {
         "file": "en_US/33-multi-select.png",
-        "sha256": "10a465346f2c9ca7737151d44d4396d562341219c215091a3aec84a32d94c36c"
+        "sha256": "d718db2c65b05154ffa260742edab92128feac3357df0481ea7cc294c0a2dd3d"
       },
       "zh_CN": {
         "file": "zh_CN/33-multi-select.png",
-        "sha256": "4b7fa5ee567489722dc0b7ae6c03a73e5cfe289a2c9120c9d5fa488a7bc91b39"
+        "sha256": "1740388460b1ae42d8a21a813293ff9391b9bda320c5165dec2796352af49e73"
       },
       "width": 960,
       "height": 600
@@ -1075,11 +1075,11 @@
       ],
       "en_US": {
         "file": "en_US/40-edit-history.png",
-        "sha256": "83d5d42f5a176fedc824af03d29dd122b4d762d3af39884e324c449e2499e476"
+        "sha256": "88ee08bcba5708c8e6b831c9d79c76d6beea78bcbccdf877b323dc54a1251645"
       },
       "zh_CN": {
         "file": "zh_CN/40-edit-history.png",
-        "sha256": "0afa40023a4414b9b9181dd89003a2fcb47a06336828c55120791498cc30fa92"
+        "sha256": "4287e5a646576d4e5388b34ea5acaf0e0e0b12c8ba43217d8ad2080964e61700"
       },
       "width": 960,
       "height": 600
@@ -1116,11 +1116,11 @@
       ],
       "en_US": {
         "file": "en_US/42-import.png",
-        "sha256": "b59a93d4f97318d412a62b3aa917e03e8f247295a804f98e10bd3361c5eb1eb2"
+        "sha256": "75c3cb8a1856e4fc39e7627d6576c6f6f86a9130e74ae6f8a14ffdf63696d190"
       },
       "zh_CN": {
         "file": "zh_CN/42-import.png",
-        "sha256": "51bdcdb63dfdc0dc50c038a23613a1c98ebf6397df59ddc42c3e9f8ff69f051c"
+        "sha256": "832d8fd59061105406efa725e93594a9c361ebff8556e1ddb7c9ed98db9a02c4"
       },
       "width": 960,
       "height": 600
@@ -1177,11 +1177,11 @@
       ],
       "en_US": {
         "file": "en_US/45-photo-info.png",
-        "sha256": "cbbd268b6f9b9104de318108390230fb869bbc5e37f983a3c28fbc1f485d27cf"
+        "sha256": "d20845a942ce3b3475a7e3ec0583332f6c4762d3029de3a727b75afae9c09cac"
       },
       "zh_CN": {
         "file": "zh_CN/45-photo-info.png",
-        "sha256": "708283f32bfb83cb59ae5f5ee6823cae1b13f47908fce3d7b453d3115e0a8691"
+        "sha256": "293cd668a30b33b76220541cfcd66375090f9417e15037a34b95d4e34ad9ef04"
       },
       "width": 960,
       "height": 600
@@ -1209,24 +1209,24 @@
   "source_capture_receipts": {
     "en_US": {
       "file": "en_US-capture.json",
-      "sha256": "b5d9b8c72d511cd960e39b447a9021ae7e033a230f1561ad0dce566e7b536cfe"
+      "sha256": "78409a92d7a4fc685c69a822596300a637e18dbd4dd9d322514ced4d81474112"
     },
     "zh_CN": {
       "file": "zh_CN-capture.json",
-      "sha256": "c4ba9ceb02a22895354183ffae3053e14c8b46070ac5aade45326051de95723a"
+      "sha256": "5cd1079ac46a0fe26eb5c64d52116f87d4f7189035555f8bb3af86a004ba6cbc"
     }
   },
   "capture_driver_sha256": "16f115f0c1e132ae0b3104315eed96192b6e085d9b40283cdb69bd81201f496f",
   "assembly_driver_sha256": "c6df9ced01515f1c62e42a0a1aead258c0b65d4fc708dcb0aac218aeb61ea87c",
   "factory_application_package_binding": {
-    "package": "camera-experience-006-workflow-final.tar.gz",
-    "sha256": "50b7dbf5c77d42ad81ef4dce5a2d258e9be5d7ea348cdbe7023d8fd828b4a8be",
+    "package": "camera-experience-006-import-final.tar.gz",
+    "sha256": "32cbbab8eb34439b2aed84cbc30074ee6599c6ee52db9b3941a370520d263c79",
     "version": "camera-experience-006",
     "UI_files_exactly_matched": 76,
     "UI_source_correspondence": {
       "ui/on-device/AnimatedPageLoader.qml": "b453b7658b1e661c30c008b86f6bca9320b669d005d131675b2d29c0e927803e",
       "ui/on-device/AppsWorkspace.qml": "b7de5a01c5e6c981fcf64cf9fcb3507b077363bb73bd5584f8ef147b061c68f2",
-      "ui/on-device/apps_controller.py": "54ec3d9d69612761262290e8706560fc36ca2a40dcc01594d12f4a1bf985b9d8",
+      "ui/on-device/apps_controller.py": "d4d7900c391e2a7630523ee13cdf19da97f953bef063c93c97f017817ee3383d",
       "ui/on-device/BootSplash.qml": "2dbe3fc54f2052b8a5a46de76c3df91a786f464eaad7c4f9007e582fd382a8e7",
       "ui/on-device/boot_status.py": "a095ad0ac84a1589cab3294ba9657e964335131ffca1be6b99da3e980ca4983f",
       "ui/on-device/CameraMenu.qml": "4a5601fa73e75a1d1be1922b28bad8d0b7625d095d4756d15b87d6ce0cca9365",

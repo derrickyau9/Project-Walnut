@@ -2,8 +2,10 @@
 import hashlib
 import importlib.util
 import json
+import os
 from pathlib import Path
 import sys
+import subprocess
 import tempfile
 import unittest
 from unittest.mock import patch
@@ -41,5 +43,24 @@ class BootQaInputTests(unittest.TestCase):
     def test_walnut_capture_probe_refuses_old_application_context(self):
         (self.root/'final-boot-qa.json').write_text(json.dumps({'application':{'version':'camera-experience-005'}}))
         self.rejected(['--native-worker',str(self.worker),'--native-worker-sha256',self.sha],'requires the 006')
+
+    def test_import_identity_probe_refuses_old_application_before_creating_vm(self):
+        (self.root/'final-boot-qa.json').write_text(json.dumps({'application':{'version':'camera-experience-005'}}))
+        self.rejected(['--require-import-identity'],'Import identity QA requires the 006')
+
+    @unittest.skipUnless(importlib.util.find_spec('PyQt5'), 'optional PyQt5 is unavailable')
+    def test_import_identity_guest_fixture_uses_actual_unindexed_sidecar_fallback(self):
+        code = """import json,tempfile
+from pathlib import Path
+from tools.factory_boot_qa import probe_import_identity
+with tempfile.TemporaryDirectory() as directory:
+ print(json.dumps(probe_import_identity(Path.cwd(),Path(directory))))
+"""
+        result=subprocess.run([sys.executable,'-X','utf8','-c',code],cwd=ROOT,
+            env=dict(os.environ,QT_QPA_PLATFORM='offscreen'),capture_output=True,text=True,timeout=20)
+        self.assertEqual(0,result.returncode,result.stdout+result.stderr)
+        states=json.loads(result.stdout)
+        self.assertEqual(7,len(states))
+        self.assertTrue(all(states.values()),states)
 
 if __name__=='__main__':unittest.main()

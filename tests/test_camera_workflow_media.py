@@ -61,7 +61,18 @@ class WorkflowMediaTests(unittest.TestCase):
         while time.monotonic() < end:
             if condition(): return
             QTest.qWait(10)
-        self.fail('timed out: ' + self.camera.statusText + '; ' + self.apps.workflow.errorText)
+        media = self.apps.media
+        diagnostic = {
+            'selectedCaptureId': self.camera.selectedCaptureId,
+            'libraryLoading': self.camera.libraryLoading,
+            'libraryMessage': self.camera.libraryMessage,
+            'reviewUrlAvailable': bool(self.camera.reviewUrl),
+            'mediaSelectedId': media.selectedId,
+            'mediaReady': media.ready,
+            'mediaMessage': media.message,
+        }
+        self.fail('timed out: ' + self.camera.statusText + '; ' + self.apps.workflow.errorText
+                  + '; public media state: ' + json.dumps(diagnostic, ensure_ascii=False))
 
     def run_recipe_when_ready(self):
         self.wait(lambda: self.apps.workflow.canStart)

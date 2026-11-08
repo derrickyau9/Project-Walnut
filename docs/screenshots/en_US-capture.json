@@ -35,7 +35,7 @@
   "source_sha256": {
     "ui/on-device/AnimatedPageLoader.qml": "b453b7658b1e661c30c008b86f6bca9320b669d005d131675b2d29c0e927803e",
     "ui/on-device/AppsWorkspace.qml": "b7de5a01c5e6c981fcf64cf9fcb3507b077363bb73bd5584f8ef147b061c68f2",
-    "ui/on-device/apps_controller.py": "54ec3d9d69612761262290e8706560fc36ca2a40dcc01594d12f4a1bf985b9d8",
+    "ui/on-device/apps_controller.py": "d4d7900c391e2a7630523ee13cdf19da97f953bef063c93c97f017817ee3383d",
     "ui/on-device/BootSplash.qml": "2dbe3fc54f2052b8a5a46de76c3df91a786f464eaad7c4f9007e582fd382a8e7",
     "ui/on-device/boot_status.py": "a095ad0ac84a1589cab3294ba9657e964335131ffca1be6b99da3e980ca4983f",
     "ui/on-device/CameraMenu.qml": "4a5601fa73e75a1d1be1922b28bad8d0b7625d095d4756d15b87d6ce0cca9365",
@@ -117,63 +117,63 @@
     "sha256": "9d27055e982870d84a4bbefef860ac333868f3e4556dd6636bd932538dbf09c5"
   },
   "explicit_private_data_root": true,
-  "synthetic_data_parent": "F:\\Project-Walnut-QA\\gallery\\readiness-final-en-001",
+  "synthetic_data_parent": "F:\\Project-Walnut-QA\\gallery\\import-final-en-001",
   "physical_camera_display_network_or_GPIO_validated": false,
   "control_qa": {
     "capture_actions": 3,
     "captures": [
       {
-        "request_id": "7eaee9f3-19f1-4e4a-8616-b1763b9bf98d",
+        "request_id": "0d751bc6-0367-4d26-8517-2cc4cc9570b2",
         "status": "complete",
         "bytes": 25666,
-        "sha256": "e4fc39a1bc2b7bac2983805be54cfea391e5f39dc0cf7d07682df669bdc408f2"
+        "sha256": "2d301e5bcdf6a96ee4f1a6c4b4b301c106a61d1f31e4bf7c518e51d0a48cd6d1"
       },
       {
-        "request_id": "a321385e-9ef2-4012-a207-3a807994b93f",
+        "request_id": "78618900-f59e-41ee-8ad8-1e5e5dd2cc0a",
         "status": "complete",
         "bytes": 25666,
-        "sha256": "4cf30516bb3149695f3e24cd591f25995e8fc4fb773d6bfa080591a952d4751b"
+        "sha256": "8cc15556833af3d5781d0d05b1afd9525f4cf654796b82381f5001146cbc6471"
       },
       {
-        "request_id": "4f18cfca-7f3e-43ff-8a7d-0fce5dc475ce",
+        "request_id": "8b890979-8bae-46e0-9dbe-742956a18569",
         "status": "complete",
         "bytes": 25666,
-        "sha256": "44a0a6cfca6ac0ab68d3492f48ea2e79badd2c8b3e27e0f5b3f68e7b5d3a5949"
+        "sha256": "d232a545b1a3707a4be79775fe93b8621eec1127ce176446cf52843a86e405bb"
       }
     ],
     "separate_session": true,
     "passed": true,
-    "library_id": "0d9f91ec-2cad-73e3-43c5-0587ff876b2c"
+    "library_id": "fe656609-6817-fe61-d1d5-259f4f5f7e93"
   },
   "display_capture_actions": 0,
   "display_photo_imports": [
     {
       "file": "coast.jpg",
-      "photo_uuid": "bf5a41d9-55fb-5fd4-9b34-99a59c7e2541",
+      "photo_uuid": "82fedd2a-b7f8-5af4-8199-40260b506488",
       "sha256": "9d27055e982870d84a4bbefef860ac333868f3e4556dd6636bd932538dbf09c5",
       "bytes": 430707,
       "media_type": "image/jpeg",
-      "neutral_source_file": "F:\\Project-Walnut-QA\\gallery\\readiness-final-en-001\\tmplap_was3\\camera\\GalleryInputs\\coast.jpg",
+      "neutral_source_file": "F:\\Project-Walnut-QA\\gallery\\import-final-en-001\\tmps_9mofq0\\camera\\GalleryInputs\\coast.jpg",
       "neutral_source_sha256": "9d27055e982870d84a4bbefef860ac333868f3e4556dd6636bd932538dbf09c5",
       "method": "MediaWorkspace.importPaths / native copyImport"
     },
     {
       "file": "campus-trees.jpg",
-      "photo_uuid": "b3e93eef-4ac8-5825-ad97-0eadbdf5fdc7",
+      "photo_uuid": "f5c577a5-74ab-597a-a3bc-8e739c8f9b8b",
       "sha256": "e20f2e275db92a951c7bb2c33cd1355813d869af65303259d384591c861d1c6d",
       "bytes": 418108,
       "media_type": "image/jpeg",
-      "neutral_source_file": "F:\\Project-Walnut-QA\\gallery\\readiness-final-en-001\\tmplap_was3\\camera\\GalleryInputs\\campus-trees.jpg",
+      "neutral_source_file": "F:\\Project-Walnut-QA\\gallery\\import-final-en-001\\tmps_9mofq0\\camera\\GalleryInputs\\campus-trees.jpg",
       "neutral_source_sha256": "e20f2e275db92a951c7bb2c33cd1355813d869af65303259d384591c861d1c6d",
       "method": "MediaWorkspace.importPaths / native copyImport"
     },
     {
       "file": "campus-building.jpg",
-      "photo_uuid": "d7def660-5120-5a1e-a04a-09145879e4a2",
+      "photo_uuid": "8585581a-4467-5f55-9cb6-3291c51ee1cf",
       "sha256": "0bf3283b52a0bc9ab5a4f64dbf1ff16eea844ef50bee695972561ea27064690c",
       "bytes": 404400,
       "media_type": "image/jpeg",
-      "neutral_source_file": "F:\\Project-Walnut-QA\\gallery\\readiness-final-en-001\\tmplap_was3\\camera\\GalleryInputs\\campus-building.jpg",
+      "neutral_source_file": "F:\\Project-Walnut-QA\\gallery\\import-final-en-001\\tmps_9mofq0\\camera\\GalleryInputs\\campus-building.jpg",
       "neutral_source_sha256": "0bf3283b52a0bc9ab5a4f64dbf1ff16eea844ef50bee695972561ea27064690c",
       "method": "MediaWorkspace.importPaths / native copyImport"
     }
@@ -205,7 +205,7 @@
         "Gain 1.00×",
         "Q"
       ],
-      "elapsed_seconds": 8.204
+      "elapsed_seconds": 3.797
     },
     {
       "key": "01b-level-unavailable",
@@ -236,7 +236,7 @@
         "Gain 1.00×",
         "Q"
       ],
-      "elapsed_seconds": 8.657
+      "elapsed_seconds": 4.266
     },
     {
       "key": "01c-level-demo-aligned",
@@ -269,7 +269,7 @@
         "Gain 1.00×",
         "Q"
       ],
-      "elapsed_seconds": 9.125
+      "elapsed_seconds": 4.719
     },
     {
       "key": "01d-level-demo-tilted",
@@ -302,7 +302,7 @@
         "Gain 1.00×",
         "Q"
       ],
-      "elapsed_seconds": 9.579
+      "elapsed_seconds": 5.172
     },
     {
       "key": "02-taskbar",
@@ -329,7 +329,7 @@
         "Gain 1.00×",
         "Q"
       ],
-      "elapsed_seconds": 10.047
+      "elapsed_seconds": 5.625
     },
     {
       "key": "03-exposure-editor",
@@ -367,7 +367,7 @@
         "All settings",
         "Camera settings confirmed · Gain is not calibrated to ISO"
       ],
-      "elapsed_seconds": 10.735
+      "elapsed_seconds": 6.313
     },
     {
       "key": "04-quick-photo",
@@ -379,7 +379,7 @@
         "12-custom-slots",
         "direct-parameter-control"
       ],
-      "sha256": "b9a2c4940545a6d09944bfa899ece0777fc0075a1499144a757e322d9d779c0c",
+      "sha256": "f0e1b5f7ef8af269b43547cb6d48870308823b976eee9544dba19b90f04a5f39",
       "width": 960,
       "height": 600,
       "selected_photo_uuid": "",
@@ -423,10 +423,10 @@
         "12",
         "−",
         "Shutter · 1/100",
-        "Configuration exported: F:\\Project-Walnut-QA\\gallery\\readiness-final-en-001\\tmplap_was3\\camera\\workspace-example.json",
+        "Configuration exported: F:\\Project-Walnut-QA\\gallery\\import-final-en-001\\tmps_9mofq0\\camera\\workspace-example.json",
         "+"
       ],
-      "elapsed_seconds": 11.36
+      "elapsed_seconds": 6.953
     },
     {
       "key": "05-quick-video",
@@ -482,7 +482,7 @@
         "Video Q is a layout preview; recording is unsupported by the current backend",
         "+"
       ],
-      "elapsed_seconds": 11.75
+      "elapsed_seconds": 7.344
     },
     {
       "key": "06-quick-assignment",
@@ -549,7 +549,7 @@
         "Pause or resume the current live-view image.",
         "Clean view"
       ],
-      "elapsed_seconds": 12.125
+      "elapsed_seconds": 7.719
     },
     {
       "key": "07-my-menu",
@@ -587,7 +587,7 @@
         "Terminal",
         "Edit favorites"
       ],
-      "elapsed_seconds": 12.75
+      "elapsed_seconds": 8.36
     },
     {
       "key": "08-custom-profiles",
@@ -633,7 +633,7 @@
         "Fn1 / F1",
         "Composition grid"
       ],
-      "elapsed_seconds": 13.829
+      "elapsed_seconds": 9.438
     },
     {
       "key": "09-input-mappings",
@@ -676,7 +676,7 @@
         "Hold F1/F2 to show guides or a panel; release to restore. Exposure changes still require camera confirmation and are not reversed on release. ↑/↓ adjusts the dial value. GPIO keys need an adapter; shortcuts pause during text input.",
         "Edit My Menu favorites"
       ],
-      "elapsed_seconds": 14.188
+      "elapsed_seconds": 9.813
     },
     {
       "key": "10-layout-import",
@@ -725,7 +725,7 @@
         "Load configuration",
         "The configuration is saved to the workspace; capture parameters are not applied automatically."
       ],
-      "elapsed_seconds": 14.563
+      "elapsed_seconds": 10.172
     },
     {
       "key": "11-exposure-menu",
@@ -763,7 +763,7 @@
         "1.00x",
         "Set shutter and gain for the next photo. Values take effect after camera confirmation."
       ],
-      "elapsed_seconds": 15.61
+      "elapsed_seconds": 11.219
     },
     {
       "key": "12-image-raw",
@@ -806,7 +806,7 @@
         "16-bit",
         "This is a synthetic Bayer image; no physical sensor is connected. Full-size simulation takes longer."
       ],
-      "elapsed_seconds": 16.657
+      "elapsed_seconds": 12.266
     },
     {
       "key": "13-display",
@@ -846,7 +846,7 @@
         "100%",
         "Viewfinder brightness adjusts the displayed image only. It does not control physical screen backlight or saved RAW exposure."
       ],
-      "elapsed_seconds": 17.719
+      "elapsed_seconds": 13.328
     },
     {
       "key": "14-storage",
@@ -858,7 +858,7 @@
         "saved-captures",
         "storage-limitations"
       ],
-      "sha256": "c1e28e4adb8f5819c399e652e7454c6ae54806bad2ff443162d900b6187c1bf0",
+      "sha256": "2e21f26e802c1e3f552eaf45f91b8bd4a3ff94326ee0c69b17f96b2d03b3c709",
       "width": 960,
       "height": 600,
       "selected_photo_uuid": "",
@@ -880,17 +880,17 @@
         "Total data space",
         "3726.02 GiB",
         "Available data space",
-        "498.52 GiB",
+        "488.98 GiB",
         "Application data",
-        "F:\\Project-Walnut-QA\\gallery\\readiness-final-en-001\\tmplap_was3\\camera\\apps",
+        "F:\\Project-Walnut-QA\\gallery\\import-final-en-001\\tmps_9mofq0\\camera\\apps",
         "Capture recipe count",
         "2",
         "Export folder",
-        "F:\\Project-Walnut-QA\\gallery\\readiness-final-en-001\\tmplap_was3\\camera\\apps\\exports",
+        "F:\\Project-Walnut-QA\\gallery\\import-final-en-001\\tmps_9mofq0\\camera\\apps\\exports",
         "Storage verification",
         "Capacity verified; media speed and power-loss retention remain untested"
       ],
-      "elapsed_seconds": 18.782
+      "elapsed_seconds": 14.391
     },
     {
       "key": "15-wifi",
@@ -932,7 +932,7 @@
         "Connect",
         "Saved networks reconnect at startup. The current Pi 4 build enables 5 GHz only; 2.4 GHz is disabled."
       ],
-      "elapsed_seconds": 19.844
+      "elapsed_seconds": 15.453
     },
     {
       "key": "16-system",
@@ -946,7 +946,7 @@
         "clock",
         "safe-power-actions"
       ],
-      "sha256": "772e4849b6a2c0f5c2a932be37a3a495d060eaa9428a04ff0cf52ed58ef9a275",
+      "sha256": "34c2fb7396ab933900e4f6ce2094c1a1904b23115f660aa50b027c444808b67b",
       "width": 960,
       "height": 600,
       "selected_photo_uuid": "",
@@ -971,7 +971,7 @@
         "Application update",
         "Development",
         "Tethering",
-        "2026-11-08 01:09:04",
+        "2026-11-08 01:28:15",
         "Language",
         "English",
         "Time zone",
@@ -984,7 +984,7 @@
         "5 minutes",
         "System preferences saved"
       ],
-      "elapsed_seconds": 20.938
+      "elapsed_seconds": 16.578
     },
     {
       "key": "17-backup",
@@ -1029,7 +1029,7 @@
         "Select a backup, check it, then confirm the restore.",
         "System preferences saved"
       ],
-      "elapsed_seconds": 21.297
+      "elapsed_seconds": 16.938
     },
     {
       "key": "18-updates",
@@ -1075,7 +1075,7 @@
         "Use the installer and checksum provided with this release.",
         "System preferences saved"
       ],
-      "elapsed_seconds": 21.657
+      "elapsed_seconds": 17.313
     },
     {
       "key": "19-developer",
@@ -1116,7 +1116,7 @@
         "Everyday tethering uses the controlled camera interface. Developer mode retains terminal and diagnostic access for authorized USB hosts.\nDiagnostic exports exclude Wi-Fi passwords, private keys, and session tokens.",
         "System preferences saved"
       ],
-      "elapsed_seconds": 22.032
+      "elapsed_seconds": 17.672
     },
     {
       "key": "20-link",
@@ -1163,7 +1163,7 @@
         "Control: Local",
         "System preferences saved"
       ],
-      "elapsed_seconds": 22.391
+      "elapsed_seconds": 18.032
     },
     {
       "key": "21-terminal",
@@ -1194,7 +1194,7 @@
         "PgDn",
         "The device terminal requires a POSIX system."
       ],
-      "elapsed_seconds": 23.954
+      "elapsed_seconds": 19.594
     },
     {
       "key": "22-touch-keyboard",
@@ -1273,7 +1273,7 @@
         ".",
         "Enter"
       ],
-      "elapsed_seconds": 25.329
+      "elapsed_seconds": 20.969
     },
     {
       "key": "23-capabilities",
@@ -1315,7 +1315,7 @@
         "Unavailable\nSensor gain has not been ISO-calibrated",
         "Unavailable\nElectronic aperture control is not connected"
       ],
-      "elapsed_seconds": 26.391
+      "elapsed_seconds": 22.063
     },
     {
       "key": "24-diagnostics",
@@ -1355,7 +1355,7 @@
         "Requested UI settings are shown here. Actual per-frame settings and completion evidence remain attached to retained captures.",
         "Export local diagnostics"
       ],
-      "elapsed_seconds": 27.422
+      "elapsed_seconds": 23.094
     },
     {
       "key": "25-recipes",
@@ -1393,7 +1393,7 @@
         "Select and run a plan; per-frame results will appear here.",
         "Pausing takes effect between captures. Resume verifies the original UUID and never automatically repeats an exposure with an unknown result."
       ],
-      "elapsed_seconds": 28.485
+      "elapsed_seconds": 24.157
     },
     {
       "key": "26-bracketing",
@@ -1439,7 +1439,7 @@
         "Three exposures: half / current / double (−1, 0, +1 EV, within supported limits). Current gain and mode are retained.",
         "Save plan"
       ],
-      "elapsed_seconds": 28.844
+      "elapsed_seconds": 24.516
     },
     {
       "key": "27-interval",
@@ -1491,7 +1491,7 @@
         "Repeat the current exposure. The interval is the minimum wait after the previous photo finishes saving, not precise hardware timing.",
         "Save plan"
       ],
-      "elapsed_seconds": 29.204
+      "elapsed_seconds": 24.875
     },
     {
       "key": "28-photo-looks",
@@ -1519,7 +1519,7 @@
         "Soft",
         "Select a saved photo in Photos first."
       ],
-      "elapsed_seconds": 29.579
+      "elapsed_seconds": 25.235
     },
     {
       "key": "29-tasks",
@@ -1561,7 +1561,7 @@
         "Cancel",
         "3 / 3 items · 100%"
       ],
-      "elapsed_seconds": 30.641
+      "elapsed_seconds": 26.297
     },
     {
       "key": "30-image-tools",
@@ -1605,7 +1605,7 @@
         "0.00",
         "Create derived image"
       ],
-      "elapsed_seconds": 31.719
+      "elapsed_seconds": 27.407
     },
     {
       "key": "31-processing-operations",
@@ -1665,7 +1665,7 @@
         "Dark / flat correction",
         "Negative inversion"
       ],
-      "elapsed_seconds": 32.094
+      "elapsed_seconds": 27.766
     },
     {
       "key": "32-photo-library",
@@ -1679,7 +1679,7 @@
         "pagination",
         "import"
       ],
-      "sha256": "5bf7e592c69c14a03982e17a494acfe90ad16b5ccbdd375cef84a866594c0495",
+      "sha256": "541fef6013cbc7a8bf515ac65f228b5fdb060a8f018917ae6f44aa07e22993e6",
       "width": 960,
       "height": 600,
       "selected_photo_uuid": "",
@@ -1708,7 +1708,7 @@
         "Rated",
         "Protected",
         "Newest first",
-        "11-08 01:08:50 · Imported",
+        "11-08 01:28:02 · Imported",
         "2285×1279",
         "1707×1279",
         "2284×1279",
@@ -1718,7 +1718,7 @@
         "Next page",
         "Library synchronized · 3 photos"
       ],
-      "elapsed_seconds": 33.782
+      "elapsed_seconds": 29.438
     },
     {
       "key": "33-multi-select",
@@ -1730,7 +1730,7 @@
         "batch-actions",
         "selected-count"
       ],
-      "sha256": "10a465346f2c9ca7737151d44d4396d562341219c215091a3aec84a32d94c36c",
+      "sha256": "d718db2c65b05154ffa260742edab92128feac3357df0481ea7cc294c0a2dd3d",
       "width": 960,
       "height": 600,
       "selected_photo_uuid": "",
@@ -1760,7 +1760,7 @@
         "Protected",
         "Newest first",
         "✓",
-        "11-08 01:08:50 · Imported",
+        "11-08 01:28:02 · Imported",
         "2285×1279",
         "1707×1279",
         "Reading",
@@ -1771,7 +1771,7 @@
         "Next page",
         "Library synchronized · 3 photos"
       ],
-      "elapsed_seconds": 34.157
+      "elapsed_seconds": 29.828
     },
     {
       "key": "34-viewer",
@@ -1786,7 +1786,7 @@
       "sha256": "c2666a064c5737d1620fa7ffa03ec2c9bc744f843526ed670ad118c93bb428c5",
       "width": 960,
       "height": 600,
-      "selected_photo_uuid": "d7def660-5120-5a1e-a04a-09145879e4a2",
+      "selected_photo_uuid": "8585581a-4467-5f55-9cb6-3291c51ee1cf",
       "selected_photo_media_type": "image/jpeg",
       "visible_text": [
         "Back",
@@ -1815,7 +1815,7 @@
         "Image tools",
         "Library synchronized · 3 photos"
       ],
-      "elapsed_seconds": 35.25
+      "elapsed_seconds": 30.891
     },
     {
       "key": "35-compare-zoom",
@@ -1830,7 +1830,7 @@
       "sha256": "2cd107b43d20c818c5a94554ad5932f70818dcd3c577c9cdf4728f81930e4247",
       "width": 960,
       "height": 600,
-      "selected_photo_uuid": "d7def660-5120-5a1e-a04a-09145879e4a2",
+      "selected_photo_uuid": "8585581a-4467-5f55-9cb6-3291c51ee1cf",
       "selected_photo_media_type": "image/jpeg",
       "visible_text": [
         "Back",
@@ -1859,7 +1859,7 @@
         "Image tools",
         "Library synchronized · 3 photos"
       ],
-      "elapsed_seconds": 37.891
+      "elapsed_seconds": 32.344
     },
     {
       "key": "36-tone-crop",
@@ -1877,7 +1877,7 @@
       "sha256": "b5e204e25856c9497f27433e7f17e73c82168d23eb6bf1a553bd32950308de58",
       "width": 960,
       "height": 600,
-      "selected_photo_uuid": "bf5a41d9-55fb-5fd4-9b34-99a59c7e2541",
+      "selected_photo_uuid": "82fedd2a-b7f8-5af4-8199-40260b506488",
       "selected_photo_media_type": "image/jpeg",
       "visible_text": [
         "Back",
@@ -1919,7 +1919,7 @@
         "Redo",
         "History"
       ],
-      "elapsed_seconds": 39.922
+      "elapsed_seconds": 34.36
     },
     {
       "key": "36b-rotation-crop",
@@ -1935,7 +1935,7 @@
       "sha256": "72d2ce70e3e597664679ec714f156deb81357001520ad9933115cbef2f7442f7",
       "width": 960,
       "height": 600,
-      "selected_photo_uuid": "bf5a41d9-55fb-5fd4-9b34-99a59c7e2541",
+      "selected_photo_uuid": "82fedd2a-b7f8-5af4-8199-40260b506488",
       "selected_photo_media_type": "image/jpeg",
       "visible_text": [
         "Back",
@@ -1980,7 +1980,7 @@
         "Redo",
         "History"
       ],
-      "elapsed_seconds": 40.329
+      "elapsed_seconds": 34.766
     },
     {
       "key": "37-white-balance",
@@ -1995,7 +1995,7 @@
       "sha256": "5b80ea93d857bea12fff585ab752a822a6580e148d8c7863accca54b2f690562",
       "width": 960,
       "height": 600,
-      "selected_photo_uuid": "bf5a41d9-55fb-5fd4-9b34-99a59c7e2541",
+      "selected_photo_uuid": "82fedd2a-b7f8-5af4-8199-40260b506488",
       "selected_photo_media_type": "image/jpeg",
       "visible_text": [
         "Back",
@@ -2038,7 +2038,7 @@
         "Redo",
         "History"
       ],
-      "elapsed_seconds": 40.719
+      "elapsed_seconds": 35.157
     },
     {
       "key": "38-tone-curve",
@@ -2052,7 +2052,7 @@
       "sha256": "b8bd7e6b26f6d0fdabe144843c66d25cb4e659cd0ae22431807b04df67b819e7",
       "width": 960,
       "height": 600,
-      "selected_photo_uuid": "bf5a41d9-55fb-5fd4-9b34-99a59c7e2541",
+      "selected_photo_uuid": "82fedd2a-b7f8-5af4-8199-40260b506488",
       "selected_photo_media_type": "image/jpeg",
       "visible_text": [
         "Back",
@@ -2093,7 +2093,7 @@
         "Redo",
         "History"
       ],
-      "elapsed_seconds": 41.125
+      "elapsed_seconds": 35.563
     },
     {
       "key": "39-custom-styles",
@@ -2108,7 +2108,7 @@
       "sha256": "4886e66beab18153db1bd1a3659c9f4c33431043b9b8654334994e1a478bbbe2",
       "width": 960,
       "height": 600,
-      "selected_photo_uuid": "bf5a41d9-55fb-5fd4-9b34-99a59c7e2541",
+      "selected_photo_uuid": "82fedd2a-b7f8-5af4-8199-40260b506488",
       "selected_photo_media_type": "image/jpeg",
       "visible_text": [
         "Back",
@@ -2152,7 +2152,7 @@
         "Redo",
         "History"
       ],
-      "elapsed_seconds": 41.532
+      "elapsed_seconds": 35.953
     },
     {
       "key": "40-edit-history",
@@ -2164,10 +2164,10 @@
         "revision-selection",
         "restore-edit-version"
       ],
-      "sha256": "83d5d42f5a176fedc824af03d29dd122b4d762d3af39884e324c449e2499e476",
+      "sha256": "88ee08bcba5708c8e6b831c9d79c76d6beea78bcbccdf877b323dc54a1251645",
       "width": 960,
       "height": 600,
-      "selected_photo_uuid": "bf5a41d9-55fb-5fd4-9b34-99a59c7e2541",
+      "selected_photo_uuid": "82fedd2a-b7f8-5af4-8199-40260b506488",
       "selected_photo_media_type": "image/jpeg",
       "visible_text": [
         "Back",
@@ -2197,12 +2197,12 @@
         "Library synchronized · 3 photos",
         "Immutable edit history",
         "Close",
-        "Version 1 · Sunday, November 8, 2026 1:09:22 AM",
-        "Version 0 · Sunday, November 8, 2026 1:08:50 AM",
+        "Version 1 · Sunday, November 8, 2026 1:28:33 AM",
+        "Version 0 · Sunday, November 8, 2026 1:28:02 AM",
         "Latest history",
         "Earlier 100 entries"
       ],
-      "elapsed_seconds": 41.891
+      "elapsed_seconds": 36.328
     },
     {
       "key": "41-export",
@@ -2218,7 +2218,7 @@
       "sha256": "0495bf677196680d81ad9ddca4c5caf371045d87689147ebac7b945b6047f8bc",
       "width": 960,
       "height": 600,
-      "selected_photo_uuid": "bf5a41d9-55fb-5fd4-9b34-99a59c7e2541",
+      "selected_photo_uuid": "82fedd2a-b7f8-5af4-8199-40260b506488",
       "selected_photo_media_type": "image/jpeg",
       "visible_text": [
         "Back",
@@ -2256,7 +2256,7 @@
         "Browse",
         "Create background export task"
       ],
-      "elapsed_seconds": 42.266
+      "elapsed_seconds": 36.703
     },
     {
       "key": "42-import",
@@ -2268,10 +2268,10 @@
         "copy-import",
         "destination-browser"
       ],
-      "sha256": "b59a93d4f97318d412a62b3aa917e03e8f247295a804f98e10bd3361c5eb1eb2",
+      "sha256": "75c3cb8a1856e4fc39e7627d6576c6f6f86a9130e74ae6f8a14ffdf63696d190",
       "width": 960,
       "height": 600,
-      "selected_photo_uuid": "bf5a41d9-55fb-5fd4-9b34-99a59c7e2541",
+      "selected_photo_uuid": "82fedd2a-b7f8-5af4-8199-40260b506488",
       "selected_photo_media_type": "image/jpeg",
       "visible_text": [
         "Back",
@@ -2300,14 +2300,14 @@
         "Image tools",
         "Library synchronized · 3 photos",
         "Parent folder",
-        "F:\\Project-Walnut-QA\\gallery\\readiness-final-en-001\\tmplap_was3\\camera\\GalleryInputs",
+        "F:\\Project-Walnut-QA\\gallery\\import-final-en-001\\tmps_9mofq0\\camera\\GalleryInputs",
         "Close",
         "File  campus-building.jpg",
         "File  campus-trees.jpg",
         "DNG/JPEG/PNG/TIFF files are copied into the library; sources are retained. Selected 0 files.",
         "Copy and import selection"
       ],
-      "elapsed_seconds": 42.938
+      "elapsed_seconds": 37.36
     },
     {
       "key": "43-library-actions",
@@ -2324,7 +2324,7 @@
       "sha256": "16f6a06cded5306b37b2765573243332f96b2c38de16ee067169c3c120610c16",
       "width": 960,
       "height": 600,
-      "selected_photo_uuid": "bf5a41d9-55fb-5fd4-9b34-99a59c7e2541",
+      "selected_photo_uuid": "82fedd2a-b7f8-5af4-8199-40260b506488",
       "selected_photo_media_type": "image/jpeg",
       "visible_text": [
         "Back",
@@ -2366,7 +2366,7 @@
         "Search",
         "Filtering, select all, and batch actions cover the entire indexed library. Exports use the current version; source RAW and capture request history are kept. Multi-image processing supports up to 16 photos."
       ],
-      "elapsed_seconds": 43.297
+      "elapsed_seconds": 37.719
     },
     {
       "key": "44-rating",
@@ -2380,7 +2380,7 @@
       "sha256": "c8df8193db5b65fadf4ffaf4c7ef9f52983ff29833d0112adc11f5b9757226ce",
       "width": 960,
       "height": 600,
-      "selected_photo_uuid": "bf5a41d9-55fb-5fd4-9b34-99a59c7e2541",
+      "selected_photo_uuid": "82fedd2a-b7f8-5af4-8199-40260b506488",
       "selected_photo_media_type": "image/jpeg",
       "visible_text": [
         "Back",
@@ -2416,7 +2416,7 @@
         "4★",
         "5★"
       ],
-      "elapsed_seconds": 43.829
+      "elapsed_seconds": 38.266
     },
     {
       "key": "45-photo-info",
@@ -2428,10 +2428,10 @@
         "metadata",
         "editing-provenance"
       ],
-      "sha256": "cbbd268b6f9b9104de318108390230fb869bbc5e37f983a3c28fbc1f485d27cf",
+      "sha256": "d20845a942ce3b3475a7e3ec0583332f6c4762d3029de3a727b75afae9c09cac",
       "width": 960,
       "height": 600,
-      "selected_photo_uuid": "bf5a41d9-55fb-5fd4-9b34-99a59c7e2541",
+      "selected_photo_uuid": "82fedd2a-b7f8-5af4-8199-40260b506488",
       "selected_photo_media_type": "image/jpeg",
       "visible_text": [
         "Back",
@@ -2461,9 +2461,9 @@
         "Library synchronized · 3 photos",
         "Assets & capture archive",
         "Close",
-        "{\n  \"byte_count\": 430707,\n  \"change_seq\": 3,\n  \"display_height\": 1279,\n  \"display_width\": 2285,\n  \"extension\": \".jpg\",\n  \"filename\": \"coast.jpg\",\n  \"height\": 1279,\n  \"library_id\": \"8f4d9e98-1f45-27ef-9fd8-d55e96818293\",\n  \"media_type\": \"image/jpeg\",\n  \"orientation\": 0,\n  \"origin_kind\": \"import\",\n  \"original_request_uuid\": \"bf5a41d9-55fb-5fd4-9b34-99a59c7e2541\",\n  \"photo_uuid\": \"bf5a41d9-55fb-5fd4-9b34-99a59c7e2541\",\n  \"protected\": false,\n  \"sha256\": \"9d27055e982870d84a4bbefef860ac333868f3e4556dd6636bd932538dbf09c5\",\n  \"simulated\": false,\n  \"state\": \"active\",\n  \"structure\": {},\n  \"timestamp\": 1794128930.7281551,\n  \"trashed\": false,\n  \"width\": 2285,\n  \"request_id\": \"bf5a41d9-55fb-5fd4-9b34-99a59c7e2541\",\n  \"rating\": 4,\n  \"metadata_revision\": 2,\n  \"edit_revision\": 1,\n  \"edits\": {\n    \"contrast\": 1.0,\n    \"crop\": null,\n    \"exposure\": 0.3,\n    \"rotation\": 0,\n    \"saturation\": 1.0\n  },\n  \"fingerprint\": \"9d27055e982870d84a4bbefef860ac333868f3e4556dd6636bd932538dbf09c5\"\n}"
+        "{\n  \"byte_count\": 430707,\n  \"change_seq\": 3,\n  \"display_height\": 1279,\n  \"display_width\": 2285,\n  \"extension\": \".jpg\",\n  \"filename\": \"coast.jpg\",\n  \"height\": 1279,\n  \"library_id\": \"6b62b643-5e24-3b88-168e-377a0226f4cd\",\n  \"media_type\": \"image/jpeg\",\n  \"orientation\": 0,\n  \"origin_kind\": \"import\",\n  \"original_request_uuid\": \"82fedd2a-b7f8-5af4-8199-40260b506488\",\n  \"photo_uuid\": \"82fedd2a-b7f8-5af4-8199-40260b506488\",\n  \"protected\": false,\n  \"sha256\": \"9d27055e982870d84a4bbefef860ac333868f3e4556dd6636bd932538dbf09c5\",\n  \"simulated\": false,\n  \"state\": \"active\",\n  \"structure\": {},\n  \"timestamp\": 1794130082.388161,\n  \"trashed\": false,\n  \"width\": 2285,\n  \"request_id\": \"82fedd2a-b7f8-5af4-8199-40260b506488\",\n  \"rating\": 4,\n  \"metadata_revision\": 2,\n  \"edit_revision\": 1,\n  \"edits\": {\n    \"contrast\": 1.0,\n    \"crop\": null,\n    \"exposure\": 0.3,\n    \"rotation\": 0,\n    \"saturation\": 1.0\n  },\n  \"fingerprint\": \"9d27055e982870d84a4bbefef860ac333868f3e4556dd6636bd932538dbf09c5\"\n}"
       ],
-      "elapsed_seconds": 44.188
+      "elapsed_seconds": 38.657
     },
     {
       "key": "46-trash-confirmation",
@@ -2477,7 +2477,7 @@
       "sha256": "4dd6ae4cf319514e30d3a20c895b4c19cc054f39ca18d3ad5c305bd0ddebe47c",
       "width": 960,
       "height": 600,
-      "selected_photo_uuid": "bf5a41d9-55fb-5fd4-9b34-99a59c7e2541",
+      "selected_photo_uuid": "82fedd2a-b7f8-5af4-8199-40260b506488",
       "selected_photo_media_type": "image/jpeg",
       "visible_text": [
         "Back",
@@ -2510,7 +2510,7 @@
         "Keep files",
         "Confirm permanent deletion"
       ],
-      "elapsed_seconds": 44.547
+      "elapsed_seconds": 39.032
     }
   ],
   "actions": [],
@@ -2546,12 +2546,12 @@
     "Level DEMO angles are explicit display-test inputs, not IMU measurements",
     "Views demonstrate controls; screenshots are not proof every operation was executed"
   ],
-  "display_session_directory": "F:\\Project-Walnut-QA\\gallery\\readiness-final-en-001\\tmplap_was3\\camera",
-  "display_library_id": "8f4d9e98-1f45-27ef-9fd8-d55e96818293",
+  "display_session_directory": "F:\\Project-Walnut-QA\\gallery\\import-final-en-001\\tmps_9mofq0\\camera",
+  "display_library_id": "6b62b643-5e24-3b88-168e-377a0226f4cd",
   "display_original_JPEG_bytes_unchanged": true,
   "qml_warnings": [
     "file:///F:/Project HasselFree/ui/on-device/WifiPage.qml:24:5: QML Flickable: Binding loop detected for property \"contentHeight\""
   ],
-  "elapsed_seconds": 44.563,
+  "elapsed_seconds": 39.047,
   "source_changed_during_capture": []
 }

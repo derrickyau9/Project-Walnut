@@ -43,6 +43,14 @@ Unknown capture results are reconciled only with the original request ID.
 工作流按钮等待控制权真正就绪；忙状态拒绝不会丢失暂停记录，也不会自动重试
 拍摄。结果不明的请求继续使用原请求编号核实，避免重复曝光。
 
+Sibling helpers reuse the already loaded local module across supported import
+orders. This keeps catalog exception identities consistent so a newly captured,
+not-yet-indexed photo can use the existing sidecar fallback instead of remaining
+uneditable after a failed read.
+
+修复了模块重复加载导致异常类型不一致的问题：新拍摄照片尚未索引时，旁车
+读取能够正确使用回退路径，不会因导入顺序而一直无法编辑。
+
 ## Bound derivation inputs
 
 The base is downloadable from the

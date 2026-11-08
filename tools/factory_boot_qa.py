@@ -9,6 +9,7 @@ import ast
 import base64
 import gzip
 import hashlib
+import inspect
 import json
 import os
 from pathlib import Path
@@ -25,6 +26,40 @@ def sha(path):
         for chunk in iter(lambda:source.read(1024**2),b''):h.update(chunk)
     return h.hexdigest()
 
+def probe_import_identity(release, scratch):
+    """Exercise the actual sibling loader and unindexed sidecar fallback in RAM."""
+    import sys
+    sys.path.insert(0,str(release))
+    sys.path.insert(0,str(release/'ui/on-device'))
+    import media_catalog
+    from apps_controller import _companion
+    from media_library import MediaStore
+    companion=_companion('media_catalog')
+    workspace=_companion('media_workspace')
+    results={'same_module':companion is media_catalog,
+             'same_CatalogError':companion.CatalogError is media_catalog.CatalogError is workspace.CatalogError}
+    catalog=companion.MediaCatalog(scratch)
+    catalog.active_library='00000000-0000-0000-0000-000000000001'
+    photo='00000000-0000-0000-0000-000000000002'
+    legacy=MediaStore(scratch/'legacy');legacy.write(photo,{'rating':3})
+    saved=legacy.root/(photo+'.daos.json')
+    before=(saved.read_bytes(),saved.stat().st_mtime_ns)
+    try:catalog.sidecar(catalog.active_library,photo)
+    except workspace.CatalogError:results['photo_not_yet_indexed']=True
+    else:results['photo_not_yet_indexed']=False
+    store=workspace.CatalogSidecarStore(legacy,catalog,lambda:None)
+    results['legacy_rating_fallback']=store.read(photo)['rating']==3
+    results['legacy_bytes_and_mtime_unchanged']=before==(saved.read_bytes(),saved.stat().st_mtime_ns)
+    missing=store.read('00000000-0000-0000-0000-000000000003')
+    results['missing_sidecar_defaults']=missing['rating']==0 and missing['edits']==media_catalog.DEFAULT_EDITS
+    class BrokenCatalog:
+        active_library=catalog.active_library
+        def sidecar(self,*args):raise OSError('private QA catalog failure')
+    try:workspace.CatalogSidecarStore(legacy,BrokenCatalog(),lambda:None).read(photo)
+    except OSError:results['unexpected_errors_propagate']=True
+    else:results['unexpected_errors_propagate']=False
+    return results
+
 def main():
     if sys.platform!='linux' or os.geteuid()==0:raise ValueError('Non-root isolated Linux QA host required')
     parser=argparse.ArgumentParser(description=__doc__)
@@ -36,10 +71,12 @@ def main():
     parser.add_argument('--native-worker-sha256')
     parser.add_argument('--image-jobs',action='store_true',help='Exercise all three demo JPEGs through the real native run_job adapter in private RAM')
     parser.add_argument('--require-level',action='store_true',help='Require and exercise the actual display-only level controller, with private JSON fixtures and no IMU claim')
+    parser.add_argument('--require-import-identity',action='store_true',help='Require the actual sibling-module identity and unindexed legacy sidecar fallback in private RAM')
     args=parser.parse_args()
     if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9_.-]*\.json',args.record) or '..' in args.record:raise ValueError('QA receipt must be a simple basename')
     inputs=args.inputs.resolve(strict=True);record=json.loads((inputs/args.record).read_text())
     if args.image_jobs and record.get('application',{}).get('version')!='camera-experience-006':raise ValueError('Demo image-job QA requires the 006 application')
+    if args.require_import_identity and record.get('application',{}).get('version')!='camera-experience-006':raise ValueError('Import identity QA requires the 006 application')
     native_worker=None
     if (args.native_worker is None)!=(args.native_worker_sha256 is None):raise ValueError('Test worker path and SHA256 must be supplied together')
     if args.native_worker is not None:
@@ -80,6 +117,7 @@ def main():
         '-device','virtio-blk-pci,drive=factory']
     expected=record['core_files']
     script='''import hashlib,json,os,pathlib,re,stat,subprocess
+IMPORT_IDENTITY_FUNCTION
 expected=EXPECTED
 def run(argv):
  p=subprocess.run(argv,capture_output=True,text=True,timeout=15)
@@ -131,6 +169,9 @@ if application:
  authority=subprocess.run([str(release/'bin/hf-camerad'),'--data-dir',str(data)],input=requests,capture_output=True,text=True,timeout=15)
  replies=[json.loads(line) for line in authority.stdout.splitlines()]
  r['native_camera_authority']=authority.returncode==0 and len(replies)==2 and replies[0].get('result',{}).get('api_version')=='1.1' and replies[0]['result'].get('simulated') is True
+ if REQUIRE_IMPORT_IDENTITY:
+  try:r['import_identity_states']=probe_import_identity(release,pathlib.Path('/DaOS-recovery-ram/factory-qa-import-identity'))
+  except Exception as error:r['import_identity_states']={'error':type(error).__name__,'message':str(error)[:300]}
  if REQUIRE_LEVEL:
   import sys
   sys.path.insert(0,str(release/'ui/on-device'))
@@ -217,7 +258,7 @@ if worker_spec:
  before=(capture.read_bytes(),capture.stat().st_mtime_ns);inspected=reader.inspect_dng(capture)
  r['native_RAW_readonly_reader']=inspected['metadata_state']=='valid' and inspected['request_id']=='00000000-0000-0000-0000-000000000006' and before==(capture.read_bytes(),capture.stat().st_mtime_ns)
 print('QA_FACTORY_JSON '+json.dumps(r,sort_keys=True),flush=True)
-'''.replace('EXPECTED',json.dumps(expected,indent=1)).replace('APPLICATION',repr(record.get('application'))).replace('TRANSLATIONS',ascii({'en_US':['Method','WB temp.'],'zh_CN':['处理方式','白平衡色温']})).replace('TRANSLATION_KEYS',ascii(['处理方式','白平衡色温'])).replace('NATIVE_WORKER',json.dumps(native_worker,indent=1) if native_worker else 'None').replace('IMAGE_JOBS',repr(args.image_jobs)).replace('REQUIRE_LEVEL',repr(args.require_level))
+'''.replace('IMPORT_IDENTITY_FUNCTION',inspect.getsource(probe_import_identity)).replace('EXPECTED',json.dumps(expected,indent=1)).replace('APPLICATION',repr(record.get('application'))).replace('TRANSLATIONS',ascii({'en_US':['Method','WB temp.'],'zh_CN':['处理方式','白平衡色温']})).replace('TRANSLATION_KEYS',ascii(['处理方式','白平衡色温'])).replace('NATIVE_WORKER',json.dumps(native_worker,indent=1) if native_worker else 'None').replace('IMAGE_JOBS',repr(args.image_jobs)).replace('REQUIRE_LEVEL',repr(args.require_level)).replace('REQUIRE_IMPORT_IDENTITY',repr(args.require_import_identity))
     ast.parse(script)
     payload=("env LD_LIBRARY_PATH=/lib:/usr/lib:/usr/local/lib:/usr/local/lib/qt5 /usr/local/bin/python3.12 -I -B <<'DAOS_QA_PY'\n"+script+"\nDAOS_QA_PY\n").encode()
     if not payload.isascii():raise ValueError('Serial QA code must use ASCII Unicode escapes')
@@ -275,6 +316,7 @@ print('QA_FACTORY_JSON '+json.dumps(r,sort_keys=True),flush=True)
                 if 'native_demo_JPEGs' in answer:checks['native_demo_JPEG_decode']=len(answer['native_demo_JPEGs'])==3 and all(answer['native_demo_JPEGs'].values())
                 if args.image_jobs:checks['native_JPEG_render_jobs']=len(answer['native_JPEG_jobs'])==3 and all(result['passed'] for result in answer['native_JPEG_jobs'].values()) and answer['demo_SOURCES_json_unchanged']
                 if args.require_level:checks['level_UI_controller_states']=len(answer['level_controller_states'])==8 and all(answer['level_controller_states'].values())
+                if args.require_import_identity:checks['sibling_module_identity_and_unindexed_sidecar_fallback']=len(answer['import_identity_states'])==7 and all(answer['import_identity_states'].values())
             if native_worker:
                 checks.update(native_RAW_maker=answer['native_RAW_maker'],native_RAW_namespace=answer['native_RAW_namespace'],native_RAW_readonly_reader=answer['native_RAW_readonly_reader'])
             report.update(checks=checks,assertions=answer,passed=all(checks.values()))

@@ -35,7 +35,16 @@ def _companion(name):
     """Load sibling helpers even when a host imports this file by absolute path."""
     key = 'daos_ondevice_' + name
     if key not in sys.modules:
-        spec = importlib.util.spec_from_file_location(key, Path(__file__).with_name(name + '.py'))
+        path = Path(__file__).with_name(name + '.py')
+        existing = sys.modules.get(name)
+        try:
+            same_sibling = existing is not None and Path(existing.__file__).resolve() == path.resolve()
+        except (AttributeError, OSError, TypeError, ValueError):
+            same_sibling = False
+        if same_sibling:
+            sys.modules[key] = existing
+            return existing
+        spec = importlib.util.spec_from_file_location(key, path)
         module = importlib.util.module_from_spec(spec)
         sys.modules[key] = module
         sys.modules.setdefault(name, module)
