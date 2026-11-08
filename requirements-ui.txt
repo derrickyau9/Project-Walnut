@@ -1,3 +1,5 @@
 # Optional desktop Qt/QML simulation UI. Qt runtime and platform packaging
 # must be reviewed separately for a device image or distribution.
 -r ui/on-device/requirements.txt
+# Windows has no system IANA zoneinfo database; BSD/Unix use their system data.
+tzdata==2026.6; sys_platform == "win32"

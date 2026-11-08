@@ -15,12 +15,29 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Canonical Windows test temporary directory
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          @'
+          import os
+          from pathlib import Path
+          test_temp = Path(os.environ['RUNNER_TEMP']) / 'hf-test-temp'
+          test_temp.mkdir()
+          test_temp = test_temp.resolve(strict=True)
+          with open(os.environ['GITHUB_ENV'], 'a', encoding='utf-8') as environment:
+              environment.write(f'TEMP={test_temp}\nTMP={test_temp}\nTMPDIR={test_temp}\n')
+          print(f'Canonical test temporary directory: {test_temp}')
+          '@ | python -
       - run: python -m pip install -r requirements-test.txt
       - run: python -m pip install -r requirements-ui.txt
       - run: python -m tools.check_native_dependencies
       - name: Linux RTL simulator
         if: runner.os == 'Linux'
         run: sudo apt-get update && sudo apt-get install -y iverilog
+      - name: Linux appliance boot-logo fixture
+        if: runner.os == 'Linux'
+        run: sudo install -Dm644 assets/boot-logo/DaOS-logo.png /boot/images/DaOS-logo.png
       - name: Isolated Windows RTL simulator
         if: runner.os == 'Windows'
         run: python tools/fetch_iverilog.py --dest "$env:TEMP\hf-iverilog-runtime" --lock fpga/testbench/toolchain-manifest.json
