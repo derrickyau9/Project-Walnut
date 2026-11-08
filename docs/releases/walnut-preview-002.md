@@ -2,6 +2,10 @@
 
 **They made the leaf. We cracked the nut.**
 
+This published image is frozen. The compact transparent level at the bottom
+edge shown in later `main` screenshots requires a newer application build.
+已发布的本镜像保持不变；后续主分支截图中的底边透明水平仪需使用更新的应用构建。
+
 This private engineering image targets Raspberry Pi 4 ARM64 and the specified
 800×480 DSI development configuration. It derives from the validated first
 preview, preserves the stable kernel and early USB integration, and installs

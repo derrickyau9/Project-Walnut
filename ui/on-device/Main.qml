@@ -382,8 +382,10 @@ MonochromeWindow {
                 }
                 LevelOverlay {
                     controller:typeof levelControl !== "undefined" ? levelControl : null
-                    anchors.centerIn:parent
-                    width:Math.min(340,parent.width-24)
+                    anchors.horizontalCenter:parent.horizontalCenter
+                    anchors.bottom:parent.bottom
+                    anchors.bottomMargin:12
+                    width:Math.min(244,parent.width-24)
                 }
                 Button {
                     anchors.horizontalCenter: parent.horizontalCenter
