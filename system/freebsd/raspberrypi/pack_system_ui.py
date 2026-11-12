@@ -18,7 +18,7 @@ def main():
     header=args.native.read_bytes()[:64]
     if header[:6]!=b'\x7fELF\x02\x01' or struct.unpack_from('<H',header,18)[0]!=183:raise ValueError('AArch64 native splash required')
     if args.startup.stat().st_size!=800*480*3:raise ValueError('800x480 RGB asset required')
-    names=['main.py','CameraMenu.qml','Console.qml','Main.qml','shell_model.py','soft_keyboard.py','SoftKeyboard.qml','TerminalPage.qml','WifiPage.qml','terminal_surface.py','terminal_exec.py','system_settings.py','BootSplash.qml','boot_status.py']
+    names=['main.py','CameraMenu.qml','Console.qml','Main.qml','DeferredPage.qml','shell_model.py','soft_keyboard.py','SoftKeyboard.qml','TerminalPage.qml','WifiPage.qml','terminal_surface.py','terminal_exec.py','system_settings.py','BootSplash.qml','boot_status.py']
     sources={'opt/hasslefree/ui/on-device/'+n:ROOT/'ui/on-device'/n for n in names}
     vendor=ROOT/'ui/on-device/vendor'
     for file in vendor.rglob('*'):

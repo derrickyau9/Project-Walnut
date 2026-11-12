@@ -48,6 +48,7 @@
     "ui/on-device/controller.py": "bbdad1c2a631bf7df5868006a48c1cd0b9086c26ad619a0bdaab54ec91607d8a",
     "ui/on-device/DaOSDock.qml": "ed30845c1e37004dc9576f0ff879fbd993995679ba8cd5eecdc166fdb55037df",
     "ui/on-device/DaOSIcon.qml": "2ae2072ee69fad0088bd92c2ddd83c694001c58fa3c2b68f1d225fa9ac8b1f5b",
+    "ui/on-device/DeferredPage.qml": "860c269e2c80340c3df609373c4b741e375b6126b345f493ffb3ae0c394e391a",
     "ui/on-device/ImageTools.qml": "194fe3caec64ea3af918c82ecd19af4ee169d1ecc5e97fa46429182328100a5b",
     "ui/on-device/image_pipeline.py": "720ca528be4c2fe57370248840523801f111fdc300621923d25805e12f9b2492",
     "ui/on-device/image_processing.py": "5298d074483bba117bfa58ada71b355214a8d1e192c90f59b571841fa082a7a3",
@@ -57,7 +58,7 @@
     "ui/on-device/localization.py": "6ef1c5d4898864e2024985370ced65a439b7f95a924e8457e0dfd7b7183a2c94",
     "ui/on-device/LocalizedComboBox.qml": "fbbe9323f00653f06f64d878f26761f541a17f53f2616ac8a46b1b366b761eab",
     "ui/on-device/main.py": "5f4607055041120fbeca1f2b97b4221d50d45cfe0ea3ef699d77cda0d58d44b5",
-    "ui/on-device/Main.qml": "3d500390f1b8df156f5a90175185661ff995f3e6aafebca1aa57b46434aa298a",
+    "ui/on-device/Main.qml": "69cddbe1b3546691161f2ef73874ec5d4b63453af6f77637b7c57855f9cf9781",
     "ui/on-device/MediaButton.qml": "8fd4dbcb227d61769db8ec8eac92874a954c7436cd94e769df522a36f12a08ab",
     "ui/on-device/MediaGallery.qml": "09f5aeb4e1fb1b7cdf80c097d05961ac28f3f48e54f8405ad9a1253b7d1f7aa2",
     "ui/on-device/media_catalog.py": "5d768bfb1c99060ac336f1a3e0d9ed5f3821dae31d878a49bf299cc307033645",
@@ -117,63 +118,63 @@
     "sha256": "9d27055e982870d84a4bbefef860ac333868f3e4556dd6636bd932538dbf09c5"
   },
   "explicit_private_data_root": true,
-  "synthetic_data_parent": "F:\\Project-Walnut-QA\\compact-level-zh_CN",
+  "synthetic_data_parent": "F:\\Project-Walnut-QA\\fastboot-zh",
   "physical_camera_display_network_or_GPIO_validated": false,
   "control_qa": {
     "capture_actions": 3,
     "captures": [
       {
-        "request_id": "2a5c2278-8e27-4ed7-8da0-930b492a0d72",
+        "request_id": "b2dd9aaa-f7c2-474f-bf85-1730a050fed8",
         "status": "complete",
         "bytes": 25666,
-        "sha256": "a6fede502b6d966410a67465434ceea8f6945f815ac823efd140bfe2312d2f8b"
+        "sha256": "421510b4e829b93733fd840fbc6fa1628f6e67f1305ba60817dddf73a970d177"
       },
       {
-        "request_id": "e8f3cb70-7cf9-4a1f-b8d7-0c51046fad45",
+        "request_id": "7e9e5775-fe34-4457-a5c3-c3d055b69794",
         "status": "complete",
         "bytes": 25666,
-        "sha256": "f73342febb1f1a5f88f77081c928a7d5fce9963330cdb691ab6b845d304df69c"
+        "sha256": "efd8a6fa9cdce8fe0ca275f3018e61dce171c931d9b4f0f8b9841e20cf73e00e"
       },
       {
-        "request_id": "e6a7bbd1-dc66-463f-8893-13437a9d121f",
+        "request_id": "1ca51cbe-1183-4415-a779-33280a6d3e03",
         "status": "complete",
         "bytes": 25666,
-        "sha256": "a3d2bf472fb6f249af0b916b3de1cafe200cde06920f3fe5437e775ad28b45a7"
+        "sha256": "85e096517549ae7ae03509f818c811bb77f21c64dd78a584a2145fee7266b5cc"
       }
     ],
     "separate_session": true,
     "passed": true,
-    "library_id": "bc78c442-f293-b03d-0795-9241653b6bc2"
+    "library_id": "0f3c55e7-1b06-79d4-4c9b-86a76f2e0beb"
   },
   "display_capture_actions": 0,
   "display_photo_imports": [
     {
       "file": "coast.jpg",
-      "photo_uuid": "672843a5-2119-557f-b2f6-84c14719b97f",
+      "photo_uuid": "41e325b2-1358-5129-9974-5bd46fbc8c61",
       "sha256": "9d27055e982870d84a4bbefef860ac333868f3e4556dd6636bd932538dbf09c5",
       "bytes": 430707,
       "media_type": "image/jpeg",
-      "neutral_source_file": "F:\\Project-Walnut-QA\\compact-level-zh_CN\\tmp08uaru9v\\camera\\GalleryInputs\\coast.jpg",
+      "neutral_source_file": "F:\\Project-Walnut-QA\\fastboot-zh\\tmp7v8l0ume\\camera\\GalleryInputs\\coast.jpg",
       "neutral_source_sha256": "9d27055e982870d84a4bbefef860ac333868f3e4556dd6636bd932538dbf09c5",
       "method": "MediaWorkspace.importPaths / native copyImport"
     },
     {
       "file": "campus-trees.jpg",
-      "photo_uuid": "39c04471-21d2-5eed-a0b0-c3edd09ab3f9",
+      "photo_uuid": "ca9a35e4-90de-5992-815c-c3239c809249",
       "sha256": "e20f2e275db92a951c7bb2c33cd1355813d869af65303259d384591c861d1c6d",
       "bytes": 418108,
       "media_type": "image/jpeg",
-      "neutral_source_file": "F:\\Project-Walnut-QA\\compact-level-zh_CN\\tmp08uaru9v\\camera\\GalleryInputs\\campus-trees.jpg",
+      "neutral_source_file": "F:\\Project-Walnut-QA\\fastboot-zh\\tmp7v8l0ume\\camera\\GalleryInputs\\campus-trees.jpg",
       "neutral_source_sha256": "e20f2e275db92a951c7bb2c33cd1355813d869af65303259d384591c861d1c6d",
       "method": "MediaWorkspace.importPaths / native copyImport"
     },
     {
       "file": "campus-building.jpg",
-      "photo_uuid": "08ac6052-2c93-5702-93b6-ff6d184cc5d7",
+      "photo_uuid": "9157808e-8f23-565a-906a-31f6e7585dd8",
       "sha256": "0bf3283b52a0bc9ab5a4f64dbf1ff16eea844ef50bee695972561ea27064690c",
       "bytes": 404400,
       "media_type": "image/jpeg",
-      "neutral_source_file": "F:\\Project-Walnut-QA\\compact-level-zh_CN\\tmp08uaru9v\\camera\\GalleryInputs\\campus-building.jpg",
+      "neutral_source_file": "F:\\Project-Walnut-QA\\fastboot-zh\\tmp7v8l0ume\\camera\\GalleryInputs\\campus-building.jpg",
       "neutral_source_sha256": "0bf3283b52a0bc9ab5a4f64dbf1ff16eea844ef50bee695972561ea27064690c",
       "method": "MediaWorkspace.importPaths / native copyImport"
     }
@@ -205,7 +206,7 @@
         "增益 1.00×",
         "Q"
       ],
-      "elapsed_seconds": 5.063
+      "elapsed_seconds": 2.813
     },
     {
       "key": "01b-level-unavailable",
@@ -235,7 +236,7 @@
         "增益 1.00×",
         "Q"
       ],
-      "elapsed_seconds": 5.563
+      "elapsed_seconds": 3.25
     },
     {
       "key": "01c-level-demo-aligned",
@@ -267,7 +268,7 @@
         "增益 1.00×",
         "Q"
       ],
-      "elapsed_seconds": 6.047
+      "elapsed_seconds": 3.703
     },
     {
       "key": "01d-level-demo-tilted",
@@ -299,7 +300,7 @@
         "增益 1.00×",
         "Q"
       ],
-      "elapsed_seconds": 6.516
+      "elapsed_seconds": 4.141
     },
     {
       "key": "02-taskbar",
@@ -326,7 +327,7 @@
         "增益 1.00×",
         "Q"
       ],
-      "elapsed_seconds": 7.0
+      "elapsed_seconds": 4.578
     },
     {
       "key": "03-exposure-editor",
@@ -364,7 +365,7 @@
         "全部设置",
         "参数已由相机确认 · 增益尚未标定为 ISO"
       ],
-      "elapsed_seconds": 7.688
+      "elapsed_seconds": 5.235
     },
     {
       "key": "04-quick-photo",
@@ -376,7 +377,7 @@
         "12-custom-slots",
         "direct-parameter-control"
       ],
-      "sha256": "c2544865a5095c025ef9be5c27f7225c5496e594a673d84029a4ed870f2fd60d",
+      "sha256": "17f236514cf25afff6ead56f6c56d8dee84c84562ce3768583bb9f1cc4e6ffbc",
       "width": 960,
       "height": 600,
       "selected_photo_uuid": "",
@@ -420,10 +421,10 @@
         "12",
         "−",
         "快门 · 1/100",
-        "配置已导出：F:\\Project-Walnut-QA\\compact-level-zh_CN\\tmp08uaru9v\\camera\\workspace-example.json",
+        "配置已导出：F:\\Project-Walnut-QA\\fastboot-zh\\tmp7v8l0ume\\camera\\workspace-example.json",
         "+"
       ],
-      "elapsed_seconds": 8.359
+      "elapsed_seconds": 5.906
     },
     {
       "key": "05-quick-video",
@@ -479,7 +480,7 @@
         "视频 Q 仅为布局；当前后端不支持录制",
         "+"
       ],
-      "elapsed_seconds": 8.781
+      "elapsed_seconds": 6.281
     },
     {
       "key": "06-quick-assignment",
@@ -546,7 +547,7 @@
         "暂停或恢复当前取景画面。",
         "纯净取景"
       ],
-      "elapsed_seconds": 9.219
+      "elapsed_seconds": 6.641
     },
     {
       "key": "07-my-menu",
@@ -584,7 +585,7 @@
         "终端",
         "编辑收藏"
       ],
-      "elapsed_seconds": 9.875
+      "elapsed_seconds": 7.266
     },
     {
       "key": "08-custom-profiles",
@@ -630,7 +631,7 @@
         "Fn1 / F1",
         "构图网格"
       ],
-      "elapsed_seconds": 10.984
+      "elapsed_seconds": 8.36
     },
     {
       "key": "09-input-mappings",
@@ -674,7 +675,7 @@
         "按住 F1/F2 临时显示辅助线或面板，松开恢复。曝光修改仍由相机确认；松开不会逆改曝光。↑/↓ 调节拨轮参数。实体 GPIO 需接入适配器；输入文字时快捷键暂停。",
         "编辑我的菜单收藏"
       ],
-      "elapsed_seconds": 11.359
+      "elapsed_seconds": 8.719
     },
     {
       "key": "10-layout-import",
@@ -723,7 +724,7 @@
         "载入配置",
         "配置存入工作台，不会自动应用拍摄参数。"
       ],
-      "elapsed_seconds": 11.734
+      "elapsed_seconds": 9.078
     },
     {
       "key": "11-exposure-menu",
@@ -761,7 +762,7 @@
         "1.00x",
         "设置下一张照片的快门和增益，参数由相机确认后生效。"
       ],
-      "elapsed_seconds": 12.797
+      "elapsed_seconds": 10.094
     },
     {
       "key": "12-image-raw",
@@ -804,7 +805,7 @@
         "16-bit",
         "当前为合成 Bayer 图像，尚未连接真实传感器。全尺寸合成需要更多处理时间。"
       ],
-      "elapsed_seconds": 13.906
+      "elapsed_seconds": 11.125
     },
     {
       "key": "13-display",
@@ -844,7 +845,7 @@
         "100%",
         "取景显示亮度仅调整显示画面，不控制屏幕硬件背光，也不改变保存的 RAW 曝光。"
       ],
-      "elapsed_seconds": 14.984
+      "elapsed_seconds": 12.141
     },
     {
       "key": "14-storage",
@@ -856,7 +857,7 @@
         "saved-captures",
         "storage-limitations"
       ],
-      "sha256": "c9f8a5306074eabda09857c8cd52552ee3f465a8d15d9087ac9facc3b585955e",
+      "sha256": "1ebb3d28a2ce4a3b3cb84f9cc4aeea99be3f2ca62fe1644b3bc9d08fa40efec2",
       "width": 960,
       "height": 600,
       "selected_photo_uuid": "",
@@ -878,17 +879,17 @@
         "数据空间总量",
         "3726.02 GiB",
         "数据空间可用",
-        "479.42 GiB",
+        "479.36 GiB",
         "应用数据",
-        "F:\\Project-Walnut-QA\\compact-level-zh_CN\\tmp08uaru9v\\camera\\apps",
+        "F:\\Project-Walnut-QA\\fastboot-zh\\tmp7v8l0ume\\camera\\apps",
         "拍摄配方数量",
         "2",
         "导出文件夹",
-        "F:\\Project-Walnut-QA\\compact-level-zh_CN\\tmp08uaru9v\\camera\\apps\\exports",
+        "F:\\Project-Walnut-QA\\fastboot-zh\\tmp7v8l0ume\\camera\\apps\\exports",
         "存储验证",
         "仅确认容量，尚未验证介质速度与断电保存能力"
       ],
-      "elapsed_seconds": 16.063
+      "elapsed_seconds": 13.172
     },
     {
       "key": "15-wifi",
@@ -930,7 +931,7 @@
         "连接",
         "已保存网络会在启动时重连。当前 Pi4 构建仅启用 5 GHz，未启用 2.4 GHz。"
       ],
-      "elapsed_seconds": 17.156
+      "elapsed_seconds": 14.203
     },
     {
       "key": "16-system",
@@ -944,7 +945,7 @@
         "clock",
         "safe-power-actions"
       ],
-      "sha256": "08e0de53208ae3700fba5ddc95ede8fb381a2e41696f67dc32b07a0e487c680c",
+      "sha256": "93cf15e753024682daa6b5d8f1111d2c0256cd4882b7bca8b0641fd44b4d02b0",
       "width": 960,
       "height": 600,
       "selected_photo_uuid": "",
@@ -969,7 +970,7 @@
         "应用更新",
         "开发",
         "联机",
-        "2026-11-08 12:53:29",
+        "2026-11-12 12:54:23",
         "语言",
         "简体中文",
         "时区",
@@ -982,7 +983,7 @@
         "5 分钟",
         "系统偏好已保存"
       ],
-      "elapsed_seconds": 18.266
+      "elapsed_seconds": 15.266
     },
     {
       "key": "17-backup",
@@ -1027,7 +1028,7 @@
         "选择备份后先检查，再确认恢复。",
         "系统偏好已保存"
       ],
-      "elapsed_seconds": 18.641
+      "elapsed_seconds": 15.625
     },
     {
       "key": "18-updates",
@@ -1073,7 +1074,7 @@
         "请使用本次交付的安装包与校验摘要。",
         "系统偏好已保存"
       ],
-      "elapsed_seconds": 19.016
+      "elapsed_seconds": 15.985
     },
     {
       "key": "19-developer",
@@ -1114,7 +1115,7 @@
         "日常联机使用受控相机接口。开发模式保留已授权 USB 主机的终端与诊断能力。\n诊断导出会排除无线密码、私钥和会话令牌。",
         "系统偏好已保存"
       ],
-      "elapsed_seconds": 19.391
+      "elapsed_seconds": 16.344
     },
     {
       "key": "20-link",
@@ -1161,7 +1162,7 @@
         "当前控制：本机",
         "系统偏好已保存"
       ],
-      "elapsed_seconds": 19.766
+      "elapsed_seconds": 16.703
     },
     {
       "key": "21-terminal",
@@ -1192,7 +1193,7 @@
         "PgDn",
         "The device terminal requires a POSIX system."
       ],
-      "elapsed_seconds": 21.406
+      "elapsed_seconds": 18.235
     },
     {
       "key": "22-touch-keyboard",
@@ -1271,7 +1272,7 @@
         "。",
         "Enter"
       ],
-      "elapsed_seconds": 22.797
+      "elapsed_seconds": 19.594
     },
     {
       "key": "23-capabilities",
@@ -1313,7 +1314,7 @@
         "不可用\n传感器增益尚未完成 ISO 标定",
         "不可用\n未接入电子光圈控制"
       ],
-      "elapsed_seconds": 23.875
+      "elapsed_seconds": 20.625
     },
     {
       "key": "24-diagnostics",
@@ -1353,7 +1354,7 @@
         "此处显示界面请求参数。实际逐帧参数及完成证据随已保存拍摄保留。",
         "导出本地诊断"
       ],
-      "elapsed_seconds": 24.938
+      "elapsed_seconds": 21.766
     },
     {
       "key": "25-recipes",
@@ -1391,7 +1392,7 @@
         "选择计划并执行，结果将在这里逐张显示。",
         "暂停在两次拍摄之间生效。继续会核实原始 UUID，不会自动重复不明结果的曝光。"
       ],
-      "elapsed_seconds": 26.0
+      "elapsed_seconds": 22.813
     },
     {
       "key": "26-bracketing",
@@ -1437,7 +1438,7 @@
         "三张包围：当前曝光的一半 / 当前 / 两倍（−1、0、+1 EV，受支持范围限制）。同时保存当前增益和模式。",
         "保存计划"
       ],
-      "elapsed_seconds": 26.422
+      "elapsed_seconds": 23.172
     },
     {
       "key": "27-interval",
@@ -1489,7 +1490,7 @@
         "重复当前曝光。间隔是上一张保存完成后的最短等待时间，不是硬件精确定时。",
         "保存计划"
       ],
-      "elapsed_seconds": 26.828
+      "elapsed_seconds": 23.531
     },
     {
       "key": "28-photo-looks",
@@ -1517,7 +1518,7 @@
         "柔和",
         "请先在照片中选择一张已保存图像。"
       ],
-      "elapsed_seconds": 27.203
+      "elapsed_seconds": 23.891
     },
     {
       "key": "29-tasks",
@@ -1559,7 +1560,7 @@
         "取消",
         "3 / 3 项 · 100%"
       ],
-      "elapsed_seconds": 28.281
+      "elapsed_seconds": 24.938
     },
     {
       "key": "30-image-tools",
@@ -1603,7 +1604,7 @@
         "0.00",
         "创建派生影像"
       ],
-      "elapsed_seconds": 29.406
+      "elapsed_seconds": 25.985
     },
     {
       "key": "31-processing-operations",
@@ -1663,7 +1664,7 @@
         "暗场 / 平场校正",
         "负片反转"
       ],
-      "elapsed_seconds": 29.828
+      "elapsed_seconds": 26.36
     },
     {
       "key": "32-photo-library",
@@ -1677,7 +1678,7 @@
         "pagination",
         "import"
       ],
-      "sha256": "eded6491d7bf455d7437e072f5479a6c7c1d132d08611a5645ceb028f17853dc",
+      "sha256": "984b0072094090fe0e2ebaacf37a19845d1080b12a9de1363d4b61a832340397",
       "width": 960,
       "height": 600,
       "selected_photo_uuid": "",
@@ -1706,7 +1707,7 @@
         "已评分",
         "已保护",
         "最新在前",
-        "11-08 12:53:15 · 导入",
+        "11-12 12:54:10 · 导入",
         "2285×1279",
         "1707×1279",
         "2284×1279",
@@ -1716,7 +1717,7 @@
         "下一页",
         "资料库已同步 · 3 张"
       ],
-      "elapsed_seconds": 31.547
+      "elapsed_seconds": 28.047
     },
     {
       "key": "33-multi-select",
@@ -1728,7 +1729,7 @@
         "batch-actions",
         "selected-count"
       ],
-      "sha256": "779ae7500a85366de878e0669ecc9a8b78e8343ea6ab8669a5e38cc73463884f",
+      "sha256": "3ff420ddd6c56a04b492d81e3abc299d81f25fed151054518991a9a0ea80421b",
       "width": 960,
       "height": 600,
       "selected_photo_uuid": "",
@@ -1758,10 +1759,10 @@
         "已保护",
         "最新在前",
         "✓",
-        "11-08 12:53:15 · 导入",
+        "11-12 12:54:10 · 导入",
         "2285×1279",
-        "正在读取",
         "1707×1279",
+        "正在读取",
         "2284×1279",
         "已选 3",
         "全选",
@@ -1769,7 +1770,7 @@
         "下一页",
         "资料库已同步 · 3 张"
       ],
-      "elapsed_seconds": 31.984
+      "elapsed_seconds": 28.438
     },
     {
       "key": "34-viewer",
@@ -1784,7 +1785,7 @@
       "sha256": "08ec18f7b2ac60b060ea9cb30106448e32cedc1244cd4d4f76d0e82764b4ee36",
       "width": 960,
       "height": 600,
-      "selected_photo_uuid": "08ac6052-2c93-5702-93b6-ff6d184cc5d7",
+      "selected_photo_uuid": "9157808e-8f23-565a-906a-31f6e7585dd8",
       "selected_photo_media_type": "image/jpeg",
       "visible_text": [
         "返回",
@@ -1813,7 +1814,7 @@
         "图像工具",
         "资料库已同步 · 3 张"
       ],
-      "elapsed_seconds": 33.219
+      "elapsed_seconds": 29.485
     },
     {
       "key": "35-compare-zoom",
@@ -1828,7 +1829,7 @@
       "sha256": "3150e5d22b303064ae3ca0a1cbf3a0f8035d43561c37c594658fbdfe49b5c0f4",
       "width": 960,
       "height": 600,
-      "selected_photo_uuid": "08ac6052-2c93-5702-93b6-ff6d184cc5d7",
+      "selected_photo_uuid": "9157808e-8f23-565a-906a-31f6e7585dd8",
       "selected_photo_media_type": "image/jpeg",
       "visible_text": [
         "返回",
@@ -1857,7 +1858,7 @@
         "图像工具",
         "资料库已同步 · 3 张"
       ],
-      "elapsed_seconds": 35.031
+      "elapsed_seconds": 31.063
     },
     {
       "key": "36-tone-crop",
@@ -1875,7 +1876,7 @@
       "sha256": "c1c5996fc5b3e52ab0feef9d56693de27f96c735c53a9d9ab28abe8b27ad005f",
       "width": 960,
       "height": 600,
-      "selected_photo_uuid": "672843a5-2119-557f-b2f6-84c14719b97f",
+      "selected_photo_uuid": "41e325b2-1358-5129-9974-5bd46fbc8c61",
       "selected_photo_media_type": "image/jpeg",
       "visible_text": [
         "返回",
@@ -1917,7 +1918,7 @@
         "重做",
         "历史"
       ],
-      "elapsed_seconds": 37.438
+      "elapsed_seconds": 33.141
     },
     {
       "key": "36b-rotation-crop",
@@ -1933,7 +1934,7 @@
       "sha256": "f21ad63101b1eaa9e2a2fbaeb21c0e0f6e1a8256c27a06dff2227f5edf9b37a8",
       "width": 960,
       "height": 600,
-      "selected_photo_uuid": "672843a5-2119-557f-b2f6-84c14719b97f",
+      "selected_photo_uuid": "41e325b2-1358-5129-9974-5bd46fbc8c61",
       "selected_photo_media_type": "image/jpeg",
       "visible_text": [
         "返回",
@@ -1978,7 +1979,7 @@
         "重做",
         "历史"
       ],
-      "elapsed_seconds": 37.859
+      "elapsed_seconds": 33.547
     },
     {
       "key": "37-white-balance",
@@ -1993,7 +1994,7 @@
       "sha256": "3e82eaf93d0e544b61bff746d9c335d0ed8dead25d4dd0d04112464cf9f05d6e",
       "width": 960,
       "height": 600,
-      "selected_photo_uuid": "672843a5-2119-557f-b2f6-84c14719b97f",
+      "selected_photo_uuid": "41e325b2-1358-5129-9974-5bd46fbc8c61",
       "selected_photo_media_type": "image/jpeg",
       "visible_text": [
         "返回",
@@ -2036,7 +2037,7 @@
         "重做",
         "历史"
       ],
-      "elapsed_seconds": 38.297
+      "elapsed_seconds": 33.953
     },
     {
       "key": "38-tone-curve",
@@ -2050,7 +2051,7 @@
       "sha256": "f36e63838ab840ab48531590fc2c5da06eb3a1c1c6cbd205e07fb060a8813d21",
       "width": 960,
       "height": 600,
-      "selected_photo_uuid": "672843a5-2119-557f-b2f6-84c14719b97f",
+      "selected_photo_uuid": "41e325b2-1358-5129-9974-5bd46fbc8c61",
       "selected_photo_media_type": "image/jpeg",
       "visible_text": [
         "返回",
@@ -2092,7 +2093,7 @@
         "重做",
         "历史"
       ],
-      "elapsed_seconds": 38.719
+      "elapsed_seconds": 34.36
     },
     {
       "key": "39-custom-styles",
@@ -2107,7 +2108,7 @@
       "sha256": "f46a9f998b4ffcf777697ee4e7411acca8ed8f2f2b61dbdff12d99ca49b37684",
       "width": 960,
       "height": 600,
-      "selected_photo_uuid": "672843a5-2119-557f-b2f6-84c14719b97f",
+      "selected_photo_uuid": "41e325b2-1358-5129-9974-5bd46fbc8c61",
       "selected_photo_media_type": "image/jpeg",
       "visible_text": [
         "返回",
@@ -2152,7 +2153,7 @@
         "重做",
         "历史"
       ],
-      "elapsed_seconds": 39.125
+      "elapsed_seconds": 34.75
     },
     {
       "key": "40-edit-history",
@@ -2164,10 +2165,10 @@
         "revision-selection",
         "restore-edit-version"
       ],
-      "sha256": "044a111aa4300dcedb18d452312a697f1e1229b7216b863d6f564e7b67cef88d",
+      "sha256": "35046fce7c4008f464bef5ea993e11b85045e078c58aaa653a4e0fff40f6735d",
       "width": 960,
       "height": 600,
-      "selected_photo_uuid": "672843a5-2119-557f-b2f6-84c14719b97f",
+      "selected_photo_uuid": "41e325b2-1358-5129-9974-5bd46fbc8c61",
       "selected_photo_media_type": "image/jpeg",
       "visible_text": [
         "返回",
@@ -2197,12 +2198,12 @@
         "资料库已同步 · 3 张",
         "不可变编辑历史",
         "关闭",
-        "版本 1 · Sunday, November 8, 2026 12:53:48 PM",
-        "版本 0 · Sunday, November 8, 2026 12:53:15 PM",
+        "版本 1 · Thursday, November 12, 2026 12:54:40 PM",
+        "版本 0 · Thursday, November 12, 2026 12:54:10 PM",
         "最新历史",
         "更早的 100 条"
       ],
-      "elapsed_seconds": 39.5
+      "elapsed_seconds": 35.11
     },
     {
       "key": "41-export",
@@ -2218,7 +2219,7 @@
       "sha256": "835e98732d4ad1e1d7c309c52756be0704dc8403e5b11b26511cdd435d24d4ec",
       "width": 960,
       "height": 600,
-      "selected_photo_uuid": "672843a5-2119-557f-b2f6-84c14719b97f",
+      "selected_photo_uuid": "41e325b2-1358-5129-9974-5bd46fbc8c61",
       "selected_photo_media_type": "image/jpeg",
       "visible_text": [
         "返回",
@@ -2256,7 +2257,7 @@
         "浏览",
         "创建后台导出任务"
       ],
-      "elapsed_seconds": 39.891
+      "elapsed_seconds": 35.485
     },
     {
       "key": "42-import",
@@ -2268,10 +2269,10 @@
         "copy-import",
         "destination-browser"
       ],
-      "sha256": "6d4968070a98db5d30599680c9386c843d3b303cb2b562b3c06bcf6e1d95f645",
+      "sha256": "7825226a67e04be25fd22467a22aafc7adcecfb775d163f7560b0ff563931f2e",
       "width": 960,
       "height": 600,
-      "selected_photo_uuid": "672843a5-2119-557f-b2f6-84c14719b97f",
+      "selected_photo_uuid": "41e325b2-1358-5129-9974-5bd46fbc8c61",
       "selected_photo_media_type": "image/jpeg",
       "visible_text": [
         "返回",
@@ -2300,14 +2301,14 @@
         "图像工具",
         "资料库已同步 · 3 张",
         "上一级",
-        "F:\\Project-Walnut-QA\\compact-level-zh_CN\\tmp08uaru9v\\camera\\GalleryInputs",
+        "F:\\Project-Walnut-QA\\fastboot-zh\\tmp7v8l0ume\\camera\\GalleryInputs",
         "关闭",
         "文件  campus-building.jpg",
         "文件  campus-trees.jpg",
         "支持 DNG/JPEG/PNG/TIFF，复制到资料库；源文件保留。已选 0 个文件。",
         "复制导入选择"
       ],
-      "elapsed_seconds": 40.578
+      "elapsed_seconds": 36.156
     },
     {
       "key": "43-library-actions",
@@ -2324,7 +2325,7 @@
       "sha256": "aab083afb59992c01a6e4f3733ab653b6c6793115b65bd91aa2a029d57f51a22",
       "width": 960,
       "height": 600,
-      "selected_photo_uuid": "672843a5-2119-557f-b2f6-84c14719b97f",
+      "selected_photo_uuid": "41e325b2-1358-5129-9974-5bd46fbc8c61",
       "selected_photo_media_type": "image/jpeg",
       "visible_text": [
         "返回",
@@ -2366,7 +2367,7 @@
         "搜索",
         "筛选、全选与批量操作覆盖整个已索引资料库。导出固定当前版本；源 RAW 和拍摄请求历史保留。多图计算最多选择 16 张。"
       ],
-      "elapsed_seconds": 40.953
+      "elapsed_seconds": 36.516
     },
     {
       "key": "44-rating",
@@ -2380,7 +2381,7 @@
       "sha256": "4422875ab1b0f8b66b4dd23bd515130647fbff0411a4a1654a82b41bf2ec6562",
       "width": 960,
       "height": 600,
-      "selected_photo_uuid": "672843a5-2119-557f-b2f6-84c14719b97f",
+      "selected_photo_uuid": "41e325b2-1358-5129-9974-5bd46fbc8c61",
       "selected_photo_media_type": "image/jpeg",
       "visible_text": [
         "返回",
@@ -2416,7 +2417,7 @@
         "4★",
         "5★"
       ],
-      "elapsed_seconds": 41.578
+      "elapsed_seconds": 37.016
     },
     {
       "key": "45-photo-info",
@@ -2428,10 +2429,10 @@
         "metadata",
         "editing-provenance"
       ],
-      "sha256": "96995fbdcaed5860513f275125bb28d6dc4d83229c4a51994c5f01c1e3bd198f",
+      "sha256": "d6b763d9a262c0b6a0351f63957c2ab3cdb7810560cab17a7850415a4cac316b",
       "width": 960,
       "height": 600,
-      "selected_photo_uuid": "672843a5-2119-557f-b2f6-84c14719b97f",
+      "selected_photo_uuid": "41e325b2-1358-5129-9974-5bd46fbc8c61",
       "selected_photo_media_type": "image/jpeg",
       "visible_text": [
         "返回",
@@ -2461,9 +2462,9 @@
         "资料库已同步 · 3 张",
         "资产与拍摄档案",
         "关闭",
-        "{\n  \"byte_count\": 430707,\n  \"change_seq\": 3,\n  \"display_height\": 1279,\n  \"display_width\": 2285,\n  \"extension\": \".jpg\",\n  \"filename\": \"coast.jpg\",\n  \"height\": 1279,\n  \"library_id\": \"63c14bc0-f8a1-23ea-52b7-419f729b6d5c\",\n  \"media_type\": \"image/jpeg\",\n  \"orientation\": 0,\n  \"origin_kind\": \"import\",\n  \"original_request_uuid\": \"672843a5-2119-557f-b2f6-84c14719b97f\",\n  \"photo_uuid\": \"672843a5-2119-557f-b2f6-84c14719b97f\",\n  \"protected\": false,\n  \"sha256\": \"9d27055e982870d84a4bbefef860ac333868f3e4556dd6636bd932538dbf09c5\",\n  \"simulated\": false,\n  \"state\": \"active\",\n  \"structure\": {},\n  \"timestamp\": 1794171195.5779686,\n  \"trashed\": false,\n  \"width\": 2285,\n  \"request_id\": \"672843a5-2119-557f-b2f6-84c14719b97f\",\n  \"rating\": 4,\n  \"metadata_revision\": 2,\n  \"edit_revision\": 1,\n  \"edits\": {\n    \"contrast\": 1.0,\n    \"crop\": null,\n    \"exposure\": 0.3,\n    \"rotation\": 0,\n    \"saturation\": 1.0\n  },\n  \"fingerprint\": \"9d27055e982870d84a4bbefef860ac333868f3e4556dd6636bd932538dbf09c5\"\n}"
+        "{\n  \"byte_count\": 430707,\n  \"change_seq\": 3,\n  \"display_height\": 1279,\n  \"display_width\": 2285,\n  \"extension\": \".jpg\",\n  \"filename\": \"coast.jpg\",\n  \"height\": 1279,\n  \"library_id\": \"2eed54d3-ad86-ac29-0538-6652a8c39d70\",\n  \"media_type\": \"image/jpeg\",\n  \"orientation\": 0,\n  \"origin_kind\": \"import\",\n  \"original_request_uuid\": \"41e325b2-1358-5129-9974-5bd46fbc8c61\",\n  \"photo_uuid\": \"41e325b2-1358-5129-9974-5bd46fbc8c61\",\n  \"protected\": false,\n  \"sha256\": \"9d27055e982870d84a4bbefef860ac333868f3e4556dd6636bd932538dbf09c5\",\n  \"simulated\": false,\n  \"state\": \"active\",\n  \"structure\": {},\n  \"timestamp\": 1794516850.2982473,\n  \"trashed\": false,\n  \"width\": 2285,\n  \"request_id\": \"41e325b2-1358-5129-9974-5bd46fbc8c61\",\n  \"rating\": 4,\n  \"metadata_revision\": 2,\n  \"edit_revision\": 1,\n  \"edits\": {\n    \"contrast\": 1.0,\n    \"crop\": null,\n    \"exposure\": 0.3,\n    \"rotation\": 0,\n    \"saturation\": 1.0\n  },\n  \"fingerprint\": \"9d27055e982870d84a4bbefef860ac333868f3e4556dd6636bd932538dbf09c5\"\n}"
       ],
-      "elapsed_seconds": 41.953
+      "elapsed_seconds": 37.375
     },
     {
       "key": "46-trash-confirmation",
@@ -2477,7 +2478,7 @@
       "sha256": "fd81ae1f5806f377c1ff2bd9e1d29bd341046a2c2d9456e54a01a53467539616",
       "width": 960,
       "height": 600,
-      "selected_photo_uuid": "672843a5-2119-557f-b2f6-84c14719b97f",
+      "selected_photo_uuid": "41e325b2-1358-5129-9974-5bd46fbc8c61",
       "selected_photo_media_type": "image/jpeg",
       "visible_text": [
         "返回",
@@ -2510,7 +2511,7 @@
         "保留文件",
         "确认永久清空"
       ],
-      "elapsed_seconds": 42.359
+      "elapsed_seconds": 37.735
     }
   ],
   "actions": [],
@@ -2546,12 +2547,12 @@
     "Level DEMO angles are explicit display-test inputs, not IMU measurements",
     "Views demonstrate controls; screenshots are not proof every operation was executed"
   ],
-  "display_session_directory": "F:\\Project-Walnut-QA\\compact-level-zh_CN\\tmp08uaru9v\\camera",
-  "display_library_id": "63c14bc0-f8a1-23ea-52b7-419f729b6d5c",
+  "display_session_directory": "F:\\Project-Walnut-QA\\fastboot-zh\\tmp7v8l0ume\\camera",
+  "display_library_id": "2eed54d3-ad86-ac29-0538-6652a8c39d70",
   "display_original_JPEG_bytes_unchanged": true,
   "qml_warnings": [
     "file:///F:/Project HasselFree/ui/on-device/WifiPage.qml:24:5: QML Flickable: Binding loop detected for property \"contentHeight\""
   ],
-  "elapsed_seconds": 42.375,
+  "elapsed_seconds": 37.75,
   "source_changed_during_capture": []
 }

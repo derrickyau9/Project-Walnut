@@ -14,15 +14,20 @@ import secrets
 import signal
 import stat
 import subprocess
+import threading
 import time
 
 RUNTIME = Path('/var/run/DaOS-camera')
 stopping = False
+started_at = time.monotonic()
+event_lock = threading.Lock()
 
 
 def event(name, **fields):
-    line = 'DaOS_GUI_EVENT ' + json.dumps({'event': name, **fields}, sort_keys=True)
-    print(line, flush=True)
+    line = 'DaOS_GUI_EVENT ' + json.dumps({'event': name,
+        'elapsed_ms': round((time.monotonic()-started_at)*1000, 3), **fields}, sort_keys=True)
+    with event_lock:
+        print(line, flush=True)
     # Persistent daemon log only: console writes would overwrite the splash.
 
 
@@ -54,20 +59,60 @@ def terminate(process, grace):
         return True
 
 
+class IdentityAudit:
+    """Informational whole-kernel hashing runs after UI readiness, not before X.
+
+    Account, mounts, runtime ownership, X authority and native handoff remain
+    synchronous admission checks. Never publish a partial or cached digest.
+    """
+    def __init__(self, identity, paths=None):
+        self.identity = identity
+        self.paths = paths or {'kernel_sha256':'/boot/kernel/kernel', 'shell_sha256':'/bin/sh'}
+        self.cancelled = threading.Event()
+        self.thread = None
+
+    def start(self):
+        if self.thread is not None:
+            return
+        self.thread = threading.Thread(target=self._run, name='DaOS-identity-audit', daemon=True)
+        self.thread.start()
+
+    def _run(self):
+        try:
+            values = {}
+            for key, path in self.paths.items():
+                value = hashlib.sha256()
+                with open(path, 'rb') as stream:
+                    while True:
+                        if self.cancelled.is_set():
+                            raise InterruptedError('session stopped before audit completed')
+                        block = stream.read(1024*1024)
+                        if not block:
+                            break
+                        value.update(block)
+                values[key] = value.hexdigest()
+            if not self.cancelled.is_set():
+                event('base-identity', **self.identity, **values)
+        except (OSError, ValueError) as error:
+            event('base-identity-incomplete', error_type=type(error).__name__)
+
+    def close(self):
+        self.cancelled.set()
+        if self.thread is not None:
+            self.thread.join(timeout=1)
+
+
 def main():
     if platform.system() != 'FreeBSD' or os.geteuid() != 0:
         raise RuntimeError('root session supervision requires native FreeBSD')
     camera = pwd.getpwnam('camera')
     if camera.pw_uid != 1000 or camera.pw_gid != 1000:
         raise RuntimeError('unexpected camera account identity')
-    def file_hash(name):
-        value=hashlib.sha256()
-        with open(name,'rb') as stream:
-            for block in iter(lambda:stream.read(65536),b''):value.update(block)
-        return value.hexdigest()
-    event('base-identity', system=platform.system(), architecture=platform.machine(),
+    identity = dict(system=platform.system(), architecture=platform.machine(),
           release=platform.release(), kernel_ident=subprocess.check_output(['/sbin/sysctl','-n','kern.ident'],text=True,timeout=5).strip(),
-          kernel_sha256=file_hash('/boot/kernel/kernel'), shell_sha256=file_hash('/bin/sh'))
+          )
+    audit = IdentityAudit(identity)
+    event('session-identity', **identity, full_digest='pending-ui-ready')
     mounts = subprocess.check_output(['/sbin/mount', '-p'], text=True, timeout=5)
     mounted = {line.split()[1] for line in mounts.splitlines() if len(line.split()) >= 3}
     if not {'/var', '/var/DaOS/calibration', '/var/DaOS/camera/photos'}.issubset(mounted):
@@ -147,6 +192,7 @@ def main():
                 ready_recorded = True
                 boot_phase(100)
                 event('ui-ready', pid=application.pid)
+                audit.start()
             time.sleep(.2)
         if not stopping and server.poll() is not None:
             raise RuntimeError('Xorg exited while the camera application was running')
@@ -155,6 +201,7 @@ def main():
     finally:
         forced = terminate(application, 15)
         terminate(server, 5)
+        audit.close()
         if authority.is_file() and not authority.is_symlink(): authority.unlink()
         event('session-stopped', forced_application_stop=forced,
               application_returncode=application.returncode if application else None,

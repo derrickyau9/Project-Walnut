@@ -21,11 +21,13 @@ MonochromeWindow {
         z:20000
         visible:typeof bootStatus !== "undefined" && !bootStatus.ready
     }
-    SoftKeyboard {
+    DeferredPage {
+        objectName: "keyboardLoader"
         parent: Overlay.overlay
-        anchors.left: parent.left
-        anchors.right: parent.right
-        anchors.bottom: parent.bottom
+        anchors.left: parent.left; anchors.right: parent.right; anchors.bottom: parent.bottom
+        height: 252; z: 10000
+        shown: typeof softKeyboard !== "undefined" && softKeyboard.isOpen
+        pageSource: "SoftKeyboard.qml"
     }
     Rectangle {
         parent:Overlay.overlay
@@ -51,6 +53,9 @@ MonochromeWindow {
     }
     readonly property bool screenAsleep:typeof systemControl !== "undefined" && systemControl.screenAsleep
     readonly property var menuTheme: cameraShell.theme === "dark" ? retailTheme.dark : retailTheme.light
+    readonly property var menu: menuLoader.item
+    readonly property var playbackScene: playbackLoader.item
+    readonly property var workspacePanel: workspacePanelLoader.item
     readonly property var workspace: typeof shootingWorkspace !== "undefined" ? shootingWorkspace : null
     readonly property bool textInputFocused: typeof softKeyboard !== "undefined" && softKeyboard.editing
     readonly property bool shootingShortcuts: currentScreen === "capture" && !screenAsleep && !camera.settingsView.maintenanceReason && !textInputFocused && !quickControls.visible && !workspaceDialog.visible && !acknowledgeDialog.visible
@@ -63,7 +68,7 @@ MonochromeWindow {
     readonly property bool capturing: ["submitting", "accepted", "capturing"].indexOf(camera.captureState) >= 0
     readonly property bool uncertain: camera.captureState === "unknown" || camera.connectionState === "unknown"
     readonly property bool settingsReady: camera.settingsView.canEdit
-    readonly property bool quickInputActive: workspaceDialog.visible && workspacePanel.page === "quick" && !textInputFocused && !screenAsleep && !camera.settingsView.maintenanceReason
+    readonly property bool quickInputActive: workspaceDialog.visible && workspacePanel && workspacePanel.page === "quick" && !textInputFocused && !screenAsleep && !camera.settingsView.maintenanceReason
     readonly property var speeds: camera.exposureSteps
     property string quickField: "exposure"
     property string toastRequest: ""
@@ -104,7 +109,7 @@ MonochromeWindow {
     }
     function openWorkspace(page) {
         quickControls.close()
-        workspacePanel.page=page
+        workspacePanelLoader.ensure().page=page
         workspaceDialog.open()
     }
     function runAction(action) {
@@ -151,9 +156,9 @@ MonochromeWindow {
     }
     function returnFromHardware() {
         if(screenAsleep && typeof systemControl !== "undefined")systemControl.wake()
-        workspacePanel.closeOverlays()
-        menu.closeOverlays()
-        playbackScene.closeOverlay()
+        if(workspacePanel) workspacePanel.closeOverlays()
+        if(menu) menu.closeOverlays()
+        if(playbackScene) playbackScene.closeOverlay()
         quickControls.exit.enabled=false
         workspaceDialog.exit.enabled=false
         quickControls.opacity=0
@@ -169,8 +174,8 @@ MonochromeWindow {
         if(textInputFocused) {softKeyboard.done();return}
         if(quickControls.visible) {quickControls.close();return}
         if(workspaceDialog.visible) {if(!workspacePanel.closeOverlays()) workspaceDialog.close();return}
-        if(currentScreen === "menu" && menu.closeOverlays()) return
-        if(currentScreen === "playback" && playbackScene.closeOverlay()) return
+        if(currentScreen === "menu" && menu && menu.closeOverlays()) return
+        if(currentScreen === "playback" && playbackScene && playbackScene.closeOverlay()) return
         if(currentScreen === "tool") cameraShell.back()
         else if(currentScreen !== "capture") returnToCamera()
     }
@@ -250,7 +255,7 @@ MonochromeWindow {
         target:typeof systemControl !== "undefined" ? systemControl : null
         function onChanged() {
             if(body.workspace) body.workspace.setDeveloperMode(systemControl.preferences.developer_mode)
-            if(!systemControl.preferences.developer_mode && cameraShell.currentGroup === "terminal") menu.chooseCategory("system_control")
+            if(!systemControl.preferences.developer_mode && cameraShell.currentGroup === "terminal") menuLoader.ensure().chooseCategory("system_control")
             if(body.screenAsleep && camera.previewActive) camera.togglePreview()
             else if(!body.samplePreviewActive && !body.screenAsleep && body.currentScreen === "capture" && body.liveViewDesired && camera.canCapture && !camera.previewActive) camera.togglePreview()
         }
@@ -525,41 +530,42 @@ MonochromeWindow {
             }
         }
 
-        CameraMenu {
-            id: menu
-            objectName: "cameraMenu"
-            anchors.fill:parent
-            visible:body.currentScreen === "menu"
-            shell:cameraShell
-            cameraController:camera
-            apps:cameraApps
-            theme:body.menuTheme
-            workspace:body.workspace
-            onWorkspaceRequested:body.openWorkspace(page)
-            onCloseRequested:body.returnToCamera()
-            onQuickRequested:body.openQuick(field)
-            onToolRequested:cameraShell.navigate(app)
-            onPlaybackRequested:cameraShell.navigate("photos")
+        DeferredPage {
+            id: menuLoader
+            objectName: "menuLoader"
+            anchors.fill: parent
+            shown: body.currentScreen === "menu"
+            pageSource: "CameraMenu.qml"
+            initialProperties: ({objectName:"cameraMenu", shell:cameraShell,
+                cameraController:camera, apps:cameraApps,
+                theme:Qt.binding(function(){return body.menuTheme}), workspace:body.workspace})
         }
-        CameraPlayback {
-            id: playbackScene
-            objectName:"cameraPlayback"
-            anchors.fill:parent
-            visible:body.currentScreen === "playback"
-            cameraController:camera
-            apps:cameraApps
-            theme:body.menuTheme
-            onCloseRequested:cameraShell.back()
+        Connections {
+            target: menuLoader.item
+            function onWorkspaceRequested(page) {body.openWorkspace(page)}
+            function onCloseRequested() {body.returnToCamera()}
+            function onQuickRequested(field) {body.openQuick(field)}
+            function onToolRequested(app) {cameraShell.navigate(app)}
+            function onPlaybackRequested() {cameraShell.navigate("photos")}
         }
-        AppsWorkspace {
-            objectName:"cameraToolsWorkspace"
-            anchors.fill:parent
-            anchors.margins:12
-            visible:body.currentScreen === "tool"
-            shell:cameraShell
-            cameraController:camera
-            apps:cameraApps
-            theme:body.menuTheme
+        DeferredPage {
+            id: playbackLoader
+            objectName: "playbackLoader"
+            anchors.fill: parent
+            shown: body.currentScreen === "playback"
+            pageSource: "CameraPlayback.qml"
+            initialProperties: ({objectName:"cameraPlayback", cameraController:camera, apps:cameraApps,
+                theme:Qt.binding(function(){return body.menuTheme})})
+        }
+        Connections {target:playbackLoader.item;function onCloseRequested(){cameraShell.back()}}
+        DeferredPage {
+            objectName: "toolsLoader"
+            anchors.fill: parent; anchors.margins: 12
+            shown: body.currentScreen === "tool"
+            pageSource: "AppsWorkspace.qml"
+            initialProperties: ({objectName:"cameraToolsWorkspace", shell:cameraShell,
+                cameraController:camera, apps:cameraApps,
+                theme:Qt.binding(function(){return body.menuTheme})})
         }
     }
 
@@ -650,26 +656,34 @@ MonochromeWindow {
             spacing:6
             RowLayout {
                 Layout.fillWidth:true
-                Label { text:workspacePanel.page === "quick" ? qsTr("快捷控制") : workspacePanel.page === "my_menu" ? qsTr("我的菜单") : qsTr("拍摄工作台"); color:body.menuTheme.text; font.family:typography.titleFamily; font.pixelSize:typography.titleSize; font.weight:Font.Medium; font.letterSpacing:typography.titleTracking; Layout.fillWidth:true }
+                Label { text:workspacePanel && workspacePanel.page === "quick" ? qsTr("快捷控制") : workspacePanel && workspacePanel.page === "my_menu" ? qsTr("我的菜单") : qsTr("拍摄工作台"); color:body.menuTheme.text; font.family:typography.titleFamily; font.pixelSize:typography.titleSize; font.weight:Font.Medium; font.letterSpacing:typography.titleTracking; Layout.fillWidth:true }
                 Button {
-                    id:quickPhotoMode;visible:workspacePanel.page === "quick";text:qsTr("照片");implicitWidth:88;implicitHeight:64
+                    id:quickPhotoMode;visible:workspacePanel && workspacePanel.page === "quick";text:qsTr("照片");implicitWidth:88;implicitHeight:64
                     readonly property bool selected:body.workspace && body.workspace.mode === "photo"
                     onClicked:body.workspace.setMode("photo")
                     background:Rectangle {color:quickPhotoMode.selected ? body.menuTheme.text : body.menuTheme.raised;border.color:body.menuTheme.line}
                     contentItem:Text {text:quickPhotoMode.text;color:quickPhotoMode.selected ? body.menuTheme.background : body.menuTheme.text;font.pixelSize:18;horizontalAlignment:Text.AlignHCenter;verticalAlignment:Text.AlignVCenter}
                 }
                 Button {
-                    id:quickVideoMode;visible:workspacePanel.page === "quick";text:qsTr("视频");implicitWidth:88;implicitHeight:64
+                    id:quickVideoMode;visible:workspacePanel && workspacePanel.page === "quick";text:qsTr("视频");implicitWidth:88;implicitHeight:64
                     readonly property bool selected:body.workspace && body.workspace.mode === "video"
                     onClicked:body.workspace.setMode("video")
                     background:Rectangle {color:quickVideoMode.selected ? body.menuTheme.text : body.menuTheme.raised;border.color:body.menuTheme.line}
                     contentItem:Text {text:quickVideoMode.text;color:quickVideoMode.selected ? body.menuTheme.background : body.menuTheme.text;font.pixelSize:18;horizontalAlignment:Text.AlignHCenter;verticalAlignment:Text.AlignVCenter}
                 }
-                Button {visible:workspacePanel.page === "quick";text:workspacePanel.editing ? qsTr("完成编辑") : qsTr("编辑 12 格");implicitHeight:64;onClicked:workspacePanel.editing=!workspacePanel.editing}
+                Button {visible:workspacePanel && workspacePanel.page === "quick";text:workspacePanel && workspacePanel.editing ? qsTr("完成编辑") : qsTr("编辑 12 格");implicitHeight:64;onClicked:workspacePanel.editing=!workspacePanel.editing}
                 Button { text:qsTr("完成"); implicitHeight:64;implicitWidth:80; onClicked:workspaceDialog.close() }
             }
             Rectangle { Layout.fillWidth:true; Layout.preferredHeight:1; color:body.menuTheme.line; opacity:.65 }
-            ShootingWorkspacePanel { id:workspacePanel; Layout.fillWidth:true; Layout.fillHeight:true; workspace:body.workspace; theme:body.menuTheme;showModeToolbar:page !== "quick" }
+            DeferredPage {
+                id: workspacePanelLoader
+                objectName: "workspacePanelLoader"
+                Layout.fillWidth:true; Layout.fillHeight:true
+                shown: workspaceDialog.visible
+                pageSource: "ShootingWorkspacePanel.qml"
+                initialProperties: ({workspace:body.workspace, theme:Qt.binding(function(){return body.menuTheme})})
+                onLoaded: item.showModeToolbar=Qt.binding(function(){return item.page !== "quick"})
+            }
         }
     }
     Dialog {

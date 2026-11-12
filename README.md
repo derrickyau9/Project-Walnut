@@ -61,6 +61,7 @@ The running prototype uses **HF-Sim**, a synthetic image source. Screenshots and
 
 ### 拍摄与工作区 / Capture and workspaces
 
+- 首屏优先启动取景；菜单、回放、工具、工作台和键盘首次使用时加载并保留。离线启动对比和实机验证边界见[启动性能记录](docs/performance/startup.md)。
 - 摄影优先的取景界面、曝光与增益设置、网格、明暗主题和可隐藏任务栏。
 - 可开关的双轴电子水平仪，显示横滚、俯仰及调平状态；缺失或过期的姿态数据会失效，演示角度明确标记 DEMO。真实 IMU 接入与校准仍需实机验证。
 - 十二格 Q 菜单、My Menu、C1–C3 工作区、六种布局、工作区导入导出及 Fn 输入边界。

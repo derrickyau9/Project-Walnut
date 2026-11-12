@@ -87,6 +87,7 @@
     "ui/on-device/controller.py": "bbdad1c2a631bf7df5868006a48c1cd0b9086c26ad619a0bdaab54ec91607d8a",
     "ui/on-device/DaOSDock.qml": "ed30845c1e37004dc9576f0ff879fbd993995679ba8cd5eecdc166fdb55037df",
     "ui/on-device/DaOSIcon.qml": "2ae2072ee69fad0088bd92c2ddd83c694001c58fa3c2b68f1d225fa9ac8b1f5b",
+    "ui/on-device/DeferredPage.qml": "860c269e2c80340c3df609373c4b741e375b6126b345f493ffb3ae0c394e391a",
     "ui/on-device/ImageTools.qml": "194fe3caec64ea3af918c82ecd19af4ee169d1ecc5e97fa46429182328100a5b",
     "ui/on-device/image_pipeline.py": "720ca528be4c2fe57370248840523801f111fdc300621923d25805e12f9b2492",
     "ui/on-device/image_processing.py": "5298d074483bba117bfa58ada71b355214a8d1e192c90f59b571841fa082a7a3",
@@ -96,7 +97,7 @@
     "ui/on-device/localization.py": "6ef1c5d4898864e2024985370ced65a439b7f95a924e8457e0dfd7b7183a2c94",
     "ui/on-device/LocalizedComboBox.qml": "fbbe9323f00653f06f64d878f26761f541a17f53f2616ac8a46b1b366b761eab",
     "ui/on-device/main.py": "5f4607055041120fbeca1f2b97b4221d50d45cfe0ea3ef699d77cda0d58d44b5",
-    "ui/on-device/Main.qml": "3d500390f1b8df156f5a90175185661ff995f3e6aafebca1aa57b46434aa298a",
+    "ui/on-device/Main.qml": "69cddbe1b3546691161f2ef73874ec5d4b63453af6f77637b7c57855f9cf9781",
     "ui/on-device/MediaButton.qml": "8fd4dbcb227d61769db8ec8eac92874a954c7436cd94e769df522a36f12a08ab",
     "ui/on-device/MediaGallery.qml": "09f5aeb4e1fb1b7cdf80c097d05961ac28f3f48e54f8405ad9a1253b7d1f7aa2",
     "ui/on-device/media_catalog.py": "5d768bfb1c99060ac336f1a3e0d9ed5f3821dae31d878a49bf299cc307033645",
@@ -313,11 +314,11 @@
       ],
       "en_US": {
         "file": "en_US/04-quick-photo.png",
-        "sha256": "24b020fcb876ac26e7246e50a384f56e79b67f2536418f1376fb275227739306"
+        "sha256": "fad031d135020e494d8e35c01e6ec898243b6ed1ddde2210aeaef85977cb6d8c"
       },
       "zh_CN": {
         "file": "zh_CN/04-quick-photo.png",
-        "sha256": "c2544865a5095c025ef9be5c27f7225c5496e594a673d84029a4ed870f2fd60d"
+        "sha256": "17f236514cf25afff6ead56f6c56d8dee84c84562ce3768583bb9f1cc4e6ffbc"
       },
       "width": 960,
       "height": 600
@@ -519,11 +520,11 @@
       ],
       "en_US": {
         "file": "en_US/14-storage.png",
-        "sha256": "9a19e63c5189d50ac7d190f00cee55a6c41821287c0becf529b20c1769ab12b3"
+        "sha256": "ddfa622dc6268c37017041961be01b918788c33764f2c7f2ba8ff2a550b9faef"
       },
       "zh_CN": {
         "file": "zh_CN/14-storage.png",
-        "sha256": "c9f8a5306074eabda09857c8cd52552ee3f465a8d15d9087ac9facc3b585955e"
+        "sha256": "1ebb3d28a2ce4a3b3cb84f9cc4aeea99be3f2ca62fe1644b3bc9d08fa40efec2"
       },
       "width": 960,
       "height": 600
@@ -560,11 +561,11 @@
       ],
       "en_US": {
         "file": "en_US/16-system.png",
-        "sha256": "060799a5e0dbea255eddbe7e604bb6603609e2e91b0b99d1cbfc8605de93f98a"
+        "sha256": "3976c3d90850915689a1e66a722b8bc5382be782a9da676d43cfc3b6aa5c8087"
       },
       "zh_CN": {
         "file": "zh_CN/16-system.png",
-        "sha256": "08e0de53208ae3700fba5ddc95ede8fb381a2e41696f67dc32b07a0e487c680c"
+        "sha256": "93cf15e753024682daa6b5d8f1111d2c0256cd4882b7bca8b0641fd44b4d02b0"
       },
       "width": 960,
       "height": 600
@@ -892,11 +893,11 @@
       ],
       "en_US": {
         "file": "en_US/32-photo-library.png",
-        "sha256": "cce7c1f82e98895c7da5edb40b75cbb6a71079596375f2cb2a3eb2867eff7ea7"
+        "sha256": "e85687ea34fd89c2921c97072e3c0c44c1a4f973b5ce6854e0fc6b9666879ee2"
       },
       "zh_CN": {
         "file": "zh_CN/32-photo-library.png",
-        "sha256": "eded6491d7bf455d7437e072f5479a6c7c1d132d08611a5645ceb028f17853dc"
+        "sha256": "984b0072094090fe0e2ebaacf37a19845d1080b12a9de1363d4b61a832340397"
       },
       "width": 960,
       "height": 600
@@ -912,11 +913,11 @@
       ],
       "en_US": {
         "file": "en_US/33-multi-select.png",
-        "sha256": "74ea6d3be9f792758f2779f4a9eb2d919c02b9cff3054f9ca28c1c95009e58fd"
+        "sha256": "17c6650a3fa985f57db7d10d08cff2b85ba43f2e322c10ee96e9f0c74b03ba6d"
       },
       "zh_CN": {
         "file": "zh_CN/33-multi-select.png",
-        "sha256": "779ae7500a85366de878e0669ecc9a8b78e8343ea6ab8669a5e38cc73463884f"
+        "sha256": "3ff420ddd6c56a04b492d81e3abc299d81f25fed151054518991a9a0ea80421b"
       },
       "width": 960,
       "height": 600
@@ -1075,11 +1076,11 @@
       ],
       "en_US": {
         "file": "en_US/40-edit-history.png",
-        "sha256": "4c6014c6f34e73d4c86412be87177765c3c96170f1bd0a027dac936f42e419c2"
+        "sha256": "3181d31ca71915e6040d16143d779c1083ee2d0267fcef5c14fbfee43c913f7a"
       },
       "zh_CN": {
         "file": "zh_CN/40-edit-history.png",
-        "sha256": "044a111aa4300dcedb18d452312a697f1e1229b7216b863d6f564e7b67cef88d"
+        "sha256": "35046fce7c4008f464bef5ea993e11b85045e078c58aaa653a4e0fff40f6735d"
       },
       "width": 960,
       "height": 600
@@ -1116,11 +1117,11 @@
       ],
       "en_US": {
         "file": "en_US/42-import.png",
-        "sha256": "4972d728580ff386b0746050b29934aab1beafe071824f782690c830e802099c"
+        "sha256": "203805e94c8f79ef6a7efd6638686b4240ead3df54bffeeb0ab42a96771a524d"
       },
       "zh_CN": {
         "file": "zh_CN/42-import.png",
-        "sha256": "6d4968070a98db5d30599680c9386c843d3b303cb2b562b3c06bcf6e1d95f645"
+        "sha256": "7825226a67e04be25fd22467a22aafc7adcecfb775d163f7560b0ff563931f2e"
       },
       "width": 960,
       "height": 600
@@ -1177,11 +1178,11 @@
       ],
       "en_US": {
         "file": "en_US/45-photo-info.png",
-        "sha256": "baf4a5ad6f11073155cface70aee83073068eab7c37209954d4a1fe7bef8127e"
+        "sha256": "d1ac5dd61a5f811d105a3ccc1623b0c30b854f896e1b8ca46fdd07505b80d46f"
       },
       "zh_CN": {
         "file": "zh_CN/45-photo-info.png",
-        "sha256": "96995fbdcaed5860513f275125bb28d6dc4d83229c4a51994c5f01c1e3bd198f"
+        "sha256": "d6b763d9a262c0b6a0351f63957c2ab3cdb7810560cab17a7850415a4cac316b"
       },
       "width": 960,
       "height": 600
@@ -1209,20 +1210,20 @@
   "source_capture_receipts": {
     "en_US": {
       "file": "en_US-capture.json",
-      "sha256": "255e3dbc673e65c64f0dbfbb360bd28c4e4bead73adc48fd548025da14970098"
+      "sha256": "dae621bde4cf7001bb554bae5930b5d62601a59e16b352599710728e763588c0"
     },
     "zh_CN": {
       "file": "zh_CN-capture.json",
-      "sha256": "9b0b86abc9ab2ab0ca8e51b751c9a96d885368afdf4ae4d0e7dceeca4864d6c9"
+      "sha256": "608635c10b898f47941c2af567f894664024f446f0bfffb710109eb883455771"
     }
   },
   "capture_driver_sha256": "16f115f0c1e132ae0b3104315eed96192b6e085d9b40283cdb69bd81201f496f",
   "assembly_driver_sha256": "c6df9ced01515f1c62e42a0a1aead258c0b65d4fc708dcb0aac218aeb61ea87c",
   "factory_application_package_binding": {
-    "package": "camera-experience-006-compact.tar.gz",
-    "sha256": "aad4d6c7259e70d6016548ca491422b7cfa1a8ca4f7378d82bb7040f338fa923",
-    "version": "camera-experience-006",
-    "UI_files_exactly_matched": 76,
+    "package": "camera-experience-007-fastboot.tar.gz",
+    "sha256": "2d3ed4542e7ac6875d6bd6452bf410d200bb44e1a2cd24252296ce998fe2defc",
+    "version": "camera-experience-007",
+    "UI_files_exactly_matched": 77,
     "UI_source_correspondence": {
       "ui/on-device/AnimatedPageLoader.qml": "b453b7658b1e661c30c008b86f6bca9320b669d005d131675b2d29c0e927803e",
       "ui/on-device/AppsWorkspace.qml": "b7de5a01c5e6c981fcf64cf9fcb3507b077363bb73bd5584f8ef147b061c68f2",
@@ -1239,6 +1240,7 @@
       "ui/on-device/controller.py": "bbdad1c2a631bf7df5868006a48c1cd0b9086c26ad619a0bdaab54ec91607d8a",
       "ui/on-device/DaOSDock.qml": "ed30845c1e37004dc9576f0ff879fbd993995679ba8cd5eecdc166fdb55037df",
       "ui/on-device/DaOSIcon.qml": "2ae2072ee69fad0088bd92c2ddd83c694001c58fa3c2b68f1d225fa9ac8b1f5b",
+      "ui/on-device/DeferredPage.qml": "860c269e2c80340c3df609373c4b741e375b6126b345f493ffb3ae0c394e391a",
       "ui/on-device/ImageTools.qml": "194fe3caec64ea3af918c82ecd19af4ee169d1ecc5e97fa46429182328100a5b",
       "ui/on-device/image_pipeline.py": "720ca528be4c2fe57370248840523801f111fdc300621923d25805e12f9b2492",
       "ui/on-device/image_processing.py": "5298d074483bba117bfa58ada71b355214a8d1e192c90f59b571841fa082a7a3",
@@ -1248,7 +1250,7 @@
       "ui/on-device/localization.py": "6ef1c5d4898864e2024985370ced65a439b7f95a924e8457e0dfd7b7183a2c94",
       "ui/on-device/LocalizedComboBox.qml": "fbbe9323f00653f06f64d878f26761f541a17f53f2616ac8a46b1b366b761eab",
       "ui/on-device/main.py": "5f4607055041120fbeca1f2b97b4221d50d45cfe0ea3ef699d77cda0d58d44b5",
-      "ui/on-device/Main.qml": "3d500390f1b8df156f5a90175185661ff995f3e6aafebca1aa57b46434aa298a",
+      "ui/on-device/Main.qml": "69cddbe1b3546691161f2ef73874ec5d4b63453af6f77637b7c57855f9cf9781",
       "ui/on-device/MediaButton.qml": "8fd4dbcb227d61769db8ec8eac92874a954c7436cd94e769df522a36f12a08ab",
       "ui/on-device/MediaGallery.qml": "09f5aeb4e1fb1b7cdf80c097d05961ac28f3f48e54f8405ad9a1253b7d1f7aa2",
       "ui/on-device/media_catalog.py": "5d768bfb1c99060ac336f1a3e0d9ed5f3821dae31d878a49bf299cc307033645",

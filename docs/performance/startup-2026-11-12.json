@@ -1,0 +1,120 @@
+{
+  "format": "Project-Walnut-startup-comparison-v1",
+  "date": "2026-11-12",
+  "scope": "Windows desktop, Python3.12, Qt5.15 software offscreen, native HF-Sim; five alternating before/after fresh processes and empty state/cache; Main loaded with loadData in both variants. Not Pi power-on, cold-SD, Xorg or hardware timing.",
+  "baseline_commit": "089e06e28d57665d63ce2906074cf3146ab83966",
+  "baseline_Main_sha256": "3d500390f1b8df156f5a90175185661ff995f3e6aafebca1aa57b46434aa298a",
+  "after_source_sha256": {
+    "ui/on-device/Main.qml": "69cddbe1b3546691161f2ef73874ec5d4b63453af6f77637b7c57855f9cf9781",
+    "ui/on-device/DeferredPage.qml": "860c269e2c80340c3df609373c4b741e375b6126b345f493ffb3ae0c394e391a",
+    "system/freebsd/image/overlay/usr/local/libexec/DaOS-camera-session.py": "50b98fc146730865bf0bdff5bca633425a50c39895f55d460e9d6a921a4380e0"
+  },
+  "samples": {
+    "before": [
+      {
+        "scope": "fresh-process desktop Qt/native HF-Sim; not physical board boot",
+        "first_frame_ms": 955.1907000131905,
+        "qml_load_ms": 668.5939999297261,
+        "capture_ready_ms": 984.6335998736322,
+        "qobjects": 2077,
+        "passed": true
+      },
+      {
+        "scope": "fresh-process desktop Qt/native HF-Sim; not physical board boot",
+        "first_frame_ms": 959.7726999782026,
+        "qml_load_ms": 683.1447000149637,
+        "capture_ready_ms": 989.4895998295397,
+        "qobjects": 2077,
+        "passed": true
+      },
+      {
+        "scope": "fresh-process desktop Qt/native HF-Sim; not physical board boot",
+        "first_frame_ms": 950.0449998304248,
+        "qml_load_ms": 682.3124999646097,
+        "capture_ready_ms": 1039.4885998684913,
+        "qobjects": 2077,
+        "passed": true
+      },
+      {
+        "scope": "fresh-process desktop Qt/native HF-Sim; not physical board boot",
+        "first_frame_ms": 948.3086001127958,
+        "qml_load_ms": 661.2583000678569,
+        "capture_ready_ms": 989.3215000629425,
+        "qobjects": 2077,
+        "passed": true
+      },
+      {
+        "scope": "fresh-process desktop Qt/native HF-Sim; not physical board boot",
+        "first_frame_ms": 930.1207000389695,
+        "qml_load_ms": 656.3760999124497,
+        "capture_ready_ms": 960.0834001321346,
+        "qobjects": 2077,
+        "passed": true
+      }
+    ],
+    "after": [
+      {
+        "scope": "fresh-process desktop Qt/native HF-Sim; not physical board boot",
+        "first_frame_ms": 573.7159000709653,
+        "qml_load_ms": 320.8502000197768,
+        "capture_ready_ms": 607.9500999767333,
+        "qobjects": 423,
+        "passed": true
+      },
+      {
+        "scope": "fresh-process desktop Qt/native HF-Sim; not physical board boot",
+        "first_frame_ms": 590.8456998877227,
+        "qml_load_ms": 317.5205001607537,
+        "capture_ready_ms": 623.7123999744654,
+        "qobjects": 423,
+        "passed": true
+      },
+      {
+        "scope": "fresh-process desktop Qt/native HF-Sim; not physical board boot",
+        "first_frame_ms": 567.2904001548886,
+        "qml_load_ms": 317.42910016328096,
+        "capture_ready_ms": 601.2045000679791,
+        "qobjects": 423,
+        "passed": true
+      },
+      {
+        "scope": "fresh-process desktop Qt/native HF-Sim; not physical board boot",
+        "first_frame_ms": 583.2957001402974,
+        "qml_load_ms": 331.27179997973144,
+        "capture_ready_ms": 616.6752001736313,
+        "qobjects": 423,
+        "passed": true
+      },
+      {
+        "scope": "fresh-process desktop Qt/native HF-Sim; not physical board boot",
+        "first_frame_ms": 583.2070000469685,
+        "qml_load_ms": 323.70549999177456,
+        "capture_ready_ms": 626.1318000033498,
+        "qobjects": 423,
+        "passed": true
+      }
+    ]
+  },
+  "median": {
+    "before": {
+      "first_frame_ms": 950.045,
+      "capture_ready_ms": 989.322,
+      "qml_load_ms": 668.594,
+      "qobjects": 2077
+    },
+    "after": {
+      "first_frame_ms": 583.207,
+      "capture_ready_ms": 616.675,
+      "qml_load_ms": 320.85,
+      "qobjects": 423
+    }
+  },
+  "reduction_percent": {
+    "first_frame_ms": 38.6,
+    "capture_ready_ms": 37.7,
+    "qml_load_ms": 52.0,
+    "qobjects": 79.6
+  },
+  "system_session_timing": "Kernel/shell digest work deferred until actual UI ready; no on-board timing available.",
+  "physical_device_connected": false
+}
