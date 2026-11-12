@@ -96,7 +96,7 @@
     "ui/on-device/level_controller.py": "a5cc6b3001e8b2ab0abd90e5417e1eca013ddda99827e115588b99f0a4bc9cd8",
     "ui/on-device/localization.py": "6ef1c5d4898864e2024985370ced65a439b7f95a924e8457e0dfd7b7183a2c94",
     "ui/on-device/LocalizedComboBox.qml": "fbbe9323f00653f06f64d878f26761f541a17f53f2616ac8a46b1b366b761eab",
-    "ui/on-device/main.py": "5f4607055041120fbeca1f2b97b4221d50d45cfe0ea3ef699d77cda0d58d44b5",
+    "ui/on-device/main.py": "766626a768b7669a24abfeacefb12072ffd1e80434f0d533e793a0aa80d2c89b",
     "ui/on-device/Main.qml": "69cddbe1b3546691161f2ef73874ec5d4b63453af6f77637b7c57855f9cf9781",
     "ui/on-device/MediaButton.qml": "8fd4dbcb227d61769db8ec8eac92874a954c7436cd94e769df522a36f12a08ab",
     "ui/on-device/MediaGallery.qml": "09f5aeb4e1fb1b7cdf80c097d05961ac28f3f48e54f8405ad9a1253b7d1f7aa2",
@@ -314,11 +314,11 @@
       ],
       "en_US": {
         "file": "en_US/04-quick-photo.png",
-        "sha256": "fad031d135020e494d8e35c01e6ec898243b6ed1ddde2210aeaef85977cb6d8c"
+        "sha256": "bf8b9fa1b51ecc19889ab5c54907ba33c65604baf7aa89e8587590bcd0359aa8"
       },
       "zh_CN": {
         "file": "zh_CN/04-quick-photo.png",
-        "sha256": "17f236514cf25afff6ead56f6c56d8dee84c84562ce3768583bb9f1cc4e6ffbc"
+        "sha256": "ad5c70554ebd601d8818f00efc72f05e3e76055553d483f462bae913d9943a4e"
       },
       "width": 960,
       "height": 600
@@ -520,11 +520,11 @@
       ],
       "en_US": {
         "file": "en_US/14-storage.png",
-        "sha256": "ddfa622dc6268c37017041961be01b918788c33764f2c7f2ba8ff2a550b9faef"
+        "sha256": "939e0830b59bebb171a352190b6a65c5ba9c9cf94aa34f40c2903807a55d3637"
       },
       "zh_CN": {
         "file": "zh_CN/14-storage.png",
-        "sha256": "1ebb3d28a2ce4a3b3cb84f9cc4aeea99be3f2ca62fe1644b3bc9d08fa40efec2"
+        "sha256": "756d239e24a2d93907ca903eb5f31deb1fa38db52046aa401c6039559061ecd1"
       },
       "width": 960,
       "height": 600
@@ -561,11 +561,11 @@
       ],
       "en_US": {
         "file": "en_US/16-system.png",
-        "sha256": "3976c3d90850915689a1e66a722b8bc5382be782a9da676d43cfc3b6aa5c8087"
+        "sha256": "027de599bb4561b51735a9143f384d0bb416c29a5176085830c4c5f8684b6196"
       },
       "zh_CN": {
         "file": "zh_CN/16-system.png",
-        "sha256": "93cf15e753024682daa6b5d8f1111d2c0256cd4882b7bca8b0641fd44b4d02b0"
+        "sha256": "cb38c28ef7a01fb939ec93f0d719b9378ab9c49fedffa382913212331f301a88"
       },
       "width": 960,
       "height": 600
@@ -893,11 +893,11 @@
       ],
       "en_US": {
         "file": "en_US/32-photo-library.png",
-        "sha256": "e85687ea34fd89c2921c97072e3c0c44c1a4f973b5ce6854e0fc6b9666879ee2"
+        "sha256": "001a00cbfc6c316b19384edcd00d4cc80d4a24b1635e4c09d8e1c00b66fa4717"
       },
       "zh_CN": {
         "file": "zh_CN/32-photo-library.png",
-        "sha256": "984b0072094090fe0e2ebaacf37a19845d1080b12a9de1363d4b61a832340397"
+        "sha256": "92555e7693416a60f1221ea58dd247c9506e60ff9ebbd895055e052716c9cec3"
       },
       "width": 960,
       "height": 600
@@ -913,11 +913,11 @@
       ],
       "en_US": {
         "file": "en_US/33-multi-select.png",
-        "sha256": "17c6650a3fa985f57db7d10d08cff2b85ba43f2e322c10ee96e9f0c74b03ba6d"
+        "sha256": "5896663437ab2c143cab59b7a45b1c8f47d43d2e8ce9e69b06cbfd6db07b28b2"
       },
       "zh_CN": {
         "file": "zh_CN/33-multi-select.png",
-        "sha256": "3ff420ddd6c56a04b492d81e3abc299d81f25fed151054518991a9a0ea80421b"
+        "sha256": "054507119f132c06f30f806ef2e3dc05136b6f7b05e1318c87d8bd44e56acf2b"
       },
       "width": 960,
       "height": 600
@@ -1076,11 +1076,11 @@
       ],
       "en_US": {
         "file": "en_US/40-edit-history.png",
-        "sha256": "3181d31ca71915e6040d16143d779c1083ee2d0267fcef5c14fbfee43c913f7a"
+        "sha256": "260e84905ab53047cce77d5ae8435f188c437fec7194f6b281d603e95edf0f99"
       },
       "zh_CN": {
         "file": "zh_CN/40-edit-history.png",
-        "sha256": "35046fce7c4008f464bef5ea993e11b85045e078c58aaa653a4e0fff40f6735d"
+        "sha256": "2bd0eaa6ca9f586640cba7aa1c79e9ffd5954f5af50d8faba1e5ab25a612ad94"
       },
       "width": 960,
       "height": 600
@@ -1117,11 +1117,11 @@
       ],
       "en_US": {
         "file": "en_US/42-import.png",
-        "sha256": "203805e94c8f79ef6a7efd6638686b4240ead3df54bffeeb0ab42a96771a524d"
+        "sha256": "b890a9b15fde93e07f23a9b28d5216bc2849610429eda9edf70ff9634de09e22"
       },
       "zh_CN": {
         "file": "zh_CN/42-import.png",
-        "sha256": "7825226a67e04be25fd22467a22aafc7adcecfb775d163f7560b0ff563931f2e"
+        "sha256": "78bcc76cbd8222c5574e7e0042c7f7f70c1996fc34be30269f683c716b189d24"
       },
       "width": 960,
       "height": 600
@@ -1178,11 +1178,11 @@
       ],
       "en_US": {
         "file": "en_US/45-photo-info.png",
-        "sha256": "d1ac5dd61a5f811d105a3ccc1623b0c30b854f896e1b8ca46fdd07505b80d46f"
+        "sha256": "8968784bb17f808ade07b62361633ba2f741059255dc0b2478a28b98e0a1bfad"
       },
       "zh_CN": {
         "file": "zh_CN/45-photo-info.png",
-        "sha256": "d6b763d9a262c0b6a0351f63957c2ab3cdb7810560cab17a7850415a4cac316b"
+        "sha256": "18fcb84af566a6e6067f67a53775db8173282e8f4342f77301b97223e54eb66c"
       },
       "width": 960,
       "height": 600
@@ -1210,19 +1210,19 @@
   "source_capture_receipts": {
     "en_US": {
       "file": "en_US-capture.json",
-      "sha256": "dae621bde4cf7001bb554bae5930b5d62601a59e16b352599710728e763588c0"
+      "sha256": "748515a56f3ad8538ab82e261524b66322af547163cd5401bbe20ac5c0c0785d"
     },
     "zh_CN": {
       "file": "zh_CN-capture.json",
-      "sha256": "608635c10b898f47941c2af567f894664024f446f0bfffb710109eb883455771"
+      "sha256": "e9b2368048965083cf17aaab48b84bb111a4af7990c8b580780d025fb4807f0b"
     }
   },
   "capture_driver_sha256": "16f115f0c1e132ae0b3104315eed96192b6e085d9b40283cdb69bd81201f496f",
   "assembly_driver_sha256": "c6df9ced01515f1c62e42a0a1aead258c0b65d4fc708dcb0aac218aeb61ea87c",
   "factory_application_package_binding": {
-    "package": "camera-experience-007-fastboot.tar.gz",
-    "sha256": "2d3ed4542e7ac6875d6bd6452bf410d200bb44e1a2cd24252296ce998fe2defc",
-    "version": "camera-experience-007",
+    "package": "camera-experience-008-poweron.tar.gz",
+    "sha256": "e9158c72aed67a45c7606732a8783b041e9b413d5888f8bb4089b2925dcab774",
+    "version": "camera-experience-008",
     "UI_files_exactly_matched": 77,
     "UI_source_correspondence": {
       "ui/on-device/AnimatedPageLoader.qml": "b453b7658b1e661c30c008b86f6bca9320b669d005d131675b2d29c0e927803e",
@@ -1249,7 +1249,7 @@
       "ui/on-device/level_controller.py": "a5cc6b3001e8b2ab0abd90e5417e1eca013ddda99827e115588b99f0a4bc9cd8",
       "ui/on-device/localization.py": "6ef1c5d4898864e2024985370ced65a439b7f95a924e8457e0dfd7b7183a2c94",
       "ui/on-device/LocalizedComboBox.qml": "fbbe9323f00653f06f64d878f26761f541a17f53f2616ac8a46b1b366b761eab",
-      "ui/on-device/main.py": "5f4607055041120fbeca1f2b97b4221d50d45cfe0ea3ef699d77cda0d58d44b5",
+      "ui/on-device/main.py": "766626a768b7669a24abfeacefb12072ffd1e80434f0d533e793a0aa80d2c89b",
       "ui/on-device/Main.qml": "69cddbe1b3546691161f2ef73874ec5d4b63453af6f77637b7c57855f9cf9781",
       "ui/on-device/MediaButton.qml": "8fd4dbcb227d61769db8ec8eac92874a954c7436cd94e769df522a36f12a08ab",
       "ui/on-device/MediaGallery.qml": "09f5aeb4e1fb1b7cdf80c097d05961ac28f3f48e54f8405ad9a1253b7d1f7aa2",

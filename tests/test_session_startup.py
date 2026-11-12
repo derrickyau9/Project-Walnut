@@ -6,6 +6,8 @@ import sys
 import tempfile
 import threading
 import unittest
+from types import SimpleNamespace
+import stat
 from unittest.mock import Mock,patch
 
 PATH=pathlib.Path(__file__).resolve().parents[1]/'system/freebsd/image/overlay/usr/local/libexec/DaOS-camera-session.py'
@@ -15,6 +17,18 @@ with patch.dict(sys.modules,{name:Mock() for name in ('fcntl','grp','pwd')} if s
 
 
 class SessionStartupTests(unittest.TestCase):
+    def test_fast_splash_handoff_waits_for_exit_and_times_out_to_fallback(self):
+        clock=[0.];info=SimpleNamespace(st_mode=stat.S_IFREG|0o600,st_uid=0)
+        def sleep(value):clock[0]+=value
+        def exiting(_):
+            if clock[0]>=.1:raise FileNotFoundError
+            return info
+        self.assertTrue(session.splash_exited('owned.pid',clock=lambda:clock[0],sleep=sleep,lstat=exiting))
+        self.assertGreaterEqual(clock[0],.1)
+        self.assertFalse(session.splash_exited('owned.pid',clock=lambda:clock[0],sleep=sleep,lstat=lambda _:info))
+        self.assertLess(clock[0],1.2)
+        with self.assertRaises(ValueError):session.splash_exited('owned.pid',lstat=lambda _:SimpleNamespace(st_mode=stat.S_IFLNK|0o777,st_uid=0))
+
     def test_audit_does_no_io_until_started_and_emits_complete_digests_once(self):
         with tempfile.TemporaryDirectory() as directory:
             path=pathlib.Path(directory)/'kernel';raw=b'kernel-fixture'*100000;path.write_bytes(raw)

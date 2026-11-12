@@ -16,6 +16,11 @@ BOOT_VALUES={'loader_brand':'daos','loader_logo':'none','loader_gfx':'NO',
 RC_VALUES={'DaOS_boot_enable':'YES','DaOS_system_enable':'YES','rc_startmsgs':'NO'}
 PREFIXES=('opt/hasslefree/ui/on-device/','usr/local/libexec/','usr/local/etc/rc.d/',
           'usr/share/DaOS/boot/','boot/lua/','etc/rc.d/')
+FAST_FILES={'usr/local/libexec/DaOS-camera-session.py','usr/local/libexec/DaOS-camera-app.py',
+            'usr/local/libexec/DaOS-camera-startup.py','usr/local/etc/rc.d/DaOS-camera'}
+
+def settings(fast_boot=False):
+    return (dict(BOOT_VALUES,autoboot_delay='0'),dict(RC_VALUES,DaOS_camera_fastboot='YES')) if fast_boot else (dict(BOOT_VALUES),dict(RC_VALUES))
 
 def sha(path):
     h=hashlib.sha256()
@@ -51,7 +56,10 @@ def edit_conf(path,values):
 
 def targets(manifest):return [e['path'] for e in manifest['files']+manifest.get('removals',[])]+['boot/loader.conf','etc/rc.conf']
 
-def apply(root,incoming,manifest,tag):
+def apply(root,incoming,manifest,tag,*,fast_boot=False):
+    if fast_boot and not FAST_FILES.issubset({entry['path'] for entry in manifest['files']}):
+        raise ValueError('Fast boot requires coordinated session, entrypoint, preload helper and rc service')
+    boot_values,rc_values=settings(fast_boot)
     records={}
     for entry in manifest.get('removals',[]):
         old=root/entry['path']
@@ -61,8 +69,8 @@ def apply(root,incoming,manifest,tag):
         rel=entry['path'];dst=root/rel
         if any(p.is_symlink() for p in (dst,*dst.parents)):raise ValueError('Redirected system path')
         before=sha(dst) if dst.is_file() else None
-        if rel=='boot/loader.conf':data=edit_conf(dst,BOOT_VALUES)
-        elif rel=='etc/rc.conf':data=edit_conf(dst,RC_VALUES)
+        if rel=='boot/loader.conf':data=edit_conf(dst,boot_values)
+        elif rel=='etc/rc.conf':data=edit_conf(dst,rc_values)
         else:data=(incoming/'payload'/rel).read_bytes()
         dst.parent.mkdir(parents=True,exist_ok=True)
         # New public payload directories must be traversable by UID 1000 even
@@ -86,9 +94,11 @@ def main():
     p.add_argument('archive');p.add_argument('sha256');p.add_argument('--tag',default='system-ui-001')
     p.add_argument('--rollback',action='store_true')
     p.add_argument('--files-only',action='store_true',help='only when running application files already match')
+    p.add_argument('--fast-boot',action='store_true',help='Candidate zero loader countdown and parallel Xorg/Python startup; U-Boot is not modified')
     args=p.parse_args()
     if not sys.platform.startswith('freebsd') or os.geteuid()!=0:raise ValueError('Native root shell required')
     if not re.fullmatch('system-ui-[0-9]{3}',args.tag):raise ValueError('Invalid update identity')
+    if args.fast_boot and args.files_only:raise ValueError('Fast boot activation requires a normal service restart')
     work=Path('/var/DaOS/updates')/args.tag
     if args.rollback:
         record=json.loads((work/'deployment.json').read_text())
@@ -105,6 +115,8 @@ def main():
         return
     work.mkdir(mode=0o700)
     incoming,manifest=unpack(Path(args.archive),args.sha256,work)
+    if args.fast_boot and not FAST_FILES.issubset({entry['path'] for entry in manifest['files']}):
+        raise ValueError('Fast boot payload is incomplete')
     if args.files_only:
         for entry in manifest['files']:
             if entry['path'].startswith(('opt/','usr/local/libexec/')):
@@ -118,14 +130,14 @@ def main():
         if src.is_file():
             dst=backup/rel;dst.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(src,dst)
     record={'format':'DaOS-system-ui-deployment-v1','status':'backed-up','backups':backups,
-            'payload_sha256':args.sha256,'photos_or_camera_settings_changed':False}
+            'payload_sha256':args.sha256,'photos_or_camera_settings_changed':False,'fast_boot_candidate':args.fast_boot}
     receipt=work/'deployment.json';receipt.write_text(json.dumps(record,indent=2)+'\n')
     try:
         if not args.files_only:subprocess.run(['/usr/sbin/service','DaOS-camera','stop'],check=True,capture_output=True,timeout=45)
         if not args.files_only and Path('/var/run/DaOS-system-supervisor.pid').is_file():
             subprocess.run(['/usr/sbin/service','DaOS-system','stop'],check=True,capture_output=True,timeout=20)
         subprocess.run(['/sbin/mount','-u','-w','/'],check=True,capture_output=True)
-        record['installed']=apply(Path('/'),incoming,manifest,args.tag)
+        record['installed']=apply(Path('/'),incoming,manifest,args.tag,fast_boot=args.fast_boot)
         subprocess.run(['/sbin/mount','-u','-r','/'],check=True,capture_output=True)
         if not args.files_only:
             subprocess.run(['/usr/sbin/service','DaOS-system','start'],check=True,capture_output=True,timeout=20)

@@ -23,7 +23,7 @@ def main():
     vendor=ROOT/'ui/on-device/vendor'
     for file in vendor.rglob('*'):
         if file.is_file() and '__pycache__' not in file.parts:sources['opt/hasslefree/ui/on-device/vendor/'+file.relative_to(vendor).as_posix()]=file
-    for name in ['usr/local/libexec/DaOS-camera-session.py','usr/local/libexec/DaOS-system-service.py','usr/local/etc/rc.d/DaOS-system','etc/rc.d/DaOS-boot','boot/lua/gfx-daos.lua']:
+    for name in ['usr/local/libexec/DaOS-camera-session.py','usr/local/libexec/DaOS-camera-app.py','usr/local/libexec/DaOS-camera-startup.py','usr/local/etc/rc.d/DaOS-camera','usr/local/libexec/DaOS-system-service.py','usr/local/etc/rc.d/DaOS-system','etc/rc.d/DaOS-boot','boot/lua/gfx-daos.lua']:
         sources[name]=ROOT/'system/freebsd/image/overlay'/name
     sources['usr/local/libexec/DaOS-boot']=args.native
     sources['usr/share/DaOS/boot/startup.rgb']=args.startup

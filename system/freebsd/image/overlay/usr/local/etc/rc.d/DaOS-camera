@@ -13,4 +13,10 @@ pidfile="/var/run/DaOS-camera-supervisor.pid"
 command_args="-P ${pidfile} -f -o /var/log/DaOS-camera.log /usr/local/bin/python3.12 -B /usr/local/libexec/DaOS-camera-session.py"
 load_rc_config "$name"
 : ${DaOS_camera_enable:=NO}
+: ${DaOS_camera_fastboot:=NO}
+case "$DaOS_camera_fastboot" in
+YES) command_args="-P ${pidfile} -f -o /var/log/DaOS-camera.log /usr/bin/env DAOS_CAMERA_FASTBOOT=YES /usr/local/bin/python3.12 -B /usr/local/libexec/DaOS-camera-session.py" ;;
+NO) ;;
+*) echo 'DaOS_camera_fastboot must be YES or NO' >&2; exit 1 ;;
+esac
 run_rc_command "$1"

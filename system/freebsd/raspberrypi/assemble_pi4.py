@@ -17,10 +17,12 @@ import subprocess
 import sys
 
 HERE = Path(__file__).resolve().parent
+sys.path.insert(0, str(HERE))
 sys.path.insert(0, str(HERE.parent / 'image'))
 from assemble_image import (preflight, prepare, install_file, write_mtree,
                             commands, validate_filesystems, sha)
 from common import MACHINES, require_freebsd, stable_copy, relative
+from fastboot_profile import normal_boot_configuration
 
 IMAGE_NAME = 'DaOS-R14-RPi4-arm64.img'
 PINNED_COMMIT = '95719d8a895bf8170851e9844d9b4092b1d2b6fe'
@@ -245,7 +247,11 @@ def prepare_pi(value, args, firmware, firmware_provenance, logo, kernel_splash):
     loader_lines += ['# Raspberry Pi 4 / modern vt kernel Boot Logo',
                      'console="efi"', 'boot_mute="YES"',
                      'splash="/boot/images/DaOS-logo.png"', 'kern.vt.splash_cpu="0"']
-    install_file(root, maps, 'boot/loader.conf', ('\n'.join(loader_lines) + '\n').encode())
+    loader_text='\n'.join(loader_lines)+'\n'
+    if getattr(args,'fast_boot',False):
+        loader_text,rc_text=normal_boot_configuration(loader_text,(root/'etc/rc.conf').read_text())
+        install_file(root,maps,'etc/rc.conf',rc_text.encode())
+    install_file(root, maps, 'boot/loader.conf', loader_text.encode())
     install_file(root, maps, 'boot/images/DaOS-logo.png', Path(args.logo).read_bytes())
     provenance = Path(args.project) / 'assets/boot-logo/provenance.json'
     if provenance.is_file():
@@ -265,6 +271,10 @@ def prepare_pi(value, args, firmware, firmware_provenance, logo, kernel_splash):
              'firmware_provenance': firmware_provenance,
              'boot_payload': sorted(boot_manifest, key=lambda item: item['path']),
              'physical_board_boot_validated': False, 'QEMU_board_emulation_claimed': False}
+    board['fast_boot_candidate']={'enabled':getattr(args,'fast_boot',False),
+        'scope':'Normal FreeBSD loader and Xorg/Python session; U-Boot firmware inputs are unchanged',
+        'uboot_zero_countdown_requires_separate_selector_build':True,
+        'physical_power_on_to_UI_seconds':None}
     summary['board'] = board
     install_file(root, maps, 'usr/share/DaOS/payload.json', (json.dumps(summary, indent=2) + '\n').encode())
     install_file(root, maps, 'usr/share/DaOS/raspberrypi-board.json', (json.dumps(board, indent=2) + '\n').encode())
@@ -285,6 +295,7 @@ def main(argv=None):
         parser.add_argument('--' + name + '-mib', type=int, default=default)
     parser.add_argument('--epoch', type=int, default=0)
     parser.add_argument('--compress', action='store_true')
+    parser.add_argument('--fast-boot',action='store_true',help='Candidate zero loader countdown and overlapping Xorg/Python startup; preserve verified U-Boot input')
     args = parser.parse_args(argv)
     if args.logo is None:
         args.logo = Path(args.project) / 'assets/boot-logo/DaOS-logo.png'

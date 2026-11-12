@@ -25,7 +25,8 @@ event_lock = threading.Lock()
 
 def event(name, **fields):
     line = 'DaOS_GUI_EVENT ' + json.dumps({'event': name,
-        'elapsed_ms': round((time.monotonic()-started_at)*1000, 3), **fields}, sort_keys=True)
+        'elapsed_ms': round((time.monotonic()-started_at)*1000, 3),
+        'monotonic_ns':time.monotonic_ns(), **fields}, sort_keys=True)
     with event_lock:
         print(line, flush=True)
     # Persistent daemon log only: console writes would overwrite the splash.
@@ -102,9 +103,28 @@ class IdentityAudit:
             self.thread.join(timeout=1)
 
 
+def splash_exited(pidfile, *, clock=time.monotonic, sleep=time.sleep, lstat=os.lstat):
+    """daemon -P removes its root pidfile after the renderer exits.
+
+    The renderer already observes the stop file every 100 ms. Wait briefly for
+    that actual exit instead of always paying rc.subr's service-stop polling.
+    A timeout uses the existing bounded service-stop path; it never grants the
+    framebuffer while the native renderer is still running.
+    """
+    deadline=clock()+1
+    while True:
+        try:info=lstat(pidfile)
+        except FileNotFoundError:return True
+        if not stat.S_ISREG(info.st_mode) or info.st_uid!=0 or info.st_mode & 0o022:
+            raise ValueError('Invalid native splash supervisor pidfile')
+        if stopping or clock()>=deadline:return False
+        sleep(.02)
+
+
 def main():
     if platform.system() != 'FreeBSD' or os.geteuid() != 0:
         raise RuntimeError('root session supervision requires native FreeBSD')
+    event('session-start')
     camera = pwd.getpwnam('camera')
     if camera.pw_uid != 1000 or camera.pw_gid != 1000:
         raise RuntimeError('unexpected camera account identity')
@@ -146,22 +166,18 @@ def main():
     os.chown(authority, 0, camera.pw_gid); os.chmod(authority, 0o640)
     for item in (signal.SIGTERM, signal.SIGINT): signal.signal(item, stop)
     server = application = None
+    overlap = os.environ.get('DAOS_CAMERA_FASTBOOT') == 'YES'
+    display_ready = RUNTIME / ('display-' + secrets.token_hex(8))
     try:
         boot_phase(45)
         command = ['/usr/local/libexec/Xorg', ':0', 'vt9', '-auth', str(authority),
                    '-nolisten', 'tcp', '-noreset', '-background', 'none', '-logfile', '/var/log/DaOS-Xorg.log']
         server = subprocess.Popen(command, stdin=subprocess.DEVNULL, start_new_session=True)
         event('Xorg-started', pid=server.pid, qpa='xcb', tcp=False)
-        deadline = time.monotonic()+30
-        while not Path('/tmp/.X11-unix/X0').exists():
-            if stopping or server.poll() is not None or time.monotonic() >= deadline:
-                raise RuntimeError('Xorg did not provide the selected local display')
-            time.sleep(.1)
         ready_tag = secrets.token_hex(8)
         splash_ready = client_runtime / ('splash-' + ready_tag)
         ui_ready = client_runtime / ('ready-' + ready_tag)
         native_handoff = client_runtime / ('handoff-' + ready_tag)
-        boot_phase(65)
         environment = {'PATH': '/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin:/usr/local/sbin',
             'HOME': '/var/DaOS/home/camera', 'USER': 'camera', 'LOGNAME': 'camera',
             'DISPLAY': ':0', 'XAUTHORITY': str(authority), 'XDG_RUNTIME_DIR': str(client_runtime),
@@ -170,19 +186,42 @@ def main():
             'PYTHONDONTWRITEBYTECODE': '1', 'PYTHONNOUSERSITE': '1', 'LANG': 'C.UTF-8',
             'DAOS_SPLASH_READY_FILE': str(splash_ready), 'DAOS_UI_READY_FILE': str(ui_ready),
             'DAOS_NATIVE_HANDOFF_FILE': str(native_handoff)}
-        application = subprocess.Popen(['/usr/local/bin/python3.12', '-B', '/usr/local/libexec/DaOS-camera-app.py'],
-            env=environment, stdin=subprocess.DEVNULL, user=camera.pw_uid, group=camera.pw_gid,
-            extra_groups=[], start_new_session=True)
-        event('camera-started', pid=application.pid, uid=camera.pw_uid, gid=camera.pw_gid,
-              architecture=platform.machine(), framebuffer='scfb', physical_camera=False)
+        if overlap:
+            environment['DAOS_X_READY_FILE'] = str(display_ready)
+        def launch_application():
+            child = subprocess.Popen(['/usr/local/bin/python3.12', '-B', '/usr/local/libexec/DaOS-camera-app.py'],
+                env=environment, stdin=subprocess.DEVNULL, user=camera.pw_uid, group=camera.pw_gid,
+                extra_groups=[], start_new_session=True)
+            event('camera-started', pid=child.pid, uid=camera.pw_uid, gid=camera.pw_gid,
+                  architecture=platform.machine(), framebuffer='scfb', physical_camera=False,
+                  overlapping_imports=overlap)
+            return child
+        if overlap:
+            application = launch_application()
+        deadline = time.monotonic()+30
+        while not Path('/tmp/.X11-unix/X0').exists():
+            if (stopping or server.poll() is not None or time.monotonic() >= deadline
+                    or application is not None and application.poll() is not None):
+                raise RuntimeError('Xorg/application did not provide the selected local display')
+            time.sleep(.05)
+        if overlap:
+            fd = os.open(display_ready, os.O_WRONLY | os.O_CREAT | os.O_EXCL | os.O_NOFOLLOW, 0o600)
+            os.close(fd)
+        else:
+            application = launch_application()
+        boot_phase(65)
+        event('display-ready', overlapping_imports=overlap)
         handed_off = False
         ready_recorded = False
         while not stopping and application.poll() is None and server.poll() is None:
             if not handed_off and splash_ready.is_file():
                 Path('/var/run/DaOS-boot-native.stop').touch()
                 if Path('/var/run/DaOS-boot-supervisor.pid').is_file():
-                    subprocess.run(['/usr/sbin/service', 'DaOS-boot', 'stop'],
-                                   stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=8)
+                    if not overlap or not splash_exited(Path('/var/run/DaOS-boot-supervisor.pid')):
+                        stopped=subprocess.run(['/usr/sbin/service', 'DaOS-boot', 'stop'],
+                                               stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=8)
+                        if overlap and not splash_exited(Path('/var/run/DaOS-boot-supervisor.pid')):
+                            raise RuntimeError('Native framebuffer handoff failed')
                 fd = os.open(native_handoff, os.O_WRONLY | os.O_CREAT | os.O_EXCL | os.O_NOFOLLOW, 0o600)
                 os.close(fd)
                 handed_off = True
@@ -202,6 +241,7 @@ def main():
         forced = terminate(application, 15)
         terminate(server, 5)
         audit.close()
+        if display_ready.exists(): display_ready.unlink()
         if authority.is_file() and not authority.is_symlink(): authority.unlink()
         event('session-stopped', forced_application_stop=forced,
               application_returncode=application.returncode if application else None,

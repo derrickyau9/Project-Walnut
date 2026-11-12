@@ -55,7 +55,19 @@ def configuration(data):
     return dict(line.split('=',1) for line in data.splitlines() if line.startswith('CONFIG_') and '=' in line)
 
 
-def build(output,jobs,cross):
+def selector_configuration(baseline, *, fast_boot=False):
+    old='CONFIG_BOOTCOMMAND="bootflow scan"'
+    if baseline.count(old)!=1 or 'CONFIG_USE_BOOTCOMMAND=y' not in baseline:
+        raise ValueError('Unexpected pinned baseline boot command')
+    changed=baseline.replace(old,'CONFIG_BOOTCOMMAND='+json.dumps(BOOTCOMMAND),1)
+    if fast_boot:
+        if baseline.count('CONFIG_BOOTDELAY=2\n')!=1:
+            raise ValueError('Unexpected pinned baseline boot delay')
+        changed=changed.replace('CONFIG_BOOTDELAY=2\n','CONFIG_BOOTDELAY=0\n',1)
+    return changed
+
+
+def build(output,jobs,cross,*,fast_boot=False):
     if sys.platform!='linux' or os.geteuid()==0:raise ValueError('Ordinary Linux build user required')
     if not 1<=jobs<=16 or not re.fullmatch(r'[A-Za-z0-9_./-]+-',cross):raise ValueError('Bounded compiler/jobs required')
     if output.exists() or output.is_symlink():raise ValueError('Fresh private build directory required')
@@ -85,24 +97,25 @@ def build(output,jobs,cross):
     run(['/bin/sh',str(source/'scripts/kconfig/merge_config.sh'),'-m','-O',str(obj),str(obj/'.config'),*fragments])
     run(make+['olddefconfig'])
     baseline=(obj/'.config').read_text();(output/'baseline.config').write_text(baseline)
-    old='CONFIG_BOOTCOMMAND="bootflow scan"'
-    if baseline.count(old)!=1 or 'CONFIG_USE_BOOTCOMMAND=y' not in baseline:raise ValueError('Unexpected pinned baseline boot command')
-    (obj/'.config').write_text(baseline.replace(old,'CONFIG_BOOTCOMMAND='+json.dumps(BOOTCOMMAND),1))
+    (obj/'.config').write_text(selector_configuration(baseline,fast_boot=fast_boot))
     run(make+['olddefconfig'])
     changed=(obj/'.config').read_text();left=configuration(baseline);right=configuration(changed)
     delta={key:{'before':left.get(key),'after':right.get(key)} for key in left.keys()|right.keys() if left.get(key)!=right.get(key)}
-    if set(delta)!={'CONFIG_BOOTCOMMAND'}:raise ValueError('Unexpected configuration change')
+    expected={'CONFIG_BOOTCOMMAND','CONFIG_BOOTDELAY'} if fast_boot else {'CONFIG_BOOTCOMMAND'}
+    if set(delta)!=expected:raise ValueError('Unexpected configuration change')
+    if fast_boot and right.get('CONFIG_BOOTDELAY')!='0':raise ValueError('Fast boot must retain abort-key checking')
     required={key:right.get(key)=='y' for key in REQUIRED_CONFIG}
     if not all(required.values()):raise ValueError('Required selector feature disabled: '+repr(required))
     (output/'selector.config').write_text(changed)
     (output/'config.diff').write_text(''.join(difflib.unified_diff(baseline.splitlines(True),changed.splitlines(True),fromfile='FreeBSD-rpi-arm64-baseline.config',tofile='DaOS-selector.config')))
     # This option is referenced only by tools/Makefile, not target C sources.
     # Omit the unused host capsule generator instead of installing host packages;
-    # the recorded target .config still differs only in CONFIG_BOOTCOMMAND.
+    # the recorded target .config differs only in the approved keys.
     run(make+['CONFIG_TOOLS_MKEFICAPSULE=n','-j'+str(jobs),'u-boot.bin'],timeout=1200)
     binary=output/FILENAME;shutil.copyfile(obj/'u-boot.bin',binary)
     embedded=('bootcmd='+BOOTCOMMAND).encode()+b'\0'
     if binary.read_bytes().count(embedded)!=1:raise ValueError('Compiled selector boot command missing')
+    if fast_boot and b'bootdelay=0\0' not in binary.read_bytes():raise ValueError('Compiled zero-delay default missing')
     # In this release test/true are selected by HUSH, not CONFIG_CMD_TEST.
     test_with_hush='obj-$(CONFIG_HUSH_PARSER) += test.o' in (source/'cmd/Makefile').read_text() and (obj/'cmd/test.o').is_file()
     if not test_with_hush:raise ValueError('Compiled test/true commands missing')
@@ -110,6 +123,7 @@ def build(output,jobs,cross):
         'source_archive_sha256':ARCHIVE_SHA256,'source_download_url':ARCHIVE_URL,'ports_commit':PORTS_COMMIT,'port_inputs_sha256':PORT_FILES,
         'filename':FILENAME,'sha256':sha(binary),'bytes':binary.stat().st_size,'bootcommand':BOOTCOMMAND,
         'configuration_delta':delta,'baseline_config_sha256':sha(output/'baseline.config'),'selector_config_sha256':sha(output/'selector.config'),
+        'fast_boot':fast_boot,'persistent_environment_overrides_must_be_checked_on_device':True,
         'required_selector_config':required,'test_and_true_compiled_with_hush':test_with_hush,
         'compiler':run([cross+'gcc','--version']).splitlines()[0],'commands':commands,
         'host_only_build_override':{'CONFIG_TOOLS_MKEFICAPSULE':'n'},
@@ -120,7 +134,8 @@ def build(output,jobs,cross):
 def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--output',type=Path,required=True)
     p.add_argument('--jobs',type=int,default=4);p.add_argument('--cross-compile',default='aarch64-linux-gnu-')
-    a=p.parse_args();print(json.dumps(build(a.output,a.jobs,a.cross_compile),indent=2))
+    p.add_argument('--fast-boot',action='store_true',help='Build a separate zero-countdown candidate, retaining selector and abort-key checking')
+    a=p.parse_args();print(json.dumps(build(a.output,a.jobs,a.cross_compile,fast_boot=a.fast_boot),indent=2))
 
 
 if __name__=='__main__':main()

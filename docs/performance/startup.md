@@ -1,5 +1,9 @@
 # Startup optimization
 
+For the actual **power-on to camera UI** goal, see [the whole-boot candidate and
+measurement definition](power-on.md). The desktop measurements below cover
+only the application substage.
+
 The camera capture screen is the startup priority. Menu, playback, tools,
 workspace controls and keyboard QML are created on first use, with their
 dependencies installed before component completion. Loaded pages are retained,

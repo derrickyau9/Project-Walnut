@@ -8,6 +8,7 @@ from pathlib import Path
 import platform
 import sys
 import tempfile
+import time
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
@@ -215,6 +216,7 @@ def main(argv=None):
     worker_health=health_pool.submit(probe_imager)
     health_reported=[False]
     first_frame = [False]
+    camera_frame_reported = [False]
     def finish_boot():
         if first_frame[0] and controller.connectionState == 'ready':
             boot.finish()
@@ -234,6 +236,10 @@ def main(argv=None):
             if splash is not None: splash.close()
             boot.phase(.9, 'Starting camera')
             finish_boot()
+        elif boot.ready and not camera_frame_reported[0]:
+            camera_frame_reported[0]=True
+            print('DaOS_BOOT_MARK '+json.dumps({'event':'camera-frame-presented',
+                'monotonic_ns':time.monotonic_ns(),'authority_ready':controller.connectionState=='ready'}),flush=True)
     window.frameSwapped.connect(ui_frame)
     window.frameSwapped.connect(performance.frameSwapped)
     controller.changed.connect(finish_boot)
