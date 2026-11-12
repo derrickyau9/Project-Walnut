@@ -7,6 +7,7 @@ import subprocess
 import sys
 import tempfile
 import hashlib
+import json
 from types import SimpleNamespace
 import unittest
 from unittest.mock import patch
@@ -22,6 +23,24 @@ deploy=load('poweron_deploy','system/freebsd/raspberrypi/deploy_system_ui.py')
 
 
 class PoweronStartupTests(unittest.TestCase):
+    def test_fast_preload_pins_validated_active_release_instead_of_legacy_modules(self):
+        with tempfile.TemporaryDirectory() as directory:
+            base=Path(directory);legacy=base/'ui/on-device/main.py';legacy.parent.mkdir(parents=True);legacy.write_text('# selector')
+            self.assertEqual(startup.resolve_program(legacy),legacy)
+            release=base/'releases/camera-experience-008';selected=release/'ui/on-device/main.py'
+            selected.parent.mkdir(parents=True);selected.write_text('# new application')
+            active={'version':'camera-experience-008','manifest_sha256':'a'*64}
+            pointer=base/'camera-app-active.json';pointer.write_text(json.dumps(active))
+            (release/'release-ready.json').write_text(json.dumps(active))
+            pinned=startup.resolve_program(legacy);self.assertEqual(pinned,selected)
+            pointer.write_text(json.dumps(dict(active,version='camera-experience-009')))
+            self.assertEqual(pinned,selected,'An activation change must not change the already pinned entrypoint')
+            with self.assertRaises(ValueError):startup.resolve_program(legacy)
+            pointer.write_text(json.dumps(dict(active,manifest_sha256='b'*64)))
+            with self.assertRaises(ValueError):startup.resolve_program(legacy)
+            pointer.write_text(json.dumps(dict(active,version='../escape')))
+            with self.assertRaises(ValueError):startup.resolve_program(legacy)
+
     def test_fast_activation_requires_all_root_components_and_preserves_boot_hook(self):
         with tempfile.TemporaryDirectory() as directory:
             root=Path(directory)/'root';incoming=Path(directory)/'incoming'
@@ -108,4 +127,27 @@ assert QCoreApplication.instance() is None
 '''
         result=subprocess.run([sys.executable,'-c',code],cwd=ROOT,capture_output=True,text=True,timeout=20,
                               env=dict(os.environ,QT_QPA_PLATFORM='offscreen'))
+        self.assertEqual(result.returncode,0,result.stdout+result.stderr)
+
+    def test_preloading_uses_both_UI_and_camera_package_from_selected_tree(self):
+        code='''import importlib.util,sys,tempfile,json
+from pathlib import Path
+root=Path.cwd()
+spec=importlib.util.spec_from_file_location('startup',root/'system/freebsd/image/overlay/usr/local/libexec/DaOS-camera-startup.py')
+module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+with tempfile.TemporaryDirectory() as directory:
+ base=Path(directory);legacy=base/'ui/on-device/main.py';legacy.parent.mkdir(parents=True);legacy.write_text('# selector')
+ (legacy.parent/'boot_probe.py').write_text("raise AssertionError('legacy module imported')")
+ release=base/'releases/camera-experience-008';program=release/'ui/on-device/main.py';program.parent.mkdir(parents=True);program.write_text('# selected')
+ (release/'camera').mkdir();(release/'camera/__init__.py').write_text("flavor='selected'")
+ (program.parent/'boot_probe.py').write_text('from camera import flavor\\nassert flavor == "selected"')
+ record={'version':'camera-experience-008','manifest_sha256':'a'*64}
+ (base/'camera-app-active.json').write_text(json.dumps(record));(release/'release-ready.json').write_text(json.dumps(record))
+ sys.path.insert(0,str(legacy.parent));module.PRELOAD=('boot_probe',)
+ selected=module.resolve_program(legacy);module.preload_modules(selected)
+ import boot_probe,camera
+ assert Path(boot_probe.__file__).parent == program.parent
+ assert Path(camera.__file__).parent == release/'camera'
+'''
+        result=subprocess.run([sys.executable,'-c',code],cwd=ROOT,capture_output=True,text=True,timeout=15)
         self.assertEqual(result.returncode,0,result.stdout+result.stderr)

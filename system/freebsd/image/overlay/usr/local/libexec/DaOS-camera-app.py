@@ -31,8 +31,9 @@ if os.environ.get('DAOS_X_READY_FILE'):
     spec = importlib.util.spec_from_file_location('daos_camera_startup', Path(__file__).with_name('DaOS-camera-startup.py'))
     startup = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(startup)
+    program = startup.resolve_program(program)
     print('DaOS_BOOT_MARK '+json.dumps({'event':'python-preload-start','monotonic_ns':time.monotonic_ns()}),flush=True)
-    startup.preload_modules()
+    startup.preload_modules(program)
     print('DaOS_BOOT_MARK '+json.dumps({'event':'python-preload-end','monotonic_ns':time.monotonic_ns()}),flush=True)
     startup.wait_for_display(os.environ['DAOS_X_READY_FILE'])
 sys.argv = [str(program), '--kiosk', '--native-command', '/usr/local/bin/hf-camerad',

@@ -1,9 +1,11 @@
 """Opt-in overlap of unprivileged Python imports with root-owned Xorg startup."""
 import importlib
+import json
 import os
 from pathlib import Path
 import re
 import stat
+import sys
 import time
 
 PRELOAD = ('PyQt5.QtGui','PyQt5.QtQml','PyQt5.QtQuick','controller',
@@ -12,9 +14,46 @@ PRELOAD = ('PyQt5.QtGui','PyQt5.QtQml','PyQt5.QtQuick','controller',
            'input_router','image_processing','system_control','camera_link','task_hub')
 
 
-def preload_modules():
+def resolve_program(program):
+    """Pin one ready application tree before importing any application modules.
+
+    The stable entrypoint can be the version selector, not the application's
+    actual main.py. Execute the selected tree directly after validation so an
+    activation-pointer change during preload cannot mix two releases.
+    """
+    program=Path(program)
+    base=program.resolve().parents[2]
+    pointer=base/'camera-app-active.json'
+    if pointer.is_symlink():raise ValueError('Redirected application selector')
+    if not pointer.exists():return program
+    def read_record(path):
+        if path.is_symlink() or not path.is_file():raise ValueError('Invalid application record')
+        with path.open('rb') as stream:data=stream.read(4097)
+        if len(data)>4096:raise ValueError('Application record exceeds bound')
+        value=json.loads(data)
+        if not isinstance(value,dict):raise ValueError('Invalid application record')
+        return value
+    active=read_record(pointer);version=active.get('version','');digest=active.get('manifest_sha256','')
+    if not isinstance(version,str) or not re.fullmatch('camera-experience-[0-9]{3}',version):
+        raise ValueError('Invalid application version')
+    if not isinstance(digest,str) or not re.fullmatch('[0-9a-f]{64}',digest):
+        raise ValueError('Invalid application manifest identity')
+    release=base/'releases'/version
+    if release.is_symlink():raise ValueError('Redirected application release')
+    ready=read_record(release/'release-ready.json')
+    if ready.get('version')!=version or ready.get('manifest_sha256')!=digest:
+        raise ValueError('Application release identity mismatch')
+    selected=release/'ui/on-device/main.py'
+    if selected.is_symlink() or not selected.is_file():raise ValueError('Application entrypoint missing')
+    return selected
+
+
+def preload_modules(program=None):
     # Import definitions only: no QApplication, service, storage or camera is
     # instantiated here. The real UI is created only after root permits it.
+    if program is not None:
+        sys.path.insert(0,str(Path(program).resolve().parents[2]))
+        sys.path.insert(0,str(Path(program).parent))
     for name in PRELOAD:
         importlib.import_module(name)
 

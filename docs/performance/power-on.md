@@ -44,6 +44,12 @@ preload helper and rc service. It refuses fast activation with incomplete
 payloads or `--files-only`; loader/rc changes use the existing backup/rollback
 paths. Applying an application bundle alone does not enable this boot profile.
 
+Before application imports, the fast entrypoint validates the active version
+and its release-ready manifest identity, then pins that entrypoint for the
+process. UI modules and the camera package are preloaded from the same selected
+tree. The stable legacy directory is not preloaded, and a pointer switch during
+startup cannot mix two releases.
+
 These paths have not been installed on the board. Native FreeBSD/ARM image
 assembly is currently blocked by the host WSL failure.
 
